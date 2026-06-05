@@ -312,6 +312,50 @@ def fetch_fixtures_dia() -> dict:
         except Exception:
             pass
 
+    # 3) Mundial 2026: mostrar partidos próximos (desde 11 jun 2026)
+    try:
+        from datetime import timedelta
+        mundial_start = date(2026, 6, 11)
+        hoy_date = date.today()
+        # Si estamos antes del Mundial, mostrar todos los partidos desde hoy
+        if hoy_date <= mundial_start:
+            fetch_from = mundial_start
+        else:
+            fetch_from = hoy_date
+        # Buscar solo los próximos 10 días
+        for delta in range(0, 10):
+            fetch_date = fetch_from + timedelta(days=delta)
+            ds = fetch_date.strftime("%Y%m%d")
+            url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates={ds}"
+            r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=8)
+            if r.status_code != 200:
+                continue
+            for ev in r.json().get("events", []):
+                comp = (ev.get("competitions") or [{}])[0]
+                competitors = comp.get("competitors", [])
+                home = next((c for c in competitors if c.get("homeAway") == "home"), {})
+                away = next((c for c in competitors if c.get("homeAway") == "away"), {})
+                h_name = home.get("team", {}).get("displayName", "")
+                a_name = away.get("team", {}).get("displayName", "")
+                if not h_name or not a_name:
+                    continue
+                ev_date = ev.get("date", "")[:10]
+                ev_time = ev.get("date", "")[11:16]
+                key = ("MUNDIAL", _norm(a_name), _norm(h_name))
+                if key not in fixtures:
+                    fixtures[key] = {
+                        "home_name": h_name,
+                        "away_name": a_name,
+                        "date": ev_date,
+                        "time": ev_time,
+                        "league_name": "FIFA World Cup 2026",
+                    }
+        mundial_count = sum(1 for k in fixtures if k[0] == "MUNDIAL")
+        if mundial_count:
+            logger.info(f"Mundial 2026: {mundial_count} partidos proximos incluidos")
+    except Exception as e:
+        logger.warning(f"Error fetching Mundial: {e}")
+
     logger.info(f"ESPN fixtures totales: {len(fixtures)}")
     return fixtures
 
@@ -425,7 +469,8 @@ def generar_partidos_desde_cache(df_stats: pd.DataFrame) -> list[SoccerMatch]:
     sin_stats = 0
 
     for (fk_liga, fk_away, fk_home), fixture_info in fixtures.items():
-        if fixture_info["date"] != hoy:
+        # Para Mundial: mostrar todos los partidos (no solo hoy)
+        if fk_liga != "MUNDIAL" and fixture_info["date"] != hoy:
             continue
 
         local_row = None

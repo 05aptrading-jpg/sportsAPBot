@@ -53,6 +53,13 @@ def generar_soccer_data_json():
     ayer = hoy - timedelta(days=1)
     manana = hoy + timedelta(days=1)
     fechas_validas = {hoy.isoformat(), ayer.isoformat(), manana.isoformat()}
+    # Mundial 2026: incluir todo el torneo (jun 11 - jul 19)
+    mundial_start = date(2026, 6, 11)
+    mundial_end = date(2026, 7, 19)
+    d = mundial_start
+    while d <= mundial_end:
+        fechas_validas.add(d.isoformat())
+        d += timedelta(days=1)
     rows = []
     with open(config.CSV_SOCCER_PATH, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)

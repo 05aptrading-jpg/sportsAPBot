@@ -112,6 +112,26 @@
     background: #f59e0b; color: #fff; border-color: #f59e0b;
   }
 
+  /* Calendar */
+  .futbol-calendar { background:#111827; border:1px solid #2a3040; border-radius:12px; padding:12px; margin:8px 0; }
+  .cal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+  .cal-header span { color:#e1e8ed; font-size:14px; font-weight:600; }
+  .cal-nav { background:none; border:1px solid #3a4550; color:#8b98a5; width:28px; height:28px; border-radius:6px; cursor:pointer; font-size:14px; display:flex; align-items:center; justify-content:center; }
+  .cal-nav:hover { background:#262d3d; color:#e1e8ed; }
+  .cal-weekdays { display:grid; grid-template-columns:repeat(7,1fr); gap:2px; margin-bottom:4px; }
+  .cal-weekday { text-align:center; color:#6b7280; font-size:11px; font-weight:600; padding:4px 0; }
+  .cal-days { display:grid; grid-template-columns:repeat(7,1fr); gap:2px; }
+  .cal-day { text-align:center; padding:6px 2px; border-radius:8px; font-size:13px; cursor:pointer; transition:all 0.15s; position:relative; }
+  .cal-day.empty { cursor:default; }
+  .cal-day.disabled { color:#374151; cursor:not-allowed; }
+  .cal-day.has-games { color:#e1e8ed; background:#1a2744; }
+  .cal-day.has-games::after { content:''; position:absolute; bottom:3px; left:50%; transform:translateX(-50%); width:4px; height:4px; border-radius:50%; background:#1d9bf0; }
+  .cal-day.has-games.selected { background:#1d9bf0; color:#fff; }
+  .cal-day.has-games.selected::after { background:#fff; }
+  .cal-day.today { border:1px solid #f59e0b; }
+  .cal-day.mundial { background:#1a3a1a; }
+  .cal-day.mundial::after { background:#22c55e; }
+
   .game-state.live {
     background: #1a3a2a; color: #00ba7c;
     font-weight: 600;
@@ -1058,41 +1078,87 @@ function renderFutbol() {
   renderFutbolStats();
 }
 
+var calMonth = new Date().getMonth();
+var calYear = new Date().getFullYear();
+var selectedFutbolFecha = '';
+var MUNDIAL_START = new Date(2026, 5, 11);
+var MUNDIAL_END = new Date(2026, 6, 19);
+
 function renderFutbolDateTabs() {
   var container = document.getElementById('futbol-date-tabs');
+  if (!container) return;
   var now = new Date();
   var hoy = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  var ayer = new Date(hoy); ayer.setDate(hoy.getDate() - 1);
-  var anteayer = new Date(hoy); anteayer.setDate(hoy.getDate() - 2);
-  function toISO(d) { return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0'); }
-  var fechas = [
-    { iso: toISO(hoy), label: 'Hoy' },
-    { iso: toISO(ayer), label: 'Ayer' },
-    { iso: toISO(anteayer), label: 'Anteayer' }
-  ];
-  var games = soccerData.games || [];
+
+  var games = (soccerData && soccerData.games) || [];
   var fechasConJuegos = {};
   for (var i = 0; i < games.length; i++) {
     if (games[i].fecha_partido) fechasConJuegos[games[i].fecha_partido] = true;
   }
-  if (!selectedFutbolFecha || !fechasConJuegos[selectedFutbolFecha]) {
-    for (var k = 0; k < fechas.length; k++) {
-      if (fechasConJuegos[fechas[k].iso]) { selectedFutbolFecha = fechas[k].iso; break; }
-    }
-    if (!selectedFutbolFecha) selectedFutbolFecha = fechas[0].iso;
+
+  if (!selectedFutbolFecha) {
+    selectedFutbolFecha = toISO(hoy);
   }
-  var html = '';
-  for (var j = 0; j < fechas.length; j++) {
-    var f = fechas[j];
-    var count = 0;
-    for (var g = 0; g < games.length; g++) {
-      if (games[g].fecha_partido === f.iso) count++;
-    }
-    var active = f.iso === selectedFutbolFecha ? ' active' : '';
-    var badge = count > 0 ? ' <span style="opacity:0.6;font-size:11px">(' + count + ')</span>' : '';
-    html += '<div class="date-tab' + active + '" onclick="selectFutbolFecha(\'' + f.iso + '\')">' + f.label + badge + '</div>';
+
+  var months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  var weekdays = ['do','lu','ma','mi','ju','vi','sa'];
+
+  var firstDay = new Date(calYear, calMonth, 1).getDay();
+  var daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+
+  var html = '<div class="futbol-calendar">';
+  html += '<div class="cal-header">';
+  html += '<button class="cal-nav" onclick="calNavMonth(-1)">&#9664;</button>';
+  html += '<span>' + months[calMonth] + ' de ' + calYear + '</span>';
+  html += '<button class="cal-nav" onclick="calNavMonth(1)">&#9654;</button>';
+  html += '</div>';
+
+  html += '<div class="cal-weekdays">';
+  for (var w = 0; w < 7; w++) {
+    html += '<div class="cal-weekday">' + weekdays[w] + '</div>';
   }
+  html += '</div>';
+
+  html += '<div class="cal-days">';
+  for (var e = 0; e < firstDay; e++) {
+    html += '<div class="cal-day empty"></div>';
+  }
+  for (var d = 1; d <= daysInMonth; d++) {
+    var dateObj = new Date(calYear, calMonth, d);
+    var iso = toISO(dateObj);
+    var isToday = dateObj.getTime() === hoy.getTime();
+    var hasGames = fechasConJuegos[iso];
+    var isMundial = dateObj >= MUNDIAL_START && dateObj <= MUNDIAL_END;
+    var isSelected = iso === selectedFutbolFecha;
+    var isPast = dateObj < hoy && !isToday;
+
+    var classes = ['cal-day'];
+    if (isToday) classes.push('today');
+    if (hasGames) classes.push('has-games');
+    if (isMundial && !hasGames) classes.push('mundial');
+    if (isSelected) classes.push('selected');
+    if (!hasGames && !isMundial && isPast) classes.push('disabled');
+
+    var onclick = hasGames ? ' onclick="selectFutbolFecha(\'' + iso + '\')"' : '';
+    if (isMundial && !hasGames) {
+      onclick = ' onclick="selectFutbolFecha(\'' + iso + '\')"';
+    }
+
+    html += '<div class="' + classes.join(' ') + '"' + onclick + '>' + d + '</div>';
+  }
+  html += '</div></div>';
   container.innerHTML = html;
+}
+
+function toISO(d) {
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+
+function calNavMonth(dir) {
+  calMonth += dir;
+  if (calMonth > 11) { calMonth = 0; calYear++; }
+  if (calMonth < 0) { calMonth = 11; calYear--; }
+  renderFutbolDateTabs();
 }
 
 function selectFutbolFecha(fecha) {
