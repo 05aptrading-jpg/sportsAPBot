@@ -47,8 +47,8 @@ LIGA_LABELS = {
     "EUROPA_LEAGUE": "🏆 UEFA Europa League",
 }
 
-# Output dirs
-MLB_BOT_DIR = os.path.normpath(os.path.join(config.BASE_DIR, "..", "mlb_bot"))
+# Output dirs - GitHub Pages root is 1 level up from futbol_bot/
+MLB_BOT_DIR = os.path.normpath(os.path.join(config.BASE_DIR, ".."))
 
 
 def _fetch_mundial_fixtures():
