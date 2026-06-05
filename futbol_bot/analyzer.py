@@ -18,8 +18,39 @@ ESPN_LEAGUES = {
     "SERIE_A": "ita.1",
     "LIGUE_1": "fra.1",
     "LIGA_MX": "mex.1",
+    "MLS": "usa.1",
+    "BRASILEIRAO": "bra.1",
+    "SERIE_A_BRA": "bra.1",
+    "PRIMERA_DIVISION_ARG": "arg.1",
+    "LIGA_POSTOBON": "col.1",
+    "PRIMERA_DIVISION_CHI": "chi.1",
+    "PRIMERA_DIVISION_PAR": "par.1",
+    "PRIMERA_DIVISION_URU": "uru.1",
+    "EREDIVISIE": "ned.1",
+    "PRIMEIRA_LIGA": "por.1",
+    "SUPER_LIG": "tur.1",
+    "SUPER_LEAGUE_BEL": "bel.1",
+    "PREMIERSHIP": "sco.1",
+    "SERIE_A_ITALIANA": "ita.1",
+    "Serie B": "ita.2",
+    "CHAMPIONSHIP": "eng.2",
+    "BUNDESLIGA_2": "ger.2",
+    "LIGA_2": "esp.2",
+    "Ligue 2": "fra.2",
+    "MUNDIAL": "fifa.world",
+    "AMISTOSOS_INT": "2026-international-friendly",
+    "BRASILEIRAO_B": "2026-brasileiro-serie-b",
+    "LIGA_BOLIVIANA": "2026-bolivian-liga-profesional",
+    "PRIMERA_DIVISION_CHILE": "2026-primera-division-de-chile",
+    "LEAGUE_OF_IRELAND": "2026-league-of-ireland-premier",
+    "COPA_LIBERTADORES": "copa.libertadores",
+    "COPA_SUDAMERICANA": "copa.sudamericana",
+    "CONCACAF_CHAMPIONS": "concacaf.champions",
+    "CHAMPIONS_LEAGUE": "uefa.champions",
+    "EUROPA_LEAGUE": "uefa.europa",
 }
 ESPN_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard"
+ESPN_ALL_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard"
 
 
 @dataclass
@@ -211,15 +242,51 @@ def _fuzzy_in(name_a: str, name_b: str) -> bool:
 def fetch_fixtures_dia() -> dict:
     """
     Consulta ESPN para obtener fixtures reales de hoy.
-    Retorna dict: { (liga, local_norm, visitante_norm): { home_name, away_name, date, time } }
+    Usa el endpoint 'all' para capturar TODOS los partidos profesionales.
+    Retorna dict: { (liga, local_norm, visitante_norm): { home_name, away_name, date, time, league_name } }
     """
     from datetime import date as _date
     hoy_str = _date.today().strftime("%Y%m%d")
     fixtures = {}
+
+    # 1) Consultar endpoint 'all' — captura TODAS las ligas de un solo request
+    try:
+        url = f"{ESPN_ALL_URL}?dates={hoy_str}"
+        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=15)
+        if r.status_code == 200:
+            for ev in r.json().get("events", []):
+                comp = (ev.get("competitions") or [{}])[0]
+                competitors = comp.get("competitors", [])
+                home = next((c for c in competitors if c.get("homeAway") == "home"), {})
+                away = next((c for c in competitors if c.get("homeAway") == "away"), {})
+                h_name = home.get("team", {}).get("displayName", "")
+                a_name = away.get("team", {}).get("displayName", "")
+                if not h_name or not a_name:
+                    continue
+                ev_date = ev.get("date", "")[:10]
+                ev_time = ev.get("date", "")[11:16]
+                league_slug = comp.get("league", {}).get("slug", "")
+                league_name = comp.get("league", {}).get("name", league_slug)
+                season_type = comp.get("season", {}).get("type", "")
+                # Mapear slug a nuestra key interna
+                liga_key = _map_league(league_slug, league_name, season_type)
+                fixtures[(liga_key, _norm(a_name), _norm(h_name))] = {
+                    "home_name": h_name,
+                    "away_name": a_name,
+                    "date": ev_date,
+                    "time": ev_time,
+                    "league_name": league_name,
+                }
+    except Exception as e:
+        logger.warning(f"Error fetching all fixtures: {e}")
+
+    # 2) Consultar slugs individuales para ligas que el endpoint 'all' puede no traer
     for liga_key, slug in ESPN_LEAGUES.items():
+        if liga_key in ("MUNDIAL", "AMISTOSOS_INT"):
+            continue  # ya cubiertos por 'all'
         try:
             url = ESPN_URL.format(slug=slug) + f"?dates={hoy_str}"
-            r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=15)
+            r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
             if r.status_code != 200:
                 continue
             for ev in r.json().get("events", []):
@@ -233,21 +300,104 @@ def fetch_fixtures_dia() -> dict:
                     continue
                 ev_date = ev.get("date", "")[:10]
                 ev_time = ev.get("date", "")[11:16]
-                fixtures[(liga_key, _norm(a_name), _norm(h_name))] = {
-                    "home_name": h_name,
-                    "away_name": a_name,
-                    "date": ev_date,
-                    "time": ev_time,
-                }
-        except Exception as e:
-            logger.warning(f"Error fetching fixtures {liga_key}: {e}")
+                key = (liga_key, _norm(a_name), _norm(h_name))
+                if key not in fixtures:
+                    fixtures[key] = {
+                        "home_name": h_name,
+                        "away_name": a_name,
+                        "date": ev_date,
+                        "time": ev_time,
+                        "league_name": liga_key,
+                    }
+        except Exception:
+            pass
+
+    logger.info(f"ESPN fixtures totales: {len(fixtures)}")
     return fixtures
+
+
+def _map_league(slug: str, name: str, season_type) -> str:
+    """Mapea el slug/liga de ESPN a nuestra key interna."""
+    s = slug.lower() if slug else ""
+    n = name.lower() if name else ""
+    if "fifa" in s or "world" in s or "world cup" in n:
+        return "MUNDIAL"
+    if "friendly" in s or "friendly" in n:
+        return "AMISTOSOS_INT"
+    if "brasileiro" in s and "serie" in s and "b" in s:
+        return "BRASILEIRAO_B"
+    if "brasileiro" in s or "brasileirao" in n:
+        return "BRASILEIRAO"
+    if "bolivian" in s or "liga profesional" in n:
+        return "LIGA_BOLIVIANA"
+    if "primera division" in s and "chile" in n:
+        return "PRIMERA_DIVISION_CHILE"
+    if "league of ireland" in s:
+        return "LEAGUE_OF_IRELAND"
+    if "champions league" in n or "uefa.champions" in s:
+        return "CHAMPIONS_LEAGUE"
+    if "europa league" in n or "uefa.europa" in s:
+        return "EUROPA_LEAGUE"
+    if "concacaf" in s:
+        return "CONCACAF_CHAMPIONS"
+    if "libertadores" in n:
+        return "COPA_LIBERTADORES"
+    if "sudamericana" in n:
+        return "COPA_SUDAMERICANA"
+    if "eng.1" in s:
+        return "PREMIER_LEAGUE"
+    if "esp.1" in s:
+        return "LA_LIGA"
+    if "ger.1" in s:
+        return "BUNDESLIGA"
+    if "ita.1" in s:
+        return "SERIE_A"
+    if "fra.1" in s:
+        return "LIGUE_1"
+    if "mex.1" in s:
+        return "LIGA_MX"
+    if "usa.1" in s:
+        return "MLS"
+    if "bra.1" in s:
+        return "BRASILEIRAO"
+    if "ned.1" in s:
+        return "EREDIVISIE"
+    if "por.1" in s:
+        return "PRIMEIRA_LIGA"
+    if "tur.1" in s:
+        return "SUPER_LIG"
+    if "bel.1" in s:
+        return "SUPER_LEAGUE_BEL"
+    if "sco.1" in s:
+        return "PREMIERSHIP"
+    if "arg.1" in s:
+        return "PRIMERA_DIVISION_ARG"
+    if "col.1" in s:
+        return "LIGA_POSTOBON"
+    if "chi.1" in s:
+        return "PRIMERA_DIVISION_CHI"
+    if "par.1" in s:
+        return "PRIMERA_DIVISION_PAR"
+    if "uru.1" in s:
+        return "PRIMERA_DIVISION_URU"
+    if "eng.2" in s:
+        return "CHAMPIONSHIP"
+    if "ger.2" in s:
+        return "BUNDESLIGA_2"
+    if "ita.2" in s:
+        return "Serie B"
+    if "esp.2" in s:
+        return "LIGA_2"
+    if "fra.2" in s:
+        return "Ligue 2"
+    # Fallback: usar el slug como key
+    return s.upper().replace(".", "_")
 
 
 def generar_partidos_desde_cache(df_stats: pd.DataFrame) -> list[SoccerMatch]:
     """
     Genera partidos SOLO para fixtures reales de ESPN.
-    Si ESPN no tiene fixtures para hoy, retorna lista vacía.
+    Si no hay stats en cache, crea partidos con valores por defecto.
     """
     hoy = date.today().isoformat()
     fixtures = fetch_fixtures_dia()
@@ -255,39 +405,62 @@ def generar_partidos_desde_cache(df_stats: pd.DataFrame) -> list[SoccerMatch]:
         logger.info("Sin fixtures reales en ESPN para hoy")
         return []
 
-    partidos = []
+    # Equipos cacheados por liga (para matching fuzzy)
+    teams_by_liga = {}
     for liga_name in config.SOCCER_LEAGUES_V1:
         df_liga = df_stats[df_stats["liga"] == liga_name]
-        if df_liga.empty:
+        if not df_liga.empty:
+            teams_by_liga[liga_name] = df_liga
+
+    partidos = []
+    sin_stats = 0
+
+    for (fk_liga, fk_away, fk_home), fixture_info in fixtures.items():
+        if fixture_info["date"] != hoy:
             continue
-        equipos = df_liga["equipo"].tolist()
 
-        for (fk_liga, fk_away, fk_home), fixture_info in fixtures.items():
-            if fk_liga != liga_name:
+        local_row = None
+        visit_row = None
+        liga_match = None
+
+        # Buscar stats en cache por liga
+        for liga_name, df_liga in teams_by_liga.items():
+            if liga_name != fk_liga:
                 continue
-
-            if fixture_info["date"] != hoy:
-                logger.debug(f"Fixture fecha {fixture_info['date']} ≠ hoy {hoy}, saltando")
-                continue
-
-            local_row = None
-            visit_row = None
+            equipos = df_liga["equipo"].tolist()
             for eq in equipos:
                 if _fuzzy_in(eq, fixture_info["home_name"]):
                     local_row = df_liga[df_liga["equipo"] == eq].iloc[0]
                 if _fuzzy_in(eq, fixture_info["away_name"]):
                     visit_row = df_liga[df_liga["equipo"] == eq].iloc[0]
+            if local_row is not None or visit_row is not None:
+                liga_match = liga_name
+                break
 
-            if local_row is None or visit_row is None:
-                logger.debug(f"Fixture sin stats: {fixture_info['away_name']} vs {fixture_info['home_name']}")
-                continue
+        # Si no encontró por liga exacta, buscar fuzzy en todas las ligas
+        if local_row is None and visit_row is None:
+            for liga_name, df_liga in teams_by_liga.items():
+                equipos = df_liga["equipo"].tolist()
+                for eq in equipos:
+                    if _fuzzy_in(eq, fixture_info["home_name"]) and local_row is None:
+                        local_row = df_liga[df_liga["equipo"] == eq].iloc[0]
+                        liga_match = liga_name
+                    if _fuzzy_in(eq, fixture_info["away_name"]) and visit_row is None:
+                        visit_row = df_liga[df_liga["equipo"] == eq].iloc[0]
+                        liga_match = liga_name
 
-            local_name = local_row["equipo"]
-            visit_name = visit_row["equipo"]
+        # Crear stats por defecto si no se encontraron
+        def _default_stats(name, liga):
+            return TeamSoccerStats(
+                team_name=name, liga=liga,
+                xg_for_90=1.3, xg_against_90=1.3,
+                goles_reales_90=1.3, ppda=12.0,
+                final_third_entries=30.0,
+            )
 
+        if local_row is not None:
             local = TeamSoccerStats(
-                team_name=local_name,
-                liga=liga_name,
+                team_name=local_row["equipo"], liga=liga_match or fk_liga,
                 xg_for_90=float(local_row["xg_por_90"]),
                 xg_against_90=float(local_row["xga_por_90"]),
                 goles_reales_90=float(local_row["goles_reales_90"]),
@@ -297,9 +470,13 @@ def generar_partidos_desde_cache(df_stats: pd.DataFrame) -> list[SoccerMatch]:
                 xga_last5=local_row.get("xga_last5", []),
                 ppda_last5=local_row.get("ppda_last5", []),
             )
+        else:
+            local = _default_stats(fixture_info["home_name"], fk_liga)
+            sin_stats += 1
+
+        if visit_row is not None:
             visit = TeamSoccerStats(
-                team_name=visit_name,
-                liga=liga_name,
+                team_name=visit_row["equipo"], liga=liga_match or fk_liga,
                 xg_for_90=float(visit_row["xg_por_90"]),
                 xg_against_90=float(visit_row["xga_por_90"]),
                 goles_reales_90=float(visit_row["goles_reales_90"]),
@@ -309,16 +486,20 @@ def generar_partidos_desde_cache(df_stats: pd.DataFrame) -> list[SoccerMatch]:
                 xga_last5=visit_row.get("xga_last5", []),
                 ppda_last5=visit_row.get("ppda_last5", []),
             )
-            pk = dm.game_pk(liga_name, local_name, visit_name, hoy)
-            match = SoccerMatch(
-                id_partido=pk,
-                liga=liga_name,
-                local=local,
-                visitante=visit,
-            )
-            match.fecha_partido = fixture_info["date"]
-            match.hora_partido = fixture_info["time"]
-            partidos.append(match)
+        else:
+            visit = _default_stats(fixture_info["away_name"], fk_liga)
+            sin_stats += 1
 
-    logger.info(f"Fixtures reales encontrados: {len(partidos)}")
+        pk = dm.game_pk(fk_liga, local.team_name, visit.team_name, hoy)
+        match = SoccerMatch(
+            id_partido=pk,
+            liga=fk_liga,
+            local=local,
+            visitante=visit,
+        )
+        match.fecha_partido = fixture_info["date"]
+        match.hora_partido = fixture_info["time"]
+        partidos.append(match)
+
+    logger.info(f"Fixtures encontrados: {len(partidos)} ({sin_stats} sin stats en cache)")
     return partidos
