@@ -1083,75 +1083,82 @@ var calYear = new Date().getFullYear();
 var selectedFutbolFecha = '';
 var MUNDIAL_START = new Date(2026, 5, 11);
 var MUNDIAL_END = new Date(2026, 6, 19);
+var calExpanded = false;
 
 function renderFutbolDateTabs() {
   var container = document.getElementById('futbol-date-tabs');
   if (!container) return;
   var now = new Date();
   var hoy = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-
   var games = (soccerData && soccerData.games) || [];
   var fechasConJuegos = {};
   for (var i = 0; i < games.length; i++) {
     if (games[i].fecha_partido) fechasConJuegos[games[i].fecha_partido] = true;
   }
+  if (!selectedFutbolFecha) selectedFutbolFecha = toISO(hoy);
 
-  if (!selectedFutbolFecha) {
-    selectedFutbolFecha = toISO(hoy);
-  }
-
+  var selDate = new Date(selectedFutbolFecha + 'T00:00:00');
   var months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
   var weekdays = ['do','lu','ma','mi','ju','vi','sa'];
+  var selDayNames = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
 
-  var firstDay = new Date(calYear, calMonth, 1).getDay();
-  var daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+  var displayText = selDayNames[selDate.getDay()] + ' ' + selDate.getDate() + ' de ' + months[selDate.getMonth()];
+  var countToday = 0;
+  for (var g = 0; g < games.length; g++) {
+    if (games[g].fecha_partido === selectedFutbolFecha) countToday++;
+  }
+  var badge = countToday > 0 ? ' <span style="color:#6b7280;font-size:12px">(' + countToday + ')</span>' : '';
 
   var html = '<div class="futbol-calendar">';
-  html += '<div class="cal-header">';
-  html += '<button class="cal-nav" onclick="calNavMonth(-1)">&#9664;</button>';
-  html += '<span>' + months[calMonth] + ' de ' + calYear + '</span>';
-  html += '<button class="cal-nav" onclick="calNavMonth(1)">&#9654;</button>';
-  html += '</div>';
 
-  html += '<div class="cal-weekdays">';
-  for (var w = 0; w < 7; w++) {
-    html += '<div class="cal-weekday">' + weekdays[w] + '</div>';
-  }
-  html += '</div>';
-
-  html += '<div class="cal-days">';
-  for (var e = 0; e < firstDay; e++) {
-    html += '<div class="cal-day empty"></div>';
-  }
-  for (var d = 1; d <= daysInMonth; d++) {
-    var dateObj = new Date(calYear, calMonth, d);
-    var iso = toISO(dateObj);
-    var isToday = dateObj.getTime() === hoy.getTime();
-    var hasGames = fechasConJuegos[iso];
-    var isMundial = dateObj >= MUNDIAL_START && dateObj <= MUNDIAL_END;
-    var isSelected = iso === selectedFutbolFecha;
-    var isPast = dateObj < hoy && !isToday;
-
-    var classes = ['cal-day'];
-    if (isToday) classes.push('today');
-    if (hasGames) classes.push('has-games');
-    if (isMundial && !hasGames) classes.push('mundial');
-    if (isSelected) classes.push('selected');
-    if (!hasGames && !isMundial && isPast) classes.push('disabled');
-
-    var onclick = hasGames ? ' onclick="selectFutbolFecha(\'' + iso + '\')"' : '';
-    if (isMundial && !hasGames) {
-      onclick = ' onclick="selectFutbolFecha(\'' + iso + '\')"';
+  if (!calExpanded) {
+    html += '<div onclick="calToggle()" style="cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 12px;background:#1a2744;border-radius:8px;">';
+    html += '<span style="font-size:22px">&#128197;</span>';
+    html += '<span style="color:#e1e8ed;font-size:14px;font-weight:600">' + displayText + badge + '</span>';
+    html += '<span style="color:#6b7280;font-size:11px;margin-left:4px">&#9660;</span>';
+    html += '</div>';
+  } else {
+    html += '<div class="cal-header">';
+    html += '<button class="cal-nav" onclick="calNavMonth(-1)">&#9664;</button>';
+    html += '<span>' + months[calMonth] + ' de ' + calYear + '</span>';
+    html += '<button class="cal-nav" onclick="calNavMonth(1)">&#9654;</button>';
+    html += '</div>';
+    html += '<div class="cal-weekdays">';
+    for (var w = 0; w < 7; w++) html += '<div class="cal-weekday">' + weekdays[w] + '</div>';
+    html += '</div>';
+    html += '<div class="cal-days">';
+    var firstDay = new Date(calYear, calMonth, 1).getDay();
+    var daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+    for (var e = 0; e < firstDay; e++) html += '<div class="cal-day empty"></div>';
+    for (var d = 1; d <= daysInMonth; d++) {
+      var dateObj = new Date(calYear, calMonth, d);
+      var iso = toISO(dateObj);
+      var isToday = dateObj.getTime() === hoy.getTime();
+      var hasGames = fechasConJuegos[iso];
+      var isMundial = dateObj >= MUNDIAL_START && dateObj <= MUNDIAL_END;
+      var isSelected = iso === selectedFutbolFecha;
+      var classes = ['cal-day'];
+      if (isToday) classes.push('today');
+      if (hasGames) classes.push('has-games');
+      if (isMundial && !hasGames) classes.push('mundial');
+      if (isSelected) classes.push('selected');
+      var onclick = (hasGames || isMundial) ? ' onclick="selectFutbolFecha(\'' + iso + '\')"' : '';
+      html += '<div class="' + classes.join(' ') + '"' + onclick + '>' + d + '</div>';
     }
-
-    html += '<div class="' + classes.join(' ') + '"' + onclick + '>' + d + '</div>';
+    html += '</div>';
+    html += '<div onclick="calToggle()" style="cursor:pointer;text-align:center;padding:6px;color:#6b7280;font-size:11px;border-top:1px solid #2a3040;margin-top:6px">&#9650; Cerrar</div>';
   }
-  html += '</div></div>';
+  html += '</div>';
   container.innerHTML = html;
 }
 
 function toISO(d) {
   return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+
+function calToggle() {
+  calExpanded = !calExpanded;
+  renderFutbolDateTabs();
 }
 
 function calNavMonth(dir) {
@@ -1163,6 +1170,10 @@ function calNavMonth(dir) {
 
 function selectFutbolFecha(fecha) {
   selectedFutbolFecha = fecha;
+  var d = new Date(fecha + 'T00:00:00');
+  calMonth = d.getMonth();
+  calYear = d.getFullYear();
+  calExpanded = false;
   renderFutbolDateTabs();
   renderFutbolGames();
 }
