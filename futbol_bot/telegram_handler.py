@@ -95,6 +95,8 @@ def _responder_futbol(chat_id: str):
                 lineas.append(f"🎯 {r['senal_ah0']} ({r['confianza_ah0']})")
             if r["senal_ou25"] != "NO_APOSTAR":
                 lineas.append(f"📈 {r['senal_ou25']} ({r['confianza_ou25']})")
+            if r.get("senal_corners", "NO_APOSTAR") != "NO_APOSTAR":
+                lineas.append(f"🚩 {r['senal_corners']} ({r['confianza_corners']})")
         bot.enviar_mensaje("\n".join(lineas), chat_id=chat_id)
     except Exception as e:
         logger.error(f"Error respondiendo /futbol: {e}")

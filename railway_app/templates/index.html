@@ -253,6 +253,7 @@
   }
   .futbol-signal .senal-tag.ah0 { background: #1a3a5c; color: #60a5fa; }
   .futbol-signal .senal-tag.ou25 { background: #3a1a3a; color: #f472b6; }
+  .futbol-signal .senal-tag.corners { background: #1a3a2a; color: #f59e0b; }
   .futbol-signal .senal-tag.no-apostar { background: #2a2030; color: #71767b; }
   .futbol-signal .confianza { font-size: 10px; margin-left: 4px; }
   .futbol-signal .confianza.alta { color: #00ba7c; }
@@ -269,6 +270,15 @@
   .futbol-stat-value { color: #00ba7c; font-weight: 600; }
   .futbol-stat-sub { color: #8b98a5; font-size: 11px; margin-left: 6px; }
   .futbol-empty { color: #71767b; text-align: center; padding: 16px; font-size: 13px; }
+  .futbol-liga-dropdown { position: relative; min-width: 180px; }
+  .futbol-liga-trigger { background: #1a2030; color: #e1e8ed; border: 1px solid #3a4550; border-radius: 8px; padding: 7px 28px 7px 10px; font-size: 13px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; }
+  .futbol-liga-trigger::after { content: '\u25BC'; font-size: 9px; color: #71767b; position: absolute; right: 10px; }
+  .futbol-liga-menu { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #1a2030; border: 1px solid #3a4550; border-radius: 8px; margin-top: 4px; max-height: 280px; overflow-y: auto; z-index: 999; }
+  .futbol-liga-menu.open { display: block; }
+  .futbol-liga-option { padding: 8px 10px; font-size: 13px; cursor: pointer; color: #e1e8ed; }
+  .futbol-liga-option:hover { background: #2a3340; }
+  .futbol-liga-option.has-games::before { content: '\u25CF'; color: #10b981; margin-right: 6px; font-size: 10px; }
+  .futbol-liga-option.active { background: #10b981; color: #fff; }
 
   .futbol-game-wrapper { margin-bottom: 0; }
   .futbol-game-row { cursor: pointer; transition: background 0.15s; border-radius: 6px; display: grid; grid-template-columns: auto 1fr auto auto; gap: 6px; align-items: center; padding: 6px 0; border-bottom: 1px solid #2a3040; font-size: 12px; }
@@ -374,13 +384,13 @@
   <div class="card">
     <div class="card-title">⚽ Partidos de Fútbol - Asian Handicap</div>
     <div class="futbol-filter-row">
-      <select id="futbol-liga-select" onchange="selectFutbolLiga(this.value)" style="background:#1a2030;color:#e1e8ed;border:1px solid #3a4550;border-radius:8px;padding:6px 10px;font-size:13px;cursor:pointer;min-width:140px;">
-      </select>
+      <div id="futbol-liga-select" class="futbol-liga-dropdown"></div>
     </div>
     <div class="futbol-filter-row">
       <button class="futbol-filter-btn active" onclick="selectFutbolSenal('todas')">Todas</button>
       <button class="futbol-filter-btn" onclick="selectFutbolSenal('ah0')">AH0</button>
       <button class="futbol-filter-btn" onclick="selectFutbolSenal('ou25')">Over/Under 2.5</button>
+      <button class="futbol-filter-btn" onclick="selectFutbolSenal('corners')">Corners</button>
     </div>
     <div id="futbol-date-tabs" class="date-tabs" style="margin:8px 0"></div>
     <div id="futbol-games-list"></div>
@@ -1029,8 +1039,6 @@ function fetchSoccerData() {
 
 function selectFutbolLiga(liga) {
   selectedFutbolLiga = liga;
-  var sel = document.getElementById('futbol-liga-select');
-  if (sel) sel.value = liga;
   renderFutbol();
 }
 
@@ -1083,8 +1091,8 @@ var LIGA_OPTIONS = [
 ];
 
 function renderFutbolLigaSelect() {
-  var sel = document.getElementById('futbol-liga-select');
-  if (!sel) return;
+  var container = document.getElementById('futbol-liga-select');
+  if (!container) return;
   var games = (soccerData && soccerData.games) || [];
   var ligasConJuegos = {};
   for (var i = 0; i < games.length; i++) {
@@ -1092,15 +1100,34 @@ function renderFutbolLigaSelect() {
       ligasConJuegos[games[i].liga_key] = true;
     }
   }
-  var html = '';
+  var selectedLabel = '\uD83C\uDF0D Todas las ligas';
+  for (var k = 0; k < LIGA_OPTIONS.length; k++) {
+    if (LIGA_OPTIONS[k].value === selectedFutbolLiga) { selectedLabel = LIGA_OPTIONS[k].label; break; }
+  }
+  var html = '<div class="futbol-liga-trigger" onclick="toggleLigaMenu()">' + selectedLabel + '</div>';
+  html += '<div class="futbol-liga-menu" id="ligaMenu">';
   for (var j = 0; j < LIGA_OPTIONS.length; j++) {
     var opt = LIGA_OPTIONS[j];
-    var dot = (opt.value !== 'todas' && ligasConJuegos[opt.value]) ? ' \u25CF' : '';
-    var selected = opt.value === selectedFutbolLiga ? ' selected' : '';
-    html += '<option value="' + opt.value + '"' + selected + '>' + opt.label + dot + '</option>';
+    var hasGames = opt.value !== 'todas' && ligasConJuegos[opt.value];
+    var cls = 'futbol-liga-option';
+    if (hasGames) cls += ' has-games';
+    if (opt.value === selectedFutbolLiga) cls += ' active';
+    html += '<div class="' + cls + '" onclick="selectFutbolLiga(\'' + opt.value + '\')">' + opt.label + '</div>';
   }
-  sel.innerHTML = html;
+  html += '</div>';
+  container.innerHTML = html;
 }
+
+function toggleLigaMenu() {
+  var menu = document.getElementById('ligaMenu');
+  if (menu) menu.classList.toggle('open');
+}
+
+document.addEventListener('click', function(e) {
+  var dd = document.getElementById('futbol-liga-select');
+  var menu = document.getElementById('ligaMenu');
+  if (dd && menu && !dd.contains(e.target)) menu.classList.remove('open');
+});
 
 var calMonth = new Date().getMonth();
 var calYear = new Date().getFullYear();
@@ -1197,6 +1224,7 @@ function selectFutbolFecha(fecha) {
   calMonth = d.getMonth();
   calYear = d.getFullYear();
   calExpanded = false;
+  renderFutbolLigaSelect();
   renderFutbolDateTabs();
   renderFutbolGames();
 }
@@ -1218,6 +1246,7 @@ function renderFutbolGames() {
     if (selectedFutbolLiga !== 'todas' && g.liga_key !== selectedFutbolLiga) return false;
     if (selectedFutbolSenal === 'ah0') return g.senal_ah0 && g.senal_ah0 !== 'NO_APOSTAR';
     if (selectedFutbolSenal === 'ou25') return g.senal_ou25 && g.senal_ou25 !== 'NO_APOSTAR';
+    if (selectedFutbolSenal === 'corners') return g.senal_corners && g.senal_corners !== 'NO_APOSTAR';
     return true;
   });
   if (filtered.length === 0) {
@@ -1255,6 +1284,10 @@ function renderFutbolGames() {
       var cls = g.confianza_ou25 === 'ALTA' ? 'alta' : (g.confianza_ou25 === 'MEDIA' ? 'media' : 'baja');
       senalHtml += '<span class="senal-tag ou25">O/U 2.5</span><span class="confianza ' + cls + '">' + g.confianza_ou25 + '</span>';
     }
+    if (g.senal_corners && g.senal_corners !== 'NO_APOSTAR') {
+      var cls = g.confianza_corners === 'ALTA' ? 'alta' : (g.confianza_corners === 'MEDIA' ? 'media' : 'baja');
+      senalHtml += '<span class="senal-tag corners">CORN</span><span class="confianza ' + cls + '">' + g.confianza_corners + '</span>';
+    }
     if (!senalHtml) {
       senalHtml = '<span class="senal-tag no-apostar">No apostar</span>';
     }
@@ -1276,6 +1309,8 @@ function renderFutbolGames() {
       + '<div class="futbol-detail-row"><span class="futbol-detail-label">📊 Resultado AH0</span><span class="futbol-detail-value futbol-detail-' + g.resultado_ah0 + '">' + (g.resultado_ah0 || 'pendiente') + '</span></div>'
       + '<div class="futbol-detail-row"><span class="futbol-detail-label">📈 Señal O/U 2.5</span><span class="futbol-detail-value">' + (g.senal_ou25 !== 'NO_APOSTAR' ? g.senal_ou25 : '—') + '</span></div>'
       + '<div class="futbol-detail-row"><span class="futbol-detail-label">📊 Resultado O/U 2.5</span><span class="futbol-detail-value futbol-detail-' + g.resultado_ou25 + '">' + (g.resultado_ou25 || 'pendiente') + '</span></div>'
+      + '<div class="futbol-detail-row"><span class="futbol-detail-label">🚩 Señal Corners</span><span class="futbol-detail-value">' + (g.senal_corners && g.senal_corners !== 'NO_APOSTAR' ? g.senal_corners : '—') + '</span></div>'
+      + '<div class="futbol-detail-row"><span class="futbol-detail-label">📐 xCorners</span><span class="futbol-detail-value">' + (g.xcorner_total || '—') + '</span></div>'
       + '</div>'
       + '</div>';
   }

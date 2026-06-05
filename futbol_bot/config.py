@@ -59,6 +59,31 @@ UMBRAL_UNDER_25  = 2.2
 UMBRAL_OVER_ALTA  = 3.2
 UMBRAL_UNDER_ALTA = 1.8
 
+UMBRAL_PROB_OVER_POISSON = 65.0
+
+CORNER_LEAGUE_AVG = {
+    "PREMIER_LEAGUE": {"centros": 15.2, "tiros": 12.4, "bloqueos": 3.1, "despejes": 18.5, "corners_por_equipo": 5.1},
+    "LA_LIGA": {"centros": 14.8, "tiros": 11.9, "bloqueos": 3.4, "despejes": 19.2, "corners_por_equipo": 4.9},
+    "BUNDESLIGA": {"centros": 15.5, "tiros": 13.1, "bloqueos": 2.9, "despejes": 17.8, "corners_por_equipo": 5.0},
+    "SERIE_A": {"centros": 14.1, "tiros": 11.5, "bloqueos": 3.6, "despejes": 20.1, "corners_por_equipo": 4.7},
+    "LIGUE_1": {"centros": 14.5, "tiros": 11.8, "bloqueos": 3.3, "despejes": 19.0, "corners_por_equipo": 4.8},
+    "LIGA_MX": {"centros": 14.0, "tiros": 11.2, "bloqueos": 3.5, "despejes": 19.5, "corners_por_equipo": 4.6},
+    "MLS": {"centros": 14.2, "tiros": 11.0, "bloqueos": 3.2, "despejes": 18.8, "corners_por_equipo": 4.5},
+    "BRASILEIRAO": {"centros": 13.8, "tiros": 11.5, "bloqueos": 3.4, "despejes": 19.8, "corners_por_equipo": 4.7},
+    "EREDIVISIE": {"centros": 16.0, "tiros": 13.5, "bloqueos": 2.8, "despejes": 17.0, "corners_por_equipo": 5.3},
+    "PRIMEIRA_LIGA": {"centros": 14.3, "tiros": 11.8, "bloqueos": 3.3, "despejes": 18.9, "corners_por_equipo": 4.7},
+    "SUPER_LIG": {"centros": 13.5, "tiros": 11.0, "bloqueos": 3.5, "despejes": 20.0, "corners_por_equipo": 4.5},
+    "CHAMPIONSHIP": {"centros": 15.0, "tiros": 12.0, "bloqueos": 3.2, "despejes": 19.0, "corners_por_equipo": 5.0},
+    "PRIMERA_DIVISION_ARG": {"centros": 13.5, "tiros": 10.8, "bloqueos": 3.6, "despejes": 20.2, "corners_por_equipo": 4.4},
+    "MUNDIAL": {"centros": 14.5, "tiros": 11.5, "bloqueos": 3.3, "despejes": 19.0, "corners_por_equipo": 4.8},
+    "DEFAULT": {"centros": 14.5, "tiros": 11.5, "bloqueos": 3.3, "despejes": 19.0, "corners_por_equipo": 4.8},
+}
+
+UMBRAL_OVER_45_CORNERS = 5.5
+UMBRAL_OVER_55_CORNERS = 6.2
+UMBRAL_CENTROS_ALTO = 18.0
+UMBRAL_BLOQUEOS_ALTO = 4.5
+
 REGRESION_UMBRAL = 1.3
 
 PARTIDOS_RECIENTES = 5

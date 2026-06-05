@@ -24,6 +24,19 @@ def tarea_scrape():
     df = actualizar_base_datos_soccer()
     if not df.empty:
         logger.info(f"Scrape OK: {len(df)} equipos")
+        logger.info("Scraping corners...")
+        from scraper_corners import scrape_all_corners, curar_datos_para_corners
+        for liga in df["liga"].unique():
+            liga_teams = df[df["liga"] == liga]["equipo"].tolist()
+            if liga_teams:
+                corners_data = scrape_all_corners(liga, liga_teams)
+                if corners_data:
+                    from config import CORNER_LEAGUE_AVG
+                    promedios = CORNER_LEAGUE_AVG.get(liga, CORNER_LEAGUE_AVG["DEFAULT"])
+                    for team in corners_data:
+                        corners_data[team] = curar_datos_para_corners(corners_data[team], promedios)
+                    dm.actualizar_stats_con_corners(corners_data, liga)
+                    logger.info(f"  {liga}: {len(corners_data)} equipos corners actualizados")
         generar_soccer_data_json()
     else:
         logger.warning("Scrape devolvió vacío")

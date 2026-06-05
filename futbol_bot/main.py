@@ -48,7 +48,20 @@ def modo_scrape():
     df = actualizar_base_datos_soccer()
     if not df.empty:
         equipos = df["equipo"].tolist()
-        print(f"✅ Datos actualizados: {len(equipos)} equipos en {df['liga'].nunique()} ligas")
+        print(f"✅ Datos Understat actualizados: {len(equipos)} equipos en {df['liga'].nunique()} ligas")
+        print("\n📊 Scraping corners de FBref/FotMob...")
+        from scraper_corners import scrape_all_corners, curar_datos_para_corners
+        from config import CORNER_LEAGUE_AVG
+        for liga in df["liga"].unique():
+            liga_teams = df[df["liga"] == liga]["equipo"].tolist()
+            if liga_teams:
+                corners_data = scrape_all_corners(liga, liga_teams)
+                if corners_data:
+                    promedios = CORNER_LEAGUE_AVG.get(liga, CORNER_LEAGUE_AVG["DEFAULT"])
+                    for team in corners_data:
+                        corners_data[team] = curar_datos_para_corners(corners_data[team], promedios)
+                    dm.actualizar_stats_con_corners(corners_data, liga)
+                    print(f"  ✅ {liga}: {len(corners_data)} equipos con corners")
         generar_soccer_data_json()
     else:
         print("❌ No se pudieron obtener datos")
@@ -73,10 +86,12 @@ def modo_ahora():
         analyses.append(a)
         conf_ah0 = f"{a.confianza_ah0:>5}" if a.senal_ah0 != "NO_APOSTAR" else " —  "
         conf_ou25 = f"{a.confianza_ou25:>5}" if a.senal_ou25 != "NO_APOSTAR" else " —  "
+        conf_corners = f"{a.confianza_corners:>5}" if a.senal_corners != "NO_APOSTAR" else " —  "
         print(f"  {a.equipo_local} vs {a.equipo_visitante}")
         print(f"     xG: {a.proyeccion_local} - {a.proyeccion_visitante} | diff: {a.diff_xg:+.2f}")
         print(f"     AH0: {a.senal_ah0} ({conf_ah0})")
         print(f"     O/U: {a.senal_ou25} ({conf_ou25})")
+        print(f"     Corners: {a.senal_corners} ({conf_corners})")
         print()
     if analyses:
         dm.guardar_analisis(analyses)

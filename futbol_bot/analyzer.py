@@ -1,4 +1,5 @@
 import logging
+import math
 from dataclasses import dataclass, field
 from datetime import date, datetime
 from typing import Optional
@@ -10,6 +11,65 @@ import config
 import data_manager as dm
 
 logger = logging.getLogger(__name__)
+
+
+def _poisson_prob(lam: float, k: int) -> float:
+    return (lam ** k) * math.exp(-lam) / math.factorial(k)
+
+
+def _prob_over_25(lam: float) -> float:
+    p_under = _poisson_prob(lam, 0) + _poisson_prob(lam, 1) + _poisson_prob(lam, 2)
+    return round((1 - p_under) * 100, 1)
+
+
+def analizar_corners(stats_local: TeamSoccerStats, stats_visitante: TeamSoccerStats, liga: str) -> tuple:
+    prom = config.CORNER_LEAGUE_AVG.get(liga, config.CORNER_LEAGUE_AVG["DEFAULT"])
+
+    centros_l = stats_local.centros_por_juego if stats_local.centros_por_juego else 0.0
+    tiros_l = stats_local.tiros_por_juego if stats_local.tiros_por_juego else 0.0
+    bloqueos_v = stats_visitante.bloqueos_por_juego if stats_visitante.bloqueos_por_juego else 0.0
+    despejes_v = stats_visitante.despejes_por_juego if stats_visitante.despejes_por_juego else 0.0
+
+    if stats_local.corners_last5:
+        prom_corners_l = _rolling_avg(stats_local.corners_last5)
+    else:
+        prom_corners_l = prom["corners_por_equipo"]
+
+    if stats_visitante.corners_last5:
+        prom_corners_v = _rolling_avg(stats_visitante.corners_last5)
+    else:
+        prom_corners_v = prom["corners_por_equipo"]
+
+    if prom["centros"] > 0 and prom["tiros"] > 0:
+        ipc_ofensivo = ((centros_l / prom["centros"]) * 0.6) + ((tiros_l / prom["tiros"]) * 0.4)
+    else:
+        ipc_ofensivo = 1.0
+
+    if prom["bloqueos"] > 0 and prom["despejes"] > 0:
+        ipc_defensivo = ((bloqueos_v / prom["bloqueos"]) * 0.7) + ((despejes_v / prom["despejes"]) * 0.3)
+    else:
+        ipc_defensivo = 1.0
+
+    xcorner_local = prom["corners_por_equipo"] * ipc_ofensivo * ipc_defensivo
+    xcorner_visitante = prom["corners_por_equipo"] * ipc_defensivo
+    xcorner_total = xcorner_local + xcorner_visitante
+
+    xcorner_local = round(max(0.5, xcorner_local), 2)
+    xcorner_visitante = round(max(0.5, xcorner_visitante), 2)
+    xcorner_total = round(xcorner_total, 2)
+
+    senal = "NO_APOSTAR"
+    confianza = "BAJA"
+    if centros_l >= config.UMBRAL_CENTROS_ALTO and bloqueos_v >= config.UMBRAL_BLOQUEOS_ALTO and xcorner_local >= config.UMBRAL_OVER_55_CORNERS:
+        senal = f"Over 4.5 Corners - {stats_local.team_name}"
+        confianza = "ALTA"
+    elif xcorner_local >= config.UMBRAL_OVER_45_CORNERS:
+        senal = f"Over 4.5 Corners - {stats_local.team_name}"
+        confianza = "MEDIA"
+
+    logger.debug(f"Corners: xC_L={xcorner_local} xC_V={xcorner_visitante} | IPC_O={ipc_ofensivo:.2f} IPC_D={ipc_defensivo:.2f}")
+
+    return xcorner_local, xcorner_visitante, xcorner_total, senal, confianza
 
 ESPN_LEAGUES = {
     "PREMIER_LEAGUE": "eng.1",
@@ -63,6 +123,11 @@ class TeamSoccerStats:
     ppda: float = 15.0
     final_third_entries: float = 0.0
     bajas_clave: int = 0
+    centros_por_juego: float = 0.0
+    tiros_por_juego: float = 0.0
+    bloqueos_por_juego: float = 0.0
+    despejes_por_juego: float = 0.0
+    corners_last5: list = field(default_factory=list)
     forma_reciente: list = field(default_factory=list)
     xg_last5: list = field(default_factory=list)
     xga_last5: list = field(default_factory=list)
@@ -94,6 +159,11 @@ class MatchAnalysis:
     confianza_ah0: str
     senal_ou25: str
     confianza_ou25: str
+    xcorner_local: float = 0.0
+    xcorner_visitante: float = 0.0
+    xcorner_total: float = 0.0
+    senal_corners: str = "NO_APOSTAR"
+    confianza_corners: str = "BAJA"
     fecha_partido: str = ""
     hora_partido: str = ""
 
@@ -181,7 +251,10 @@ def analizar_partido_soccer(match: SoccerMatch) -> MatchAnalysis:
 
     senal_ou25 = "NO_APOSTAR"
     confianza_ou25 = "BAJA"
-    if xg_total >= config.UMBRAL_OVER_25:
+
+    prob_over = _prob_over_25(xg_total)
+
+    if xg_total >= config.UMBRAL_OVER_25 and prob_over >= config.UMBRAL_PROB_OVER_POISSON:
         senal_ou25 = "Over 2.5"
         confianza_ou25 = "ALTA" if xg_total >= config.UMBRAL_OVER_ALTA else "MEDIA"
     elif xg_total <= config.UMBRAL_UNDER_25:
@@ -195,7 +268,11 @@ def analizar_partido_soccer(match: SoccerMatch) -> MatchAnalysis:
         confianza_ou25 = "MEDIA"
         logger.debug(f"SV alto ({sv}) redujo confianza O/U a MEDIA")
 
-    logger.info(f"SV={sv} | xG_home={exp_goals_home} xG_away={exp_goals_away} | AH0={senal_ah0} O/U={senal_ou25}")
+    logger.info(f"SV={sv} | xG_home={exp_goals_home} xG_away={exp_goals_away} | AH0={senal_ah0} O/U={senal_ou25} | prob_over={prob_over}%")
+
+    xcorner_local, xcorner_visitante, xcorner_total, senal_corners, confianza_corners = analizar_corners(
+        match.local, match.visitante, match.liga
+    )
 
     return MatchAnalysis(
         id_partido=match.id_partido,
@@ -210,6 +287,11 @@ def analizar_partido_soccer(match: SoccerMatch) -> MatchAnalysis:
         confianza_ah0=confianza_ah0,
         senal_ou25=senal_ou25,
         confianza_ou25=confianza_ou25,
+        xcorner_local=xcorner_local,
+        xcorner_visitante=xcorner_visitante,
+        xcorner_total=xcorner_total,
+        senal_corners=senal_corners,
+        confianza_corners=confianza_corners,
         fecha_partido=match.fecha_partido,
         hora_partido=match.hora_partido,
     )
@@ -507,8 +589,8 @@ def generar_partidos_desde_cache(df_stats: pd.DataFrame) -> list[SoccerMatch]:
         def _default_stats(name, liga):
             return TeamSoccerStats(
                 team_name=name, liga=liga,
-                xg_for_90=1.3, xg_against_90=1.3,
-                goles_reales_90=1.3, ppda=12.0,
+                xg_for_90=0.0, xg_against_90=0.0,
+                goles_reales_90=0.0, ppda=12.0,
                 final_third_entries=30.0,
             )
 
@@ -520,6 +602,11 @@ def generar_partidos_desde_cache(df_stats: pd.DataFrame) -> list[SoccerMatch]:
                 goles_reales_90=float(local_row["goles_reales_90"]),
                 ppda=float(local_row.get("ppda", 15.0)),
                 final_third_entries=float(local_row.get("final_third_por_90", 0.0)),
+                centros_por_juego=float(local_row.get("centros_por_juego", 0.0)),
+                tiros_por_juego=float(local_row.get("tiros_por_juego", 0.0)),
+                bloqueos_por_juego=float(local_row.get("bloqueos_por_juego", 0.0)),
+                despejes_por_juego=float(local_row.get("despejes_por_juego", 0.0)),
+                corners_last5=local_row.get("corners_last5", []),
                 xg_last5=local_row.get("xg_last5", []),
                 xga_last5=local_row.get("xga_last5", []),
                 ppda_last5=local_row.get("ppda_last5", []),
@@ -536,6 +623,11 @@ def generar_partidos_desde_cache(df_stats: pd.DataFrame) -> list[SoccerMatch]:
                 goles_reales_90=float(visit_row["goles_reales_90"]),
                 ppda=float(visit_row.get("ppda", 15.0)),
                 final_third_entries=float(visit_row.get("final_third_por_90", 0.0)),
+                centros_por_juego=float(visit_row.get("centros_por_juego", 0.0)),
+                tiros_por_juego=float(visit_row.get("tiros_por_juego", 0.0)),
+                bloqueos_por_juego=float(visit_row.get("bloqueos_por_juego", 0.0)),
+                despejes_por_juego=float(visit_row.get("despejes_por_juego", 0.0)),
+                corners_last5=visit_row.get("corners_last5", []),
                 xg_last5=visit_row.get("xg_last5", []),
                 xga_last5=visit_row.get("xga_last5", []),
                 ppda_last5=visit_row.get("ppda_last5", []),

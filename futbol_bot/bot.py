@@ -85,6 +85,9 @@ def enviar_analisis_dia(analyses):
                 lineas.append(f"🎯 AH0: {a.senal_ah0} {conf_ah0}")
             if a.senal_ou25 != "NO_APOSTAR":
                 lineas.append(f"📈 O/U: {a.senal_ou25} {conf_ou25}")
+            if a.senal_corners != "NO_APOSTAR":
+                conf_corners = f"({a.confianza_corners})" if a.confianza_corners != "BAJA" else ""
+                lineas.append(f"🚩 Corners: {a.senal_corners} {conf_corners}")
 
     lineas.append(f"\n═" * 35)
     lineas.append("📚 Análisis académico basado en datos públicos.")

@@ -17,6 +17,8 @@ CSV_COLUMNAS = [
     "xg_local", "xg_visit", "xg_total", "diff_xg",
     "senal_ah0", "confianza_ah0",
     "senal_ou25", "confianza_ou25",
+    "xcorner_local", "xcorner_visitante", "xcorner_total",
+    "senal_corners", "confianza_corners",
     "resultado", "resultado_ah0", "resultado_ou25",
     "marcador_final", "fecha_actualizacion",
     "fecha_partido", "hora_partido",
@@ -64,6 +66,11 @@ def guardar_analisis(analisis: list):
                     row["confianza_ah0"] = a.confianza_ah0
                     row["senal_ou25"] = a.senal_ou25
                     row["confianza_ou25"] = a.confianza_ou25
+                    row["xcorner_local"] = a.xcorner_local
+                    row["xcorner_visitante"] = a.xcorner_visitante
+                    row["xcorner_total"] = a.xcorner_total
+                    row["senal_corners"] = a.senal_corners
+                    row["confianza_corners"] = a.confianza_corners
                     row["fecha_actualizacion"] = now
                 if rid not in ids_existentes:
                     ids_existentes.add(rid)
@@ -94,6 +101,11 @@ def guardar_analisis(analisis: list):
             "confianza_ah0": a.confianza_ah0,
             "senal_ou25": a.senal_ou25,
             "confianza_ou25": a.confianza_ou25,
+            "xcorner_local": a.xcorner_local,
+            "xcorner_visitante": a.xcorner_visitante,
+            "xcorner_total": a.xcorner_total,
+            "senal_corners": a.senal_corners,
+            "confianza_corners": a.confianza_corners,
             "resultado": "pendiente",
             "resultado_ah0": "pendiente",
             "resultado_ou25": "pendiente",
@@ -110,27 +122,37 @@ def guardar_analisis(analisis: list):
 
 
 def guardar_mundial_csv(mundial_games: list):
-    """Agrega partidos del Mundial al CSV si no existen."""
+    """Agrega o actualiza partidos del Mundial en el CSV."""
     if not mundial_games:
         return
     inicializar_csv()
     now = datetime.now().isoformat()
-    existentes = set()
+    existentes = {}
     rows = []
+    fieldnames = CSV_COLUMNAS
     try:
         with open(config.CSV_SOCCER_PATH, newline="", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             fieldnames = reader.fieldnames or CSV_COLUMNAS
             for row in reader:
-                existentes.add(row.get("id_partido", ""))
+                existentes[row.get("id_partido", "")] = len(rows)
                 rows.append(row)
     except Exception:
-        fieldnames = CSV_COLUMNAS
+        pass
 
     added = 0
+    updated = 0
     for g in mundial_games:
         pk = str(game_pk("MUNDIAL", g["local"], g["visitante"], g["fecha_partido"]))
         if pk in existentes:
+            idx = existentes[pk]
+            if rows[idx].get("xg_local") == "1.3" or rows[idx].get("xg_total") == "2.6":
+                rows[idx]["xg_local"] = g.get("xg_local", 0.0)
+                rows[idx]["xg_visit"] = g.get("xg_visit", 0.0)
+                rows[idx]["xg_total"] = g.get("xg_total", 0.0)
+                rows[idx]["diff_xg"] = g.get("diff_xg", 0.0)
+                rows[idx]["fecha_actualizacion"] = now
+                updated += 1
             continue
         rows.append({
             "id_partido": pk,
@@ -138,9 +160,9 @@ def guardar_mundial_csv(mundial_games: list):
             "fecha_hora": now,
             "local": g["local"],
             "visitante": g["visitante"],
-            "xg_local": g.get("xg_local", 1.3),
-            "xg_visit": g.get("xg_visit", 1.3),
-            "xg_total": g.get("xg_total", 2.6),
+            "xg_local": g.get("xg_local", 0.0),
+            "xg_visit": g.get("xg_visit", 0.0),
+            "xg_total": g.get("xg_total", 0.0),
             "diff_xg": g.get("diff_xg", 0.0),
             "senal_ah0": g.get("senal_ah0", "NO_APOSTAR"),
             "confianza_ah0": g.get("confianza_ah0", "BAJA"),
@@ -156,12 +178,12 @@ def guardar_mundial_csv(mundial_games: list):
         })
         added += 1
 
-    if added:
+    if added or updated:
         with open(config.CSV_SOCCER_PATH, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(rows)
-        logger.info(f"Mundial: {added} partidos nuevos guardados en CSV")
+        logger.info(f"Mundial: {added} nuevos, {updated} actualizados en CSV")
 
 
 def actualizar_resultados(id_partido: str, marcador: str, resultado_ah0: str, resultado_ou25: str) -> bool:
@@ -195,11 +217,14 @@ def cargar_stats_cache() -> pd.DataFrame:
     if not os.path.exists(config.CACHE_STATS_PATH):
         return pd.DataFrame()
     df = pd.read_csv(config.CACHE_STATS_PATH)
-    for col in ("xg_last5", "xga_last5", "ppda_last5"):
+    for col in ("xg_last5", "xga_last5", "ppda_last5", "corners_last5"):
         if col in df.columns:
             df[col] = df[col].apply(_parse_json_list)
         else:
             df[col] = [[] for _ in range(len(df))]
+    for col in ("centros_por_juego", "tiros_por_juego", "bloqueos_por_juego", "despejes_por_juego"):
+        if col not in df.columns:
+            df[col] = 0.0
     return df
 
 
@@ -213,6 +238,27 @@ def _parse_json_list(val):
         return parsed if isinstance(parsed, list) else []
     except (json.JSONDecodeError, TypeError):
         return []
+
+
+def actualizar_stats_con_corners(corners_data: dict, liga: str):
+    if not os.path.exists(config.CACHE_STATS_PATH):
+        return
+    df = pd.read_csv(config.CACHE_STATS_PATH)
+    updated = 0
+    for team_name, stats in corners_data.items():
+        mask = (df["equipo"].str.lower() == team_name.lower()) & (df["liga"] == liga)
+        if not mask.any():
+            mask = df["equipo"].str.contains(team_name, case=False)
+        if mask.any():
+            idx = mask.idxmax()
+            df.at[idx, "centros_por_juego"] = stats.get("centros", 0.0)
+            df.at[idx, "tiros_por_juego"] = stats.get("tiros", 0.0)
+            df.at[idx, "bloqueos_por_juego"] = stats.get("bloqueos", 0.0)
+            df.at[idx, "despejes_por_juego"] = stats.get("despejes", 0.0)
+            updated += 1
+    if updated > 0:
+        df.to_csv(config.CACHE_STATS_PATH, index=False)
+        logger.info(f"Stats cache: {updated} equipos actualizados con corners para {liga}")
 
 
 def obtener_stats_equipo(df: pd.DataFrame, nombre_equipo: str, liga: str) -> dict:
@@ -236,12 +282,13 @@ def obtener_estadisticas_soccer() -> dict:
         "total": 0, "acertados": 0, "fallidos": 0, "win_rate": 0,
         "ah0_total": 0, "ah0_acertados": 0, "ah0_fallidos": 0, "ah0_devueltos": 0, "ah0_win_rate": 0,
         "ou25_total": 0, "ou25_acertados": 0, "ou25_fallidos": 0, "ou25_devueltos": 0, "ou25_win_rate": 0,
+        "corners_total": 0, "corners_acertados": 0, "corners_fallidos": 0, "corners_win_rate": 0,
     }
     ligas = ["premier", "laliga", "bundesliga", "seriea", "ligue1", "ligamx"]
     liga_map = {"PREMIER_LEAGUE": "premier", "LA_LIGA": "laliga", "BUNDESLIGA": "bundesliga",
                 "SERIE_A": "seriea", "LIGUE_1": "ligue1", "LIGA_MX": "ligamx"}
     for l in ligas:
-        for m in ["ah0", "ou25"]:
+        for m in ["ah0", "ou25", "corners"]:
             stats[f"{l}_{m}_total"] = 0
             stats[f"{l}_{m}_acertados"] = 0
             stats[f"{l}_{m}_fallidos"] = 0
@@ -296,16 +343,31 @@ def obtener_estadisticas_soccer() -> dict:
                 elif res_ou25 == "devuelto":
                     stats[f"{liga_key}_ou25_devueltos"] += 1
 
-    stats["total"] = stats["ah0_total"] + stats["ou25_total"]
-    stats["acertados"] = stats["ah0_acertados"] + stats["ou25_acertados"]
-    stats["fallidos"] = stats["ah0_fallidos"] + stats["ou25_fallidos"]
+        res_corners = row.get("resultado_corners", "pendiente")
+        if res_corners != "pendiente" and res_corners != "no_apostar":
+            stats["corners_total"] += 1
+            if res_corners == "acertado":
+                stats["corners_acertados"] += 1
+            elif res_corners == "fallido":
+                stats["corners_fallidos"] += 1
+            if liga_key:
+                stats[f"{liga_key}_corners_total"] += 1
+                if res_corners == "acertado":
+                    stats[f"{liga_key}_corners_acertados"] += 1
+                elif res_corners == "fallido":
+                    stats[f"{liga_key}_corners_fallidos"] += 1
+
+    stats["total"] = stats["ah0_total"] + stats["ou25_total"] + stats["corners_total"]
+    stats["acertados"] = stats["ah0_acertados"] + stats["ou25_acertados"] + stats["corners_acertados"]
+    stats["fallidos"] = stats["ah0_fallidos"] + stats["ou25_fallidos"] + stats["corners_fallidos"]
 
     stats["win_rate"] = _calcular_win_rate(stats["acertados"], stats["total"])
     stats["ah0_win_rate"] = _calcular_win_rate(stats["ah0_acertados"], stats["ah0_acertados"] + stats["ah0_fallidos"])
     stats["ou25_win_rate"] = _calcular_win_rate(stats["ou25_acertados"], stats["ou25_acertados"] + stats["ou25_fallidos"])
+    stats["corners_win_rate"] = _calcular_win_rate(stats["corners_acertados"], stats["corners_acertados"] + stats["corners_fallidos"])
 
     for l in ligas:
-        for m in ["ah0", "ou25"]:
+        for m in ["ah0", "ou25", "corners"]:
             ok = stats[f"{l}_{m}_acertados"]
             fail = stats[f"{l}_{m}_fallidos"]
             stats[f"{l}_{m}_win_rate"] = _calcular_win_rate(ok, ok + fail)
