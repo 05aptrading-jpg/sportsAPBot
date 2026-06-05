@@ -50,21 +50,21 @@ def analizar_corners(stats_local: TeamSoccerStats, stats_visitante: TeamSoccerSt
     else:
         ipc_defensivo = 1.0
 
-    xcorner_local = prom["corners_por_equipo"] * ipc_ofensivo * ipc_defensivo
-    xcorner_visitante = prom["corners_por_equipo"] * ipc_defensivo
+    xcorner_local = prom_corners_l * ipc_ofensivo * ipc_defensivo
+    xcorner_visitante = prom_corners_v * ipc_defensivo
     xcorner_total = xcorner_local + xcorner_visitante
 
-    xcorner_local = round(max(0.5, xcorner_local), 2)
-    xcorner_visitante = round(max(0.5, xcorner_visitante), 2)
+    xcorner_local = round(max(1.0, xcorner_local), 2)
+    xcorner_visitante = round(max(1.0, xcorner_visitante), 2)
     xcorner_total = round(xcorner_total, 2)
 
     senal = "NO_APOSTAR"
     confianza = "BAJA"
-    if centros_l >= config.UMBRAL_CENTROS_ALTO and bloqueos_v >= config.UMBRAL_BLOQUEOS_ALTO and xcorner_local >= config.UMBRAL_OVER_55_CORNERS:
-        senal = f"Over 4.5 Corners - {stats_local.team_name}"
+    if centros_l >= config.UMBRAL_CENTROS_ALTO and bloqueos_v >= config.UMBRAL_BLOQUEOS_ALTO and xcorner_total >= config.UMBRAL_OVER_55_CORNERS:
+        senal = "Over 4.5 Corners"
         confianza = "ALTA"
-    elif xcorner_local >= config.UMBRAL_OVER_45_CORNERS:
-        senal = f"Over 4.5 Corners - {stats_local.team_name}"
+    elif xcorner_total >= config.UMBRAL_OVER_45_CORNERS:
+        senal = "Over 4.5 Corners"
         confianza = "MEDIA"
 
     logger.debug(f"Corners: xC_L={xcorner_local} xC_V={xcorner_visitante} | IPC_O={ipc_ofensivo:.2f} IPC_D={ipc_defensivo:.2f}")
@@ -587,11 +587,16 @@ def generar_partidos_desde_cache(df_stats: pd.DataFrame) -> list[SoccerMatch]:
 
         # Crear stats por defecto si no se encontraron
         def _default_stats(name, liga):
+            prom = config.CORNER_LEAGUE_AVG.get(liga, config.CORNER_LEAGUE_AVG["DEFAULT"])
             return TeamSoccerStats(
                 team_name=name, liga=liga,
                 xg_for_90=0.0, xg_against_90=0.0,
                 goles_reales_90=0.0, ppda=12.0,
                 final_third_entries=30.0,
+                centros_por_juego=prom.get("centros", 14.5),
+                tiros_por_juego=prom.get("tiros", 11.5),
+                bloqueos_por_juego=prom.get("bloqueos", 3.3),
+                despejes_por_juego=prom.get("despejes", 19.0),
             )
 
         if local_row is not None:

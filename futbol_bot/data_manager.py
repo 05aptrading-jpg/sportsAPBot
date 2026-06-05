@@ -19,7 +19,7 @@ CSV_COLUMNAS = [
     "senal_ou25", "confianza_ou25",
     "xcorner_local", "xcorner_visitante", "xcorner_total",
     "senal_corners", "confianza_corners",
-    "resultado", "resultado_ah0", "resultado_ou25",
+    "resultado", "resultado_ah0", "resultado_ou25", "resultado_corners",
     "marcador_final", "fecha_actualizacion",
     "fecha_partido", "hora_partido",
 ]
@@ -186,8 +186,8 @@ def guardar_mundial_csv(mundial_games: list):
         logger.info(f"Mundial: {added} nuevos, {updated} actualizados en CSV")
 
 
-def actualizar_resultados(id_partido: str, marcador: str, resultado_ah0: str, resultado_ou25: str) -> bool:
-    """Actualiza resultado_ah0, resultado_ou25 y marcador de un partido en el CSV."""
+def actualizar_resultados(id_partido: str, marcador: str, resultado_ah0: str, resultado_ou25: str, resultado_corners: str = "pendiente") -> bool:
+    """Actualiza resultado_ah0, resultado_ou25, resultado_corners y marcador de un partido en el CSV."""
     if not os.path.exists(config.CSV_SOCCER_PATH):
         return False
     rows = []
@@ -197,9 +197,11 @@ def actualizar_resultados(id_partido: str, marcador: str, resultado_ah0: str, re
         fieldnames = reader.fieldnames
         for row in reader:
             if row["id_partido"] == id_partido:
-                if row.get("resultado_ah0", "pendiente") == "pendiente" or row.get("resultado_ou25", "pendiente") == "pendiente":
+                if row.get("resultado_ah0", "pendiente") == "pendiente" or row.get("resultado_ou25", "pendiente") == "pendiente" or row.get("resultado_corners", "pendiente") == "pendiente":
                     row["resultado_ah0"] = resultado_ah0
                     row["resultado_ou25"] = resultado_ou25
+                    if resultado_corners != "pendiente":
+                        row["resultado_corners"] = resultado_corners
                     row["marcador_final"] = marcador
                     row["fecha_actualizacion"] = datetime.now().isoformat()
                     changed = True
@@ -209,7 +211,7 @@ def actualizar_resultados(id_partido: str, marcador: str, resultado_ah0: str, re
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(rows)
-        logger.info(f"Partido {id_partido} actualizado: AH0={resultado_ah0} O/U={resultado_ou25} {marcador}")
+        logger.info(f"Partido {id_partido} actualizado: AH0={resultado_ah0} O/U={resultado_ou25} Corners={resultado_corners} {marcador}")
     return changed
 
 

@@ -195,7 +195,13 @@ def actualizar_resultados() -> dict:
             h_score, a_score,
         )
 
-        ok = dm.actualizar_resultados(csv_id, marcador, resultado_ah0, resultado_ou25)
+        senal_corners = row.get("senal_corners", "NO_APOSTAR")
+        if senal_corners != "NO_APOSTAR" and senal_corners:
+            resultado_corners = "pendiente"
+        else:
+            resultado_corners = "no_apostar"
+
+        ok = dm.actualizar_resultados(csv_id, marcador, resultado_ah0, resultado_ou25, resultado_corners)
         if ok:
             updates_applied += 1
             stats["updated"] += 1

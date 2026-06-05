@@ -190,13 +190,16 @@ def scrape_corners_for_league(liga: str, team_names: list) -> dict:
     if cache_key in cache:
         logger.info(f"Corners desde cache: {liga}")
         return cache[cache_key]
+    from config import CORNER_LEAGUE_AVG
+    promedios = CORNER_LEAGUE_AVG.get(liga, CORNER_LEAGUE_AVG["DEFAULT"])
     fotmob_id = FOTMOB_LEAGUE_IDS.get(liga)
     if fotmob_id:
         fotmob_data = scrape_fotmob_league(fotmob_id)
         for team in team_names:
             for fbt_name, stats in fotmob_data.items():
                 if team.lower() in fbt_name.lower() or fbt_name.lower() in team.lower():
-                    results[team] = stats
+                    curated = curar_datos_para_corners(stats, promedios)
+                    results[team] = curated
                     break
         if results:
             logger.info(f"FotMob: {len(results)}/{len(team_names)} equipos para {liga}")
@@ -206,7 +209,8 @@ def scrape_corners_for_league(liga: str, team_names: list) -> dict:
             if team not in results:
                 for fb_name, stats in fbref_data.items():
                     if team.lower() in fb_name.lower() or fb_name.lower() in team.lower():
-                        results[team] = stats
+                        curated = curar_datos_para_corners(stats, promedios)
+                        results[team] = curated
                         break
         if fbref_data:
             logger.info(f"FBref: {len(fbref_data)} equipos, total {len(results)}/{len(team_names)}")
