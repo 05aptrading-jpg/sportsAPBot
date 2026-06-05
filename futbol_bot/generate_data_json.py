@@ -168,6 +168,8 @@ def generar_soccer_data_json():
     mundial_games = _fetch_mundial_fixtures()
     if mundial_games:
         data["games"].extend(mundial_games)
+        from data_manager import guardar_mundial_csv
+        guardar_mundial_csv(mundial_games)
     from data_manager import obtener_estadisticas_soccer
     data["stats"] = obtener_estadisticas_soccer()
     # Write to futbol_bot/

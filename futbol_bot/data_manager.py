@@ -109,6 +109,61 @@ def guardar_analisis(analisis: list):
     logger.info(f"{len(analisis)} análisis guardados (limpiados pendientes viejos)")
 
 
+def guardar_mundial_csv(mundial_games: list):
+    """Agrega partidos del Mundial al CSV si no existen."""
+    if not mundial_games:
+        return
+    inicializar_csv()
+    now = datetime.now().isoformat()
+    existentes = set()
+    rows = []
+    try:
+        with open(config.CSV_SOCCER_PATH, newline="", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            fieldnames = reader.fieldnames or CSV_COLUMNAS
+            for row in reader:
+                existentes.add(row.get("id_partido", ""))
+                rows.append(row)
+    except Exception:
+        fieldnames = CSV_COLUMNAS
+
+    added = 0
+    for g in mundial_games:
+        pk = str(game_pk("MUNDIAL", g["local"], g["visitante"], g["fecha_partido"]))
+        if pk in existentes:
+            continue
+        rows.append({
+            "id_partido": pk,
+            "liga": "MUNDIAL",
+            "fecha_hora": now,
+            "local": g["local"],
+            "visitante": g["visitante"],
+            "xg_local": g.get("xg_local", 1.3),
+            "xg_visit": g.get("xg_visit", 1.3),
+            "xg_total": g.get("xg_total", 2.6),
+            "diff_xg": g.get("diff_xg", 0.0),
+            "senal_ah0": g.get("senal_ah0", "NO_APOSTAR"),
+            "confianza_ah0": g.get("confianza_ah0", "BAJA"),
+            "senal_ou25": g.get("senal_ou25", "NO_APOSTAR"),
+            "confianza_ou25": g.get("confianza_ou25", "BAJA"),
+            "resultado": "pendiente",
+            "resultado_ah0": g.get("resultado_ah0", "pendiente"),
+            "resultado_ou25": g.get("resultado_ou25", "pendiente"),
+            "marcador_final": g.get("marcador_final", ""),
+            "fecha_actualizacion": now,
+            "fecha_partido": g["fecha_partido"],
+            "hora_partido": g.get("hora_partido", ""),
+        })
+        added += 1
+
+    if added:
+        with open(config.CSV_SOCCER_PATH, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+        logger.info(f"Mundial: {added} partidos nuevos guardados en CSV")
+
+
 def actualizar_resultados(id_partido: str, marcador: str, resultado_ah0: str, resultado_ou25: str) -> bool:
     """Actualiza resultado_ah0, resultado_ou25 y marcador de un partido en el CSV."""
     if not os.path.exists(config.CSV_SOCCER_PATH):
