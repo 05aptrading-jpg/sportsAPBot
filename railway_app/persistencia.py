@@ -8,7 +8,7 @@ import requests
 logger = logging.getLogger(__name__)
 
 REPO_OWNER = "05aptrading-jpg"
-REPO_NAME  = "ApuestasMLB"
+REPO_NAME  = "sportsAPBot"
 API_BASE   = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}"
 
 ARCHIVOS = [

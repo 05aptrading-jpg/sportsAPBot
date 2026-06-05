@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 GITHUB_TOKEN = getattr(config, "GITHUB_TOKEN", "")
 REPO_OWNER   = "05aptrading-jpg"
-REPO_NAME    = "ApuestasMLB"
+REPO_NAME    = "sportsAPBot"
 API_BASE     = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}"
 
 TEMPLATE_PATH = os.path.join(os.path.dirname(__file__), "miniapp", "template.html")

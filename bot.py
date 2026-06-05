@@ -386,7 +386,7 @@ def enviar_analisis_manana(analyses: list[GameAnalysis]) -> bool:
 
 
 def enviar_notificacion_actualizacion(liga: str):
-    mini_url = "https://05aptrading-jpg.github.io/ApuestasMLB/"
+    mini_url = "https://05aptrading-jpg.github.io/sportsAPBot/"
     msg = (
         f"📊 <b>Actualización para toma de decisiones</b>\n"
         f"📡 {liga}: datos actualizados en la Mini App.\n"

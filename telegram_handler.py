@@ -24,7 +24,7 @@ TELEGRAM_URL = f"https://api.telegram.org/bot{config.TELEGRAM_TOKEN}"
 _last_update_id = 0
 
 
-MINIAPP_URL = "https://05aptrading-jpg.github.io/ApuestasMLB/"
+MINIAPP_URL = "https://05aptrading-jpg.github.io/sportsAPBot/"
 
 DISCLAIMER = "📚 MLB Analytics — Análisis académico basado en datos públicos. No constituye consejo financiero ni de apuestas."
 
