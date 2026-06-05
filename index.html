@@ -375,34 +375,6 @@
     <div class="card-title">⚽ Partidos de Fútbol - Asian Handicap</div>
     <div class="futbol-filter-row">
       <select id="futbol-liga-select" onchange="selectFutbolLiga(this.value)" style="background:#1a2030;color:#e1e8ed;border:1px solid #3a4550;border-radius:8px;padding:6px 10px;font-size:13px;cursor:pointer;min-width:140px;">
-        <option value="todas">🌍 Todas las ligas</option>
-        <option value="MUNDIAL">🌍 FIFA World Cup 2026</option>
-        <option value="AMISTOSOS_INT">🏳️ Amistosos Internacionales</option>
-        <option value="PREMIER_LEAGUE">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League</option>
-        <option value="LA_LIGA">🇪🇸 La Liga</option>
-        <option value="BUNDESLIGA">🇩🇪 Bundesliga</option>
-        <option value="SERIE_A">🇮🇹 Serie A</option>
-        <option value="LIGUE_1">🇫🇷 Ligue 1</option>
-        <option value="LIGA_MX">🇲🇽 Liga MX</option>
-        <option value="MLS">🇺🇸 MLS</option>
-        <option value="BRASILEIRAO">🇧🇷 Brasileirão</option>
-        <option value="BRASILEIRAO_B">🇧🇷 Brasileirão Serie B</option>
-        <option value="PRIMERA_DIVISION_ARG">🇦🇷 Liga Profesional Argentina</option>
-        <option value="LIGA_POSTOBON">🇨🇴 Liga BetPlay</option>
-        <option value="PRIMERA_DIVISION_CHI">🇨🇱 Primera División Chile</option>
-        <option value="PRIMERA_DIVISION_URU">🇺🇾 Primera División Uruguay</option>
-        <option value="LIGA_BOLIVIANA">🇧🇴 Liga Profesional Bolivia</option>
-        <option value="EREDIVISIE">🇳🇱 Eredivisie</option>
-        <option value="PRIMEIRA_LIGA">🇵🇹 Primeira Liga</option>
-        <option value="SUPER_LIG">🇹🇷 Süper Lig</option>
-        <option value="SUPER_LEAGUE_BEL">🇧🇪 Pro League</option>
-        <option value="PREMIERSHIP">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Premiership</option>
-        <option value="CHAMPIONSHIP">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Championship</option>
-        <option value="CHAMPIONS_LEAGUE">🏆 Champions League</option>
-        <option value="EUROPA_LEAGUE">🏆 Europa League</option>
-        <option value="COPA_LIBERTADORES">🌎 Copa Libertadores</option>
-        <option value="COPA_SUDAMERICANA">🌎 Copa Sudamericana</option>
-        <option value="CONCACAF_CHAMPIONS">🏆 CONCACAF Champions</option>
       </select>
     </div>
     <div class="futbol-filter-row">
@@ -1073,9 +1045,61 @@ function selectFutbolSenal(senal) {
 
 function renderFutbol() {
   if (!soccerData) return;
+  renderFutbolLigaSelect();
   renderFutbolDateTabs();
   renderFutbolGames();
   renderFutbolStats();
+}
+
+var LIGA_OPTIONS = [
+  { value: 'todas', label: '🌍 Todas las ligas' },
+  { value: 'MUNDIAL', label: '🌍 FIFA World Cup 2026' },
+  { value: 'AMISTOSOS_INT', label: '🏳️ Amistosos Internacionales' },
+  { value: 'PREMIER_LEAGUE', label: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League' },
+  { value: 'LA_LIGA', label: '🇪🇸 La Liga' },
+  { value: 'BUNDESLIGA', label: '🇩🇪 Bundesliga' },
+  { value: 'SERIE_A', label: '🇮🇹 Serie A' },
+  { value: 'LIGUE_1', label: '🇫🇷 Ligue 1' },
+  { value: 'LIGA_MX', label: '🇲🇽 Liga MX' },
+  { value: 'MLS', label: '🇺🇸 MLS' },
+  { value: 'BRASILEIRAO', label: '🇧🇷 Brasileirão' },
+  { value: 'BRASILEIRAO_B', label: '🇧🇷 Brasileirão Serie B' },
+  { value: 'PRIMERA_DIVISION_ARG', label: '🇦🇷 Liga Profesional Argentina' },
+  { value: 'LIGA_POSTOBON', label: '🇨🇴 Liga BetPlay' },
+  { value: 'PRIMERA_DIVISION_CHI', label: '🇨🇱 Primera División Chile' },
+  { value: 'PRIMERA_DIVISION_URU', label: '🇺🇾 Primera División Uruguay' },
+  { value: 'LIGA_BOLIVIANA', label: '🇧🇴 Liga Profesional Bolivia' },
+  { value: 'EREDIVISIE', label: '🇳🇱 Eredivisie' },
+  { value: 'PRIMEIRA_LIGA', label: '🇵🇹 Primeira Liga' },
+  { value: 'SUPER_LIG', label: '🇹🇷 Süper Lig' },
+  { value: 'SUPER_LEAGUE_BEL', label: '🇧🇪 Pro League' },
+  { value: 'PREMIERSHIP', label: '🏴󠁧󠁢󠁳󠁣󠁴󠁿 Premiership' },
+  { value: 'CHAMPIONSHIP', label: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 Championship' },
+  { value: 'CHAMPIONS_LEAGUE', label: '🏆 Champions League' },
+  { value: 'EUROPA_LEAGUE', label: '🏆 Europa League' },
+  { value: 'COPA_LIBERTADORES', label: '🌎 Copa Libertadores' },
+  { value: 'COPA_SUDAMERICANA', label: '🌎 Copa Sudamericana' },
+  { value: 'CONCACAF_CHAMPIONS', label: '🏆 CONCACAF Champions' },
+];
+
+function renderFutbolLigaSelect() {
+  var sel = document.getElementById('futbol-liga-select');
+  if (!sel) return;
+  var games = (soccerData && soccerData.games) || [];
+  var ligasConJuegos = {};
+  for (var i = 0; i < games.length; i++) {
+    if (games[i].fecha_partido === selectedFutbolFecha && games[i].liga_key) {
+      ligasConJuegos[games[i].liga_key] = true;
+    }
+  }
+  var html = '';
+  for (var j = 0; j < LIGA_OPTIONS.length; j++) {
+    var opt = LIGA_OPTIONS[j];
+    var dot = (opt.value !== 'todas' && ligasConJuegos[opt.value]) ? ' \u25CF' : '';
+    var selected = opt.value === selectedFutbolLiga ? ' selected' : '';
+    html += '<option value="' + opt.value + '"' + selected + '>' + opt.label + dot + '</option>';
+  }
+  sel.innerHTML = html;
 }
 
 var calMonth = new Date().getMonth();
