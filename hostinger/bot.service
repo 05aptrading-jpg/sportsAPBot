@@ -1,0 +1,15 @@
+[Unit]
+Description=MLB Analytics Bot
+After=network.target
+
+[Service]
+Type=simple
+User=mlbbot
+WorkingDirectory=/home/mlbbot/ApuestasMLB
+ExecStart=/home/mlbbot/ApuestasMLB/venv/bin/python -m uvicorn railway_app.main:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=10
+EnvironmentFile=/home/mlbbot/ApuestasMLB/.env
+
+[Install]
+WantedBy=multi-user.target
