@@ -390,8 +390,17 @@ def _map_league(slug: str, name: str, season_type) -> str:
         return "LIGA_2"
     if "fra.2" in s:
         return "Ligue 2"
-    # Fallback: usar el slug como key
-    return s.upper().replace(".", "_")
+    # Para el endpoint "all" donde league es null: inferir del nombre
+    if not s and not n:
+        return "AMISTOSOS_INT"
+    # Si league_slug es null pero el nombre sugiere algo específico
+    if "u21" in n or "u20" in n or "u19" in n or "u23" in n:
+        return "AMISTOSOS_INT"
+    # Detectar por nombre: "X at Y" donde X e Y son países = amistoso
+    if " at " in n:
+        return "AMISTOSOS_INT"
+    # Fallback
+    return "AMISTOSOS_INT"
 
 
 def generar_partidos_desde_cache(df_stats: pd.DataFrame) -> list[SoccerMatch]:
