@@ -22,9 +22,35 @@ ESPN_LEAGUES = {
     "SERIE_A": "ita.1",
     "LIGUE_1": "fra.1",
     "LIGA_MX": "mex.1",
+    "MLS": "usa.1",
+    "BRASILEIRAO": "bra.1",
+    "SERIE_A_BRA": "bra.1",
+    "PRIMERA_DIVISION_ARG": "arg.1",
+    "LIGA_POSTOBON": "col.1",
+    "PRIMERA_DIVISION_CHI": "chi.1",
+    "PRIMERA_DIVISION_PAR": "par.1",
+    "PRIMERA_DIVISION_URU": "uru.1",
+    "EREDIVISIE": "ned.1",
+    "PRIMEIRA_LIGA": "por.1",
+    "SUPER_LIG": "tur.1",
+    "SUPER_LEAGUE_BEL": "bel.1",
+    "PREMIERSHIP": "sco.1",
+    "SERIE_A_ITALIANA": "ita.1",
+    "CHAMPIONSHIP": "eng.2",
+    "BUNDESLIGA_2": "ger.2",
+    "LIGA_2": "esp.2",
+    "Ligue 2": "fra.2",
+    "MUNDIAL": "fifa.world",
+    "AMISTOSOS_INT": "2026-international-friendly",
+    "COPA_LIBERTADORES": "copa.libertadores",
+    "COPA_SUDAMERICANA": "copa.sudamericana",
+    "CONCACAF_CHAMPIONS": "concacaf.champions",
+    "CHAMPIONS_LEAGUE": "uefa.champions",
+    "EUROPA_LEAGUE": "uefa.europa",
 }
 
 ESPN_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/scoreboard"
+ESPN_ALL_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard"
 
 
 def _norm(name: str) -> str:
@@ -154,8 +180,17 @@ def actualizar_resultados() -> dict:
     pending_ligas = set(r.get("liga", "") for r in pending_rows)
 
     espn_matches = []
+    fetched_slugs = set()
     for liga_key, slug in ESPN_LEAGUES.items():
+        if slug in fetched_slugs:
+            continue
+        fetched_slugs.add(slug)
         events = _fetch_espn(slug)
+        for ev in events:
+            espn_matches.extend(_parse_espn_event(ev))
+
+    if not espn_matches:
+        events = _fetch_espn("all")
         for ev in events:
             espn_matches.extend(_parse_espn_event(ev))
 
@@ -177,6 +212,14 @@ def actualizar_resultados() -> dict:
                 espn_match = em
                 break
 
+        if not espn_match:
+            for em in espn_matches:
+                home_match = _fuzzy_match(em["home_name"], csv_local) and _fuzzy_match(em["away_name"], csv_visit)
+                away_match = _fuzzy_match(em["home_name"], csv_visit) and _fuzzy_match(em["away_name"], csv_local)
+                if home_match or away_match:
+                    espn_match = em
+                    break
+
         if not espn_match or not espn_match["completed"]:
             stats["pending"] += 1
             continue
@@ -196,10 +239,12 @@ def actualizar_resultados() -> dict:
         )
 
         senal_corners = row.get("senal_corners", "NO_APOSTAR")
-        if senal_corners != "NO_APOSTAR" and senal_corners:
-            resultado_corners = "pendiente"
-        else:
+        if not senal_corners or senal_corners == "NO_APOSTAR":
             resultado_corners = "no_apostar"
+        elif h_score + a_score > 0:
+            resultado_corners = "sin_datos"
+        else:
+            resultado_corners = "pendiente"
 
         ok = dm.actualizar_resultados(csv_id, marcador, resultado_ah0, resultado_ou25, resultado_corners)
         if ok:

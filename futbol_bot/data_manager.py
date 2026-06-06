@@ -31,6 +31,24 @@ def inicializar_csv():
             writer = csv.writer(f)
             writer.writerow(CSV_COLUMNAS)
         logger.info(f"CSV creado: {config.CSV_SOCCER_PATH}")
+        return
+    if os.path.exists(config.CSV_SOCCER_PATH):
+        try:
+            with open(config.CSV_SOCCER_PATH, newline="", encoding="utf-8") as f:
+                reader = csv.DictReader(f)
+                if reader.fieldnames and "resultado_corners" not in reader.fieldnames:
+                    rows = list(reader)
+                    fieldnames = list(reader.fieldnames) + ["resultado_corners"]
+                    with open(config.CSV_SOCCER_PATH, "w", newline="", encoding="utf-8") as fw:
+                        writer = csv.DictWriter(fw, fieldnames=fieldnames)
+                        writer.writeheader()
+                        for row in rows:
+                            if "resultado_corners" not in row:
+                                row["resultado_corners"] = "pendiente"
+                            writer.writerow(row)
+                    logger.info("CSV migrado: columna resultado_corners agregada")
+        except Exception:
+            pass
 
 
 def game_pk(liga: str, local: str, visitante: str, fecha: str) -> int:
@@ -54,7 +72,12 @@ def guardar_analisis(analisis: list):
             for row in reader:
                 rid = row["id_partido"]
                 resultado = row.get("resultado", "pendiente")
-                if resultado == "pendiente" and rid not in ids_nuevos:
+                resultado_ah0 = row.get("resultado_ah0", "pendiente")
+                resultado_ou25 = row.get("resultado_ou25", "pendiente")
+                tiene_resultado = (resultado != "pendiente" or resultado_ah0 != "pendiente" or resultado_ou25 != "pendiente")
+                if tiene_resultado and rid not in ids_nuevos:
+                    rows.append(row)
+                    ids_existentes.add(rid)
                     continue
                 if rid in ids_nuevos and resultado == "pendiente" and rid in analisis_map:
                     a = analisis_map[rid]
@@ -78,6 +101,7 @@ def guardar_analisis(analisis: list):
                     row.setdefault("hora_partido", "")
                     row.setdefault("resultado_ah0", row.get("resultado", "pendiente"))
                     row.setdefault("resultado_ou25", row.get("resultado", "pendiente"))
+                    row.setdefault("resultado_corners", "pendiente")
                     rows.append(row)
     except Exception:
         fieldnames = CSV_COLUMNAS
@@ -109,6 +133,7 @@ def guardar_analisis(analisis: list):
             "resultado": "pendiente",
             "resultado_ah0": "pendiente",
             "resultado_ou25": "pendiente",
+            "resultado_corners": "pendiente",
             "marcador_final": "",
             "fecha_actualizacion": now,
             "fecha_partido": a.fecha_partido,
@@ -197,10 +222,15 @@ def actualizar_resultados(id_partido: str, marcador: str, resultado_ah0: str, re
         fieldnames = reader.fieldnames
         for row in reader:
             if row["id_partido"] == id_partido:
-                if row.get("resultado_ah0", "pendiente") == "pendiente" or row.get("resultado_ou25", "pendiente") == "pendiente" or row.get("resultado_corners", "pendiente") == "pendiente":
-                    row["resultado_ah0"] = resultado_ah0
-                    row["resultado_ou25"] = resultado_ou25
-                    if resultado_corners != "pendiente":
+                cur_ah0 = row.get("resultado_ah0", "pendiente") or "pendiente"
+                cur_ou25 = row.get("resultado_ou25", "pendiente") or "pendiente"
+                cur_corners = row.get("resultado_corners", "pendiente") or "pendiente"
+                if cur_ah0 == "pendiente" or cur_ou25 == "pendiente" or cur_corners == "pendiente":
+                    if cur_ah0 == "pendiente":
+                        row["resultado_ah0"] = resultado_ah0
+                    if cur_ou25 == "pendiente":
+                        row["resultado_ou25"] = resultado_ou25
+                    if cur_corners == "pendiente" and resultado_corners != "pendiente":
                         row["resultado_corners"] = resultado_corners
                     row["marcador_final"] = marcador
                     row["fecha_actualizacion"] = datetime.now().isoformat()
