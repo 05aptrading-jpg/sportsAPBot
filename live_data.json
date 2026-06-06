@@ -1,5 +1,5 @@
 {
-  "fecha": "05/06/2026 23:36",
+  "fecha": "05/06/2026 23:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1780754400,
@@ -2418,7 +2418,7 @@
       "opp_team": "El Aguila de Veracruz",
       "score_fav": "5",
       "score_opp": "3",
-      "state": "Delayed",
+      "state": "Completed Early",
       "result": "pending",
       "label": "🎯",
       "game_pk": 846174,
@@ -2455,6 +2455,10 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
         "current_inning": 8,
@@ -2478,7 +2482,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Delayed",
+        "state": "Completed Early",
         "fav_score": "3",
         "opp_score": "5",
         "score_fav": "3",
@@ -3519,13 +3523,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-06-05",
-      "status_emoji": "🔴",
+      "status_emoji": "🏁",
       "fav_team": "Sultanes de Monterrey",
       "opp_team": "Acereros del Norte",
       "score_fav": "5",
       "score_opp": "8",
-      "state": "In Progress",
-      "result": "live",
+      "state": "Final",
+      "result": "completed",
       "label": "📋",
       "game_pk": 846312,
       "linescore": {
@@ -3576,15 +3580,15 @@
           }
         ],
         "current_inning": 11,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "11th",
-        "outs": 2,
+        "outs": 3,
         "balls": 1,
-        "strikes": 1,
+        "strikes": 3,
         "away_runs": 8,
         "home_runs": 5,
         "away_hits": 9,
-        "home_hits": 10,
+        "home_hits": 11,
         "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Acereros del Norte",
@@ -3594,9 +3598,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "8",
         "opp_score": "5",
         "score_fav": "8",
@@ -4322,7 +4326,7 @@
     1992258520,
     8670833401
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": true,
   "live_data": {
     "401815610": {
@@ -5423,7 +5427,7 @@
     "846174": {
       "is_live": false,
       "is_final": false,
-      "status": "Delayed",
+      "status": "Completed Early",
       "away_runs": 5,
       "home_runs": 3,
       "away_team_name": "El Aguila de Veracruz",
@@ -5461,6 +5465,10 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
         "current_inning": 8,
@@ -5484,7 +5492,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Delayed",
+        "state": "Completed Early",
         "fav_score": "3",
         "opp_score": "5",
         "score_fav": "3",
@@ -6471,9 +6479,9 @@
       }
     },
     "846312": {
-      "is_live": true,
-      "is_final": false,
-      "status": "In Progress",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 5,
       "home_runs": 8,
       "away_team_name": "Acereros del Norte",
@@ -6526,15 +6534,15 @@
           }
         ],
         "current_inning": 11,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "11th",
-        "outs": 2,
+        "outs": 3,
         "balls": 1,
-        "strikes": 1,
+        "strikes": 3,
         "away_runs": 8,
         "home_runs": 5,
         "away_hits": 9,
-        "home_hits": 10,
+        "home_hits": 11,
         "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Acereros del Norte",
@@ -6544,9 +6552,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "8",
         "opp_score": "5",
         "score_fav": "8",
@@ -7229,7 +7237,7 @@
       }
     }
   },
-  "updated_at": "05/06/2026 23:36",
+  "updated_at": "05/06/2026 23:52",
   "stats": {
     "total": 69,
     "acertados": 16,
