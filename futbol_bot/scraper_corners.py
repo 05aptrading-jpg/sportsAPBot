@@ -23,6 +23,72 @@ HEADERS = {
 
 CORNERS_CACHE_PATH = os.path.join(os.path.dirname(__file__), "corners_cache.json")
 
+FOTMOB_LEAGUE_IDS = {
+    "PREMIER_LEAGUE": 47,
+    "LA_LIGA": 87,
+    "BUNDESLIGA": 54,
+    "SERIE_A": 55,
+    "LIGUE_1": 53,
+    "LIGA_MX": 65,
+    "EREDIVISIE": 23,
+    "PRIMEIRA_LIGA": 24,
+    "SUPER_LIG": 56,
+    "CHAMPIONSHIP": 34,
+}
+
+FOTMOB_STAT_KEYS = {
+    "crosses": "accurate_cross_team",
+    "shots": "ontarget_scoring_att_team",
+    "blocks": "total_tackle_team",
+    "clearances": "effective_clearance_team",
+    "corners": "corner_taken_team",
+}
+
+_driver = None
+
+
+def _get_driver():
+    global _driver
+    if _driver is not None:
+        try:
+            _driver.title
+            return _driver
+        except Exception:
+            _driver = None
+    try:
+        from selenium import webdriver
+        from selenium.webdriver.chrome.service import Service
+        from webdriver_manager.chrome import ChromeDriverManager
+        from selenium.webdriver.chrome.options import Options
+
+        opts = Options()
+        opts.add_argument("--headless=new")
+        opts.add_argument("--disable-gpu")
+        opts.add_argument("--no-sandbox")
+        opts.add_argument("--disable-dev-shm-usage")
+        opts.add_argument("--disable-extensions")
+        opts.add_argument("--disable-software-rasterizer")
+        opts.add_argument("--log-level=3")
+
+        service = Service(ChromeDriverManager().install())
+        _driver = webdriver.Chrome(service=service, options=opts)
+        _driver.set_page_load_timeout(60)
+        logger.info("Selenium ChromeDriver initialized")
+    except Exception as e:
+        logger.error(f"Error initializing Selenium: {e}")
+        _driver = None
+    return _driver
+
+
+def _close_driver():
+    global _driver
+    if _driver:
+        try:
+            _driver.quit()
+        except Exception:
+            pass
+        _driver = None
+
 
 def _load_cache() -> dict:
     if os.path.exists(CORNERS_CACHE_PATH):
@@ -51,54 +117,72 @@ def _safe_float(val, default=0.0) -> float:
         return default
 
 
-def scrape_fotmob_league(league_id: int) -> dict:
-    results = {}
+def _fetch_fotmob_stats_selenium(league_id: int) -> dict:
+    """Fetch all team stats from FotMob using Selenium + browser fetch()"""
+    import re
+    driver = _get_driver()
+    if not driver:
+        return {}
     try:
-        session = requests.Session()
-        session.headers.update(HEADERS)
-        home_url = f"https://www.fotmob.com/en/leagues/{league_id}/overview"
-        session.get(home_url, timeout=10)
-        time.sleep(1)
-        api_url = f"https://www.fotmob.com/api/leagues?id={league_id}&tab=stats&type=team"
-        r = session.get(api_url, timeout=10)
-        if r.status_code != 200:
-            logger.warning(f"FotMob API {r.status_code} for league {league_id}")
-            return results
-        data = r.json()
-        stats_data = data.get("stats", {}).get("playersStats", [])
-        if not stats_data:
-            stats_data = data.get("stats", {}).get("teamStats", [])
-        for team_entry in stats_data:
-            team_name = team_entry.get("name", "")
-            stats_list = team_entry.get("stats", [])
-            centros = 0.0
-            tiros = 0.0
-            bloqueos = 0.0
-            despejes = 0.0
-            for stat_group in stats_list:
-                title = stat_group.get("title", "").lower()
-                items = stat_group.get("items", [])
-                if not items:
-                    continue
-                val = _safe_float(items[0].get("value", 0)) if items else 0.0
-                if "cross" in title:
-                    centros = val
-                elif "shot" in title:
-                    tiros = val
-                elif "block" in title:
-                    bloqueos = val
-                elif "clear" in title:
-                    despejes = val
-            if centros > 0 or tiros > 0:
-                results[team_name] = {
-                    "centros": centros,
-                    "tiros": tiros,
-                    "bloqueos": bloqueos,
-                    "despejes": despejes,
-                }
+        url = f"https://www.fotmob.com/en/leagues/{league_id}/stats"
+        driver.get(url)
+        time.sleep(8)
+
+        src = driver.page_source
+        match = re.search(
+            r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>',
+            src,
+        )
+        if not match:
+            logger.warning(f"FotMob: No __NEXT_DATA__ for league {league_id}")
+            return {}
+
+        data = json.loads(match.group(1))
+        props = data.get("props", {}).get("pageProps", {})
+        teams_stats = props.get("stats", {}).get("teams", [])
+
+        fetch_urls = {}
+        for cat in teams_stats:
+            cat_name = cat.get("name", "")
+            url_val = cat.get("fetchAllUrl", "")
+            for our_key, fotmob_key in FOTMOB_STAT_KEYS.items():
+                if cat_name == fotmob_key:
+                    fetch_urls[our_key] = url_val
+
+        all_team_data = {}
+        for stat_name, fetch_url in fetch_urls.items():
+            try:
+                result = driver.execute_script(
+                    f'return fetch("{fetch_url}").then(r => r.json())'
+                )
+                for top_list in result.get("TopLists", []):
+                    for entry in top_list.get("StatList", []):
+                        team = entry.get("ParticipantName", "")
+                        val = entry.get("StatValue", 0)
+                        mp = entry.get("MatchesPlayed", 1)
+                        if team:
+                            if team not in all_team_data:
+                                all_team_data[team] = {}
+                            if stat_name == "corners":
+                                per_90 = round(val / max(mp, 1), 2)
+                                all_team_data[team]["corners_total"] = val
+                                all_team_data[team][stat_name] = per_90
+                            else:
+                                all_team_data[team][stat_name] = val
+                logger.debug(f"FotMob {stat_name}: {sum(1 for t in all_team_data if stat_name in all_team_data[t])} equipos")
+            except Exception as e:
+                logger.warning(f"Error fetching {stat_name}: {e}")
+
+        logger.info(f"FotMob Selenium: {len(all_team_data)} equipos para liga {league_id}")
+        return all_team_data
     except Exception as e:
-        logger.warning(f"Error FotMob league {league_id}: {e}")
-    return results
+        logger.error(f"Error Selenium FotMob league {league_id}: {e}")
+        return {}
+
+
+def scrape_fotmob_league(league_id: int) -> dict:
+    """Legacy function - now uses Selenium"""
+    return _fetch_fotmob_stats_selenium(league_id)
 
 
 def scrape_fbref_team_stats() -> dict:
@@ -169,20 +253,6 @@ def curar_datos_para_corners(stats_scraped: dict, promedios_historicos_liga: dic
     return datos_limpios
 
 
-FOTMOB_LEAGUE_IDS = {
-    "PREMIER_LEAGUE": 47,
-    "LA_LIGA": 87,
-    "BUNDESLIGA": 54,
-    "SERIE_A": 55,
-    "LIGUE_1": 53,
-    "LIGA_MX": 65,
-    "EREDIVISIE": 23,
-    "PRIMEIRA_LIGA": 24,
-    "SUPER_LIG": 56,
-    "CHAMPIONSHIP": 34,
-}
-
-
 def scrape_corners_for_league(liga: str, team_names: list) -> dict:
     results = {}
     cache = _load_cache()
@@ -192,17 +262,29 @@ def scrape_corners_for_league(liga: str, team_names: list) -> dict:
         return cache[cache_key]
     from config import CORNER_LEAGUE_AVG
     promedios = CORNER_LEAGUE_AVG.get(liga, CORNER_LEAGUE_AVG["DEFAULT"])
+
     fotmob_id = FOTMOB_LEAGUE_IDS.get(liga)
     if fotmob_id:
         fotmob_data = scrape_fotmob_league(fotmob_id)
         for team in team_names:
             for fbt_name, stats in fotmob_data.items():
                 if team.lower() in fbt_name.lower() or fbt_name.lower() in team.lower():
-                    curated = curar_datos_para_corners(stats, promedios)
+                    mapped = {
+                        "centros": stats.get("crosses", 0.0),
+                        "tiros": stats.get("shots", 0.0),
+                        "bloqueos": stats.get("blocks", 0.0),
+                        "despejes": stats.get("clearances", 0.0),
+                    }
+                    curated = curar_datos_para_corners(mapped, promedios)
+                    if "corners" in stats:
+                        curated["corners_per_90"] = stats["corners"]
+                    if "corners_total" in stats:
+                        curated["corners_total"] = stats["corners_total"]
                     results[team] = curated
                     break
         if results:
-            logger.info(f"FotMob: {len(results)}/{len(team_names)} equipos para {liga}")
+            logger.info(f"FotMob Selenium: {len(results)}/{len(team_names)} equipos para {liga}")
+
     if len(results) < len(team_names) and liga == "PREMIER_LEAGUE":
         fbref_data = scrape_fbref_team_stats()
         for team in team_names:
@@ -214,6 +296,7 @@ def scrape_corners_for_league(liga: str, team_names: list) -> dict:
                         break
         if fbref_data:
             logger.info(f"FBref: {len(fbref_data)} equipos, total {len(results)}/{len(team_names)}")
+
     if results:
         cache[cache_key] = results
         _save_cache(cache)

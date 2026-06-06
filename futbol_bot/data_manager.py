@@ -257,6 +257,12 @@ def actualizar_stats_con_corners(corners_data: dict, liga: str):
             df.at[idx, "tiros_por_juego"] = stats.get("tiros", 0.0)
             df.at[idx, "bloqueos_por_juego"] = stats.get("bloqueos", 0.0)
             df.at[idx, "despejes_por_juego"] = stats.get("despejes", 0.0)
+            if "corners_per_90" in stats:
+                existing = df.at[idx, "corners_last5"] if "corners_last5" in df.columns else "[]"
+                corners_list = _parse_json_list(existing) if isinstance(existing, str) else (existing if isinstance(existing, list) else [])
+                corners_list.append(stats["corners_per_90"])
+                corners_list = corners_list[-5:]
+                df.at[idx, "corners_last5"] = json.dumps(corners_list)
             updated += 1
     if updated > 0:
         df.to_csv(config.CACHE_STATS_PATH, index=False)
