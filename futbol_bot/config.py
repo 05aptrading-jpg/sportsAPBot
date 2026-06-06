@@ -1,6 +1,8 @@
 import os
+from dotenv import load_dotenv
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+load_dotenv(os.path.join(os.path.dirname(BASE_DIR), ".env"))
 
 SOCCER_LEAGUES_V1 = {
     "PREMIER_LEAGUE": {
@@ -103,7 +105,7 @@ HORA_RECALCULO_DIARIO = "05:00"
 
 SCRAPE_DELAY = 3
 
-TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "8862582497:AAF7o5RX1NH7OI26sG0RyC5hFzNyYSiBjpA")
+TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "6099564810")
 
 SCRAPE_DIA_ACTUAL = True

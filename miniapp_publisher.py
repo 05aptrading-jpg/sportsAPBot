@@ -703,6 +703,41 @@ def pushear_a_github(html_content: str) -> bool:
     return pushear_archivo("index.html", html_content, "Actualizar resultados MLB + LMB")
 
 
+def _git_push_fallback(files: list[str], mensaje: str) -> bool:
+    """Fallback: push via git CLI when GitHub API token is invalid."""
+    import subprocess
+    bot_dir = os.path.dirname(os.path.abspath(__file__))
+    try:
+        for f in files:
+            full = os.path.join(bot_dir, f) if not os.path.isabs(f) else f
+            if os.path.exists(full):
+                subprocess.run(["git", "add", f], cwd=bot_dir, capture_output=True, timeout=10)
+        result = subprocess.run(
+            ["git", "diff", "--cached", "--quiet"],
+            cwd=bot_dir, capture_output=True, timeout=10,
+        )
+        if result.returncode == 0:
+            logger.info("Git fallback: sin cambios para push")
+            return True
+        subprocess.run(
+            ["git", "commit", "-m", mensaje],
+            cwd=bot_dir, capture_output=True, timeout=15,
+        )
+        push = subprocess.run(
+            ["git", "push", "origin", "main"],
+            cwd=bot_dir, capture_output=True, text=True, timeout=30,
+        )
+        if push.returncode == 0:
+            logger.info(f"Git push exitoso: {mensaje}")
+            return True
+        else:
+            logger.error(f"Git push falló: {push.stderr[:200]}")
+            return False
+    except Exception as e:
+        logger.error(f"Git fallback error: {e}")
+        return False
+
+
 def habilitar_pages() -> bool:
     """Activa GitHub Pages desde main branch / (root)."""
     token = GITHUB_TOKEN
@@ -733,35 +768,36 @@ def publicar() -> bool:
     os.chdir(bot_dir)
     miniapp_dir = os.path.join(bot_dir, "miniapp")
 
-    # Subir index.html desde railway_app/templates (fuente canonical)
     railway_tpl = os.path.join(bot_dir, "railway_app", "templates", "index.html")
     if os.path.exists(railway_tpl):
         with open(railway_tpl, "r", encoding="utf-8") as f:
             html = f.read()
     else:
         html = generar_html()
-    if not pushear_a_github(html):
-        return False
 
-    # Subir live_data.json para fetch dinámico
+    ok_index = pushear_a_github(html)
+
     try:
         data = _build_data()
         live_json = json.dumps(data, ensure_ascii=False, indent=2)
+        with open(os.path.join(bot_dir, "live_data.json"), "w", encoding="utf-8") as f:
+            f.write(live_json)
         pushear_archivo("live_data.json", live_json, "Actualizar live_data.json")
     except Exception as e:
         logger.error(f"Error generando live_data.json: {e}")
 
-    # Subir soccer_data.json
     soccer_path = os.path.join(config.FUTBOL_DIR, "soccer_data.json")
     if os.path.exists(soccer_path):
         try:
+            import shutil
+            dst = os.path.join(bot_dir, "soccer_data.json")
+            shutil.copy2(soccer_path, dst)
             with open(soccer_path, "r", encoding="utf-8") as f:
                 soccer_json = f.read()
             pushear_archivo("soccer_data.json", soccer_json, "Actualizar soccer_data.json")
         except Exception as e:
             logger.error(f"Error subiendo soccer_data.json: {e}")
 
-    # Subir páginas estáticas (privacy, terms)
     for archivo in ("privacy.html", "terms.html"):
         ruta_local = os.path.join(miniapp_dir, archivo)
         if os.path.exists(ruta_local):
@@ -770,6 +806,20 @@ def publicar() -> bool:
             pushear_archivo(archivo, contenido, f"Actualizar {archivo}")
 
     habilitar_pages()
+
+    if not ok_index:
+        files = ["live_data.json"]
+        if os.path.exists(os.path.join(bot_dir, "soccer_data.json")):
+            files.append("soccer_data.json")
+        for f in ("index.html", "privacy.html", "terms.html"):
+            ruta = os.path.join(miniapp_dir, f) if f != "index.html" else railway_tpl
+            if os.path.exists(ruta):
+                import shutil
+                dst = os.path.join(bot_dir, f)
+                shutil.copy2(ruta, dst)
+                files.append(f)
+        return _git_push_fallback(files, "Actualizar Mini App via git")
+
     return True
 
 
@@ -777,17 +827,34 @@ def publicar_live_data() -> bool:
     """Sube live_data.json + soccer_data.json (para updates frecuentes sin regenerar HTML)."""
     bot_dir = os.path.dirname(os.path.abspath(__file__))
     os.chdir(bot_dir)
+    ok_live = False
+    ok_soccer = False
     try:
         data = _build_data()
         live_json = json.dumps(data, ensure_ascii=False, indent=2)
-        pushear_archivo("live_data.json", live_json, "Update live scores")
-        # Also push soccer data
+        with open(os.path.join(bot_dir, "live_data.json"), "w", encoding="utf-8") as f:
+            f.write(live_json)
+        ok_live = pushear_archivo("live_data.json", live_json, "Update live scores")
         soccer_path = os.path.join(config.FUTBOL_DIR, "soccer_data.json")
         if os.path.exists(soccer_path):
+            import shutil
+            dst = os.path.join(bot_dir, "soccer_data.json")
+            shutil.copy2(soccer_path, dst)
             with open(soccer_path, "r", encoding="utf-8") as f:
                 soccer_json = f.read()
-            pushear_archivo("soccer_data.json", soccer_json, "Update soccer data")
-        return True
+            ok_soccer = pushear_archivo("soccer_data.json", soccer_json, "Update soccer data")
+        else:
+            ok_soccer = True
     except Exception as e:
-        logger.error(f"Error publicando live_data: {e}")
-        return False
+        logger.error(f"Error generando live_data: {e}")
+
+    if not ok_live or not ok_soccer:
+        logger.info("API push falló, intentando git push fallback...")
+        files = ["live_data.json"]
+        soccer_local = os.path.join(bot_dir, "soccer_data.json")
+        if os.path.exists(soccer_local):
+            files.append("soccer_data.json")
+        git_ok = _git_push_fallback(files, "Update live scores via git")
+        return git_ok
+
+    return True

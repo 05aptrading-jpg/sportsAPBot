@@ -26,13 +26,15 @@ CLAVES API — CÓMO OBTENERLAS:
 """
 
 import os
+from dotenv import load_dotenv
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 # ─────────────────────────────────────────────────────────────────────────────
 # CREDENCIALES
 # ─────────────────────────────────────────────────────────────────────────────
-TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "8862582497:AAF7o5RX1NH7OI26sG0RyC5hFzNyYSiBjpA")
+TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "6099564810")
 
 ODDS_API_KEY     = os.environ.get("ODDS_API_KEY", "a6466e5654475830ce2a3667dc76bd90")
