@@ -1,5 +1,5 @@
 {
-  "fecha": "05/06/2026 23:05",
+  "fecha": "05/06/2026 23:21",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1780754400,
@@ -2488,13 +2488,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-06-05",
-      "status_emoji": "🔴",
+      "status_emoji": "🏁",
       "fav_team": "Toros de Tijuana",
       "opp_team": "Tecos de los Dos Laredos",
       "score_fav": "1",
       "score_opp": "0",
-      "state": "In Progress",
-      "result": "live",
+      "state": "Final",
+      "result": "completed",
       "label": "🎯",
       "game_pk": 846075,
       "linescore": {
@@ -2530,14 +2530,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
         "outs": 3,
-        "balls": 1,
-        "strikes": 0,
+        "balls": 0,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 2,
@@ -2551,9 +2555,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "0",
         "opp_score": "1",
         "score_fav": "0",
@@ -3436,13 +3440,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-06-05",
-      "status_emoji": "🔴",
+      "status_emoji": "⏳",
       "fav_team": "Pericos de Puebla",
       "opp_team": "Bravos de Leon",
       "score_fav": "0",
       "score_opp": "8",
-      "state": "In Progress",
-      "result": "live",
+      "state": "Game Over",
+      "result": "pending",
       "label": "📋",
       "game_pk": 846828,
       "linescore": {
@@ -3478,18 +3482,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 0,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 8,
-        "away_hits": 4,
-        "home_hits": 12,
+        "away_hits": 5,
+        "home_hits": 13,
         "away_errors": 3,
         "home_errors": 0,
         "away_team_name": "Pericos de Puebla",
@@ -3499,9 +3507,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "0",
         "opp_score": "8",
         "score_fav": "0",
@@ -3561,17 +3569,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 10,
+        "current_inning": 11,
         "is_top": true,
-        "inning_ordinal": "10th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "inning_ordinal": "11th",
+        "outs": 0,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 5,
         "home_runs": 5,
-        "away_hits": 6,
+        "away_hits": 7,
         "home_hits": 10,
         "away_errors": 1,
         "home_errors": 0,
@@ -5480,9 +5492,9 @@
       }
     },
     "846075": {
-      "is_live": true,
-      "is_final": false,
-      "status": "In Progress",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 1,
       "home_runs": 0,
       "away_team_name": "Tecos de los Dos Laredos",
@@ -5520,14 +5532,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
         "outs": 3,
-        "balls": 1,
-        "strikes": 0,
+        "balls": 0,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 2,
@@ -5541,9 +5557,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "0",
         "opp_score": "1",
         "score_fav": "0",
@@ -6380,9 +6396,9 @@
       }
     },
     "846828": {
-      "is_live": true,
+      "is_live": false,
       "is_final": false,
-      "status": "In Progress",
+      "status": "Game Over",
       "away_runs": 0,
       "home_runs": 8,
       "away_team_name": "Bravos de Leon",
@@ -6420,18 +6436,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 0,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 8,
-        "away_hits": 4,
-        "home_hits": 12,
+        "away_hits": 5,
+        "home_hits": 13,
         "away_errors": 3,
         "home_errors": 0,
         "away_team_name": "Pericos de Puebla",
@@ -6441,9 +6461,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "0",
         "opp_score": "8",
         "score_fav": "0",
@@ -6499,17 +6519,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 10,
+        "current_inning": 11,
         "is_top": true,
-        "inning_ordinal": "10th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "inning_ordinal": "11th",
+        "outs": 0,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 5,
         "home_runs": 5,
-        "away_hits": 6,
+        "away_hits": 7,
         "home_hits": 10,
         "away_errors": 1,
         "home_errors": 0,
@@ -7205,7 +7229,7 @@
       }
     }
   },
-  "updated_at": "05/06/2026 23:05",
+  "updated_at": "05/06/2026 23:21",
   "stats": {
     "total": 69,
     "acertados": 15,
