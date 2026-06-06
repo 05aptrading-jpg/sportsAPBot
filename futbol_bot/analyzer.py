@@ -30,6 +30,13 @@ def analizar_corners(stats_local: TeamSoccerStats, stats_visitante: TeamSoccerSt
     bloqueos_v = stats_visitante.bloqueos_por_juego if stats_visitante.bloqueos_por_juego else 0.0
     despejes_v = stats_visitante.despejes_por_juego if stats_visitante.despejes_por_juego else 0.0
 
+    local_default = (centros_l == prom.get("centros", 14.5) and tiros_l == prom.get("tiros", 11.5))
+    visit_default = (bloqueos_v == prom.get("bloqueos", 3.3) and despejes_v == prom.get("despejes", 19.0))
+
+    if local_default and visit_default:
+        logger.debug(f"Corners: ambos equipos con stats por defecto → NO_APOSTAR")
+        return 0.0, 0.0, 0.0, "NO_APOSTAR", "BAJA"
+
     if stats_local.corners_last5:
         prom_corners_l = _rolling_avg(stats_local.corners_last5)
     else:
@@ -46,7 +53,8 @@ def analizar_corners(stats_local: TeamSoccerStats, stats_visitante: TeamSoccerSt
         ipc_ofensivo = 1.0
 
     if prom["bloqueos"] > 0 and prom["despejes"] > 0:
-        ipc_defensivo = ((bloqueos_v / prom["bloqueos"]) * 0.7) + ((despejes_v / prom["despejes"]) * 0.3)
+        ipc_def_raw = ((bloqueos_v / prom["bloqueos"]) * 0.7) + ((despejes_v / prom["despejes"]) * 0.3)
+        ipc_defensivo = 1.0 / max(ipc_def_raw, 0.5)
     else:
         ipc_defensivo = 1.0
 
