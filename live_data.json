@@ -1,5 +1,5 @@
 {
-  "fecha": "06/06/2026 08:09",
+  "fecha": "06/06/2026 08:24",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1780840800,
@@ -2649,10 +2649,15 @@
       "label": "🎯",
       "game_pk": 824269,
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4408,10 +4413,15 @@
       "away_team_name": "Seattle Mariners",
       "home_team_name": "Detroit Tigers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4666,7 +4676,7 @@
       }
     }
   },
-  "updated_at": "06/06/2026 08:09",
+  "updated_at": "06/06/2026 08:24",
   "stats": {
     "total": 84,
     "acertados": 17,
