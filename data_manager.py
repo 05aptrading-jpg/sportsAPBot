@@ -644,12 +644,18 @@ def obtener_estadisticas(liga: str = None, fecha_desde: str = None, fecha_hasta:
             filas = [f for f in filas if _parse_csv_date(f.get("fecha_hora", "")) >= fecha_desde]
         if fecha_hasta:
             filas = [f for f in filas if _parse_csv_date(f.get("fecha_hora", "")) <= fecha_hasta]
-    total      = len(filas)
-    acertados  = sum(1 for f in filas if f.get("resultado") == "acertado")
-    fallidos   = sum(1 for f in filas if f.get("resultado") == "fallido")
-    pendientes = sum(1 for f in filas if f.get("resultado") == "pendiente")
-    valor      = sum(1 for f in filas if f.get("es_valor") == "SI")
-    valor_ok   = sum(1 for f in filas if f.get("es_valor") == "SI"
+    # ── GLOBAL = solo ALTA CONFIANZA (excluye BAJA) ──
+    def _es_alta(f):
+        nivel = f.get("nivel_certidumbre", "").strip()
+        return nivel in ("ALTA", "MEDIA")
+
+    filas_global = [f for f in filas if _es_alta(f)]
+    total      = len(filas_global)
+    acertados  = sum(1 for f in filas_global if f.get("resultado") == "acertado")
+    fallidos   = sum(1 for f in filas_global if f.get("resultado") == "fallido")
+    pendientes = sum(1 for f in filas_global if f.get("resultado") == "pendiente")
+    valor      = sum(1 for f in filas_global if f.get("es_valor") == "SI")
+    valor_ok   = sum(1 for f in filas_global if f.get("es_valor") == "SI"
                      and f.get("resultado") == "acertado")
 
     # ── SELECCIONES DESTACADAS (probabilidad_inicial >= PROB_MINIMA_ANALISIS) ──
@@ -660,10 +666,10 @@ def obtener_estadisticas(liga: str = None, fecha_desde: str = None, fecha_hasta:
         except (ValueError, AttributeError):
             return False
 
-    rec_total      = sum(1 for f in filas if _es_destacado(f))
-    rec_acertados  = sum(1 for f in filas if _es_destacado(f) and f.get("resultado") == "acertado")
-    rec_fallidos   = sum(1 for f in filas if _es_destacado(f) and f.get("resultado") == "fallido")
-    rec_pendientes = sum(1 for f in filas if _es_destacado(f) and f.get("resultado") == "pendiente")
+    rec_total      = sum(1 for f in filas_global if _es_destacado(f))
+    rec_acertados  = sum(1 for f in filas_global if _es_destacado(f) and f.get("resultado") == "acertado")
+    rec_fallidos   = sum(1 for f in filas_global if _es_destacado(f) and f.get("resultado") == "fallido")
+    rec_pendientes = sum(1 for f in filas_global if _es_destacado(f) and f.get("resultado") == "pendiente")
 
     # ── ALTA CONFIANZA (nivel_certidumbre = "ALTA" o "MEDIA") ──
     def _es_confianza_alta(f):
