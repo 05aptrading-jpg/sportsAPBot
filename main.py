@@ -124,6 +124,11 @@ def modo_ahora():
         print(msg)
         bot.enviar_mensaje(f"⚾ <b>MLB BOT</b>\n{msg}")
 
+    from miniapp_publisher import publicar
+    print("\n📡 Publicando Mini App...")
+    ok = publicar()
+    print("✅ Publicado OK" if ok else "❌ Falló publicación")
+
 
 def modo_ahora_lmb():
     """Ejecuta el análisis LMB del día inmediatamente (independiente de MLB)."""
@@ -145,6 +150,11 @@ def modo_ahora_lmb():
             print(f"  {a['away_team']} @ {a['home_team']} → {a['favorito']} ({a['prob_favorito']:.1f}%)")
     else:
         print("ℹ️ Sin partidos LMB para hoy.")
+
+    from miniapp_publisher import publicar
+    print("\n📡 Publicando Mini App...")
+    ok = publicar()
+    print("✅ Publicado OK" if ok else "❌ Falló publicación")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
