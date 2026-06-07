@@ -115,68 +115,61 @@ def _fetch_mundial_fixtures():
 
 
 def generar_soccer_data_json():
-    if not os.path.exists(config.CSV_SOCCER_PATH):
+    import data_manager as dm
+    rows = dm.cargar_partidos_xlsx()
+    if not rows:
         return {}
     hoy = date.today()
     ayer = hoy - timedelta(days=1)
     manana = hoy + timedelta(days=1)
     fechas_validas = {hoy.isoformat(), ayer.isoformat(), manana.isoformat()}
-    # Mundial 2026: incluir todo el torneo (jun 11 - jul 19)
     mundial_start = date(2026, 6, 11)
     mundial_end = date(2026, 7, 19)
     d = mundial_start
     while d <= mundial_end:
         fechas_validas.add(d.isoformat())
         d += timedelta(days=1)
-    rows = []
-    with open(config.CSV_SOCCER_PATH, newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            fecha_partido = row.get("fecha_partido", "")
-            if fecha_partido and fecha_partido not in fechas_validas:
-                continue
-            liga_label = LIGA_LABELS.get(row["liga"], row["liga"])
-            favorito = ""
-            ah0 = row.get("senal_ah0", "NO_APOSTAR")
-            if ah0 and ah0 != "NO_APOSTAR":
-                favorito = ah0.replace("AH0 - ", "")
-            rows.append({
-                "liga": liga_label,
-                "liga_key": row["liga"],
-                "local": row["local"],
-                "visitante": row["visitante"],
-                "xg_local": float(row.get("xg_local", 0)),
-                "xg_visit": float(row.get("xg_visit", 0)),
-                "xg_total": float(row.get("xg_total", 0)),
-                "diff_xg": float(row.get("diff_xg", 0)),
-                "favorito": favorito,
-                "senal_ah0": row.get("senal_ah0", "NO_APOSTAR"),
-                "confianza_ah0": row.get("confianza_ah0", "BAJA"),
-                "senal_ou25": row.get("senal_ou25", "NO_APOSTAR"),
-                "confianza_ou25": row.get("confianza_ou25", "BAJA"),
-                "xcorner_local": float(row.get("xcorner_local") or 0),
-                "xcorner_visitante": float(row.get("xcorner_visitante") or 0),
-                "xcorner_total": float(row.get("xcorner_total") or 0),
-                "senal_corners": row.get("senal_corners", "NO_APOSTAR"),
-                "confianza_corners": row.get("confianza_corners", "BAJA"),
-                "resultado_ah0": row.get("resultado_ah0", "pendiente"),
-                "resultado_ou25": row.get("resultado_ou25", "pendiente"),
-                "marcador_final": row.get("marcador_final", ""),
-                "fecha_partido": row.get("fecha_partido", ""),
-                "hora_partido": row.get("hora_partido", ""),
-            })
+    output = []
+    for row in rows:
+        fecha_partido = row.get("fecha_partido", "")
+        if fecha_partido and fecha_partido not in fechas_validas:
+            continue
+        liga_label = LIGA_LABELS.get(row["liga"], row["liga"])
+        favorito = ""
+        ah0 = row.get("senal_ah0", "NO_APOSTAR")
+        if ah0 and ah0 != "NO_APOSTAR":
+            favorito = ah0.replace("AH0 - ", "")
+        output.append({
+            "liga": liga_label,
+            "liga_key": row["liga"],
+            "local": row["local"],
+            "visitante": row["visitante"],
+            "xg_local": row.get("xg_local", "0"),
+            "xg_visit": row.get("xg_visit", "0"),
+            "ah0": row.get("senal_ah0", ""),
+            "confianza_ah0": row.get("confianza_ah0", ""),
+            "ou25": row.get("senal_ou25", ""),
+            "confianza_ou25": row.get("confianza_ou25", ""),
+            "corners": row.get("senal_corners", ""),
+            "confianza_corners": row.get("confianza_corners", ""),
+            "resultado": row.get("resultado", ""),
+            "resultado_ah0": row.get("resultado_ah0", ""),
+            "resultado_ou25": row.get("resultado_ou25", ""),
+            "resultado_corners": row.get("resultado_corners", ""),
+            "marcador": row.get("marcador_final", ""),
+            "fecha": row.get("fecha_partido", ""),
+            "hora": row.get("hora_partido", ""),
+        })
     data = {
         "fecha": datetime.now().strftime("%d/%m/%Y %H:%M"),
-        "games": rows,
+        "games": output,
         "stats": {},
     }
     mundial_games = _fetch_mundial_fixtures()
     if mundial_games:
         data["games"].extend(mundial_games)
-        from data_manager import guardar_mundial_csv
-        guardar_mundial_csv(mundial_games)
-    from data_manager import obtener_estadisticas_soccer
-    data["stats"] = obtener_estadisticas_soccer()
+        dm.guardar_mundial_csv(mundial_games)
+    data["stats"] = dm.obtener_estadisticas_soccer()
     # Write to futbol_bot/
     out = os.path.join(config.BASE_DIR, "soccer_data.json")
     with open(out, "w", encoding="utf-8") as f:

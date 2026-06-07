@@ -74,14 +74,13 @@ def procesar_comandos():
 
 
 def _responder_futbol(chat_id: str):
-    if not os.path.exists(config.CSV_SOCCER_PATH):
+    import data_manager as dm
+    rows = dm.cargar_partidos_xlsx()
+    if not rows:
         bot.enviar_mensaje("⚠️ No hay análisis de fútbol disponibles aún.", chat_id=chat_id)
         return
-    try:
-        with open(config.CSV_SOCCER_PATH, newline="", encoding="utf-8") as f:
-            rows = list(csv.DictReader(f))
-        pendientes = [r for r in rows if r.get("resultado") == "pendiente"]
-        if not pendientes:
+    pendientes = [r for r in rows if r.get("resultado") == "pendiente"]
+    if not pendientes:
             bot.enviar_mensaje("⚽ No hay partidos pendientes de análisis.", chat_id=chat_id)
             return
         lineas = [f"⚽ <b>Análisis Fútbol</b> — {len(pendientes)} partidos"]

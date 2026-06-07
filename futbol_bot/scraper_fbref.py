@@ -75,7 +75,24 @@ def extraer_stats_understat(league: str, season: int) -> pd.DataFrame:
         return pd.DataFrame()
 
 
+def _parse_display_value(s: dict) -> int:
+    """Parse displayValue from ESPN stat object (string -> int)."""
+    raw = s.get("displayValue", "0")
+    if raw is None:
+        return 0
+    try:
+        return int(float(raw))
+    except (ValueError, TypeError):
+        return 0
+
+
 def extraer_stats_espn(slug: str, season: int) -> pd.DataFrame:
+    """
+    Scrapea ESPN scoreboard y calcula xG por fórmula:
+      xG  = (total_shots * 0.05) + (shots_on_target * 0.12)
+      xGA = (opp_shots   * 0.05) + (opp_sot        * 0.12)
+    Retorna DataFrame con columnas estándar del caché.
+    """
     url = config.ESPN_SOCCER_API.format(slug=slug)
     n_rec = config.PARTIDOS_RECIENTES
     try:
@@ -92,25 +109,31 @@ def extraer_stats_espn(slug: str, season: int) -> pd.DataFrame:
         team_data = {}
         for event in events:
             comps = event.get("competitions", [])
-            ev_date = event.get("date", "")[:10]
             for comp in comps:
                 competitors = comp.get("competitors", [])
+                if len(competitors) < 2:
+                    continue
                 scores = {}
-                stats = {}
+                stats = {}  # tid -> {stat_name: value}
                 for c in competitors:
                     tid = c.get("team", {}).get("id")
                     name = c.get("team", {}).get("displayName", "?")
                     scores[tid] = int(c.get("score", 0))
                     stats[tid] = {}
                     for s in c.get("statistics", []):
-                        stats[tid][s["name"]] = int(s.get("value", 0))
+                        stats[tid][s["name"]] = _parse_display_value(s)
+                # Assign per-match data for each competitor
+                tids = list(stats.keys())
                 for c in competitors:
                     tid = c.get("team", {}).get("id")
                     name = c.get("team", {}).get("displayName", "?")
                     if tid not in team_data:
                         team_data[tid] = {
                             "name": name, "pj": 0, "gf": 0, "ga": 0,
-                            "shots": 0, "sot": 0, "gf_history": [], "ga_history": [],
+                            "shots": 0, "sot": 0,
+                            "shots_against": 0, "sot_against": 0,
+                            "gf_history": [], "ga_history": [],
+                            "xg_history": [], "xga_history": [],
                         }
                     team_data[tid]["pj"] += 1
                     gf = scores.get(tid, 0)
@@ -119,8 +142,29 @@ def extraer_stats_espn(slug: str, season: int) -> pd.DataFrame:
                     team_data[tid]["ga"] += ga
                     team_data[tid]["gf_history"].append(gf)
                     team_data[tid]["ga_history"].append(ga)
-                    team_data[tid]["shots"] += stats.get(tid, {}).get("totalShots", 0)
-                    team_data[tid]["sot"] += stats.get(tid, {}).get("shotsOnTarget", 0)
+
+                    own_shots = stats.get(tid, {}).get("totalShots", 0)
+                    own_sot   = stats.get(tid, {}).get("shotsOnTarget", 0)
+                    team_data[tid]["shots"] += own_shots
+                    team_data[tid]["sot"]   += own_sot
+
+                    # Opponent shots
+                    opp_id = next((k for k in tids if k != tid), None)
+                    if opp_id:
+                        opp_shots = stats.get(opp_id, {}).get("totalShots", 0)
+                        opp_sot   = stats.get(opp_id, {}).get("shotsOnTarget", 0)
+                        team_data[tid]["shots_against"] += opp_shots
+                        team_data[tid]["sot_against"]   += opp_sot
+
+                    # Per-match xG from formula
+                    xg_match  = (own_shots * 0.05) + (own_sot * 0.12)
+                    xga_match = 0.0
+                    if opp_id:
+                        opp_shots = stats.get(opp_id, {}).get("totalShots", 0)
+                        opp_sot   = stats.get(opp_id, {}).get("shotsOnTarget", 0)
+                        xga_match = (opp_shots * 0.05) + (opp_sot * 0.12)
+                    team_data[tid]["xg_history"].append(round(xg_match, 2))
+                    team_data[tid]["xga_history"].append(round(xga_match, 2))
 
         if not team_data:
             logger.warning(f"{slug}: sin datos de equipos agregados")
@@ -132,45 +176,69 @@ def extraer_stats_espn(slug: str, season: int) -> pd.DataFrame:
             if n == 0:
                 continue
             last_n = min(n, n_rec)
-            xg_last5 = [float(x) for x in td["gf_history"][-last_n:]]
-            xga_last5 = [float(x) for x in td["ga_history"][-last_n:]]
+            xg_avg  = round(sum(td["xg_history"]) / n, 2)
+            xga_avg = round(sum(td["xga_history"]) / n, 2)
+            goles_avg = round(td["gf"] / n, 2)
+            tiros_p90  = round(td["shots"] / n, 2)
+            sot_p90    = round(td["sot"] / n, 2)
             rows.append({
                 "equipo": td["name"],
-                "xg_por_90": round(td["gf"] / n, 2),
-                "xga_por_90": round(td["ga"] / n, 2),
-                "goles_reales_90": round(td["gf"] / n, 2),
+                "xg_por_90": xg_avg,
+                "xga_por_90": xga_avg,
+                "goles_reales_90": goles_avg,
                 "partidos": n,
                 "ppda": 15.0,
                 "final_third_por_90": 0.0,
-                "xg_last5": json.dumps(xg_last5),
-                "xga_last5": json.dumps(xga_last5),
+                "tiros_totales_por_90": tiros_p90,
+                "tiros_puerta_por_90": sot_p90,
+                "xg_last5": json.dumps(td["xg_history"][-last_n:]),
+                "xga_last5": json.dumps(td["xga_history"][-last_n:]),
                 "ppda_last5": json.dumps([15.0] * last_n),
             })
         df = pd.DataFrame(rows)
-        logger.info(f"{slug}: {len(df)} equipos vía ESPN (goles/90 como proxy de xG)")
+        logger.info(f"{slug}: {len(df)} equipos vía ESPN (fórmula xG)")
         return df
     except Exception as e:
         logger.exception(f"Error extrayendo ESPN {slug}: {e}")
         return pd.DataFrame()
 
 
+
+
+
 def actualizar_base_datos_soccer():
     dfs = []
+
     for nombre_liga, info in config.SOCCER_LEAGUES_V1.items():
         logger.info(f"Extrayendo {nombre_liga}...")
-        if "understat_league" in info:
-            df = extraer_stats_understat(info["understat_league"], info["season"])
-        elif info.get("source") == "espn":
-            df = extraer_stats_espn(info["espn_slug"], info["season"])
-        else:
-            logger.warning(f"{nombre_liga}: fuente no soportada")
-            continue
+        # Siempre obtener fórmula xG desde ESPN
+        df = extraer_stats_espn(info["espn_slug"], info["season"])
         if df.empty:
-            logger.warning(f"{nombre_liga}: sin datos")
+            logger.warning(f"{nombre_liga} (ESPN): sin datos")
             continue
+
+        # Para ligas con Understat: mergear ppda/final_third encima
+        if "understat_league" in info:
+            df_under = extraer_stats_understat(info["understat_league"], info["season"])
+            if not df_under.empty:
+                under_cols = df_under[["equipo", "ppda", "final_third_por_90", "ppda_last5"]].copy()
+                # Hacer merge sobre equipo (fuzzy aproximado: exacto)
+                for col in ["ppda", "final_third_por_90"]:
+                    for eq in under_cols["equipo"]:
+                        mask = df["equipo"].str.lower() == eq.lower().strip()
+                        if mask.any():
+                            df.loc[mask, col] = under_cols.loc[under_cols["equipo"] == eq, col].values[0]
+
+                # Mergear ppda_last5 (json)
+                for _, urow in under_cols.iterrows():
+                    mask = df["equipo"].str.lower() == urow["equipo"].lower().strip()
+                    if mask.any():
+                        df.loc[mask, "ppda_last5"] = urow["ppda_last5"]
+
         df["liga"] = nombre_liga
         dfs.append(df)
-        logger.info(f"{nombre_liga}: {len(df)} equipos procesados")
+        logger.info(f"{nombre_liga}: {len(df)} equipos")
+
     if dfs:
         df_final = pd.concat(dfs, ignore_index=True)
         df_final.to_csv(config.CACHE_STATS_PATH, index=False)

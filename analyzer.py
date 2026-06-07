@@ -53,6 +53,8 @@ class PitcherProfile:
     gb_pct:         float = 44.0   # Ground Ball % — clave para Park Factor ajuste
     pitch_hand:     str   = 'R'    # 'R' o 'L' — mano del lanzador
     is_opener:      bool  = False
+    is_bulk_guy:    bool  = False  # Bulk guy (lanzador largo tras opener)
+    is_bullpen_day: bool  = False  # Bullpen Day total (sin bulk guy)
     penalizacion:   float = 0.0    # % de penalización acumulada
 
 
@@ -214,12 +216,12 @@ def score_bloque1(pitcher: PitcherProfile,
         score = min(100, score * 1.05)
         alertas.append(f"📈 BABIP alto ({pitcher.babip:.3f}) → posible regresión positiva")
 
-    # ── Penalización IP < 20
+    # ── Penalización IP < 20 — resta DIRECTA al score B1
     if pitcher.ip < config.IP_MINIMAS_TEMPORADA:
-        pitcher.penalizacion += config.PENALIZACION_IP_PCT
+        score = max(0, score - config.PENALIZACION_IP_DIRECTA)
         alertas.append(
             f"🚨 Abridor con {pitcher.ip:.1f} IP (< {config.IP_MINIMAS_TEMPORADA}) "
-            f"→ penalización -{config.PENALIZACION_IP_PCT}% probabilidad final"
+            f"→ penalización -{config.PENALIZACION_IP_DIRECTA} pts en score B1"
         )
 
     # ── Opener
@@ -233,15 +235,19 @@ def score_bloque1(pitcher: PitcherProfile,
 # ─────────────────────────────────────────────────────────────────────────────
 # ██  BLOQUE 2 — OFENSIVA ACTIVA (35%)  ██
 # ─────────────────────────────────────────────────────────────────────────────
-def score_bloque2(offense: TeamOffense) -> tuple[float, list[str]]:
+def score_bloque2(offense: TeamOffense,
+                  wrc_base: float = None) -> tuple[float, list[str]]:
     """
     wRC+ colectivo ajustado por Park Factor y tendencia xwOBA 7 días.
     wRC+ 100 = liga. Mejor equipo ~140, peor ~70.
+    Si se pasa wrc_base (split por mano del abridor), se usa ese en lugar
+    de offense.wrc_plus genérico.
     """
     alertas = []
+    wrc = wrc_base if wrc_base is not None else offense.wrc_plus
 
     # Ajustar wRC+ por Park Factor (PF 100 = neutro)
-    wrc_adj = offense.wrc_plus * (offense.park_factor / 100.0)
+    wrc_adj = wrc * (offense.park_factor / 100.0)
 
     # Normalizar: rango 70-140 → 0-100
     score = max(0, min(100, (wrc_adj - 70) / 70 * 100))
@@ -279,19 +285,34 @@ def score_bloque3(bullpen: BullpenStatus,
     # WAR bullpen rango típico: -2.0 a +6.0 → normalizar a 0-100
     war_score = max(0, min(100, (bullpen.war_bullpen + 2.0) / 8.0 * 100))
 
-    # ── Fatiga: cerrador + setup > 40 pitcheos en 72h
-    if bullpen.pitcheos_72h > config.PITCHEOS_FATIGA_72H:
-        reduccion = config.PENALIZACION_BULLPEN / 100.0
-        war_score *= (1.0 - reduccion)
+    # ── Fatiga escalonada: cerrador + setup pitcheos en 72h
+    if bullpen.pitcheos_72h > config.BULLPEN_FATIGA_CRITICA:     # > 160
+        reduccion = config.PENALIZACION_BULLPEN_CRITICA / 100.0  # 35%
         bullpen.fatigado = True
         alertas.append(
-            f"🆘 Bullpen FATIGADO — {bullpen.pitcheos_72h} pitcheos "
-            f"(cerrador+setup) en 72h → WAR reducido {config.PENALIZACION_BULLPEN}%"
+            f"🆘 Bullpen FATIGA CRÍTICA — {bullpen.pitcheos_72h} pitcheos "
+            f"en 72h → WAR reducido {config.PENALIZACION_BULLPEN_CRITICA}%"
+        )
+    elif bullpen.pitcheos_72h > config.BULLPEN_FATIGA_MEDIA:     # > 120
+        reduccion = config.PENALIZACION_BULLPEN_MEDIA / 100.0    # 15%
+        bullpen.fatigado = True
+        alertas.append(
+            f"⚠️ Bullpen FATIGA MEDIA — {bullpen.pitcheos_72h} pitcheos "
+            f"en 72h → WAR reducido {config.PENALIZACION_BULLPEN_MEDIA}%"
+        )
+    elif bullpen.pitcheos_72h > config.PITCHEOS_FATIGA_72H:      # > 40
+        reduccion = 0.05                                          # 5% leve
+        bullpen.fatigado = True
+        alertas.append(
+            f"🔸 Bullpen algo fatigado — {bullpen.pitcheos_72h} pitcheos "
+            f"en 72h → WAR reducido 5%"
         )
     else:
+        reduccion = 0.0
         alertas.append(
             f"✅ Bullpen descansado — {bullpen.pitcheos_72h} pitcheos en 72h"
         )
+    war_score *= (1.0 - reduccion)
 
     return round(war_score, 2), alertas
 
@@ -332,19 +353,36 @@ def score_bloque4(efficiency: TeamEfficiency) -> tuple[float, list[str]]:
 # ─────────────────────────────────────────────────────────────────────────────
 def calcular_probabilidad(score_b1: float, score_b2: float,
                            score_b3: float, score_b4: float,
-                           opener: bool = False) -> tuple[float, dict]:
+                           opener: bool = False,
+                           is_bullpen_day: bool = False,
+                           has_bulk_guy: bool = False) -> tuple[float, dict]:
     """
     Combina los 4 bloques con sus pesos y retorna la probabilidad 0-100.
-    Si hay Opener: bloque 1 baja a 15% y bullpen sube a 40%.
+    Tres escenarios:
+      - Normal:              w1=20, w2=50, w3=20, w4=10
+      - Opener + Bulk Guy:   w1=15 (bulk) + 5 (opener), w2=50, w3=25, w4=10
+      - Bullpen Day total:   w1=0,  w2=60, w3=30, w4=10
     """
-    if opener:
-        w1 = config.PESO_PITCHEO_ABRIDOR - config.PESO_OPENER_REDUCCION  # 15
-        w3 = config.PESO_BULLPEN + config.PESO_OPENER_REDUCCION           # 40
+    if opener and is_bullpen_day:
+        # Bullpen Day total: B1 se anula, se reparte a B2 y B3
+        w1 = 0
+        w2 = config.PESO_OFENSIVA + 10      # 60
+        w3 = config.PESO_BULLPEN + 10        # 30
+    elif opener and has_bulk_guy:
+        # Opener + Bulk Guy: bulk pesa 15%, opener 5%
+        w1 = config.PESO_BULK_GUY           # 15
+        w2 = config.PESO_OFENSIVA            # 50
+        w3 = config.PESO_BULLPEN + config.PESO_OPENER_MINIMO  # 25
+    elif opener:
+        # Opener sin bulk ni bullpen day (fallback): B1 reducido
+        w1 = config.PESO_PITCHEO_ABRIDOR - config.PESO_OPENER_REDUCCION  # 5
+        w2 = config.PESO_OFENSIVA            # 50
+        w3 = config.PESO_BULLPEN + config.PESO_OPENER_REDUCCION           # 35
     else:
-        w1 = config.PESO_PITCHEO_ABRIDOR   # 30
-        w3 = config.PESO_BULLPEN           # 25
+        w1 = config.PESO_PITCHEO_ABRIDOR     # 20
+        w2 = config.PESO_OFENSIVA            # 50
+        w3 = config.PESO_BULLPEN             # 20
 
-    w2 = config.PESO_OFENSIVA    # 35
     w4 = config.PESO_EFICIENCIA  # 10
 
     total = (score_b1 * w1 +
@@ -571,8 +609,13 @@ def analizar_partido(game: dict,
             role = mlb.get_pitcher_role(pid)
             if role == "opener":
                 p.is_opener = True
-                logger.info(f"Pitcher [{name}]: OPENER detectado (gameLog MLB API)")
+                # Si es opener con IP extremadamente baja (< 1.5 avg),
+                # probablemente es bullpen day sin bulk guy definido
+                if p.ip < 1.5:
+                    p.is_bullpen_day = True
+                logger.info(f"Pitcher [{name}]: OPENER detectado (IP={p.ip:.1f}, bullpen_day={p.is_bullpen_day})")
             elif role == "bulk":
+                p.is_bulk_guy = True
                 logger.debug(f"Pitcher [{name}]: bulk pitcher (avg IP < 5.0)")
 
         return p
@@ -622,8 +665,23 @@ def analizar_partido(game: dict,
     alertas_away.extend(al_a1)
     alertas_home.extend(al_h1)
 
-    score_a2, al_a2 = score_bloque2(away_off)
-    score_h2, al_h2 = score_bloque2(home_off)
+    # Seleccionar split de wRC+ según la mano del abridor RIVAL
+    mano_rival_a = home_p.pitch_hand if home_p else 'R'
+    mano_rival_h = away_p.pitch_hand if away_p else 'R'
+    wrc_split_a = (away_off.wrc_vs_lhp if mano_rival_a == 'L'
+                   else away_off.wrc_vs_rhp)
+    wrc_split_h = (home_off.wrc_vs_lhp if mano_rival_h == 'L'
+                   else home_off.wrc_vs_rhp)
+    score_a2, al_a2 = score_bloque2(away_off, wrc_base=wrc_split_a)
+    score_h2, al_h2 = score_bloque2(home_off, wrc_base=wrc_split_h)
+    alertas_away.append(
+        f"📊 wRC+ split vs {'L' if mano_rival_a == 'L' else 'R'}: "
+        f"{wrc_split_a:.0f} (base {away_off.wrc_plus:.0f})"
+    )
+    alertas_home.append(
+        f"📊 wRC+ split vs {'L' if mano_rival_h == 'L' else 'R'}: "
+        f"{wrc_split_h:.0f} (base {home_off.wrc_plus:.0f})"
+    )
     analysis.away_score_b2 = score_a2
     analysis.home_score_b2 = score_h2
     alertas_away.extend(al_a2)
@@ -745,20 +803,15 @@ def analizar_partido(game: dict,
     opener_home = home_p.is_opener
 
     prob_away, _ = calcular_probabilidad(
-        score_a1, score_a2, score_a3, score_a4, opener_away)
+        score_a1, score_a2, score_a3, score_a4,
+        opener=opener_away,
+        is_bullpen_day=away_p.is_bullpen_day)
     prob_home, _ = calcular_probabilidad(
-        score_h1, score_h2, score_h3, score_h4, opener_home)
+        score_h1, score_h2, score_h3, score_h4,
+        opener=opener_home,
+        is_bullpen_day=home_p.is_bullpen_day)
 
     # Normalizar para que sumen 100
-    total = prob_away + prob_home
-    if total > 0:
-        prob_away = round(prob_away / total * 100, 2)
-        prob_home = round(100 - prob_away, 2)
-
-    # Aplicar penalizaciones de IP
-    prob_away -= away_p.penalizacion
-    prob_home -= home_p.penalizacion
-    # Renormalizar
     total = prob_away + prob_home
     if total > 0:
         prob_away = round(prob_away / total * 100, 2)
@@ -776,12 +829,6 @@ def analizar_partido(game: dict,
         analysis.prob_favorito = prob_home
 
     riesgos = []
-    if away_p.ip < config.IP_MINIMAS_TEMPORADA:
-        label = "sin datos" if away_p.ip == 0.0 else f"{away_p.ip:.0f} IP"
-        riesgos.append(f"Abridor visitante pocas IP ({label})")
-    if home_p.ip < config.IP_MINIMAS_TEMPORADA:
-        label = "sin datos" if home_p.ip == 0.0 else f"{home_p.ip:.0f} IP"
-        riesgos.append(f"Abridor local pocas IP ({label})")
     if away_bp.fatigado:
         riesgos.append("Bullpen visitante fatigado (B-Ref 72h)")
     if home_bp.fatigado:
@@ -798,19 +845,19 @@ def analizar_partido(game: dict,
     analysis.factor_riesgo = " | ".join(riesgos)
 
     # ─── TRÍADA DEL VALOR ────────────────────────────────────────────────
-    # Condición 1: prob > 55%
+    # Condición 1: prob > umbral (57% MLB, 55% LMB — config.PROB_MINIMA_SEÑAL)
     cond1 = analysis.prob_favorito > config.PROB_MINIMA_SEÑAL
 
-    # Condición 2: mala suerte en BaseRuns (diferencial < -5)
+    # Condición 2: mala suerte en BaseRuns (diferencial < -1.5)
     if analysis.favorito == away_name:
         eff_fav = away_eff
         off_fav = away_off
     else:
         eff_fav = home_eff
         off_fav = home_off
-    cond2 = eff_fav.diferencial < -config.BASERUNS_DIFERENCIAL
+    cond2 = eff_fav.diferencial < -config.BASERUNS_DIFERENCIAL_NUEVO
 
-    # Condición 3: odds de mercado pagan como underdog (prob < prob sabermérica)
+    # Condición 3: edge >= 3.5% (prob_bot - prob_mercado)
     cond3 = False
     if odds_data:
         for game_odds in odds_data:
@@ -821,12 +868,10 @@ def analizar_partido(game: dict,
                 market_prob = odds.get_consensus_prob(
                     game_odds, analysis.favorito)
                 if market_prob:
-                    # SIEMPRE guardar odds_mercado si la API retornó datos,
-                    # independientemente de si el mercado subestima o no.
-                    analysis.odds_mercado = round(market_prob * 100, 2)
-                    # cond3 solo True cuando el mercado SUBestima al favorito
-                    if market_prob < (analysis.prob_favorito / 100):
-                        cond3 = True
+                    market_pct = market_prob * 100
+                    analysis.odds_mercado = round(market_pct, 2)
+                    edge = analysis.prob_favorito - market_pct
+                    cond3 = edge >= config.EDGE_MINIMO_TRÍADA
                 break
 
     analysis.es_valor = cond1 and cond2 and cond3
@@ -904,11 +949,13 @@ def analizar_partido(game: dict,
         prob_away2, _ = calcular_probabilidad(
             analysis.away_score_b1, analysis.away_score_b2,
             analysis.away_score_b3, analysis.away_score_b4,
-            away_p.is_opener)
+            opener=away_p.is_opener,
+            is_bullpen_day=away_p.is_bullpen_day)
         prob_home2, _ = calcular_probabilidad(
             analysis.home_score_b1, analysis.home_score_b2,
             analysis.home_score_b3, analysis.home_score_b4,
-            home_p.is_opener)
+            opener=home_p.is_opener,
+            is_bullpen_day=home_p.is_bullpen_day)
         total2 = prob_away2 + prob_home2
         if total2 > 0:
             analysis.away_prob = round(prob_away2 / total2 * 100, 2)
@@ -1135,7 +1182,8 @@ def _enriquecer_con_mlb_api(analysis: "GameAnalysis") -> "GameAnalysis":
         new_score = max(0, min(100, new_score))
         setattr(analysis, score_attr, round(new_score, 2))
         if pitcher.ip < config.IP_MINIMAS_TEMPORADA:
-            pitcher.penalizacion += config.PENALIZACION_IP_PCT
+            new_score = max(0, new_score - config.PENALIZACION_IP_DIRECTA)
+            setattr(analysis, score_attr, round(new_score, 2))
         logger.info(f"MLB API pitcher [{pitcher.name}]: ERA={stats['era']} → score={new_score:.1f}")
 
     # ── Bloque 2: team batting desde MLB API

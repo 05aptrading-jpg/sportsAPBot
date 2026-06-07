@@ -95,6 +95,74 @@ def enviar_mensaje(text: str) -> bool:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# ██  FORMATEADOR — Alerta visual de la Tríada del Valor  ██
+# ─────────────────────────────────────────────────────────────────────────────
+def formatear_alerta_valor(a: GameAnalysis) -> str:
+    """
+    Formato visual ultra-legible para señales de valor.
+    Diseñado para identificar la Tríada del Valor en un segundo.
+    """
+    favorito = a.favorito
+    if favorito == a.away_team:
+        rival = a.home_team
+    else:
+        rival = a.away_team
+
+    # BaseRuns diff del favorito
+    if favorito == a.away_team:
+        diff_br = a.away_efficiency.diferencial if a.away_efficiency else 0
+    else:
+        diff_br = a.home_efficiency.diferencial if a.home_efficiency else 0
+
+    # Bullpen alerts
+    bp_alerts = []
+    if a.away_bullpen and a.away_bullpen.fatigado:
+        bp_alerts.append(f"Bullpen de {a.away_team} con {a.away_bullpen.pitcheos_72h} pitcheos 72h")
+    if a.home_bullpen and a.home_bullpen.fatigado:
+        bp_alerts.append(f"Bullpen de {a.home_team} con {a.home_bullpen.pitcheos_72h} pitcheos 72h")
+
+    # Mano del abridor rival y wRC+ split
+    if favorito == a.away_team:
+        mano_rival = a.home_pitcher.pitch_hand if a.home_pitcher else 'R'
+    else:
+        mano_rival = a.away_pitcher.pitch_hand if a.away_pitcher else 'R'
+
+    edge = a.edge_pct if a.edge_pct else 0
+    mercado = a.odds_mercado if a.odds_mercado else 0
+
+    lineas = [
+        "🚨 <b>SEÑAL DE VALOR DETECTADA</b> 🚨",
+        f"Partido: {_esc(a.away_team)} vs {_esc(a.home_team)}",
+        f"Liga: MLB",
+        "",
+        "📈 <b>Modelo Sabermétrico:</b>",
+        f"Favorito: {_esc(favorito)}",
+        f"Probabilidad Calculada: <b>{a.prob_favorito:.1f}%</b> (Umbral superado)",
+        f"Probabilidad de Mercado: {mercado:.1f}%",
+        f"Ventaja (Edge): +{edge:.1f}%",
+        "",
+        "🛠 <b>Factores de Respaldo (Tríada):</b>",
+        f"BaseRuns Diff: {diff_br:.1f} ({_esc(favorito)} con racha de mala suerte, valor oculto)"
+        if diff_br < 0 else
+        f"BaseRuns Diff: {diff_br:.1f}",
+        f"Ajuste del Lineup: wRC+ vs {'Zurdo' if mano_rival == 'L' else 'Derecho'} optimizado",
+    ]
+
+    if bp_alerts:
+        for ba in bp_alerts:
+            lineas.append(f"⚠️ Alerta de Riesgo: {ba}.")
+    else:
+        lineas.append("✅ Sin alertas de bullpen significativas")
+
+    lineas += [
+        "",
+        "🔥 <b>Acción: Apuesta sugerida al Favorito (Moneyline).</b>",
+    ]
+
+    return "\n".join(lineas)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # ██  MENSAJE 1 — ANÁLISIS MATUTINO (8:00 AM)  ██
 # ─────────────────────────────────────────────────────────────────────────────
 def mensaje_analisis_manana(analyses: list[GameAnalysis]) -> str:
@@ -123,25 +191,12 @@ def mensaje_analisis_manana(analyses: list[GameAnalysis]) -> str:
 
     if valores:
         for a in valores:
-            diff = (a.away_efficiency.diferencial
-                    if a.favorito == a.away_team
-                    else a.home_efficiency.diferencial)
-            edge = (a.prob_favorito - a.odds_mercado
-                    if a.odds_mercado else 0)
-            lineas += [
-                f"",
-                f"🔥 <b>{_esc(a.favorito)}</b> ({_esc(a.away_team)} @ {_esc(a.home_team)})",
-                f"   ✅ Prob. sabermérica: {a.prob_favorito:.1f}% &gt; {config.PROB_MINIMA_SEÑAL}%",
-                f"   ✅ Mala suerte BaseRuns: {abs(diff):.1f} W por debajo del esperado",
-                f"   ✅ Mercado paga: {a.odds_mercado:.1f}% "
-                f"(edge de +{edge:.1f}%)",
-                f"   💡 Concepto: El mercado subestima a este equipo",
-            ]
+            lineas += ["", formatear_alerta_valor(a)]
     else:
         lineas += [
             "",
             "   ℹ️ Ningún partido cumple la Tríada del Valor hoy.",
-            "   (Prob &gt; 55% + Mala suerte BaseRuns + Underdog en mercado)",
+            f"   (Prob &gt; {config.PROB_MINIMA_SEÑAL:.0f}% + BaseRuns diff &lt; -{config.BASERUNS_DIFERENCIAL_NUEVO:.1f} + Edge &gt;= {config.EDGE_MINIMO_TRÍADA:.1f}%)",
         ]
 
     # ── CONFIANZA ALTA — prob ≥ 55% + edge ≥ 3% ────────────────────────
@@ -155,7 +210,7 @@ def mensaje_analisis_manana(analyses: list[GameAnalysis]) -> str:
             "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
             f"🔥 <b>CONFIANZA ALTA ({len(alta)} de {n} partidos)</b>",
             "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
-            f"<i>Prob ≥ {config.PROB_MINIMA_APUESTA:.0f}% + Edge ≥ {config.EDGE_MINIMO:.0f}% · mayor a menor</i>",
+            f"<i>Prob ≥ {config.PROB_MINIMA_APUESTA:.0f}% + Edge ≥ {config.EDGE_MINIMO_TRÍADA:.1f}% · mayor a menor</i>",
             "",
         ]
         for idx, a in enumerate(alta, 1):

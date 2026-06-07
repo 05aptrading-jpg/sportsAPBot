@@ -140,6 +140,7 @@ class TeamSoccerStats:
     xg_last5: list = field(default_factory=list)
     xga_last5: list = field(default_factory=list)
     ppda_last5: list = field(default_factory=list)
+    sin_stats_reales: bool = False
 
 
 @dataclass
@@ -196,6 +197,30 @@ def calcular_score_volatilidad(local: TeamSoccerStats, visitante: TeamSoccerStat
 
 
 def analizar_partido_soccer(match: SoccerMatch) -> MatchAnalysis:
+    if match.local.sin_stats_reales or match.visitante.sin_stats_reales:
+        logger.info(f"Sin datos de xG reales para {match.local.team_name} vs {match.visitante.team_name} (selecciones nacionales)")
+        return MatchAnalysis(
+            id_partido=match.id_partido,
+            liga=match.liga,
+            equipo_local=match.local.team_name,
+            equipo_visitante=match.visitante.team_name,
+            proyeccion_local=0.0,
+            proyeccion_visitante=0.0,
+            xg_total=0.0,
+            diff_xg=0.0,
+            senal_ah0="NO_APOSTAR",
+            confianza_ah0="—  ",
+            senal_ou25="NO_APOSTAR",
+            confianza_ou25="—  ",
+            xcorner_local=0.0,
+            xcorner_visitante=0.0,
+            xcorner_total=0.0,
+            senal_corners="NO_APOSTAR",
+            confianza_corners="—  ",
+            fecha_partido=match.fecha_partido,
+            hora_partido=match.hora_partido,
+        )
+
     home_xg_list = match.local.xg_last5 if match.local.xg_last5 else []
     home_xga_list = match.local.xga_last5 if match.local.xga_last5 else []
     away_xg_list = match.visitante.xg_last5 if match.visitante.xg_last5 else []
@@ -329,17 +354,24 @@ def _fuzzy_in(name_a: str, name_b: str) -> bool:
     return len(overlap) >= min(len(aw), len(bw)) and len(overlap) >= 2
 
 
+_fixtures_cache = None
+
+
 def fetch_fixtures_dia() -> dict:
     """
     Consulta ESPN para obtener fixtures reales de hoy.
-    Usa el endpoint 'all' para capturar TODOS los partidos profesionales.
+    Usa solo el endpoint 'all' — cubre TODAS las ligas en 1 request.
+    Resultados cacheados en memoria (no cambian intra-día).
     Retorna dict: { (liga, local_norm, visitante_norm): { home_name, away_name, date, time, league_name } }
     """
+    global _fixtures_cache
+    if _fixtures_cache is not None:
+        return _fixtures_cache
+
     from datetime import date as _date
     hoy_str = _date.today().strftime("%Y%m%d")
     fixtures = {}
 
-    # 1) Consultar endpoint 'all' — captura TODAS las ligas de un solo request
     try:
         url = f"{ESPN_ALL_URL}?dates={hoy_str}"
         r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=15)
@@ -358,7 +390,6 @@ def fetch_fixtures_dia() -> dict:
                 league_slug = comp.get("league", {}).get("slug", "")
                 league_name = comp.get("league", {}).get("name", league_slug)
                 season_type = comp.get("season", {}).get("type", "")
-                # Mapear slug a nuestra key interna
                 liga_key = _map_league(league_slug, league_name, season_type)
                 fixtures[(liga_key, _norm(a_name), _norm(h_name))] = {
                     "home_name": h_name,
@@ -370,83 +401,9 @@ def fetch_fixtures_dia() -> dict:
     except Exception as e:
         logger.warning(f"Error fetching all fixtures: {e}")
 
-    # 2) Consultar slugs individuales para ligas que el endpoint 'all' puede no traer
-    for liga_key, slug in ESPN_LEAGUES.items():
-        if liga_key in ("MUNDIAL", "AMISTOSOS_INT"):
-            continue  # ya cubiertos por 'all'
-        try:
-            url = ESPN_URL.format(slug=slug) + f"?dates={hoy_str}"
-            r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
-            if r.status_code != 200:
-                continue
-            for ev in r.json().get("events", []):
-                comp = (ev.get("competitions") or [{}])[0]
-                competitors = comp.get("competitors", [])
-                home = next((c for c in competitors if c.get("homeAway") == "home"), {})
-                away = next((c for c in competitors if c.get("homeAway") == "away"), {})
-                h_name = home.get("team", {}).get("displayName", "")
-                a_name = away.get("team", {}).get("displayName", "")
-                if not h_name or not a_name:
-                    continue
-                ev_date = ev.get("date", "")[:10]
-                ev_time = ev.get("date", "")[11:16]
-                key = (liga_key, _norm(a_name), _norm(h_name))
-                if key not in fixtures:
-                    fixtures[key] = {
-                        "home_name": h_name,
-                        "away_name": a_name,
-                        "date": ev_date,
-                        "time": ev_time,
-                        "league_name": liga_key,
-                    }
-        except Exception:
-            pass
-
-    # 3) Mundial 2026: mostrar partidos próximos (desde 11 jun 2026)
-    try:
-        from datetime import timedelta
-        mundial_start = date(2026, 6, 11)
-        hoy_date = date.today()
-        # Si estamos antes del Mundial, mostrar todos los partidos desde hoy
-        if hoy_date <= mundial_start:
-            fetch_from = mundial_start
-        else:
-            fetch_from = hoy_date
-        # Buscar solo los próximos 10 días
-        for delta in range(0, 10):
-            fetch_date = fetch_from + timedelta(days=delta)
-            ds = fetch_date.strftime("%Y%m%d")
-            url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates={ds}"
-            r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=8)
-            if r.status_code != 200:
-                continue
-            for ev in r.json().get("events", []):
-                comp = (ev.get("competitions") or [{}])[0]
-                competitors = comp.get("competitors", [])
-                home = next((c for c in competitors if c.get("homeAway") == "home"), {})
-                away = next((c for c in competitors if c.get("homeAway") == "away"), {})
-                h_name = home.get("team", {}).get("displayName", "")
-                a_name = away.get("team", {}).get("displayName", "")
-                if not h_name or not a_name:
-                    continue
-                ev_date = ev.get("date", "")[:10]
-                ev_time = ev.get("date", "")[11:16]
-                key = ("MUNDIAL", _norm(a_name), _norm(h_name))
-                if key not in fixtures:
-                    fixtures[key] = {
-                        "home_name": h_name,
-                        "away_name": a_name,
-                        "date": ev_date,
-                        "time": ev_time,
-                        "league_name": "FIFA World Cup 2026",
-                    }
-        mundial_count = sum(1 for k in fixtures if k[0] == "MUNDIAL")
-        if mundial_count:
-            logger.info(f"Mundial 2026: {mundial_count} partidos proximos incluidos")
-    except Exception as e:
-        logger.warning(f"Error fetching Mundial: {e}")
-
     logger.info(f"ESPN fixtures totales: {len(fixtures)}")
+    _fixtures_cache = fixtures
+    return fixtures
     return fixtures
 
 
@@ -596,16 +553,23 @@ def generar_partidos_desde_cache(df_stats: pd.DataFrame) -> list[SoccerMatch]:
         # Crear stats por defecto si no se encontraron
         def _default_stats(name, liga):
             prom = config.CORNER_LEAGUE_AVG.get(liga, config.CORNER_LEAGUE_AVG["DEFAULT"])
+            sin_stats = liga in ("MUNDIAL", "AMISTOSOS_INT")
             return TeamSoccerStats(
                 team_name=name, liga=liga,
-                xg_for_90=0.0, xg_against_90=0.0,
+                xg_for_90=0.0 if sin_stats else 0.0,
+                xg_against_90=0.0 if sin_stats else 0.0,
                 goles_reales_90=0.0, ppda=12.0,
                 final_third_entries=30.0,
                 centros_por_juego=prom.get("centros", 14.5),
                 tiros_por_juego=prom.get("tiros", 11.5),
                 bloqueos_por_juego=prom.get("bloqueos", 3.3),
                 despejes_por_juego=prom.get("despejes", 19.0),
+                sin_stats_reales=sin_stats,
             )
+
+        # Saltar ligas que no tenemos en caché ni en config (filtro post-fuzzy)
+        if local_row is None and visit_row is None and fk_liga not in config.SOCCER_LEAGUES_V1 and fk_liga != "MUNDIAL":
+            continue
 
         if local_row is not None:
             local = TeamSoccerStats(

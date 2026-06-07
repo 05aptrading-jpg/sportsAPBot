@@ -1,4 +1,3 @@
-import csv
 import hashlib
 import json
 import logging
@@ -11,7 +10,7 @@ import config
 
 logger = logging.getLogger(__name__)
 
-CSV_COLUMNAS = [
+COLUMNAS = [
     "id_partido", "liga", "fecha_hora",
     "local", "visitante",
     "xg_local", "xg_visit", "xg_total", "diff_xg",
@@ -25,30 +24,34 @@ CSV_COLUMNAS = [
 ]
 
 
-def inicializar_csv():
+def cargar_partidos_xlsx() -> list[dict]:
+    """Lee el xlsx de apuestas y retorna lista de dicts (público)."""
+    return _leer_xlsx()
+
+
+def _leer_xlsx() -> list[dict]:
+    """Lee el xlsx y retorna lista de dicts (vacíos si no existe)."""
     if not os.path.exists(config.CSV_SOCCER_PATH):
-        with open(config.CSV_SOCCER_PATH, "w", newline="", encoding="utf-8") as f:
-            writer = csv.writer(f)
-            writer.writerow(CSV_COLUMNAS)
-        logger.info(f"CSV creado: {config.CSV_SOCCER_PATH}")
-        return
-    if os.path.exists(config.CSV_SOCCER_PATH):
-        try:
-            with open(config.CSV_SOCCER_PATH, newline="", encoding="utf-8") as f:
-                reader = csv.DictReader(f)
-                if reader.fieldnames and "resultado_corners" not in reader.fieldnames:
-                    rows = list(reader)
-                    fieldnames = list(reader.fieldnames) + ["resultado_corners"]
-                    with open(config.CSV_SOCCER_PATH, "w", newline="", encoding="utf-8") as fw:
-                        writer = csv.DictWriter(fw, fieldnames=fieldnames)
-                        writer.writeheader()
-                        for row in rows:
-                            if "resultado_corners" not in row:
-                                row["resultado_corners"] = "pendiente"
-                            writer.writerow(row)
-                    logger.info("CSV migrado: columna resultado_corners agregada")
-        except Exception:
-            pass
+        return []
+    try:
+        df = pd.read_excel(config.CSV_SOCCER_PATH, dtype=str)
+        return df.to_dict("records")
+    except Exception:
+        return []
+
+
+def _escribir_xlsx(rows: list[dict]):
+    """Escribe lista de dicts a xlsx, respetando el orden de COLUMNAS."""
+    df = pd.DataFrame(rows, columns=[c for c in COLUMNAS if c in (rows[0] if rows else [])])
+    df.to_excel(config.CSV_SOCCER_PATH, index=False)
+
+
+def inicializar_csv():
+    path = config.CSV_SOCCER_PATH
+    if not os.path.exists(path):
+        df = pd.DataFrame(columns=COLUMNAS)
+        df.to_excel(path, index=False)
+        logger.info(f"xlsx creado: {path}")
 
 
 def game_pk(liga: str, local: str, visitante: str, fecha: str) -> int:
@@ -58,59 +61,76 @@ def game_pk(liga: str, local: str, visitante: str, fecha: str) -> int:
 
 def guardar_analisis(analisis: list):
     from analyzer import MatchAnalysis
+    from datetime import date
     inicializar_csv()
     now = datetime.now().isoformat()
+    hoy = date.today()
     ids_nuevos = set(str(a.id_partido) for a in analisis)
     analisis_map = {str(a.id_partido): a for a in analisis}
     ids_existentes = set()
-    rows = []
+    rows = _leer_xlsx()
 
-    try:
-        with open(config.CSV_SOCCER_PATH, newline="", encoding="utf-8") as f:
-            reader = csv.DictReader(f)
-            fieldnames = reader.fieldnames or CSV_COLUMNAS
-            for row in reader:
-                rid = row["id_partido"]
-                resultado = row.get("resultado", "pendiente")
-                resultado_ah0 = row.get("resultado_ah0", "pendiente")
-                resultado_ou25 = row.get("resultado_ou25", "pendiente")
-                tiene_resultado = (resultado != "pendiente" or resultado_ah0 != "pendiente" or resultado_ou25 != "pendiente")
-                if tiene_resultado and rid not in ids_nuevos:
-                    rows.append(row)
-                    ids_existentes.add(rid)
-                    continue
-                if rid in ids_nuevos and resultado == "pendiente" and rid in analisis_map:
-                    a = analisis_map[rid]
-                    row["xg_local"] = a.proyeccion_local
-                    row["xg_visit"] = a.proyeccion_visitante
-                    row["xg_total"] = a.xg_total
-                    row["diff_xg"] = a.diff_xg
-                    row["senal_ah0"] = a.senal_ah0
-                    row["confianza_ah0"] = a.confianza_ah0
-                    row["senal_ou25"] = a.senal_ou25
-                    row["confianza_ou25"] = a.confianza_ou25
-                    row["xcorner_local"] = a.xcorner_local
-                    row["xcorner_visitante"] = a.xcorner_visitante
-                    row["xcorner_total"] = a.xcorner_total
-                    row["senal_corners"] = a.senal_corners
-                    row["confianza_corners"] = a.confianza_corners
-                    row["fecha_actualizacion"] = now
-                if rid not in ids_existentes:
-                    ids_existentes.add(rid)
-                    row.setdefault("fecha_partido", "")
-                    row.setdefault("hora_partido", "")
-                    row.setdefault("resultado_ah0", row.get("resultado", "pendiente"))
-                    row.setdefault("resultado_ou25", row.get("resultado", "pendiente"))
-                    row.setdefault("resultado_corners", "pendiente")
-                    rows.append(row)
-    except Exception:
-        fieldnames = CSV_COLUMNAS
+    # Merge existing rows (keep finished matches, update pending)
+    nuevos = []
+    existentes_map = {}
+    for row in rows:
+        rid = row["id_partido"]
+        resultado = row.get("resultado", "pendiente")
+        resultado_ah0 = row.get("resultado_ah0", "pendiente")
+        resultado_ou25 = row.get("resultado_ou25", "pendiente")
+        tiene_resultado = (resultado != "pendiente" or resultado_ah0 != "pendiente" or resultado_ou25 != "pendiente")
+        if tiene_resultado and rid not in ids_nuevos:
+            nuevos.append(row)
+            ids_existentes.add(rid)
+            continue
+        if rid in ids_nuevos and resultado == "pendiente" and rid in analisis_map:
+            a = analisis_map[rid]
+            row["xg_local"] = a.proyeccion_local
+            row["xg_visit"] = a.proyeccion_visitante
+            row["xg_total"] = a.xg_total
+            row["diff_xg"] = a.diff_xg
+            es_futuro = False
+            try:
+                fd = date.fromisoformat(a.fecha_partido) if a.fecha_partido else hoy
+                es_futuro = fd > hoy
+            except Exception:
+                pass
+            if es_futuro:
+                row["senal_ah0"] = "pendiente"
+                row["confianza_ah0"] = "—  "
+                row["senal_ou25"] = "pendiente"
+                row["confianza_ou25"] = "—  "
+            else:
+                row["senal_ah0"] = a.senal_ah0
+                row["confianza_ah0"] = a.confianza_ah0
+                row["senal_ou25"] = a.senal_ou25
+                row["confianza_ou25"] = a.confianza_ou25
+            row["xcorner_local"] = a.xcorner_local
+            row["xcorner_visitante"] = a.xcorner_visitante
+            row["xcorner_total"] = a.xcorner_total
+            row["senal_corners"] = a.senal_corners
+            row["confianza_corners"] = a.confianza_corners
+            row["fecha_actualizacion"] = now
+        if rid not in ids_existentes:
+            ids_existentes.add(rid)
+            nuevos.append(row)
+    rows = nuevos
 
     for a in analisis:
         sid = str(a.id_partido)
         if sid in ids_existentes:
             continue
         ids_existentes.add(sid)
+        es_futuro = False
+        try:
+            fd = date.fromisoformat(a.fecha_partido) if a.fecha_partido else hoy
+            es_futuro = fd > hoy
+        except Exception:
+            pass
+        senal_ah0_final = "pendiente" if es_futuro else a.senal_ah0
+        conf_ah0_final = "—  " if es_futuro else a.confianza_ah0
+        senal_ou25_final = "pendiente" if es_futuro else a.senal_ou25
+        conf_ou25_final = "—  " if es_futuro else a.confianza_ou25
         rows.append({
             "id_partido": sid,
             "liga": a.liga,
@@ -121,10 +141,10 @@ def guardar_analisis(analisis: list):
             "xg_visit": a.proyeccion_visitante,
             "xg_total": a.xg_total,
             "diff_xg": a.diff_xg,
-            "senal_ah0": a.senal_ah0,
-            "confianza_ah0": a.confianza_ah0,
-            "senal_ou25": a.senal_ou25,
-            "confianza_ou25": a.confianza_ou25,
+            "senal_ah0": senal_ah0_final,
+            "confianza_ah0": conf_ah0_final,
+            "senal_ou25": senal_ou25_final,
+            "confianza_ou25": conf_ou25_final,
             "xcorner_local": a.xcorner_local,
             "xcorner_visitante": a.xcorner_visitante,
             "xcorner_total": a.xcorner_total,
@@ -139,31 +159,17 @@ def guardar_analisis(analisis: list):
             "fecha_partido": a.fecha_partido,
             "hora_partido": a.hora_partido,
         })
-    with open(config.CSV_SOCCER_PATH, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=CSV_COLUMNAS)
-        writer.writeheader()
-        writer.writerows(rows)
+    _escribir_xlsx(rows)
     logger.info(f"{len(analisis)} análisis guardados (limpiados pendientes viejos)")
 
 
 def guardar_mundial_csv(mundial_games: list):
-    """Agrega o actualiza partidos del Mundial en el CSV."""
     if not mundial_games:
         return
     inicializar_csv()
     now = datetime.now().isoformat()
-    existentes = {}
-    rows = []
-    fieldnames = CSV_COLUMNAS
-    try:
-        with open(config.CSV_SOCCER_PATH, newline="", encoding="utf-8") as f:
-            reader = csv.DictReader(f)
-            fieldnames = reader.fieldnames or CSV_COLUMNAS
-            for row in reader:
-                existentes[row.get("id_partido", "")] = len(rows)
-                rows.append(row)
-    except Exception:
-        pass
+    rows = _leer_xlsx()
+    existentes = {row.get("id_partido", ""): i for i, row in enumerate(rows)}
 
     added = 0
     updated = 0
@@ -171,7 +177,7 @@ def guardar_mundial_csv(mundial_games: list):
         pk = str(game_pk("MUNDIAL", g["local"], g["visitante"], g["fecha_partido"]))
         if pk in existentes:
             idx = existentes[pk]
-            if rows[idx].get("xg_local") == "1.3" or rows[idx].get("xg_total") == "2.6":
+            if rows[idx].get("xg_local") in ("1.3", "2.6"):
                 rows[idx]["xg_local"] = g.get("xg_local", 0.0)
                 rows[idx]["xg_visit"] = g.get("xg_visit", 0.0)
                 rows[idx]["xg_total"] = g.get("xg_total", 0.0)
@@ -204,43 +210,32 @@ def guardar_mundial_csv(mundial_games: list):
         added += 1
 
     if added or updated:
-        with open(config.CSV_SOCCER_PATH, "w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
-            writer.writeheader()
-            writer.writerows(rows)
-        logger.info(f"Mundial: {added} nuevos, {updated} actualizados en CSV")
+        _escribir_xlsx(rows)
+        logger.info(f"Mundial: {added} nuevos, {updated} actualizados en xlsx")
 
 
 def actualizar_resultados(id_partido: str, marcador: str, resultado_ah0: str, resultado_ou25: str, resultado_corners: str = "pendiente") -> bool:
-    """Actualiza resultado_ah0, resultado_ou25, resultado_corners y marcador de un partido en el CSV."""
     if not os.path.exists(config.CSV_SOCCER_PATH):
         return False
-    rows = []
+    rows = _leer_xlsx()
     changed = False
-    with open(config.CSV_SOCCER_PATH, newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        fieldnames = reader.fieldnames
-        for row in reader:
-            if row["id_partido"] == id_partido:
-                cur_ah0 = row.get("resultado_ah0", "pendiente") or "pendiente"
-                cur_ou25 = row.get("resultado_ou25", "pendiente") or "pendiente"
-                cur_corners = row.get("resultado_corners", "pendiente") or "pendiente"
-                if cur_ah0 == "pendiente" or cur_ou25 == "pendiente" or cur_corners == "pendiente":
-                    if cur_ah0 == "pendiente":
-                        row["resultado_ah0"] = resultado_ah0
-                    if cur_ou25 == "pendiente":
-                        row["resultado_ou25"] = resultado_ou25
-                    if cur_corners == "pendiente" and resultado_corners != "pendiente":
-                        row["resultado_corners"] = resultado_corners
-                    row["marcador_final"] = marcador
-                    row["fecha_actualizacion"] = datetime.now().isoformat()
-                    changed = True
-            rows.append(row)
+    for row in rows:
+        if row["id_partido"] == id_partido:
+            if row.get("resultado_ah0", "pendiente") == "pendiente":
+                row["resultado_ah0"] = resultado_ah0
+                changed = True
+            if row.get("resultado_ou25", "pendiente") == "pendiente":
+                row["resultado_ou25"] = resultado_ou25
+                changed = True
+            if row.get("resultado_corners", "pendiente") == "pendiente" and resultado_corners != "pendiente":
+                row["resultado_corners"] = resultado_corners
+                changed = True
+            if changed:
+                row["marcador_final"] = marcador
+                row["fecha_actualizacion"] = datetime.now().isoformat()
+            break
     if changed:
-        with open(config.CSV_SOCCER_PATH, "w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
-            writer.writeheader()
-            writer.writerows(rows)
+        _escribir_xlsx(rows)
         logger.info(f"Partido {id_partido} actualizado: AH0={resultado_ah0} O/U={resultado_ou25} Corners={resultado_corners} {marcador}")
     return changed
 
@@ -333,12 +328,8 @@ def obtener_estadisticas_soccer() -> dict:
             stats[f"{l}_{m}_devueltos"] = 0
             stats[f"{l}_{m}_win_rate"] = 0
 
-    if not os.path.exists(config.CSV_SOCCER_PATH):
-        return stats
-    try:
-        with open(config.CSV_SOCCER_PATH, newline="", encoding="utf-8") as f:
-            rows = list(csv.DictReader(f))
-    except Exception:
+    rows = _leer_xlsx()
+    if not rows:
         return stats
 
     for row in rows:

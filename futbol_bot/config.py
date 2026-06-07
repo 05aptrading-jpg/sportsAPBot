@@ -5,41 +5,89 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 load_dotenv(os.path.join(os.path.dirname(BASE_DIR), ".env"))
 
 SOCCER_LEAGUES_V1 = {
+    # ── Understat (solo ppda/final_third) + ESPN para fórmula xG ─────────
     "PREMIER_LEAGUE": {
         "understat_league": "EPL",
+        "espn_slug": "eng.1",
         "season": 2025,
         "short": "ENG",
         "teams": []
     },
     "LA_LIGA": {
         "understat_league": "La_liga",
+        "espn_slug": "esp.1",
         "season": 2025,
         "short": "ESP",
         "teams": []
     },
     "BUNDESLIGA": {
         "understat_league": "Bundesliga",
+        "espn_slug": "ger.1",
         "season": 2025,
         "short": "GER",
         "teams": []
     },
     "SERIE_A": {
         "understat_league": "Serie_A",
+        "espn_slug": "ita.1",
         "season": 2025,
         "short": "ITA",
         "teams": []
     },
     "LIGUE_1": {
         "understat_league": "Ligue_1",
+        "espn_slug": "fra.1",
         "season": 2025,
         "short": "FRA",
         "teams": []
     },
+    # ── ESPN API (fórmula xG: tiros×0.05 + SOT×0.12) ────────────────────
     "LIGA_MX": {
-        "source": "espn",
         "espn_slug": "mex.1",
         "season": 2025,
         "short": "MEX",
+        "teams": []
+    },
+    "MLS": {
+        "espn_slug": "usa.1",
+        "season": 2025,
+        "short": "USA",
+        "teams": []
+    },
+    "BRASILEIRAO": {
+        "espn_slug": "bra.1",
+        "season": 2025,
+        "short": "BRA",
+        "teams": []
+    },
+    "EREDIVISIE": {
+        "espn_slug": "ned.1",
+        "season": 2025,
+        "short": "NED",
+        "teams": []
+    },
+    "CHAMPIONSHIP": {
+        "espn_slug": "eng.2",
+        "season": 2025,
+        "short": "ENG2",
+        "teams": []
+    },
+    "PRIMEIRA_LIGA": {
+        "espn_slug": "por.1",
+        "season": 2025,
+        "short": "POR",
+        "teams": []
+    },
+    "SUPER_LIG": {
+        "espn_slug": "tur.1",
+        "season": 2025,
+        "short": "TUR",
+        "teams": []
+    },
+    "PRIMERA_DIVISION_ARG": {
+        "espn_slug": "arg.1",
+        "season": 2025,
+        "short": "ARG",
         "teams": []
     },
 }
@@ -94,7 +142,7 @@ SV_BAJO_UMBRAL  = 2.5
 SV_OVER_UMBRAL  = 3.2
 
 CACHE_STATS_PATH  = os.path.join(BASE_DIR, "stats_soccer_equipos.csv")
-CSV_SOCCER_PATH   = os.path.join(BASE_DIR, "apuestas_soccer.csv")
+CSV_SOCCER_PATH   = os.path.join(BASE_DIR, "apuestas_soccer.xlsx")
 LOG_PATH          = os.path.join(BASE_DIR, "futbol_bot.log")
 LOG_LEVEL         = "INFO"
 

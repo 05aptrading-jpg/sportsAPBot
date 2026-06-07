@@ -3,6 +3,8 @@ import io
 import logging
 from datetime import date
 
+import pandas as pd
+
 import config
 import data_manager as dm
 import bot
@@ -30,7 +32,7 @@ logger = logging.getLogger(__name__)
 def modo_normal():
     print("\n⚽ FUTBOL BOT — Iniciando scheduler continuo...\n" + "="*40)
     print(f"Zona horaria:   America/Mexico_City")
-    print(f"Scrape:         04:00 diario")
+    print(f"Scrape:         04:00 diario (ESPN + Understat)")
     print(f"Análisis:       06:00 diario")
     print(f"Live scores:    cada 20 min (si hay partidos)")
     print(f"Telegram poll:  cada 5 min")
@@ -44,27 +46,29 @@ def modo_normal():
 
 def modo_scrape():
     print("\n⚽ FUTBOL BOT — SCRAPEANDO DATOS\n" + "="*40)
-    logger.info("Modo --scrape: actualizando base de datos Understat")
+    from scraper_fbref import actualizar_base_datos_soccer
     df = actualizar_base_datos_soccer()
-    if not df.empty:
-        equipos = df["equipo"].tolist()
-        print(f"✅ Datos Understat actualizados: {len(equipos)} equipos en {df['liga'].nunique()} ligas")
-        print("\n📊 Scraping corners de FBref/FotMob...")
-        from scraper_corners import scrape_all_corners, curar_datos_para_corners
-        from config import CORNER_LEAGUE_AVG
-        for liga in df["liga"].unique():
-            liga_teams = df[df["liga"] == liga]["equipo"].tolist()
-            if liga_teams:
-                corners_data = scrape_all_corners(liga, liga_teams)
-                if corners_data:
-                    promedios = CORNER_LEAGUE_AVG.get(liga, CORNER_LEAGUE_AVG["DEFAULT"])
-                    for team in corners_data:
-                        corners_data[team] = curar_datos_para_corners(corners_data[team], promedios)
-                    dm.actualizar_stats_con_corners(corners_data, liga)
-                    print(f"  ✅ {liga}: {len(corners_data)} equipos con corners")
-        generar_soccer_data_json()
-    else:
+    if df.empty:
         print("❌ No se pudieron obtener datos")
+        return
+
+    print(f"\n  Caché: {len(df)} equipos en {df['liga'].nunique()} ligas")
+
+    print("\n📊 Scraping corners...")
+    from scraper_corners import scrape_all_corners, curar_datos_para_corners
+    from config import CORNER_LEAGUE_AVG
+    for liga in df["liga"].unique():
+        liga_teams = df[df["liga"] == liga]["equipo"].tolist()
+        if liga_teams:
+            corners_data = scrape_all_corners(liga, liga_teams)
+            if corners_data:
+                promedios = CORNER_LEAGUE_AVG.get(liga, CORNER_LEAGUE_AVG["DEFAULT"])
+                for team in corners_data:
+                    corners_data[team] = curar_datos_para_corners(corners_data[team], promedios)
+                dm.actualizar_stats_con_corners(corners_data, liga)
+                print(f"  ✅ {liga}: {len(corners_data)} equipos con corners")
+    generar_soccer_data_json()
+    print("\n✅ Scrape completo")
     print("="*40)
 
 

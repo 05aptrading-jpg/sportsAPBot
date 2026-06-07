@@ -2,6 +2,8 @@ import logging
 from datetime import datetime, timedelta
 from typing import Optional
 
+import pandas as pd
+
 from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.triggers.cron import CronTrigger
 from apscheduler.triggers.interval import IntervalTrigger
@@ -19,27 +21,29 @@ _scheduler: Optional[BlockingScheduler] = None
 _live_job_id = "live_scores_20min"
 
 
-def tarea_scrape():
+def tarea_scrape_completo():
+    """Scrape completo: ESPN (fórmula xG) + Understat (ppda) + corners. Corre a las 04:00."""
     logger.info("Ejecutando scrape programado")
     df = actualizar_base_datos_soccer()
-    if not df.empty:
-        logger.info(f"Scrape OK: {len(df)} equipos")
-        logger.info("Scraping corners...")
-        from scraper_corners import scrape_all_corners, curar_datos_para_corners
-        for liga in df["liga"].unique():
-            liga_teams = df[df["liga"] == liga]["equipo"].tolist()
-            if liga_teams:
-                corners_data = scrape_all_corners(liga, liga_teams)
-                if corners_data:
-                    from config import CORNER_LEAGUE_AVG
-                    promedios = CORNER_LEAGUE_AVG.get(liga, CORNER_LEAGUE_AVG["DEFAULT"])
-                    for team in corners_data:
-                        corners_data[team] = curar_datos_para_corners(corners_data[team], promedios)
-                    dm.actualizar_stats_con_corners(corners_data, liga)
-                    logger.info(f"  {liga}: {len(corners_data)} equipos corners actualizados")
-        generar_soccer_data_json()
-    else:
+    if df.empty:
         logger.warning("Scrape devolvió vacío")
+        return
+
+    logger.info(f"Cache: {len(df)} equipos en {df['liga'].nunique()} ligas")
+    logger.info("Scraping corners...")
+    from scraper_corners import scrape_all_corners, curar_datos_para_corners
+    for liga in df["liga"].unique():
+        liga_teams = df[df["liga"] == liga]["equipo"].tolist()
+        if liga_teams:
+            corners_data = scrape_all_corners(liga, liga_teams)
+            if corners_data:
+                from config import CORNER_LEAGUE_AVG
+                promedios = CORNER_LEAGUE_AVG.get(liga, CORNER_LEAGUE_AVG["DEFAULT"])
+                for team in corners_data:
+                    corners_data[team] = curar_datos_para_corners(corners_data[team], promedios)
+                dm.actualizar_stats_con_corners(corners_data, liga)
+                logger.info(f"  {liga}: {len(corners_data)} equipos corners actualizados")
+    generar_soccer_data_json()
 
 
 def tarea_analisis():
@@ -124,10 +128,10 @@ def iniciar():
     _scheduler = BlockingScheduler()
 
     _scheduler.add_job(
-        tarea_scrape,
+        tarea_scrape_completo,
         CronTrigger(hour=4, minute=0),
-        id="scrape_diario",
-        name="Scrape FBref diario",
+        id="scrape_completo",
+        name="Scrape completo (ESPN + Understat)",
     )
     _scheduler.add_job(
         tarea_analisis,
@@ -145,7 +149,7 @@ def iniciar():
 
     logger.info("Scheduler iniciado")
     print(f"⚽ Futbol Bot — Scheduler iniciado")
-    print(f"  Scrape:       04:00 diario")
+    print(f"  Scrape:       04:00 diario (ESPN fórmula xG + Understat ppda)")
     print(f"  Análisis:     {config.HORA_ANALISIS_MANANA} diario")
     print(f"  Live scores:  cada 20 min (si hay partidos)")
     print("  Ctrl+C para detener.\n")

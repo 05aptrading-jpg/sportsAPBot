@@ -64,6 +64,10 @@ PESO_EFICIENCIA       = 10   # Bloque 4 — BaseRuns vs récord real
 # Peso si el abridor es Opener (se transfiere al bullpen)
 PESO_OPENER_REDUCCION = 15   # Abridor → 15%, Bullpen += 15%
 
+# Bulk Guy — lanzador largo que viene tras el opener
+PESO_BULK_GUY         = 15   # Peso B1 cuando hay bulk guy definido
+PESO_OPENER_MINIMO    = 5    # Peso B1 residual para el opener
+
 # Umbral mínimo de score para considerar señal válida
 PROB_MINIMA_SEÑAL     = 57.0  # % — "Tríada del Valor": necesita > 57%
 PROB_MINIMA_ANALISIS  = 57.0  # % — Umbral mínimo para análisis accionable
@@ -73,18 +77,25 @@ EDGE_MINIMO           = 4.0   # % — Edge mínimo (prob_bot - prob_mercado) par
 
 # ── Bloque 1: Pitcheo abridor
 IP_MINIMAS_TEMPORADA  = 20      # Menos de 20 IP → penalización de volatilidad
-PENALIZACION_IP_PCT   = 5       # -5% probabilidad final por abridor debutante
+PENALIZACION_IP_PCT   = 5       # -5% probabilidad final por abridor debutante (legacy)
+PENALIZACION_IP_DIRECTA = 10    # Puntos que se restan DIRECTAMENTE del score B1 si IP < 20
 BABIP_SUERTE_BAJO     = 0.260   # BABIP < 0.260 → posible suerte positiva
 BABIP_SUERTE_ALTO     = 0.340   # BABIP > 0.340 → posible mala suerte
 HARD_HIT_UMBRAL       = 42.0    # Hard-Hit% > 42 → penalizar aunque BABIP bajo
 XFIP_PENALIZACION     = 0.50    # Puntos que se añaden al xFIP si Hard-Hit > umbral
 
 # ── Bloque 3: Bullpen / fatiga
-PITCHEOS_FATIGA_72H   = 40      # Cerrador + Setup > 40 pitcheos → bullpen agotado
-PENALIZACION_BULLPEN  = 35      # % de reducción al WAR del bullpen si fatigado
+PITCHEOS_FATIGA_72H     = 40    # Cerrador + Setup > 40 pitcheos → bullpen agotado (leve)
+PENALIZACION_BULLPEN    = 35    # % de reducción al WAR del bullpen si fatigado (legacy)
+# Fatiga escalonada — reemplaza el umbral único
+BULLPEN_FATIGA_MEDIA    = 120   # Pitcheos 72h para fatiga media
+BULLPEN_FATIGA_CRITICA  = 160   # Pitcheos 72h para fatiga crítica
+PENALIZACION_BULLPEN_MEDIA  = 15   # % reducción en fatiga media (>120)
+PENALIZACION_BULLPEN_CRITICA = 35  # % reducción en fatiga crítica (>160)
 
 # ── Bloque 4: BaseRuns
-BASERUNS_DIFERENCIAL  = 5       # Diferencia W-L vs BaseRuns W para señal de suerte
+BASERUNS_DIFERENCIAL     = 5    # Diferencia W-L vs BaseRuns W para señal de suerte (legacy)
+BASERUNS_DIFERENCIAL_NUEVO = 1.5  # Nuevo umbral cond2 Tríada: diff < -1.5 → mala suerte
 
 # ── Trigger Moneyline (filtro de senal)
 TRIGGER_WRC_MIN_LMB    = 15   # Diferencia minima de wRC para validar trigger en LMB
@@ -99,6 +110,7 @@ TRIGGER_HOLGURA_WRC     = 18   # Diferencia absoluta de wRC+ para ALTA
 
 # ── Cuotas / "Tríada del Valor"
 CAMBIO_ODDS_ALERTA    = 5       # % de cambio en prob. implícita para disparar alerta
+EDGE_MINIMO_TRÍADA    = 3.5     # % — Edge mínimo (prob_bot - prob_mercado) para cond3 Tríada
 XWOBA_DESVIACION_7D   = 0.030   # Desviación xwOBA 7 días vs temporada (30 puntos)
 
 # ─────────────────────────────────────────────────────────────────────────────

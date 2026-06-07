@@ -2,7 +2,6 @@
 Live scores updater - fetches ESPN scores every 20 min,
 updates CSV results, regenerates JSON, pushes to GitHub.
 """
-import csv
 import logging
 import os
 import re
@@ -162,15 +161,11 @@ def actualizar_resultados() -> dict:
     today = date.today().isoformat()
     stats = {"updated": 0, "pending": 0, "completed": 0, "errors": 0}
 
-    if not os.path.exists(config.CSV_SOCCER_PATH):
-        logger.info("CSV no existe, saltando live scores")
+    import data_manager as dm
+    csv_rows = dm.cargar_partidos_xlsx()
+    if not csv_rows:
+        logger.info("xlsx no existe, saltando live scores")
         return stats
-
-    csv_rows = []
-    with open(config.CSV_SOCCER_PATH, newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            csv_rows.append(row)
 
     pending_rows = [r for r in csv_rows if r.get("resultado", "pendiente") == "pendiente"]
     if not pending_rows:
@@ -262,16 +257,11 @@ def actualizar_resultados() -> dict:
 
 
 def hay_partidos_pendientes_hoy() -> bool:
-    """Check if there are any pending matches in the CSV."""
-    if not os.path.exists(config.CSV_SOCCER_PATH):
-        return False
-    try:
-        with open(config.CSV_SOCCER_PATH, newline="", encoding="utf-8") as f:
-            for row in csv.DictReader(f):
-                if row.get("resultado_ah0", "pendiente") == "pendiente":
-                    return True
-                if row.get("resultado_ou25", "pendiente") == "pendiente":
-                    return True
-    except Exception:
-        pass
+    """Check if there are any pending matches in the xlsx."""
+    rows = dm.cargar_partidos_xlsx()
+    for row in rows:
+        if row.get("resultado_ah0", "pendiente") == "pendiente":
+            return True
+        if row.get("resultado_ou25", "pendiente") == "pendiente":
+            return True
     return False
