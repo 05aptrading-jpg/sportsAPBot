@@ -19,32 +19,13 @@ LIGA_LABELS = {
     "LIGA_MX": "🇲🇽 Liga MX",
     "MLS": "🇺🇸 MLS",
     "BRASILEIRAO": "🇧🇷 Brasileirao",
-    "PRIMERA_DIVISION_ARG": "🇦🇷 Liga Profesional",
-    "LIGA_POSTOBON": "🇨🇴 Liga BetPlay",
-    "PRIMERA_DIVISION_CHI": "🇨🇱 Primera División",
-    "PRIMERA_DIVISION_PAR": "🇵🇾 Primera División",
-    "PRIMERA_DIVISION_URU": "🇺🇾 Primera División",
     "EREDIVISIE": "🇳🇱 Eredivisie",
     "PRIMEIRA_LIGA": "🇵🇹 Primeira Liga",
     "SUPER_LIG": "🇹🇷 Süper Lig",
-    "SUPER_LEAGUE_BEL": "🇧🇪 Pro League",
-    "PREMIERSHIP": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Premiership",
-    "Serie B": "🇮🇹 Serie B",
     "CHAMPIONSHIP": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Championship",
-    "BUNDESLIGA_2": "🇩🇪 2. Bundesliga",
-    "LIGA_2": "🇪🇸 La Liga 2",
-    "Ligue 2": "🇫🇷 Ligue 2",
+    "PRIMERA_DIVISION_ARG": "🇦🇷 Liga Profesional",
     "MUNDIAL": "🌍 FIFA World Cup 2026",
     "AMISTOSOS_INT": "🏳️ Amistosos Internacionales",
-    "BRASILEIRAO_B": "🇧🇷 Brasileirão Serie B",
-    "LIGA_BOLIVIANA": "🇧🇴 Liga Profesional",
-    "PRIMERA_DIVISION_CHILE": "🇨🇱 Primera División Chile",
-    "LEAGUE_OF_IRELAND": "🇮🇪 League of Ireland",
-    "COPA_LIBERTADORES": "🌎 Copa Libertadores",
-    "COPA_SUDAMERICANA": "🌎 Copa Sudamericana",
-    "CONCACAF_CHAMPIONS": "🏆 CONCACAF Champions",
-    "CHAMPIONS_LEAGUE": "🏆 UEFA Champions League",
-    "EUROPA_LEAGUE": "🏆 UEFA Europa League",
 }
 
 # Output dirs - GitHub Pages root is 1 level up from futbol_bot/
@@ -139,26 +120,35 @@ def generar_soccer_data_json():
         ah0 = row.get("senal_ah0", "NO_APOSTAR")
         if ah0 and ah0 != "NO_APOSTAR":
             favorito = ah0.replace("AH0 - ", "")
+        def _f(v, default=0.0):
+            try:
+                return float(v) if v else default
+            except (ValueError, TypeError):
+                return default
         output.append({
             "liga": liga_label,
             "liga_key": row["liga"],
             "local": row["local"],
             "visitante": row["visitante"],
-            "xg_local": row.get("xg_local", "0"),
-            "xg_visit": row.get("xg_visit", "0"),
-            "ah0": row.get("senal_ah0", ""),
+            "xg_local": _f(row.get("xg_local")),
+            "xg_visit": _f(row.get("xg_visit")),
+            "xg_total": _f(row.get("xg_total")),
+            "diff_xg": _f(row.get("diff_xg")),
+            "xcorner_total": _f(row.get("xcorner_total")),
+            "favorito": (ah0.replace("AH0 - ", "")) if ah0 and ah0 != "NO_APOSTAR" else "",
+            "senal_ah0": row.get("senal_ah0", ""),
             "confianza_ah0": row.get("confianza_ah0", ""),
-            "ou25": row.get("senal_ou25", ""),
+            "senal_ou25": row.get("senal_ou25", ""),
             "confianza_ou25": row.get("confianza_ou25", ""),
-            "corners": row.get("senal_corners", ""),
+            "senal_corners": row.get("senal_corners", ""),
             "confianza_corners": row.get("confianza_corners", ""),
             "resultado": row.get("resultado", ""),
             "resultado_ah0": row.get("resultado_ah0", ""),
             "resultado_ou25": row.get("resultado_ou25", ""),
             "resultado_corners": row.get("resultado_corners", ""),
-            "marcador": row.get("marcador_final", ""),
-            "fecha": row.get("fecha_partido", ""),
-            "hora": row.get("hora_partido", ""),
+            "marcador_final": row.get("marcador_final", ""),
+            "fecha_partido": row.get("fecha_partido", ""),
+            "hora_partido": row.get("hora_partido", ""),
         })
     data = {
         "fecha": datetime.now().strftime("%d/%m/%Y %H:%M"),

@@ -259,8 +259,8 @@ def _cmd_actualiza(chat_id: str):
 
 
 def _cmd_futbol(chat_id: str):
-    """Muestra análisis de fútbol (Premier, La Liga, Liga MX)."""
-    import csv as _csv
+    """Muestra análisis de fútbol."""
+    import data_manager as dm
     from datetime import date as _date
     hoy = _date.today()
     lineas = [
@@ -269,17 +269,9 @@ def _cmd_futbol(chat_id: str):
         "",
     ]
 
-    csv_path = config.CSV_SOCCER_PATH
-    if not os.path.exists(csv_path):
+    rows = dm.cargar_partidos_xlsx()
+    if not rows:
         lineas.append("ℹ️ Sin datos de fútbol disponibles.")
-        _send_raw(chat_id, "\n".join(lineas), mini_app=True)
-        return
-
-    try:
-        with open(csv_path, newline="", encoding="utf-8") as f:
-            rows = list(_csv.DictReader(f))
-    except Exception as e:
-        lineas.append(f"⚠️ Error leyendo datos: {e}")
         _send_raw(chat_id, "\n".join(lineas), mini_app=True)
         return
 
