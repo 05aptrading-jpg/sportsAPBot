@@ -347,7 +347,7 @@ def _build_data() -> dict:
         resultado_csv = _row.get("resultado", "").strip().lower()
         marcador = _row.get("marcador_final", "").strip()
         nivel_cert = _row.get("nivel_certidumbre", "").strip()
-        if nivel_cert in ("ALTA", "MEDIA"):
+        if nivel_cert in ("ALTA", "MEDIA") and prob_csv >= 57.0:
             label = "🎯"
         else:
             label = "📋"
@@ -416,7 +416,7 @@ def _build_data() -> dict:
         mercado  = sg.get("odds_mercado")
         edge     = round(prob - mercado, 2) if mercado else None
         nivel_cert = sg.get("nivel_certidumbre", "").strip()
-        if nivel_cert in ("ALTA", "MEDIA"):
+        if nivel_cert in ("ALTA", "MEDIA") and prob >= 57.0:
             label = "🎯"
         else:
             label = "📋"

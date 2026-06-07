@@ -226,7 +226,7 @@ def main():
             mercado = sg.get("odds_mercado")
             edge = round(prob - (mercado or 0), 2) if mercado else None
             nivel_cert = sg.get("nivel_certidumbre", "").strip()
-            if nivel_cert in ("ALTA", "MEDIA"):
+            if nivel_cert in ("ALTA", "MEDIA") and prob >= 57.0:
                 label = "🎯"
             else:
                 label = "📋"
