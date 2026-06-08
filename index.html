@@ -688,14 +688,13 @@ function renderStats() {
   if (!s) return;
   statsEl.innerHTML = '';
   var stats = [
-    { label: '🌐 Global', value: s.acertados + '✅ ' + s.fallidos + '❌', sub: '(' + s.total + ') ' + s.win_rate + '%' },
     { label: '🎯 Alta Confianza', value: s.alta_acertados + '✅ ' + s.alta_fallidos + '❌', sub: '(' + s.alta_total + ') ' + s.alta_win_rate + '%', fire: s.alta_win_rate >= 65 },
     { label: '📋 Baja Confianza', value: s.baja_acertados + '✅ ' + s.baja_fallidos + '❌', sub: '(' + s.baja_total + ') ' + s.baja_win_rate + '%' },
     { label: '⭐ Señales Valor', value: s.valor_ok + '/' + s.valor_total, sub: s.valor_rate + '%' },
   ];
   for (var i = 0; i < stats.length; i++) {
     var st = stats[i];
-    if (!st.sub.startsWith('(0)') || st.label === '🌐 Global') {
+    if (!st.sub.startsWith('(0)')) {
       statsEl.innerHTML += '<div class="stat-item">'
         + '<span class="stat-label">' + st.label + '</span>'
         + '<span class="stat-value">' + st.value + ' <span class="stat-sub">' + st.sub + '</span>' + (st.fire ? '<span class="fire">🔥</span>' : '') + '</span>'
@@ -1404,7 +1403,6 @@ function renderFutbolStats() {
   var container = document.getElementById('futbol-stats-list');
   var stats = getFutbolStatsFiltered();
   var items = [
-    { label: '🌐 Global', total: stats.total, ok: stats.acertados, fail: stats.fallidos, push: 0, rate: stats.win_rate },
     { label: '🎯 AH0', total: stats.ah0_total, ok: stats.ah0_acertados, fail: stats.ah0_fallidos, push: stats.ah0_devueltos, rate: stats.ah0_win_rate },
     { label: '📈 O/U 2.5', total: stats.ou25_total, ok: stats.ou25_acertados, fail: stats.ou25_fallidos, push: stats.ou25_devueltos, rate: stats.ou25_win_rate },
   ];
