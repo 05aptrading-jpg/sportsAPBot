@@ -205,6 +205,23 @@
   .sb-loading { text-align: center; padding: 10px; color: #536471; font-size: 12px; }
   .sb-pitcher { font-size: 12px; color: #8b98a5; margin-top: 2px; }
 
+  .hits-board { margin-top: 10px; padding-top: 10px; border-top: 1px solid #2a3040; overflow: hidden; }
+  .hits-board-title { font-size: 11px; font-weight: 600; color: #f5a623; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; text-align: center; }
+  .hits-board-teams { position: relative; min-height: 180px; }
+  .hits-team-slide { display: none; }
+  .hits-team-slide.active { display: block; }
+  .hits-team-name { font-size: 12px; font-weight: 600; color: #e1e8ed; margin-bottom: 6px; text-align: center; }
+  .hits-player-row { display: flex; align-items: center; padding: 4px 0; font-size: 12px; }
+  .hits-player-rank { width: 18px; color: #71767b; font-weight: 600; text-align: center; }
+  .hits-player-name { flex: 1; color: #e1e8ed; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .hits-player-prob { width: 52px; text-align: right; font-weight: 600; margin-left: 8px; }
+  .hits-player-status { width: 20px; text-align: center; font-size: 13px; margin-left: 6px; }
+  .hits-player-bar { width: 60px; height: 4px; background: #2a3040; border-radius: 2px; margin-left: 8px; overflow: hidden; }
+  .hits-player-bar-fill { height: 100%; border-radius: 2px; transition: width 0.3s; }
+  .hits-board-dots { display: flex; justify-content: center; gap: 6px; margin-top: 8px; }
+  .hits-dot { width: 6px; height: 6px; border-radius: 50%; background: #2a3040; transition: background 0.3s; }
+  .hits-dot.active { background: #f5a623; }
+
   .footer {
     text-align: center; padding: 16px 0;
     font-size: 12px; color: #e1e8ed;
@@ -690,6 +707,7 @@ function renderStats() {
   var stats = [
     { label: '🎯 Alta Confianza', value: s.alta_acertados + '✅ ' + s.alta_fallidos + '❌', sub: '(' + s.alta_total + ') ' + s.alta_win_rate + '%', fire: s.alta_win_rate >= 65 },
     { label: '📋 Baja Confianza', value: s.baja_acertados + '✅ ' + s.baja_fallidos + '❌', sub: '(' + s.baja_total + ') ' + s.baja_win_rate + '%' },
+    { label: '⚾ Predicciones Hit', value: (s.hits_acertados || 0) + '✅ ' + (s.hits_fallidos || 0) + '❌', sub: '(' + (s.hits_total || 0) + ') ' + (s.hits_win_rate || 0) + '%' },
     { label: '⭐ Señales Valor', value: s.valor_ok + '/' + s.valor_total, sub: s.valor_rate + '%' },
   ];
   for (var i = 0; i < stats.length; i++) {
@@ -889,6 +907,7 @@ function renderScoreboardFromLive(g, live, container) {
   }
 
   html += '</div>';
+  html += renderHitsBoard(String(g.game_pk || 0) + '-' + (DATA.games.indexOf(g)), topTeam, botTeam);
   container.innerHTML = html;
 }
 
@@ -981,7 +1000,75 @@ function renderScoreboard(g, container) {
   }
 
   html += '</div>';
+  html += renderHitsBoard(String(g.game_pk || 0) + '-' + (DATA.games.indexOf(g)), awayName, homeName);
   container.innerHTML = html;
+}
+
+var hitsBoardTimers = {};
+
+function renderHitsBoard(gameKey, awayTeam, homeTeam) {
+  var hitsBoard = DATA.hits_board || {};
+  var awayPlayers = hitsBoard[awayTeam] || [];
+  var homePlayers = hitsBoard[homeTeam] || [];
+  if (awayPlayers.length === 0 && homePlayers.length === 0) return '';
+
+  var teams = [];
+  if (awayPlayers.length > 0) teams.push({ name: awayTeam, players: awayPlayers });
+  if (homePlayers.length > 0) teams.push({ name: homeTeam, players: homePlayers });
+
+  var slides = '';
+  for (var t = 0; t < teams.length; t++) {
+    var team = teams[t];
+    var rows = '';
+    for (var i = 0; i < team.players.length; i++) {
+      var p = team.players[i];
+      var prob = p.prob;
+      var status = p.status || 'pendiente';
+      var statusIcon = status === 'cumplio' ? '✅' : status === 'fallido' ? '❌' : '⏳';
+      var color = status === 'cumplio' ? '#00ba7c' : status === 'fallido' ? '#ef4444' : (prob >= 72 ? '#00ba7c' : prob >= 65 ? '#f5a623' : '#ef4444');
+      var barW = Math.min(Math.max(prob, 0), 100);
+      rows += '<div class="hits-player-row">'
+        + '<span class="hits-player-rank">' + (i + 1) + '</span>'
+        + '<span class="hits-player-name">' + p.nombre + '</span>'
+        + '<span class="hits-player-prob" style="color:' + color + '">' + prob.toFixed(1) + '%</span>'
+        + '<span class="hits-player-status">' + statusIcon + '</span>'
+        + '<div class="hits-player-bar"><div class="hits-player-bar-fill" style="width:' + barW + '%;background:' + color + '"></div></div>'
+        + '</div>';
+    }
+    slides += '<div class="hits-team-slide' + (t === 0 ? ' active' : '') + '" data-hb="' + gameKey + '-' + t + '">'
+      + '<div class="hits-team-name">🎯 Top 5 Hits — ' + team.name + '</div>'
+      + rows
+      + '</div>';
+  }
+
+  var dots = '';
+  for (var d = 0; d < teams.length; d++) {
+    dots += '<span class="hits-dot' + (d === 0 ? ' active' : '') + '" data-hb-dot="' + gameKey + '-' + d + '"></span>';
+  }
+
+  var html = '<div class="hits-board" id="hb-' + gameKey + '">'
+    + '<div class="hits-board-title">📊 Top Hits del Día</div>'
+    + '<div class="hits-board-teams">' + slides + '</div>'
+    + '<div class="hits-board-dots">' + dots + '</div>'
+    + '</div>';
+
+  if (teams.length > 1) {
+    var timerKey = 'hb_' + gameKey;
+    if (hitsBoardTimers[timerKey]) clearInterval(hitsBoardTimers[timerKey]);
+    var currentIdx = 0;
+    hitsBoardTimers[timerKey] = setInterval(function() {
+      var allSlides = document.querySelectorAll('[data-hb^="' + gameKey + '-"]');
+      var allDots = document.querySelectorAll('[data-hb-dot^="' + gameKey + '-"]');
+      if (allSlides.length === 0) { clearInterval(hitsBoardTimers[timerKey]); return; }
+      allSlides[currentIdx].classList.remove('active');
+      allDots[currentIdx].classList.remove('active');
+      currentIdx = (currentIdx + 1) % allSlides.length;
+      allSlides[currentIdx].classList.add('active');
+      allDots[currentIdx].classList.add('active');
+    }, 5000);
+  }
+
+  return html;
 }
 
 renderLigaTabs();
