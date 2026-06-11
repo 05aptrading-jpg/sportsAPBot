@@ -287,6 +287,9 @@
   .futbol-stat-value { color: #00ba7c; font-weight: 600; }
   .futbol-stat-sub { color: #8b98a5; font-size: 11px; margin-left: 6px; }
   .futbol-empty { color: #71767b; text-align: center; padding: 16px; font-size: 13px; }
+
+  .nba-prop-row:hover { background: #1a2744; }
+  #nba-game-select:focus { outline: none; border-color: #1d9bf0; }
   .futbol-liga-dropdown { position: relative; min-width: 180px; }
   .futbol-liga-trigger { background: #1a2030; color: #e1e8ed; border: 1px solid #3a4550; border-radius: 8px; padding: 7px 28px 7px 10px; font-size: 13px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; }
   .futbol-liga-trigger::after { content: '\u25BC'; font-size: 9px; color: #71767b; position: absolute; right: 10px; }
@@ -328,6 +331,7 @@
 <div id="main-content"><div class="main-tabs">
   <div class="main-tab active" id="tab-beisbol" onclick="selectMainTab('beisbol')">⚾ Béisbol</div>
   <div class="main-tab" id="tab-futbol" onclick="selectMainTab('futbol')">⚽ Fútbol</div>
+  <div class="main-tab" id="tab-nba" onclick="selectMainTab('nba')">🏀 NBA</div>
 </div>
 
 <div id="beisbol-panel">
@@ -436,6 +440,49 @@
 
 </div>
 
+<div id="nba-panel" style="display:none">
+
+  <div class="header">
+    <div class="date" id="nba-fecha">—</div>
+    <div class="next-update" id="nba-next-update">🏀 NBA</div>
+  </div>
+
+  <div class="legend">
+    <span>🏁 Final</span>
+    <span>🔴 En vivo</span>
+    <span>⏳ Pendiente</span>
+    <span>🚫 Pospuesto</span>
+  </div>
+
+  <div id="nba-date-tabs" class="date-tabs"></div>
+
+  <div class="card">
+    <div class="card-title">📋 Partidos NBA</div>
+    <div id="nba-games-list"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🎯 Proyecciones de Jugadores</div>
+    <div id="nba-props-filter" style="margin-bottom:8px">
+      <div style="display:flex;gap:6px;margin-bottom:6px">
+        <button class="filter-btn active" id="nbaf-all" onclick="setNbaPropFilter('all')">👥 Todos</button>
+        <button class="filter-btn" id="nbaf-top5" onclick="setNbaPropFilter('top5')">⭐ Top 5</button>
+        <button class="filter-btn" id="nbaf-top3" onclick="setNbaPropFilter('top3')">🏆 Top 3</button>
+      </div>
+      <select id="nba-game-select" style="width:100%;padding:8px;border-radius:6px;border:1px solid #2f3336;background:#0f1923;color:#e1e8ed;font-size:13px" onchange="renderNbaProps()"></select>
+    </div>
+    <div id="nba-props-list"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📊 Rendimiento NBA</div>
+    <div id="nba-stats-list" class="futbol-stats-grid"></div>
+  </div>
+
+  <div style="text-align:center;font-size:12px;color:#536471;margin-top:8px;padding-bottom:16px">🏀 Proyecciones NBA — Análisis académico</div>
+
+</div>
+
 <script>
 var DATA = { games: [], stats: {}, stats_mlb: {}, stats_lmb: {}, dias: [], live_data: {}, autorizados: [] };
 var selectedLiga = 'general';
@@ -495,6 +542,10 @@ function renderAll() {
   renderDateLabel();
   renderGames();
   renderStats();
+  var nbaPanel = document.getElementById('nba-panel');
+  if (nbaPanel && nbaPanel.style.display !== 'none') {
+    renderNba();
+  }
 }
 
 function getStatsForLiga(liga) {
@@ -1057,14 +1108,14 @@ function renderHitsBoard(gameKey, awayTeam, homeTeam) {
     if (hitsBoardTimers[timerKey]) clearInterval(hitsBoardTimers[timerKey]);
     var currentIdx = 0;
     hitsBoardTimers[timerKey] = setInterval(function() {
-      var allSlides = document.querySelectorAll('[data-hb^="' + gameKey + '-"]');
-      var allDots = document.querySelectorAll('[data-hb-dot^="' + gameKey + '-"]');
-      if (allSlides.length === 0) { clearInterval(hitsBoardTimers[timerKey]); return; }
-      allSlides[currentIdx].classList.remove('active');
-      allDots[currentIdx].classList.remove('active');
-      currentIdx = (currentIdx + 1) % allSlides.length;
-      allSlides[currentIdx].classList.add('active');
-      allDots[currentIdx].classList.add('active');
+      var slides = document.querySelectorAll('[data-hb^="' + gameKey + '-"]');
+      var dots = document.querySelectorAll('[data-hb-dot^="' + gameKey + '-"]');
+      if (slides.length === 0) { clearInterval(hitsBoardTimers[timerKey]); return; }
+      slides[currentIdx].classList.remove('active');
+      dots[currentIdx].classList.remove('active');
+      currentIdx = (currentIdx + 1) % slides.length;
+      slides[currentIdx].classList.add('active');
+      dots[currentIdx].classList.add('active');
     }, 5000);
   }
 
@@ -1091,20 +1142,18 @@ var futbolStatsRangeMode = null;
 function selectMainTab(tab) {
   var beisbolPanel = document.getElementById('beisbol-panel');
   var futbolPanel = document.getElementById('futbol-panel');
+  var nbaPanel = document.getElementById('nba-panel');
   var tabBeisbol = document.getElementById('tab-beisbol');
   var tabFutbol = document.getElementById('tab-futbol');
-  if (tab === 'beisbol') {
-    beisbolPanel.style.display = '';
-    futbolPanel.style.display = 'none';
-    tabBeisbol.className = 'main-tab active';
-    tabFutbol.className = 'main-tab';
-  } else {
-    beisbolPanel.style.display = 'none';
-    futbolPanel.style.display = '';
-    tabBeisbol.className = 'main-tab';
-    tabFutbol.className = 'main-tab active futbol';
-    if (!soccerData) fetchSoccerData();
-  }
+  var tabNba = document.getElementById('tab-nba');
+  beisbolPanel.style.display = tab === 'beisbol' ? '' : 'none';
+  futbolPanel.style.display = tab === 'futbol' ? '' : 'none';
+  nbaPanel.style.display = tab === 'nba' ? '' : 'none';
+  tabBeisbol.className = 'main-tab' + (tab === 'beisbol' ? ' active' : '');
+  tabFutbol.className = 'main-tab' + (tab === 'futbol' ? ' active futbol' : '');
+  tabNba.className = 'main-tab' + (tab === 'nba' ? ' active' : '');
+  if (tab === 'futbol' && !soccerData) fetchSoccerData();
+  if (tab === 'nba') renderNba();
 }
 
 function fetchSoccerData() {
@@ -1504,6 +1553,267 @@ function renderFutbolStats() {
   }
   if (!html) html = '<div class="futbol-empty">No hay estadisticas de futbol aun. Los datos se acumularan cuando los partidos tengan resultados.</div>';
   container.innerHTML = html;
+}
+
+// -- NBA -------------------------------------------------------------
+
+var nbaDateFilter = '';
+var nbaSelectedGame = '';
+var nbaPropFilter = 'all';
+
+function renderNba() {
+  if (!DATA.nba_games) return;
+  var fechaEl = document.getElementById('nba-fecha');
+  if (fechaEl) fechaEl.textContent = DATA.fecha || '—';
+  renderNbaDateTabs();
+  renderNbaGames();
+  renderNbaGameSelect();
+  renderNbaProps();
+  renderNbaStats();
+}
+
+function renderNbaDateTabs() {
+  var container = document.getElementById('nba-date-tabs');
+  if (!container) return;
+  var fechas = {};
+  for (var i = 0; i < (DATA.nba_games || []).length; i++) {
+    fechas[DATA.nba_games[i].game_date] = true;
+  }
+  var dias = Object.keys(fechas).sort().reverse();
+  if (dias.length <= 1) { container.innerHTML = ''; return; }
+  if (!nbaDateFilter || dias.indexOf(nbaDateFilter) === -1) nbaDateFilter = dias[0];
+  var html = '';
+  for (var j = 0; j < dias.length; j++) {
+    var d = dias[j];
+    var active = d === nbaDateFilter ? ' active' : '';
+    html += '<div class="date-tab' + active + '" onclick="selectNbaDate(\'' + d + '\')">' + formatearFecha(d) + '</div>';
+  }
+  container.innerHTML = html;
+}
+
+function selectNbaDate(date) {
+  nbaDateFilter = date;
+  renderNbaDateTabs();
+  renderNbaGames();
+}
+
+function renderNbaGames() {
+  var container = document.getElementById('nba-games-list');
+  var filtered = (DATA.nba_games || []).filter(function(g) {
+    return !nbaDateFilter || g.game_date === nbaDateFilter;
+  });
+  if (filtered.length === 0) {
+    container.innerHTML = '<div class="game-row" style="color:#71767b;justify-content:center">Sin partidos NBA</div>';
+    return;
+  }
+  var html = '';
+  for (var i = 0; i < filtered.length; i++) {
+    var g = filtered[i];
+    var score = (g.away_score !== undefined && g.home_score !== undefined)
+      ? g.away_score + '-' + g.home_score
+      : '';
+    var sep = score || 'vs';
+    var isLive = g.result === 'live';
+    var idx = g.game_id || ('nba-' + i);
+    var expandIcon = '<span class="expand-icon" style="color:#536471;font-size:10px;transition:transform .2s">▼</span>';
+    html += '<div class="game-wrapper">'
+      + '<div class="game-row" onclick="toggleNbaScoreboard(\'' + idx + '\', this)">'
+      + '<div class="game-status">' + g.status_emoji + '</div>'
+      + '<div class="game-team"><span style="color:#58a6ff">' + g.away + '</span>'
+      + ' <span style="color:#71767b">' + sep + '</span>'
+      + ' <span style="color:#8b98a5">' + g.home + '</span>'
+      + (isLive ? ' <span class="live" style="color:#ef4444;font-size:10px;font-weight:600;margin-left:4px">🔴 EN VIVO</span>' : '')
+      + '</div>'
+      + '<div class="game-state">' + g.state + '</div>'
+      + expandIcon
+      + '</div>'
+      + '<div class="scoreboard-expand" id="sb-nba-' + idx + '"></div>'
+      + '</div>';
+  }
+  container.innerHTML = html;
+}
+
+function toggleNbaScoreboard(idx, rowEl) {
+  var container = document.getElementById('sb-nba-' + idx);
+  if (!container) return;
+  var isOpen = container.classList.contains('open');
+  var icon = rowEl.querySelector('.expand-icon');
+  if (isOpen) {
+    container.classList.remove('open');
+    if (icon) icon.classList.remove('open');
+    return;
+  }
+  container.classList.add('open');
+  if (icon) icon.classList.add('open');
+
+  var g = null;
+  for (var i = 0; i < (DATA.nba_games || []).length; i++) {
+    if ((DATA.nba_games[i].game_id || 'nba-' + i) == idx) { g = DATA.nba_games[i]; break; }
+  }
+  if (!g) { container.innerHTML = '<div style="color:#8b98a5;padding:8px">No disponible</div>'; return; }
+
+  var awayLs = g.away_linescores || [];
+  var homeLs = g.home_linescores || [];
+  var maxPeriods = Math.max(awayLs.length, homeLs.length);
+
+  if (maxPeriods === 0 && g.result === 'pending') {
+    container.innerHTML = '<div style="color:#8b98a5;padding:8px">El juego aun no comienza</div>';
+    return;
+  }
+  if (maxPeriods === 0) {
+    container.innerHTML = '<div style="color:#8b98a5;padding:8px">Sin detalle de periodos disponible</div>';
+    return;
+  }
+
+  var isLive = g.result === 'live';
+  var isFinal = g.result === 'completed';
+  var statusText = g.state || '';
+  var statusClass = isLive ? 'live' : (isFinal ? 'final' : '');
+
+  var html = '<div class="sb-header"><span class="sb-status ' + statusClass + '">' + statusText + '</span></div>';
+  html += '<div class="sb-grid" style="grid-template-columns:80px repeat(' + maxPeriods + ', minmax(28px,1fr)) 40px">';
+
+  html += '<div class="sb-label sb-header-row"></div>';
+  for (var p = 0; p < maxPeriods; p++) {
+    html += '<div class="sb-inning sb-header-row">Q' + (p + 1) + '</div>';
+  }
+  html += '<div class="sb-inning sb-header-row" style="font-weight:700">T</div>';
+
+  html += '<div class="sb-label">' + g.away_abbr + '</div>';
+  for (var p = 0; p < maxPeriods; p++) {
+    var val = (awayLs[p] && awayLs[p].value !== undefined) ? awayLs[p].value : '';
+    html += '<div class="sb-score away">' + val + '</div>';
+  }
+  html += '<div class="sb-total away">' + g.away_score + '</div>';
+
+  html += '<div class="sb-label">' + g.home_abbr + '</div>';
+  for (var p = 0; p < maxPeriods; p++) {
+    var val = (homeLs[p] && homeLs[p].value !== undefined) ? homeLs[p].value : '';
+    html += '<div class="sb-score home">' + val + '</div>';
+  }
+  html += '<div class="sb-total home">' + g.home_score + '</div>';
+
+  html += '</div>';
+
+  if (isLive) {
+    html += '<div style="display:flex;justify-content:center;gap:16px;padding:8px;color:#8b98a5;font-size:12px">'
+      + '<span>⏱ ' + g.clock + '</span>'
+      + '<span>🔢 Q' + g.period + '</span>'
+      + '</div>';
+  }
+
+  container.innerHTML = html;
+}
+
+function renderNbaGameSelect() {
+  var select = document.getElementById('nba-game-select');
+  if (!select) return;
+  var games = DATA.nba_projections_by_game || [];
+  if (games.length === 0) {
+    select.innerHTML = '<option value="">Sin proyecciones disponibles</option>';
+    return;
+  }
+  var html = '<option value="">-- Todos los juegos --</option>';
+  for (var i = 0; i < games.length; i++) {
+    var g = games[i];
+    var label = g.away && g.home ? g.away + ' vs ' + g.home : 'Juego ' + (i + 1);
+    var sel = g.game_id === nbaSelectedGame ? ' selected' : '';
+    html += '<option value="' + g.game_id + '"' + sel + '>' + label + ' (' + g.players.length + ' props)</option>';
+  }
+  select.innerHTML = html;
+}
+
+function setNbaPropFilter(mode) {
+  nbaPropFilter = mode;
+  document.getElementById('nbaf-all').className = 'filter-btn' + (mode === 'all' ? ' active' : '');
+  document.getElementById('nbaf-top5').className = 'filter-btn' + (mode === 'top5' ? ' active' : '');
+  document.getElementById('nbaf-top3').className = 'filter-btn' + (mode === 'top3' ? ' active' : '');
+  renderNbaProps();
+}
+
+function renderNbaProps() {
+  var select = document.getElementById('nba-game-select');
+  if (select) nbaSelectedGame = select.value;
+  var container = document.getElementById('nba-props-list');
+  var allGames = DATA.nba_projections_by_game || [];
+  var filtered = nbaSelectedGame
+    ? allGames.filter(function(g) { return g.game_id === nbaSelectedGame; })
+    : allGames;
+  if (filtered.length === 0 || filtered.every(function(g) { return g.players.length === 0; })) {
+    container.innerHTML = '<div style="color:#71767b;text-align:center;padding:20px">No hay proyecciones disponibles</div>';
+    return;
+  }
+  var limit = nbaPropFilter === 'top3' ? 3 : (nbaPropFilter === 'top5' ? 5 : 999);
+  var html = '';
+  for (var gi = 0; gi < filtered.length; gi++) {
+    var game = filtered[gi];
+    var players = game.players || [];
+    if (players.length === 0) continue;
+    var pts = players.filter(function(p) { return p.tipo === 'PTS'; });
+    var reb = players.filter(function(p) { return p.tipo === 'REB'; });
+    var ast = players.filter(function(p) { return p.tipo === 'AST'; });
+    var pra = players.filter(function(p) { return p.tipo === 'PRA'; });
+
+    var gameLabel = game.away && game.home ? game.away + ' vs ' + game.home : 'Juego';
+    html += '<div class="nba-game-props" style="margin-bottom:12px">';
+    html += '<div style="font-size:14px;font-weight:600;color:#e1e8ed;padding:8px 0;border-bottom:1px solid #2f3336;margin-bottom:8px">🏀 ' + gameLabel + '</div>';
+
+    function renderPropTable(title, typeArr) {
+      if (typeArr.length === 0) return '';
+      var sorted = typeArr.slice().sort(function(a, b) { return b.proyeccion - a.proyeccion; });
+      var show = sorted.slice(0, limit);
+      var rows = '';
+      for (var k = 0; k < show.length; k++) {
+        var p = sorted[k];
+        var overUnder = p.linea ? (p.proyeccion > p.linea ? 'over' : 'under') : '';
+        var color = overUnder === 'over' ? '#00ba7c' : '#8b98a5';
+        var barColor = overUnder === 'over' ? '#00ba7c' : '#2a3040';
+        var barW = Math.min(Math.max(p.proyeccion / (p.linea || p.proyeccion || 1) * 100, 5), 100);
+        var badge = p.linea ? '<span style="color:#6b7280;font-size:11px"> l ' + p.linea + '</span>' : '';
+        var ventajaText = p.ventaja ? ' <span style="color:' + (p.ventaja > 0 ? '#00ba7c' : '#ef4444') + ';font-size:11px">' + (p.ventaja > 0 ? '+' : '') + p.ventaja + '</span>' : '';
+        rows += '<div class="nba-prop-row" style="padding:5px 8px;border-bottom:1px solid #1a2744;font-size:13px">'
+          + '<div style="display:flex;justify-content:space-between;align-items:center">'
+          + '<span>' + p.jugador + ' <span style="color:#6b7280;font-size:10px">' + p.posicion + ' · ' + p.minutos + 'min</span></span>'
+          + '<span><span style="font-weight:600;color:' + color + '">' + p.proyeccion.toFixed(1) + '</span>' + ventajaText + badge + '</span>'
+          + '</div>'
+          + '<div style="margin-top:3px;height:4px;background:#1a2744;border-radius:2px;overflow:hidden">'
+          + '<div style="height:100%;width:' + barW + '%;background:' + barColor + ';border-radius:2px;transition:width .3s"></div>'
+          + '</div>'
+          + '</div>';
+      }
+      if (!rows) return '';
+      var showing = limit < sorted.length ? '<span style="color:#6b7280;font-size:10px;font-weight:400"> (' + show.length + '/' + sorted.length + ')</span>' : '';
+      return '<div style="margin-bottom:8px"><div style="font-size:12px;font-weight:600;color:#f5a623;padding:4px 6px">' + title + showing + '</div>' + rows + '</div>';
+    }
+
+    html += renderPropTable('🎯 Puntos (PTS)', pts);
+    html += renderPropTable('💪 Rebotes (REB)', reb);
+    html += renderPropTable('🎯 Asistencias (AST)', ast);
+    html += renderPropTable('📊 P+R+A (PRA)', pra);
+
+    html += '</div>';
+  }
+  container.innerHTML = html;
+}
+
+function renderNbaStats() {
+  var container = document.getElementById('nba-stats-list');
+  var s = DATA.nba_stats || {};
+  if (!s.total && !s.dia_total) {
+    container.innerHTML = '<div class="futbol-empty">No hay estadisticas NBA aun. Los datos se acumularan cuando las predicciones tengan resultados.</div>';
+    return;
+  }
+  var items = [
+    { label: '📊 General', total: s.total, ok: s.acertados, fail: s.fallidos, rate: s.win_rate },
+    { label: '📅 Hoy', total: s.dia_total, ok: s.dia_acertados, fail: s.dia_fallidos, rate: s.dia_pct },
+  ];
+  var html = '';
+  for (var i = 0; i < items.length; i++) {
+    var it = items[i];
+    if (!it.total) continue;
+    html += '<div class="futbol-stat-item"><span class="futbol-stat-label">' + it.label + '</span><span class="futbol-stat-value">' + it.ok + '✅ ' + it.fail + '❌ <span class="futbol-stat-sub">(' + it.total + ') ' + it.rate + '%</span></span></div>';
+  }
+  container.innerHTML = html || '<div class="futbol-empty">Sin datos</div>';
 }
 
   fetchSoccerData();</script>
