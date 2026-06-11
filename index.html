@@ -222,6 +222,11 @@
   .hits-dot { width: 6px; height: 6px; border-radius: 50%; background: #2a3040; transition: background 0.3s; }
   .hits-dot.active { background: #f5a623; }
 
+  .llm-insight { display: flex; align-items: center; gap: 6px; padding: 8px 10px; margin: 8px 0; background: #1d2d3d; border-radius: 6px; font-size: 12px; border-left: 3px solid #f5a623; }
+  .llm-icon { font-size: 14px; }
+  .llm-veredicto { font-weight: 700; color: #e1e8ed; white-space: nowrap; }
+  .llm-razon { color: #8b98a5; flex: 1; }
+
   .footer {
     text-align: center; padding: 16px 0;
     font-size: 12px; color: #e1e8ed;
@@ -958,6 +963,7 @@ function renderScoreboardFromLive(g, live, container) {
   }
 
   html += '</div>';
+  html += renderLlmInsight(g);
   html += renderHitsBoard(String(g.game_pk || 0) + '-' + (DATA.games.indexOf(g)), topTeam, botTeam);
   container.innerHTML = html;
 }
@@ -1051,8 +1057,21 @@ function renderScoreboard(g, container) {
   }
 
   html += '</div>';
+  html += renderLlmInsight(g);
   html += renderHitsBoard(String(g.game_pk || 0) + '-' + (DATA.games.indexOf(g)), awayName, homeName);
   container.innerHTML = html;
+}
+
+function renderLlmInsight(g) {
+  var ir = g.llm_ir_favorito;
+  var pq = g.llm_porque;
+  if (!ir || ir === 'N/D' || ir === '') return '';
+  var icon = ir === 'SÍ' ? '🟢' : '🔴';
+  return '<div class="llm-insight">'
+    + '<span class="llm-icon">🤖</span>'
+    + '<span class="llm-veredicto">' + icon + ' ' + ir + '</span>'
+    + '<span class="llm-razon">' + pq + '</span>'
+    + '</div>';
 }
 
 var hitsBoardTimers = {};
