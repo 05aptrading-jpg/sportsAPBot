@@ -42,23 +42,55 @@
   }
 
   .game-row {
-    display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    gap: 6px;
+    display: flex;
     align-items: center;
+    gap: 4px;
     padding: 6px 0;
     border-bottom: 1px solid #2a3040;
-    font-size: 12px;
+    font-size: 11px;
   }
   .game-row:last-child { border-bottom: none; }
   .game-status {
-    width: 20px; text-align: center; font-size: 13px;
+    width: 18px; text-align: center; font-size: 11px;
   }
-  .game-team { font-weight: 500; color: #e1e8ed; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .game-team-box {
+    flex: 1;
+    min-width: 0;
+    max-width: calc(50% - 40px);
+    background: #1a2030;
+    border: 1px solid #2a3040;
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-weight: 500;
+    color: #e1e8ed;
+    font-size: 11px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+  }
+  .game-sep {
+    color: #71767b;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    min-width: 30px;
+  }
+  .llm-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
   .game-state {
-    font-size: 12px; color: #71767b;
+    font-size: 10px; color: #71767b;
     background: #262d3d; padding: 2px 8px;
     border-radius: 6px; text-align: center;
+    white-space: nowrap;
   }
 
   .stat-grid {
@@ -222,10 +254,16 @@
   .hits-dot { width: 6px; height: 6px; border-radius: 50%; background: #2a3040; transition: background 0.3s; }
   .hits-dot.active { background: #f5a623; }
 
-  .llm-insight { display: flex; align-items: center; gap: 6px; padding: 8px 10px; margin: 8px 0; background: #1d2d3d; border-radius: 6px; font-size: 12px; border-left: 3px solid #f5a623; }
-  .llm-icon { font-size: 14px; }
+  .llm-insight { display: flex; flex-direction: column; gap: 4px; padding: 6px 8px; margin: 6px 0; background: #1d2d3d; border-radius: 6px; font-size: 11px; border-left: 3px solid #f5a623; }
+  .llm-header { display: flex; align-items: center; gap: 5px; }
+  .llm-icon { font-size: 12px; }
   .llm-veredicto { font-weight: 700; color: #e1e8ed; white-space: nowrap; }
-  .llm-razon { color: #8b98a5; flex: 1; }
+  .llm-razon { color: #8b98a5; flex: 1; font-size: 10px; }
+  .llm-factores { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 3px; }
+  .llm-factor { background: #2a3a4a; color: #8b98a5; padding: 1px 5px; border-radius: 4px; font-size: 9px; }
+  .llm-expand { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+  .llm-expand.open { max-height: 200px; }
+  .llm-badge-mini { background: #1d2d3d; color: #f5a623; padding: 1px 4px; border-radius: 3px; font-size: 8px; font-weight: 600; margin-left: 3px; border: 1px solid #f5a623; }
 
   .footer {
     text-align: center; padding: 16px 0;
@@ -266,7 +304,7 @@
     gap: 4px; padding: 6px 0; border-bottom: 1px solid #2a3040; font-size: 12px;
   }
   .futbol-game-row:last-child { border-bottom: none; }
-  .futbol-teams { color: #e1e8ed; font-weight: 500; }
+  .futbol-teams { color: #e1e8ed; font-weight: 500; font-size: 11px; }
   .futbol-xg { color: #8b98a5; font-size: 11px; }
   .futbol-signal { text-align: right; }
   .futbol-signal .senal-tag {
@@ -653,23 +691,31 @@ function renderGameRow(g) {
   var score = g.score_fav !== '—' && g.score_opp !== ''
     ? g.score_fav + '-' + g.score_opp
     : '';
-  var sep = score ? score : 'Vs';
-  var teamHtml;
+  var sep = score || 'Vs';
+  var favColor, oppColor;
   if (g.label === '🎯') {
-    teamHtml = '<span style="font-weight:700;color:#f5a623">' + g.fav_team + '</span>'
-      + ' <span style="color:#8b98a5">' + sep + '</span> <span style="color:#8b98a5">' + g.opp_team + '</span>';
+    favColor = '#f5a623';
+    oppColor = '#8b98a5';
   } else {
-    teamHtml = '<span style="color:#58a6ff">' + g.fav_team + '</span>'
-      + ' <span style="color:#71767b">' + sep + '</span> <span style="color:#8b98a5">' + g.opp_team + '</span>';
+    favColor = '#58a6ff';
+    oppColor = '#8b98a5';
+  }
+  var llmBadge = '';
+  var llmEntry = (DATA.llm_analysis || {})[g.fav_team];
+  if (llmEntry && llmEntry.ir) {
+    var llmColor = llmEntry.ir === 'SÍ' ? '#00ba7c' : '#ef4444';
+    llmBadge = '<div class="llm-dot" style="background:' + llmColor + '"></div>';
   }
   var stateClass = g.result === 'live' ? 'live' : '';
   var idx = (g.game_pk || 0) + '-' + (DATA.games.indexOf(g));
   return '<div class="game-wrapper">'
     + '<div class="game-row" onclick="toggleScoreboard(\'' + idx + '\', this)" data-idx="' + idx + '">'
     + '<div class="game-status">' + g.status_emoji + '</div>'
-    + '<div class="game-team">' + teamHtml + '</div>'
+    + '<div class="game-team-box" style="color:' + favColor + '">' + g.fav_team + '</div>'
+    + '<div class="game-sep">' + sep + '</div>'
+    + '<div class="game-team-box" style="color:' + oppColor + '">' + g.opp_team + '</div>'
+    + llmBadge
     + '<div class="game-state ' + stateClass + '">' + g.state + '</div>'
-
     + '</div>'
     + '<div class="scoreboard-expand" id="sb-' + idx + '"></div>'
     + '</div>';
@@ -763,12 +809,12 @@ function renderStats() {
   var stats = [
     { label: '🎯 Alta Confianza', value: s.alta_acertados + '✅ ' + s.alta_fallidos + '❌', sub: '(' + s.alta_total + ') ' + s.alta_win_rate + '%', fire: s.alta_win_rate >= 65 },
     { label: '📋 Baja Confianza', value: s.baja_acertados + '✅ ' + s.baja_fallidos + '❌', sub: '(' + s.baja_total + ') ' + s.baja_win_rate + '%' },
-    { label: '⚾ Predicciones Hit', value: (s.hits_acertados || 0) + '✅ ' + (s.hits_fallidos || 0) + '❌', sub: '(' + (s.hits_total || 0) + ') ' + (s.hits_win_rate || 0) + '%' },
+    { label: '⚾ Predicciones Hit', value: (s.hits_acertados || 0) + '✅ ' + (s.hits_fallidos || 0) + '❌', sub: '(' + (s.hits_total || 0) + ') ' + (s.hits_win_rate || 0) + '%', showIfResolved: (s.hits_acertados || 0) > 0 || (s.hits_fallidos || 0) > 0 },
     { label: '⭐ Señales Valor', value: s.valor_ok + '/' + s.valor_total, sub: s.valor_rate + '%' },
   ];
   for (var i = 0; i < stats.length; i++) {
     var st = stats[i];
-    if (!st.sub.startsWith('(0)')) {
+    if (!st.sub.startsWith('(0)') || st.showIfResolved) {
       statsEl.innerHTML += '<div class="stat-item">'
         + '<span class="stat-label">' + st.label + '</span>'
         + '<span class="stat-value">' + st.value + ' <span class="stat-sub">' + st.sub + '</span>' + (st.fire ? '<span class="fire">🔥</span>' : '') + '</span>'
@@ -1063,15 +1109,30 @@ function renderScoreboard(g, container) {
 }
 
 function renderLlmInsight(g) {
-  var ir = g.llm_ir_favorito;
-  var pq = g.llm_porque;
+  var llm = DATA.llm_analysis || {};
+  var fav = g.fav_team || '';
+  var entry = llm[fav];
+  if (!entry) return '';
+  var ir = entry.ir || '';
+  var pq = entry.pq || '';
+  var factores = entry.factores || [];
   if (!ir || ir === 'N/D' || ir === '') return '';
   var icon = ir === 'SÍ' ? '🟢' : '🔴';
-  return '<div class="llm-insight">'
+  var html = '<div class="llm-insight">'
+    + '<div class="llm-header">'
     + '<span class="llm-icon">🤖</span>'
     + '<span class="llm-veredicto">' + icon + ' ' + ir + '</span>'
     + '<span class="llm-razon">' + pq + '</span>'
     + '</div>';
+  if (factores.length > 0) {
+    html += '<div class="llm-factores">';
+    for (var i = 0; i < factores.length; i++) {
+      html += '<span class="llm-factor">' + factores[i] + '</span>';
+    }
+    html += '</div>';
+  }
+  html += '</div>';
+  return html;
 }
 
 var hitsBoardTimers = {};
@@ -1453,6 +1514,7 @@ function renderFutbolGames() {
       + '<div class="futbol-detail-row"><span class="futbol-detail-label">📊 Resultado O/U 2.5</span><span class="futbol-detail-value futbol-detail-' + g.resultado_ou25 + '">' + (g.resultado_ou25 || 'pendiente') + '</span></div>'
       + '<div class="futbol-detail-row"><span class="futbol-detail-label">🚩 Señal Corners</span><span class="futbol-detail-value">' + (g.senal_corners && g.senal_corners !== 'NO_APOSTAR' ? g.senal_corners : '—') + '</span></div>'
       + '<div class="futbol-detail-row"><span class="futbol-detail-label">📐 xCorners</span><span class="futbol-detail-value">' + (g.xcorner_total || '—') + '</span></div>'
+      + renderLlmInsightFutbol(g)
       + '</div>'
       + '</div>';
   }
@@ -1471,6 +1533,33 @@ function toggleFutbolDetail(idx, rowEl) {
     container.classList.add('open');
     if (icon) icon.classList.add('open');
   }
+}
+
+function renderLlmInsightFutbol(g) {
+  var llm = soccerData && soccerData.llm_analysis || {};
+  var home = g.local || '';
+  var entry = llm[home];
+  if (!entry) return '';
+  var ir = entry.ir || '';
+  var pq = entry.pq || '';
+  var factores = entry.factores || [];
+  if (!ir || ir === 'N/D' || ir === '') return '';
+  var icon = ir === 'SÍ' ? '🟢' : '🔴';
+  var html = '<div class="llm-insight">'
+    + '<div class="llm-header">'
+    + '<span class="llm-icon">🤖</span>'
+    + '<span class="llm-veredicto">' + icon + ' ' + ir + '</span>'
+    + '<span class="llm-razon">' + pq + '</span>'
+    + '</div>';
+  if (factores.length > 0) {
+    html += '<div class="llm-factores">';
+    for (var i = 0; i < factores.length; i++) {
+      html += '<span class="llm-factor">' + factores[i] + '</span>';
+    }
+    html += '</div>';
+  }
+  html += '</div>';
+  return html;
 }
 
 function setFutbolStatsFilter(mode) {
@@ -1635,18 +1724,24 @@ function renderNbaGames() {
     var isLive = g.result === 'live';
     var idx = g.game_id || ('nba-' + i);
     var expandIcon = '<span class="expand-icon" style="color:#536471;font-size:10px;transition:transform .2s">▼</span>';
+    var llmBadge = '';
+    var llmEntry = (DATA.llm_analysis || {})[g.home];
+    if (llmEntry && llmEntry.ir) {
+      var llmIcon = llmEntry.ir === 'SÍ' ? '🟢' : '🔴';
+      llmBadge = '<span class="llm-badge-mini">' + llmIcon + ' IA</span>';
+    }
     html += '<div class="game-wrapper">'
       + '<div class="game-row" onclick="toggleNbaScoreboard(\'' + idx + '\', this)">'
       + '<div class="game-status">' + g.status_emoji + '</div>'
-      + '<div class="game-team"><span style="color:#58a6ff">' + g.away + '</span>'
-      + ' <span style="color:#71767b">' + sep + '</span>'
-      + ' <span style="color:#8b98a5">' + g.home + '</span>'
-      + (isLive ? ' <span class="live" style="color:#ef4444;font-size:10px;font-weight:600;margin-left:4px">🔴 EN VIVO</span>' : '')
-      + '</div>'
+      + '<div class="game-team-box" style="color:#58a6ff">' + g.away + '</div>'
+      + '<div class="game-sep">' + sep + '</div>'
+      + '<div class="game-team-box" style="color:#8b98a5">' + g.home + '</div>'
+      + (isLive ? '<div class="game-sep" style="color:#ef4444;font-size:9px;font-weight:600">🔴 VIVO</div>' : '')
       + '<div class="game-state">' + g.state + '</div>'
       + expandIcon
       + '</div>'
       + '<div class="scoreboard-expand" id="sb-nba-' + idx + '"></div>'
+      + '<div class="llm-expand" id="llm-nba-' + idx + '"></div>'
       + '</div>';
   }
   container.innerHTML = html;
@@ -1654,15 +1749,18 @@ function renderNbaGames() {
 
 function toggleNbaScoreboard(idx, rowEl) {
   var container = document.getElementById('sb-nba-' + idx);
+  var llmContainer = document.getElementById('llm-nba-' + idx);
   if (!container) return;
   var isOpen = container.classList.contains('open');
   var icon = rowEl.querySelector('.expand-icon');
   if (isOpen) {
     container.classList.remove('open');
+    if (llmContainer) llmContainer.classList.remove('open');
     if (icon) icon.classList.remove('open');
     return;
   }
   container.classList.add('open');
+  if (llmContainer) llmContainer.classList.add('open');
   if (icon) icon.classList.add('open');
 
   var g = null;
@@ -1722,6 +1820,38 @@ function toggleNbaScoreboard(idx, rowEl) {
   }
 
   container.innerHTML = html;
+
+  if (llmContainer) {
+    var llmHtml = renderLlmInsightNba(g);
+    llmContainer.innerHTML = llmHtml || '<div style="color:#71767b;padding:8px;text-align:center;font-size:12px">Sin análisis IA para este partido</div>';
+  }
+}
+
+function renderLlmInsightNba(g) {
+  var llm = DATA.llm_analysis || {};
+  var home = g.home || '';
+  var entry = llm[home];
+  if (!entry) return '';
+  var ir = entry.ir || '';
+  var pq = entry.pq || '';
+  var factores = entry.factores || [];
+  if (!ir || ir === 'N/D' || ir === '') return '';
+  var icon = ir === 'SÍ' ? '🟢' : '🔴';
+  var html = '<div class="llm-insight">'
+    + '<div class="llm-header">'
+    + '<span class="llm-icon">🤖</span>'
+    + '<span class="llm-veredicto">' + icon + ' ' + ir + '</span>'
+    + '<span class="llm-razon">' + pq + '</span>'
+    + '</div>';
+  if (factores.length > 0) {
+    html += '<div class="llm-factores">';
+    for (var i = 0; i < factores.length; i++) {
+      html += '<span class="llm-factor">' + factores[i] + '</span>';
+    }
+    html += '</div>';
+  }
+  html += '</div>';
+  return html;
 }
 
 function renderNbaGameSelect() {
