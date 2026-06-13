@@ -546,12 +546,15 @@ var statsFilterMode = null;
 var statsRangeMode = null;
 
 function checkAuth() {
-  var userId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id;
+  var userId = null;
+  try { userId = window.Telegram.WebApp.initDataUnsafe.user.id; } catch(e) {}
   if (!userId) return true;
   var autorizados = DATA.autorizados || [];
-  var ok = autorizados.includes(userId);
-  document.getElementById('blocked-screen').style.display = ok ? 'none' : 'flex';
-  document.getElementById('main-content').style.display = ok ? 'block' : 'none';
+  var ok = autorizados.indexOf(userId) !== -1;
+  var blocked = document.getElementById('blocked-screen');
+  var main = document.getElementById('main-content');
+  if (blocked) blocked.style.display = ok ? 'none' : 'flex';
+  if (main) main.style.display = ok ? 'block' : 'none';
   return ok;
 }
 
@@ -583,8 +586,9 @@ function fetchScores() {
       }
       refreshTimer = refreshInterval;
     })
-    .catch(function() {
-      document.getElementById('games-list').innerHTML = '<div class="game-row" style="color:#71767b;justify-content:center">Sin conexión...</div>';
+    .catch(function(err) {
+      var msg = err && err.message ? err.message : String(err || 'Error desconocido');
+      document.getElementById('games-list').innerHTML = '<div class="game-row" style="color:#71767b;justify-content:center">⚠️ ' + msg + '<br><span style="font-size:11px">Reintentando en 30s...</span></div>';
       setTimeout(fetchScores, 30000);
     });
 }
