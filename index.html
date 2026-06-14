@@ -921,7 +921,7 @@ function toggleScoreboard(idx, rowEl) {
   } else if (g && g.linescore && g.linescore.innings) {
     renderScoreboard(g, container);
   } else {
-    container.innerHTML = '<div class="sb-loading" style="color:#8b98a5">Scoreboard no disponible</div>';
+    container.innerHTML = renderLlmInsight(g) || '<div class="sb-loading" style="color:#8b98a5">Scoreboard no disponible</div>';
   }
 
   if (sbTimers[idx]) clearInterval(sbTimers[idx]);
@@ -1249,6 +1249,7 @@ function selectMainTab(tab) {
   tabBeisbol.className = 'main-tab' + (tab === 'beisbol' ? ' active' : '');
   tabFutbol.className = 'main-tab' + (tab === 'futbol' ? ' active futbol' : '');
   tabNba.className = 'main-tab' + (tab === 'nba' ? ' active' : '');
+  if (tab === 'beisbol') renderStats();
   if (tab === 'futbol' && !soccerData) fetchSoccerData();
   if (tab === 'nba') renderNba();
 }
