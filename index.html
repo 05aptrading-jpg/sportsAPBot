@@ -654,6 +654,7 @@ function renderLigaTabs() {
 
 function renderDateTabs() {
   var container = document.getElementById('date-tabs');
+  if (!container) return;
   var ligaFilter = selectedLiga === 'general' ? null : selectedLiga;
   var fechas = {};
   for (var i = 0; i < (DATA.games || []).length; i++) {
@@ -662,20 +663,81 @@ function renderDateTabs() {
     fechas[g.game_date] = true;
   }
   var dias = Object.keys(fechas).sort().reverse();
-  if (dias.length <= 1) {
-    container.innerHTML = '';
-    return;
-  }
-  if (dias.indexOf(selectedDate) === -1) {
+  if (dias.indexOf(selectedDate) === -1 && dias.length > 0) {
     selectedDate = dias[0];
   }
-  var html = '';
-  for (var j = 0; j < dias.length; j++) {
-    var d = dias[j];
-    var active = d === selectedDate ? ' active' : '';
-    html += '<div class="date-tab' + active + '" data-date="' + d + '" onclick="selectDate(\'' + d + '\')">' + formatearFecha(d) + '</div>';
+  var now = new Date();
+  var hoy = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  var selDate = selectedDate ? new Date(selectedDate + 'T00:00:00') : hoy;
+  var months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  var weekdays = ['do','lu','ma','mi','ju','vi','sa'];
+  var selDayNames = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
+  var displayText = selDayNames[selDate.getDay()] + ' ' + selDate.getDate() + ' de ' + months[selDate.getMonth()];
+  var countToday = 0;
+  for (var g = 0; g < (DATA.games || []).length; g++) {
+    if (DATA.games[g].game_date === selectedDate) countToday++;
   }
+  var badge = countToday > 0 ? ' <span style="color:#6b7280;font-size:12px">(' + countToday + ')</span>' : '';
+  var html = '<div class="futbol-calendar">';
+  if (!bbCalExpanded) {
+    html += '<div onclick="bbCalToggle()" style="cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 12px;background:#1a2744;border-radius:8px;">';
+    html += '<span style="font-size:22px">&#128197;</span>';
+    html += '<span style="color:#e1e8ed;font-size:14px;font-weight:600">' + displayText + badge + '</span>';
+    html += '<span style="color:#6b7280;font-size:11px;margin-left:4px">&#9660;</span>';
+    html += '</div>';
+  } else {
+    html += '<div class="cal-header">';
+    html += '<button class="cal-nav" onclick="bbCalNavMonth(-1)">&#9664;</button>';
+    html += '<span>' + months[bbCalMonth] + ' de ' + bbCalYear + '</span>';
+    html += '<button class="cal-nav" onclick="bbCalNavMonth(1)">&#9654;</button>';
+    html += '</div>';
+    html += '<div class="cal-weekdays">';
+    for (var w = 0; w < 7; w++) html += '<div class="cal-weekday">' + weekdays[w] + '</div>';
+    html += '</div>';
+    html += '<div class="cal-days">';
+    var firstDay = new Date(bbCalYear, bbCalMonth, 1).getDay();
+    var daysInMonth = new Date(bbCalYear, bbCalMonth + 1, 0).getDate();
+    for (var e = 0; e < firstDay; e++) html += '<div class="cal-day empty"></div>';
+    for (var d = 1; d <= daysInMonth; d++) {
+      var dateObj = new Date(bbCalYear, bbCalMonth, d);
+      var iso = toISO(dateObj);
+      var isToday = dateObj.getTime() === hoy.getTime();
+      var hasGames = fechas[iso];
+      var isSelected = iso === selectedDate;
+      var classes = ['cal-day'];
+      if (isToday) classes.push('today');
+      if (hasGames) classes.push('has-games');
+      if (isSelected) classes.push('selected');
+      var onclick = hasGames ? ' onclick="bbSelectDay(\'' + iso + '\')"' : '';
+      html += '<div class="' + classes.join(' ') + '"' + onclick + '>' + d + '</div>';
+    }
+    html += '</div>';
+    html += '<div onclick="bbCalToggle()" style="cursor:pointer;text-align:center;padding:6px;color:#6b7280;font-size:11px;border-top:1px solid #2a3040;margin-top:6px">&#9650; Cerrar</div>';
+  }
+  html += '</div>';
   container.innerHTML = html;
+}
+
+function bbCalToggle() {
+  bbCalExpanded = !bbCalExpanded;
+  renderDateTabs();
+}
+
+function bbCalNavMonth(dir) {
+  bbCalMonth += dir;
+  if (bbCalMonth > 11) { bbCalMonth = 0; bbCalYear++; }
+  if (bbCalMonth < 0) { bbCalMonth = 11; bbCalYear--; }
+  renderDateTabs();
+}
+
+function bbSelectDay(fecha) {
+  selectedDate = fecha;
+  var d = new Date(fecha + 'T00:00:00');
+  bbCalMonth = d.getMonth();
+  bbCalYear = d.getFullYear();
+  bbCalExpanded = false;
+  renderDateTabs();
+  renderGames();
 }
 
 function selectLiga(liga) {
@@ -1183,9 +1245,35 @@ function renderHitsBoard(gameKey, awayTeam, homeTeam) {
         + '<div class="hits-player-bar"><div class="hits-player-bar-fill" style="width:' + barW + '%;background:' + color + '"></div></div>'
         + '</div>';
     }
+    // LLM insight for this team
+    var hitsLlm = DATA.hits_llm || {};
+    var teamInsight = hitsLlm[team.name];
+    var llmHtml = '';
+    if (teamInsight && teamInsight.confianza && teamInsight.confianza !== 'N/D') {
+      var confColor = teamInsight.confianza === 'ALTA' ? '#00ba7c' : '#ef4444';
+      var confIcon = teamInsight.confianza === 'ALTA' ? '🟢' : '🔴';
+      llmHtml = '<div class="llm-insight" style="margin:8px 0 4px">'
+        + '<div class="llm-header">'
+        + '<span class="llm-icon">🤖</span>'
+        + '<span class="llm-veredicto" style="color:' + confColor + '">' + confIcon + ' ' + teamInsight.confianza + '</span>'
+        + '<span class="llm-razon">' + (teamInsight.porque || '') + '</span>'
+        + '</div>';
+      if (teamInsight.top_jugador) {
+        llmHtml += '<div style="font-size:11px;color:#8b98a5;padding:0 0 4px 8px">⭐ Mejor: ' + teamInsight.top_jugador + '</div>';
+      }
+      if (teamInsight.factores && teamInsight.factores.length > 0) {
+        llmHtml += '<div class="llm-factores">';
+        for (var f = 0; f < teamInsight.factores.length; f++) {
+          llmHtml += '<span class="llm-factor">' + teamInsight.factores[f] + '</span>';
+        }
+        llmHtml += '</div>';
+      }
+      llmHtml += '</div>';
+    }
     slides += '<div class="hits-team-slide' + (t === 0 ? ' active' : '') + '" data-hb="' + gameKey + '-' + t + '">'
       + '<div class="hits-team-name">🎯 Top 5 Hits — ' + team.name + '</div>'
       + rows
+      + llmHtml
       + '</div>';
   }
 
@@ -1355,6 +1443,12 @@ var calYear = new Date().getFullYear();
 var MUNDIAL_START = new Date(2026, 5, 11);
 var MUNDIAL_END = new Date(2026, 6, 19);
 var calExpanded = false;
+var bbCalMonth = new Date().getMonth();
+var bbCalYear = new Date().getFullYear();
+var bbCalExpanded = false;
+var nbaCalMonth = new Date().getMonth();
+var nbaCalYear = new Date().getFullYear();
+var nbaCalExpanded = false;
 
 function renderFutbolDateTabs() {
   var container = document.getElementById('futbol-date-tabs');
@@ -1706,15 +1800,79 @@ function renderNbaDateTabs() {
     fechas[DATA.nba_games[i].game_date] = true;
   }
   var dias = Object.keys(fechas).sort().reverse();
-  if (dias.length <= 1) { container.innerHTML = ''; return; }
-  if (!nbaDateFilter || dias.indexOf(nbaDateFilter) === -1) nbaDateFilter = dias[0];
-  var html = '';
-  for (var j = 0; j < dias.length; j++) {
-    var d = dias[j];
-    var active = d === nbaDateFilter ? ' active' : '';
-    html += '<div class="date-tab' + active + '" onclick="selectNbaDate(\'' + d + '\')">' + formatearFecha(d) + '</div>';
+  if (!nbaDateFilter || dias.indexOf(nbaDateFilter) === -1) nbaDateFilter = dias.length > 0 ? dias[0] : nbaDateFilter;
+  var now = new Date();
+  var hoy = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  var selDate = nbaDateFilter ? new Date(nbaDateFilter + 'T00:00:00') : hoy;
+  var months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  var weekdays = ['do','lu','ma','mi','ju','vi','sa'];
+  var selDayNames = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
+  var displayText = selDayNames[selDate.getDay()] + ' ' + selDate.getDate() + ' de ' + months[selDate.getMonth()];
+  var countToday = 0;
+  for (var g = 0; g < (DATA.nba_games || []).length; g++) {
+    if (DATA.nba_games[g].game_date === nbaDateFilter) countToday++;
   }
+  var badge = countToday > 0 ? ' <span style="color:#6b7280;font-size:12px">(' + countToday + ')</span>' : '';
+  var html = '<div class="futbol-calendar">';
+  if (!nbaCalExpanded) {
+    html += '<div onclick="nbaCalToggle()" style="cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 12px;background:#1a2744;border-radius:8px;">';
+    html += '<span style="font-size:22px">&#128197;</span>';
+    html += '<span style="color:#e1e8ed;font-size:14px;font-weight:600">' + displayText + badge + '</span>';
+    html += '<span style="color:#6b7280;font-size:11px;margin-left:4px">&#9660;</span>';
+    html += '</div>';
+  } else {
+    html += '<div class="cal-header">';
+    html += '<button class="cal-nav" onclick="nbaCalNavMonth(-1)">&#9664;</button>';
+    html += '<span>' + months[nbaCalMonth] + ' de ' + nbaCalYear + '</span>';
+    html += '<button class="cal-nav" onclick="nbaCalNavMonth(1)">&#9654;</button>';
+    html += '</div>';
+    html += '<div class="cal-weekdays">';
+    for (var w = 0; w < 7; w++) html += '<div class="cal-weekday">' + weekdays[w] + '</div>';
+    html += '</div>';
+    html += '<div class="cal-days">';
+    var firstDay = new Date(nbaCalYear, nbaCalMonth, 1).getDay();
+    var daysInMonth = new Date(nbaCalYear, nbaCalMonth + 1, 0).getDate();
+    for (var e = 0; e < firstDay; e++) html += '<div class="cal-day empty"></div>';
+    for (var d = 1; d <= daysInMonth; d++) {
+      var dateObj = new Date(nbaCalYear, nbaCalMonth, d);
+      var iso = toISO(dateObj);
+      var isToday = dateObj.getTime() === hoy.getTime();
+      var hasGames = fechas[iso];
+      var isSelected = iso === nbaDateFilter;
+      var classes = ['cal-day'];
+      if (isToday) classes.push('today');
+      if (hasGames) classes.push('has-games');
+      if (isSelected) classes.push('selected');
+      var onclick = hasGames ? ' onclick="nbaSelectDay(\'' + iso + '\')"' : '';
+      html += '<div class="' + classes.join(' ') + '"' + onclick + '>' + d + '</div>';
+    }
+    html += '</div>';
+    html += '<div onclick="nbaCalToggle()" style="cursor:pointer;text-align:center;padding:6px;color:#6b7280;font-size:11px;border-top:1px solid #2a3040;margin-top:6px">&#9650; Cerrar</div>';
+  }
+  html += '</div>';
   container.innerHTML = html;
+}
+
+function nbaCalToggle() {
+  nbaCalExpanded = !nbaCalExpanded;
+  renderNbaDateTabs();
+}
+
+function nbaCalNavMonth(dir) {
+  nbaCalMonth += dir;
+  if (nbaCalMonth > 11) { nbaCalMonth = 0; nbaCalYear++; }
+  if (nbaCalMonth < 0) { nbaCalMonth = 11; nbaCalYear--; }
+  renderNbaDateTabs();
+}
+
+function nbaSelectDay(fecha) {
+  nbaDateFilter = fecha;
+  var d = new Date(fecha + 'T00:00:00');
+  nbaCalMonth = d.getMonth();
+  nbaCalYear = d.getFullYear();
+  nbaCalExpanded = false;
+  renderNbaDateTabs();
+  renderNbaGames();
 }
 
 function selectNbaDate(date) {
