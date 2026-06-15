@@ -1,8 +1,8 @@
 {
-  "fecha": "15/06/2026 05:05",
+  "fecha": "15/06/2026 08:13",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
-  "proxima_actualizacion_ts": 1781532000,
+  "proxima_actualizacion_ts": 1781618400,
   "proxima_actualizacion_lmb_ts": 1781548200,
   "dias": [
     "2026-06-15",
@@ -10326,12 +10326,17 @@
       "state": "Pend.",
       "result": "completed",
       "label": "🎯",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Racha negativa de Oaxaca y rendimiento inconsistente del abridor.",
+      "llm_factores": [
+        "Racha negativa",
+        "Rendimiento inconsistente del abridor",
+        "Historial desfavorable"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
-      "linescore": {}
+      "linescore": {},
+      "llm_favorito": "Guerreros de Oaxaca"
     },
     {
       "liga": "LMB",
@@ -10344,9 +10349,13 @@
       "state": "Final",
       "result": "win",
       "label": "🎯",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Bravos en buena racha y sólido rendimiento del abridor.",
+      "llm_factores": [
+        "Buena racha",
+        "Sólido rendimiento del abridor",
+        "Ventaja de localía"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
       "linescore": {
@@ -10414,7 +10423,8 @@
         "opp_score": "13",
         "score_fav": "8",
         "score_opp": "13"
-      }
+      },
+      "llm_favorito": "Bravos de Leon"
     },
     {
       "liga": "LMB",
@@ -10427,12 +10437,17 @@
       "state": "Pend.",
       "result": "completed",
       "label": "🎯",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Leones en mejor forma y Durango sin ventaja de localía.",
+      "llm_factores": [
+        "Leones en mejor forma",
+        "Sin ventaja de localía",
+        "Historial desfavorable"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
-      "linescore": {}
+      "linescore": {},
+      "llm_favorito": "Caliente de Durango"
     },
     {
       "liga": "LMB",
@@ -10445,12 +10460,17 @@
       "state": "Final",
       "result": "loss",
       "label": "🎯",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Toros en mala racha y Pericos dominando el enfrentamiento.",
+      "llm_factores": [
+        "Mala racha",
+        "Dominio de Pericos",
+        "Rendimiento del abridor"
+      ],
       "resultado_llm": "N/D",
       "game_pk": 0,
-      "linescore": {}
+      "linescore": {},
+      "llm_favorito": "Toros de Tijuana"
     },
     {
       "liga": "MLB",
@@ -10463,12 +10483,17 @@
       "state": "Pend.",
       "result": "completed",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mariners en buena racha y abridor destacado.",
+      "llm_factores": [
+        "Buena racha",
+        "Abridor destacado",
+        "Ventaja de localía"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
-      "linescore": {}
+      "linescore": {},
+      "llm_favorito": "Seattle Mariners"
     },
     {
       "liga": "MLB",
@@ -10481,12 +10506,17 @@
       "state": "Pend.",
       "result": "completed",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Ambos equipos en racha similar, pero Reds tienen mejor historial.",
+      "llm_factores": [
+        "Racha similar",
+        "Mejor historial de Reds",
+        "Rendimiento del abridor"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
-      "linescore": {}
+      "linescore": {},
+      "llm_favorito": "Arizona Diamondbacks"
     },
     {
       "liga": "MLB",
@@ -10499,9 +10529,13 @@
       "state": "Final",
       "result": "win",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Brewers dominando y abridor en gran forma.",
+      "llm_factores": [
+        "Dominio reciente",
+        "Abridor en gran forma",
+        "Ventaja de localía"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
       "linescore": {
@@ -10569,7 +10603,8 @@
         "opp_score": "6",
         "score_fav": "0",
         "score_opp": "6"
-      }
+      },
+      "llm_favorito": "Milwaukee Brewers"
     },
     {
       "liga": "MLB",
@@ -10582,9 +10617,13 @@
       "state": "Final",
       "result": "win",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Red Sox en excelente forma y abridor sólido.",
+      "llm_factores": [
+        "Excelente forma",
+        "Abridor sólido",
+        "Ventaja de localía"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
       "linescore": {
@@ -10652,7 +10691,8 @@
         "opp_score": "10",
         "score_fav": "1",
         "score_opp": "10"
-      }
+      },
+      "llm_favorito": "Boston Red Sox"
     },
     {
       "liga": "MLB",
@@ -10665,9 +10705,13 @@
       "state": "Final",
       "result": "win",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Cardinals en mejor racha y rendimiento del abridor superior.",
+      "llm_factores": [
+        "Cardinals en mejor racha",
+        "Rendimiento del abridor superior",
+        "Historial desfavorable"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
       "linescore": {
@@ -10735,7 +10779,8 @@
         "opp_score": "9",
         "score_fav": "8",
         "score_opp": "9"
-      }
+      },
+      "llm_favorito": "Minnesota Twins"
     },
     {
       "liga": "MLB",
@@ -10748,9 +10793,13 @@
       "state": "Final",
       "result": "win",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Orioles en buena forma y abridor consistente.",
+      "llm_factores": [
+        "Buena forma",
+        "Abridor consistente",
+        "Ventaja de localía"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
       "linescore": {
@@ -10818,7 +10867,8 @@
         "opp_score": "7",
         "score_fav": "3",
         "score_opp": "7"
-      }
+      },
+      "llm_favorito": "Baltimore Orioles"
     },
     {
       "liga": "MLB",
@@ -10831,9 +10881,13 @@
       "state": "Final",
       "result": "loss",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Marlins en mejor forma y rendimiento del abridor superior.",
+      "llm_factores": [
+        "Marlins en mejor forma",
+        "Rendimiento del abridor superior",
+        "Historial desfavorable"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
       "linescore": {
@@ -10901,7 +10955,8 @@
         "opp_score": "3",
         "score_fav": "8",
         "score_opp": "3"
-      }
+      },
+      "llm_favorito": "Pittsburgh Pirates"
     },
     {
       "liga": "MLB",
@@ -10914,12 +10969,17 @@
       "state": "Pend.",
       "result": "completed",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Ambos equipos en mala racha, pero Rockies tienen peor rendimiento.",
+      "llm_factores": [
+        "Mala racha",
+        "Peor rendimiento",
+        "Historial desfavorable"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
-      "linescore": {}
+      "linescore": {},
+      "llm_favorito": "Colorado Rockies"
     },
     {
       "liga": "MLB",
@@ -10932,9 +10992,13 @@
       "state": "Final",
       "result": "loss",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Giants dominando y Cubs en mala forma.",
+      "llm_factores": [
+        "Giants dominando",
+        "Cubs en mala forma",
+        "Rendimiento del abridor"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
       "linescore": {
@@ -11002,7 +11066,8 @@
         "opp_score": "3",
         "score_fav": "18",
         "score_opp": "3"
-      }
+      },
+      "llm_favorito": "Chicago Cubs"
     },
     {
       "liga": "MLB",
@@ -11015,12 +11080,17 @@
       "state": "Pend.",
       "result": "completed",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Dodgers en buena forma y abridor destacado.",
+      "llm_factores": [
+        "Buena forma",
+        "Abridor destacado",
+        "Ventaja de localía"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
-      "linescore": {}
+      "linescore": {},
+      "llm_favorito": "Los Angeles Dodgers"
     },
     {
       "liga": "MLB",
@@ -11116,9 +11186,13 @@
       "state": "Final",
       "result": "win",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Angels en buena racha y abridor sólido.",
+      "llm_factores": [
+        "Buena racha",
+        "Abridor sólido",
+        "Ventaja de localía"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
       "linescore": {
@@ -11186,7 +11260,8 @@
         "opp_score": "4",
         "score_fav": "3",
         "score_opp": "4"
-      }
+      },
+      "llm_favorito": "Los Angeles Angels"
     },
     {
       "liga": "MLB",
@@ -11199,9 +11274,13 @@
       "state": "Final",
       "result": "win",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Guardians en buena forma y abridor consistente.",
+      "llm_factores": [
+        "Buena forma",
+        "Abridor consistente",
+        "Ventaja de localía"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
       "linescore": {
@@ -11269,7 +11348,8 @@
         "opp_score": "3",
         "score_fav": "2",
         "score_opp": "3"
-      }
+      },
+      "llm_favorito": "Cleveland Guardians"
     },
     {
       "liga": "MLB",
@@ -11282,12 +11362,17 @@
       "state": "Pend.",
       "result": "completed",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Blue Jays en mejor racha y rendimiento del abridor superior.",
+      "llm_factores": [
+        "Blue Jays en mejor racha",
+        "Rendimiento del abridor superior",
+        "Historial desfavorable"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
-      "linescore": {}
+      "linescore": {},
+      "llm_favorito": "New York Yankees"
     },
     {
       "liga": "MLB",
@@ -11300,12 +11385,17 @@
       "state": "Pend.",
       "result": "completed",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Astros dominando y abridor destacado.",
+      "llm_factores": [
+        "Dominio reciente",
+        "Abridor destacado",
+        "Ventaja de localía"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
-      "linescore": {}
+      "linescore": {},
+      "llm_favorito": "Houston Astros"
     },
     {
       "liga": "LMB",
@@ -11318,9 +11408,13 @@
       "state": "Final",
       "result": "loss",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Saraperos en mejor forma y rendimiento del abridor superior.",
+      "llm_factores": [
+        "Saraperos en mejor forma",
+        "Rendimiento del abridor superior",
+        "Historial desfavorable"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
       "linescore": {
@@ -11388,7 +11482,8 @@
         "opp_score": "2",
         "score_fav": "3",
         "score_opp": "2"
-      }
+      },
+      "llm_favorito": "El Aguila de Veracruz"
     },
     {
       "liga": "LMB",
@@ -11401,12 +11496,17 @@
       "state": "Pend.",
       "result": "completed",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Ambos equipos en racha similar, pero Queretaro tiene mejor historial.",
+      "llm_factores": [
+        "Racha similar",
+        "Mejor historial de Queretaro",
+        "Rendimiento del abridor"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
-      "linescore": {}
+      "linescore": {},
+      "llm_favorito": "Tecos de los Dos Laredos"
     },
     {
       "liga": "LMB",
@@ -11419,9 +11519,13 @@
       "state": "Final",
       "result": "win",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Olmecas en buena forma y abridor sólido.",
+      "llm_factores": [
+        "Buena forma",
+        "Abridor sólido",
+        "Ventaja de localía"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
       "linescore": {
@@ -11489,7 +11593,8 @@
         "opp_score": "4",
         "score_fav": "1",
         "score_opp": "4"
-      }
+      },
+      "llm_favorito": "Olmecas de Tabasco"
     },
     {
       "liga": "LMB",
@@ -11502,9 +11607,13 @@
       "state": "Final",
       "result": "win",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Sultanes en buena racha y sólido rendimiento del abridor.",
+      "llm_factores": [
+        "Buena racha",
+        "Sólido rendimiento del abridor",
+        "Ventaja de localía"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
       "linescore": {
@@ -11572,7 +11681,8 @@
         "opp_score": "6",
         "score_fav": "4",
         "score_opp": "6"
-      }
+      },
+      "llm_favorito": "Sultanes de Monterrey"
     },
     {
       "liga": "LMB",
@@ -11585,12 +11695,17 @@
       "state": "Final",
       "result": "win",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Diablos en excelente forma y abridor destacado.",
+      "llm_factores": [
+        "Excelente forma",
+        "Abridor destacado",
+        "Ventaja de localía"
+      ],
       "resultado_llm": "N/D",
       "game_pk": 0,
-      "linescore": {}
+      "linescore": {},
+      "llm_favorito": "Diablos Rojos del Mexico"
     },
     {
       "liga": "LMB",
@@ -11603,9 +11718,13 @@
       "state": "Final",
       "result": "win",
       "label": "📋",
-      "llm_ir_favorito": "",
-      "llm_porque": "",
-      "llm_factores": "",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Acereros en buena forma y abridor sólido.",
+      "llm_factores": [
+        "Buena forma",
+        "Abridor sólido",
+        "Ventaja de localía"
+      ],
       "resultado_llm": "pendiente",
       "game_pk": 0,
       "linescore": {
@@ -11673,7 +11792,8 @@
         "opp_score": "6",
         "score_fav": "4",
         "score_opp": "6"
-      }
+      },
+      "llm_favorito": "Acereros del Norte"
     },
     {
       "liga": "MLB",
@@ -11691,7 +11811,15 @@
       "opp_abbr": "MIN",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/STL.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Cardinals en mejor racha y rendimiento del abridor superior.",
+      "llm_factores": [
+        "Cardinals en mejor racha",
+        "Rendimiento del abridor superior",
+        "Historial favorable"
+      ],
+      "llm_favorito": "St. Louis Cardinals"
     },
     {
       "liga": "MLB",
@@ -11709,7 +11837,15 @@
       "opp_abbr": "TOR",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYY.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TOR.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TOR.png&h=40&w=40",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Blue Jays en mejor racha y rendimiento del abridor superior.",
+      "llm_factores": [
+        "Blue Jays en mejor racha",
+        "Rendimiento del abridor superior",
+        "Historial desfavorable"
+      ],
+      "llm_favorito": "New York Yankees"
     },
     {
       "liga": "MLB",
@@ -11727,7 +11863,15 @@
       "opp_abbr": "PIT",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIA.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PIT.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PIT.png&h=40&w=40",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Los Marlins han perdido y los Pirates tienen mejor racha.",
+      "llm_factores": [
+        "Racha negativa reciente",
+        "Rendimiento de abridores",
+        "Historial desfavorable contra Pirates"
+      ],
+      "llm_favorito": "Miami Marlins"
     },
     {
       "liga": "MLB",
@@ -11745,7 +11889,15 @@
       "opp_abbr": "BAL",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SD.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BAL.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BAL.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Los Padres dominan en casa y tienen mejor rendimiento.",
+      "llm_factores": [
+        "Dominio en casa",
+        "Racha positiva reciente",
+        "Mejor ERA del abridor"
+      ],
+      "llm_favorito": "San Diego Padres"
     },
     {
       "liga": "MLB",
@@ -11763,7 +11915,15 @@
       "opp_abbr": "WSH",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SEA.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/WSH.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/WSH.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mariners en buena racha y abridor destacado.",
+      "llm_factores": [
+        "Buena racha",
+        "Abridor destacado",
+        "Ventaja de localía"
+      ],
+      "llm_favorito": "Seattle Mariners"
     },
     {
       "liga": "MLB",
@@ -11781,7 +11941,15 @@
       "opp_abbr": "CIN",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ARI.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CIN.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CIN.png&h=40&w=40",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Ambos equipos en racha similar, pero Reds tienen mejor historial.",
+      "llm_factores": [
+        "Racha similar",
+        "Mejor historial de Reds",
+        "Rendimiento del abridor"
+      ],
+      "llm_favorito": "Arizona Diamondbacks"
     },
     {
       "liga": "MLB",
@@ -11799,7 +11967,15 @@
       "opp_abbr": "NYM",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATL.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYM.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYM.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Los Braves tienen un gran récord y están en buena forma.",
+      "llm_factores": [
+        "Racha positiva reciente",
+        "Mejor récord en casa",
+        "Historial favorable contra Mets"
+      ],
+      "llm_favorito": "Atlanta Braves"
     },
     {
       "liga": "MLB",
@@ -11817,7 +11993,15 @@
       "opp_abbr": "CLE",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Los Guardians han mostrado mejor rendimiento y racha.",
+      "llm_factores": [
+        "Racha negativa reciente",
+        "Mejor rendimiento de abridores Guardians",
+        "Historial desfavorable contra Guardians"
+      ],
+      "llm_favorito": "Detroit Tigers"
     },
     {
       "liga": "MLB",
@@ -11835,7 +12019,15 @@
       "opp_abbr": "BOS",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TEX.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BOS.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BOS.png&h=40&w=40",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Los Red Sox han tenido mejor rendimiento recientemente.",
+      "llm_factores": [
+        "Racha negativa reciente",
+        "Lesiones relevantes",
+        "Historial desfavorable contra Red Sox"
+      ],
+      "llm_favorito": "Texas Rangers"
     },
     {
       "liga": "MLB",
@@ -11853,7 +12045,15 @@
       "opp_abbr": "CHW",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHW.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHW.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Dodgers en buena forma y abridor destacado.",
+      "llm_factores": [
+        "Buena forma",
+        "Abridor destacado",
+        "Ventaja de localía"
+      ],
+      "llm_favorito": "Los Angeles Dodgers"
     },
     {
       "liga": "MLB",
@@ -11871,7 +12071,15 @@
       "opp_abbr": "KC",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/KC.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/KC.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Astros dominando y abridor destacado.",
+      "llm_factores": [
+        "Dominio reciente",
+        "Abridor destacado",
+        "Ventaja de localía"
+      ],
+      "llm_favorito": "Houston Astros"
     },
     {
       "liga": "MLB",
@@ -11889,7 +12097,15 @@
       "opp_abbr": "MIL",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PHI.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Los Phillies han mostrado mejor rendimiento y racha.",
+      "llm_factores": [
+        "Racha positiva reciente",
+        "Mejor rendimiento de abridores",
+        "Historial favorable contra Brewers"
+      ],
+      "llm_favorito": "Philadelphia Phillies"
     },
     {
       "liga": "MLB",
@@ -11972,7 +12188,15 @@
         "score_opp": "3"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHC.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SF.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SF.png&h=40&w=40",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Giants dominando y Cubs en mala forma.",
+      "llm_factores": [
+        "Giants dominando",
+        "Cubs en mala forma",
+        "Rendimiento del abridor"
+      ],
+      "llm_favorito": "Chicago Cubs"
     },
     {
       "liga": "MLB",
@@ -11990,7 +12214,15 @@
       "opp_abbr": "ATH",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/COL.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Ambos equipos en mala racha, pero Rockies tienen peor rendimiento.",
+      "llm_factores": [
+        "Mala racha",
+        "Peor rendimiento",
+        "Historial desfavorable"
+      ],
+      "llm_favorito": "Colorado Rockies"
     },
     {
       "liga": "MLB",
@@ -12008,7 +12240,15 @@
       "opp_abbr": "LAA",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Los Angels han dominado y tienen mejor racha.",
+      "llm_factores": [
+        "Racha negativa reciente",
+        "Lesiones relevantes",
+        "Historial desfavorable contra Angels"
+      ],
+      "llm_favorito": "Tampa Bay Rays"
     },
     {
       "liga": "MLB",
@@ -12021,79 +12261,14 @@
       "state": "Final",
       "result": "loss",
       "label": "🎯",
-      "game_pk": 822722,
+      "game_pk": 401815755,
       "fav_abbr": "SEA",
       "opp_abbr": "WSH",
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Mariners tienen mejor abridor y racha reciente.",
       "llm_factores": "[\"Mejor ERA del abridor\", \"Racha de 7-3 en últimos 10\", \"Ventaja de local\"]",
       "resultado_llm": "fallido",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 1,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 5
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 3
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 3,
-        "away_runs": 1,
-        "home_runs": 10,
-        "away_hits": 5,
-        "home_hits": 14,
-        "away_errors": 1,
-        "home_errors": 2,
-        "away_team_name": "Seattle Mariners",
-        "home_team_name": "Washington Nationals",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "1",
-        "opp_score": "10",
-        "score_fav": "1",
-        "score_opp": "10"
-      },
+      "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SEA.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/WSH.png&h=40&w=40"
     },
@@ -12108,79 +12283,14 @@
       "state": "Final",
       "result": "loss",
       "label": "🎯",
-      "game_pk": 824586,
+      "game_pk": 401815758,
       "fav_abbr": "LAD",
       "opp_abbr": "CHW",
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Dodgers dominan en casa y tienen mejor récord.",
       "llm_factores": "[\"Abridor con bajo ERA\", \"Racha de 8-2\", \"Historial favorable contra White Sox\"]",
       "resultado_llm": "fallido",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 6
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 3,
-        "away_runs": 4,
-        "home_runs": 6,
-        "away_hits": 7,
-        "home_hits": 8,
-        "away_errors": 0,
-        "home_errors": 1,
-        "away_team_name": "Los Angeles Dodgers",
-        "home_team_name": "Chicago White Sox",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "4",
-        "opp_score": "6",
-        "score_fav": "4",
-        "score_opp": "6"
-      },
+      "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHW.png&h=40&w=40"
     },
@@ -12195,7 +12305,7 @@
       "state": "Final",
       "result": "loss",
       "label": "🎯",
-      "game_pk": 824994,
+      "game_pk": 401815762,
       "fav_abbr": "ATH",
       "opp_abbr": "COL",
       "llm_ir_favorito": "NO",
@@ -12282,79 +12392,14 @@
       "state": "Final",
       "result": "win",
       "label": "🎯",
-      "game_pk": 824021,
+      "game_pk": 401815763,
       "fav_abbr": "TB",
       "opp_abbr": "LAA",
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Rays tienen un abridor sólido y buena racha.",
       "llm_factores": "[\"Abridor con bajo ERA\", \"Racha de 9-1\", \"Ventaja de local\"]",
       "resultado_llm": "acertado",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 5,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 1,
-        "away_runs": 8,
-        "home_runs": 3,
-        "away_hits": 11,
-        "home_hits": 5,
-        "away_errors": 0,
-        "home_errors": 0,
-        "away_team_name": "Tampa Bay Rays",
-        "home_team_name": "Los Angeles Angels",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "8",
-        "opp_score": "3",
-        "score_fav": "8",
-        "score_opp": "3"
-      },
+      "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40"
     },
@@ -12369,79 +12414,14 @@
       "state": "Final",
       "result": "win",
       "label": "🎯",
-      "game_pk": 822801,
+      "game_pk": 401815753,
       "fav_abbr": "NYY",
       "opp_abbr": "TOR",
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Yankees tienen ventaja en casa y mejor récord.",
       "llm_factores": "[\"Abridor con buen récord\", \"Racha de 6-4\", \"Historial positivo contra Blue Jays\"]",
       "resultado_llm": "acertado",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 5,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 1,
-        "away_runs": 8,
-        "home_runs": 3,
-        "away_hits": 12,
-        "home_hits": 11,
-        "away_errors": 1,
-        "home_errors": 1,
-        "away_team_name": "New York Yankees",
-        "home_team_name": "Toronto Blue Jays",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "8",
-        "opp_score": "3",
-        "score_fav": "8",
-        "score_opp": "3"
-      },
+      "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYY.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TOR.png&h=40&w=40"
     },
@@ -12456,79 +12436,14 @@
       "state": "Final",
       "result": "loss",
       "label": "📋",
-      "game_pk": 823615,
+      "game_pk": 401815750,
       "fav_abbr": "ATL",
       "opp_abbr": "NYM",
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Braves tienen un abridor destacado y racha positiva.",
       "llm_factores": "[\"Abridor con bajo ERA\", \"Racha de 7-3\", \"Ventaja de local\"]",
       "resultado_llm": "fallido",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 1,
-            "home_runs": 4
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 2,
-        "away_runs": 1,
-        "home_runs": 8,
-        "away_hits": 4,
-        "home_hits": 13,
-        "away_errors": 2,
-        "home_errors": 1,
-        "away_team_name": "Atlanta Braves",
-        "home_team_name": "New York Mets",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "1",
-        "opp_score": "8",
-        "score_fav": "1",
-        "score_opp": "8"
-      },
+      "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYM.png&h=40&w=40"
     },
@@ -12543,79 +12458,14 @@
       "state": "Final",
       "result": "win",
       "label": "📋",
-      "game_pk": 824823,
+      "game_pk": 401815754,
       "fav_abbr": "SD",
       "opp_abbr": "BAL",
       "llm_ir_favorito": "NO",
       "llm_porque": "Ambos equipos están parejos, pero Orioles tienen mejor racha.",
       "llm_factores": "[\"Abridor inconsistente\", \"Racha de 4-6\", \"Lesiones en el equipo\"]",
       "resultado_llm": "fallido",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 0,
-        "away_runs": 5,
-        "home_runs": 2,
-        "away_hits": 8,
-        "home_hits": 10,
-        "away_errors": 0,
-        "home_errors": 3,
-        "away_team_name": "San Diego Padres",
-        "home_team_name": "Baltimore Orioles",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "5",
-        "opp_score": "2",
-        "score_fav": "5",
-        "score_opp": "2"
-      },
+      "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SD.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BAL.png&h=40&w=40"
     },
@@ -12630,7 +12480,7 @@
       "state": "Final",
       "result": "loss",
       "label": "📋",
-      "game_pk": 823212,
+      "game_pk": 401815761,
       "fav_abbr": "CHC",
       "opp_abbr": "SF",
       "llm_ir_favorito": "SÍ",
@@ -12640,7 +12490,7 @@
       "linescore": {
         "innings": [
           {
-            "away_runs": 0,
+            "away_runs": 2,
             "home_runs": 0
           },
           {
@@ -12652,44 +12502,44 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
+            "away_runs": 6,
             "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 3
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
           },
           {
             "away_runs": 1,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 7,
             "home_runs": 1
           },
           {
             "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 2,
             "home_runs": 0
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
         "outs": 3,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 1,
-        "home_runs": 5,
-        "away_hits": 7,
-        "home_hits": 9,
+        "balls": 1,
+        "strikes": 1,
+        "away_runs": 18,
+        "home_runs": 3,
+        "away_hits": 19,
+        "home_hits": 8,
         "away_errors": 0,
-        "home_errors": 1,
-        "away_team_name": "Chicago Cubs",
-        "home_team_name": "San Francisco Giants",
+        "home_errors": 0,
+        "away_team_name": "San Francisco Giants",
+        "home_team_name": "Chicago Cubs",
         "bases": {
           "first": false,
           "second": false,
@@ -12698,10 +12548,10 @@
         "status_emoji": "🏁",
         "result": "completed",
         "state": "Final",
-        "fav_score": "1",
-        "opp_score": "5",
-        "score_fav": "1",
-        "score_opp": "5"
+        "fav_score": "18",
+        "opp_score": "3",
+        "score_fav": "18",
+        "score_opp": "3"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHC.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SF.png&h=40&w=40"
@@ -12717,7 +12567,7 @@
       "state": "Final",
       "result": "loss",
       "label": "📋",
-      "game_pk": 824751,
+      "game_pk": 401815756,
       "fav_abbr": "BOS",
       "opp_abbr": "TEX",
       "llm_ir_favorito": "SÍ",
@@ -12804,7 +12654,7 @@
       "state": "Final",
       "result": "loss",
       "label": "📋",
-      "game_pk": 823368,
+      "game_pk": 401815752,
       "fav_abbr": "PIT",
       "opp_abbr": "MIA",
       "llm_ir_favorito": "SÍ",
@@ -12891,79 +12741,14 @@
       "state": "Final",
       "result": "loss",
       "label": "📋",
-      "game_pk": 823693,
+      "game_pk": 401815760,
       "fav_abbr": "STL",
       "opp_abbr": "MIN",
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Cardinals tienen mejor récord y abridor.",
       "llm_factores": "[\"Abridor con bajo ERA\", \"Racha de 6-4\", \"Historial positivo contra Twins\"]",
       "resultado_llm": "fallido",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 4,
-        "home_runs": 5,
-        "away_hits": 7,
-        "home_hits": 13,
-        "away_errors": 0,
-        "home_errors": 1,
-        "away_team_name": "St. Louis Cardinals",
-        "home_team_name": "Minnesota Twins",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "4",
-        "opp_score": "5",
-        "score_fav": "4",
-        "score_opp": "5"
-      },
+      "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/STL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40"
     },
@@ -12978,79 +12763,14 @@
       "state": "Final",
       "result": "win",
       "label": "📋",
-      "game_pk": 824506,
+      "game_pk": 401815749,
       "fav_abbr": "ARI",
       "opp_abbr": "CIN",
       "llm_ir_favorito": "NO",
       "llm_porque": "Ambos equipos están parejos, Reds tienen mejor racha.",
       "llm_factores": "[\"Abridor inconsistente\", \"Racha de 4-6\", \"Lesiones en el equipo\"]",
       "resultado_llm": "fallido",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 3,
-        "strikes": 1,
-        "away_runs": 5,
-        "home_runs": 3,
-        "away_hits": 7,
-        "home_hits": 8,
-        "away_errors": 1,
-        "home_errors": 1,
-        "away_team_name": "Arizona Diamondbacks",
-        "home_team_name": "Cincinnati Reds",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "5",
-        "opp_score": "3",
-        "score_fav": "5",
-        "score_opp": "3"
-      },
+      "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ARI.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CIN.png&h=40&w=40"
     },
@@ -13065,79 +12785,14 @@
       "state": "Final",
       "result": "loss",
       "label": "📋",
-      "game_pk": 824099,
+      "game_pk": 401815757,
       "fav_abbr": "HOU",
       "opp_abbr": "KC",
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Astros tienen un abridor fuerte y racha positiva.",
       "llm_factores": "[\"Abridor con bajo ERA\", \"Racha de 8-2\", \"Historial favorable contra Royals\"]",
       "resultado_llm": "fallido",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 3
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 1,
-        "away_runs": 0,
-        "home_runs": 4,
-        "away_hits": 5,
-        "home_hits": 10,
-        "away_errors": 1,
-        "home_errors": 1,
-        "away_team_name": "Houston Astros",
-        "home_team_name": "Kansas City Royals",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "0",
-        "opp_score": "4",
-        "score_fav": "0",
-        "score_opp": "4"
-      },
+      "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/KC.png&h=40&w=40"
     },
@@ -13152,79 +12807,14 @@
       "state": "Final",
       "result": "loss",
       "label": "📋",
-      "game_pk": 823777,
+      "game_pk": 401815759,
       "fav_abbr": "PHI",
       "opp_abbr": "MIL",
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Phillies tienen ventaja de local y mejor abridor.",
       "llm_factores": "[\"Abridor con buen récord\", \"Racha de 7-3\", \"Ventaja de local\"]",
       "resultado_llm": "fallido",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 3
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 0,
-        "away_runs": 0,
-        "home_runs": 4,
-        "away_hits": 4,
-        "home_hits": 10,
-        "away_errors": 1,
-        "home_errors": 1,
-        "away_team_name": "Philadelphia Phillies",
-        "home_team_name": "Milwaukee Brewers",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "0",
-        "opp_score": "4",
-        "score_fav": "0",
-        "score_opp": "4"
-      },
+      "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PHI.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40"
     },
@@ -13244,198 +12834,65 @@
       "opp_abbr": "CLE",
       "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40"
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Los Guardians han mostrado mejor rendimiento y racha.",
+      "llm_factores": [
+        "Racha negativa reciente",
+        "Mejor rendimiento de abridores Guardians",
+        "Historial desfavorable contra Guardians"
+      ],
+      "llm_favorito": "Detroit Tigers"
     },
     {
       "liga": "MLB",
       "game_date": "2026-06-15",
       "status_emoji": "⏳",
-      "fav_team": "Miami Marlins",
-      "opp_team": "Philadelphia Phillies",
+      "fav_team": "Washington Nationals",
+      "opp_team": "Kansas City Royals",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pend.",
+      "state": "Scheduled",
       "result": "pending",
-      "label": "📋",
-      "game_pk": 401815765,
-      "fav_abbr": "MIA",
-      "opp_abbr": "PHI",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIA.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PHI.png&h=40&w=40"
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-15",
-      "status_emoji": "⏳",
-      "fav_team": "Kansas City Royals",
-      "opp_team": "Washington Nationals",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Pend.",
-      "result": "pending",
-      "label": "📋",
-      "game_pk": 401815764,
-      "fav_abbr": "KC",
-      "opp_abbr": "WSH",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/KC.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/WSH.png&h=40&w=40"
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-15",
-      "status_emoji": "⏳",
-      "fav_team": "New York Mets",
-      "opp_team": "Cincinnati Reds",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Pend.",
-      "result": "pending",
-      "label": "📋",
-      "game_pk": 401815766,
-      "fav_abbr": "NYM",
-      "opp_abbr": "CIN",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYM.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CIN.png&h=40&w=40"
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-15",
-      "status_emoji": "⏳",
-      "fav_team": "San Diego Padres",
-      "opp_team": "St. Louis Cardinals",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Pend.",
-      "result": "pending",
-      "label": "📋",
-      "game_pk": 401815770,
-      "fav_abbr": "SD",
-      "opp_abbr": "STL",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SD.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/STL.png&h=40&w=40"
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-15",
-      "status_emoji": "🏁",
-      "fav_team": "Colorado Rockies",
-      "opp_team": "Chicago Cubs",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Final",
-      "result": "completed",
-      "label": "📋",
-      "game_pk": 401815767,
-      "fav_abbr": "COL",
-      "opp_abbr": "CHC",
+      "label": "🎯",
+      "game_pk": 822724,
+      "fav_abbr": "WSH",
+      "opp_abbr": "KC",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Nationals tienen ventaja en casa y mejor abridor.",
+      "llm_factores": "",
+      "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 3
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
+        "innings": [],
+        "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
+        "inning_ordinal": "",
+        "outs": 0,
         "balls": 0,
-        "strikes": 2,
-        "away_runs": 3,
-        "home_runs": 7,
-        "away_hits": 8,
-        "home_hits": 12,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
-        "away_team_name": "Chicago Cubs",
-        "home_team_name": "Colorado Rockies",
+        "away_team_name": "Kansas City Royals",
+        "home_team_name": "Washington Nationals",
         "bases": {
           "first": false,
           "second": false,
           "third": false
         },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "3",
-        "opp_score": "7",
-        "score_fav": "3",
-        "score_opp": "7"
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
       },
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/COL.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHC.png&h=40&w=40"
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-15",
-      "status_emoji": "⏳",
-      "fav_team": "Minnesota Twins",
-      "opp_team": "Texas Rangers",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Pend.",
-      "result": "pending",
-      "label": "📋",
-      "game_pk": 401815769,
-      "fav_abbr": "MIN",
-      "opp_abbr": "TEX",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TEX.png&h=40&w=40"
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-15",
-      "status_emoji": "⏳",
-      "fav_team": "Detroit Tigers",
-      "opp_team": "Houston Astros",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Pend.",
-      "result": "pending",
-      "label": "📋",
-      "game_pk": 401815768,
-      "fav_abbr": "DET",
-      "opp_abbr": "HOU",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40"
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/WSH.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/KC.png&h=40&w=40"
     },
     {
       "liga": "MLB",
@@ -13445,13 +12902,45 @@
       "opp_team": "Arizona Diamondbacks",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pend.",
+      "state": "Scheduled",
       "result": "pending",
-      "label": "📋",
-      "game_pk": 401815771,
+      "label": "🎯",
+      "game_pk": 825071,
       "fav_abbr": "LAA",
       "opp_abbr": "ARI",
-      "linescore": {},
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Diamondbacks están en mejor forma y tienen buen abridor.",
+      "llm_factores": "",
+      "resultado_llm": "pendiente",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Los Angeles Angels",
+        "home_team_name": "Arizona Diamondbacks",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ARI.png&h=40&w=40"
     },
@@ -13459,19 +12948,351 @@
       "liga": "MLB",
       "game_date": "2026-06-15",
       "status_emoji": "⏳",
-      "fav_team": "Pittsburgh Pirates",
-      "opp_team": "Athletics",
+      "fav_team": "Detroit Tigers",
+      "opp_team": "Houston Astros",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pend.",
+      "state": "Scheduled",
+      "result": "pending",
+      "label": "🎯",
+      "game_pk": 824181,
+      "fav_abbr": "DET",
+      "opp_abbr": "HOU",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Astros son claramente superiores en calidad y racha.",
+      "llm_factores": "",
+      "resultado_llm": "pendiente",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Detroit Tigers",
+        "home_team_name": "Houston Astros",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40"
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-15",
+      "status_emoji": "⏳",
+      "fav_team": "Texas Rangers",
+      "opp_team": "Minnesota Twins",
+      "score_fav": "—",
+      "score_opp": "",
+      "state": "Scheduled",
+      "result": "pending",
+      "label": "🎯",
+      "game_pk": 822887,
+      "fav_abbr": "TEX",
+      "opp_abbr": "MIN",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Rangers tienen mejor abridor y racha positiva.",
+      "llm_factores": "",
+      "resultado_llm": "pendiente",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Minnesota Twins",
+        "home_team_name": "Texas Rangers",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TEX.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40"
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-15",
+      "status_emoji": "⏳",
+      "fav_team": "Philadelphia Phillies",
+      "opp_team": "Miami Marlins",
+      "score_fav": "—",
+      "score_opp": "",
+      "state": "Scheduled",
       "result": "pending",
       "label": "📋",
-      "game_pk": 401815772,
-      "fav_abbr": "PIT",
-      "opp_abbr": "ATH",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PIT.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40"
+      "game_pk": 823452,
+      "fav_abbr": "PHI",
+      "opp_abbr": "MIA",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Phillies tienen mejor abridor y racha positiva.",
+      "llm_factores": "",
+      "resultado_llm": "pendiente",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Miami Marlins",
+        "home_team_name": "Philadelphia Phillies",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PHI.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIA.png&h=40&w=40"
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-15",
+      "status_emoji": "⏳",
+      "fav_team": "Athletics",
+      "opp_team": "Pittsburgh Pirates",
+      "score_fav": "—",
+      "score_opp": "",
+      "state": "Scheduled",
+      "result": "pending",
+      "label": "📋",
+      "game_pk": 824993,
+      "fav_abbr": "ATH",
+      "opp_abbr": "PIT",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Ambos equipos en mala racha, Pirates tienen mejor récord.",
+      "llm_factores": "",
+      "resultado_llm": "pendiente",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Pittsburgh Pirates",
+        "home_team_name": "Athletics",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PIT.png&h=40&w=40"
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-15",
+      "status_emoji": "⏳",
+      "fav_team": "Chicago Cubs",
+      "opp_team": "Colorado Rockies",
+      "score_fav": "—",
+      "score_opp": "",
+      "state": "Scheduled",
+      "result": "pending",
+      "label": "📋",
+      "game_pk": 824666,
+      "fav_abbr": "CHC",
+      "opp_abbr": "COL",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Cubs tienen ventaja en casa y mejor rendimiento reciente.",
+      "llm_factores": "",
+      "resultado_llm": "pendiente",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Colorado Rockies",
+        "home_team_name": "Chicago Cubs",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHC.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/COL.png&h=40&w=40"
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-15",
+      "status_emoji": "⏳",
+      "fav_team": "Cincinnati Reds",
+      "opp_team": "New York Mets",
+      "score_fav": "—",
+      "score_opp": "",
+      "state": "Scheduled",
+      "result": "pending",
+      "label": "📋",
+      "game_pk": 824505,
+      "fav_abbr": "CIN",
+      "opp_abbr": "NYM",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Mets tienen mejor abridor y racha más fuerte.",
+      "llm_factores": "",
+      "resultado_llm": "pendiente",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "New York Mets",
+        "home_team_name": "Cincinnati Reds",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CIN.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYM.png&h=40&w=40"
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-15",
+      "status_emoji": "⏳",
+      "fav_team": "St. Louis Cardinals",
+      "opp_team": "San Diego Padres",
+      "score_fav": "—",
+      "score_opp": "",
+      "state": "Scheduled",
+      "result": "pending",
+      "label": "📋",
+      "game_pk": 823046,
+      "fav_abbr": "STL",
+      "opp_abbr": "SD",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Cardinals tienen ventaja de local y mejor rendimiento reciente.",
+      "llm_factores": "",
+      "resultado_llm": "pendiente",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "San Diego Padres",
+        "home_team_name": "St. Louis Cardinals",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/STL.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SD.png&h=40&w=40"
     },
     {
       "liga": "MLB",
@@ -13481,13 +13302,45 @@
       "opp_team": "Los Angeles Dodgers",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pend.",
+      "state": "Scheduled",
       "result": "pending",
       "label": "📋",
-      "game_pk": 401815773,
+      "game_pk": 823938,
       "fav_abbr": "TB",
       "opp_abbr": "LAD",
-      "linescore": {},
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Dodgers son más consistentes y tienen mejor abridor.",
+      "llm_factores": "",
+      "resultado_llm": "pendiente",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Tampa Bay Rays",
+        "home_team_name": "Los Angeles Dodgers",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40"
     }
@@ -13719,7 +13572,7 @@
       "home_team_name": "Tampa Bay Rays",
       "linescore": {}
     },
-    "822722": {
+    "401815755": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -13727,74 +13580,9 @@
       "home_runs": 10,
       "away_team_name": "Washington Nationals",
       "home_team_name": "Seattle Mariners",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 1,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 5
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 3
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 3,
-        "away_runs": 1,
-        "home_runs": 10,
-        "away_hits": 5,
-        "home_hits": 14,
-        "away_errors": 1,
-        "home_errors": 2,
-        "away_team_name": "Seattle Mariners",
-        "home_team_name": "Washington Nationals",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "1",
-        "opp_score": "10",
-        "score_fav": "1",
-        "score_opp": "10"
-      }
+      "linescore": {}
     },
-    "824586": {
+    "401815758": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -13802,74 +13590,9 @@
       "home_runs": 6,
       "away_team_name": "Chicago White Sox",
       "home_team_name": "Los Angeles Dodgers",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 6
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 3,
-        "away_runs": 4,
-        "home_runs": 6,
-        "away_hits": 7,
-        "home_hits": 8,
-        "away_errors": 0,
-        "home_errors": 1,
-        "away_team_name": "Los Angeles Dodgers",
-        "home_team_name": "Chicago White Sox",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "4",
-        "opp_score": "6",
-        "score_fav": "4",
-        "score_opp": "6"
-      }
+      "linescore": {}
     },
-    "824994": {
+    "401815762": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -13944,7 +13667,7 @@
         "score_opp": "9"
       }
     },
-    "824021": {
+    "401815763": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -13952,74 +13675,9 @@
       "home_runs": 3,
       "away_team_name": "Los Angeles Angels",
       "home_team_name": "Tampa Bay Rays",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 5,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 1,
-        "away_runs": 8,
-        "home_runs": 3,
-        "away_hits": 11,
-        "home_hits": 5,
-        "away_errors": 0,
-        "home_errors": 0,
-        "away_team_name": "Tampa Bay Rays",
-        "home_team_name": "Los Angeles Angels",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "8",
-        "opp_score": "3",
-        "score_fav": "8",
-        "score_opp": "3"
-      }
+      "linescore": {}
     },
-    "822801": {
+    "401815753": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -14027,74 +13685,9 @@
       "home_runs": 3,
       "away_team_name": "Toronto Blue Jays",
       "home_team_name": "New York Yankees",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 5,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 1,
-        "away_runs": 8,
-        "home_runs": 3,
-        "away_hits": 12,
-        "home_hits": 11,
-        "away_errors": 1,
-        "home_errors": 1,
-        "away_team_name": "New York Yankees",
-        "home_team_name": "Toronto Blue Jays",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "8",
-        "opp_score": "3",
-        "score_fav": "8",
-        "score_opp": "3"
-      }
+      "linescore": {}
     },
-    "823615": {
+    "401815750": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -14102,74 +13695,9 @@
       "home_runs": 8,
       "away_team_name": "New York Mets",
       "home_team_name": "Atlanta Braves",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 1,
-            "home_runs": 4
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 2,
-        "away_runs": 1,
-        "home_runs": 8,
-        "away_hits": 4,
-        "home_hits": 13,
-        "away_errors": 2,
-        "home_errors": 1,
-        "away_team_name": "Atlanta Braves",
-        "home_team_name": "New York Mets",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "1",
-        "opp_score": "8",
-        "score_fav": "1",
-        "score_opp": "8"
-      }
+      "linescore": {}
     },
-    "824823": {
+    "401815754": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -14177,74 +13705,9 @@
       "home_runs": 2,
       "away_team_name": "Baltimore Orioles",
       "home_team_name": "San Diego Padres",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 0,
-        "away_runs": 5,
-        "home_runs": 2,
-        "away_hits": 8,
-        "home_hits": 10,
-        "away_errors": 0,
-        "home_errors": 3,
-        "away_team_name": "San Diego Padres",
-        "home_team_name": "Baltimore Orioles",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "5",
-        "opp_score": "2",
-        "score_fav": "5",
-        "score_opp": "2"
-      }
+      "linescore": {}
     },
-    "823212": {
+    "401815761": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -14255,7 +13718,7 @@
       "linescore": {
         "innings": [
           {
-            "away_runs": 0,
+            "away_runs": 2,
             "home_runs": 0
           },
           {
@@ -14267,44 +13730,44 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
+            "away_runs": 6,
             "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 3
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
           },
           {
             "away_runs": 1,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 7,
             "home_runs": 1
           },
           {
             "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 2,
             "home_runs": 0
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
         "outs": 3,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 1,
-        "home_runs": 5,
-        "away_hits": 7,
-        "home_hits": 9,
+        "balls": 1,
+        "strikes": 1,
+        "away_runs": 18,
+        "home_runs": 3,
+        "away_hits": 19,
+        "home_hits": 8,
         "away_errors": 0,
-        "home_errors": 1,
-        "away_team_name": "Chicago Cubs",
-        "home_team_name": "San Francisco Giants",
+        "home_errors": 0,
+        "away_team_name": "San Francisco Giants",
+        "home_team_name": "Chicago Cubs",
         "bases": {
           "first": false,
           "second": false,
@@ -14313,13 +13776,13 @@
         "status_emoji": "🏁",
         "result": "completed",
         "state": "Final",
-        "fav_score": "1",
-        "opp_score": "5",
-        "score_fav": "1",
-        "score_opp": "5"
+        "fav_score": "18",
+        "opp_score": "3",
+        "score_fav": "18",
+        "score_opp": "3"
       }
     },
-    "824751": {
+    "401815756": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -14394,7 +13857,7 @@
         "score_opp": "4"
       }
     },
-    "823368": {
+    "401815752": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -14469,7 +13932,7 @@
         "score_opp": "2"
       }
     },
-    "823693": {
+    "401815760": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -14477,74 +13940,9 @@
       "home_runs": 5,
       "away_team_name": "Minnesota Twins",
       "home_team_name": "St. Louis Cardinals",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 4,
-        "home_runs": 5,
-        "away_hits": 7,
-        "home_hits": 13,
-        "away_errors": 0,
-        "home_errors": 1,
-        "away_team_name": "St. Louis Cardinals",
-        "home_team_name": "Minnesota Twins",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "4",
-        "opp_score": "5",
-        "score_fav": "4",
-        "score_opp": "5"
-      }
+      "linescore": {}
     },
-    "824506": {
+    "401815749": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -14552,74 +13950,9 @@
       "home_runs": 3,
       "away_team_name": "Cincinnati Reds",
       "home_team_name": "Arizona Diamondbacks",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 3,
-        "strikes": 1,
-        "away_runs": 5,
-        "home_runs": 3,
-        "away_hits": 7,
-        "home_hits": 8,
-        "away_errors": 1,
-        "home_errors": 1,
-        "away_team_name": "Arizona Diamondbacks",
-        "home_team_name": "Cincinnati Reds",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "5",
-        "opp_score": "3",
-        "score_fav": "5",
-        "score_opp": "3"
-      }
+      "linescore": {}
     },
-    "824099": {
+    "401815757": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -14627,74 +13960,9 @@
       "home_runs": 4,
       "away_team_name": "Kansas City Royals",
       "home_team_name": "Houston Astros",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 3
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 1,
-        "away_runs": 0,
-        "home_runs": 4,
-        "away_hits": 5,
-        "home_hits": 10,
-        "away_errors": 1,
-        "home_errors": 1,
-        "away_team_name": "Houston Astros",
-        "home_team_name": "Kansas City Royals",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "0",
-        "opp_score": "4",
-        "score_fav": "0",
-        "score_opp": "4"
-      }
+      "linescore": {}
     },
-    "823777": {
+    "401815759": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -14702,72 +13970,7 @@
       "home_runs": 4,
       "away_team_name": "Milwaukee Brewers",
       "home_team_name": "Philadelphia Phillies",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 3
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 0,
-        "away_runs": 0,
-        "home_runs": 4,
-        "away_hits": 4,
-        "home_hits": 10,
-        "away_errors": 1,
-        "home_errors": 1,
-        "away_team_name": "Philadelphia Phillies",
-        "home_team_name": "Milwaukee Brewers",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "0",
-        "opp_score": "4",
-        "score_fav": "0",
-        "score_opp": "4"
-      }
+      "linescore": {}
     },
     "401815751": {
       "is_live": false,
@@ -14779,173 +13982,388 @@
       "home_team_name": "Detroit Tigers",
       "linescore": {}
     },
-    "401815765": {
+    "822724": {
       "is_live": false,
       "is_final": false,
-      "status": "Pend.",
+      "status": "Scheduled",
       "away_runs": 0,
       "home_runs": 0,
-      "away_team_name": "Philadelphia Phillies",
-      "home_team_name": "Miami Marlins",
-      "linescore": {}
-    },
-    "401815764": {
-      "is_live": false,
-      "is_final": false,
-      "status": "Pend.",
-      "away_runs": 0,
-      "home_runs": 0,
-      "away_team_name": "Washington Nationals",
-      "home_team_name": "Kansas City Royals",
-      "linescore": {}
-    },
-    "401815766": {
-      "is_live": false,
-      "is_final": false,
-      "status": "Pend.",
-      "away_runs": 0,
-      "home_runs": 0,
-      "away_team_name": "Cincinnati Reds",
-      "home_team_name": "New York Mets",
-      "linescore": {}
-    },
-    "401815770": {
-      "is_live": false,
-      "is_final": false,
-      "status": "Pend.",
-      "away_runs": 0,
-      "home_runs": 0,
-      "away_team_name": "St. Louis Cardinals",
-      "home_team_name": "San Diego Padres",
-      "linescore": {}
-    },
-    "401815767": {
-      "is_live": false,
-      "is_final": true,
-      "status": "Final",
-      "away_runs": 0,
-      "home_runs": 0,
-      "away_team_name": "Chicago Cubs",
-      "home_team_name": "Colorado Rockies",
+      "away_team_name": "Kansas City Royals",
+      "home_team_name": "Washington Nationals",
       "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 3
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
+        "innings": [],
+        "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
+        "inning_ordinal": "",
+        "outs": 0,
         "balls": 0,
-        "strikes": 2,
-        "away_runs": 3,
-        "home_runs": 7,
-        "away_hits": 8,
-        "home_hits": 12,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
-        "away_team_name": "Chicago Cubs",
-        "home_team_name": "Colorado Rockies",
+        "away_team_name": "Kansas City Royals",
+        "home_team_name": "Washington Nationals",
         "bases": {
           "first": false,
           "second": false,
           "third": false
         },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "3",
-        "opp_score": "7",
-        "score_fav": "3",
-        "score_opp": "7"
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
       }
     },
-    "401815769": {
+    "825071": {
       "is_live": false,
       "is_final": false,
-      "status": "Pend.",
-      "away_runs": 0,
-      "home_runs": 0,
-      "away_team_name": "Texas Rangers",
-      "home_team_name": "Minnesota Twins",
-      "linescore": {}
-    },
-    "401815768": {
-      "is_live": false,
-      "is_final": false,
-      "status": "Pend.",
-      "away_runs": 0,
-      "home_runs": 0,
-      "away_team_name": "Houston Astros",
-      "home_team_name": "Detroit Tigers",
-      "linescore": {}
-    },
-    "401815771": {
-      "is_live": false,
-      "is_final": false,
-      "status": "Pend.",
+      "status": "Scheduled",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Arizona Diamondbacks",
       "home_team_name": "Los Angeles Angels",
-      "linescore": {}
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Los Angeles Angels",
+        "home_team_name": "Arizona Diamondbacks",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      }
     },
-    "401815772": {
+    "824181": {
       "is_live": false,
       "is_final": false,
-      "status": "Pend.",
+      "status": "Scheduled",
       "away_runs": 0,
       "home_runs": 0,
-      "away_team_name": "Athletics",
-      "home_team_name": "Pittsburgh Pirates",
-      "linescore": {}
+      "away_team_name": "Houston Astros",
+      "home_team_name": "Detroit Tigers",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Detroit Tigers",
+        "home_team_name": "Houston Astros",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      }
     },
-    "401815773": {
+    "822887": {
       "is_live": false,
       "is_final": false,
-      "status": "Pend.",
+      "status": "Scheduled",
+      "away_runs": 0,
+      "home_runs": 0,
+      "away_team_name": "Minnesota Twins",
+      "home_team_name": "Texas Rangers",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Minnesota Twins",
+        "home_team_name": "Texas Rangers",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      }
+    },
+    "823452": {
+      "is_live": false,
+      "is_final": false,
+      "status": "Scheduled",
+      "away_runs": 0,
+      "home_runs": 0,
+      "away_team_name": "Miami Marlins",
+      "home_team_name": "Philadelphia Phillies",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Miami Marlins",
+        "home_team_name": "Philadelphia Phillies",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      }
+    },
+    "824993": {
+      "is_live": false,
+      "is_final": false,
+      "status": "Scheduled",
+      "away_runs": 0,
+      "home_runs": 0,
+      "away_team_name": "Pittsburgh Pirates",
+      "home_team_name": "Athletics",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Pittsburgh Pirates",
+        "home_team_name": "Athletics",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      }
+    },
+    "824666": {
+      "is_live": false,
+      "is_final": false,
+      "status": "Scheduled",
+      "away_runs": 0,
+      "home_runs": 0,
+      "away_team_name": "Colorado Rockies",
+      "home_team_name": "Chicago Cubs",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Colorado Rockies",
+        "home_team_name": "Chicago Cubs",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      }
+    },
+    "824505": {
+      "is_live": false,
+      "is_final": false,
+      "status": "Scheduled",
+      "away_runs": 0,
+      "home_runs": 0,
+      "away_team_name": "New York Mets",
+      "home_team_name": "Cincinnati Reds",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "New York Mets",
+        "home_team_name": "Cincinnati Reds",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      }
+    },
+    "823046": {
+      "is_live": false,
+      "is_final": false,
+      "status": "Scheduled",
+      "away_runs": 0,
+      "home_runs": 0,
+      "away_team_name": "San Diego Padres",
+      "home_team_name": "St. Louis Cardinals",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "San Diego Padres",
+        "home_team_name": "St. Louis Cardinals",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      }
+    },
+    "823938": {
+      "is_live": false,
+      "is_final": false,
+      "status": "Scheduled",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Los Angeles Dodgers",
       "home_team_name": "Tampa Bay Rays",
-      "linescore": {}
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Tampa Bay Rays",
+        "home_team_name": "Los Angeles Dodgers",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      }
     }
   },
-  "updated_at": "15/06/2026 05:05",
+  "updated_at": "15/06/2026 08:13",
   "stats": {
     "total": 95,
     "acertados": 56,
@@ -14966,10 +14384,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "hits_total": 407,
+    "hits_total": 663,
     "hits_acertados": 0,
     "hits_fallidos": 0,
-    "hits_pendientes": 407,
+    "hits_pendientes": 663,
     "hits_win_rate": 0.0,
     "llm_total": 197,
     "llm_acertados": 91,
@@ -14996,10 +14414,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "hits_total": 407,
+    "hits_total": 663,
     "hits_acertados": 0,
     "hits_fallidos": 0,
-    "hits_pendientes": 407,
+    "hits_pendientes": 663,
     "hits_win_rate": 0.0,
     "llm_total": 127,
     "llm_acertados": 47,
@@ -15026,10 +14444,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "hits_total": 407,
+    "hits_total": 663,
     "hits_acertados": 0,
     "hits_fallidos": 0,
-    "hits_pendientes": 407,
+    "hits_pendientes": 663,
     "hits_win_rate": 0.0,
     "llm_total": 70,
     "llm_acertados": 44,
@@ -15056,10 +14474,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "hits_total": 407,
+    "hits_total": 663,
     "hits_acertados": 0,
     "hits_fallidos": 0,
-    "hits_pendientes": 407,
+    "hits_pendientes": 663,
     "hits_win_rate": 0.0,
     "llm_total": 0,
     "llm_acertados": 0,
@@ -15086,10 +14504,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "hits_total": 407,
+    "hits_total": 663,
     "hits_acertados": 0,
     "hits_fallidos": 0,
-    "hits_pendientes": 407,
+    "hits_pendientes": 663,
     "hits_win_rate": 0.0,
     "llm_total": 0,
     "llm_acertados": 0,
@@ -15116,10 +14534,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "hits_total": 407,
+    "hits_total": 663,
     "hits_acertados": 0,
     "hits_fallidos": 0,
-    "hits_pendientes": 407,
+    "hits_pendientes": 663,
     "hits_win_rate": 0.0,
     "llm_total": 0,
     "llm_acertados": 0,
@@ -15146,10 +14564,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "hits_total": 407,
+    "hits_total": 663,
     "hits_acertados": 0,
     "hits_fallidos": 0,
-    "hits_pendientes": 407,
+    "hits_pendientes": 663,
     "hits_win_rate": 0.0,
     "llm_total": 14,
     "llm_acertados": 3,
@@ -15176,10 +14594,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "hits_total": 407,
+    "hits_total": 663,
     "hits_acertados": 0,
     "hits_fallidos": 0,
-    "hits_pendientes": 407,
+    "hits_pendientes": 663,
     "hits_win_rate": 0.0,
     "llm_total": 14,
     "llm_acertados": 3,
@@ -15206,10 +14624,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "hits_total": 407,
+    "hits_total": 663,
     "hits_acertados": 0,
     "hits_fallidos": 0,
-    "hits_pendientes": 407,
+    "hits_pendientes": 663,
     "hits_win_rate": 0.0,
     "llm_total": 0,
     "llm_acertados": 0,
@@ -15236,10 +14654,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "hits_total": 407,
+    "hits_total": 663,
     "hits_acertados": 0,
     "hits_fallidos": 0,
-    "hits_pendientes": 407,
+    "hits_pendientes": 663,
     "hits_win_rate": 0.0,
     "llm_total": 79,
     "llm_acertados": 32,
@@ -15266,10 +14684,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "hits_total": 407,
+    "hits_total": 663,
     "hits_acertados": 0,
     "hits_fallidos": 0,
-    "hits_pendientes": 407,
+    "hits_pendientes": 663,
     "hits_win_rate": 0.0,
     "llm_total": 51,
     "llm_acertados": 16,
@@ -15296,10 +14714,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "hits_total": 407,
+    "hits_total": 663,
     "hits_acertados": 0,
     "hits_fallidos": 0,
-    "hits_pendientes": 407,
+    "hits_pendientes": 663,
     "hits_win_rate": 0.0,
     "llm_total": 28,
     "llm_acertados": 16,
@@ -15317,7 +14735,8 @@
     "2026-06-10",
     "2026-06-11",
     "2026-06-12",
-    "2026-06-14"
+    "2026-06-14",
+    "2026-06-15"
   ],
   "stats_por_fecha": {
     "2026-06-03": {
@@ -15340,10 +14759,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 21,
       "llm_acertados": 13,
@@ -15370,10 +14789,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 23,
       "llm_acertados": 12,
@@ -15400,10 +14819,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 24,
       "llm_acertados": 13,
@@ -15430,10 +14849,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 14,
       "llm_acertados": 7,
@@ -15460,10 +14879,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 27,
       "llm_acertados": 11,
@@ -15490,10 +14909,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 9,
       "llm_acertados": 3,
@@ -15520,10 +14939,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 25,
       "llm_acertados": 9,
@@ -15550,10 +14969,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 26,
       "llm_acertados": 14,
@@ -15580,10 +14999,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 14,
       "llm_acertados": 6,
@@ -15610,10 +15029,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 0,
       "llm_acertados": 0,
@@ -15640,15 +15059,45 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 14,
       "llm_acertados": 3,
       "llm_fallidos": 11,
       "llm_win_rate": 21.4
+    },
+    "2026-06-15": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "hits_total": 663,
+      "hits_acertados": 0,
+      "hits_fallidos": 0,
+      "hits_pendientes": 663,
+      "hits_win_rate": 0.0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
     }
   },
   "stats_por_fecha_mlb": {
@@ -15672,10 +15121,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 11,
       "llm_acertados": 6,
@@ -15702,10 +15151,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 13,
       "llm_acertados": 6,
@@ -15732,10 +15181,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 15,
       "llm_acertados": 7,
@@ -15762,10 +15211,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 14,
       "llm_acertados": 7,
@@ -15792,10 +15241,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 15,
       "llm_acertados": 2,
@@ -15822,10 +15271,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 8,
       "llm_acertados": 3,
@@ -15852,10 +15301,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 15,
       "llm_acertados": 5,
@@ -15882,10 +15331,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 15,
       "llm_acertados": 6,
@@ -15912,10 +15361,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 7,
       "llm_acertados": 2,
@@ -15942,10 +15391,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 0,
       "llm_acertados": 0,
@@ -15972,15 +15421,45 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 14,
       "llm_acertados": 3,
       "llm_fallidos": 11,
       "llm_win_rate": 21.4
+    },
+    "2026-06-15": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "hits_total": 663,
+      "hits_acertados": 0,
+      "hits_fallidos": 0,
+      "hits_pendientes": 663,
+      "hits_win_rate": 0.0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
     }
   },
   "stats_por_fecha_lmb": {
@@ -16004,10 +15483,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 10,
       "llm_acertados": 7,
@@ -16034,10 +15513,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 10,
       "llm_acertados": 6,
@@ -16064,10 +15543,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 9,
       "llm_acertados": 6,
@@ -16094,10 +15573,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 0,
       "llm_acertados": 0,
@@ -16124,10 +15603,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 12,
       "llm_acertados": 9,
@@ -16154,10 +15633,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 1,
       "llm_acertados": 0,
@@ -16184,10 +15663,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 10,
       "llm_acertados": 4,
@@ -16214,10 +15693,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 11,
       "llm_acertados": 8,
@@ -16244,10 +15723,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 7,
       "llm_acertados": 4,
@@ -16274,10 +15753,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 0,
       "llm_acertados": 0,
@@ -16304,10 +15783,40 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "hits_total": 407,
+      "hits_total": 663,
       "hits_acertados": 0,
       "hits_fallidos": 0,
-      "hits_pendientes": 407,
+      "hits_pendientes": 663,
+      "hits_win_rate": 0.0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
+    },
+    "2026-06-15": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "hits_total": 663,
+      "hits_acertados": 0,
+      "hits_fallidos": 0,
+      "hits_pendientes": 663,
       "hits_win_rate": 0.0,
       "llm_total": 0,
       "llm_acertados": 0,
@@ -16319,7 +15828,7 @@
     "Miami Marlins": [
       {
         "nombre": "Otto Lopez",
-        "prob": 79.8,
+        "prob": 74.7,
         "player_id": 672640,
         "game_pk": "823452",
         "equipo": "Miami Marlins",
@@ -16327,7 +15836,7 @@
       },
       {
         "nombre": "Xavier Edwards",
-        "prob": 70.9,
+        "prob": 65.7,
         "player_id": 669364,
         "game_pk": "823452",
         "equipo": "Miami Marlins",
@@ -16335,7 +15844,7 @@
       },
       {
         "nombre": "Liam Hicks",
-        "prob": 67.3,
+        "prob": 62.1,
         "player_id": 689414,
         "game_pk": "823452",
         "equipo": "Miami Marlins",
@@ -16343,7 +15852,7 @@
       },
       {
         "nombre": "Javier Sanoja",
-        "prob": 66.8,
+        "prob": 61.6,
         "player_id": 691594,
         "game_pk": "823452",
         "equipo": "Miami Marlins",
@@ -16351,7 +15860,7 @@
       },
       {
         "nombre": "Joe Mack",
-        "prob": 63.8,
+        "prob": 58.7,
         "player_id": 691788,
         "game_pk": "823452",
         "equipo": "Miami Marlins",
@@ -16361,7 +15870,7 @@
     "Philadelphia Phillies": [
       {
         "nombre": "Brandon Marsh",
-        "prob": 77.1,
+        "prob": 79.3,
         "player_id": 669016,
         "game_pk": "823452",
         "equipo": "Philadelphia Phillies",
@@ -16369,7 +15878,7 @@
       },
       {
         "nombre": "Bryce Harper",
-        "prob": 62.9,
+        "prob": 65.3,
         "player_id": 547180,
         "game_pk": "823452",
         "equipo": "Philadelphia Phillies",
@@ -16377,7 +15886,7 @@
       },
       {
         "nombre": "Bryson Stott",
-        "prob": 62.7,
+        "prob": 65.1,
         "player_id": 681082,
         "game_pk": "823452",
         "equipo": "Philadelphia Phillies",
@@ -16385,7 +15894,7 @@
       },
       {
         "nombre": "Justin Crawford",
-        "prob": 62.7,
+        "prob": 65.1,
         "player_id": 702222,
         "game_pk": "823452",
         "equipo": "Philadelphia Phillies",
@@ -16393,17 +15902,101 @@
       },
       {
         "nombre": "Kyle Schwarber",
-        "prob": 61.9,
+        "prob": 64.3,
         "player_id": 656941,
         "game_pk": "823452",
         "equipo": "Philadelphia Phillies",
         "status": "pendiente"
       }
     ],
+    "Pittsburgh Pirates": [
+      {
+        "nombre": "Nick Gonzales",
+        "prob": 70.5,
+        "player_id": 693304,
+        "game_pk": "824993",
+        "equipo": "Pittsburgh Pirates",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Jake Mangum",
+        "prob": 69.6,
+        "player_id": 663968,
+        "game_pk": "824993",
+        "equipo": "Pittsburgh Pirates",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Tyler Callihan",
+        "prob": 68.9,
+        "player_id": 682997,
+        "game_pk": "824993",
+        "equipo": "Pittsburgh Pirates",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Ryan O'Hearn",
+        "prob": 65.6,
+        "player_id": 656811,
+        "game_pk": "824993",
+        "equipo": "Pittsburgh Pirates",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Spencer Horwitz",
+        "prob": 63.7,
+        "player_id": 687462,
+        "game_pk": "824993",
+        "equipo": "Pittsburgh Pirates",
+        "status": "pendiente"
+      }
+    ],
+    "Athletics": [
+      {
+        "nombre": "Alika Williams",
+        "prob": 74.0,
+        "player_id": 675961,
+        "game_pk": "824993",
+        "equipo": "Athletics",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Henry Bolte",
+        "prob": 73.7,
+        "player_id": 703607,
+        "game_pk": "824993",
+        "equipo": "Athletics",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Jacob Wilson",
+        "prob": 73.0,
+        "player_id": 805779,
+        "game_pk": "824993",
+        "equipo": "Athletics",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Carlos Cortes",
+        "prob": 71.5,
+        "player_id": 666126,
+        "game_pk": "824993",
+        "equipo": "Athletics",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Shea Langeliers",
+        "prob": 70.2,
+        "player_id": 669127,
+        "game_pk": "824993",
+        "equipo": "Athletics",
+        "status": "pendiente"
+      }
+    ],
     "Kansas City Royals": [
       {
         "nombre": "Kameron Misner",
-        "prob": 92.3,
+        "prob": 90.9,
         "player_id": 670224,
         "game_pk": "822724",
         "equipo": "Kansas City Royals",
@@ -16411,7 +16004,7 @@
       },
       {
         "nombre": "Bobby Witt Jr.",
-        "prob": 70.3,
+        "prob": 68.2,
         "player_id": 677951,
         "game_pk": "822724",
         "equipo": "Kansas City Royals",
@@ -16419,7 +16012,7 @@
       },
       {
         "nombre": "Michael Massey",
-        "prob": 69.1,
+        "prob": 67.1,
         "player_id": 686681,
         "game_pk": "822724",
         "equipo": "Kansas City Royals",
@@ -16427,7 +16020,7 @@
       },
       {
         "nombre": "Maikel Garcia",
-        "prob": 68.3,
+        "prob": 66.3,
         "player_id": 672580,
         "game_pk": "822724",
         "equipo": "Kansas City Royals",
@@ -16435,7 +16028,7 @@
       },
       {
         "nombre": "Jac Caglianone",
-        "prob": 68.0,
+        "prob": 65.9,
         "player_id": 695506,
         "game_pk": "822724",
         "equipo": "Kansas City Royals",
@@ -16445,7 +16038,7 @@
     "Washington Nationals": [
       {
         "nombre": "Keibert Ruiz",
-        "prob": 72.4,
+        "prob": 85.9,
         "player_id": 660688,
         "game_pk": "822724",
         "equipo": "Washington Nationals",
@@ -16453,7 +16046,7 @@
       },
       {
         "nombre": "CJ Abrams",
-        "prob": 69.4,
+        "prob": 83.2,
         "player_id": 682928,
         "game_pk": "822724",
         "equipo": "Washington Nationals",
@@ -16461,7 +16054,7 @@
       },
       {
         "nombre": "Luis García Jr.",
-        "prob": 69.2,
+        "prob": 83.1,
         "player_id": 671277,
         "game_pk": "822724",
         "equipo": "Washington Nationals",
@@ -16469,7 +16062,7 @@
       },
       {
         "nombre": "Daylen Lile",
-        "prob": 67.3,
+        "prob": 81.3,
         "player_id": 695734,
         "game_pk": "822724",
         "equipo": "Washington Nationals",
@@ -16477,269 +16070,185 @@
       },
       {
         "nombre": "James Wood",
-        "prob": 65.7,
+        "prob": 79.9,
         "player_id": 695578,
         "game_pk": "822724",
         "equipo": "Washington Nationals",
         "status": "pendiente"
       }
     ],
-    "New York Mets": [
+    "Los Angeles Angels": [
       {
-        "nombre": "Juan Soto",
-        "prob": 69.6,
-        "player_id": 665742,
-        "game_pk": "824505",
-        "equipo": "New York Mets",
+        "nombre": "Trey Mancini",
+        "prob": 75.8,
+        "player_id": 641820,
+        "game_pk": "825071",
+        "equipo": "Los Angeles Angels",
         "status": "pendiente"
       },
       {
-        "nombre": "Carson Benge",
-        "prob": 66.8,
-        "player_id": 701807,
-        "game_pk": "824505",
-        "equipo": "New York Mets",
+        "nombre": "Nick Madrigal",
+        "prob": 74.9,
+        "player_id": 663611,
+        "game_pk": "825071",
+        "equipo": "Los Angeles Angels",
         "status": "pendiente"
       },
       {
-        "nombre": "Jared Young",
-        "prob": 66.8,
-        "player_id": 676724,
-        "game_pk": "824505",
-        "equipo": "New York Mets",
+        "nombre": "Jose Siri",
+        "prob": 74.7,
+        "player_id": 642350,
+        "game_pk": "825071",
+        "equipo": "Los Angeles Angels",
         "status": "pendiente"
       },
       {
-        "nombre": "A.J. Ewing",
-        "prob": 66.5,
-        "player_id": 805999,
-        "game_pk": "824505",
-        "equipo": "New York Mets",
+        "nombre": "Donovan Walton",
+        "prob": 74.4,
+        "player_id": 622268,
+        "game_pk": "825071",
+        "equipo": "Los Angeles Angels",
         "status": "pendiente"
       },
       {
-        "nombre": "Bo Bichette",
-        "prob": 64.0,
-        "player_id": 666182,
-        "game_pk": "824505",
-        "equipo": "New York Mets",
+        "nombre": "Wade Meckler",
+        "prob": 72.7,
+        "player_id": 685133,
+        "game_pk": "825071",
+        "equipo": "Los Angeles Angels",
         "status": "pendiente"
       }
     ],
-    "Cincinnati Reds": [
+    "Arizona Diamondbacks": [
       {
-        "nombre": "Blake Dunn",
-        "prob": 69.4,
-        "player_id": 694362,
-        "game_pk": "824505",
-        "equipo": "Cincinnati Reds",
+        "nombre": "Jordan Lawlar",
+        "prob": 68.8,
+        "player_id": 691783,
+        "game_pk": "825071",
+        "equipo": "Arizona Diamondbacks",
         "status": "pendiente"
       },
       {
-        "nombre": "JJ Bleday",
-        "prob": 65.8,
-        "player_id": 668709,
-        "game_pk": "824505",
-        "equipo": "Cincinnati Reds",
+        "nombre": "Ildemaro Vargas",
+        "prob": 64.7,
+        "player_id": 545121,
+        "game_pk": "825071",
+        "equipo": "Arizona Diamondbacks",
         "status": "pendiente"
       },
       {
-        "nombre": "Nathaniel Lowe",
-        "prob": 64.8,
-        "player_id": 663993,
-        "game_pk": "824505",
-        "equipo": "Cincinnati Reds",
+        "nombre": "Corbin Carroll",
+        "prob": 62.9,
+        "player_id": 682998,
+        "game_pk": "825071",
+        "equipo": "Arizona Diamondbacks",
         "status": "pendiente"
       },
       {
-        "nombre": "Dane Myers",
-        "prob": 64.4,
-        "player_id": 667472,
-        "game_pk": "824505",
-        "equipo": "Cincinnati Reds",
+        "nombre": "Ryan Waldschmidt",
+        "prob": 62.5,
+        "player_id": 814439,
+        "game_pk": "825071",
+        "equipo": "Arizona Diamondbacks",
         "status": "pendiente"
       },
       {
-        "nombre": "Spencer Steer",
-        "prob": 64.2,
-        "player_id": 668715,
-        "game_pk": "824505",
-        "equipo": "Cincinnati Reds",
+        "nombre": "Ketel Marte",
+        "prob": 61.7,
+        "player_id": 606466,
+        "game_pk": "825071",
+        "equipo": "Arizona Diamondbacks",
         "status": "pendiente"
       }
     ],
-    "San Diego Padres": [
+    "Detroit Tigers": [
       {
-        "nombre": "Samad Taylor",
-        "prob": 78.7,
-        "player_id": 669392,
-        "game_pk": "823046",
-        "equipo": "San Diego Padres",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Will Wagner",
-        "prob": 75.0,
-        "player_id": 695238,
-        "game_pk": "823046",
-        "equipo": "San Diego Padres",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Fernando Tatis Jr.",
-        "prob": 69.3,
-        "player_id": 665487,
-        "game_pk": "823046",
-        "equipo": "San Diego Padres",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Ty France",
-        "prob": 67.3,
-        "player_id": 664034,
-        "game_pk": "823046",
-        "equipo": "San Diego Padres",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Gavin Sheets",
-        "prob": 60.9,
-        "player_id": 657757,
-        "game_pk": "823046",
-        "equipo": "San Diego Padres",
-        "status": "pendiente"
-      }
-    ],
-    "St. Louis Cardinals": [
-      {
-        "nombre": "Blaze Jordan",
-        "prob": 89.2,
-        "player_id": 691458,
-        "game_pk": "823046",
-        "equipo": "St. Louis Cardinals",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Nelson Velázquez",
-        "prob": 79.8,
-        "player_id": 676369,
-        "game_pk": "823046",
-        "equipo": "St. Louis Cardinals",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Jordan Walker",
-        "prob": 72.6,
-        "player_id": 691023,
-        "game_pk": "823046",
-        "equipo": "St. Louis Cardinals",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Alec Burleson",
-        "prob": 70.8,
-        "player_id": 676475,
-        "game_pk": "823046",
-        "equipo": "St. Louis Cardinals",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "José Fermín",
-        "prob": 68.2,
-        "player_id": 665877,
-        "game_pk": "823046",
-        "equipo": "St. Louis Cardinals",
-        "status": "pendiente"
-      }
-    ],
-    "Colorado Rockies": [
-      {
-        "nombre": "Troy Johnston",
-        "prob": 75.1,
-        "player_id": 687859,
-        "game_pk": "824666",
-        "equipo": "Colorado Rockies",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Jake McCarthy",
-        "prob": 70.0,
-        "player_id": 664983,
-        "game_pk": "824666",
-        "equipo": "Colorado Rockies",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Willi Castro",
-        "prob": 69.0,
-        "player_id": 650489,
-        "game_pk": "824666",
-        "equipo": "Colorado Rockies",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "TJ Rumfield",
-        "prob": 68.6,
-        "player_id": 681198,
-        "game_pk": "824666",
-        "equipo": "Colorado Rockies",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Tyler Freeman",
-        "prob": 66.8,
-        "player_id": 671289,
-        "game_pk": "824666",
-        "equipo": "Colorado Rockies",
-        "status": "pendiente"
-      }
-    ],
-    "Chicago Cubs": [
-      {
-        "nombre": "Carson Kelly",
+        "nombre": "Riley Greene",
         "prob": 68.3,
-        "player_id": 608348,
-        "game_pk": "824666",
-        "equipo": "Chicago Cubs",
+        "player_id": 682985,
+        "game_pk": "824181",
+        "equipo": "Detroit Tigers",
         "status": "pendiente"
       },
       {
-        "nombre": "Pete Crow-Armstrong",
-        "prob": 67.1,
-        "player_id": 691718,
-        "game_pk": "824666",
-        "equipo": "Chicago Cubs",
+        "nombre": "Colt Keith",
+        "prob": 65.6,
+        "player_id": 690993,
+        "game_pk": "824181",
+        "equipo": "Detroit Tigers",
         "status": "pendiente"
       },
       {
-        "nombre": "Seiya Suzuki",
-        "prob": 64.9,
-        "player_id": 673548,
-        "game_pk": "824666",
-        "equipo": "Chicago Cubs",
+        "nombre": "Kevin McGonigle",
+        "prob": 65.0,
+        "player_id": 805808,
+        "game_pk": "824181",
+        "equipo": "Detroit Tigers",
         "status": "pendiente"
       },
       {
-        "nombre": "Matt Shaw",
-        "prob": 64.4,
-        "player_id": 807713,
-        "game_pk": "824666",
-        "equipo": "Chicago Cubs",
+        "nombre": "Gleyber Torres",
+        "prob": 64.3,
+        "player_id": 650402,
+        "game_pk": "824181",
+        "equipo": "Detroit Tigers",
         "status": "pendiente"
       },
       {
-        "nombre": "Alex Bregman",
+        "nombre": "Dillon Dingler",
+        "prob": 63.0,
+        "player_id": 693307,
+        "game_pk": "824181",
+        "equipo": "Detroit Tigers",
+        "status": "pendiente"
+      }
+    ],
+    "Houston Astros": [
+      {
+        "nombre": "Raynel Delgado",
+        "prob": 77.5,
+        "player_id": 669384,
+        "game_pk": "824181",
+        "equipo": "Houston Astros",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Yordan Alvarez",
+        "prob": 68.8,
+        "player_id": 670541,
+        "game_pk": "824181",
+        "equipo": "Houston Astros",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Taylor Trammell",
+        "prob": 67.0,
+        "player_id": 666211,
+        "game_pk": "824181",
+        "equipo": "Houston Astros",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Jeremy Peña",
         "prob": 64.0,
-        "player_id": 608324,
-        "game_pk": "824666",
-        "equipo": "Chicago Cubs",
+        "player_id": 665161,
+        "game_pk": "824181",
+        "equipo": "Houston Astros",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Christian Walker",
+        "prob": 60.9,
+        "player_id": 572233,
+        "game_pk": "824181",
+        "equipo": "Houston Astros",
         "status": "pendiente"
       }
     ],
     "Minnesota Twins": [
       {
         "nombre": "Orlando Arcia",
-        "prob": 71.0,
+        "prob": 70.0,
         "player_id": 606115,
         "game_pk": "822887",
         "equipo": "Minnesota Twins",
@@ -16747,7 +16256,7 @@
       },
       {
         "nombre": "Alex Jackson",
-        "prob": 70.7,
+        "prob": 69.6,
         "player_id": 656577,
         "game_pk": "822887",
         "equipo": "Minnesota Twins",
@@ -16755,7 +16264,7 @@
       },
       {
         "nombre": "Byron Buxton",
-        "prob": 69.7,
+        "prob": 68.6,
         "player_id": 621439,
         "game_pk": "822887",
         "equipo": "Minnesota Twins",
@@ -16763,7 +16272,7 @@
       },
       {
         "nombre": "Tristan Gray",
-        "prob": 65.8,
+        "prob": 64.7,
         "player_id": 656484,
         "game_pk": "822887",
         "equipo": "Minnesota Twins",
@@ -16771,7 +16280,7 @@
       },
       {
         "nombre": "Kody Clemens",
-        "prob": 65.3,
+        "prob": 64.2,
         "player_id": 665019,
         "game_pk": "822887",
         "equipo": "Minnesota Twins",
@@ -16820,262 +16329,262 @@
         "status": "pendiente"
       }
     ],
-    "Detroit Tigers": [
+    "Colorado Rockies": [
       {
-        "nombre": "Riley Greene",
-        "prob": 70.4,
-        "player_id": 682985,
-        "game_pk": "824181",
-        "equipo": "Detroit Tigers",
+        "nombre": "Troy Johnston",
+        "prob": 74.5,
+        "player_id": 687859,
+        "game_pk": "824666",
+        "equipo": "Colorado Rockies",
         "status": "pendiente"
       },
       {
-        "nombre": "Colt Keith",
-        "prob": 67.7,
-        "player_id": 690993,
-        "game_pk": "824181",
-        "equipo": "Detroit Tigers",
+        "nombre": "Jake McCarthy",
+        "prob": 69.5,
+        "player_id": 664983,
+        "game_pk": "824666",
+        "equipo": "Colorado Rockies",
         "status": "pendiente"
       },
       {
-        "nombre": "Kevin McGonigle",
-        "prob": 67.1,
-        "player_id": 805808,
-        "game_pk": "824181",
-        "equipo": "Detroit Tigers",
+        "nombre": "Willi Castro",
+        "prob": 68.5,
+        "player_id": 650489,
+        "game_pk": "824666",
+        "equipo": "Colorado Rockies",
         "status": "pendiente"
       },
       {
-        "nombre": "Gleyber Torres",
-        "prob": 66.4,
-        "player_id": 650402,
-        "game_pk": "824181",
-        "equipo": "Detroit Tigers",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Dillon Dingler",
-        "prob": 65.1,
-        "player_id": 693307,
-        "game_pk": "824181",
-        "equipo": "Detroit Tigers",
-        "status": "pendiente"
-      }
-    ],
-    "Houston Astros": [
-      {
-        "nombre": "Raynel Delgado",
-        "prob": 81.2,
-        "player_id": 669384,
-        "game_pk": "824181",
-        "equipo": "Houston Astros",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Yordan Alvarez",
-        "prob": 72.8,
-        "player_id": 670541,
-        "game_pk": "824181",
-        "equipo": "Houston Astros",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Taylor Trammell",
-        "prob": 70.9,
-        "player_id": 666211,
-        "game_pk": "824181",
-        "equipo": "Houston Astros",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Jeremy Peña",
+        "nombre": "TJ Rumfield",
         "prob": 68.0,
-        "player_id": 665161,
-        "game_pk": "824181",
-        "equipo": "Houston Astros",
+        "player_id": 681198,
+        "game_pk": "824666",
+        "equipo": "Colorado Rockies",
         "status": "pendiente"
       },
       {
-        "nombre": "Christian Walker",
-        "prob": 64.8,
-        "player_id": 572233,
-        "game_pk": "824181",
-        "equipo": "Houston Astros",
+        "nombre": "Tyler Freeman",
+        "prob": 66.3,
+        "player_id": 671289,
+        "game_pk": "824666",
+        "equipo": "Colorado Rockies",
         "status": "pendiente"
       }
     ],
-    "Los Angeles Angels": [
+    "Chicago Cubs": [
       {
-        "nombre": "Trey Mancini",
-        "prob": 75.0,
-        "player_id": 641820,
-        "game_pk": "825071",
-        "equipo": "Los Angeles Angels",
+        "nombre": "Carson Kelly",
+        "prob": 73.4,
+        "player_id": 608348,
+        "game_pk": "824666",
+        "equipo": "Chicago Cubs",
         "status": "pendiente"
       },
       {
-        "nombre": "Nick Madrigal",
+        "nombre": "Pete Crow-Armstrong",
+        "prob": 72.3,
+        "player_id": 691718,
+        "game_pk": "824666",
+        "equipo": "Chicago Cubs",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Seiya Suzuki",
+        "prob": 70.0,
+        "player_id": 673548,
+        "game_pk": "824666",
+        "equipo": "Chicago Cubs",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Matt Shaw",
+        "prob": 69.6,
+        "player_id": 807713,
+        "game_pk": "824666",
+        "equipo": "Chicago Cubs",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Alex Bregman",
+        "prob": 69.1,
+        "player_id": 608324,
+        "game_pk": "824666",
+        "equipo": "Chicago Cubs",
+        "status": "pendiente"
+      }
+    ],
+    "New York Mets": [
+      {
+        "nombre": "Juan Soto",
+        "prob": 64.2,
+        "player_id": 665742,
+        "game_pk": "824505",
+        "equipo": "New York Mets",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Jared Young",
+        "prob": 61.5,
+        "player_id": 676724,
+        "game_pk": "824505",
+        "equipo": "New York Mets",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Carson Benge",
+        "prob": 61.4,
+        "player_id": 701807,
+        "game_pk": "824505",
+        "equipo": "New York Mets",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "A.J. Ewing",
+        "prob": 61.1,
+        "player_id": 805999,
+        "game_pk": "824505",
+        "equipo": "New York Mets",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Bo Bichette",
+        "prob": 58.7,
+        "player_id": 666182,
+        "game_pk": "824505",
+        "equipo": "New York Mets",
+        "status": "pendiente"
+      }
+    ],
+    "Cincinnati Reds": [
+      {
+        "nombre": "Blake Dunn",
+        "prob": 68.0,
+        "player_id": 694362,
+        "game_pk": "824505",
+        "equipo": "Cincinnati Reds",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "JJ Bleday",
+        "prob": 64.4,
+        "player_id": 668709,
+        "game_pk": "824505",
+        "equipo": "Cincinnati Reds",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Nathaniel Lowe",
+        "prob": 63.4,
+        "player_id": 663993,
+        "game_pk": "824505",
+        "equipo": "Cincinnati Reds",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Dane Myers",
+        "prob": 63.1,
+        "player_id": 667472,
+        "game_pk": "824505",
+        "equipo": "Cincinnati Reds",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Spencer Steer",
+        "prob": 62.9,
+        "player_id": 668715,
+        "game_pk": "824505",
+        "equipo": "Cincinnati Reds",
+        "status": "pendiente"
+      }
+    ],
+    "San Diego Padres": [
+      {
+        "nombre": "Samad Taylor",
+        "prob": 77.7,
+        "player_id": 669392,
+        "game_pk": "823046",
+        "equipo": "San Diego Padres",
+        "status": "pendiente"
+      },
+      {
+        "nombre": "Will Wagner",
         "prob": 74.0,
-        "player_id": 663611,
-        "game_pk": "825071",
-        "equipo": "Los Angeles Angels",
+        "player_id": 695238,
+        "game_pk": "823046",
+        "equipo": "San Diego Padres",
         "status": "pendiente"
       },
       {
-        "nombre": "Jose Siri",
-        "prob": 73.8,
-        "player_id": 642350,
-        "game_pk": "825071",
-        "equipo": "Los Angeles Angels",
+        "nombre": "Fernando Tatis Jr.",
+        "prob": 68.2,
+        "player_id": 665487,
+        "game_pk": "823046",
+        "equipo": "San Diego Padres",
         "status": "pendiente"
       },
       {
-        "nombre": "Donovan Walton",
-        "prob": 73.5,
-        "player_id": 622268,
-        "game_pk": "825071",
-        "equipo": "Los Angeles Angels",
+        "nombre": "Ty France",
+        "prob": 66.2,
+        "player_id": 664034,
+        "game_pk": "823046",
+        "equipo": "San Diego Padres",
         "status": "pendiente"
       },
       {
-        "nombre": "Wade Meckler",
-        "prob": 71.8,
-        "player_id": 685133,
-        "game_pk": "825071",
-        "equipo": "Los Angeles Angels",
+        "nombre": "Gavin Sheets",
+        "prob": 59.9,
+        "player_id": 657757,
+        "game_pk": "823046",
+        "equipo": "San Diego Padres",
         "status": "pendiente"
       }
     ],
-    "Arizona Diamondbacks": [
+    "St. Louis Cardinals": [
       {
-        "nombre": "Jordan Lawlar",
-        "prob": 73.5,
-        "player_id": 691783,
-        "game_pk": "825071",
-        "equipo": "Arizona Diamondbacks",
+        "nombre": "Blaze Jordan",
+        "prob": 89.2,
+        "player_id": 691458,
+        "game_pk": "823046",
+        "equipo": "St. Louis Cardinals",
         "status": "pendiente"
       },
       {
-        "nombre": "Ildemaro Vargas",
-        "prob": 69.4,
-        "player_id": 545121,
-        "game_pk": "825071",
-        "equipo": "Arizona Diamondbacks",
+        "nombre": "Nelson Velázquez",
+        "prob": 79.8,
+        "player_id": 676369,
+        "game_pk": "823046",
+        "equipo": "St. Louis Cardinals",
         "status": "pendiente"
       },
       {
-        "nombre": "Corbin Carroll",
-        "prob": 67.6,
-        "player_id": 682998,
-        "game_pk": "825071",
-        "equipo": "Arizona Diamondbacks",
+        "nombre": "Jordan Walker",
+        "prob": 72.6,
+        "player_id": 691023,
+        "game_pk": "823046",
+        "equipo": "St. Louis Cardinals",
         "status": "pendiente"
       },
       {
-        "nombre": "Ryan Waldschmidt",
-        "prob": 67.3,
-        "player_id": 814439,
-        "game_pk": "825071",
-        "equipo": "Arizona Diamondbacks",
+        "nombre": "Alec Burleson",
+        "prob": 70.8,
+        "player_id": 676475,
+        "game_pk": "823046",
+        "equipo": "St. Louis Cardinals",
         "status": "pendiente"
       },
       {
-        "nombre": "Ketel Marte",
-        "prob": 66.5,
-        "player_id": 606466,
-        "game_pk": "825071",
-        "equipo": "Arizona Diamondbacks",
-        "status": "pendiente"
-      }
-    ],
-    "Pittsburgh Pirates": [
-      {
-        "nombre": "Nick Gonzales",
-        "prob": 73.7,
-        "player_id": 693304,
-        "game_pk": "824993",
-        "equipo": "Pittsburgh Pirates",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Jake Mangum",
-        "prob": 72.8,
-        "player_id": 663968,
-        "game_pk": "824993",
-        "equipo": "Pittsburgh Pirates",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Tyler Callihan",
-        "prob": 72.1,
-        "player_id": 682997,
-        "game_pk": "824993",
-        "equipo": "Pittsburgh Pirates",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Ryan O'Hearn",
-        "prob": 68.8,
-        "player_id": 656811,
-        "game_pk": "824993",
-        "equipo": "Pittsburgh Pirates",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Spencer Horwitz",
-        "prob": 66.9,
-        "player_id": 687462,
-        "game_pk": "824993",
-        "equipo": "Pittsburgh Pirates",
-        "status": "pendiente"
-      }
-    ],
-    "Athletics": [
-      {
-        "nombre": "Alika Williams",
-        "prob": 74.0,
-        "player_id": 675961,
-        "game_pk": "824993",
-        "equipo": "Athletics",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Henry Bolte",
-        "prob": 73.7,
-        "player_id": 703607,
-        "game_pk": "824993",
-        "equipo": "Athletics",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Jacob Wilson",
-        "prob": 73.1,
-        "player_id": 805779,
-        "game_pk": "824993",
-        "equipo": "Athletics",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Carlos Cortes",
-        "prob": 71.6,
-        "player_id": 666126,
-        "game_pk": "824993",
-        "equipo": "Athletics",
-        "status": "pendiente"
-      },
-      {
-        "nombre": "Shea Langeliers",
-        "prob": 70.2,
-        "player_id": 669127,
-        "game_pk": "824993",
-        "equipo": "Athletics",
+        "nombre": "José Fermín",
+        "prob": 68.2,
+        "player_id": 665877,
+        "game_pk": "823046",
+        "equipo": "St. Louis Cardinals",
         "status": "pendiente"
       }
     ],
     "Tampa Bay Rays": [
       {
         "nombre": "Yandy Díaz",
-        "prob": 74.1,
+        "prob": 75.5,
         "player_id": 650490,
         "game_pk": "823938",
         "equipo": "Tampa Bay Rays",
@@ -17083,7 +16592,7 @@
       },
       {
         "nombre": "Ryan Vilade",
-        "prob": 69.8,
+        "prob": 71.2,
         "player_id": 668723,
         "game_pk": "823938",
         "equipo": "Tampa Bay Rays",
@@ -17091,7 +16600,7 @@
       },
       {
         "nombre": "Nick Fortes",
-        "prob": 69.4,
+        "prob": 70.8,
         "player_id": 663743,
         "game_pk": "823938",
         "equipo": "Tampa Bay Rays",
@@ -17099,7 +16608,7 @@
       },
       {
         "nombre": "Chandler Simpson",
-        "prob": 68.9,
+        "prob": 70.3,
         "player_id": 802415,
         "game_pk": "823938",
         "equipo": "Tampa Bay Rays",
@@ -17107,7 +16616,7 @@
       },
       {
         "nombre": "Junior Caminero",
-        "prob": 66.5,
+        "prob": 67.9,
         "player_id": 691406,
         "game_pk": "823938",
         "equipo": "Tampa Bay Rays",
@@ -17117,7 +16626,7 @@
     "Los Angeles Dodgers": [
       {
         "nombre": "Santiago Espinal",
-        "prob": 69.4,
+        "prob": 64.6,
         "player_id": 669289,
         "game_pk": "823938",
         "equipo": "Los Angeles Dodgers",
@@ -17125,7 +16634,7 @@
       },
       {
         "nombre": "Andy Pages",
-        "prob": 69.3,
+        "prob": 64.5,
         "player_id": 681624,
         "game_pk": "823938",
         "equipo": "Los Angeles Dodgers",
@@ -17133,7 +16642,7 @@
       },
       {
         "nombre": "Shohei Ohtani",
-        "prob": 68.2,
+        "prob": 63.4,
         "player_id": 660271,
         "game_pk": "823938",
         "equipo": "Los Angeles Dodgers",
@@ -17141,7 +16650,7 @@
       },
       {
         "nombre": "Freddie Freeman",
-        "prob": 67.3,
+        "prob": 62.5,
         "player_id": 518692,
         "game_pk": "823938",
         "equipo": "Los Angeles Dodgers",
@@ -17149,7 +16658,7 @@
       },
       {
         "nombre": "Dalton Rushing",
-        "prob": 66.8,
+        "prob": 62.1,
         "player_id": 687221,
         "game_pk": "823938",
         "equipo": "Los Angeles Dodgers",
@@ -17157,7 +16666,738 @@
       }
     ]
   },
-  "llm_analysis": {},
+  "llm_analysis": {
+    "Guerreros de Oaxaca": {
+      "ir": "NO",
+      "pq": "Racha negativa de Oaxaca y rendimiento inconsistente del abridor.",
+      "factores": [
+        "Racha negativa",
+        "Rendimiento inconsistente del abridor",
+        "Historial desfavorable"
+      ],
+      "favorito": "Guerreros de Oaxaca"
+    },
+    "Bravos de Leon": {
+      "ir": "SÍ",
+      "pq": "Bravos en buena racha y sólido rendimiento del abridor.",
+      "factores": [
+        "Buena racha",
+        "Sólido rendimiento del abridor",
+        "Ventaja de localía"
+      ],
+      "favorito": "Bravos de Leon"
+    },
+    "Caliente de Durango": {
+      "ir": "NO",
+      "pq": "Leones en mejor forma y Durango sin ventaja de localía.",
+      "factores": [
+        "Leones en mejor forma",
+        "Sin ventaja de localía",
+        "Historial desfavorable"
+      ],
+      "favorito": "Caliente de Durango"
+    },
+    "Toros de Tijuana": {
+      "ir": "NO",
+      "pq": "Toros en mala racha y Pericos dominando el enfrentamiento.",
+      "factores": [
+        "Mala racha",
+        "Dominio de Pericos",
+        "Rendimiento del abridor"
+      ],
+      "favorito": "Toros de Tijuana"
+    },
+    "Seattle Mariners": {
+      "ir": "SÍ",
+      "pq": "Mariners en buena racha y abridor destacado.",
+      "factores": [
+        "Buena racha",
+        "Abridor destacado",
+        "Ventaja de localía"
+      ],
+      "favorito": "Seattle Mariners"
+    },
+    "Arizona Diamondbacks": {
+      "ir": "NO",
+      "pq": "Ambos equipos en racha similar, pero Reds tienen mejor historial.",
+      "factores": [
+        "Racha similar",
+        "Mejor historial de Reds",
+        "Rendimiento del abridor"
+      ],
+      "favorito": "Arizona Diamondbacks"
+    },
+    "Milwaukee Brewers": {
+      "ir": "SÍ",
+      "pq": "Brewers dominando y abridor en gran forma.",
+      "factores": [
+        "Dominio reciente",
+        "Abridor en gran forma",
+        "Ventaja de localía"
+      ],
+      "favorito": "Milwaukee Brewers"
+    },
+    "Boston Red Sox": {
+      "ir": "SÍ",
+      "pq": "Red Sox en excelente forma y abridor sólido.",
+      "factores": [
+        "Excelente forma",
+        "Abridor sólido",
+        "Ventaja de localía"
+      ],
+      "favorito": "Boston Red Sox"
+    },
+    "Minnesota Twins": {
+      "ir": "NO",
+      "pq": "Cardinals en mejor racha y rendimiento del abridor superior.",
+      "factores": [
+        "Cardinals en mejor racha",
+        "Rendimiento del abridor superior",
+        "Historial desfavorable"
+      ],
+      "favorito": "Minnesota Twins"
+    },
+    "Baltimore Orioles": {
+      "ir": "SÍ",
+      "pq": "Orioles en buena forma y abridor consistente.",
+      "factores": [
+        "Buena forma",
+        "Abridor consistente",
+        "Ventaja de localía"
+      ],
+      "favorito": "Baltimore Orioles"
+    },
+    "Pittsburgh Pirates": {
+      "ir": "NO",
+      "pq": "Marlins en mejor forma y rendimiento del abridor superior.",
+      "factores": [
+        "Marlins en mejor forma",
+        "Rendimiento del abridor superior",
+        "Historial desfavorable"
+      ],
+      "favorito": "Pittsburgh Pirates"
+    },
+    "Colorado Rockies": {
+      "ir": "NO",
+      "pq": "Ambos equipos en mala racha, pero Rockies tienen peor rendimiento.",
+      "factores": [
+        "Mala racha",
+        "Peor rendimiento",
+        "Historial desfavorable"
+      ],
+      "favorito": "Colorado Rockies"
+    },
+    "Chicago Cubs": {
+      "ir": "NO",
+      "pq": "Giants dominando y Cubs en mala forma.",
+      "factores": [
+        "Giants dominando",
+        "Cubs en mala forma",
+        "Rendimiento del abridor"
+      ],
+      "favorito": "Chicago Cubs"
+    },
+    "Los Angeles Dodgers": {
+      "ir": "SÍ",
+      "pq": "Dodgers en buena forma y abridor destacado.",
+      "factores": [
+        "Buena forma",
+        "Abridor destacado",
+        "Ventaja de localía"
+      ],
+      "favorito": "Los Angeles Dodgers"
+    },
+    "Los Angeles Angels": {
+      "ir": "SÍ",
+      "pq": "Angels en buena racha y abridor sólido.",
+      "factores": [
+        "Buena racha",
+        "Abridor sólido",
+        "Ventaja de localía"
+      ],
+      "favorito": "Los Angeles Angels"
+    },
+    "Cleveland Guardians": {
+      "ir": "SÍ",
+      "pq": "Guardians en buena forma y abridor consistente.",
+      "factores": [
+        "Buena forma",
+        "Abridor consistente",
+        "Ventaja de localía"
+      ],
+      "favorito": "Cleveland Guardians"
+    },
+    "New York Yankees": {
+      "ir": "NO",
+      "pq": "Blue Jays en mejor racha y rendimiento del abridor superior.",
+      "factores": [
+        "Blue Jays en mejor racha",
+        "Rendimiento del abridor superior",
+        "Historial desfavorable"
+      ],
+      "favorito": "New York Yankees"
+    },
+    "Houston Astros": {
+      "ir": "SÍ",
+      "pq": "Astros dominando y abridor destacado.",
+      "factores": [
+        "Dominio reciente",
+        "Abridor destacado",
+        "Ventaja de localía"
+      ],
+      "favorito": "Houston Astros"
+    },
+    "El Aguila de Veracruz": {
+      "ir": "NO",
+      "pq": "Saraperos en mejor forma y rendimiento del abridor superior.",
+      "factores": [
+        "Saraperos en mejor forma",
+        "Rendimiento del abridor superior",
+        "Historial desfavorable"
+      ],
+      "favorito": "El Aguila de Veracruz"
+    },
+    "Tecos de los Dos Laredos": {
+      "ir": "NO",
+      "pq": "Ambos equipos en racha similar, pero Queretaro tiene mejor historial.",
+      "factores": [
+        "Racha similar",
+        "Mejor historial de Queretaro",
+        "Rendimiento del abridor"
+      ],
+      "favorito": "Tecos de los Dos Laredos"
+    },
+    "Olmecas de Tabasco": {
+      "ir": "SÍ",
+      "pq": "Olmecas en buena forma y abridor sólido.",
+      "factores": [
+        "Buena forma",
+        "Abridor sólido",
+        "Ventaja de localía"
+      ],
+      "favorito": "Olmecas de Tabasco"
+    },
+    "Sultanes de Monterrey": {
+      "ir": "SÍ",
+      "pq": "Sultanes en buena racha y sólido rendimiento del abridor.",
+      "factores": [
+        "Buena racha",
+        "Sólido rendimiento del abridor",
+        "Ventaja de localía"
+      ],
+      "favorito": "Sultanes de Monterrey"
+    },
+    "Diablos Rojos del Mexico": {
+      "ir": "SÍ",
+      "pq": "Diablos en excelente forma y abridor destacado.",
+      "factores": [
+        "Excelente forma",
+        "Abridor destacado",
+        "Ventaja de localía"
+      ],
+      "favorito": "Diablos Rojos del Mexico"
+    },
+    "Acereros del Norte": {
+      "ir": "SÍ",
+      "pq": "Acereros en buena forma y abridor sólido.",
+      "factores": [
+        "Buena forma",
+        "Abridor sólido",
+        "Ventaja de localía"
+      ],
+      "favorito": "Acereros del Norte"
+    },
+    "St. Louis Cardinals": {
+      "ir": "NO",
+      "pq": "Cardinals en mejor racha y rendimiento del abridor superior.",
+      "factores": [
+        "Cardinals en mejor racha",
+        "Rendimiento del abridor superior",
+        "Historial favorable"
+      ],
+      "favorito": "St. Louis Cardinals"
+    },
+    "Miami Marlins": {
+      "ir": "NO",
+      "pq": "Los Marlins han perdido y los Pirates tienen mejor racha.",
+      "factores": [
+        "Racha negativa reciente",
+        "Rendimiento de abridores",
+        "Historial desfavorable contra Pirates"
+      ],
+      "favorito": "Miami Marlins"
+    },
+    "San Diego Padres": {
+      "ir": "SÍ",
+      "pq": "Los Padres dominan en casa y tienen mejor rendimiento.",
+      "factores": [
+        "Dominio en casa",
+        "Racha positiva reciente",
+        "Mejor ERA del abridor"
+      ],
+      "favorito": "San Diego Padres"
+    },
+    "Atlanta Braves": {
+      "ir": "SÍ",
+      "pq": "Los Braves tienen un gran récord y están en buena forma.",
+      "factores": [
+        "Racha positiva reciente",
+        "Mejor récord en casa",
+        "Historial favorable contra Mets"
+      ],
+      "favorito": "Atlanta Braves"
+    },
+    "Detroit Tigers": {
+      "ir": "NO",
+      "pq": "Los Guardians han mostrado mejor rendimiento y racha.",
+      "factores": [
+        "Racha negativa reciente",
+        "Mejor rendimiento de abridores Guardians",
+        "Historial desfavorable contra Guardians"
+      ],
+      "favorito": "Detroit Tigers"
+    },
+    "Texas Rangers": {
+      "ir": "NO",
+      "pq": "Los Red Sox han tenido mejor rendimiento recientemente.",
+      "factores": [
+        "Racha negativa reciente",
+        "Lesiones relevantes",
+        "Historial desfavorable contra Red Sox"
+      ],
+      "favorito": "Texas Rangers"
+    },
+    "Philadelphia Phillies": {
+      "ir": "SÍ",
+      "pq": "Los Phillies han mostrado mejor rendimiento y racha.",
+      "factores": [
+        "Racha positiva reciente",
+        "Mejor rendimiento de abridores",
+        "Historial favorable contra Brewers"
+      ],
+      "favorito": "Philadelphia Phillies"
+    },
+    "Tampa Bay Rays": {
+      "ir": "NO",
+      "pq": "Los Angels han dominado y tienen mejor racha.",
+      "factores": [
+        "Racha negativa reciente",
+        "Lesiones relevantes",
+        "Historial desfavorable contra Angels"
+      ],
+      "favorito": "Tampa Bay Rays"
+    },
+    "Mexico": {
+      "ir": "SÍ",
+      "pq": "xG superior y localía a favor de México.",
+      "factores": [
+        "Localía",
+        "xG diferencial"
+      ],
+      "favorito": "Mexico"
+    },
+    "South Korea": {
+      "ir": "SÍ",
+      "pq": "Localía y mejor xG en los últimos partidos.",
+      "factores": [
+        "Localía",
+        "Racha reciente"
+      ],
+      "favorito": "South Korea"
+    },
+    "Canada": {
+      "ir": "SÍ",
+      "pq": "Localía y solidez defensiva.",
+      "factores": [
+        "Localía",
+        "Defensa sólida"
+      ],
+      "favorito": "Canada"
+    },
+    "United States": {
+      "ir": "SÍ",
+      "pq": "xG alto y ventaja de localía.",
+      "factores": [
+        "Localía",
+        "xG diferencial"
+      ],
+      "favorito": "United States"
+    },
+    "Qatar": {
+      "ir": "SÍ",
+      "pq": "xG superior y experiencia en torneos.",
+      "factores": [
+        "xG",
+        "Experiencia"
+      ],
+      "favorito": "Switzerland"
+    },
+    "Brazil": {
+      "ir": "SÍ",
+      "pq": "xG alto y calidad de plantilla.",
+      "factores": [
+        "xG",
+        "Calidad de plantilla"
+      ],
+      "favorito": "Brazil"
+    },
+    "Haiti": {
+      "ir": "SÍ",
+      "pq": "Mayor calidad y xG favorable.",
+      "factores": [
+        "Calidad",
+        "xG"
+      ],
+      "favorito": "Scotland"
+    },
+    "Australia": {
+      "ir": "SÍ",
+      "pq": "Localía y mejor rendimiento reciente.",
+      "factores": [
+        "Localía",
+        "Racha reciente"
+      ],
+      "favorito": "Australia"
+    },
+    "Germany": {
+      "ir": "SÍ",
+      "pq": "xG muy superior y experiencia.",
+      "factores": [
+        "xG",
+        "Experiencia"
+      ],
+      "favorito": "Germany"
+    },
+    "Netherlands": {
+      "ir": "SÍ",
+      "pq": "xG alto y localía.",
+      "factores": [
+        "xG",
+        "Localía"
+      ],
+      "favorito": "Netherlands"
+    },
+    "Ivory Coast": {
+      "ir": "SÍ",
+      "pq": "Localía y mejor xG.",
+      "factores": [
+        "Localía",
+        "xG"
+      ],
+      "favorito": "Ivory Coast"
+    },
+    "Sweden": {
+      "ir": "SÍ",
+      "pq": "xG superior y localía.",
+      "factores": [
+        "xG",
+        "Localía"
+      ],
+      "favorito": "Sweden"
+    },
+    "Spain": {
+      "ir": "SÍ",
+      "pq": "xG alto y calidad de plantilla.",
+      "factores": [
+        "xG",
+        "Calidad de plantilla"
+      ],
+      "favorito": "Spain"
+    },
+    "Belgium": {
+      "ir": "SÍ",
+      "pq": "xG superior y localía.",
+      "factores": [
+        "xG",
+        "Localía"
+      ],
+      "favorito": "Belgium"
+    },
+    "Saudi Arabia": {
+      "ir": "SÍ",
+      "pq": "Mayor calidad y experiencia.",
+      "factores": [
+        "Calidad",
+        "Experiencia"
+      ],
+      "favorito": "Uruguay"
+    },
+    "Iran": {
+      "ir": "SÍ",
+      "pq": "xG superior y localía.",
+      "factores": [
+        "xG",
+        "Localía"
+      ],
+      "favorito": "Iran"
+    },
+    "France": {
+      "ir": "SÍ",
+      "pq": "xG alto y calidad de plantilla.",
+      "factores": [
+        "xG",
+        "Calidad de plantilla"
+      ],
+      "favorito": "France"
+    },
+    "Iraq": {
+      "ir": "SÍ",
+      "pq": "xG superior y mejor rendimiento.",
+      "factores": [
+        "xG",
+        "Racha reciente"
+      ],
+      "favorito": "Norway"
+    },
+    "Argentina": {
+      "ir": "SÍ",
+      "pq": "xG alto y calidad de plantilla.",
+      "factores": [
+        "xG",
+        "Calidad de plantilla"
+      ],
+      "favorito": "Argentina"
+    },
+    "Austria": {
+      "ir": "SÍ",
+      "pq": "xG superior y localía.",
+      "factores": [
+        "xG",
+        "Localía"
+      ],
+      "favorito": "Austria"
+    },
+    "Portugal": {
+      "ir": "SÍ",
+      "pq": "xG alto y calidad de plantilla.",
+      "factores": [
+        "xG",
+        "Calidad de plantilla"
+      ],
+      "favorito": "Portugal"
+    },
+    "England": {
+      "ir": "SÍ",
+      "pq": "xG superior y localía.",
+      "factores": [
+        "xG",
+        "Localía"
+      ],
+      "favorito": "England"
+    },
+    "Ghana": {
+      "ir": "SÍ",
+      "pq": "xG superior y localía.",
+      "factores": [
+        "xG",
+        "Localía"
+      ],
+      "favorito": "Ghana"
+    },
+    "Uzbekistan": {
+      "ir": "SÍ",
+      "pq": "Mayor calidad y experiencia.",
+      "factores": [
+        "Calidad",
+        "Experiencia"
+      ],
+      "favorito": "Colombia"
+    },
+    "Czechia": {
+      "ir": "SÍ",
+      "pq": "xG superior y localía a favor de México.",
+      "factores": [
+        "Localía",
+        "xG diferencial"
+      ],
+      "favorito": "Mexico"
+    },
+    "Switzerland": {
+      "ir": "SÍ",
+      "pq": "xG alto y calidad de plantilla.",
+      "factores": [
+        "xG",
+        "Calidad de plantilla"
+      ],
+      "favorito": "Switzerland"
+    },
+    "Scotland": {
+      "ir": "SÍ",
+      "pq": "xG alto y calidad de plantilla.",
+      "factores": [
+        "xG",
+        "Calidad de plantilla"
+      ],
+      "favorito": "Brazil"
+    },
+    "Türkiye": {
+      "ir": "SÍ",
+      "pq": "Localía y mejor rendimiento reciente.",
+      "factores": [
+        "Localía",
+        "Racha reciente"
+      ],
+      "favorito": "Türkiye"
+    },
+    "Ecuador": {
+      "ir": "SÍ",
+      "pq": "xG superior y localía.",
+      "factores": [
+        "xG",
+        "Localía"
+      ],
+      "favorito": "Ecuador"
+    },
+    "Tunisia": {
+      "ir": "SÍ",
+      "pq": "xG superior y mejor rendimiento.",
+      "factores": [
+        "xG",
+        "Racha reciente"
+      ],
+      "favorito": "Japan"
+    },
+    "Uruguay": {
+      "ir": "SÍ",
+      "pq": "Mayor calidad y experiencia.",
+      "factores": [
+        "Calidad",
+        "Experiencia"
+      ],
+      "favorito": "Uruguay"
+    },
+    "New Zealand": {
+      "ir": "SÍ",
+      "pq": "xG superior y mejor rendimiento.",
+      "factores": [
+        "xG",
+        "Racha reciente"
+      ],
+      "favorito": "Egypt"
+    },
+    "Norway": {
+      "ir": "SÍ",
+      "pq": "xG superior y mejor rendimiento.",
+      "factores": [
+        "xG",
+        "Racha reciente"
+      ],
+      "favorito": "Norway"
+    },
+    "Jordan": {
+      "ir": "SÍ",
+      "pq": "xG superior y mejor rendimiento.",
+      "factores": [
+        "xG",
+        "Racha reciente"
+      ],
+      "favorito": "Algeria"
+    },
+    "Panama": {
+      "ir": "SÍ",
+      "pq": "Mayor calidad y experiencia.",
+      "factores": [
+        "Calidad",
+        "Experiencia"
+      ],
+      "favorito": "Croatia"
+    },
+    "Colombia": {
+      "ir": "SÍ",
+      "pq": "xG superior y mejor rendimiento.",
+      "factores": [
+        "xG",
+        "Racha reciente"
+      ],
+      "favorito": "Colombia"
+    },
+    "São Bernardo": {
+      "ir": "NO",
+      "pq": "Sporting Kansas City tiene mejor récord y rendimiento reciente.",
+      "factores": [
+        "Racha negativa de São Bernardo",
+        "Mejor ERA de Sporting Kansas City",
+        "Ventaja de localía de São Bernardo"
+      ],
+      "favorito": "São Bernardo"
+    },
+    "Athletic Club": {
+      "ir": "SÍ",
+      "pq": "Athletic Club tiene un buen récord y ventaja de localía.",
+      "factores": [
+        "Racha positiva de Athletic Club",
+        "Lesiones mínimas en el equipo local",
+        "Historial favorable contra Goiás"
+      ],
+      "favorito": "Athletic Club"
+    },
+    "Botafogo": {
+      "ir": "SÍ",
+      "pq": "Botafogo presenta un abridor sólido y buena racha.",
+      "factores": [
+        "Mejor ERA de Botafogo",
+        "Racha de 7-3 en últimos 10 juegos",
+        "Ventaja de localía"
+      ],
+      "favorito": "Botafogo"
+    },
+    "Sport": {
+      "ir": "SÍ",
+      "pq": "Sport tiene un mejor récord y rendimiento reciente.",
+      "factores": [
+        "Racha de 8-2 en últimos 10 juegos",
+        "Lesiones en General Lamadrid",
+        "Historial positivo contra General Lamadrid"
+      ],
+      "favorito": "Sport"
+    },
+    "Ypiranga": {
+      "ir": "NO",
+      "pq": "Ypiranga ha mostrado mejor rendimiento en casa recientemente.",
+      "factores": [
+        "Ypiranga con racha de 6-4",
+        "Lesiones en Botafogo",
+        "Ventaja de localía para Ypiranga"
+      ],
+      "favorito": "Botafogo"
+    },
+    "Bosnia-Herzegovina": {
+      "ir": "SÍ",
+      "pq": "xG superior y localía.",
+      "factores": [
+        "xG",
+        "Localía"
+      ],
+      "favorito": "Bosnia-Herzegovina"
+    },
+    "Morocco": {
+      "ir": "SÍ",
+      "pq": "xG superior y localía.",
+      "factores": [
+        "xG",
+        "Localía"
+      ],
+      "favorito": "Morocco"
+    },
+    "South Africa": {
+      "ir": "SÍ",
+      "pq": "Localía y mejor xG en los últimos partidos.",
+      "factores": [
+        "Localía",
+        "Racha reciente"
+      ],
+      "favorito": "South Korea"
+    },
+    "San Antonio Spurs": {
+      "ir": "NO",
+      "pq": "Partido cerrado, sin ventaja clara y posibles ausencias en Knicks.",
+      "factores": [
+        "Partido cerrado",
+        "Posibles ausencias en Knicks"
+      ],
+      "favorito": "New York Knicks"
+    }
+  },
   "nba_games": [
     {
       "game_date": "2026-06-13",
@@ -17218,7 +17458,14 @@
       "state": "Final",
       "result": "completed",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/SA.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/NY.png&h=40&w=40"
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/NY.png&h=40&w=40",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Partido cerrado, sin ventaja clara y posibles ausencias en Knicks.",
+      "llm_factores": [
+        "Partido cerrado",
+        "Posibles ausencias en Knicks"
+      ],
+      "llm_favorito": "New York Knicks"
     }
   ],
   "nba_projections": [
