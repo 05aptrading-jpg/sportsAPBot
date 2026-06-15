@@ -343,15 +343,11 @@
 
   .nba-prop-row:hover { background: #1a2744; }
   #nba-game-select:focus { outline: none; border-color: #1d9bf0; }
-  .futbol-liga-dropdown { position: relative; min-width: 180px; }
-  .futbol-liga-trigger { background: #1a2030; color: #e1e8ed; border: 1px solid #3a4550; border-radius: 8px; padding: 7px 28px 7px 10px; font-size: 13px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; }
-  .futbol-liga-trigger::after { content: '\u25BC'; font-size: 9px; color: #71767b; position: absolute; right: 10px; }
-  .futbol-liga-menu { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #1a2030; border: 1px solid #3a4550; border-radius: 8px; margin-top: 4px; max-height: 280px; overflow-y: auto; z-index: 999; }
-  .futbol-liga-menu.open { display: block; }
-  .futbol-liga-option { padding: 8px 10px; font-size: 13px; cursor: pointer; color: #e1e8ed; }
-  .futbol-liga-option:hover { background: #2a3340; }
-  .futbol-liga-option.has-games::before { content: '\u25CF'; color: #10b981; margin-right: 6px; font-size: 10px; }
-  .futbol-liga-option.active { background: #10b981; color: #fff; }
+.futbol-liga-item { padding:8px 10px; border-radius:8px; font-size:12px; cursor:pointer; color:#e1e8ed; background:#1a2030; border:1px solid #2a3040; transition:all 0.15s; text-align:center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.futbol-liga-item:hover { background:#262d3d; border-color:#3a4550; }
+.futbol-liga-item.has-games { border-color:#10b981; }
+.futbol-liga-item.has-games::before { content:'\u25CF'; color:#10b981; margin-right:4px; font-size:8px; }
+.futbol-liga-item.selected { background:#10b981; color:#fff; border-color:#10b981; }
 
   .futbol-game-wrapper { margin-bottom: 0; }
   .futbol-game-row { cursor: pointer; transition: background 0.15s; border-radius: 6px; display: grid; grid-template-columns: auto 1fr auto auto; gap: 6px; align-items: center; padding: 6px 0; border-bottom: 1px solid #2a3040; font-size: 12px; }
@@ -458,7 +454,7 @@
   <div class="card">
     <div class="card-title">⚽ Partidos de Fútbol - Asian Handicap</div>
     <div class="futbol-filter-row">
-      <div id="futbol-liga-select" class="futbol-liga-dropdown"></div>
+      <div id="futbol-liga-select"></div>
     </div>
     <div class="futbol-filter-row">
       <button class="futbol-filter-btn active" onclick="selectFutbolSenal('todas')">Todas</button>
@@ -655,11 +651,9 @@ function renderLigaTabs() {
 function renderDateTabs() {
   var container = document.getElementById('date-tabs');
   if (!container) return;
-  var ligaFilter = selectedLiga === 'general' ? null : selectedLiga;
   var fechas = {};
   for (var i = 0; i < (DATA.games || []).length; i++) {
     var g = DATA.games[i];
-    if (ligaFilter && (g.liga || 'MLB').toLowerCase() !== ligaFilter) continue;
     fechas[g.game_date] = true;
   }
   var dias = Object.keys(fechas).sort().reverse();
@@ -1323,6 +1317,7 @@ var selectedFutbolSenal = 'todas';
 var selectedFutbolFecha = '';
 var futbolStatsFilterMode = null;
 var futbolStatsRangeMode = null;
+var ligaExpanded = false;
 
 function selectMainTab(tab) {
   var beisbolPanel = document.getElementById('beisbol-panel');
@@ -1360,6 +1355,7 @@ function fetchSoccerData() {
 
 function selectFutbolLiga(liga) {
   selectedFutbolLiga = liga;
+  ligaExpanded = false;
   renderFutbol();
 }
 
@@ -1405,38 +1401,50 @@ function renderFutbolLigaSelect() {
   var games = (soccerData && soccerData.games) || [];
   var ligasConJuegos = {};
   for (var i = 0; i < games.length; i++) {
-    if (games[i].fecha_partido === selectedFutbolFecha && games[i].liga_key) {
-      ligasConJuegos[games[i].liga_key] = true;
-    }
+    if (games[i].liga_key) ligasConJuegos[games[i].liga_key] = true;
   }
   var selectedLabel = '\uD83C\uDF0D Todas las ligas';
   for (var k = 0; k < LIGA_OPTIONS.length; k++) {
     if (LIGA_OPTIONS[k].value === selectedFutbolLiga) { selectedLabel = LIGA_OPTIONS[k].label; break; }
   }
-  var html = '<div class="futbol-liga-trigger" onclick="toggleLigaMenu()">' + selectedLabel + '</div>';
-  html += '<div class="futbol-liga-menu" id="ligaMenu">';
-  for (var j = 0; j < LIGA_OPTIONS.length; j++) {
-    var opt = LIGA_OPTIONS[j];
-    var hasGames = opt.value !== 'todas' && ligasConJuegos[opt.value];
-    var cls = 'futbol-liga-option';
-    if (hasGames) cls += ' has-games';
-    if (opt.value === selectedFutbolLiga) cls += ' active';
-    html += '<div class="' + cls + '" onclick="selectFutbolLiga(\'' + opt.value + '\')">' + opt.label + '</div>';
+  var countWithGames = 0;
+  for (var j = 1; j < LIGA_OPTIONS.length; j++) {
+    if (ligasConJuegos[LIGA_OPTIONS[j].value]) countWithGames++;
+  }
+  var html = '<div class="futbol-calendar">';
+  if (!ligaExpanded) {
+    html += '<div onclick="ligaToggle()" style="cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 12px;background:#1a2744;border-radius:8px;">';
+    html += '<span style="font-size:22px">&#9917;</span>';
+    html += '<span style="color:#e1e8ed;font-size:14px;font-weight:600">' + selectedLabel + '</span>';
+    if (countWithGames > 0) html += '<span style="color:#10b981;font-size:12px;margin-left:4px">(' + countWithGames + ' con datos)</span>';
+    html += '<span style="color:#6b7280;font-size:11px;margin-left:4px">&#9660;</span>';
+    html += '</div>';
+  } else {
+    html += '<div class="cal-header">';
+    html += '<span style="color:#e1e8ed;font-size:13px;font-weight:600">Seleccionar liga</span>';
+    html += '</div>';
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">';
+    for (var j = 0; j < LIGA_OPTIONS.length; j++) {
+      var opt = LIGA_OPTIONS[j];
+      var hasGames = opt.value !== 'todas' && ligasConJuegos[opt.value];
+      var isSelected = opt.value === selectedFutbolLiga;
+      var cls = 'futbol-liga-item';
+      if (hasGames) cls += ' has-games';
+      if (isSelected) cls += ' selected';
+      var onclick = 'onclick="selectFutbolLiga(\'' + opt.value + '\')"';
+      html += '<div class="' + cls + '" ' + onclick + '>' + opt.label + '</div>';
+    }
+    html += '</div>';
+    html += '<div onclick="ligaToggle()" style="cursor:pointer;text-align:center;padding:6px;color:#6b7280;font-size:11px;border-top:1px solid #2a3040;margin-top:6px">&#9650; Cerrar</div>';
   }
   html += '</div>';
   container.innerHTML = html;
 }
 
-function toggleLigaMenu() {
-  var menu = document.getElementById('ligaMenu');
-  if (menu) menu.classList.toggle('open');
+function ligaToggle() {
+  ligaExpanded = !ligaExpanded;
+  renderFutbolLigaSelect();
 }
-
-document.addEventListener('click', function(e) {
-  var dd = document.getElementById('futbol-liga-select');
-  var menu = document.getElementById('ligaMenu');
-  if (dd && menu && !dd.contains(e.target)) menu.classList.remove('open');
-});
 
 var calMonth = new Date().getMonth();
 var calYear = new Date().getFullYear();
