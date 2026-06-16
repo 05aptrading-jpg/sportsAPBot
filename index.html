@@ -1085,7 +1085,7 @@ function renderScoreboardFromLive(g, live, container) {
 
   html += '</div>';
   html += renderLlmInsight(g);
-  html += renderHitsBoard(String(g.game_pk || 0) + '-' + (DATA.games.indexOf(g)), topTeam, botTeam);
+  html += renderHitsBoard(String(g.game_pk || 0) + '-' + (DATA.games.indexOf(g)), topTeam, botTeam, g.liga);
   container.innerHTML = html;
 }
 
@@ -1179,7 +1179,7 @@ function renderScoreboard(g, container) {
 
   html += '</div>';
   html += renderLlmInsight(g);
-  html += renderHitsBoard(String(g.game_pk || 0) + '-' + (DATA.games.indexOf(g)), awayName, homeName);
+  html += renderHitsBoard(String(g.game_pk || 0) + '-' + (DATA.games.indexOf(g)), awayName, homeName, g.liga);
   container.innerHTML = html;
 }
 
@@ -1210,8 +1210,9 @@ function renderLlmInsight(g) {
 
 var hitsBoardTimers = {};
 
-function renderHitsBoard(gameKey, awayTeam, homeTeam) {
-  var hitsBoard = DATA.hits_board || {};
+function renderHitsBoard(gameKey, awayTeam, homeTeam, liga) {
+  var allHits = DATA.hits_board || {};
+  var hitsBoard = liga === 'LMB' ? (allHits.LMB || allHits) : (allHits.MLB || allHits);
   var awayPlayers = hitsBoard[awayTeam] || [];
   var homePlayers = hitsBoard[homeTeam] || [];
   if (awayPlayers.length === 0 && homePlayers.length === 0) return '';
