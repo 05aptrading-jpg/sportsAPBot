@@ -1,5 +1,5 @@
 {
-  "fecha": "18/06/2026 21:13",
+  "fecha": "19/06/2026 20:33",
   "games": [
     {
       "liga": "🏳️ Amistosos Internacionales",
@@ -11,7 +11,7 @@
       "xg_total": 2.53,
       "diff_xg": 0.15,
       "xcorner_total": 9.01,
-      "favorito": null,
+      "favorito": "Fortaleza",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -26,14 +26,19 @@
       "fecha_partido": "2026-06-16",
       "hora_partido": "23:00",
       "id_partido": "17846239333777060613",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Fortaleza",
+      "llm_ir_favorito": "NO",
+      "llm_goles": "",
+      "llm_corners_est": 0,
+      "llm_tiros_porteria": [],
+      "llm_lineas": {},
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "América tiene un rendimiento inconsistente y Fortaleza juega bien en casa.",
+      "llm_factores": [
+        "Racha de Fortaleza",
+        "Ventaja de localía",
+        "Rendimiento inconsistente de América"
+      ]
     },
     {
       "liga": "🏳️ Amistosos Internacionales",
@@ -45,7 +50,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": 0.0,
-      "favorito": null,
+      "favorito": "New England Revolution",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "—  ",
       "senal_ou25": "NO_APOSTAR",
@@ -60,14 +65,19 @@
       "fecha_partido": "2026-06-17",
       "hora_partido": "20:00",
       "id_partido": "2778489345574523075",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "New England Revolution",
+      "llm_ir_favorito": "NO",
+      "llm_goles": "",
+      "llm_corners_est": 0,
+      "llm_tiros_porteria": [],
+      "llm_lineas": {},
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Croatia ha mostrado mejor forma en sus últimos partidos.",
+      "llm_factores": [
+        "Historial reciente de Croatia",
+        "Racha de New England",
+        "Lesiones en New England"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -79,7 +89,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Czechia",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -94,14 +104,47 @@
       "fecha_partido": "2026-06-18",
       "hora_partido": "10:00",
       "id_partido": "15473778419282972690",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Czechia",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-1",
+      "llm_corners_est": 9,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Patrik Schick",
+          "equipo": "Czechia",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Teboho Mokoena",
+          "equipo": "South Africa",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Vladimír Coufal",
+          "equipo": "Czechia",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 55,
+          "over_9.5": 45,
+          "over_10.5": 30
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Czechia tiene mejor ranking y forma reciente.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial favorable"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -113,7 +156,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Switzerland",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -128,14 +171,47 @@
       "fecha_partido": "2026-06-18",
       "hora_partido": "13:00",
       "id_partido": "15666946112146566021",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Switzerland",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-0",
+      "llm_corners_est": 8,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Xherdan Shaqiri",
+          "equipo": "Switzerland",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Edin Džeko",
+          "equipo": "Bosnia-Herzegovina",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Breel Embolo",
+          "equipo": "Switzerland",
+          "tiros_estimados": 3
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 40,
+          "over_10.5": 25
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Switzerland es más fuerte en el ranking y en el juego.",
+      "llm_factores": [
+        "Ranking FIFA más alto",
+        "Mejor racha reciente",
+        "Ventaja en enfrentamientos directos"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -147,7 +223,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Canada",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -162,14 +238,47 @@
       "fecha_partido": "2026-06-18",
       "hora_partido": "16:00",
       "id_partido": "9960283725073412292",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Canada",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-0",
+      "llm_corners_est": 7,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Jonathan David",
+          "equipo": "Canada",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Almoez Ali",
+          "equipo": "Qatar",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Cyle Larin",
+          "equipo": "Canada",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 65,
+          "over_2.5": 50,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 30,
+          "over_10.5": 15
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Canada tiene mejor ranking y localía.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Ventaja de local"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -181,7 +290,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Mexico",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -196,14 +305,47 @@
       "fecha_partido": "2026-06-18",
       "hora_partido": "19:00",
       "id_partido": "12208032235207065497",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Mexico",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-1",
+      "llm_corners_est": 10,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Hirving Lozano",
+          "equipo": "Mexico",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Son Heung-min",
+          "equipo": "South Korea",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Raúl Jiménez",
+          "equipo": "Mexico",
+          "tiros_estimados": 3
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 60,
+          "over_9.5": 50,
+          "over_10.5": 30
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Mexico tiene mejor ranking y experiencia en mundiales.",
+      "llm_factores": [
+        "Ranking FIFA más alto",
+        "Racha reciente sólida",
+        "Historial positivo en mundiales"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -215,7 +357,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "United States",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -223,21 +365,54 @@
       "senal_corners": null,
       "confianza_corners": null,
       "resultado": "pendiente",
-      "resultado_ah0": "pendiente",
-      "resultado_ou25": "pendiente",
+      "resultado_ah0": "no_apostar",
+      "resultado_ou25": "no_apostar",
       "resultado_corners": null,
-      "marcador_final": "0-0",
+      "marcador_final": "2 - 0.",
       "fecha_partido": "2026-06-19",
       "hora_partido": "13:00",
       "id_partido": "11362139699517394478",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "United States",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-0",
+      "llm_corners_est": 8,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Christian Pulisic",
+          "equipo": "United States",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Mathew Leckie",
+          "equipo": "Australia",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Gio Reyna",
+          "equipo": "United States",
+          "tiros_estimados": 3
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 35,
+          "over_10.5": 20
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "United States es local y tiene mejor ranking.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Ventaja de local",
+        "Racha reciente positiva"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -249,7 +424,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Morocco",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -257,21 +432,54 @@
       "senal_corners": null,
       "confianza_corners": null,
       "resultado": "pendiente",
-      "resultado_ah0": "pendiente",
-      "resultado_ou25": "pendiente",
+      "resultado_ah0": "no_apostar",
+      "resultado_ou25": "no_apostar",
       "resultado_corners": null,
-      "marcador_final": "0-0",
+      "marcador_final": "0 - 1.",
       "fecha_partido": "2026-06-19",
       "hora_partido": "16:00",
       "id_partido": "10772562446516819121",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Morocco",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-2",
+      "llm_corners_est": 9,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Ryan Christie",
+          "equipo": "Scotland",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Hakim Ziyech",
+          "equipo": "Morocco",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Youssef En-Nesyri",
+          "equipo": "Morocco",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 70,
+          "over_2.5": 50,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 60,
+          "over_9.5": 40,
+          "over_10.5": 25
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Racha reciente y calidad de plantilla favorecen a Marruecos.",
+      "llm_factores": [
+        "Racha reciente de Marruecos",
+        "Lesiones en Escocia",
+        "Historial de enfrentamientos directos"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -283,7 +491,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Brazil",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -291,21 +499,54 @@
       "senal_corners": null,
       "confianza_corners": null,
       "resultado": "pendiente",
-      "resultado_ah0": "pendiente",
-      "resultado_ou25": "pendiente",
+      "resultado_ah0": "no_apostar",
+      "resultado_ou25": "no_apostar",
       "resultado_corners": null,
-      "marcador_final": "0-0",
+      "marcador_final": "3 - 0.",
       "fecha_partido": "2026-06-19",
       "hora_partido": "18:30",
       "id_partido": "3024980047868386797",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Brazil",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "3-0",
+      "llm_corners_est": 10,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Neymar",
+          "equipo": "Brazil",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Vinícius Júnior",
+          "equipo": "Brazil",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Richarlison",
+          "equipo": "Brazil",
+          "tiros_estimados": 3
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 85,
+          "over_2.5": 75,
+          "over_3.5": 60
+        },
+        "corners": {
+          "over_8.5": 70,
+          "over_9.5": 50,
+          "over_10.5": 30
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Brasil tiene una plantilla superior y juega en casa.",
+      "llm_factores": [
+        "Calidad de jugadores brasileños",
+        "Diferencia de ranking FIFA",
+        "Haití con racha negativa"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -317,7 +558,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Türkiye",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -332,14 +573,47 @@
       "fecha_partido": "2026-06-19",
       "hora_partido": "21:00",
       "id_partido": "13731083698475288094",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Türkiye",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-1",
+      "llm_corners_est": 8,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Cenk Tosun",
+          "equipo": "Türkiye",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Hakan Çalhanoğlu",
+          "equipo": "Türkiye",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Miguel Almirón",
+          "equipo": "Paraguay",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 55,
+          "over_9.5": 35,
+          "over_10.5": 20
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Türkiye juega en casa y tiene mejor racha reciente.",
+      "llm_factores": [
+        "Racha reciente de Türkiye",
+        "Lesiones en Paraguay",
+        "Ranking FIFA favorable"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -351,7 +625,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Netherlands",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -366,14 +640,47 @@
       "fecha_partido": "2026-06-20",
       "hora_partido": "11:00",
       "id_partido": "11217227845594717973",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Netherlands",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-1",
+      "llm_corners_est": 7,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Memphis Depay",
+          "equipo": "Netherlands",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Cody Gakpo",
+          "equipo": "Netherlands",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Alexander Isak",
+          "equipo": "Sweden",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 70,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 30,
+          "over_10.5": 15
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Holanda tiene ventaja en casa y mejor ranking FIFA.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente de Holanda",
+        "Historial de enfrentamientos directos"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -385,7 +692,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Germany",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -400,14 +707,47 @@
       "fecha_partido": "2026-06-20",
       "hora_partido": "14:00",
       "id_partido": "4387193732010287727",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Germany",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "3-0",
+      "llm_corners_est": 9,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Kai Havertz",
+          "equipo": "Germany",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Thomas Müller",
+          "equipo": "Germany",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Wilfried Zaha",
+          "equipo": "Ivory Coast",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 85,
+          "over_2.5": 75,
+          "over_3.5": 55
+        },
+        "corners": {
+          "over_8.5": 65,
+          "over_9.5": 45,
+          "over_10.5": 25
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Alemania tiene un equipo más fuerte y juega en casa.",
+      "llm_factores": [
+        "Calidad de plantilla alemana",
+        "Racha reciente de Alemania",
+        "Ranking FIFA favorable"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -419,7 +759,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Ecuador",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -434,14 +774,47 @@
       "fecha_partido": "2026-06-20",
       "hora_partido": "18:00",
       "id_partido": "18140786275608367363",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Ecuador",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-0",
+      "llm_corners_est": 6,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Enner Valencia",
+          "equipo": "Ecuador",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Michael Estrada",
+          "equipo": "Ecuador",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Leandro Bacuna",
+          "equipo": "Curaçao",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Ecuador tiene mejor ranking y racha reciente.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial favorable"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -453,7 +826,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Japan",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -468,14 +841,47 @@
       "fecha_partido": "2026-06-20",
       "hora_partido": "22:00",
       "id_partido": "16473758932694638852",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Japan",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-2",
+      "llm_corners_est": 7,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Takumi Minamino",
+          "equipo": "Japan",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Kaoru Mitoma",
+          "equipo": "Japan",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Wahbi Khazri",
+          "equipo": "Tunisia",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 70,
+          "over_2.5": 55,
+          "over_3.5": 25
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Japan tiene mejor ranking y rendimiento reciente.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Estilo de juego ofensivo"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -487,7 +893,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Spain",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -502,14 +908,47 @@
       "fecha_partido": "2026-06-21",
       "hora_partido": "10:00",
       "id_partido": "4429990344879757327",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Spain",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "3-0",
+      "llm_corners_est": 8,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Alvaro Morata",
+          "equipo": "Spain",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Ferran Torres",
+          "equipo": "Spain",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Salem Al-Dawsari",
+          "equipo": "Saudi Arabia",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 70,
+          "over_3.5": 50
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 40,
+          "over_10.5": 30
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Spain es un equipo de élite con gran historial.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Historial de enfrentamientos favorable",
+        "Racha reciente positiva"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -521,7 +960,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Belgium",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -536,14 +975,47 @@
       "fecha_partido": "2026-06-21",
       "hora_partido": "13:00",
       "id_partido": "17560853110533370",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Belgium",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-1",
+      "llm_corners_est": 7,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Romelu Lukaku",
+          "equipo": "Belgium",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Kevin De Bruyne",
+          "equipo": "Belgium",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Sardar Azmoun",
+          "equipo": "Iran",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 65,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 35,
+          "over_10.5": 25
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Belgium tiene un equipo más fuerte y experiencia.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Calidad individual de jugadores"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -555,7 +1027,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Uruguay",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -570,14 +1042,47 @@
       "fecha_partido": "2026-06-21",
       "hora_partido": "16:00",
       "id_partido": "2810772877381770173",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Uruguay",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-0",
+      "llm_corners_est": 5,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Luis Suárez",
+          "equipo": "Uruguay",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Darwin Núñez",
+          "equipo": "Uruguay",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Ryan Mendes",
+          "equipo": "Cape Verde",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 30,
+          "over_9.5": 20,
+          "over_10.5": 10
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Uruguay tiene mejor ranking y experiencia en torneos.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Historial favorable",
+        "Racha reciente positiva"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -589,7 +1094,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Egypt",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -604,14 +1109,47 @@
       "fecha_partido": "2026-06-21",
       "hora_partido": "19:00",
       "id_partido": "13225371111672789552",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Egypt",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-3",
+      "llm_corners_est": 6,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Mohamed Salah",
+          "equipo": "Egypt",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Omar Marmoush",
+          "equipo": "Egypt",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Kosta Barbarouses",
+          "equipo": "New Zealand",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Egipto tiene mejor ranking y experiencia en mundiales.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos favorables"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -623,7 +1161,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Argentina",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -638,14 +1176,47 @@
       "fecha_partido": "2026-06-22",
       "hora_partido": "11:00",
       "id_partido": "5456405197632123869",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Argentina",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-4",
+      "llm_corners_est": 8,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Lionel Messi",
+          "equipo": "Argentina",
+          "tiros_estimados": 5
+        },
+        {
+          "jugador": "Lautaro Martínez",
+          "equipo": "Argentina",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Marcel Sabitzer",
+          "equipo": "Austria",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 35,
+          "over_10.5": 20
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Argentina es campeona vigente y tiene un equipo más fuerte.",
+      "llm_factores": [
+        "Ranking FIFA muy alto",
+        "Racha reciente excelente",
+        "Historial de enfrentamientos dominantes"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -657,7 +1228,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "France",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -672,14 +1243,47 @@
       "fecha_partido": "2026-06-22",
       "hora_partido": "15:00",
       "id_partido": "8048545213706840235",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "France",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "3-1",
+      "llm_corners_est": 7,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Kylian Mbappé",
+          "equipo": "France",
+          "tiros_estimados": 6
+        },
+        {
+          "jugador": "Antoine Griezmann",
+          "equipo": "France",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Mohammed Ali",
+          "equipo": "Iraq",
+          "tiros_estimados": 1
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 95,
+          "over_1.5": 85,
+          "over_2.5": 75,
+          "over_3.5": 50
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 30,
+          "over_10.5": 15
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Francia tiene un equipo más talentoso y experiencia mundialista.",
+      "llm_factores": [
+        "Ranking FIFA alto",
+        "Racha reciente muy buena",
+        "Historial de enfrentamientos muy favorable"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -691,7 +1295,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Norway",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -706,14 +1310,47 @@
       "fecha_partido": "2026-06-22",
       "hora_partido": "18:00",
       "id_partido": "9496900723401038183",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Norway",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-2",
+      "llm_corners_est": 5,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Erling Haaland",
+          "equipo": "Norway",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Alexander Sørloth",
+          "equipo": "Norway",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Sadio Mané",
+          "equipo": "Senegal",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 65,
+          "over_2.5": 50,
+          "over_3.5": 25
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 20,
+          "over_10.5": 10
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Noruega tiene mejor ranking y jugadores destacados.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Ventaja de localía"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -725,7 +1362,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Algeria",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -740,14 +1377,47 @@
       "fecha_partido": "2026-06-22",
       "hora_partido": "21:00",
       "id_partido": "12541460109236120435",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Algeria",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-2",
+      "llm_corners_est": 4,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Youssef Belaili",
+          "equipo": "Algeria",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Riyad Mahrez",
+          "equipo": "Algeria",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Baha' Faisal",
+          "equipo": "Jordan",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 75,
+          "over_1.5": 60,
+          "over_2.5": 45,
+          "over_3.5": 20
+        },
+        "corners": {
+          "over_8.5": 25,
+          "over_9.5": 15,
+          "over_10.5": 5
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Algeria tiene más experiencia y mejor ranking.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente sólida",
+        "Historial de enfrentamientos favorable"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -759,7 +1429,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Portugal",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -774,14 +1444,47 @@
       "fecha_partido": "2026-06-23",
       "hora_partido": "11:00",
       "id_partido": "11805007377102393285",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Portugal",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "3-0",
+      "llm_corners_est": 10,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Cristiano Ronaldo",
+          "equipo": "Portugal",
+          "tiros_estimados": 5
+        },
+        {
+          "jugador": "Bruno Fernandes",
+          "equipo": "Portugal",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Diogo Jota",
+          "equipo": "Portugal",
+          "tiros_estimados": 4
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 85,
+          "over_2.5": 75,
+          "over_3.5": 60
+        },
+        "corners": {
+          "over_8.5": 70,
+          "over_9.5": 60,
+          "over_10.5": 50
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Portugal tiene un equipo más fuerte y experiencia en mundiales.",
+      "llm_factores": [
+        "Ranking FIFA alto",
+        "Racha reciente positiva",
+        "Historial favorable ante equipos débiles"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -793,7 +1496,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "England",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -808,14 +1511,47 @@
       "fecha_partido": "2026-06-23",
       "hora_partido": "14:00",
       "id_partido": "17859521311953187685",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "England",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-1",
+      "llm_corners_est": 9,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Harry Kane",
+          "equipo": "England",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Raheem Sterling",
+          "equipo": "England",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Phil Foden",
+          "equipo": "England",
+          "tiros_estimados": 3
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 50
+        },
+        "corners": {
+          "over_8.5": 65,
+          "over_9.5": 55,
+          "over_10.5": 45
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Inglaterra tiene un equipo más talentoso y experiencia en torneos internacionales.",
+      "llm_factores": [
+        "Ranking FIFA alto",
+        "Racha reciente positiva",
+        "Historial favorable ante equipos africanos"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -827,7 +1563,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Croatia",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -842,14 +1578,47 @@
       "fecha_partido": "2026-06-23",
       "hora_partido": "17:00",
       "id_partido": "17110053704824696018",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Croatia",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-2",
+      "llm_corners_est": 7,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Luka Modric",
+          "equipo": "Croatia",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Ivan Perisic",
+          "equipo": "Croatia",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Andrej Kramaric",
+          "equipo": "Croatia",
+          "tiros_estimados": 4
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 40,
+          "over_10.5": 30
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Croacia tiene más experiencia y calidad en el medio campo.",
+      "llm_factores": [
+        "Ranking FIFA alto",
+        "Racha reciente sólida",
+        "Historial en mundiales"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -861,7 +1630,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Colombia",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -876,14 +1645,47 @@
       "fecha_partido": "2026-06-23",
       "hora_partido": "20:00",
       "id_partido": "984113063731490342",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Colombia",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-0",
+      "llm_corners_est": 8,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Luis Díaz",
+          "equipo": "Colombia",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Duvan Zapata",
+          "equipo": "Colombia",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "James Rodríguez",
+          "equipo": "Colombia",
+          "tiros_estimados": 3
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 50
+        },
+        "corners": {
+          "over_8.5": 60,
+          "over_9.5": 50,
+          "over_10.5": 40
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Colombia tiene un equipo más fuerte y juega en casa.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial favorable ante equipos africanos"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -895,7 +1697,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Bosnia-Herzegovina",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -910,14 +1712,47 @@
       "fecha_partido": "2026-06-24",
       "hora_partido": "13:00",
       "id_partido": "1342337427088692320",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Bosnia-Herzegovina",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-1",
+      "llm_corners_est": 6,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Edin Dzeko",
+          "equipo": "Bosnia-Herzegovina",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Gojko Cimirot",
+          "equipo": "Bosnia-Herzegovina",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Rade Krunic",
+          "equipo": "Bosnia-Herzegovina",
+          "tiros_estimados": 3
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 35,
+          "over_10.5": 25
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Bosnia tiene ventaja en calidad y experiencia en mundiales.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente más sólida",
+        "Historial favorable ante equipos débiles"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -929,7 +1764,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Switzerland",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -944,14 +1779,47 @@
       "fecha_partido": "2026-06-24",
       "hora_partido": "13:00",
       "id_partido": "12146975419631089187",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Switzerland",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-0",
+      "llm_corners_est": 6,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Xherdan Shaqiri",
+          "equipo": "Switzerland",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Breel Embolo",
+          "equipo": "Switzerland",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Jonathan David",
+          "equipo": "Canada",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Su ranking FIFA y racha reciente son superiores.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos favorables"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -963,7 +1831,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Morocco",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -978,14 +1846,47 @@
       "fecha_partido": "2026-06-24",
       "hora_partido": "16:00",
       "id_partido": "5362542927197070085",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Morocco",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "3-1",
+      "llm_corners_est": 7,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Hakim Ziyech",
+          "equipo": "Morocco",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Youssef En-Nesyri",
+          "equipo": "Morocco",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Duckens Nazon",
+          "equipo": "Haiti",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 45
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Ranking FIFA y rendimiento reciente son favorables.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Mayor experiencia en torneos"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -997,7 +1898,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Brazil",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1012,14 +1913,47 @@
       "fecha_partido": "2026-06-24",
       "hora_partido": "16:00",
       "id_partido": "758677229961365611",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Brazil",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-3",
+      "llm_corners_est": 5,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Neymar",
+          "equipo": "Brazil",
+          "tiros_estimados": 5
+        },
+        {
+          "jugador": "Richarlison",
+          "equipo": "Brazil",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Scott McTominay",
+          "equipo": "Scotland",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 70,
+          "over_2.5": 60,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 20,
+          "over_10.5": 10
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Brasil tiene un historial superior y mejor ranking FIFA.",
+      "llm_factores": [
+        "Ranking FIFA muy superior",
+        "Historial de enfrentamientos favorables",
+        "Racha reciente muy positiva"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1031,7 +1965,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Mexico",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1046,14 +1980,47 @@
       "fecha_partido": "2026-06-24",
       "hora_partido": "19:00",
       "id_partido": "11509269370541288471",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Mexico",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-1",
+      "llm_corners_est": 6,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Raúl Jiménez",
+          "equipo": "Mexico",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Hirving Lozano",
+          "equipo": "Mexico",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Patrik Schick",
+          "equipo": "Czechia",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Ranking FIFA y experiencia en mundiales son superiores.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Mayor experiencia en mundiales",
+        "Racha reciente positiva"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1065,7 +2032,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "South Korea",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1080,14 +2047,47 @@
       "fecha_partido": "2026-06-24",
       "hora_partido": "19:00",
       "id_partido": "16340357874540499062",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "South Korea",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-2",
+      "llm_corners_est": 5,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Son Heung-min",
+          "equipo": "South Korea",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Kwon Chang-hoon",
+          "equipo": "South Korea",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Percy Tau",
+          "equipo": "South Africa",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 65,
+          "over_2.5": 50,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 30,
+          "over_9.5": 15,
+          "over_10.5": 10
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Ranking FIFA y racha reciente favorecen a Corea.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Mayor calidad de jugadores"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1099,7 +2099,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Ivory Coast",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1114,14 +2114,47 @@
       "fecha_partido": "2026-06-25",
       "hora_partido": "14:00",
       "id_partido": "11835620229468527446",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Ivory Coast",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-3",
+      "llm_corners_est": 6,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Wilfried Zaha",
+          "equipo": "Ivory Coast",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Donyell Malen",
+          "equipo": "Ivory Coast",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Leandro Bacuna",
+          "equipo": "Curaçao",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 50,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Mayor ranking FIFA y experiencia en torneos.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos favorable"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1133,7 +2166,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Germany",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1148,14 +2181,47 @@
       "fecha_partido": "2026-06-25",
       "hora_partido": "14:00",
       "id_partido": "6835389728658256786",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Germany",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-2",
+      "llm_corners_est": 7,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Kai Havertz",
+          "equipo": "Germany",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Timo Werner",
+          "equipo": "Germany",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Enner Valencia",
+          "equipo": "Ecuador",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Mayor calidad de plantilla y experiencia en mundiales.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Historial de enfrentamientos favorable",
+        "Racha reciente de Ecuador incierta"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1167,7 +2233,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Sweden",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1182,14 +2248,47 @@
       "fecha_partido": "2026-06-25",
       "hora_partido": "17:00",
       "id_partido": "3652625861961632105",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Sweden",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-2",
+      "llm_corners_est": 8,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Alexander Isak",
+          "equipo": "Sweden",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Takefusa Kubo",
+          "equipo": "Japan",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Emil Forsberg",
+          "equipo": "Sweden",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 65,
+          "over_2.5": 50,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Mayor ranking FIFA y racha reciente positiva.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Historial de enfrentamientos favorable",
+        "Racha reciente de Japón incierta"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1201,7 +2300,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Netherlands",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1216,14 +2315,47 @@
       "fecha_partido": "2026-06-25",
       "hora_partido": "17:00",
       "id_partido": "16628360569030648213",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Netherlands",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "0-2",
+      "llm_corners_est": 5,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Memphis Depay",
+          "equipo": "Netherlands",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Cody Gakpo",
+          "equipo": "Netherlands",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Wahbi Khazri",
+          "equipo": "Tunisia",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 50,
+          "over_3.5": 25
+        },
+        "corners": {
+          "over_8.5": 30,
+          "over_9.5": 20,
+          "over_10.5": 10
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Mayor calidad de plantilla y experiencia en torneos.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Historial de enfrentamientos favorable",
+        "Racha reciente positiva"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1235,7 +2367,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Australia",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1250,14 +2382,47 @@
       "fecha_partido": "2026-06-25",
       "hora_partido": "20:00",
       "id_partido": "8688790061074527198",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Australia",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-2",
+      "llm_corners_est": 7,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Mitchell Duke",
+          "equipo": "Australia",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Germán Cano",
+          "equipo": "Paraguay",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Ajdin Hrustic",
+          "equipo": "Australia",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 50,
+          "over_3.5": 25
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Racha reciente y ranking FIFA superior.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos equilibrado"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1269,7 +2434,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "United States",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1284,14 +2449,47 @@
       "fecha_partido": "2026-06-25",
       "hora_partido": "20:00",
       "id_partido": "13195940402317546784",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "United States",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-2",
+      "llm_corners_est": 9,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "C. Pulisic",
+          "equipo": "United States",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "H. Yilmaz",
+          "equipo": "Türkiye",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "G. Weah",
+          "equipo": "United States",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 60,
+          "over_9.5": 40,
+          "over_10.5": 25
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Mayor ranking FIFA y mejor racha reciente.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos favorables"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1303,7 +2501,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "France",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1318,14 +2516,47 @@
       "fecha_partido": "2026-06-26",
       "hora_partido": "13:00",
       "id_partido": "18398064454856537337",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "France",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-3",
+      "llm_corners_est": 10,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "E. Haaland",
+          "equipo": "Norway",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "K. Mbappé",
+          "equipo": "France",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "A. Griezmann",
+          "equipo": "France",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 65,
+          "over_9.5": 45,
+          "over_10.5": 30
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Superioridad en calidad de plantilla y ranking FIFA.",
+      "llm_factores": [
+        "Ranking FIFA alto",
+        "Racha reciente sólida",
+        "Historial de enfrentamientos favorables"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1337,7 +2568,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Senegal",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1352,14 +2583,47 @@
       "fecha_partido": "2026-06-26",
       "hora_partido": "13:00",
       "id_partido": "6675765006413583680",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Senegal",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-1",
+      "llm_corners_est": 8,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "S. Mané",
+          "equipo": "Senegal",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "K. Diatta",
+          "equipo": "Senegal",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "A. Alaa",
+          "equipo": "Iraq",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 50,
+          "over_3.5": 25
+        },
+        "corners": {
+          "over_8.5": 55,
+          "over_9.5": 35,
+          "over_10.5": 20
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Mayor ranking FIFA y ventaja en experiencia.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Mayor experiencia en torneos"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1371,7 +2635,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Cape Verde",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1386,14 +2650,47 @@
       "fecha_partido": "2026-06-26",
       "hora_partido": "18:00",
       "id_partido": "3326038283785742773",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Cape Verde",
+      "llm_ir_favorito": "NO",
+      "llm_goles": "1-1",
+      "llm_corners_est": 7,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "D. Gomes",
+          "equipo": "Cape Verde",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "F. Al-Muwallad",
+          "equipo": "Saudi Arabia",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "R. Pereira",
+          "equipo": "Cape Verde",
+          "tiros_estimados": 1
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 50,
+          "over_2.5": 30,
+          "over_3.5": 15
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 30,
+          "over_10.5": 15
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Ambos equipos tienen similitudes, difícil de predecir.",
+      "llm_factores": [
+        "Rango FIFA similar",
+        "Racha reciente incierta",
+        "Historial de enfrentamientos parejo"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1405,7 +2702,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Spain",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1420,14 +2717,47 @@
       "fecha_partido": "2026-06-26",
       "hora_partido": "18:00",
       "id_partido": "2093904156873605456",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Spain",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-2",
+      "llm_corners_est": 9,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "L. Suárez",
+          "equipo": "Uruguay",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "F. Torres",
+          "equipo": "Spain",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "D. Olmo",
+          "equipo": "Spain",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 60,
+          "over_9.5": 40,
+          "over_10.5": 25
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Mejor ranking FIFA y calidad de plantilla.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente sólida",
+        "Historial de enfrentamientos favorables"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1439,7 +2769,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Egypt",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1454,14 +2784,47 @@
       "fecha_partido": "2026-06-26",
       "hora_partido": "21:00",
       "id_partido": "2887539908949937079",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Egypt",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-1",
+      "llm_corners_est": 6,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Mohamed Salah",
+          "equipo": "Egypt",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Tamer Hossam",
+          "equipo": "Egypt",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Sardar Azmoun",
+          "equipo": "Iran",
+          "tiros_estimados": 3
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 50,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Egipto tiene mejor ranking FIFA y racha reciente.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos favorables"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1473,7 +2836,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Belgium",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1488,14 +2851,47 @@
       "fecha_partido": "2026-06-26",
       "hora_partido": "21:00",
       "id_partido": "17723213279760554811",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Belgium",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-3",
+      "llm_corners_est": 8,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Romelu Lukaku",
+          "equipo": "Belgium",
+          "tiros_estimados": 5
+        },
+        {
+          "jugador": "Kevin De Bruyne",
+          "equipo": "Belgium",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Chris Wood",
+          "equipo": "New Zealand",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 45
+        },
+        "corners": {
+          "over_8.5": 55,
+          "over_9.5": 40,
+          "over_10.5": 25
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Bélgica es un equipo de élite con mejor ranking y experiencia.",
+      "llm_factores": [
+        "Ranking FIFA muy superior",
+        "Racha reciente sólida",
+        "Experiencia en torneos"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1507,7 +2903,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Croatia",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1522,14 +2918,47 @@
       "fecha_partido": "2026-06-27",
       "hora_partido": "15:00",
       "id_partido": "6392033486487619641",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Croatia",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-0",
+      "llm_corners_est": 7,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Luka Modric",
+          "equipo": "Croatia",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Andrej Kramaric",
+          "equipo": "Croatia",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Jordan Ayew",
+          "equipo": "Ghana",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Croacia tiene mejor ranking y experiencia en mundiales.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Experiencia en mundiales"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1541,7 +2970,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "England",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1556,14 +2985,47 @@
       "fecha_partido": "2026-06-27",
       "hora_partido": "15:00",
       "id_partido": "7871628305316138959",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "England",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-4",
+      "llm_corners_est": 9,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Harry Kane",
+          "equipo": "England",
+          "tiros_estimados": 5
+        },
+        {
+          "jugador": "Raheem Sterling",
+          "equipo": "England",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Gabriel Torres",
+          "equipo": "Panama",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 70,
+          "over_3.5": 50
+        },
+        "corners": {
+          "over_8.5": 60,
+          "over_9.5": 45,
+          "over_10.5": 30
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Inglaterra es un equipo fuerte con gran ranking y calidad.",
+      "llm_factores": [
+        "Ranking FIFA muy superior",
+        "Racha reciente excelente",
+        "Calidad de jugadores"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1575,7 +3037,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Portugal",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1590,14 +3052,47 @@
       "fecha_partido": "2026-06-27",
       "hora_partido": "17:30",
       "id_partido": "7325014163923207632",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Portugal",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-2",
+      "llm_corners_est": 8,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Luis Díaz",
+          "equipo": "Colombia",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Cristiano Ronaldo",
+          "equipo": "Portugal",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Duván Zapata",
+          "equipo": "Colombia",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 55,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 35,
+          "over_10.5": 20
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Portugal tiene mejor ranking y racha reciente.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Calidad de jugadores clave"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1609,7 +3104,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Uzbekistan",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1624,14 +3119,47 @@
       "fecha_partido": "2026-06-27",
       "hora_partido": "17:30",
       "id_partido": "9070793410968111948",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Uzbekistan",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-2",
+      "llm_corners_est": 6,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Dieumerci Mbokani",
+          "equipo": "Congo DR",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Eldor Shomurodov",
+          "equipo": "Uzbekistan",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Oston Urunov",
+          "equipo": "Uzbekistan",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 50,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Uzbekistan tiene mejor ranking y forma reciente.",
+      "llm_factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos favorables"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1643,7 +3171,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Algeria",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1658,14 +3186,47 @@
       "fecha_partido": "2026-06-27",
       "hora_partido": "20:00",
       "id_partido": "2524670912555559584",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Algeria",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-1",
+      "llm_corners_est": 7,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Riyad Mahrez",
+          "equipo": "Algeria",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Youssef Atal",
+          "equipo": "Algeria",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Marko Arnautovic",
+          "equipo": "Austria",
+          "tiros_estimados": 3
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Algeria tiene un mejor rendimiento en el torneo y localía.",
+      "llm_factores": [
+        "Racha reciente positiva",
+        "Ventaja de local",
+        "Mejor ranking FIFA"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -1677,7 +3238,7 @@
       "xg_total": 0.0,
       "diff_xg": 0.0,
       "xcorner_total": null,
-      "favorito": null,
+      "favorito": "Argentina",
       "senal_ah0": "NO_APOSTAR",
       "confianza_ah0": "BAJA",
       "senal_ou25": "NO_APOSTAR",
@@ -1692,18 +3253,90 @@
       "fecha_partido": "2026-06-27",
       "hora_partido": "20:00",
       "id_partido": "6530897504493972133",
-      "llm_favorito": null,
-      "llm_ir_favorito": null,
-      "llm_goles": null,
-      "llm_corners_est": null,
-      "llm_tiros_porteria": null,
+      "llm_favorito": "Argentina",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "0-3",
+      "llm_corners_est": 5,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Lionel Messi",
+          "equipo": "Argentina",
+          "tiros_estimados": 5
+        },
+        {
+          "jugador": "Julian Alvarez",
+          "equipo": "Argentina",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Mohammad Abu Zreiq",
+          "equipo": "Jordan",
+          "tiros_estimados": 2
+        }
+      ],
+      "llm_lineas": {
+        "goles": {
+          "over_0.5": 95,
+          "over_1.5": 85,
+          "over_2.5": 70,
+          "over_3.5": 50
+        },
+        "corners": {
+          "over_8.5": 20,
+          "over_9.5": 15,
+          "over_10.5": 10
+        }
+      },
       "llm_resultado": null,
-      "llm_porque": null,
-      "llm_factores": null
+      "llm_porque": "Argentina es claramente superior en calidad y experiencia.",
+      "llm_factores": [
+        "Ranking FIFA muy superior",
+        "Racha reciente excelente",
+        "Historial de enfrentamientos muy favorable"
+      ]
+    },
+    {
+      "liga": "🌍 FIFA World Cup 2026",
+      "liga_key": "MUNDIAL",
+      "local": "Group A 2nd Place",
+      "visitante": "Group B 2nd Place",
+      "xg_local": 0.0,
+      "xg_visit": 0.0,
+      "xg_total": 0.0,
+      "diff_xg": 0.0,
+      "xcorner_total": null,
+      "favorito": "NO",
+      "senal_ah0": "NO_APOSTAR",
+      "confianza_ah0": "BAJA",
+      "senal_ou25": "NO_APOSTAR",
+      "confianza_ou25": "BAJA",
+      "senal_corners": null,
+      "confianza_corners": null,
+      "resultado": "pendiente",
+      "resultado_ah0": "pendiente",
+      "resultado_ou25": "pendiente",
+      "resultado_corners": null,
+      "marcador_final": "0-0",
+      "fecha_partido": "2026-06-28",
+      "hora_partido": "13:00",
+      "id_partido": "12812922739934051490",
+      "llm_favorito": "NO",
+      "llm_ir_favorito": "NO",
+      "llm_goles": "",
+      "llm_corners_est": 0,
+      "llm_tiros_porteria": [],
+      "llm_lineas": {},
+      "llm_resultado": null,
+      "llm_porque": "Falta información específica sobre equipos y contexto.",
+      "llm_factores": [
+        "Ranking FIFA desconocido",
+        "Racha reciente no disponible",
+        "Lesiones no especificadas"
+      ]
     }
   ],
   "stats": {
-    "total": 48,
+    "total": 49,
     "acertados": 0,
     "fallidos": 0,
     "win_rate": 0,
@@ -1717,7 +3350,7 @@
     "ou25_fallidos": 0,
     "ou25_devueltos": 0,
     "ou25_win_rate": 0,
-    "corners_total": 48,
+    "corners_total": 49,
     "corners_acertados": 0,
     "corners_fallidos": 0,
     "corners_win_rate": 0,
@@ -1815,5 +3448,2167 @@
     "ligamx_corners_fallidos": 0,
     "ligamx_corners_devueltos": 0,
     "ligamx_corners_win_rate": 0
+  },
+  "llm_analysis": {
+    "2026-06-16___Fortaleza___América": {
+      "ir": "NO",
+      "pq": "América tiene un rendimiento inconsistente y Fortaleza juega bien en casa.",
+      "factores": [
+        "Racha de Fortaleza",
+        "Ventaja de localía",
+        "Rendimiento inconsistente de América"
+      ],
+      "favorito": "Fortaleza",
+      "goles": "",
+      "corners": 0,
+      "tiros_porteria": [],
+      "lineas": {},
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-17___New England Revolution___Croatia": {
+      "ir": "NO",
+      "pq": "Croatia ha mostrado mejor forma en sus últimos partidos.",
+      "factores": [
+        "Historial reciente de Croatia",
+        "Racha de New England",
+        "Lesiones en New England"
+      ],
+      "favorito": "New England Revolution",
+      "goles": "",
+      "corners": 0,
+      "tiros_porteria": [],
+      "lineas": {},
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-18___Czechia___South Africa": {
+      "ir": "SÍ",
+      "pq": "Czechia tiene mejor ranking y forma reciente.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial favorable"
+      ],
+      "favorito": "Czechia",
+      "goles": "2-1",
+      "corners": 9,
+      "tiros_porteria": [
+        {
+          "jugador": "Patrik Schick",
+          "equipo": "Czechia",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Teboho Mokoena",
+          "equipo": "South Africa",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Vladimír Coufal",
+          "equipo": "Czechia",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 55,
+          "over_9.5": 45,
+          "over_10.5": 30
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-18___Switzerland___Bosnia-Herzegovina": {
+      "ir": "SÍ",
+      "pq": "Switzerland es más fuerte en el ranking y en el juego.",
+      "factores": [
+        "Ranking FIFA más alto",
+        "Mejor racha reciente",
+        "Ventaja en enfrentamientos directos"
+      ],
+      "favorito": "Switzerland",
+      "goles": "2-0",
+      "corners": 8,
+      "tiros_porteria": [
+        {
+          "jugador": "Xherdan Shaqiri",
+          "equipo": "Switzerland",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Edin Džeko",
+          "equipo": "Bosnia-Herzegovina",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Breel Embolo",
+          "equipo": "Switzerland",
+          "tiros_estimados": 3
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 40,
+          "over_10.5": 25
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-18___Canada___Qatar": {
+      "ir": "SÍ",
+      "pq": "Canada tiene mejor ranking y localía.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Ventaja de local"
+      ],
+      "favorito": "Canada",
+      "goles": "1-0",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Jonathan David",
+          "equipo": "Canada",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Almoez Ali",
+          "equipo": "Qatar",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Cyle Larin",
+          "equipo": "Canada",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 65,
+          "over_2.5": 50,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 30,
+          "over_10.5": 15
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-18___Mexico___South Korea": {
+      "ir": "SÍ",
+      "pq": "Mexico tiene mejor ranking y experiencia en mundiales.",
+      "factores": [
+        "Ranking FIFA más alto",
+        "Racha reciente sólida",
+        "Historial positivo en mundiales"
+      ],
+      "favorito": "Mexico",
+      "goles": "2-1",
+      "corners": 10,
+      "tiros_porteria": [
+        {
+          "jugador": "Hirving Lozano",
+          "equipo": "Mexico",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Son Heung-min",
+          "equipo": "South Korea",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Raúl Jiménez",
+          "equipo": "Mexico",
+          "tiros_estimados": 3
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 60,
+          "over_9.5": 50,
+          "over_10.5": 30
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-19___United States___Australia": {
+      "ir": "SÍ",
+      "pq": "United States es local y tiene mejor ranking.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Ventaja de local",
+        "Racha reciente positiva"
+      ],
+      "favorito": "United States",
+      "goles": "2-0",
+      "corners": 8,
+      "tiros_porteria": [
+        {
+          "jugador": "Christian Pulisic",
+          "equipo": "United States",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Mathew Leckie",
+          "equipo": "Australia",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Gio Reyna",
+          "equipo": "United States",
+          "tiros_estimados": 3
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 35,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-19___Scotland___Morocco": {
+      "ir": "SÍ",
+      "pq": "Racha reciente y calidad de plantilla favorecen a Marruecos.",
+      "factores": [
+        "Racha reciente de Marruecos",
+        "Lesiones en Escocia",
+        "Historial de enfrentamientos directos"
+      ],
+      "favorito": "Morocco",
+      "goles": "1-2",
+      "corners": 9,
+      "tiros_porteria": [
+        {
+          "jugador": "Ryan Christie",
+          "equipo": "Scotland",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Hakim Ziyech",
+          "equipo": "Morocco",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Youssef En-Nesyri",
+          "equipo": "Morocco",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 70,
+          "over_2.5": 50,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 60,
+          "over_9.5": 40,
+          "over_10.5": 25
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-19___Brazil___Haiti": {
+      "ir": "SÍ",
+      "pq": "Brasil tiene una plantilla superior y juega en casa.",
+      "factores": [
+        "Calidad de jugadores brasileños",
+        "Diferencia de ranking FIFA",
+        "Haití con racha negativa"
+      ],
+      "favorito": "Brazil",
+      "goles": "3-0",
+      "corners": 10,
+      "tiros_porteria": [
+        {
+          "jugador": "Neymar",
+          "equipo": "Brazil",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Vinícius Júnior",
+          "equipo": "Brazil",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Richarlison",
+          "equipo": "Brazil",
+          "tiros_estimados": 3
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 85,
+          "over_2.5": 75,
+          "over_3.5": 60
+        },
+        "corners": {
+          "over_8.5": 70,
+          "over_9.5": 50,
+          "over_10.5": 30
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-19___Türkiye___Paraguay": {
+      "ir": "SÍ",
+      "pq": "Türkiye juega en casa y tiene mejor racha reciente.",
+      "factores": [
+        "Racha reciente de Türkiye",
+        "Lesiones en Paraguay",
+        "Ranking FIFA favorable"
+      ],
+      "favorito": "Türkiye",
+      "goles": "2-1",
+      "corners": 8,
+      "tiros_porteria": [
+        {
+          "jugador": "Cenk Tosun",
+          "equipo": "Türkiye",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Hakan Çalhanoğlu",
+          "equipo": "Türkiye",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Miguel Almirón",
+          "equipo": "Paraguay",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 55,
+          "over_9.5": 35,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-20___Netherlands___Sweden": {
+      "ir": "SÍ",
+      "pq": "Holanda tiene ventaja en casa y mejor ranking FIFA.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente de Holanda",
+        "Historial de enfrentamientos directos"
+      ],
+      "favorito": "Netherlands",
+      "goles": "2-1",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Memphis Depay",
+          "equipo": "Netherlands",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Cody Gakpo",
+          "equipo": "Netherlands",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Alexander Isak",
+          "equipo": "Sweden",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 70,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 30,
+          "over_10.5": 15
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-20___Germany___Ivory Coast": {
+      "ir": "SÍ",
+      "pq": "Alemania tiene un equipo más fuerte y juega en casa.",
+      "factores": [
+        "Calidad de plantilla alemana",
+        "Racha reciente de Alemania",
+        "Ranking FIFA favorable"
+      ],
+      "favorito": "Germany",
+      "goles": "3-0",
+      "corners": 9,
+      "tiros_porteria": [
+        {
+          "jugador": "Kai Havertz",
+          "equipo": "Germany",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Thomas Müller",
+          "equipo": "Germany",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Wilfried Zaha",
+          "equipo": "Ivory Coast",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 85,
+          "over_2.5": 75,
+          "over_3.5": 55
+        },
+        "corners": {
+          "over_8.5": 65,
+          "over_9.5": 45,
+          "over_10.5": 25
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-20___Ecuador___Curaçao": {
+      "ir": "SÍ",
+      "pq": "Ecuador tiene mejor ranking y racha reciente.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial favorable"
+      ],
+      "favorito": "Ecuador",
+      "goles": "2-0",
+      "corners": 6,
+      "tiros_porteria": [
+        {
+          "jugador": "Enner Valencia",
+          "equipo": "Ecuador",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Michael Estrada",
+          "equipo": "Ecuador",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Leandro Bacuna",
+          "equipo": "Curaçao",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-20___Tunisia___Japan": {
+      "ir": "SÍ",
+      "pq": "Japan tiene mejor ranking y rendimiento reciente.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Estilo de juego ofensivo"
+      ],
+      "favorito": "Japan",
+      "goles": "1-2",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Takumi Minamino",
+          "equipo": "Japan",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Kaoru Mitoma",
+          "equipo": "Japan",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Wahbi Khazri",
+          "equipo": "Tunisia",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 70,
+          "over_2.5": 55,
+          "over_3.5": 25
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-21___Spain___Saudi Arabia": {
+      "ir": "SÍ",
+      "pq": "Spain es un equipo de élite con gran historial.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Historial de enfrentamientos favorable",
+        "Racha reciente positiva"
+      ],
+      "favorito": "Spain",
+      "goles": "3-0",
+      "corners": 8,
+      "tiros_porteria": [
+        {
+          "jugador": "Alvaro Morata",
+          "equipo": "Spain",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Ferran Torres",
+          "equipo": "Spain",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Salem Al-Dawsari",
+          "equipo": "Saudi Arabia",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 70,
+          "over_3.5": 50
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 40,
+          "over_10.5": 30
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-21___Belgium___Iran": {
+      "ir": "SÍ",
+      "pq": "Belgium tiene un equipo más fuerte y experiencia.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Calidad individual de jugadores"
+      ],
+      "favorito": "Belgium",
+      "goles": "2-1",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Romelu Lukaku",
+          "equipo": "Belgium",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Kevin De Bruyne",
+          "equipo": "Belgium",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Sardar Azmoun",
+          "equipo": "Iran",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 65,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 35,
+          "over_10.5": 25
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-21___Uruguay___Cape Verde": {
+      "ir": "SÍ",
+      "pq": "Uruguay tiene mejor ranking y experiencia en torneos.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Historial favorable",
+        "Racha reciente positiva"
+      ],
+      "favorito": "Uruguay",
+      "goles": "2-0",
+      "corners": 5,
+      "tiros_porteria": [
+        {
+          "jugador": "Luis Suárez",
+          "equipo": "Uruguay",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Darwin Núñez",
+          "equipo": "Uruguay",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Ryan Mendes",
+          "equipo": "Cape Verde",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 30,
+          "over_9.5": 20,
+          "over_10.5": 10
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-21___New Zealand___Egypt": {
+      "ir": "SÍ",
+      "pq": "Egipto tiene mejor ranking y experiencia en mundiales.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos favorables"
+      ],
+      "favorito": "Egypt",
+      "goles": "1-3",
+      "corners": 6,
+      "tiros_porteria": [
+        {
+          "jugador": "Mohamed Salah",
+          "equipo": "Egypt",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Omar Marmoush",
+          "equipo": "Egypt",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Kosta Barbarouses",
+          "equipo": "New Zealand",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-22___Argentina___Austria": {
+      "ir": "SÍ",
+      "pq": "Argentina es campeona vigente y tiene un equipo más fuerte.",
+      "factores": [
+        "Ranking FIFA muy alto",
+        "Racha reciente excelente",
+        "Historial de enfrentamientos dominantes"
+      ],
+      "favorito": "Argentina",
+      "goles": "2-4",
+      "corners": 8,
+      "tiros_porteria": [
+        {
+          "jugador": "Lionel Messi",
+          "equipo": "Argentina",
+          "tiros_estimados": 5
+        },
+        {
+          "jugador": "Lautaro Martínez",
+          "equipo": "Argentina",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Marcel Sabitzer",
+          "equipo": "Austria",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 35,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-22___France___Iraq": {
+      "ir": "SÍ",
+      "pq": "Francia tiene un equipo más talentoso y experiencia mundialista.",
+      "factores": [
+        "Ranking FIFA alto",
+        "Racha reciente muy buena",
+        "Historial de enfrentamientos muy favorable"
+      ],
+      "favorito": "France",
+      "goles": "3-1",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Kylian Mbappé",
+          "equipo": "France",
+          "tiros_estimados": 6
+        },
+        {
+          "jugador": "Antoine Griezmann",
+          "equipo": "France",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Mohammed Ali",
+          "equipo": "Iraq",
+          "tiros_estimados": 1
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 95,
+          "over_1.5": 85,
+          "over_2.5": 75,
+          "over_3.5": 50
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 30,
+          "over_10.5": 15
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-22___Norway___Senegal": {
+      "ir": "SÍ",
+      "pq": "Noruega tiene mejor ranking y jugadores destacados.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Ventaja de localía"
+      ],
+      "favorito": "Norway",
+      "goles": "2-2",
+      "corners": 5,
+      "tiros_porteria": [
+        {
+          "jugador": "Erling Haaland",
+          "equipo": "Norway",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Alexander Sørloth",
+          "equipo": "Norway",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Sadio Mané",
+          "equipo": "Senegal",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 65,
+          "over_2.5": 50,
+          "over_3.5": 25
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 20,
+          "over_10.5": 10
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-22___Jordan___Algeria": {
+      "ir": "SÍ",
+      "pq": "Algeria tiene más experiencia y mejor ranking.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente sólida",
+        "Historial de enfrentamientos favorable"
+      ],
+      "favorito": "Algeria",
+      "goles": "1-2",
+      "corners": 4,
+      "tiros_porteria": [
+        {
+          "jugador": "Youssef Belaili",
+          "equipo": "Algeria",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Riyad Mahrez",
+          "equipo": "Algeria",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Baha' Faisal",
+          "equipo": "Jordan",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 75,
+          "over_1.5": 60,
+          "over_2.5": 45,
+          "over_3.5": 20
+        },
+        "corners": {
+          "over_8.5": 25,
+          "over_9.5": 15,
+          "over_10.5": 5
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-23___Portugal___Uzbekistan": {
+      "ir": "SÍ",
+      "pq": "Portugal tiene un equipo más fuerte y experiencia en mundiales.",
+      "factores": [
+        "Ranking FIFA alto",
+        "Racha reciente positiva",
+        "Historial favorable ante equipos débiles"
+      ],
+      "favorito": "Portugal",
+      "goles": "3-0",
+      "corners": 10,
+      "tiros_porteria": [
+        {
+          "jugador": "Cristiano Ronaldo",
+          "equipo": "Portugal",
+          "tiros_estimados": 5
+        },
+        {
+          "jugador": "Bruno Fernandes",
+          "equipo": "Portugal",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Diogo Jota",
+          "equipo": "Portugal",
+          "tiros_estimados": 4
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 85,
+          "over_2.5": 75,
+          "over_3.5": 60
+        },
+        "corners": {
+          "over_8.5": 70,
+          "over_9.5": 60,
+          "over_10.5": 50
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-23___England___Ghana": {
+      "ir": "SÍ",
+      "pq": "Inglaterra tiene un equipo más talentoso y experiencia en torneos internacionales.",
+      "factores": [
+        "Ranking FIFA alto",
+        "Racha reciente positiva",
+        "Historial favorable ante equipos africanos"
+      ],
+      "favorito": "England",
+      "goles": "2-1",
+      "corners": 9,
+      "tiros_porteria": [
+        {
+          "jugador": "Harry Kane",
+          "equipo": "England",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Raheem Sterling",
+          "equipo": "England",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Phil Foden",
+          "equipo": "England",
+          "tiros_estimados": 3
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 50
+        },
+        "corners": {
+          "over_8.5": 65,
+          "over_9.5": 55,
+          "over_10.5": 45
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-23___Panama___Croatia": {
+      "ir": "SÍ",
+      "pq": "Croacia tiene más experiencia y calidad en el medio campo.",
+      "factores": [
+        "Ranking FIFA alto",
+        "Racha reciente sólida",
+        "Historial en mundiales"
+      ],
+      "favorito": "Croatia",
+      "goles": "1-2",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Luka Modric",
+          "equipo": "Croatia",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Ivan Perisic",
+          "equipo": "Croatia",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Andrej Kramaric",
+          "equipo": "Croatia",
+          "tiros_estimados": 4
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 40,
+          "over_10.5": 30
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-23___Colombia___Congo DR": {
+      "ir": "SÍ",
+      "pq": "Colombia tiene un equipo más fuerte y juega en casa.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial favorable ante equipos africanos"
+      ],
+      "favorito": "Colombia",
+      "goles": "2-0",
+      "corners": 8,
+      "tiros_porteria": [
+        {
+          "jugador": "Luis Díaz",
+          "equipo": "Colombia",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Duvan Zapata",
+          "equipo": "Colombia",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "James Rodríguez",
+          "equipo": "Colombia",
+          "tiros_estimados": 3
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 50
+        },
+        "corners": {
+          "over_8.5": 60,
+          "over_9.5": 50,
+          "over_10.5": 40
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-24___Bosnia-Herzegovina___Qatar": {
+      "ir": "SÍ",
+      "pq": "Bosnia tiene ventaja en calidad y experiencia en mundiales.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente más sólida",
+        "Historial favorable ante equipos débiles"
+      ],
+      "favorito": "Bosnia-Herzegovina",
+      "goles": "2-1",
+      "corners": 6,
+      "tiros_porteria": [
+        {
+          "jugador": "Edin Dzeko",
+          "equipo": "Bosnia-Herzegovina",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Gojko Cimirot",
+          "equipo": "Bosnia-Herzegovina",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Rade Krunic",
+          "equipo": "Bosnia-Herzegovina",
+          "tiros_estimados": 3
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 35,
+          "over_10.5": 25
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-24___Switzerland___Canada": {
+      "ir": "SÍ",
+      "pq": "Su ranking FIFA y racha reciente son superiores.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos favorables"
+      ],
+      "favorito": "Switzerland",
+      "goles": "2-0",
+      "corners": 6,
+      "tiros_porteria": [
+        {
+          "jugador": "Xherdan Shaqiri",
+          "equipo": "Switzerland",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Breel Embolo",
+          "equipo": "Switzerland",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Jonathan David",
+          "equipo": "Canada",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-24___Morocco___Haiti": {
+      "ir": "SÍ",
+      "pq": "Ranking FIFA y rendimiento reciente son favorables.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Mayor experiencia en torneos"
+      ],
+      "favorito": "Morocco",
+      "goles": "3-1",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Hakim Ziyech",
+          "equipo": "Morocco",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Youssef En-Nesyri",
+          "equipo": "Morocco",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Duckens Nazon",
+          "equipo": "Haiti",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 45
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-24___Scotland___Brazil": {
+      "ir": "SÍ",
+      "pq": "Brasil tiene un historial superior y mejor ranking FIFA.",
+      "factores": [
+        "Ranking FIFA muy superior",
+        "Historial de enfrentamientos favorables",
+        "Racha reciente muy positiva"
+      ],
+      "favorito": "Brazil",
+      "goles": "1-3",
+      "corners": 5,
+      "tiros_porteria": [
+        {
+          "jugador": "Neymar",
+          "equipo": "Brazil",
+          "tiros_estimados": 5
+        },
+        {
+          "jugador": "Richarlison",
+          "equipo": "Brazil",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Scott McTominay",
+          "equipo": "Scotland",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 70,
+          "over_2.5": 60,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 20,
+          "over_10.5": 10
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-24___Czechia___Mexico": {
+      "ir": "SÍ",
+      "pq": "Ranking FIFA y experiencia en mundiales son superiores.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Mayor experiencia en mundiales",
+        "Racha reciente positiva"
+      ],
+      "favorito": "Mexico",
+      "goles": "2-1",
+      "corners": 6,
+      "tiros_porteria": [
+        {
+          "jugador": "Raúl Jiménez",
+          "equipo": "Mexico",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Hirving Lozano",
+          "equipo": "Mexico",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Patrik Schick",
+          "equipo": "Czechia",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-24___South Africa___South Korea": {
+      "ir": "SÍ",
+      "pq": "Ranking FIFA y racha reciente favorecen a Corea.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Mayor calidad de jugadores"
+      ],
+      "favorito": "South Korea",
+      "goles": "1-2",
+      "corners": 5,
+      "tiros_porteria": [
+        {
+          "jugador": "Son Heung-min",
+          "equipo": "South Korea",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Kwon Chang-hoon",
+          "equipo": "South Korea",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Percy Tau",
+          "equipo": "South Africa",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 65,
+          "over_2.5": 50,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 30,
+          "over_9.5": 15,
+          "over_10.5": 10
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-25___Curaçao___Ivory Coast": {
+      "ir": "SÍ",
+      "pq": "Mayor ranking FIFA y experiencia en torneos.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos favorable"
+      ],
+      "favorito": "Ivory Coast",
+      "goles": "1-3",
+      "corners": 6,
+      "tiros_porteria": [
+        {
+          "jugador": "Wilfried Zaha",
+          "equipo": "Ivory Coast",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Donyell Malen",
+          "equipo": "Ivory Coast",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Leandro Bacuna",
+          "equipo": "Curaçao",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 50,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-25___Ecuador___Germany": {
+      "ir": "SÍ",
+      "pq": "Mayor calidad de plantilla y experiencia en mundiales.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Historial de enfrentamientos favorable",
+        "Racha reciente de Ecuador incierta"
+      ],
+      "favorito": "Germany",
+      "goles": "1-2",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Kai Havertz",
+          "equipo": "Germany",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Timo Werner",
+          "equipo": "Germany",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Enner Valencia",
+          "equipo": "Ecuador",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-25___Japan___Sweden": {
+      "ir": "SÍ",
+      "pq": "Mayor ranking FIFA y racha reciente positiva.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Historial de enfrentamientos favorable",
+        "Racha reciente de Japón incierta"
+      ],
+      "favorito": "Sweden",
+      "goles": "1-2",
+      "corners": 8,
+      "tiros_porteria": [
+        {
+          "jugador": "Alexander Isak",
+          "equipo": "Sweden",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Takefusa Kubo",
+          "equipo": "Japan",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Emil Forsberg",
+          "equipo": "Sweden",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 65,
+          "over_2.5": 50,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-25___Tunisia___Netherlands": {
+      "ir": "SÍ",
+      "pq": "Mayor calidad de plantilla y experiencia en torneos.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Historial de enfrentamientos favorable",
+        "Racha reciente positiva"
+      ],
+      "favorito": "Netherlands",
+      "goles": "0-2",
+      "corners": 5,
+      "tiros_porteria": [
+        {
+          "jugador": "Memphis Depay",
+          "equipo": "Netherlands",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Cody Gakpo",
+          "equipo": "Netherlands",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Wahbi Khazri",
+          "equipo": "Tunisia",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 50,
+          "over_3.5": 25
+        },
+        "corners": {
+          "over_8.5": 30,
+          "over_9.5": 20,
+          "over_10.5": 10
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-25___Paraguay___Australia": {
+      "ir": "SÍ",
+      "pq": "Racha reciente y ranking FIFA superior.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos equilibrado"
+      ],
+      "favorito": "Australia",
+      "goles": "1-2",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Mitchell Duke",
+          "equipo": "Australia",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Germán Cano",
+          "equipo": "Paraguay",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Ajdin Hrustic",
+          "equipo": "Australia",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 50,
+          "over_3.5": 25
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-25___Türkiye___United States": {
+      "ir": "SÍ",
+      "pq": "Mayor ranking FIFA y mejor racha reciente.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos favorables"
+      ],
+      "favorito": "United States",
+      "goles": "1-2",
+      "corners": 9,
+      "tiros_porteria": [
+        {
+          "jugador": "C. Pulisic",
+          "equipo": "United States",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "H. Yilmaz",
+          "equipo": "Türkiye",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "G. Weah",
+          "equipo": "United States",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 60,
+          "over_9.5": 40,
+          "over_10.5": 25
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-26___Norway___France": {
+      "ir": "SÍ",
+      "pq": "Superioridad en calidad de plantilla y ranking FIFA.",
+      "factores": [
+        "Ranking FIFA alto",
+        "Racha reciente sólida",
+        "Historial de enfrentamientos favorables"
+      ],
+      "favorito": "France",
+      "goles": "1-3",
+      "corners": 10,
+      "tiros_porteria": [
+        {
+          "jugador": "E. Haaland",
+          "equipo": "Norway",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "K. Mbappé",
+          "equipo": "France",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "A. Griezmann",
+          "equipo": "France",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 65,
+          "over_9.5": 45,
+          "over_10.5": 30
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-26___Senegal___Iraq": {
+      "ir": "SÍ",
+      "pq": "Mayor ranking FIFA y ventaja en experiencia.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Mayor experiencia en torneos"
+      ],
+      "favorito": "Senegal",
+      "goles": "2-1",
+      "corners": 8,
+      "tiros_porteria": [
+        {
+          "jugador": "S. Mané",
+          "equipo": "Senegal",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "K. Diatta",
+          "equipo": "Senegal",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "A. Alaa",
+          "equipo": "Iraq",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 50,
+          "over_3.5": 25
+        },
+        "corners": {
+          "over_8.5": 55,
+          "over_9.5": 35,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-26___Cape Verde___Saudi Arabia": {
+      "ir": "NO",
+      "pq": "Ambos equipos tienen similitudes, difícil de predecir.",
+      "factores": [
+        "Rango FIFA similar",
+        "Racha reciente incierta",
+        "Historial de enfrentamientos parejo"
+      ],
+      "favorito": "Cape Verde",
+      "goles": "1-1",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "D. Gomes",
+          "equipo": "Cape Verde",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "F. Al-Muwallad",
+          "equipo": "Saudi Arabia",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "R. Pereira",
+          "equipo": "Cape Verde",
+          "tiros_estimados": 1
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 50,
+          "over_2.5": 30,
+          "over_3.5": 15
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 30,
+          "over_10.5": 15
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-26___Uruguay___Spain": {
+      "ir": "SÍ",
+      "pq": "Mejor ranking FIFA y calidad de plantilla.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente sólida",
+        "Historial de enfrentamientos favorables"
+      ],
+      "favorito": "Spain",
+      "goles": "1-2",
+      "corners": 9,
+      "tiros_porteria": [
+        {
+          "jugador": "L. Suárez",
+          "equipo": "Uruguay",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "F. Torres",
+          "equipo": "Spain",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "D. Olmo",
+          "equipo": "Spain",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 60,
+          "over_9.5": 40,
+          "over_10.5": 25
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-26___Egypt___Iran": {
+      "ir": "SÍ",
+      "pq": "Egipto tiene mejor ranking FIFA y racha reciente.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos favorables"
+      ],
+      "favorito": "Egypt",
+      "goles": "2-1",
+      "corners": 6,
+      "tiros_porteria": [
+        {
+          "jugador": "Mohamed Salah",
+          "equipo": "Egypt",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Tamer Hossam",
+          "equipo": "Egypt",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Sardar Azmoun",
+          "equipo": "Iran",
+          "tiros_estimados": 3
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 50,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-26___New Zealand___Belgium": {
+      "ir": "SÍ",
+      "pq": "Bélgica es un equipo de élite con mejor ranking y experiencia.",
+      "factores": [
+        "Ranking FIFA muy superior",
+        "Racha reciente sólida",
+        "Experiencia en torneos"
+      ],
+      "favorito": "Belgium",
+      "goles": "1-3",
+      "corners": 8,
+      "tiros_porteria": [
+        {
+          "jugador": "Romelu Lukaku",
+          "equipo": "Belgium",
+          "tiros_estimados": 5
+        },
+        {
+          "jugador": "Kevin De Bruyne",
+          "equipo": "Belgium",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Chris Wood",
+          "equipo": "New Zealand",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 45
+        },
+        "corners": {
+          "over_8.5": 55,
+          "over_9.5": 40,
+          "over_10.5": 25
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-27___Croatia___Ghana": {
+      "ir": "SÍ",
+      "pq": "Croacia tiene mejor ranking y experiencia en mundiales.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Experiencia en mundiales"
+      ],
+      "favorito": "Croatia",
+      "goles": "2-0",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Luka Modric",
+          "equipo": "Croatia",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Andrej Kramaric",
+          "equipo": "Croatia",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Jordan Ayew",
+          "equipo": "Ghana",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-27___Panama___England": {
+      "ir": "SÍ",
+      "pq": "Inglaterra es un equipo fuerte con gran ranking y calidad.",
+      "factores": [
+        "Ranking FIFA muy superior",
+        "Racha reciente excelente",
+        "Calidad de jugadores"
+      ],
+      "favorito": "England",
+      "goles": "1-4",
+      "corners": 9,
+      "tiros_porteria": [
+        {
+          "jugador": "Harry Kane",
+          "equipo": "England",
+          "tiros_estimados": 5
+        },
+        {
+          "jugador": "Raheem Sterling",
+          "equipo": "England",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Gabriel Torres",
+          "equipo": "Panama",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 70,
+          "over_3.5": 50
+        },
+        "corners": {
+          "over_8.5": 60,
+          "over_9.5": 45,
+          "over_10.5": 30
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-27___Colombia___Portugal": {
+      "ir": "SÍ",
+      "pq": "Portugal tiene mejor ranking y racha reciente.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Calidad de jugadores clave"
+      ],
+      "favorito": "Portugal",
+      "goles": "1-2",
+      "corners": 8,
+      "tiros_porteria": [
+        {
+          "jugador": "Luis Díaz",
+          "equipo": "Colombia",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Cristiano Ronaldo",
+          "equipo": "Portugal",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Duván Zapata",
+          "equipo": "Colombia",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 55,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 35,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-27___Congo DR___Uzbekistan": {
+      "ir": "SÍ",
+      "pq": "Uzbekistan tiene mejor ranking y forma reciente.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos favorables"
+      ],
+      "favorito": "Uzbekistan",
+      "goles": "1-2",
+      "corners": 6,
+      "tiros_porteria": [
+        {
+          "jugador": "Dieumerci Mbokani",
+          "equipo": "Congo DR",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Eldor Shomurodov",
+          "equipo": "Uzbekistan",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Oston Urunov",
+          "equipo": "Uzbekistan",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 50,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-27___Algeria___Austria": {
+      "ir": "SÍ",
+      "pq": "Algeria tiene un mejor rendimiento en el torneo y localía.",
+      "factores": [
+        "Racha reciente positiva",
+        "Ventaja de local",
+        "Mejor ranking FIFA"
+      ],
+      "favorito": "Algeria",
+      "goles": "2-1",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Riyad Mahrez",
+          "equipo": "Algeria",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Youssef Atal",
+          "equipo": "Algeria",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Marko Arnautovic",
+          "equipo": "Austria",
+          "tiros_estimados": 3
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-27___Jordan___Argentina": {
+      "ir": "SÍ",
+      "pq": "Argentina es claramente superior en calidad y experiencia.",
+      "factores": [
+        "Ranking FIFA muy superior",
+        "Racha reciente excelente",
+        "Historial de enfrentamientos muy favorable"
+      ],
+      "favorito": "Argentina",
+      "goles": "0-3",
+      "corners": 5,
+      "tiros_porteria": [
+        {
+          "jugador": "Lionel Messi",
+          "equipo": "Argentina",
+          "tiros_estimados": 5
+        },
+        {
+          "jugador": "Julian Alvarez",
+          "equipo": "Argentina",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Mohammad Abu Zreiq",
+          "equipo": "Jordan",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 95,
+          "over_1.5": 85,
+          "over_2.5": 70,
+          "over_3.5": 50
+        },
+        "corners": {
+          "over_8.5": 20,
+          "over_9.5": 15,
+          "over_10.5": 10
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-28___Group A 2nd Place___Group B 2nd Place": {
+      "ir": "NO",
+      "pq": "Falta información específica sobre equipos y contexto.",
+      "factores": [
+        "Ranking FIFA desconocido",
+        "Racha reciente no disponible",
+        "Lesiones no especificadas"
+      ],
+      "favorito": "NO",
+      "goles": "",
+      "corners": 0,
+      "tiros_porteria": [],
+      "lineas": {},
+      "ranking_local": "",
+      "ranking_visitante": ""
+    }
   }
 }
