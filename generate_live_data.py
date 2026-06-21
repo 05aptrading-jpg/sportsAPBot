@@ -4,9 +4,12 @@ Runs every 2 minutes during game hours via cron.
 Self-contained — no import of config.py (which has secrets).
 """
 import json
+import logging
 import os
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import httpx
+
+logger = logging.getLogger(__name__)
 
 # ── Constants (mirrored from config.py) ─────────────────────────────
 PROB_MINIMA_ANALISIS = 57.0
@@ -56,6 +59,7 @@ def fetch_live_scores(api_date: str, sport_id: int) -> dict:
                 away_team_obj = g.get("teams", {}).get("away", {}).get("team", {})
                 home_team_obj = g.get("teams", {}).get("home", {}).get("team", {})
                 live[pk] = {
+                    "sport_id": sport_id,
                     "status": state,
                     "is_final": is_final,
                     "is_live": is_live,
@@ -122,8 +126,9 @@ def _load_autorizados() -> list:
 
 
 def main():
-    now_utc = datetime.now(tz=__import__('datetime').timezone.utc)
-    now_local = now_utc + timedelta(hours=MT_OFFSET)
+    now_utc = datetime.now(tz=timezone.utc)
+    mt_tz = timezone(timedelta(hours=MT_OFFSET))
+    now_local = datetime.now(tz=mt_tz)
 
     today_str = now_local.strftime("%Y-%m-%d")
     yesterday_str = (now_local - timedelta(days=1)).strftime("%Y-%m-%d")
@@ -136,6 +141,9 @@ def main():
     live_lmb = fetch_live_scores(api_date, 23)
 
     all_live = {}
+    dupes = set(live_mlb) & set(live_lmb)
+    if dupes:
+        logger.warning(f"gamePk duplicados entre MLB y LMB: {dupes}")
     all_live.update(live_mlb)
     all_live.update(live_lmb)
 

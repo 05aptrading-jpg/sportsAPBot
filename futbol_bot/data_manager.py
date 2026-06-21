@@ -21,6 +21,9 @@ COLUMNAS = [
     "resultado", "resultado_ah0", "resultado_ou25", "resultado_corners",
     "marcador_final", "fecha_actualizacion",
     "fecha_partido", "hora_partido",
+    "llm_ah0", "llm_ou25", "llm_corners", "llm_porque",
+    "llm_favorito", "llm_ir_favorito", "llm_goles", "llm_corners_est",
+    "llm_tiros_porteria", "llm_lineas", "llm_resultado",
 ]
 
 
@@ -43,19 +46,31 @@ def _leer_xlsx() -> list[dict]:
 def _escribir_xlsx(rows: list[dict]):
     """Escribe lista de dicts a xlsx, respetando el orden de COLUMNAS."""
     df = pd.DataFrame(rows, columns=[c for c in COLUMNAS if c in (rows[0] if rows else [])])
-    df.to_excel(config.CSV_SOCCER_PATH, index=False)
+    df.to_excel(config.CSV_SOCCER_PATH, index=False, engine='openpyxl')
 
 
 def inicializar_csv():
     path = config.CSV_SOCCER_PATH
     if not os.path.exists(path):
         df = pd.DataFrame(columns=COLUMNAS)
-        df.to_excel(path, index=False)
+        df.to_excel(path, index=False, engine='openpyxl')
         logger.info(f"xlsx creado: {path}")
+    else:
+        try:
+            existing = pd.read_excel(path, dtype=str, engine='openpyxl')
+            existing_cols = set(existing.columns)
+            missing = [c for c in COLUMNAS if c not in existing_cols]
+            if missing:
+                for c in missing:
+                    existing[c] = ""
+                existing.to_excel(path, index=False, engine='openpyxl')
+                logger.info(f"Columnas LLM agregadas al xlsx: {missing}")
+        except Exception as e:
+            logger.warning(f"Error migrando xlsx: {e}")
 
 
-def game_pk(liga: str, local: str, visitante: str, fecha: str) -> int:
-    raw = hashlib.md5("|".join([liga, local, visitante, fecha]).encode()).hexdigest()
+def game_pk(liga: str, local: str, visitante: str, fecha: str = "") -> int:
+    raw = hashlib.md5("|".join([liga, local, visitante]).encode()).hexdigest()
     return int(raw[:16], 16)
 
 
@@ -233,11 +248,96 @@ def actualizar_resultados(id_partido: str, marcador: str, resultado_ah0: str, re
             if changed:
                 row["marcador_final"] = marcador
                 row["fecha_actualizacion"] = datetime.now().isoformat()
+                if resultado_ah0 in ("acertado", "fallido", "devuelto"):
+                    row["resultado"] = resultado_ah0
+            if not changed and row.get("resultado", "pendiente") == "pendiente" and resultado_ah0 == "no_apostar":
+                row["resultado"] = "no_apostar"
+                row["marcador_final"] = marcador
+                row["fecha_actualizacion"] = datetime.now().isoformat()
+                changed = True
             break
     if changed:
         _escribir_xlsx(rows)
         logger.info(f"Partido {id_partido} actualizado: AH0={resultado_ah0} O/U={resultado_ou25} Corners={resultado_corners} {marcador}")
     return changed
+
+
+def guardar_llm_soccer(id_partido: str, favorito: str, ir: str, goles: str, corners, tiros_porteria: list, porque: str = "", factores: list = None, lineas: dict = None, ranking_local: str = "", ranking_visitante: str = ""):
+    """Guarda los resultados del análisis LLM en el XLSX de fútbol."""
+    if not os.path.exists(config.CSV_SOCCER_PATH):
+        return
+    rows = _leer_xlsx()
+    changed = False
+    tiros_json = json.dumps(tiros_porteria, ensure_ascii=False) if tiros_porteria else "[]"
+    factores_json = json.dumps(factores or [], ensure_ascii=False)
+    lineas_json = json.dumps(lineas or {}, ensure_ascii=False)
+    for row in rows:
+        if row["id_partido"] == id_partido:
+            row["llm_favorito"] = favorito or ""
+            row["llm_ir_favorito"] = ir or ""
+            row["llm_goles"] = goles or ""
+            row["llm_corners_est"] = str(corners) if corners else ""
+            row["llm_tiros_porteria"] = tiros_json
+            row["llm_lineas"] = lineas_json
+            row["llm_porque"] = porque or ""
+            row["llm_ah0"] = factores_json
+            row["llm_ranking_local"] = ranking_local or ""
+            row["llm_ranking_visitante"] = ranking_visitante or ""
+            row["fecha_actualizacion"] = datetime.now().isoformat()
+            changed = True
+            break
+    if changed:
+        _escribir_xlsx(rows)
+        logger.info(f"LLM soccer escrito en XLSX: {id_partido} → {favorito} ({ir})")
+
+
+def _computar_resultado_llm_soccer(ir: str, resultado_real: str) -> str:
+    """Calcula si el LLM acertó: SÍ + acertado = acertado, NO + fallido = acertado."""
+    if ir not in ("SÍ", "NO") or resultado_real in ("pendiente", "no_apostar", ""):
+        return "pendiente"
+    if (ir == "SÍ" and resultado_real == "acertado") or (ir == "NO" and resultado_real == "fallido"):
+        return "acertado"
+    return "fallido"
+
+
+def actualizar_llm_resultado_soccer(id_partido: str) -> bool:
+    """Calcula y escribe el resultado del LLM después de que se resuelve el partido."""
+    if not os.path.exists(config.CSV_SOCCER_PATH):
+        return False
+    rows = _leer_xlsx()
+    changed = False
+    for row in rows:
+        if row["id_partido"] == id_partido:
+            ir = row.get("llm_ir_favorito", "")
+            if not ir or ir in ("N/D", ""):
+                break
+            # Calcular resultado del LLM basado en AH0 (la predicción principal)
+            res_ah0 = row.get("resultado_ah0", "pendiente")
+            res_llm = _computar_resultado_llm_soccer(ir, res_ah0)
+            if row.get("llm_resultado", "pendiente") == "pendiente" and res_llm != "pendiente":
+                row["llm_resultado"] = res_llm
+                changed = True
+            break
+    if changed:
+        _escribir_xlsx(rows)
+    return changed
+
+
+def obtener_stats_llm_soccer() -> dict:
+    """Retorna estadísticas de accuracy del LLM para fútbol."""
+    stats = {"total": 0, "acertados": 0, "fallidos": 0, "win_rate": 0}
+    rows = _leer_xlsx()
+    for row in rows:
+        res = row.get("llm_resultado", "pendiente")
+        if res in ("acertado", "fallido"):
+            stats["total"] += 1
+            if res == "acertado":
+                stats["acertados"] += 1
+            else:
+                stats["fallidos"] += 1
+    if stats["total"] > 0:
+        stats["win_rate"] = round(stats["acertados"] / stats["total"] * 100)
+    return stats
 
 
 def cargar_stats_cache() -> pd.DataFrame:
@@ -316,6 +416,7 @@ def obtener_estadisticas_soccer() -> dict:
         "ah0_total": 0, "ah0_acertados": 0, "ah0_fallidos": 0, "ah0_devueltos": 0, "ah0_win_rate": 0,
         "ou25_total": 0, "ou25_acertados": 0, "ou25_fallidos": 0, "ou25_devueltos": 0, "ou25_win_rate": 0,
         "corners_total": 0, "corners_acertados": 0, "corners_fallidos": 0, "corners_win_rate": 0,
+        "llm_total": 0, "llm_acertados": 0, "llm_fallidos": 0, "llm_win_rate": 0,
     }
     ligas = ["premier", "laliga", "bundesliga", "seriea", "ligue1", "ligamx"]
     liga_map = {"PREMIER_LEAGUE": "premier", "LA_LIGA": "laliga", "BUNDESLIGA": "bundesliga",
@@ -394,6 +495,12 @@ def obtener_estadisticas_soccer() -> dict:
     stats["ah0_win_rate"] = _calcular_win_rate(stats["ah0_acertados"], stats["ah0_acertados"] + stats["ah0_fallidos"])
     stats["ou25_win_rate"] = _calcular_win_rate(stats["ou25_acertados"], stats["ou25_acertados"] + stats["ou25_fallidos"])
     stats["corners_win_rate"] = _calcular_win_rate(stats["corners_acertados"], stats["corners_acertados"] + stats["corners_fallidos"])
+
+    llm = obtener_stats_llm_soccer()
+    stats["llm_total"] = llm["total"]
+    stats["llm_acertados"] = llm["acertados"]
+    stats["llm_fallidos"] = llm["fallidos"]
+    stats["llm_win_rate"] = llm["win_rate"]
 
     for l in ligas:
         for m in ["ah0", "ou25", "corners"]:

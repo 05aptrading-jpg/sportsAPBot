@@ -11,6 +11,7 @@ import requests
 
 import config
 import data_manager as dm
+from generar_hits_xlsx import top_hits_por_equipo
 
 logger = logging.getLogger(__name__)
 
@@ -84,6 +85,8 @@ def _get_espn_scoreboard(game_date: str) -> list:
                 continue
             h_name = h.get("team", {}).get("displayName", "")
             a_name = a.get("team", {}).get("displayName", "")
+            h_abbr = h.get("team", {}).get("abbreviation", "")
+            a_abbr = a.get("team", {}).get("abbreviation", "")
             detail    = comp.get("status", {}).get("type", {}).get("detail", "")
             completed = comp.get("status", {}).get("type", {}).get("completed", False)
             a_runs    = int(a.get("score", 0) or 0)
@@ -95,6 +98,7 @@ def _get_espn_scoreboard(game_date: str) -> list:
             games.append({
                 "game_date": game_date, "espn_pk": espn_pk,
                 "a_name": a_name, "h_name": h_name, "a_runs": a_runs, "h_runs": h_runs,
+                "a_abbr": a_abbr, "h_abbr": h_abbr,
                 "detail": detail, "completed": completed, "is_live": is_live, "is_post": is_post,
             })
         return games
@@ -109,6 +113,8 @@ def _espn_to_game(espn: dict, favorito: str = None, liga: str = "MLB") -> dict:
     h_runs = espn["h_runs"]
     a_name = espn["a_name"]
     h_name = espn["h_name"]
+    a_abbr = espn.get("a_abbr", "")
+    h_abbr = espn.get("h_abbr", "")
 
     # Determinar qué equipo resaltar y orientar score
     def _fav_info():
@@ -120,26 +126,36 @@ def _espn_to_game(espn: dict, favorito: str = None, liga: str = "MLB") -> dict:
             return {"fav_team": h_name, "opp_team": a_name, "score_fav": str(h_runs), "score_opp": str(a_runs)}
         return {"fav_team": a_name, "opp_team": h_name, "score_fav": str(a_runs), "score_opp": str(h_runs)}
 
+    def _fav_abbr():
+        if not favorito:
+            return a_abbr, h_abbr
+        fav_is_away = favorito.strip().lower() in a_name.strip().lower() or a_name.strip().lower() in favorito.strip().lower()
+        fav_is_home = favorito.strip().lower() in h_name.strip().lower() or h_name.strip().lower() in favorito.strip().lower()
+        if fav_is_home and not fav_is_away:
+            return h_abbr, a_abbr
+        return a_abbr, h_abbr
+
     def _win(fav_info):
         return int(fav_info["score_fav"]) > int(fav_info["score_opp"])
 
     fi = _fav_info()
+    fav_abbr, opp_abbr = _fav_abbr()
     gd = espn.get("game_date", "")
 
     if espn["is_post"]:
-        return {"liga": liga, "game_date": gd, "status_emoji": "🚫", "fav_team": fi["fav_team"], "opp_team": fi["opp_team"], "score_fav": "—", "score_opp": "", "state": "Posp.", "result": "pending", "label": "", "game_pk": espn.get("espn_pk", 0)}
+        return {"liga": liga, "game_date": gd, "status_emoji": "🚫", "fav_team": fi["fav_team"], "opp_team": fi["opp_team"], "score_fav": "—", "score_opp": "", "state": "Posp.", "result": "pending", "label": "", "game_pk": espn.get("espn_pk", 0), "fav_abbr": fav_abbr, "opp_abbr": opp_abbr, "home_team": h_name, "away_team": a_name}
 
     if espn["is_live"]:
-        return {"liga": liga, "game_date": gd, "status_emoji": "🔴", "fav_team": fi["fav_team"], "opp_team": fi["opp_team"], "score_fav": fi["score_fav"], "score_opp": fi["score_opp"], "state": detail, "result": "live", "label": "", "game_pk": espn.get("espn_pk", 0)}
+        return {"liga": liga, "game_date": gd, "status_emoji": "🔴", "fav_team": fi["fav_team"], "opp_team": fi["opp_team"], "score_fav": fi["score_fav"], "score_opp": fi["score_opp"], "state": detail, "result": "live", "label": "", "game_pk": espn.get("espn_pk", 0), "fav_abbr": fav_abbr, "opp_abbr": opp_abbr, "home_team": h_name, "away_team": a_name}
 
     if espn["completed"]:
         if favorito:
             acertado = _win(fi)
-            return {"liga": liga, "game_date": gd, "status_emoji": "✅" if acertado else "❌", "fav_team": fi["fav_team"], "opp_team": fi["opp_team"], "score_fav": fi["score_fav"], "score_opp": fi["score_opp"], "state": "Final", "result": "win" if acertado else "loss", "label": "", "game_pk": espn.get("espn_pk", 0)}
+            return {"liga": liga, "game_date": gd, "status_emoji": "✅" if acertado else "❌", "fav_team": fi["fav_team"], "opp_team": fi["opp_team"], "score_fav": fi["score_fav"], "score_opp": fi["score_opp"], "state": "Final", "result": "win" if acertado else "loss", "label": "", "game_pk": espn.get("espn_pk", 0), "fav_abbr": fav_abbr, "opp_abbr": opp_abbr, "home_team": h_name, "away_team": a_name}
         else:
-            return {"liga": liga, "game_date": gd, "status_emoji": "🏁", "fav_team": fi["fav_team"], "opp_team": fi["opp_team"], "score_fav": fi["score_fav"], "score_opp": fi["score_opp"], "state": "Final", "result": "completed", "label": "", "game_pk": espn.get("espn_pk", 0)}
+            return {"liga": liga, "game_date": gd, "status_emoji": "🏁", "fav_team": fi["fav_team"], "opp_team": fi["opp_team"], "score_fav": fi["score_fav"], "score_opp": fi["score_opp"], "state": "Final", "result": "completed", "label": "", "game_pk": espn.get("espn_pk", 0), "fav_abbr": fav_abbr, "opp_abbr": opp_abbr, "home_team": h_name, "away_team": a_name}
 
-    return {"liga": liga, "game_date": gd, "status_emoji": "⏳", "fav_team": fi["fav_team"], "opp_team": fi["opp_team"], "score_fav": "—", "score_opp": "", "state": "Pend.", "result": "pending", "label": "", "game_pk": espn.get("espn_pk", 0)}
+    return {"liga": liga, "game_date": gd, "status_emoji": "⏳", "fav_team": fi["fav_team"], "opp_team": fi["opp_team"], "score_fav": "—", "score_opp": "", "state": "Pend.", "result": "pending", "label": "", "game_pk": espn.get("espn_pk", 0), "fav_abbr": fav_abbr, "opp_abbr": opp_abbr, "home_team": h_name, "away_team": a_name}
 
 
 def _annotate_linescores_mlb(games: list):
@@ -278,8 +294,1251 @@ def _annotate_linescores_mlb(games: list):
                 else:
                     g["score_fav"] = str(a_runs)
                     g["score_opp"] = str(h_runs)
-def _build_data() -> dict:
-    """Construye el JSON con partidos + stats para la Mini App."""
+            # Recompute win/loss from scores when result is still "completed"
+            if g.get("result") == "completed":
+                try:
+                    sf = float(g.get("score_fav", 0) or 0)
+                    so = float(g.get("score_opp", 0) or 0)
+                    if sf > so:
+                        g["result"] = "win"
+                        g["status_emoji"] = "✅"
+                    elif so > sf:
+                        g["result"] = "loss"
+                        g["status_emoji"] = "❌"
+                except (ValueError, TypeError):
+                    pass
+
+
+# ─── Basketball helpers (NBA + WNBA) ──────────────────────────────────────
+
+
+def _get_espn_nfl_scoreboard(game_date: str) -> list:
+    """Consulta ESPN NFL y retorna lista de partidos con spread, O/U, moneyline."""
+    try:
+        date_str = game_date.replace("-", "")
+        url = f"https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates={date_str}"
+        r = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+        if r.status_code != 200:
+            return []
+        games = []
+        for ev in r.json().get("events", []):
+            comp = (ev.get("competitions") or [{}])[0]
+            competitors = comp.get("competitors", [])
+            h = next((c for c in competitors if c.get("homeAway") == "home"), None)
+            a = next((c for c in competitors if c.get("homeAway") == "away"), None)
+            if not h or not a:
+                continue
+            h_team = h.get("team", {})
+            a_team = a.get("team", {})
+            h_name = h_team.get("displayName", "")
+            a_name = a_team.get("displayName", "")
+            h_abbr = h_team.get("abbreviation", "")
+            a_abbr = a_team.get("abbreviation", "")
+            status_type = comp.get("status", {}).get("type", {})
+            detail    = status_type.get("detail", "")
+            completed = status_type.get("completed", False)
+            state_val = status_type.get("state", "")
+            clock     = comp.get("status", {}).get("displayClock", "")
+            period    = comp.get("status", {}).get("period", 0)
+            a_score   = int(a.get("score", 0) or 0)
+            h_score   = int(h.get("score", 0) or 0)
+            is_live   = state_val == "in"
+            is_pre    = state_val == "pre"
+            is_post   = state_val == "post"
+            POSTPONED = {"postponed", "cancelled", "canceled", "suspended", "ppd"}
+            postponed = any(k in detail.lower() for k in POSTPONED)
+            status_emoji = "🚫" if postponed else ("🔴" if is_live else ("🏁" if completed else "⏳"))
+            result = "postponed" if postponed else ("live" if is_live else ("completed" if completed else "pending"))
+            quarter_label = ""
+            if is_live:
+                if period <= 4:
+                    quarter_label = f"Q{period}"
+                else:
+                    quarter_label = "OT"
+                quarter_label += " " + clock
+            elif completed:
+                quarter_label = "Final"
+            elif is_pre:
+                quarter_label = detail if detail else "Pend."
+            else:
+                quarter_label = detail if detail else "Pend."
+            odds = comp.get("odds") or []
+            odds_data = odds[0] if odds else {}
+            spread_details = odds_data.get("details", "")
+            over_under = odds_data.get("overUnder", "")
+            ml_home = ""
+            ml_away = ""
+            ml_raw = odds_data.get("moneyline", {})
+            if ml_raw:
+                ml_home = ml_raw.get("home", {}).get("close", {}).get("odds", "")
+                ml_away = ml_raw.get("away", {}).get("close", {}).get("odds", "")
+            h_record = h.get("records", [])
+            a_record = a.get("records", [])
+            h_rec_str = ""
+            a_rec_str = ""
+            if h_record:
+                h_rec_str = h_record[0].get("summary", "")
+            if a_record:
+                a_rec_str = a_record[0].get("summary", "")
+            espn_pk = int(ev.get("id", 0) or 0)
+            week_info = ev.get("week", {})
+            week_num = week_info.get("number", 0)
+            season_info = ev.get("season", {})
+            season_year = season_info.get("year", 0)
+            season_type = season_info.get("type", 0)
+            games.append({
+                "game_date": game_date,
+                "espn_pk": espn_pk,
+                "a_name": a_name, "h_name": h_name,
+                "a_abbr": a_abbr, "h_abbr": h_abbr,
+                "a_score": a_score, "h_score": h_score,
+                "clock": clock, "period": period,
+                "is_live": is_live, "is_pre": is_pre, "is_post": is_post,
+                "completed": completed, "postponed": postponed,
+                "status_emoji": status_emoji, "result": result,
+                "quarter_label": quarter_label,
+                "spread_details": spread_details,
+                "over_under": over_under,
+                "ml_home": ml_home, "ml_away": ml_away,
+                "h_record": h_rec_str, "a_record": a_rec_str,
+                "week_num": week_num, "season_year": season_year,
+                "season_type": season_type,
+            })
+        return games
+    except Exception:
+        return []
+
+
+def _get_espn_basketball_scoreboard(game_date: str, sport: str = "nba") -> list:
+    """
+    Consulta ESPN basketball (nba o wnba) y retorna lista de partidos con periodos.
+    """
+    try:
+        date_str = game_date.replace("-", "")
+        url = f"https://site.api.espn.com/apis/site/v2/sports/basketball/{sport}/scoreboard?dates={date_str}"
+        r = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+        if r.status_code != 200:
+            return []
+
+        liga = "WNBA" if sport == "wnba" else "NBA"
+        games = []
+        for ev in r.json().get("events", []):
+            comp = (ev.get("competitions") or [{}])[0]
+            competitors = comp.get("competitors", [])
+            h = next((c for c in competitors if c.get("homeAway") == "home"), None)
+            a = next((c for c in competitors if c.get("homeAway") == "away"), None)
+            if not h or not a:
+                continue
+            h_name = h.get("team", {}).get("displayName", "")
+            a_name = a.get("team", {}).get("displayName", "")
+            h_abbr = h.get("team", {}).get("abbreviation", "")
+            a_abbr = a.get("team", {}).get("abbreviation", "")
+
+            status_type = comp.get("status", {}).get("type", {})
+            detail    = status_type.get("detail", "")
+            completed = status_type.get("completed", False)
+            state_val = status_type.get("state", "")
+            clock     = comp.get("status", {}).get("displayClock", "")
+            period    = comp.get("status", {}).get("period", 0)
+
+            a_runs    = int(a.get("score", 0) or 0)
+            h_runs    = int(h.get("score", 0) or 0)
+            is_live   = state_val == "in"
+            is_pre    = state_val == "pre"
+            POSTPONED = {"postponed", "cancelled", "canceled", "suspended", "ppd"}
+            is_post   = any(k in detail.lower() for k in POSTPONED)
+            espn_pk = int(ev.get("id", 0) or 0)
+
+            status_emoji = "🚫" if is_post else ("🔴" if is_live else ("🏁" if completed else "⏳"))
+            result = "postponed" if is_post else ("live" if is_live else ("completed" if completed else "pending"))
+            state = ("Q" + str(period) + " " + clock) if is_live else ("Posp." if is_post else ("Final" if completed else "Pend."))
+
+            def _get_linescores(comp):
+                raw = comp.get("linescores") or []
+                return [{"period": p.get("period", i+1), "value": int(p.get("value", 0) or 0), "display": p.get("displayValue", "0")} for i, p in enumerate(raw)]
+            a_line = _get_linescores(a)
+            h_line = _get_linescores(h)
+
+            games.append({
+                "game_date": game_date,
+                "espn_pk": espn_pk,
+                "a_name": a_name, "h_name": h_name,
+                "a_abbr": a_abbr, "h_abbr": h_abbr,
+                "a_runs": a_runs, "h_runs": h_runs,
+                "a_linescores": a_line,
+                "h_linescores": h_line,
+                "clock": clock, "period": period,
+                "is_live": is_live, "is_pre": is_pre, "is_post": is_post, "completed": completed,
+                "status_emoji": status_emoji,
+                "result": result,
+                "state": state,
+                "liga": liga,
+            })
+        return games
+    except Exception:
+        return []
+
+
+HITS_CACHE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "hits_board_cache.json")
+
+
+def _build_hits_board(live_games: dict = None) -> dict:
+    """Genera top 3 hitters por equipo separado por liga.
+    Retorna {"MLB": {"Equipo": [{...}, ...]}, "LMB": {...}}."""
+    import time
+
+    try:
+        if os.path.exists(HITS_CACHE_PATH):
+            cache_age = time.time() - os.path.getmtime(HITS_CACHE_PATH)
+            if cache_age < 900:
+                with open(HITS_CACHE_PATH, "r", encoding="utf-8") as f:
+                    cached = json.load(f)
+                if cached:
+                    logger.info(f"Hits board desde cache ({cache_age:.0f}s)")
+                    if live_games:
+                        from generar_hits_xlsx import actualizar_hits_en_vivo
+                        for liga in ("MLB", "LMB"):
+                            if cached.get(liga):
+                                cached[liga] = actualizar_hits_en_vivo(cached[liga], live_games)
+                    return cached
+    except Exception:
+        pass
+
+    board = {"MLB": {}, "LMB": {}}
+    for attempt in range(2):
+        try:
+            from generar_hits_xlsx import top_hits_por_equipo, actualizar_hits_en_vivo
+            raw = top_hits_por_equipo()
+            if raw:
+                board = raw
+                if live_games:
+                    for liga in ("MLB", "LMB"):
+                        if board.get(liga):
+                            board[liga] = actualizar_hits_en_vivo(board[liga], live_games)
+                try:
+                    with open(HITS_CACHE_PATH, "w", encoding="utf-8") as f:
+                        json.dump(board, f, ensure_ascii=False, indent=2)
+                except Exception:
+                    pass
+                return board
+            if attempt == 0:
+                logger.warning("Hits board vacío, reintentando en 3s...")
+                time.sleep(3)
+        except Exception as e:
+            logger.warning(f"Intento {attempt + 1} hits_board falló: {e}")
+            if attempt == 0:
+                time.sleep(3)
+
+    try:
+        if os.path.exists(HITS_CACHE_PATH):
+            with open(HITS_CACHE_PATH, "r", encoding="utf-8") as f:
+                cached = json.load(f)
+            if cached:
+                logger.info("Usando hits_board_cache.json stale como fallback")
+                return cached
+    except Exception as e:
+        logger.warning(f"Error leyendo cache hits: {e}")
+
+    return {"MLB": {}, "LMB": {}}
+
+
+LLM_CACHE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "llm_cache.json")
+
+
+def _load_llm_cache() -> dict:
+    if not os.path.exists(LLM_CACHE_PATH):
+        return {}
+    try:
+        with open(LLM_CACHE_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def _save_llm_cache(cache: dict):
+    try:
+        with open(LLM_CACHE_PATH, "w", encoding="utf-8") as f:
+            json.dump(cache, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        logger.error(f"Error guardando LLM cache: {e}")
+
+
+LLM_PERSISTENT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "llm_persistent.json")
+
+def _load_llm_from_files() -> dict:
+    """Carga análisis LLM desde archivo persistente. Key: {sport}_{date}_{team1}_{team2}
+    Si el archivo local falla, intenta descargar desde GitHub (llm_backup.json)."""
+    if os.path.exists(LLM_PERSISTENT_PATH):
+        try:
+            with open(LLM_PERSISTENT_PATH, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            logger.warning("llm_persistent.json corrupto — intentando recovery desde GitHub")
+    else:
+        logger.info("llm_persistent.json no encontrado — intentando descarga desde GitHub")
+    # Fallback: descargar backup desde GitHub
+    try:
+        backup_url = f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/main/llm_backup.json"
+        r = requests.get(backup_url, timeout=10)
+        if r.status_code == 200:
+            data = r.json()
+            logger.info(f"LLM recovery desde GitHub: {len(data)} entradas")
+            # Guardar localmente para futuros usos
+            with open(LLM_PERSISTENT_PATH, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            return data
+        else:
+            logger.warning(f"No se pudo recuperar LLM desde GitHub: HTTP {r.status_code}")
+    except Exception as e:
+        logger.warning(f"Error recovery LLM desde GitHub: {e}")
+    return {}
+
+def _save_llm_to_file(file_key: str, ir: str, pq: str, factores: list, favorito: str, sport: str,
+                       goles: str = "", corners=0, tiros_porteria: list = None, lineas: dict = None,
+                       ranking_local: str = "", ranking_visitante: str = "",
+                       puntos_local=None, puntos_visitante=None, spread=None,
+                       confianza_ou=None, linea_ou=None, b2b_impacto="", lesion_clave="",
+                       jugadores_clave=None,
+                       carreras_esperadas="", abridor_local="", abridor_visitante="",
+                       bateadores_clave=None, relevo_local="", relevo_visitante="",
+                       stats_comparison=None, lineas_ou=None,
+                       anotadores=None, defensores=None, armadores=None):
+    """Guarda un resultado LLM al archivo persistente."""
+    data = _load_llm_from_files()
+    entry = {"ir": ir, "pq": pq, "factores": factores, "favorito": favorito, "sport": sport}
+    if sport == "soccer":
+        entry["goles"] = goles
+        entry["corners"] = corners
+        entry["tiros_porteria"] = tiros_porteria or []
+        entry["lineas"] = lineas or {}
+        entry["ranking_local"] = ranking_local
+        entry["ranking_visitante"] = ranking_visitante
+    if sport == "nba":
+        entry["puntos_local"] = puntos_local
+        entry["puntos_visitante"] = puntos_visitante
+        entry["spread"] = spread
+        entry["confianza_ou"] = confianza_ou
+        entry["linea_ou"] = linea_ou
+        entry["b2b_impacto"] = b2b_impacto
+        entry["lesion_clave"] = lesion_clave
+        entry["jugadores_clave"] = jugadores_clave or []
+        entry["anotadores"] = anotadores or []
+        entry["defensores"] = defensores or []
+        entry["armadores"] = armadores or []
+        entry["ranking_local"] = ranking_local
+        entry["ranking_visitante"] = ranking_visitante
+        entry["stats_comparison"] = stats_comparison or {}
+        entry["lineas_ou"] = lineas_ou or {}
+    if sport == "nfl":
+        entry["puntos_local"] = puntos_local
+        entry["puntos_visitante"] = puntos_visitante
+        entry["spread"] = spread
+        entry["confianza_ou"] = confianza_ou
+        entry["over_under"] = linea_ou
+        entry["jugadores_clave"] = jugadores_clave or []
+        entry["ranking_local"] = ranking_local
+        entry["ranking_visitante"] = ranking_visitante
+        entry["stats_comparison"] = stats_comparison or {}
+    if sport == "baseball":
+        entry["carreras_esperadas"] = carreras_esperadas
+        entry["carreras_lineas"] = lineas or {}
+        entry["ranking_local"] = ranking_local
+        entry["ranking_visitante"] = ranking_visitante
+        entry["abridor_local"] = abridor_local
+        entry["abridor_visitante"] = abridor_visitante
+        entry["bateadores_clave"] = bateadores_clave or []
+        entry["relevo_local"] = relevo_local
+        entry["relevo_visitante"] = relevo_visitante
+    data[file_key] = entry
+    try:
+        with open(LLM_PERSISTENT_PATH, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        logger.error(f"Error guardando LLM persistente: {e}")
+
+
+def _apply_nba_llm_fields(game: dict, entry: dict):
+    """Apply NBA-specific LLM fields from a cache/file entry onto a game dict."""
+    if entry.get("puntos_local") is not None:
+        game["llm_puntos_local"] = entry["puntos_local"]
+    if entry.get("puntos_visitante") is not None:
+        game["llm_puntos_visitante"] = entry["puntos_visitante"]
+    if entry.get("spread") is not None:
+        game["llm_spread"] = entry["spread"]
+    if entry.get("confianza_ou") is not None:
+        game["llm_confianza_ou"] = entry["confianza_ou"]
+    if entry.get("linea_ou") is not None:
+        game["llm_linea_ou"] = entry["linea_ou"]
+    if entry.get("b2b_impacto"):
+        game["llm_b2b_impacto"] = entry["b2b_impacto"]
+    if entry.get("lesion_clave"):
+        game["llm_lesion_clave"] = entry["lesion_clave"]
+    if entry.get("jugadores_clave"):
+        game["llm_jugadores_clave"] = entry["jugadores_clave"]
+    if entry.get("anotadores"):
+        game["llm_anotadores"] = entry["anotadores"]
+    if entry.get("defensores"):
+        game["llm_defensores"] = entry["defensores"]
+    if entry.get("armadores"):
+        game["llm_armadores"] = entry["armadores"]
+    if entry.get("ranking_local"):
+        game["llm_ranking_local"] = entry["ranking_local"]
+    if entry.get("ranking_visitante"):
+        game["llm_ranking_visitante"] = entry["ranking_visitante"]
+    if entry.get("stats_comparison"):
+        game["llm_stats_comparison"] = entry["stats_comparison"]
+    if entry.get("lineas_ou"):
+        game["llm_lineas_ou"] = entry["lineas_ou"]
+
+
+def _apply_baseball_llm_fields(game: dict, entry: dict):
+    """Apply baseball-specific LLM fields from a cache/file entry onto a game dict."""
+    if entry.get("carreras_esperadas"):
+        game["llm_carreras"] = entry["carreras_esperadas"]
+    if entry.get("carreras_lineas"):
+        game["llm_carreras_lineas"] = entry["carreras_lineas"]
+    if entry.get("ranking_local"):
+        game["llm_ranking_local"] = entry["ranking_local"]
+    if entry.get("ranking_visitante"):
+        game["llm_ranking_visitante"] = entry["ranking_visitante"]
+    if entry.get("abridor_local"):
+        game["llm_abridor_local"] = entry["abridor_local"]
+    if entry.get("abridor_visitante"):
+        game["llm_abridor_visitante"] = entry["abridor_visitante"]
+    if entry.get("bateadores_clave"):
+        game["llm_bateadores_clave"] = entry["bateadores_clave"]
+    if entry.get("relevo_local"):
+        game["llm_relevo_local"] = entry["relevo_local"]
+    if entry.get("relevo_visitante"):
+        game["llm_relevo_visitante"] = entry["relevo_visitante"]
+
+
+def _build_nba_llm_entry(ir: str, pq: str, factores: list, favorito: str, extra: dict) -> dict:
+    """Build an NBA llm_data entry dict combining base fields + extra NBA fields."""
+    entry = {"ir": ir, "pq": pq, "factores": factores, "favorito": favorito}
+    for k in ("puntos_local", "puntos_visitante", "spread", "confianza_ou", "linea_ou", "b2b_impacto", "lesion_clave", "jugadores_clave", "anotadores", "defensores", "armadores", "ranking_local", "ranking_visitante", "stats_comparison", "lineas_ou"):
+        if extra.get(k) is not None:
+            entry[k] = extra[k]
+    return entry
+
+
+def _fetch_basketball_team_context(need_nba_games):
+    """
+    Fetch real team season stats + records + leaders from ESPN for NBA/WNBA games
+    that need fresh LLM analysis. Returns dict: team_name -> {records, stats, leaders}.
+    """
+    groups = {}
+    for item in need_nba_games:
+        sport = "wnba" if item.get("liga", "NBA") == "WNBA" else "nba"
+        gd = item["game"].get("game_date", "")
+        groups.setdefault((sport, gd), set()).add((item["game"].get("home", ""), item["game"].get("away", "")))
+
+    team_context = {}
+    for (sport, game_date), _ in groups.items():
+        if not game_date:
+            continue
+        date_str = game_date.replace("-", "")
+        try:
+            r = requests.get(
+                f"https://site.api.espn.com/apis/site/v2/sports/basketball/{sport}/scoreboard?dates={date_str}",
+                timeout=15, headers={"User-Agent": "Mozilla/5.0"}
+            )
+            if r.status_code != 200:
+                continue
+            data = r.json()
+            for ev in data.get("events", []):
+                comp = (ev.get("competitions") or [{}])[0]
+                for c in comp.get("competitors", []):
+                    team_name = c.get("team", {}).get("displayName", "")
+                    team_id = c.get("team", {}).get("id", "")
+                    if not team_id or not team_name or team_name in team_context:
+                        continue
+
+                    records_parts = []
+                    for rec in c.get("records", []):
+                        records_parts.append(f"{rec.get('type', '')}: {rec.get('summary', '')}")
+                    records_text = " | ".join(records_parts)
+
+                    leaders_parts = []
+                    for l in c.get("leaders", []):
+                        ld = l.get("leaders", [{}])[0]
+                        athlete = ld.get("athlete", {})
+                        val = ld.get("value", "")
+                        leaders_parts.append(f"{l.get('name', '')}: {athlete.get('displayName', '')} ({val})")
+                    leaders_text = " | ".join(leaders_parts)
+
+                    stats_text = ""
+                    try:
+                        r2 = requests.get(
+                            f"https://site.api.espn.com/apis/site/v2/sports/basketball/{sport}/teams/{team_id}/statistics",
+                            timeout=10, headers={"User-Agent": "Mozilla/5.0"}
+                        )
+                        if r2.status_code == 200:
+                            stats_data = r2.json()
+                            cats = stats_data.get("results", {}).get("stats", {}).get("categories", [])
+                            summary = {}
+                            for cat in cats:
+                                for s in cat.get("stats", []):
+                                    if isinstance(s, dict) and s.get("displayValue"):
+                                        summary[s["name"]] = s["displayValue"]
+                            stat_parts = []
+                            for key, label in (
+                                ("avgPoints", "PPG"), ("fieldGoalPct", "FG%"), ("threePointPct", "3P%"),
+                                ("freeThrowPct", "FT%"), ("avgRebounds", "REB"), ("avgAssists", "AST"),
+                                ("avgTurnovers", "TOV"), ("avgSteals", "STL"), ("avgBlocks", "BLK"),
+                                ("avgOffensiveRebounds", "OREB"), ("avgDefensiveRebounds", "DREB"),
+                                ("scoringEfficiency", "Eff"),
+                            ):
+                                if summary.get(key):
+                                    stat_parts.append(f"{label}: {summary[key]}")
+                            if summary.get("avgFieldGoalsMade") and summary.get("avgFieldGoalsAttempted"):
+                                stat_parts.append(f"FGM/A: {summary['avgFieldGoalsMade']}-{summary['avgFieldGoalsAttempted']}")
+                            stats_text = " | ".join(stat_parts)
+                    except Exception:
+                        pass
+
+                    team_context[team_name] = {
+                        "records": records_text,
+                        "stats": stats_text,
+                        "leaders": leaders_text,
+                    }
+        except Exception:
+            continue
+    return team_context
+
+
+def _save_llm_to_csv(ir: str, pq: str, factores: list, game: dict):
+    """Guarda el resultado LLM en el CSV para el partido indicado."""
+    import csv, os
+    import data_manager as dm
+    csv_path = getattr(config, "CSV_PATH", os.path.join(os.path.dirname(__file__), "apuestas.csv"))
+    if not os.path.exists(csv_path):
+        return
+    # Asegurar que las columnas LLM existan
+    dm.inicializar_csv()
+    try:
+        rows = []
+        with open(csv_path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            cols = list(reader.fieldnames or [])
+            rows = list(reader)
+        game_pk = game.get("game_pk", 0)
+        game_date = (game.get("game_date") or "").strip()
+        fav = (game.get("fav_team") or "").strip()
+        opp = (game.get("opp_team") or "").strip()
+        from datetime import datetime as _dt, date as _d
+        # Normalizar fecha ISO → DD/MM/YYYY para match CSV
+        csv_fecha = ""
+        try:
+            csv_fecha = _dt.strptime(game_date[:10], "%Y-%m-%d").strftime("%d/%m/%Y")
+        except Exception:
+            pass
+        updated = False
+        for row in rows:
+            match = False
+            if game_pk and str(row.get("id_partido", "")).strip() == str(game_pk):
+                match = True
+            elif csv_fecha and fav and opp:
+                row_fav = (row.get("favorito_sabermetrico") or "").strip().lower()
+                row_local = (row.get("equipo_local") or "").strip().lower()
+                row_visit = (row.get("equipo_visitante") or "").strip().lower()
+                row_fecha = (row.get("fecha_hora") or "").strip()[:10]
+                if row_fecha == csv_fecha:
+                    if (fav.lower() in row_local or row_local in fav.lower()) and \
+                       (opp.lower() in row_visit or row_visit in opp.lower()):
+                        match = True
+                    elif (fav.lower() in row_visit or row_visit in fav.lower()) and \
+                         (opp.lower() in row_local or row_local in opp.lower()):
+                        match = True
+            if match:
+                row["llm_ir_favorito"] = ir
+                row["llm_porque"] = pq
+                row["llm_factores"] = json.dumps(factores, ensure_ascii=False) if factores else ""
+                row["resultado_llm"] = dm._computar_resultado_llm(ir, row.get("resultado", "pendiente"))
+                updated = True
+        if updated:
+            # Asegurar que las columnas LLM estén en fieldnames
+            llm_cols = ["llm_ir_favorito", "llm_porque", "llm_factores", "resultado_llm"]
+            for c in llm_cols:
+                if c not in cols:
+                    cols.append(c)
+            import csv as _csv_out
+            with open(csv_path, "w", newline="", encoding="utf-8") as f:
+                _csv_out.DictWriter(f, fieldnames=cols).writerows(rows)
+            logger.info(f"CSV actualizado con LLM: {fav} vs {opp}")
+    except Exception as e:
+        logger.warning(f"Error guardando LLM en CSV: {e}")
+
+
+def _inject_llm_analysis(games: list[dict], llm_data: dict = None):
+    """Inyecta análisis LLM a juegos de béisbol (MLB/LMB), fútbol y NBA.
+    Flujo: 1) Cargar desde archivos persistentes, 2) Si falta, llamar LLM, 3) Guardar a archivos."""
+    cache = _load_llm_cache()
+    today = datetime.now().strftime("%Y-%m-%d")
+    total_inyectado = 0
+
+    # ── Cargar LLM previo desde archivos persistentes ──
+    llm_from_files = _load_llm_from_files()
+
+    # ── Béisbol (MLB/LMB) ──
+    baseball_games = [g for g in games if g.get("liga") in ("MLB", "LMB") and g.get("fav_team")]
+    need_llm_baseball = []
+    for g in baseball_games:
+        away = g.get("opp_team", "")
+        fav = g.get("fav_team", "")
+        liga = g.get("liga", "")
+        game_date = (g.get("game_date") or "")[:10]
+        is_today_game = (game_date == today)
+        key = f"{today}_{liga}_{fav}_{away}"
+        file_key = f"{liga}_{today}_{fav}_{away}"
+
+        # Buscar en archivos persistentes primero
+        if file_key in llm_from_files:
+            entry = llm_from_files[file_key]
+            ir = entry.get("ir", "")
+            pq = entry.get("pq", "")
+            factores = entry.get("factores", [])
+            favorito_f = entry.get("favorito", "")
+            if not is_today_game:
+                continue
+            g["llm_ir_favorito"] = ir
+            g["llm_porque"] = pq
+            g["llm_factores"] = factores
+            if favorito_f:
+                g["llm_favorito"] = favorito_f
+            _apply_baseball_llm_fields(g, entry)
+            # Ensure all baseball-specific fields exist with defaults
+            for fld, dfl in [("llm_carreras",""),("llm_carreras_lineas",{}),("llm_ranking_local",""),
+                             ("llm_ranking_visitante",""),("llm_abridor_local",""),("llm_abridor_visitante",""),
+                             ("llm_bateadores_clave",[]),("llm_relevo_local",""),("llm_relevo_visitante","")]:
+                g.setdefault(fld, dfl)
+            if llm_data is not None:
+                llm_key_b = f"{g.get('game_date', today)}___{liga}___{g.get('home_team', fav)}___{g.get('away_team', away)}"
+                llm_data[llm_key_b] = {"ir": ir, "pq": pq, "factores": factores, "favorito": favorito_f,
+                                       "carreras_esperadas": g.get("llm_carreras", ""),
+                                       "carreras_lineas": g.get("llm_carreras_lineas", {}),
+                                       "ranking_local": g.get("llm_ranking_local", ""),
+                                       "ranking_visitante": g.get("llm_ranking_visitante", ""),
+                                       "abridor_local": g.get("llm_abridor_local", ""),
+                                       "abridor_visitante": g.get("llm_abridor_visitante", ""),
+                                       "bateadores_clave": g.get("llm_bateadores_clave", []),
+                                       "relevo_local": g.get("llm_relevo_local", ""),
+                                       "relevo_visitante": g.get("llm_relevo_visitante", "")}
+            cache[key] = {"ir": ir, "pq": pq, "factores": factores, "favorito": favorito_f}
+            home = g.get("home_team") or g.get("fav_team", "")
+            away_t = g.get("away_team") or g.get("opp_team", "")
+            _save_llm_to_csv(ir, pq, factores, g)
+            # If today's game lacks enriched fields (old format), analyze once to migrate
+            bk = g.get("llm_bateadores_clave") or []
+            needs_migration = (not g.get("llm_carreras") or len(bk) < 4 or
+                               (len(bk) > 0 and not any(b.get("confianza_bateo") for b in bk)))
+            if needs_migration:
+                need_llm_baseball.append({"game": g, "key": key, "file_key": file_key, "partido": f"{home} vs {away_t} ({g.get('game_date', today)})", "match_key": f"{home} vs {away_t}", "liga": liga, "datos": {}, "sport": "baseball"})
+            continue
+
+        if key in cache:
+            ir = cache[key].get("ir", "")
+            pq = cache[key].get("pq", "")
+            factores = cache[key].get("factores", [])
+            favorito_cache = cache[key].get("favorito", "")
+            if not is_today_game:
+                continue
+            g["llm_ir_favorito"] = ir
+            g["llm_porque"] = pq
+            g["llm_factores"] = factores
+            if favorito_cache:
+                g["llm_favorito"] = favorito_cache
+            _apply_baseball_llm_fields(g, cache[key])
+            # Ensure all baseball-specific fields exist with defaults
+            for fld, dfl in [("llm_carreras",""),("llm_carreras_lineas",{}),("llm_ranking_local",""),
+                             ("llm_ranking_visitante",""),("llm_abridor_local",""),("llm_abridor_visitante",""),
+                             ("llm_bateadores_clave",[]),("llm_relevo_local",""),("llm_relevo_visitante","")]:
+                g.setdefault(fld, dfl)
+            if llm_data is not None:
+                llm_key_b = f"{g.get('game_date', today)}___{liga}___{g.get('home_team', fav)}___{g.get('away_team', away)}"
+                llm_data[llm_key_b] = {"ir": ir, "pq": pq, "factores": factores, "favorito": favorito_cache,
+                                       "carreras_esperadas": g.get("llm_carreras", ""),
+                                       "carreras_lineas": g.get("llm_carreras_lineas", {}),
+                                       "ranking_local": g.get("llm_ranking_local", ""),
+                                       "ranking_visitante": g.get("llm_ranking_visitante", ""),
+                                       "abridor_local": g.get("llm_abridor_local", ""),
+                                       "abridor_visitante": g.get("llm_abridor_visitante", ""),
+                                       "bateadores_clave": g.get("llm_bateadores_clave", []),
+                                       "relevo_local": g.get("llm_relevo_local", ""),
+                                       "relevo_visitante": g.get("llm_relevo_visitante", "")}
+            _save_llm_to_file(file_key, ir, pq, factores, favorito_cache, "baseball",
+                              carreras_esperadas=g.get("llm_carreras", ""),
+                              lineas=g.get("llm_carreras_lineas", {}),
+                              ranking_local=g.get("llm_ranking_local", ""),
+                              ranking_visitante=g.get("llm_ranking_visitante", ""),
+                              abridor_local=g.get("llm_abridor_local", ""),
+                              abridor_visitante=g.get("llm_abridor_visitante", ""),
+                              bateadores_clave=g.get("llm_bateadores_clave", []),
+                              relevo_local=g.get("llm_relevo_local", ""),
+                              relevo_visitante=g.get("llm_relevo_visitante", ""))
+            _save_llm_to_csv(ir, pq, factores, g)
+            bk = g.get("llm_bateadores_clave") or []
+            needs_migration = (not g.get("llm_carreras") or len(bk) < 4 or
+                               (len(bk) > 0 and not any(b.get("confianza_bateo") for b in bk)))
+            if needs_migration:
+                need_llm_baseball.append({"game": g, "key": key, "file_key": file_key, "partido": f"{home} vs {away_t} ({g.get('game_date', today)})", "match_key": f"{home} vs {away_t}", "liga": liga, "datos": {}, "sport": "baseball"})
+            continue
+
+        # Fallback: not in persistent file or cache → add to need_* for fresh analysis (today only)
+        if is_today_game and (not g.get("llm_ir_favorito") or not g.get("llm_carreras")):
+            datos = {}
+            is_final = g.get("result") in ("win", "loss", "completed")
+            if not is_final:
+                if g.get("score_fav") and g.get("score_opp"):
+                    datos["marcador"] = f"{g['score_fav']}-{g['score_opp']}"
+                if g.get("result"):
+                    datos["resultado"] = g["result"]
+            home = g.get("home_team") or g.get("fav_team", "")
+            away_t = g.get("away_team") or g.get("opp_team", "")
+            need_llm_baseball.append({"game": g, "key": key, "file_key": file_key, "partido": f"{home} vs {away_t} ({g.get('game_date', today)})", "match_key": f"{home} vs {away_t}", "liga": liga, "datos": datos, "sport": "baseball"})
+
+    # ── Fútbol (soccer_data) ──
+    soccer_games = [g for g in games if g.get("liga_key") and g.get("local") and g.get("visitante")]
+    need_llm_soccer = []
+    for g in soccer_games:
+        home = g.get("local", "")
+        away = g.get("visitante", "")
+        favorito = g.get("favorito", "")
+        liga = g.get("liga_key", "FUTBOL")
+        key = f"{today}_FUTBOL_{home}_{away}"
+        file_key = f"FUTBOL_{today}_{home}_{away}"
+        fecha_key = g.get("fecha_partido", g.get("game_date", today))
+
+        if favorito:
+            fav_first = favorito
+            opp_first = away if favorito == home else home
+        else:
+            fav_first = home
+            opp_first = away
+
+        if file_key in llm_from_files:
+            entry = llm_from_files[file_key]
+            ir = entry.get("ir", "")
+            pq = entry.get("pq", "")
+            factores = entry.get("factores", [])
+            favorito_f = entry.get("favorito", "")
+            goles_f = entry.get("goles", "")
+            corners_f = entry.get("corners", 0)
+            tiros_f = entry.get("tiros_porteria", [])
+            lineas_f = entry.get("lineas", {})
+            ranking_loc = entry.get("ranking_local", "")
+            ranking_vis = entry.get("ranking_visitante", "")
+            g["llm_ir_favorito"] = ir
+            g["llm_porque"] = pq
+            g["llm_factores"] = factores
+            g["llm_goles"] = goles_f
+            g["llm_corners_est"] = corners_f
+            g["llm_tiros_porteria"] = tiros_f
+            g["llm_lineas"] = lineas_f
+            if favorito_f:
+                g["llm_favorito"] = favorito_f
+            if llm_data is not None:
+                llm_key = f"{fecha_key}___{home}___{away}"
+                llm_analysis_entry = {"ir": ir, "pq": pq, "factores": factores, "favorito": favorito_f,
+                                      "goles": goles_f, "corners": corners_f, "tiros_porteria": tiros_f,
+                                      "lineas": lineas_f, "ranking_local": ranking_loc, "ranking_visitante": ranking_vis}
+                llm_data[llm_key] = llm_analysis_entry
+            cache[key] = {"ir": ir, "pq": pq, "factores": factores, "favorito": favorito_f,
+                          "goles": goles_f, "corners": corners_f, "tiros_porteria": tiros_f,
+                          "lineas": lineas_f, "ranking_local": ranking_loc, "ranking_visitante": ranking_vis}
+            # Save to XLSX for soccer
+            if g.get("id_partido"):
+                try:
+                    from futbol_bot.data_manager import guardar_llm_soccer
+                    guardar_llm_soccer(g["id_partido"], favorito_f, ir, goles_f, corners_f, tiros_f,
+                                       porque=pq, factores=factores, lineas=lineas_f,
+                                       ranking_local=ranking_loc, ranking_visitante=ranking_vis)
+                except Exception:
+                    pass
+            continue
+
+        if key in cache:
+            ir = cache[key].get("ir", "")
+            pq = cache[key].get("pq", "")
+            factores = cache[key].get("factores", [])
+            favorito_cache = cache[key].get("favorito", "")
+            goles_c = cache[key].get("goles", "")
+            corners_c = cache[key].get("corners", 0)
+            tiros_c = cache[key].get("tiros_porteria", [])
+            lineas_c = cache[key].get("lineas", {})
+            ranking_loc = cache[key].get("ranking_local", "")
+            ranking_vis = cache[key].get("ranking_visitante", "")
+            g["llm_ir_favorito"] = ir
+            g["llm_porque"] = pq
+            g["llm_factores"] = factores
+            g["llm_goles"] = goles_c
+            g["llm_corners_est"] = corners_c
+            g["llm_tiros_porteria"] = tiros_c
+            g["llm_lineas"] = lineas_c
+            if favorito_cache:
+                g["llm_favorito"] = favorito_cache
+            if llm_data is not None:
+                llm_key = f"{fecha_key}___{home}___{away}"
+                llm_analysis_entry = {"ir": ir, "pq": pq, "factores": factores, "favorito": favorito_cache,
+                                      "goles": goles_c, "corners": corners_c, "tiros_porteria": tiros_c,
+                                      "lineas": lineas_c, "ranking_local": ranking_loc, "ranking_visitante": ranking_vis}
+                llm_data[llm_key] = llm_analysis_entry
+            _save_llm_to_file(file_key, ir, pq, factores, favorito_cache, "soccer",
+                              goles_c, corners_c, tiros_c, lineas_c,
+                              ranking_local=ranking_loc, ranking_visitante=ranking_vis)
+            # Save to XLSX for soccer
+            if g.get("id_partido"):
+                try:
+                    from futbol_bot.data_manager import guardar_llm_soccer
+                    guardar_llm_soccer(g["id_partido"], favorito_cache, ir, goles_c, corners_c, tiros_c,
+                                       porque=pq, factores=factores, lineas=lineas_c,
+                                       ranking_local=ranking_loc, ranking_visitante=ranking_vis)
+                except Exception:
+                    pass
+            continue
+
+        if not g.get("llm_ir_favorito"):
+            datos = {
+                "local": home,
+                "visitante": away,
+                "fecha": g.get("fecha_partido", g.get("game_date", today)),
+                "hora": g.get("hora_partido", ""),
+                "liga": liga,
+            }
+            if g.get("xg_total") and g["xg_total"] > 0:
+                datos["xG_total"] = round(g["xg_total"], 2)
+                datos["diff_xG"] = round(g["diff_xg"], 2)
+            if g.get("senal_ah0") and g["senal_ah0"] != "NO_APOSTAR":
+                datos["señal_AH0"] = g["senal_ah0"]
+            need_llm_soccer.append({"game": g, "key": key, "file_key": file_key, "partido": f"{home} vs {away} ({g.get('fecha_partido', g.get('game_date', today))})", "match_key": f"{home} vs {away}", "liga": liga, "datos": datos, "sport": "soccer", "id_partido": g.get("id_partido", "")})
+
+    # ── NFL ──
+    nfl_games = [g for g in games if g.get("liga") == "NFL" and g.get("game_id") and g.get("away") and g.get("home")]
+    need_llm_nfl = []
+    for g in nfl_games:
+        away = g.get("away", "")
+        home = g.get("home", "")
+        _gdate = g.get("game_date", today)
+        key = f"{_gdate}_NFL_{home}_{away}"
+        file_key = f"NFL_{_gdate}_{home}_{away}"
+        nba_match_key = f"{home} vs {away}"
+        llm_nfl_key = f"{_gdate}___NFL___{home}___{away}"
+        if file_key in llm_from_files:
+            entry = llm_from_files[file_key]
+            ir = entry.get("ir", "")
+            pq = entry.get("pq", "")
+            factores = entry.get("factores", [])
+            favorito_f = entry.get("favorito", "")
+            g["llm_ir_favorito"] = ir
+            g["llm_porque"] = pq
+            g["llm_factores"] = factores
+            if favorito_f:
+                g["llm_favorito"] = favorito_f
+            if llm_data is not None:
+                llm_analysis_entry = {"ir": ir, "pq": pq, "factores": factores, "favorito": favorito_f,
+                                      "spread": entry.get("spread"), "over_under": entry.get("over_under"),
+                                      "puntos_local": entry.get("puntos_local"), "puntos_visitante": entry.get("puntos_visitante"),
+                                      "ranking_local": entry.get("ranking_local", ""), "ranking_visitante": entry.get("ranking_visitante", ""),
+                                      "stats_comparison": entry.get("stats_comparison", {}), "jugadores_clave": entry.get("jugadores_clave", [])}
+                llm_data[llm_nfl_key] = llm_analysis_entry
+            cache[key] = entry
+            continue
+        if key in cache:
+            entry = cache[key]
+            ir = entry.get("ir", "")
+            pq = entry.get("pq", "")
+            factores = entry.get("factores", [])
+            favorito_f = entry.get("favorito", "")
+            g["llm_ir_favorito"] = ir
+            g["llm_porque"] = pq
+            g["llm_factores"] = factores
+            if favorito_f:
+                g["llm_favorito"] = favorito_f
+            if llm_data is not None:
+                llm_analysis_entry = {"ir": ir, "pq": pq, "factores": factores, "favorito": favorito_f,
+                                      "spread": entry.get("spread"), "over_under": entry.get("over_under"),
+                                      "puntos_local": entry.get("puntos_local"), "puntos_visitante": entry.get("puntos_visitante"),
+                                      "ranking_local": entry.get("ranking_local", ""), "ranking_visitante": entry.get("ranking_visitante", ""),
+                                      "stats_comparison": entry.get("stats_comparison", {}), "jugadores_clave": entry.get("jugadores_clave", [])}
+                llm_data[llm_nfl_key] = llm_analysis_entry
+            continue
+        if not g.get("llm_ir_favorito"):
+            datos = {
+                "local": home,
+                "visitante": away,
+                "fecha": _gdate,
+                "liga": "NFL",
+                "spread": g.get("spread_details", ""),
+                "over_under": g.get("over_under", ""),
+                "moneyline_home": g.get("ml_home", ""),
+                "moneyline_away": g.get("ml_away", ""),
+                "record_local": g.get("home_record", ""),
+                "record_visitante": g.get("away_record", ""),
+                "semana": g.get("week_num", 0),
+            }
+            need_llm_nfl.append({"game": g, "key": key, "file_key": file_key, "partido": f"{home} vs {away} ({_gdate})", "match_key": nba_match_key, "liga": "NFL", "datos": datos, "sport": "nfl"})
+
+    # ── NBA ──
+    nba_games = [g for g in games if g.get("game_id") and g.get("away") and g.get("home")]
+    need_llm_nba = []
+    for g in nba_games:
+        away = g.get("away", "")
+        home = g.get("home", "")
+        gliga = g.get("liga", "NBA")
+        liga_pref = "WNBA" if gliga == "WNBA" else "NBA"
+        _gdate = g.get('game_date', today)
+        key = f"{_gdate}_{liga_pref}_{home}_{away}"
+        file_key = f"{liga_pref}_{_gdate}_{home}_{away}"
+        nba_match_key = f"{home} vs {away}"
+        llm_nba_key = f"{g.get('game_date', today)}___{liga_pref}___{home}___{away}"
+
+        if file_key in llm_from_files:
+            entry = llm_from_files[file_key]
+            ir = entry.get("ir", "")
+            pq = entry.get("pq", "")
+            factores = entry.get("factores", [])
+            favorito_f = entry.get("favorito", "")
+            g["llm_ir_favorito"] = ir
+            g["llm_porque"] = pq
+            g["llm_factores"] = factores
+            _apply_nba_llm_fields(g, entry)
+            for fld, dfl in [("llm_puntos_local",0),("llm_puntos_visitante",0),("llm_spread",0.0),
+                             ("llm_confianza_ou",0),("llm_linea_ou",0.0),("llm_b2b_impacto",""),
+                             ("llm_lesion_clave",""),("llm_jugadores_clave",[]),
+                             ("llm_anotadores",[]),("llm_defensores",[]),("llm_armadores",[]),
+                             ("llm_ranking_local",""),("llm_ranking_visitante",""),
+                             ("llm_stats_comparison",{}),("llm_lineas_ou",{}),
+                             ("llm_favorito","")]:
+                g.setdefault(fld, dfl)
+            if favorito_f:
+                g["llm_favorito"] = favorito_f
+            if llm_data is not None:
+                llm_data[llm_nba_key] = _build_nba_llm_entry(ir, pq, factores, favorito_f, entry)
+            cache[key] = _build_nba_llm_entry(ir, pq, factores, favorito_f, entry)
+            # Migrate old entries that lack new enriched fields
+            if g.get("llm_anotadores") is None or (isinstance(g.get("llm_anotadores"), list) and len(g["llm_anotadores"]) == 0):
+                need_llm_nba.append({"game": g, "key": key, "file_key": file_key, "partido": f"{home} vs {away} ({g.get('game_date', today)})", "match_key": nba_match_key, "liga": liga_pref, "datos": {}, "sport": "nba"})
+            continue
+
+        if key in cache:
+            ir = cache[key].get("ir", "")
+            pq = cache[key].get("pq", "")
+            factores = cache[key].get("factores", [])
+            favorito_cache = cache[key].get("favorito", "")
+            g["llm_ir_favorito"] = ir
+            g["llm_porque"] = pq
+            g["llm_factores"] = factores
+            _apply_nba_llm_fields(g, cache[key])
+            for fld, dfl in [("llm_puntos_local",0),("llm_puntos_visitante",0),("llm_spread",0.0),
+                             ("llm_confianza_ou",0),("llm_linea_ou",0.0),("llm_b2b_impacto",""),
+                             ("llm_lesion_clave",""),("llm_jugadores_clave",[]),
+                             ("llm_anotadores",[]),("llm_defensores",[]),("llm_armadores",[]),
+                             ("llm_ranking_local",""),("llm_ranking_visitante",""),
+                             ("llm_stats_comparison",{}),("llm_lineas_ou",{})]:
+                g.setdefault(fld, dfl)
+            if favorito_cache:
+                g["llm_favorito"] = favorito_cache
+            if llm_data is not None:
+                llm_data[llm_nba_key] = _build_nba_llm_entry(ir, pq, factores, favorito_cache, cache[key])
+            _save_llm_to_file(file_key, ir, pq, factores, favorito_cache, "nba",
+                              puntos_local=g.get("llm_puntos_local"),
+                              puntos_visitante=g.get("llm_puntos_visitante"),
+                              spread=g.get("llm_spread"),
+                              confianza_ou=g.get("llm_confianza_ou"),
+                              linea_ou=g.get("llm_linea_ou"),
+                              b2b_impacto=g.get("llm_b2b_impacto"),
+                              lesion_clave=g.get("llm_lesion_clave"),
+                              jugadores_clave=g.get("llm_jugadores_clave", []),
+                              anotadores=g.get("llm_anotadores", []),
+                              defensores=g.get("llm_defensores", []),
+                              armadores=g.get("llm_armadores", []),
+                              ranking_local=g.get("llm_ranking_local", ""),
+                              ranking_visitante=g.get("llm_ranking_visitante", ""),
+                              stats_comparison=g.get("llm_stats_comparison", {}),
+                               lineas_ou=g.get("llm_lineas_ou", {}))
+            # Migrate old entries that lack new enriched fields
+            if g.get("llm_anotadores") is None or (isinstance(g.get("llm_anotadores"), list) and len(g["llm_anotadores"]) == 0):
+                need_llm_nba.append({"game": g, "key": key, "file_key": file_key, "partido": f"{home} vs {away} ({g.get('game_date', today)})", "match_key": nba_match_key, "liga": liga_pref, "datos": {}, "sport": "nba"})
+            continue
+
+        if not g.get("llm_ir_favorito") or g.get("llm_anotadores") is None or (isinstance(g.get("llm_anotadores"), list) and len(g["llm_anotadores"]) == 0):
+            datos = {}
+            is_final = g.get("result") in ("win", "loss", "completed")
+            if not is_final:
+                if g.get("away_score") is not None and g.get("home_score") is not None:
+                    datos["marcador"] = f"{g['away_score']}-{g['home_score']}"
+                if g.get("state"):
+                    datos["estado"] = g["state"]
+                if g.get("result"):
+                    datos["resultado"] = g["result"]
+                datos["home_abbr"] = g.get("home_abbr", "")
+                datos["away_abbr"] = g.get("away_abbr", "")
+            need_llm_nba.append({"game": g, "key": key, "file_key": file_key, "partido": f"{home} vs {away} ({g.get('game_date', today)})", "match_key": nba_match_key, "liga": liga_pref, "datos": datos, "sport": "nba"})
+
+    # ── Enrich NBA LLM context with real team stats from ESPN ──
+    if need_llm_nba:
+        team_ctx = _fetch_basketball_team_context(need_llm_nba)
+        for item in need_llm_nba:
+            g = item["game"]
+            h = g.get("home", "")
+            a = g.get("away", "")
+            ctx_h = team_ctx.get(h, {})
+            ctx_a = team_ctx.get(a, {})
+            parts = []
+            if ctx_h.get("records") or ctx_a.get("records"):
+                parts.append(f"RÉCORDS — Local {h}: [{ctx_h.get('records', 'N/A')}] | Visitante {a}: [{ctx_a.get('records', 'N/A')}]")
+            if ctx_h.get("stats") or ctx_a.get("stats"):
+                parts.append(f"LOCAL {h} stats: {ctx_h.get('stats', 'N/A')}")
+                parts.append(f"VISITANTE {a} stats: {ctx_a.get('stats', 'N/A')}")
+            if ctx_h.get("leaders") or ctx_a.get("leaders"):
+                parts.append(f"LÍDERES {h}: {ctx_h.get('leaders', 'N/A')}")
+                parts.append(f"LÍDERES {a}: {ctx_a.get('leaders', 'N/A')}")
+            if parts:
+                item["datos"]["contexto"] = " | ".join(parts)
+
+    # ── LLM call (todos los deportes juntos) ──
+    all_need = need_llm_baseball + need_llm_soccer + need_llm_nba
+    if not all_need:
+        _save_llm_cache(cache)
+        return
+
+    try:
+        from llm_analyzer import analizar_partidos as llm_analizar
+        partidos = [{"partido": x["partido"], "liga": x["liga"], "datos": x.get("datos", {})} for x in all_need]
+        resultados = llm_analizar(partidos)
+
+        def _fuzzy_match_llm(llm_partido: str, match_key: str) -> bool:
+            """Match LLM result to game by checking if both team names appear in either order."""
+            llm_lower = llm_partido.lower()
+            mk_lower = match_key.lower()
+            if llm_lower == mk_lower:
+                return True
+            # Extract team names from "Team A vs Team B"
+            llm_parts = [p.strip() for p in llm_lower.split(" vs ")]
+            mk_parts = [p.strip() for p in mk_lower.split(" vs ")]
+            if len(llm_parts) == 2 and len(mk_parts) == 2:
+                # Check if team names match (substring match for partial names)
+                l0, l1 = llm_parts
+                m0, m1 = mk_parts
+                forward = (m0 in l0 or l0 in m0) and (m1 in l1 or l1 in m1)
+                reverse = (m0 in l1 or l1 in m0) and (m1 in l0 or l0 in m1)
+                return forward or reverse
+            return False
+
+        used_results = set()
+        for item in all_need:
+            for ri, r in enumerate(resultados):
+                if ri in used_results:
+                    continue
+                if _fuzzy_match_llm(r.get("partido", ""), item.get("match_key", item["partido"])):
+                    used_results.add(ri)
+                    ir = r.get("ir_con_favorito", "N/D")
+                    pq = r.get("porque", "")
+                    factores = r.get("factores", [])
+                    favorito_llm = r.get("favorito", "")
+                    goles = r.get("goles_esperados", "")
+                    corners = r.get("corners_esperados", 0)
+                    tiros = r.get("tiros_porteria", [])
+                    goles_lineas = r.get("goles_lineas", {})
+                    corners_lineas = r.get("corners_lineas", {})
+                    lineas = {"goles": goles_lineas, "corners": corners_lineas}
+                    item["game"]["llm_ir_favorito"] = ir
+                    item["game"]["llm_porque"] = pq
+                    item["game"]["llm_factores"] = factores
+                    item["game"]["llm_goles"] = goles
+                    item["game"]["llm_corners_est"] = corners
+                    item["game"]["llm_tiros_porteria"] = tiros
+                    item["game"]["llm_lineas"] = lineas
+                    if favorito_llm:
+                        item["game"]["llm_favorito"] = favorito_llm
+                    # NBA-specific fields
+                    if item["sport"] == "nba":
+                        item["game"]["llm_puntos_local"] = r.get("puntos_local")
+                        item["game"]["llm_puntos_visitante"] = r.get("puntos_visitante")
+                        item["game"]["llm_spread"] = r.get("spread_estimado")
+                        item["game"]["llm_confianza_ou"] = r.get("confianza_over_under")
+                        item["game"]["llm_linea_ou"] = r.get("linea_over_under")
+                        item["game"]["llm_b2b_impacto"] = r.get("b2b_impacto", "")
+                        item["game"]["llm_lesion_clave"] = r.get("lesion_clave", "")
+                        item["game"]["llm_jugadores_clave"] = r.get("jugadores_clave", [])
+                        item["game"]["llm_anotadores"] = r.get("anotadores", [])
+                        item["game"]["llm_defensores"] = r.get("defensores", [])
+                        item["game"]["llm_armadores"] = r.get("armadores", [])
+                        item["game"]["llm_ranking_local"] = r.get("ranking_local", "")
+                        item["game"]["llm_ranking_visitante"] = r.get("ranking_visitante", "")
+                        item["game"]["llm_stats_comparison"] = r.get("stats_comparison", {})
+                        item["game"]["llm_lineas_ou"] = r.get("lineas_ou", {})
+                    # Baseball-specific fields
+                    if item["sport"] == "baseball":
+                        item["game"]["llm_carreras"] = r.get("carreras_esperadas", "")
+                        item["game"]["llm_carreras_lineas"] = r.get("carreras_lineas", {})
+                        item["game"]["llm_ranking_local"] = r.get("ranking_local", "")
+                        item["game"]["llm_ranking_visitante"] = r.get("ranking_visitante", "")
+                        item["game"]["llm_abridor_local"] = r.get("abridor_local", "")
+                        item["game"]["llm_abridor_visitante"] = r.get("abridor_visitante", "")
+                        item["game"]["llm_bateadores_clave"] = r.get("bateadores_clave", [])
+                        item["game"]["llm_relevo_local"] = r.get("relevo_local", "")
+                        item["game"]["llm_relevo_visitante"] = r.get("relevo_visitante", "")
+                    cache[item["key"]] = {"ir": ir, "pq": pq, "factores": factores, "favorito": favorito_llm,
+                                          "goles": goles, "corners": corners, "tiros_porteria": tiros,
+                                          "lineas": lineas}
+                    if item["sport"] == "nba":
+                        cache[item["key"]].update({
+                            "jugadores_clave": item["game"].get("llm_jugadores_clave", []),
+                            "anotadores": item["game"].get("llm_anotadores", []),
+                            "defensores": item["game"].get("llm_defensores", []),
+                            "armadores": item["game"].get("llm_armadores", []),
+                            "ranking_local": item["game"].get("llm_ranking_local", ""),
+                            "ranking_visitante": item["game"].get("llm_ranking_visitante", ""),
+                            "stats_comparison": item["game"].get("llm_stats_comparison", {}),
+                            "lineas_ou": item["game"].get("llm_lineas_ou", {}),
+                        })
+                    # Guardar a archivo persistente
+                    extra_kw = {}
+                    if item["sport"] == "baseball":
+                        extra_kw = {
+                            "carreras_esperadas": item["game"].get("llm_carreras", ""),
+                            "ranking_local": item["game"].get("llm_ranking_local", ""),
+                            "ranking_visitante": item["game"].get("llm_ranking_visitante", ""),
+                            "abridor_local": item["game"].get("llm_abridor_local", ""),
+                            "abridor_visitante": item["game"].get("llm_abridor_visitante", ""),
+                            "bateadores_clave": item["game"].get("llm_bateadores_clave", []),
+                            "relevo_local": item["game"].get("llm_relevo_local", ""),
+                            "relevo_visitante": item["game"].get("llm_relevo_visitante", ""),
+                        }
+                    elif item["sport"] in ("nba", "nfl"):
+                        extra_kw = {
+                            "ranking_local": item["game"].get("llm_ranking_local", ""),
+                            "ranking_visitante": item["game"].get("llm_ranking_visitante", ""),
+                        }
+                    _save_llm_to_file(item["file_key"], ir, pq, factores, favorito_llm, item["sport"],
+                                      goles, corners, tiros,
+                                      item["game"].get("llm_carreras_lineas", {}) if item["sport"] == "baseball" else lineas,
+                                      puntos_local=item["game"].get("llm_puntos_local"),
+                                      puntos_visitante=item["game"].get("llm_puntos_visitante"),
+                                      spread=item["game"].get("llm_spread"),
+                                      confianza_ou=item["game"].get("llm_confianza_ou"),
+                                      linea_ou=item["game"].get("llm_linea_ou"),
+                                      b2b_impacto=item["game"].get("llm_b2b_impacto"),
+                                      lesion_clave=item["game"].get("llm_lesion_clave"),
+                                      jugadores_clave=item["game"].get("llm_jugadores_clave", []) if item["sport"] in ("nba", "nfl") else [],
+                                      anotadores=item["game"].get("llm_anotadores", []) if item["sport"] == "nba" else None,
+                                      defensores=item["game"].get("llm_defensores", []) if item["sport"] == "nba" else None,
+                                      armadores=item["game"].get("llm_armadores", []) if item["sport"] == "nba" else None,
+                                      stats_comparison=item["game"].get("llm_stats_comparison", {}) if item["sport"] in ("nba", "nfl") else None,
+                                      lineas_ou=item["game"].get("llm_lineas_ou", {}) if item["sport"] == "nba" else None,
+                                      **extra_kw)
+                    # Guardar a CSV para béisbol (MLB/LMB)
+                    if item["sport"] == "baseball":
+                        _save_llm_to_csv(ir, pq, factores, item["game"])
+                    # Guardar a XLSX para fútbol
+                    if item["sport"] == "soccer" and item.get("id_partido"):
+                        try:
+                            from futbol_bot.data_manager import guardar_llm_soccer
+                            guardar_llm_soccer(item["id_partido"], favorito_llm, ir, goles, corners, tiros, pq, factores, lineas)
+                        except Exception as e:
+                            logger.warning(f"Error guardando LLM en XLSX soccer: {e}")
+                    # Guardar a XLSX para basketball (NBA/WNBA)
+                    if item["sport"] == "nba" and item["game"].get("game_id"):
+                        try:
+                            gliga = item["game"].get("liga", "NBA")
+                            ghome = item["game"].get("home", "")
+                            gaway = item["game"].get("away", "")
+                            from basquetbol_bot.data_manager import guardar_llm_xlsx
+                            guardar_llm_xlsx(
+                                item["game"]["game_id"], gliga, ghome, gaway,
+                                favorito_llm, ir,
+                                r.get("spread_estimado"), r.get("confianza_over_under"),
+                                r.get("linea_over_under"),
+                                r.get("puntos_local"), r.get("puntos_visitante"),
+                                r.get("b2b_impacto", ""), r.get("lesion_clave", ""),
+                                pq, factores,
+                                ranking_local=r.get("ranking_local", ""),
+                                ranking_visitante=r.get("ranking_visitante", ""),
+                                stats_comparison=r.get("stats_comparison"),
+                                anotadores=r.get("anotadores"),
+                                defensores=r.get("defensores"),
+                                armadores=r.get("armadores"),
+                                lineas_ou=r.get("lineas_ou"),
+                            )
+                        except Exception as e:
+                            logger.warning(f"Error guardando LLM en XLSX basketball: {e}")
+                    if llm_data is not None:
+                        team = item["game"].get("local") or item["game"].get("home", "")
+                        base_entry = {"ir": ir, "pq": pq, "factores": factores, "favorito": favorito_llm,
+                                      "goles": goles, "corners": corners, "tiros_porteria": tiros,
+                                      "lineas": lineas}
+                        if item["sport"] == "nba":
+                            gliga = item["game"].get("liga", "NBA")
+                            liga_p = "WNBA" if gliga == "WNBA" else "NBA"
+                            llm_key = f"{item['game'].get('game_date', today)}___{liga_p}___{item['game'].get('home','')}___{item['game'].get('away','')}"
+                            base_entry.update({
+                                "puntos_local": item["game"].get("llm_puntos_local"),
+                                "puntos_visitante": item["game"].get("llm_puntos_visitante"),
+                                "spread": item["game"].get("llm_spread"),
+                                "confianza_ou": item["game"].get("llm_confianza_ou"),
+                                "linea_ou": item["game"].get("llm_linea_ou"),
+                                "b2b_impacto": item["game"].get("llm_b2b_impacto"),
+                                "lesion_clave": item["game"].get("llm_lesion_clave"),
+                                "jugadores_clave": item["game"].get("llm_jugadores_clave", []),
+                                "anotadores": item["game"].get("llm_anotadores", []),
+                                "defensores": item["game"].get("llm_defensores", []),
+                                "armadores": item["game"].get("llm_armadores", []),
+                                "ranking_local": item["game"].get("llm_ranking_local", ""),
+                                "ranking_visitante": item["game"].get("llm_ranking_visitante", ""),
+                                "stats_comparison": item["game"].get("llm_stats_comparison", {}),
+                                "lineas_ou": item["game"].get("llm_lineas_ou", {}),
+                            })
+                            llm_data[llm_key] = base_entry
+                        elif item["sport"] == "baseball":
+                            llm_key = f"{item['game'].get('game_date', today)}___{item['liga']}___{item['game'].get('home_team', item['game'].get('fav_team',''))}___{item['game'].get('away_team', item['game'].get('opp_team',''))}"
+                            base_entry.update({
+                                "carreras_esperadas": item["game"].get("llm_carreras", ""),
+                                "carreras_lineas": item["game"].get("llm_carreras_lineas", {}),
+                                "ranking_local": item["game"].get("llm_ranking_local", ""),
+                                "ranking_visitante": item["game"].get("llm_ranking_visitante", ""),
+                                "abridor_local": item["game"].get("llm_abridor_local", ""),
+                                "abridor_visitante": item["game"].get("llm_abridor_visitante", ""),
+                                "bateadores_clave": item["game"].get("llm_bateadores_clave", []),
+                                "relevo_local": item["game"].get("llm_relevo_local", ""),
+                                "relevo_visitante": item["game"].get("llm_relevo_visitante", ""),
+                            })
+                            llm_data[llm_key] = base_entry
+                        elif item["sport"] == "soccer":
+                            llm_key = f"{item['game'].get('fecha_partido', item['game'].get('game_date', today))}___{item['game'].get('local','')}___{item['game'].get('visitante','')}"
+                            llm_data[llm_key] = base_entry
+                        elif item["sport"] == "nfl":
+                            llm_key = f"{item['game'].get('game_date', today)}___NFL___{item['game'].get('home','')}___{item['game'].get('away','')}"
+                            base_entry.update({
+                                "spread": r.get("spread_estimado"),
+                                "confianza_spread": r.get("confianza_spread"),
+                                "over_under": r.get("over_under"),
+                                "confianza_ou": r.get("confianza_ou"),
+                                "puntos_local": r.get("puntos_local"),
+                                "puntos_visitante": r.get("puntos_visitante"),
+                                "ranking_local": r.get("ranking_local", ""),
+                                "ranking_visitante": r.get("ranking_visitante", ""),
+                                "stats_comparison": r.get("stats_comparison", {}),
+                                "jugadores_clave": r.get("jugadores_clave", []),
+                            })
+                            llm_data[llm_key] = base_entry
+                            _apply_nba_llm_fields(item["game"], base_entry)
+                        else:
+                            llm_data[team] = base_entry
+                    total_inyectado += 1
+                    break
+
+        _save_llm_cache(cache)
+        logger.info(f"LLM inyectado: {total_inyectado} juegos (béisbol + fútbol + NBA + NFL)")
+    except ImportError:
+        logger.info("LLM no disponible — omitiendo")
+    except Exception as e:
+        logger.error(f"Error LLM: {e}")
+
+
+def _build_data(skip_llm: bool = False) -> dict:
+    """Construye el JSON con partidos + stats para la Mini App.
+       skip_llm=True omite el contra-análisis LLM (más rápido)."""
     from datetime import timedelta
     hoy       = datetime.now()
     ayer      = hoy - timedelta(days=1)
@@ -287,10 +1546,11 @@ def _build_data() -> dict:
     hoy_str    = hoy.strftime("%Y-%m-%d")
     ayer_str   = ayer.strftime("%Y-%m-%d")
     anteayer_str = anteayer.strftime("%Y-%m-%d")
-    fechas     = {hoy_str, ayer_str, anteayer_str}
 
+    # ESPN scoreboard solo para días recientes (live data)
+    fechas_espn = {hoy_str, ayer_str, anteayer_str}
     espn_games = []
-    for f in fechas:
+    for f in fechas_espn:
         espn_games += _get_espn_scoreboard(f)
 
     # Indexar seguimiento para cruzar
@@ -332,7 +1592,7 @@ def _build_data() -> dict:
     def _process_csv_row(_row: dict):
         nonlocal games, seen
         csv_fecha = _csv_date_to_iso(_row.get("fecha_hora", ""))
-        if csv_fecha not in fechas:
+        if not csv_fecha:
             return
         away_csv = _row.get("equipo_visitante", "").strip()
         home_csv = _row.get("equipo_local", "").strip()
@@ -386,9 +1646,14 @@ def _build_data() -> dict:
                 "score_fav": str(s_fav), "score_opp": str(s_opp),
                 "state": state,
                 "result": "win" if es_acertado else "loss" if resultado_csv == "fallido" else "completed",
+                "home_team": home_csv, "away_team": away_csv,
             }
         g["label"] = label
         g["game_date"] = csv_fecha
+        g["llm_ir_favorito"] = _row.get("llm_ir_favorito", "")
+        g["llm_porque"] = _row.get("llm_porque", "")
+        g["llm_factores"] = _row.get("llm_factores", "")
+        g["resultado_llm"] = _row.get("resultado_llm", "")
         games.append(g)
         seen.add(key)
 
@@ -407,8 +1672,6 @@ def _build_data() -> dict:
         away     = sg.get("away_team", "")
         home     = sg.get("home_team", "")
         fecha    = sg.get("game_date", "")[:10]
-        if fecha not in fechas:
-            continue
         key_sg = _make_key(fecha, away, home)
         if key_sg in seen:
             continue
@@ -454,6 +1717,7 @@ def _build_data() -> dict:
                 "score_fav": s_fav, "score_opp": s_opp,
                 "state": state,
                 "result": "pending",
+                "home_team": home, "away_team": away,
             }
 
         g["label"] = label
@@ -498,6 +1762,19 @@ def _build_data() -> dict:
     # Ordenar partidos por fecha (más reciente primero) y dentro de cada fecha por label
     games.sort(key=lambda x: (x.get("game_date", ""), {"🎯":0,"📋":1}.get(x.get("label",""), 2)))
 
+    # ── Team logo URLs ──
+    ESPN_LOGO_TMPL = "https://a.espncdn.com/combiner/i?img=/i/teamlogos/{liga}/500/{abbr}.png&h=40&w=40"
+    for g in games:
+        liga = (g.get("liga", "MLB") or "MLB").upper()
+        if liga not in ("MLB",):
+            continue
+        fav_abbr = g.get("fav_abbr", "")
+        opp_abbr = g.get("opp_abbr", "")
+        if fav_abbr:
+            g["fav_logo"] = ESPN_LOGO_TMPL.format(liga="mlb", abbr=fav_abbr)
+        if opp_abbr:
+            g["opp_logo"] = ESPN_LOGO_TMPL.format(liga="mlb", abbr=opp_abbr)
+
     # Extraer fechas disponibles ordenadas (más reciente primero)
     dias_set = set()
     for g in games:
@@ -509,6 +1786,12 @@ def _build_data() -> dict:
     stats = dm.obtener_estadisticas()
     stats_mlb = dm.obtener_estadisticas(liga="MLB")
     stats_lmb = dm.obtener_estadisticas(liga="LMB")
+
+    # LLM stats per sport
+    llm_mlb = dm.obtener_estadisticas_llm(liga="MLB")
+    llm_lmb = dm.obtener_estadisticas_llm(liga="LMB")
+    llm_nba = dm.obtener_estadisticas_llm(liga="NBA")
+    llm_nfl = dm.obtener_estadisticas_llm(liga="NFL")
 
     # Stats por rango de fecha para filtros del frontend
     hoy = date.today()
@@ -579,6 +1862,10 @@ def _build_data() -> dict:
             "valor_ok": s["valor_ok"],
             "valor_total": s["valor_total"],
             "valor_rate": s["valor_rate"],
+            "llm_total": s.get("llm_total", 0),
+            "llm_acertados": s.get("llm_acertados", 0),
+            "llm_fallidos": s.get("llm_fallidos", 0),
+            "llm_win_rate": s.get("llm_win_rate", 0),
         }
 
     has_live = any(g.get("result") == "live" for g in games)
@@ -606,7 +1893,130 @@ def _build_data() -> dict:
                 "linescore": ls,
             }
 
-    return {
+    # ── Basketball data (NBA + WNBA) ──
+    basketball_espn_games = []
+    for sport in ("nba", "wnba"):
+        for f in fechas_espn:
+            basketball_espn_games += _get_espn_basketball_scoreboard(f, sport)
+    nba_games = []
+    wnba_games = []
+    for eg in basketball_espn_games:
+        gliga = eg.get("liga", "NBA")
+        g = {
+            "game_date": eg["game_date"],
+            "game_id": str(eg.get("espn_pk", "")),
+            "status_emoji": eg["status_emoji"],
+            "home": eg["h_name"],
+            "away": eg["a_name"],
+            "home_abbr": eg.get("h_abbr", ""),
+            "away_abbr": eg.get("a_abbr", ""),
+            "home_score": eg["h_runs"],
+            "away_score": eg["a_runs"],
+            "home_linescores": eg.get("h_linescores", []),
+            "away_linescores": eg.get("a_linescores", []),
+            "clock": eg.get("clock", ""),
+            "period": eg.get("period", 0),
+            "state": eg["state"],
+            "result": eg["result"],
+            "liga": gliga,
+        }
+        if gliga == "WNBA":
+            wnba_games.append(g)
+        else:
+            nba_games.append(g)
+    # ── Basketball team logo URLs ──
+    NBA_LOGO_TMPL = "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/{abbr}.png&h=40&w=40"
+    WNBA_LOGO_TMPL = "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/{abbr}.png&h=40&w=40"
+    for ng in nba_games:
+        if ng.get("home_abbr"):
+            ng["home_logo"] = NBA_LOGO_TMPL.format(abbr=ng["home_abbr"])
+        if ng.get("away_abbr"):
+            ng["away_logo"] = NBA_LOGO_TMPL.format(abbr=ng["away_abbr"])
+    for ng in wnba_games:
+        if ng.get("home_abbr"):
+            ng["home_logo"] = WNBA_LOGO_TMPL.format(abbr=ng["home_abbr"])
+        if ng.get("away_abbr"):
+            ng["away_logo"] = WNBA_LOGO_TMPL.format(abbr=ng["away_abbr"])
+
+    # ── NFL data ──
+    nfl_espn_games = []
+    for f in fechas_espn:
+        nfl_espn_games += _get_espn_nfl_scoreboard(f)
+    nfl_games = []
+    for eg in nfl_espn_games:
+        g = {
+            "game_date": eg["game_date"],
+            "game_id": str(eg.get("espn_pk", "")),
+            "status_emoji": eg["status_emoji"],
+            "home": eg["h_name"],
+            "away": eg["a_name"],
+            "home_abbr": eg.get("h_abbr", ""),
+            "away_abbr": eg.get("a_abbr", ""),
+            "home_score": eg["h_score"],
+            "away_score": eg["a_score"],
+            "clock": eg.get("clock", ""),
+            "period": eg.get("period", 0),
+            "state": eg["quarter_label"],
+            "result": eg["result"],
+            "liga": "NFL",
+            "spread_details": eg.get("spread_details", ""),
+            "over_under": eg.get("over_under", ""),
+            "ml_home": eg.get("ml_home", ""),
+            "ml_away": eg.get("ml_away", ""),
+            "home_record": eg.get("h_record", ""),
+            "away_record": eg.get("a_record", ""),
+            "week_num": eg.get("week_num", 0),
+            "season_year": eg.get("season_year", 0),
+            "season_type": eg.get("season_type", 0),
+        }
+        nfl_games.append(g)
+    NFL_LOGO_TMPL = "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/{abbr}.png&h=40&w=40"
+    for ng in nfl_games:
+        if ng.get("home_abbr"):
+            ng["home_logo"] = NFL_LOGO_TMPL.format(abbr=ng["home_abbr"])
+        if ng.get("away_abbr"):
+            ng["away_logo"] = NFL_LOGO_TMPL.format(abbr=ng["away_abbr"])
+
+    # ── Soccer data ──
+    bot_dir = os.path.dirname(os.path.abspath(__file__))
+    soccer_local_path = os.path.join(bot_dir, "soccer_data.json")
+    soccer_games = []
+    if os.path.exists(soccer_local_path):
+        try:
+            with open(soccer_local_path, "r", encoding="utf-8") as f:
+                soccer_data = json.load(f)
+            soccer_games = soccer_data.get("games", [])
+        except Exception as e:
+            logger.warning(f"Error cargando soccer_data.json: {e}")
+
+    # ── LLM contra-análisis para todos los deportes (desde cache o en vivo) ──
+    llm_data = {}
+    # Preserve existing NBA/WNBA LLM entries from current live_data.json
+    _existing_llm = {}
+    try:
+        existing_live_path = os.path.join(bot_dir, "live_data.json")
+        if os.path.exists(existing_live_path):
+            with open(existing_live_path, "r", encoding="utf-8") as f:
+                existing_data = json.load(f)
+            for k, v in (existing_data.get("llm_analysis") or {}).items():
+                if "NBA" in k or "WNBA" in k:
+                    llm_data[k] = v
+                    _existing_llm[k] = v
+    except Exception:
+        pass
+    # Apply preserved NBA/WNBA LLM fields to freshly built game objects
+    for _g in nba_games + wnba_games:
+        _gliga = (_g.get("liga") or "NBA")
+        if _gliga == "WNBA":
+            _gliga = "WNBA"
+        _lk = _g.get("game_date", "") + "___" + _gliga + "___" + _g.get("home", "") + "___" + _g.get("away", "")
+        if _lk in _existing_llm:
+            _apply_nba_llm_fields(_g, _existing_llm[_lk])
+    if not skip_llm:
+        all_games_for_llm = games + nba_games + wnba_games + soccer_games + nfl_games
+        _inject_llm_analysis(all_games_for_llm, llm_data)
+
+    data = {
         "fecha": ahora,
         "proxima_actualizacion": prox_actualizacion,
         "proxima_actualizacion_lmb": prox_actualizacion_lmb,
@@ -636,7 +2046,39 @@ def _build_data() -> dict:
         "stats_por_fecha": {k: _build_stats(v) for k, v in stats_por_fecha.items()},
         "stats_por_fecha_mlb": {k: _build_stats(v) for k, v in stats_por_fecha_mlb.items()},
         "stats_por_fecha_lmb": {k: _build_stats(v) for k, v in stats_por_fecha_lmb.items()},
+        "hits_board": _build_hits_board(live_games=live_data),
+        "llm_analysis": llm_data,
+        "llm_by_sport": {
+            "MLB": llm_mlb,
+            "LMB": llm_lmb,
+            "NBA": llm_nba,
+            "NFL": llm_nfl,
+        },
+        "nba_games": nba_games,
+        "wnba_games": wnba_games,
+        "nfl_games": nfl_games,
     }
+
+    # hits_llm: preservar existente o generar automáticamente
+    live_json_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "live_data.json")
+    try:
+        if os.path.exists(live_json_path):
+            with open(live_json_path, encoding="utf-8") as _f:
+                _existing = json.load(_f)
+            if "hits_llm" in _existing:
+                data["hits_llm"] = _existing["hits_llm"]
+        if "hits_llm" not in data or not data["hits_llm"]:
+            try:
+                from generar_hits_xlsx import ejecutar_hits_llm
+                hits_llm = ejecutar_hits_llm()
+                if hits_llm:
+                    data["hits_llm"] = hits_llm
+            except Exception as e:
+                logger.warning(f"No se pudo generar hits_llm automático: {e}")
+    except Exception:
+        pass
+
+    return data
 
 
 def _actualizar_datos_en_html(data: dict) -> str:
@@ -768,20 +2210,21 @@ def publicar() -> bool:
     os.chdir(bot_dir)
     miniapp_dir = os.path.join(bot_dir, "miniapp")
 
-    railway_tpl = os.path.join(bot_dir, "railway_app", "templates", "index.html")
-    if os.path.exists(railway_tpl):
-        with open(railway_tpl, "r", encoding="utf-8") as f:
-            html = f.read()
-    else:
-        html = generar_html()
+    html = generar_html()
 
     ok_index = pushear_a_github(html)
 
     try:
         data = _build_data()
         live_json = json.dumps(data, ensure_ascii=False, indent=2)
-        with open(os.path.join(bot_dir, "live_data.json"), "w", encoding="utf-8") as f:
+        live_path = os.path.join(bot_dir, "live_data.json")
+        with open(live_path, "w", encoding="utf-8") as f:
             f.write(live_json)
+        # Copiar a docs/ para GitHub Pages si existe
+        docs_path = os.path.join(bot_dir, "docs", "live_data.json")
+        if os.path.isdir(os.path.join(bot_dir, "docs")):
+            import shutil
+            shutil.copy2(live_path, docs_path)
         pushear_archivo("live_data.json", live_json, "Actualizar live_data.json")
     except Exception as e:
         logger.error(f"Error generando live_data.json: {e}")
@@ -792,9 +2235,20 @@ def publicar() -> bool:
             import shutil
             dst = os.path.join(bot_dir, "soccer_data.json")
             shutil.copy2(soccer_path, dst)
-            with open(soccer_path, "r", encoding="utf-8") as f:
-                soccer_json = f.read()
+            with open(dst, "r", encoding="utf-8") as f:
+                soccer_data = json.load(f)
+            soccer_games = soccer_data.get("games", [])
+            soccer_llm = {}
+            _inject_llm_analysis(soccer_games, soccer_llm)
+            soccer_data["llm_analysis"] = soccer_llm
+            with open(dst, "w", encoding="utf-8") as f:
+                json.dump(soccer_data, f, ensure_ascii=False, indent=2)
+            docs_soccer = os.path.join(bot_dir, "docs", "soccer_data.json")
+            if os.path.isdir(os.path.join(bot_dir, "docs")):
+                shutil.copy2(dst, docs_soccer)
+            soccer_json = json.dumps(soccer_data, ensure_ascii=False, indent=2)
             pushear_archivo("soccer_data.json", soccer_json, "Actualizar soccer_data.json")
+            pushear_archivo("docs/soccer_data.json", soccer_json, "Actualizar docs/soccer_data.json")
         except Exception as e:
             logger.error(f"Error subiendo soccer_data.json: {e}")
 
@@ -812,7 +2266,7 @@ def publicar() -> bool:
         if os.path.exists(os.path.join(bot_dir, "soccer_data.json")):
             files.append("soccer_data.json")
         for f in ("index.html", "privacy.html", "terms.html"):
-            ruta = os.path.join(miniapp_dir, f) if f != "index.html" else railway_tpl
+            ruta = os.path.join(miniapp_dir, f)
             if os.path.exists(ruta):
                 import shutil
                 dst = os.path.join(bot_dir, f)
@@ -832,17 +2286,44 @@ def publicar_live_data() -> bool:
     try:
         data = _build_data()
         live_json = json.dumps(data, ensure_ascii=False, indent=2)
-        with open(os.path.join(bot_dir, "live_data.json"), "w", encoding="utf-8") as f:
+        live_path = os.path.join(bot_dir, "live_data.json")
+        with open(live_path, "w", encoding="utf-8") as f:
             f.write(live_json)
+        # Copiar a docs/ para GitHub Pages si existe
+        docs_path = os.path.join(bot_dir, "docs", "live_data.json")
+        if os.path.isdir(os.path.join(bot_dir, "docs")):
+            import shutil
+            shutil.copy2(live_path, docs_path)
         ok_live = pushear_archivo("live_data.json", live_json, "Update live scores")
+
+        # Soccer: copiar, inyectar LLM y subir
         soccer_path = os.path.join(config.FUTBOL_DIR, "soccer_data.json")
+        soccer_local = os.path.join(bot_dir, "soccer_data.json")
         if os.path.exists(soccer_path):
             import shutil
-            dst = os.path.join(bot_dir, "soccer_data.json")
-            shutil.copy2(soccer_path, dst)
-            with open(soccer_path, "r", encoding="utf-8") as f:
-                soccer_json = f.read()
+            shutil.copy2(soccer_path, soccer_local)
+        if os.path.exists(soccer_local):
+            try:
+                with open(soccer_local, "r", encoding="utf-8") as f:
+                    soccer_data = json.load(f)
+                soccer_games = soccer_data.get("games", [])
+                soccer_llm = {}
+                _inject_llm_analysis(soccer_games, soccer_llm)
+                soccer_data["llm_analysis"] = soccer_llm
+                with open(soccer_local, "w", encoding="utf-8") as f:
+                    json.dump(soccer_data, f, ensure_ascii=False, indent=2)
+                # Copiar a docs/ DESPUÉS de inyectar LLM
+                docs_soccer = os.path.join(bot_dir, "docs", "soccer_data.json")
+                if os.path.isdir(os.path.join(bot_dir, "docs")):
+                    import shutil
+                    shutil.copy2(soccer_local, docs_soccer)
+                soccer_json = json.dumps(soccer_data, ensure_ascii=False, indent=2)
+            except Exception as e:
+                logger.warning(f"Error inyectando LLM en soccer: {e}")
+                with open(soccer_local, "r", encoding="utf-8") as f:
+                    soccer_json = f.read()
             ok_soccer = pushear_archivo("soccer_data.json", soccer_json, "Update soccer data")
+            pushear_archivo("docs/soccer_data.json", soccer_json, "Update docs/soccer data")
         else:
             ok_soccer = True
     except Exception as e:
@@ -857,4 +2338,18 @@ def publicar_live_data() -> bool:
         git_ok = _git_push_fallback(files, "Update live scores via git")
         return git_ok
 
+    # Backup llm_persistent.json a GitHub
+    try:
+        backup_path = os.path.join(bot_dir, "llm_persistent.json")
+        if os.path.exists(backup_path):
+            with open(backup_path, "r", encoding="utf-8") as f:
+                backup_content = f.read()
+            pushear_archivo("llm_backup.json", backup_content, "Backup LLM persistent data")
+            logger.info("llm_persistent.json respaldado como llm_backup.json en GitHub")
+    except Exception as e:
+        logger.warning(f"Error respaldando llm_persistent.json: {e}")
+
     return True
+
+
+

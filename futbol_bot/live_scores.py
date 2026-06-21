@@ -102,7 +102,15 @@ def _parse_espn_event(event: dict) -> list:
     status = comp.get("status", {}).get("type", {})
     detail = status.get("detail", "")
     completed = status.get("completed", False)
-    event_date = event.get("date", "")[:10]
+    LOCAL_OFFSET = -6
+    ev_raw = event.get("date", "")
+    try:
+        from datetime import timedelta as _td
+        dt_utc = datetime.fromisoformat(ev_raw.replace("Z", "+00:00"))
+        dt_local = dt_utc + _td(hours=LOCAL_OFFSET)
+        event_date = dt_local.strftime("%Y-%m-%d")
+    except Exception:
+        event_date = ev_raw[:10]
 
     competitors = comp.get("competitors", [])
     home = next((c for c in competitors if c.get("homeAway") == "home"), {})
@@ -245,6 +253,8 @@ def actualizar_resultados() -> dict:
         if ok:
             updates_applied += 1
             stats["updated"] += 1
+            # Calcular accuracy del LLM
+            dm.actualizar_llm_resultado_soccer(csv_id)
             logger.info(f"  {csv_local} vs {csv_visit}: {marcador} -> AH0={resultado_ah0} O/U={resultado_ou25}")
 
     if updates_applied > 0:
