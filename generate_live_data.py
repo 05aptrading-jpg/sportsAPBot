@@ -383,6 +383,17 @@ def main():
         "autorizados": _load_autorizados(),
     }
 
+    # Preserve LLM data from existing file (LLM analysis, llm_by_sport, hits_llm)
+    try:
+        if os.path.exists("docs/live_data.json"):
+            with open("docs/live_data.json", "r", encoding="utf-8") as f:
+                existing = json.load(f)
+            for preserve_key in ("llm_analysis", "llm_by_sport", "hits_llm"):
+                if preserve_key in existing:
+                    data[preserve_key] = existing[preserve_key]
+    except Exception:
+        pass
+
     os.makedirs("docs", exist_ok=True)
     with open("docs/live_data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2, default=str)

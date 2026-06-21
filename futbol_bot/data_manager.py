@@ -44,8 +44,8 @@ def _leer_xlsx() -> list[dict]:
 
 
 def _escribir_xlsx(rows: list[dict]):
-    """Escribe lista de dicts a xlsx, respetando el orden de COLUMNAS."""
-    df = pd.DataFrame(rows, columns=[c for c in COLUMNAS if c in (rows[0] if rows else [])])
+    """Escribe lista de dicts a xlsx, siempre usando COLUMNAS completas."""
+    df = pd.DataFrame(rows, columns=COLUMNAS).fillna("")
     df.to_excel(config.CSV_SOCCER_PATH, index=False, engine='openpyxl')
 
 

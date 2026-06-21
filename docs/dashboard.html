@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Rendimiento General</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #0a0e17;
+  color: #e2e8f0;
+  padding: 16px;
+  min-height: 100vh;
+}
+.container { max-width: 1200px; margin: 0 auto; }
+.header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 0; margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.header h1 { font-size: 24px; font-weight: 800; color: #f1f5f9; }
+.header .subtitle { font-size: 13px; color: #8b98a5; margin-top: 4px; }
+.header .nav-link {
+  font-size: 13px; color: #60a5fa; text-decoration: none; padding: 8px 16px;
+  border: 1px solid rgba(96,165,250,0.3); border-radius: 8px; transition: 0.2s;
+}
+.header .nav-link:hover { background: rgba(96,165,250,0.1); }
+.fecha-act { font-size: 12px; color: #6b7280; text-align: right; }
+.grid { display: grid; gap: 12px; }
+.grid-2 { grid-template-columns: 1fr 1fr; }
+.grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+.grid-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+@media (max-width:768px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width:480px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } }
+.card {
+  background: linear-gradient(145deg, #131a2b 0%, #1a2337 100%);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px; padding: 16px;
+}
+.card-title {
+  font-size: 13px; font-weight: 600; color: #8b98a5; text-transform: uppercase;
+  letter-spacing: 0.5px; margin-bottom: 12px;
+}
+.stat-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; }
+.stat-row + .stat-row { border-top: 1px solid rgba(255,255,255,0.04); }
+.stat-label { font-size: 14px; color: #c8d0da; }
+.stat-value { font-size: 14px; font-weight: 600; color: #f1f5f9; }
+.stat-sub { font-size: 12px; color: #8b98a5; margin-left: 4px; }
+.stat-rate { font-weight: 700; }
+.rate-green { color: #10b981; }
+.rate-yellow { color: #f59e0b; }
+.rate-red { color: #ef4444; }
+.rate-neutral { color: #8b98a5; }
+.sport-icon { margin-right: 6px; }
+.llm-bar {
+  height: 6px; border-radius: 3px; background: rgba(255,255,255,0.06);
+  margin-top: 6px; overflow: hidden; position: relative;
+}
+.llm-bar-fill {
+  height: 100%; border-radius: 3px; transition: width 0.5s ease;
+}
+.empty-state { text-align: center; padding: 40px; color: #6b7280; font-size: 14px; }
+.badge {
+  display: inline-block; padding: 2px 8px; border-radius: 4px;
+  font-size: 11px; font-weight: 600;
+}
+.badge-green { background: rgba(16,185,129,0.15); color: #10b981; }
+.badge-red { background: rgba(239,68,68,0.15); color: #ef4444; }
+.badge-neutral { background: rgba(139,152,165,0.15); color: #8b98a5; }
+.mb-12 { margin-bottom: 12px; }
+.mt-12 { margin-top: 12px; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.flex { display: flex; }
+.flex-between { display: flex; justify-content: space-between; align-items: center; }
+.gap-8 { gap: 8px; }
+.gap-12 { gap: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div>
+      <h1>📊 Rendimiento Global</h1>
+      <div class="subtitle">Todas las ligas y deportes</div>
+    </div>
+    <div class="text-right">
+      <a class="nav-link" href="index.html">← Mini App Principal</a>
+      <div class="fecha-act" id="fecha-actualizacion">—</div>
+    </div>
+  </div>
+
+  <div id="dashboard-content">
+    <div class="empty-state">Cargando datos...</div>
+  </div>
+</div>
+
+<script>
+async function loadJSON(url) {
+  try {
+    const r = await fetch(url + '?t=' + Date.now());
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; }
+}
+
+function rateColor(pct) {
+  if (pct >= 65) return 'rate-green';
+  if (pct >= 50) return 'rate-yellow';
+  if (pct > 0) return 'rate-red';
+  return 'rate-neutral';
+}
+
+function barColor(pct) {
+  if (pct >= 65) return '#10b981';
+  if (pct >= 50) return '#f59e0b';
+  return '#ef4444';
+}
+
+function renderSportCard(label, icon, stats) {
+  const total = stats.llm_total || 0;
+  const ok = stats.llm_acertados || 0;
+  const fail = stats.llm_fallidos || 0;
+  const rate = stats.llm_win_rate || 0;
+  if (total === 0) return '';
+  return `<div class="card">
+    <div class="card-title">${icon} ${label}</div>
+    <div class="stat-row"><span class="stat-label">🤖 LLM</span>
+      <span class="stat-value">
+        <span style="color:#10b981">${ok}✅</span>
+        <span style="color:#ef4444">${fail}❌</span>
+        <span class="stat-sub">(${total})</span>
+        <span class="stat-rate ${rateColor(rate)}">${rate}%</span>
+      </span>
+    </div>
+    <div class="llm-bar"><div class="llm-bar-fill" style="width:${rate}%;background:${barColor(rate)}"></div></div>
+  </div>`;
+}
+
+function renderDashboard(liveData, soccerData) {
+  const llmBySport = liveData.llm_by_sport || {};
+  const fecha = liveData.fecha || liveData.updated_at || '—';
+  document.getElementById('fecha-actualizacion').textContent = 'Actualizado: ' + fecha;
+
+  let html = '';
+
+  // ── Global Summary ──
+  let globalTotal = 0, globalOk = 0, globalFail = 0;
+  for (const sp in llmBySport) {
+    const s = llmBySport[sp];
+    globalTotal += s.llm_total || 0;
+    globalOk += s.llm_acertados || 0;
+    globalFail += s.llm_fallidos || 0;
+  }
+  const globalRate = globalTotal > 0 ? Math.round(globalOk / globalTotal * 100) : 0;
+
+  html += `<div class="card mb-12">
+    <div class="card-title">🌍 Resumen Global</div>
+    <div class="grid grid-4">
+      <div class="text-center"><div style="font-size:28px;font-weight:800;color:#f1f5f9">${globalTotal}</div><div style="font-size:12px;color:#8b98a5">Total LLM</div></div>
+      <div class="text-center"><div style="font-size:28px;font-weight:800;color:#10b981">${globalOk}</div><div style="font-size:12px;color:#8b98a5">Acertados</div></div>
+      <div class="text-center"><div style="font-size:28px;font-weight:800;color:#ef4444">${globalFail}</div><div style="font-size:12px;color:#8b98a5">Fallidos</div></div>
+      <div class="text-center"><div style="font-size:28px;font-weight:800;${rateColor(globalRate).replace('rate-','color:')};" id="global-rate">${globalRate}%</div><div style="font-size:12px;color:#8b98a5">Precisión</div></div>
+    </div>
+    <div class="llm-bar" style="margin-top:12px"><div class="llm-bar-fill" style="width:${globalRate}%;background:${barColor(globalRate)}"></div></div>
+  </div>`;
+
+  // ── Per-Sport LLM Accuracy ──
+  const sportMeta = {
+    MLB:  { label: 'MLB', icon: '⚾' },
+    LMB:  { label: 'LMB', icon: '🇲🇽' },
+    NBA:  { label: 'NBA', icon: '🏀' },
+    WNBA: { label: 'WNBA', icon: '🏀' },
+    NFL:  { label: 'NFL', icon: '🏈' },
+    SOCCER: { label: 'Fútbol', icon: '⚽' },
+  };
+
+  html += `<h2 style="font-size:16px;font-weight:700;color:#f1f5f9;margin:16px 0 8px">🤖 Precisión por Deporte</h2>`;
+  html += `<div class="grid grid-3">`;
+  let hasAny = false;
+  for (const sp of ['MLB','LMB','NBA','WNBA','NFL','SOCCER']) {
+    const stats = llmBySport[sp] || {};
+    const meta = sportMeta[sp] || { label: sp, icon: '📋' };
+    const card = renderSportCard(meta.label, meta.icon, stats);
+    if (card) { html += card; hasAny = true; }
+  }
+  html += `</div>`;
+  if (!hasAny) html += `<div class="empty-state">Sin datos LLM disponibles</div>`;
+
+  // ── MLB / LMB Bet Stats from live_data ──
+  const games = liveData.games || [];
+  const soccerGames = (soccerData && soccerData.games) || [];
+
+  function calcBetStats(gamesList, ligaFilter) {
+    let total = 0, ok = 0, fail = 0;
+    for (const g of gamesList) {
+      if (ligaFilter && g.liga !== ligaFilter) continue;
+      if (g.resultado === 'acertado') { total++; ok++; }
+      else if (g.resultado === 'fallido') { total++; fail++; }
+    }
+    return { total, ok, fail, rate: total > 0 ? Math.round(ok/total*100) : 0 };
+  }
+
+  html += `<h2 style="font-size:16px;font-weight:700;color:#f1f5f9;margin:16px 0 8px">📈 Resultados de Apuestas</h2>`;
+  html += `<div class="grid grid-3">`;
+
+  const mlbBet = calcBetStats(games, 'MLB');
+  const lmbBet = calcBetStats(games, 'LMB');
+
+  if (mlbBet.total > 0) {
+    html += `<div class="card"><div class="card-title">⚾ MLB</div>
+      <div class="stat-row"><span class="stat-label">Apuestas</span><span class="stat-value">${mlbBet.ok}✅ ${mlbBet.fail}❌ <span class="stat-sub">(${mlbBet.total})</span></span></div>
+      <div class="stat-row"><span class="stat-label">Win Rate</span><span class="stat-value ${rateColor(mlbBet.rate).replace('rate-','')}">${mlbBet.rate}%</span></div>
+      <div class="llm-bar"><div class="llm-bar-fill" style="width:${mlbBet.rate}%;background:${barColor(mlbBet.rate)}"></div></div>
+    </div>`;
+  }
+  if (lmbBet.total > 0) {
+    html += `<div class="card"><div class="card-title">🇲🇽 LMB</div>
+      <div class="stat-row"><span class="stat-label">Apuestas</span><span class="stat-value">${lmbBet.ok}✅ ${lmbBet.fail}❌ <span class="stat-sub">(${lmbBet.total})</span></span></div>
+      <div class="stat-row"><span class="stat-label">Win Rate</span><span class="stat-value ${rateColor(lmbBet.rate).replace('rate-','')}">${lmbBet.rate}%</span></div>
+      <div class="llm-bar"><div class="llm-bar-fill" style="width:${lmbBet.rate}%;background:${barColor(lmbBet.rate)}"></div></div>
+    </div>`;
+  }
+
+  const soccerBet = calcBetStats(soccerGames);
+  if (soccerBet.total > 0) {
+    html += `<div class="card"><div class="card-title">⚽ Fútbol</div>
+      <div class="stat-row"><span class="stat-label">Apuestas</span><span class="stat-value">${soccerBet.ok}✅ ${soccerBet.fail}❌ <span class="stat-sub">(${soccerBet.total})</span></span></div>
+      <div class="stat-row"><span class="stat-label">Win Rate</span><span class="stat-value ${rateColor(soccerBet.rate).replace('rate-','')}">${soccerBet.rate}%</span></div>
+      <div class="llm-bar"><div class="llm-bar-fill" style="width:${soccerBet.rate}%;background:${barColor(soccerBet.rate)}"></div></div>
+    </div>`;
+  }
+
+  html += `</div>`;
+
+  // ── Soccer League Breakdown ──
+  if (soccerGames.length > 0) {
+    const ligaLabels = {
+      'MUNDIAL': { label: '🌍 Mundial 2026', icon: '🌍' },
+      'PREMIER_LEAGUE': { label: '🏴 Premier League', icon: '🏴' },
+      'LA_LIGA': { label: '🇪🇸 La Liga', icon: '🇪🇸' },
+      'BUNDESLIGA': { label: '🇩🇪 Bundesliga', icon: '🇩🇪' },
+      'SERIE_A': { label: '🇮🇹 Serie A', icon: '🇮🇹' },
+      'LIGUE_1': { label: '🇫🇷 Ligue 1', icon: '🇫🇷' },
+      'LIGA_MX': { label: '🇲🇽 Liga MX', icon: '🇲🇽' },
+      'AMISTOSOS_INT': { label: '🏳️ Amistosos', icon: '🏳️' },
+    };
+    const ligaStats = {};
+    for (const g of soccerGames) {
+      const lk = g.liga_key || g.liga || 'OTROS';
+      if (!ligaStats[lk]) ligaStats[lk] = { total: 0, ok: 0, fail: 0 };
+      const r = g.resultado || 'pendiente';
+      if (r === 'acertado') { ligaStats[lk].total++; ligaStats[lk].ok++; }
+      else if (r === 'fallido') { ligaStats[lk].total++; ligaStats[lk].fail++; }
+    }
+    const hasLigaStats = Object.values(ligaStats).some(s => s.total > 0);
+    if (hasLigaStats) {
+      html += `<h2 style="font-size:16px;font-weight:700;color:#f1f5f9;margin:16px 0 8px">⚽ Desglose por Liga</h2>`;
+      html += `<div class="grid grid-2">`;
+      for (const [lk, s] of Object.entries(ligaStats)) {
+        if (s.total === 0) continue;
+        const meta = ligaLabels[lk] || { label: lk, icon: '📋' };
+        const rate = Math.round(s.ok / s.total * 100);
+        html += `<div class="card"><div class="card-title">${meta.icon} ${meta.label}</div>
+          <div class="stat-row"><span class="stat-label">Apuestas</span><span class="stat-value">${s.ok}✅ ${s.fail}❌ <span class="stat-sub">(${s.total})</span></span></div>
+          <div class="stat-row"><span class="stat-label">Win Rate</span><span class="stat-value ${rateColor(rate).replace('rate-','')}">${rate}%</span></div>
+          <div class="llm-bar"><div class="llm-bar-fill" style="width:${rate}%;background:${barColor(rate)}"></div></div>
+        </div>`;
+      }
+      html += `</div>`;
+    }
+  }
+
+  // ── Recientes (últimos partidos) ──
+  const allGames = [...games, ...soccerGames].filter(g => g.resultado === 'acertado' || g.resultado === 'fallido');
+  allGames.sort((a, b) => ((b.fecha_partido || b.fecha_hora || '') > (a.fecha_partido || a.fecha_hora || '')) ? 1 : -1);
+  const recent = allGames.slice(0, 20);
+  if (recent.length > 0) {
+    html += `<h2 style="font-size:16px;font-weight:700;color:#f1f5f9;margin:16px 0 8px">🕐 Últimos Resultados</h2>`;
+    html += `<div class="card">
+      <div style="display:flex;flex-direction:column;gap:4px">`;
+    for (const g of recent) {
+      const emoji = g.resultado === 'acertado' ? '✅' : '❌';
+      const local = g.local || g.home || '?';
+      const visit = g.visitante || g.away || '?';
+      const marcador = g.marcador_final || '';
+      const fecha = (g.fecha_partido || g.fecha_hora || '').slice(0, 10);
+      html += `<div style="display:flex;justify-content:space-between;align-items:center;padding:4px 0;font-size:13px;border-bottom:1px solid rgba(255,255,255,0.03)">
+        <span>${emoji} ${local} vs ${visit}</span>
+        <span style="color:#8b98a5;font-size:12px">${marcador} <span style="margin-left:8px">${fecha}</span></span>
+      </div>`;
+    }
+    html += `</div></div>`;
+  }
+
+  document.getElementById('dashboard-content').innerHTML = html;
+}
+
+(async function init() {
+  const liveData = await loadJSON('live_data.json');
+  const soccerData = await loadJSON('soccer_data.json');
+  if (!liveData) {
+    document.getElementById('dashboard-content').innerHTML = '<div class="empty-state">❌ Error cargando datos. Asegúrate de que los archivos JSON estén disponibles.</div>';
+    return;
+  }
+  renderDashboard(liveData, soccerData);
+})();
+</script>
+</body>
+</html>

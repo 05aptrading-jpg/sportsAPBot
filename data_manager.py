@@ -61,6 +61,11 @@ CSV_COLUMNAS = [
     "war_bullpen_away", "war_bullpen_home",
     "pitcheos_72h_away", "pitcheos_72h_home",
     "baseruns_diff_away", "baseruns_diff_home",
+    # LLM contra-análisis
+    "llm_ir_favorito",  # SÍ | NO | N/D
+    "llm_porque",       # Razón ultra-resumida
+    "llm_factores",     # Lista JSON de factores clave
+    "resultado_llm",    # Evaluación LLM: acertado|fallido|pendiente|N/D
     # Resultado
     "descripcion_analisis",
     "resultado",            # "acertado" | "fallido" | "pendiente"
@@ -77,11 +82,50 @@ STATE_PATH = os.path.join(BASE_DIR, "partidos_seguimiento.json")
 # INICIALIZACIÓN
 # ─────────────────────────────────────────────────────────────────────────────
 def inicializar_csv():
-    """Crea el CSV con encabezados si no existe."""
+    """Crea el CSV con encabezados si no existe; agrega columnas faltantes."""
     if not os.path.exists(config.CSV_PATH):
         with open(config.CSV_PATH, "w", newline="", encoding="utf-8") as f:
             csv.DictWriter(f, fieldnames=CSV_COLUMNAS).writeheader()
         logger.info(f"CSV creado: {config.CSV_PATH}")
+        return
+
+    # Agregar columnas nuevas al CSV existente
+    with open(config.CSV_PATH, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        existing_cols = reader.fieldnames or []
+        rows = list(reader)
+
+    # DETECTAR CSV SIN HEADER: si la primera columna no es un nombre válido
+    header_repaired = False
+    _es_header_valido = bool(existing_cols) and existing_cols[0] in CSV_COLUMNAS
+    if existing_cols and not _es_header_valido:
+        logger.warning(f"CSV sin header detectado ({len(rows)+1} filas). Restaurando...")
+        import io
+        with open(config.CSV_PATH, "r", encoding="utf-8") as f:
+            raw = f.read()
+        csv_prefixed = ",".join(CSV_COLUMNAS) + "\n" + raw
+        reader2 = csv.DictReader(io.StringIO(csv_prefixed))
+        rows = list(reader2)
+        existing_cols = list(CSV_COLUMNAS)
+        header_repaired = True
+
+    missing = [c for c in CSV_COLUMNAS if c not in existing_cols]
+    if missing or header_repaired:
+        clean_rows = []
+        for row in rows:
+            clean = {}
+            for c in CSV_COLUMNAS:
+                if c in row:
+                    clean[c] = row[c]
+                else:
+                    clean[c] = ""
+            clean_rows.append(clean)
+        with open(config.CSV_PATH, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=CSV_COLUMNAS)
+            w.writeheader()
+            w.writerows(clean_rows)
+        label = "header restaurado" if header_repaired else f"columnas agregadas: {missing}"
+        logger.info(f"CSV reparado ({label}): {len(clean_rows)} filas")
     else:
         logger.info(f"CSV existente: {config.CSV_PATH}")
 
@@ -89,6 +133,18 @@ def inicializar_csv():
 # ─────────────────────────────────────────────────────────────────────────────
 # GUARDAR ANÁLISIS DEL DÍA
 # ─────────────────────────────────────────────────────────────────────────────
+
+def _computar_resultado_llm(ir: str, resultado: str) -> str:
+    """Evalúa si el LLM acertó según llm_ir_favorito y resultado del partido."""
+    _ir = (ir or "").strip().upper()
+    _res = (resultado or "").strip().lower()
+    if _ir not in ("SÍ", "NO") or _res == "pendiente":
+        return "pendiente" if _res == "pendiente" else "N/D"
+    if (_ir == "SÍ" and _res == "acertado") or (_ir == "NO" and _res == "fallido"):
+        return "acertado"
+    return "fallido"
+
+
 def guardar_analisis(analyses: list[GameAnalysis]):
     """
     Guarda/actualiza análisis MLB en el CSV (UPSERT).
@@ -173,6 +229,8 @@ def guardar_analisis(analyses: list[GameAnalysis]):
             "baseruns_diff_away": f"{away_e.diferencial:.1f}" if away_e else "N/D",
             "baseruns_diff_home": f"{home_e.diferencial:.1f}" if home_e else "N/D",
             "descripcion_analisis":     desc,
+            "llm_ir_favorito":          getattr(a, "llm_ir_favorito", ""),
+            "llm_porque":               getattr(a, "llm_porque", ""),
             "resultado":                "pendiente",
             "probabilidad_actualizada": f"{a.prob_favorito:.2f}%",
             "marcador_final":           "—",
@@ -186,9 +244,13 @@ def guardar_analisis(analyses: list[GameAnalysis]):
             fila["marcador_final"]     = filas[idx].get("marcador_final", "—")
             fila["ganador_real"]       = filas[idx].get("ganador_real", "—")
             fila["fecha_actualizacion"] = filas[idx].get("fecha_actualizacion", "")
+            fila["resultado_llm"] = _computar_resultado_llm(
+                fila.get("llm_ir_favorito", ""), fila["resultado"])
             filas[idx] = fila
             actualizados += 1
         else:
+            fila["resultado_llm"] = _computar_resultado_llm(
+                fila.get("llm_ir_favorito", ""), fila["resultado"])
             filas.append(fila)
             nuevos += 1
 
@@ -255,29 +317,35 @@ def guardar_analisis_lmb(analyses: list[dict]):
             "senal_moneyline":          a.get("senal_moneyline", "NO APOSTAR"),
             "nivel_certidumbre":        a.get("nivel_certidumbre", ""),
             "fip_away":             _fmt_metric(a.get("fip_away")),
-            "xfip_away":            _fmt_metric(a.get("xfip_away")),
+            "xfip_away":            "N/D",
             "kbb_away":             _fmt_metric(a.get("kbb_away")),
             "fip_home":             _fmt_metric(a.get("fip_home")),
-            "xfip_home":            _fmt_metric(a.get("xfip_home")),
+            "xfip_home":            "N/D",
             "kbb_home":             _fmt_metric(a.get("kbb_home")),
             "wrc_away":             _fmt_metric(a.get("wrc_away")),
             "wrc_home":             _fmt_metric(a.get("wrc_home")),
-            "wrc_vs_rhp_away":      _fmt_metric(a.get("wrc_vs_rhp_away", 100)),
-            "wrc_vs_lhp_away":      _fmt_metric(a.get("wrc_vs_lhp_away", 100)),
-            "wrc_vs_rhp_home":      _fmt_metric(a.get("wrc_vs_rhp_home", 100)),
-            "wrc_vs_lhp_home":      _fmt_metric(a.get("wrc_vs_lhp_home", 100)),
+            "wrc_vs_rhp_away":      _fmt_metric(a.get("wrc_vs_rhp_away")),
+            "wrc_vs_lhp_away":      _fmt_metric(a.get("wrc_vs_lhp_away")),
+            "wrc_vs_rhp_home":      _fmt_metric(a.get("wrc_vs_rhp_home")),
+            "wrc_vs_lhp_home":      _fmt_metric(a.get("wrc_vs_lhp_home")),
             "abridor_mano_away":    a.get("abridor_mano_away", "N/D"),
             "abridor_mano_home":    a.get("abridor_mano_home", "N/D"),
             "war_bullpen_away":     _fmt_metric(a.get("war_bullpen_away")),
             "war_bullpen_home":     _fmt_metric(a.get("war_bullpen_home")),
             "pitcheos_72h_away": "0", "pitcheos_72h_home": "0",
-            "baseruns_diff_away": "N/D", "baseruns_diff_home": "N/D",
+            "baseruns_diff_away": a.get("baseruns_diff_away", "N/D"),
+            "baseruns_diff_home": a.get("baseruns_diff_home", "N/D"),
             "descripcion_analisis":     a.get("descripcion", ""),
             "resultado":                "pendiente",
             "probabilidad_actualizada": f'{a.get("prob_favorito", 0):.2f}%',
             "marcador_final":           "-",
             "ganador_real":             "-",
             "fecha_actualizacion":      datetime.now().strftime("%Y-%m-%d %H:%M"),
+            "llm_ir_favorito":          a.get("llm_ir_favorito", ""),
+            "llm_porque":               a.get("llm_porque", ""),
+            "llm_factores":             a.get("llm_factores", ""),
+            "resultado_llm":            _computar_resultado_llm(
+                a.get("llm_ir_favorito", ""), "pendiente"),
         }
         if pk in idx_por_pk:
             idx = idx_por_pk[pk]
@@ -286,6 +354,8 @@ def guardar_analisis_lmb(analyses: list[dict]):
             fila["marcador_final"]     = filas[idx].get("marcador_final", "—")
             fila["ganador_real"]       = filas[idx].get("ganador_real", "—")
             fila["fecha_actualizacion"] = filas[idx].get("fecha_actualizacion", "")
+            fila["resultado_llm"] = _computar_resultado_llm(
+                fila.get("llm_ir_favorito", ""), fila["resultado"])
             filas[idx] = fila
             actualizados += 1
         else:
@@ -379,6 +449,8 @@ def actualizar_resultado(game_pk: int, ganador: str,
             favorito = fila["favorito_sabermetrico"]
             resultado = "acertado" if _match(ganador, favorito) else "fallido"
             fila["resultado"]            = resultado
+            fila["resultado_llm"]        = _computar_resultado_llm(
+                fila.get("llm_ir_favorito", ""), resultado)
             fila["marcador_final"]       = marcador
             fila["ganador_real"]         = ganador
             fila["fecha_actualizacion"]  = datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -650,9 +722,10 @@ def obtener_estadisticas(liga: str = None, fecha_desde: str = None, fecha_hasta:
         return nivel in ("ALTA", "MEDIA")
 
     filas_global = [f for f in filas if _es_alta(f)]
-    total      = len(filas_global)
-    acertados  = sum(1 for f in filas_global if f.get("resultado") == "acertado")
-    fallidos   = sum(1 for f in filas_global if f.get("resultado") == "fallido")
+    filas_resueltas = [f for f in filas_global if f.get("resultado") in ("acertado", "fallido")]
+    total      = len(filas_resueltas)
+    acertados  = sum(1 for f in filas_resueltas if f.get("resultado") == "acertado")
+    fallidos   = sum(1 for f in filas_resueltas if f.get("resultado") == "fallido")
     pendientes = sum(1 for f in filas_global if f.get("resultado") == "pendiente")
     valor      = sum(1 for f in filas_global if f.get("es_valor") == "SI")
     valor_ok   = sum(1 for f in filas_global if f.get("es_valor") == "SI"
@@ -671,12 +744,18 @@ def obtener_estadisticas(liga: str = None, fecha_desde: str = None, fecha_hasta:
     rec_fallidos   = sum(1 for f in filas_global if _es_destacado(f) and f.get("resultado") == "fallido")
     rec_pendientes = sum(1 for f in filas_global if _es_destacado(f) and f.get("resultado") == "pendiente")
 
-    # ── ALTA CONFIANZA (nivel_certidumbre = "ALTA" o "MEDIA") ──
+    # ── ALTA CONFIANZA (nivel_certidumbre = "ALTA"/"MEDIA" Y probabilidad >= 57%) ──
     def _es_confianza_alta(f):
         nivel = f.get("nivel_certidumbre", "").strip()
-        return nivel in ("ALTA", "MEDIA")
+        if nivel not in ("ALTA", "MEDIA"):
+            return False
+        try:
+            prob = float(f.get("probabilidad_inicial", "0").replace("%", "").strip())
+            return prob >= config.PROB_MINIMA_ANALISIS
+        except (ValueError, AttributeError):
+            return False
 
-    alta_total      = sum(1 for f in filas if _es_confianza_alta(f))
+    alta_total      = sum(1 for f in filas if _es_confianza_alta(f) and f.get("resultado") in ("acertado", "fallido"))
     alta_acertados  = sum(1 for f in filas if _es_confianza_alta(f) and f.get("resultado") == "acertado")
     alta_fallidos   = sum(1 for f in filas if _es_confianza_alta(f) and f.get("resultado") == "fallido")
     alta_pendientes = sum(1 for f in filas if _es_confianza_alta(f) and f.get("resultado") == "pendiente")
@@ -687,12 +766,18 @@ def obtener_estadisticas(liga: str = None, fecha_desde: str = None, fecha_hasta:
     media_fallidos   = 0
     media_pendientes = 0
 
-    # ── BAJA CONFIANZA (nivel_certidumbre = "BAJA" o vacío) ──
+    # ── BAJA CONFIANZA (todo lo que no califica como ALTA) ──
     def _es_baja(f):
         nivel = f.get("nivel_certidumbre", "").strip()
-        return nivel not in ("ALTA", "MEDIA")
+        if nivel in ("ALTA", "MEDIA"):
+            try:
+                prob = float(f.get("probabilidad_inicial", "0").replace("%", "").strip())
+                return prob < config.PROB_MINIMA_ANALISIS
+            except (ValueError, AttributeError):
+                return True
+        return True
 
-    baja_total      = sum(1 for f in filas if _es_baja(f))
+    baja_total      = sum(1 for f in filas if _es_baja(f) and f.get("resultado") in ("acertado", "fallido"))
     baja_acertados  = sum(1 for f in filas if _es_baja(f) and f.get("resultado") == "acertado")
     baja_fallidos   = sum(1 for f in filas if _es_baja(f) and f.get("resultado") == "fallido")
     baja_pendientes = sum(1 for f in filas if _es_baja(f) and f.get("resultado") == "pendiente")
@@ -708,6 +793,21 @@ def obtener_estadisticas(liga: str = None, fecha_desde: str = None, fecha_hasta:
                      if (alta_acertados + alta_fallidos) > 0 else 0)
     baja_win_rate = (baja_acertados / (baja_acertados + baja_fallidos) * 100
                      if (baja_acertados + baja_fallidos) > 0 else 0)
+
+    # ── LLM stats ──
+    def _tiene_llm(f):
+        ir = (f.get("llm_ir_favorito") or "").strip().upper()
+        return ir in ("SÍ", "NO")
+
+    def _llm_acertado(f):
+        rl = (f.get("resultado_llm") or "").strip().lower()
+        return rl == "acertado"
+
+    llm_filas = [f for f in filas if _tiene_llm(f) and f.get("resultado") in ("acertado", "fallido")]
+    llm_total = len(llm_filas)
+    llm_acertados = sum(1 for f in llm_filas if _llm_acertado(f))
+    llm_fallidos = llm_total - llm_acertados
+    llm_win_rate = round(llm_acertados / llm_total * 100, 1) if llm_total > 0 else 0
 
     return {
         "total":       total,
@@ -742,6 +842,79 @@ def obtener_estadisticas(liga: str = None, fecha_desde: str = None, fecha_hasta:
         "baja_fallidos":    baja_fallidos,
         "baja_pendientes":  baja_pendientes,
         "baja_win_rate":    round(baja_win_rate, 1),
+        # Predicciones de Hit (individuales por jugador)
+        **obtener_estadisticas_hits(),
+        # Predicciones LLM
+        "llm_total":       llm_total,
+        "llm_acertados":   llm_acertados,
+        "llm_fallidos":    llm_fallidos,
+        "llm_win_rate":    llm_win_rate,
+    }
+
+
+def obtener_estadisticas_llm(liga: str = None) -> dict:
+    """Estadísticas de acierto del LLM filtradas por liga.
+    Lee desde MLB/LMB CSV, basketball XLSX y soccer XLSX según la liga solicitada."""
+    liga_up = (liga or "").strip().upper()
+
+    # Basketball (NBA / WNBA)
+    if liga_up in ("NBA", "WNBA"):
+        try:
+            from basquetbol_bot.data_manager import calcular_stats_llm
+            bbst = calcular_stats_llm(liga=liga_up)
+            # calcular_stats_llm returns keys: total, aciertos_fav, pct_fav, total_ou, aciertos_ou, pct_ou
+            return {
+                "llm_total": bbst.get("total", 0),
+                "llm_acertados": bbst.get("aciertos_fav", 0),
+                "llm_fallidos": bbst.get("total", 0) - bbst.get("aciertos_fav", 0),
+                "llm_win_rate": round(bbst.get("pct_fav", 0), 1),
+            }
+        except Exception:
+            return {"llm_total": 0, "llm_acertados": 0, "llm_fallidos": 0, "llm_win_rate": 0}
+
+    # Soccer
+    if liga_up in ("SOCCER", "FUTBOL", "MUNDIAL", "PREMIER_LEAGUE", "LA_LIGA",
+                   "BUNDESLIGA", "SERIE_A", "LIGUE_1", "LIGA_MX", "AMISTOSOS_INT"):
+        try:
+            from futbol_bot.data_manager import obtener_stats_llm_soccer
+            s = obtener_stats_llm_soccer()
+            return {
+                "llm_total": s.get("total", 0),
+                "llm_acertados": s.get("acertados", 0),
+                "llm_fallidos": s.get("fallidos", 0),
+                "llm_win_rate": round(s.get("win_rate", 0), 1),
+            }
+        except Exception:
+            return {"llm_total": 0, "llm_acertados": 0, "llm_fallidos": 0, "llm_win_rate": 0}
+
+    # NFL (no tiene almacenamiento persistente de resultados LLM aún)
+    if liga_up == "NFL":
+        return {"llm_total": 0, "llm_acertados": 0, "llm_fallidos": 0, "llm_win_rate": 0}
+
+    # MLB / LMB (CSV)
+    filas = _leer_todas()
+    if liga:
+        filas = [f for f in filas if (f.get("liga", "MLB") or "MLB").strip() == liga]
+
+    def _tiene_llm(f):
+        ir = (f.get("llm_ir_favorito") or "").strip().upper()
+        return ir in ("SÍ", "NO")
+
+    def _llm_acertado(f):
+        rl = (f.get("resultado_llm") or "").strip().lower()
+        return rl == "acertado"
+
+    llm_filas = [f for f in filas if _tiene_llm(f) and f.get("resultado") in ("acertado", "fallido")]
+    llm_total = len(llm_filas)
+    llm_acertados = sum(1 for f in llm_filas if _llm_acertado(f))
+    llm_fallidos = llm_total - llm_acertados
+    llm_win_rate = round(llm_acertados / llm_total * 100, 1) if llm_total > 0 else 0
+
+    return {
+        "llm_total":      llm_total,
+        "llm_acertados":  llm_acertados,
+        "llm_fallidos":   llm_fallidos,
+        "llm_win_rate":   llm_win_rate,
     }
 
 
@@ -761,6 +934,59 @@ def fechas_disponibles_csv() -> list[str]:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# ESTADISTICAS DE HITS (predicciones individuales de jugadores)
+# ─────────────────────────────────────────────────────────────────────────────
+HITS_PREDICTIONS_PATH = os.path.join(os.path.dirname(config.CSV_PATH), "hits_predictions.json")
+
+
+def _load_hits_predictions() -> list[dict]:
+    if not os.path.exists(HITS_PREDICTIONS_PATH):
+        return []
+    try:
+        with open(HITS_PREDICTIONS_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        logger.debug("hits_predictions.json no encontrado o inválido")
+        return []
+
+
+def obtener_estadisticas_hits(liga: str = None, fecha_desde: str = None, fecha_hasta: str = None) -> dict:
+    """Estadísticas de predicciones de hit individuales."""
+    preds = _load_hits_predictions()
+
+    def _parse_pred_date(val: str) -> str:
+        s = (val or "").strip()[:10]
+        if not s:
+            return ""
+        parts = s.replace("/", "-").split("-")
+        if len(parts) == 3 and len(parts[2]) == 4:
+            return f"{parts[2]}-{parts[1]}-{parts[0]}"
+        return s
+
+    if liga in ("MLB", "LMB"):
+        preds = [p for p in preds if p.get("liga", "MLB") == liga]
+    if fecha_desde:
+        preds = [p for p in preds if _parse_pred_date(p.get("fecha", "")) >= fecha_desde]
+    if fecha_hasta:
+        preds = [p for p in preds if _parse_pred_date(p.get("fecha", "")) <= fecha_hasta]
+
+    resueltos = [p for p in preds if p.get("resultado") in ("cumplio", "fallido")]
+    total = len(preds)
+    acertados = sum(1 for p in resueltos if p["resultado"] == "cumplio")
+    fallidos = sum(1 for p in resueltos if p["resultado"] == "fallido")
+    pendientes = total - len(resueltos)
+    win_rate = round(acertados / len(resueltos) * 100, 1) if resueltos else 0.0
+
+    return {
+        "hits_total":      total,
+        "hits_acertados":  acertados,
+        "hits_fallidos":   fallidos,
+        "hits_pendientes": pendientes,
+        "hits_win_rate":   win_rate,
+    }
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # HELPERS PRIVADOS
 # ─────────────────────────────────────────────────────────────────────────────
 def _leer_ids_existentes() -> set:
@@ -777,7 +1003,21 @@ def _leer_todas() -> list[dict]:
     if not os.path.exists(config.CSV_PATH):
         return []
     with open(config.CSV_PATH, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+        reader = csv.DictReader(f)
+        first_col = (reader.fieldnames or [""])[0]
+        if first_col and first_col not in CSV_COLUMNAS:
+            logger.warning(f"CSV corrupto detectado en _leer_todas ({first_col}). Auto-reparando...")
+            inicializar_csv()
+            for _ in range(3):
+                with open(config.CSV_PATH, newline="", encoding="utf-8") as f2:
+                    data = list(csv.DictReader(f2))
+                if data or not first_col or first_col in CSV_COLUMNAS:
+                    return data
+                logger.warning("CSV sigue corrupto tras reinicializar, reintentando...")
+                inicializar_csv()
+            logger.error("CSV corrupto persistente tras 3 reintentos")
+            return []
+        return list(reader)
 
 
 def _escribir_todas(filas: list[dict]):
@@ -785,6 +1025,62 @@ def _escribir_todas(filas: list[dict]):
         w = csv.DictWriter(f, fieldnames=CSV_COLUMNAS)
         w.writeheader()
         w.writerows(filas)
+
+
+def _leer_fila(id_partido: str, columna: str) -> str:
+    """Lee el valor de una celda del CSV buscando por id_partido."""
+    filas = _leer_todas()
+    for f in filas:
+        if f.get("id_partido", "").strip() == id_partido.strip():
+            return (f.get(columna) or "").strip()
+    return ""
+
+
+def _leer_celda_por_equipos(fecha: str, away: str, home: str, columna: str) -> str:
+    """Lee el valor de una celda buscando por fecha + equipos."""
+    from datetime import datetime as _dt
+    filas = _leer_todas()
+    def _norm(n):
+        return n.strip().lower()
+    for f in filas:
+        cf = (f.get("fecha_hora", "") or "").strip()[:10]
+        try:
+            cf_iso = _dt.strptime(cf, "%d/%m/%Y").strftime("%Y-%m-%d")
+        except ValueError:
+            cf_iso = cf
+        if cf_iso == fecha and _norm(f.get("equipo_visitante","")) == _norm(away) and _norm(f.get("equipo_local","")) == _norm(home):
+            return (f.get(columna) or "").strip()
+    return ""
+
+
+def actualizar_celda(id_partido: str, columna: str, valor: str) -> bool:
+    """Actualiza una celda del CSV buscando por id_partido."""
+    filas = _leer_todas()
+    for f in filas:
+        if f.get("id_partido", "").strip() == id_partido.strip():
+            f[columna] = valor
+            _escribir_todas(filas)
+            return True
+    return False
+
+
+def actualizar_celda_por_equipos(fecha: str, away: str, home: str, columna: str, valor: str) -> bool:
+    """Actualiza una celda buscando por fecha + equipos."""
+    from datetime import datetime as _dt
+    filas = _leer_todas()
+    def _norm(n):
+        return n.strip().lower()
+    for f in filas:
+        cf = (f.get("fecha_hora", "") or "").strip()[:10]
+        try:
+            cf_iso = _dt.strptime(cf, "%d/%m/%Y").strftime("%Y-%m-%d")
+        except ValueError:
+            cf_iso = cf
+        if cf_iso == fecha and _norm(f.get("equipo_visitante","")) == _norm(away) and _norm(f.get("equipo_local","")) == _norm(home):
+            f[columna] = valor
+            _escribir_todas(filas)
+            return True
+    return False
 
 
 def _generar_descripcion(a: GameAnalysis) -> str:

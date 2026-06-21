@@ -634,11 +634,14 @@
   <h2>Acceso exclusivo</h2>
   <p>Esta Mini App es solo para suscriptores autorizados. Contacte al administrador para obtener acceso.</p>
 </div>
-<div id="main-content"><div class="main-tabs">
-  <div class="main-tab active" id="tab-beisbol" onclick="selectMainTab('beisbol')">⚾ Béisbol</div>
-  <div class="main-tab" id="tab-futbol" onclick="selectMainTab('futbol')">⚽ Fútbol</div>
-  <div class="main-tab" id="tab-nfl" onclick="selectMainTab('nfl')">🏈 NFL</div>
-  <div class="main-tab" id="tab-basquetbol" onclick="selectMainTab('basquetbol')">🏀 Básquetbol</div>
+<div id="main-content"><div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px">
+  <div class="main-tabs" style="flex:1;min-width:0">
+    <div class="main-tab active" id="tab-beisbol" onclick="selectMainTab('beisbol')">⚾ Béisbol</div>
+    <div class="main-tab" id="tab-futbol" onclick="selectMainTab('futbol')">⚽ Fútbol</div>
+    <div class="main-tab" id="tab-nfl" onclick="selectMainTab('nfl')">🏈 NFL</div>
+    <div class="main-tab" id="tab-basquetbol" onclick="selectMainTab('basquetbol')">🏀 Básquetbol</div>
+  </div>
+  <a href="dashboard.html" style="font-size:13px;color:#60a5fa;text-decoration:none;padding:8px 12px;border:1px solid rgba(96,165,250,0.3);border-radius:8px;white-space:nowrap">📊 Dashboard</a>
 </div>
 
 <div id="beisbol-panel">
@@ -1196,7 +1199,7 @@ function renderStats() {
   }
   // Certidumbre LLM per-sport breakdown
   var llmData = DATA.llm_by_sport || {};
-  var sportLabels = { MLB: '⚾ MLB', LMB: '🇲🇽 LMB', NBA: '🏀 NBA', NFL: '🏈 NFL' };
+  var sportLabels = { MLB: '⚾ MLB', LMB: '🇲🇽 LMB', NBA: '🏀 NBA', WNBA: '🏀 WNBA', NFL: '🏈 NFL', SOCCER: '⚽ Fútbol' };
   var hasAnyLlm = false;
   for (var sp in llmData) {
     if ((llmData[sp].llm_acertados || 0) > 0 || (llmData[sp].llm_fallidos || 0) > 0) {

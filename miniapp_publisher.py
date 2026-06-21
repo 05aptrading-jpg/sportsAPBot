@@ -1215,6 +1215,27 @@ def _inject_llm_analysis(games: list[dict], llm_data: dict = None):
             if llm_data is not None:
                 llm_data[llm_nba_key] = _build_nba_llm_entry(ir, pq, factores, favorito_f, entry)
             cache[key] = _build_nba_llm_entry(ir, pq, factores, favorito_f, entry)
+            # Backup to XLSX
+            try:
+                from basquetbol_bot.data_manager import guardar_llm_xlsx as _guardar_bb_xlsx
+                _guardar_bb_xlsx(
+                    str(g.get("game_id", "")), gliga, home, away,
+                    favorito_f, ir,
+                    entry.get("spread"), entry.get("confianza_ou"),
+                    entry.get("linea_ou"),
+                    entry.get("puntos_local"), entry.get("puntos_visitante"),
+                    entry.get("b2b_impacto", ""), entry.get("lesion_clave", ""),
+                    entry.get("pq", ""), entry.get("factores", []),
+                    ranking_local=entry.get("ranking_local", ""),
+                    ranking_visitante=entry.get("ranking_visitante", ""),
+                    stats_comparison=entry.get("stats_comparison", {}),
+                    anotadores=entry.get("anotadores", []),
+                    defensores=entry.get("defensores", []),
+                    armadores=entry.get("armadores", []),
+                    lineas_ou=entry.get("lineas_ou", {}),
+                )
+            except Exception:
+                pass
             # Migrate old entries that lack new enriched fields
             if g.get("llm_anotadores") is None or (isinstance(g.get("llm_anotadores"), list) and len(g["llm_anotadores"]) == 0):
                 need_llm_nba.append({"game": g, "key": key, "file_key": file_key, "partido": f"{home} vs {away} ({g.get('game_date', today)})", "match_key": nba_match_key, "liga": liga_pref, "datos": {}, "sport": "nba"})
@@ -1256,6 +1277,27 @@ def _inject_llm_analysis(games: list[dict], llm_data: dict = None):
                               ranking_visitante=g.get("llm_ranking_visitante", ""),
                               stats_comparison=g.get("llm_stats_comparison", {}),
                                lineas_ou=g.get("llm_lineas_ou", {}))
+            # Backup to XLSX
+            try:
+                from basquetbol_bot.data_manager import guardar_llm_xlsx as _guardar_bb_xlsx
+                _guardar_bb_xlsx(
+                    str(g.get("game_id", "")), gliga, home, away,
+                    favorito_cache, ir,
+                    g.get("llm_spread"), g.get("llm_confianza_ou"),
+                    g.get("llm_linea_ou"),
+                    g.get("llm_puntos_local"), g.get("llm_puntos_visitante"),
+                    g.get("llm_b2b_impacto", ""), g.get("llm_lesion_clave", ""),
+                    pq, factores,
+                    ranking_local=g.get("llm_ranking_local", ""),
+                    ranking_visitante=g.get("llm_ranking_visitante", ""),
+                    stats_comparison=g.get("llm_stats_comparison", {}),
+                    anotadores=g.get("llm_anotadores", []),
+                    defensores=g.get("llm_defensores", []),
+                    armadores=g.get("llm_armadores", []),
+                    lineas_ou=g.get("llm_lineas_ou", {}),
+                )
+            except Exception:
+                pass
             # Migrate old entries that lack new enriched fields
             if g.get("llm_anotadores") is None or (isinstance(g.get("llm_anotadores"), list) and len(g["llm_anotadores"]) == 0):
                 need_llm_nba.append({"game": g, "key": key, "file_key": file_key, "partido": f"{home} vs {away} ({g.get('game_date', today)})", "match_key": nba_match_key, "liga": liga_pref, "datos": {}, "sport": "nba"})
@@ -1791,7 +1833,9 @@ def _build_data(skip_llm: bool = False) -> dict:
     llm_mlb = dm.obtener_estadisticas_llm(liga="MLB")
     llm_lmb = dm.obtener_estadisticas_llm(liga="LMB")
     llm_nba = dm.obtener_estadisticas_llm(liga="NBA")
+    llm_wnba = dm.obtener_estadisticas_llm(liga="WNBA")
     llm_nfl = dm.obtener_estadisticas_llm(liga="NFL")
+    llm_soccer = dm.obtener_estadisticas_llm(liga="SOCCER")
 
     # Stats por rango de fecha para filtros del frontend
     hoy = date.today()
@@ -2052,7 +2096,9 @@ def _build_data(skip_llm: bool = False) -> dict:
             "MLB": llm_mlb,
             "LMB": llm_lmb,
             "NBA": llm_nba,
+            "WNBA": llm_wnba,
             "NFL": llm_nfl,
+            "SOCCER": llm_soccer,
         },
         "nba_games": nba_games,
         "wnba_games": wnba_games,
