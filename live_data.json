@@ -14383,7 +14383,7 @@
         "inning_ordinal": "7th",
         "outs": 0,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 3,
         "away_hits": 4,
@@ -14595,7 +14595,7 @@
       "opp_team": "Baltimore Orioles",
       "score_fav": "1",
       "score_opp": "6",
-      "state": "End 5th",
+      "state": "Top 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 823934,
@@ -14632,12 +14632,16 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 3,
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
+        "outs": 0,
         "balls": 0,
         "strikes": 0,
         "away_runs": 6,
@@ -14986,13 +14990,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-21",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "Colorado Rockies",
       "opp_team": "Pittsburgh Pirates",
       "score_fav": "6",
       "score_opp": "8",
-      "state": "End 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "loss",
       "label": "📋",
       "game_pk": 824343,
       "fav_abbr": "COL",
@@ -15261,7 +15265,7 @@
       "status_emoji": "🔴",
       "fav_team": "Athletics",
       "opp_team": "Los Angeles Angels",
-      "score_fav": "5",
+      "score_fav": "7",
       "score_opp": "4",
       "state": "Bottom 7th",
       "result": "live",
@@ -15307,7 +15311,7 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 2
           }
         ],
         "current_inning": 7,
@@ -15315,11 +15319,11 @@
         "inning_ordinal": "7th",
         "outs": 0,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 4,
-        "home_runs": 5,
+        "home_runs": 7,
         "away_hits": 5,
-        "home_hits": 6,
+        "home_hits": 7,
         "away_errors": 2,
         "home_errors": 0,
         "away_team_name": "Los Angeles Angels",
@@ -15333,9 +15337,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "4",
-        "opp_score": "5",
+        "opp_score": "7",
         "score_fav": "4",
-        "score_opp": "5"
+        "score_opp": "7"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40",
@@ -16329,7 +16333,7 @@
         "inning_ordinal": "7th",
         "outs": 0,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 3,
         "away_hits": 4,
@@ -16430,7 +16434,7 @@
     "823934": {
       "is_live": true,
       "is_final": false,
-      "status": "End 5th",
+      "status": "Top 6th",
       "away_runs": 1,
       "home_runs": 6,
       "away_team_name": "Baltimore Orioles",
@@ -16456,12 +16460,16 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 3,
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
+        "outs": 0,
         "balls": 0,
         "strikes": 0,
         "away_runs": 6,
@@ -16641,9 +16649,9 @@
       }
     },
     "824343": {
-      "is_live": true,
-      "is_final": false,
-      "status": "End 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 6,
       "home_runs": 8,
       "away_team_name": "Pittsburgh Pirates",
@@ -16794,7 +16802,7 @@
       "is_live": true,
       "is_final": false,
       "status": "Bottom 7th",
-      "away_runs": 5,
+      "away_runs": 7,
       "home_runs": 4,
       "away_team_name": "Los Angeles Angels",
       "home_team_name": "Athletics",
@@ -16826,7 +16834,7 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 2
           }
         ],
         "current_inning": 7,
@@ -16834,11 +16842,11 @@
         "inning_ordinal": "7th",
         "outs": 0,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 4,
-        "home_runs": 5,
+        "home_runs": 7,
         "away_hits": 5,
-        "home_hits": 6,
+        "home_hits": 7,
         "away_errors": 2,
         "home_errors": 0,
         "away_team_name": "Los Angeles Angels",
@@ -16852,9 +16860,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "4",
-        "opp_score": "5",
+        "opp_score": "7",
         "score_fav": "4",
-        "score_opp": "5"
+        "score_opp": "7"
       }
     },
     "825067": {
@@ -21798,8 +21806,8 @@
       "away": "Golden State Valkyries",
       "home_abbr": "LV",
       "away_abbr": "GS",
-      "home_score": 89,
-      "away_score": 68,
+      "home_score": 92,
+      "away_score": 70,
       "home_linescores": [
         {
           "period": 1,
@@ -21818,8 +21826,8 @@
         },
         {
           "period": 4,
-          "value": 12,
-          "display": "12"
+          "value": 15,
+          "display": "15"
         }
       ],
       "away_linescores": [
@@ -21840,13 +21848,13 @@
         },
         {
           "period": 4,
-          "value": 19,
-          "display": "19"
+          "value": 21,
+          "display": "21"
         }
       ],
-      "clock": "1:35",
+      "clock": "59.3",
       "period": 4,
-      "state": "Q4 1:35",
+      "state": "Q4 59.3",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/LV.png&h=40&w=40",
