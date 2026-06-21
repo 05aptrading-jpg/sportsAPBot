@@ -2295,4 +2295,164 @@
     "ligue1_ah0_fallidos": 0,
     "ligue1_ah0_devueltos": 0,
     "ligue1_ah0_win_rate": 0,
-    "ligue1_ou25_tota
+    "ligue1_ou25_total": 0,
+    "ligue1_ou25_acertados": 0,
+    "ligue1_ou25_fallidos": 0,
+    "ligue1_ou25_devueltos": 0,
+    "ligue1_ou25_win_rate": 0,
+    "ligue1_corners_total": 0,
+    "ligue1_corners_acertados": 0,
+    "ligue1_corners_fallidos": 0,
+    "ligue1_corners_devueltos": 0,
+    "ligue1_corners_win_rate": 0,
+    "ligamx_ah0_total": 0,
+    "ligamx_ah0_acertados": 0,
+    "ligamx_ah0_fallidos": 0,
+    "ligamx_ah0_devueltos": 0,
+    "ligamx_ah0_win_rate": 0,
+    "ligamx_ou25_total": 0,
+    "ligamx_ou25_acertados": 0,
+    "ligamx_ou25_fallidos": 0,
+    "ligamx_ou25_devueltos": 0,
+    "ligamx_ou25_win_rate": 0,
+    "ligamx_corners_total": 0,
+    "ligamx_corners_acertados": 0,
+    "ligamx_corners_fallidos": 0,
+    "ligamx_corners_devueltos": 0,
+    "ligamx_corners_win_rate": 0
+  },
+  "llm_analysis": {
+    "2026-06-30___Group E 2nd Place___Group I 2nd Place": {
+      "ir": "SÍ",
+      "pq": "Mejor racha reciente y potencial ofensivo.",
+      "factores": [
+        "Racha reciente positiva",
+        "Mayor experiencia en torneos",
+        "Posibilidad de lesiones en el rival"
+      ],
+      "favorito": "Group E 2nd Place",
+      "goles": "2-1",
+      "corners": 9,
+      "tiros_porteria": [
+        {
+          "jugador": "Jugador A",
+          "equipo": "Group E 2nd Place",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Jugador B",
+          "equipo": "Group I 2nd Place",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Jugador C",
+          "equipo": "Group E 2nd Place",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 70,
+          "over_9.5": 55,
+          "over_10.5": 40
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-30___Group I Winner___Third Place Group C/D/F/G/H": {
+      "ir": "SÍ",
+      "pq": "Mayor calidad de plantilla y racha positiva.",
+      "factores": [
+        "Mejor posición en grupo",
+        "Racha de victorias reciente",
+        "Mayor profundidad de plantilla"
+      ],
+      "favorito": "Group I Winner",
+      "goles": "3-1",
+      "corners": 10,
+      "tiros_porteria": [
+        {
+          "jugador": "Jugador D",
+          "equipo": "Group I Winner",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Jugador E",
+          "equipo": "Group I Winner",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Jugador F",
+          "equipo": "Third Place Group C/D/F/G/H",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 45
+        },
+        "corners": {
+          "over_8.5": 75,
+          "over_9.5": 60,
+          "over_10.5": 45
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-30___México___Third Place Group C/E/F/H/I": {
+      "ir": "SÍ",
+      "pq": "Localía y mejor rendimiento histórico en mundiales.",
+      "factores": [
+        "Localía en el torneo",
+        "Historial positivo ante rivales similares",
+        "Racha reciente aceptable"
+      ],
+      "favorito": "México",
+      "goles": "2-0",
+      "corners": 8,
+      "tiros_porteria": [
+        {
+          "jugador": "Jugador G",
+          "equipo": "México",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Jugador H",
+          "equipo": "México",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Jugador I",
+          "equipo": "Third Place Group C/E/F/H/I",
+          "tiros_estimados": 1
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 65,
+          "over_9.5": 50,
+          "over_10.5": 35
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    }
+  }
+}
