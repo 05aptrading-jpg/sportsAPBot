@@ -1,5 +1,5 @@
 {
-  "fecha": "21/06/2026 12:00",
+  "fecha": "21/06/2026 12:01",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782136800,
@@ -14161,8 +14161,8 @@
         "is_top": false,
         "inning_ordinal": "2nd",
         "outs": 1,
-        "balls": 0,
-        "strikes": 1,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -14342,7 +14342,7 @@
       "opp_team": "New York Yankees",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "End 1st",
+      "state": "Top 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 823531,
@@ -14363,14 +14363,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 3,
-        "balls": 3,
-        "strikes": 2,
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 1,
@@ -14684,7 +14688,7 @@
         "current_inning": 2,
         "is_top": false,
         "inning_ordinal": "2nd",
-        "outs": 1,
+        "outs": 2,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
@@ -14865,7 +14869,7 @@
       "fav_team": "Atlanta Braves",
       "opp_team": "Milwaukee Brewers",
       "score_fav": "1",
-      "score_opp": "2",
+      "score_opp": "3",
       "state": "Top 2nd",
       "result": "live",
       "label": "📋",
@@ -14889,7 +14893,7 @@
             "home_runs": 1
           },
           {
-            "away_runs": 2,
+            "away_runs": 3,
             "home_runs": 0
           }
         ],
@@ -14899,9 +14903,9 @@
         "outs": 2,
         "balls": 0,
         "strikes": 1,
-        "away_runs": 2,
+        "away_runs": 3,
         "home_runs": 1,
-        "away_hits": 3,
+        "away_hits": 4,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -14915,9 +14919,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "2",
+        "fav_score": "3",
         "opp_score": "1",
-        "score_fav": "2",
+        "score_fav": "3",
         "score_opp": "1"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATL.png&h=40&w=40",
@@ -15791,8 +15795,8 @@
         "is_top": false,
         "inning_ordinal": "2nd",
         "outs": 1,
-        "balls": 0,
-        "strikes": 1,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -15861,7 +15865,7 @@
     "823531": {
       "is_live": true,
       "is_final": false,
-      "status": "End 1st",
+      "status": "Top 2nd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "New York Yankees",
@@ -15871,14 +15875,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 3,
-        "balls": 3,
-        "strikes": 2,
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 1,
@@ -16009,7 +16017,7 @@
         "current_inning": 2,
         "is_top": false,
         "inning_ordinal": "2nd",
-        "outs": 1,
+        "outs": 2,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
@@ -16082,7 +16090,7 @@
       "is_final": false,
       "status": "Top 2nd",
       "away_runs": 1,
-      "home_runs": 2,
+      "home_runs": 3,
       "away_team_name": "Milwaukee Brewers",
       "home_team_name": "Atlanta Braves",
       "linescore": {
@@ -16092,7 +16100,7 @@
             "home_runs": 1
           },
           {
-            "away_runs": 2,
+            "away_runs": 3,
             "home_runs": 0
           }
         ],
@@ -16102,9 +16110,9 @@
         "outs": 2,
         "balls": 0,
         "strikes": 1,
-        "away_runs": 2,
+        "away_runs": 3,
         "home_runs": 1,
-        "away_hits": 3,
+        "away_hits": 4,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -16118,9 +16126,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "2",
+        "fav_score": "3",
         "opp_score": "1",
-        "score_fav": "2",
+        "score_fav": "3",
         "score_opp": "1"
       }
     },
@@ -16264,7 +16272,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "21/06/2026 12:00",
+  "updated_at": "21/06/2026 12:01",
   "stats": {
     "total": 82,
     "acertados": 52,
