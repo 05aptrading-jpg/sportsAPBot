@@ -760,89 +760,6 @@
       "liga": "LMB",
       "game_date": "2026-06-03",
       "status_emoji": "❌",
-      "fav_team": "Toros de Tijuana",
-      "opp_team": "Charros de Jalisco",
-      "score_fav": "4",
-      "score_opp": "6",
-      "state": "Final",
-      "result": "loss",
-      "label": "📋",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Falta confirmación de abridores.",
-      "llm_factores": "[]",
-      "resultado_llm": "Fallido",
-      "game_pk": 0,
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 4
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 3,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 3,
-        "strikes": 3,
-        "away_runs": 6,
-        "home_runs": 4,
-        "away_hits": 11,
-        "home_hits": 8,
-        "away_errors": 1,
-        "home_errors": 1,
-        "away_team_name": "Charros de Jalisco",
-        "home_team_name": "Toros de Tijuana",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "6",
-        "opp_score": "4",
-        "score_fav": "6",
-        "score_opp": "4"
-      }
-    },
-    {
-      "liga": "LMB",
-      "game_date": "2026-06-03",
-      "status_emoji": "❌",
       "fav_team": "Caliente de Durango",
       "opp_team": "Dorados de Chihuahua",
       "score_fav": "2",
@@ -2068,89 +1985,6 @@
     {
       "liga": "LMB",
       "game_date": "2026-06-04",
-      "status_emoji": "✅",
-      "fav_team": "Toros de Tijuana",
-      "opp_team": "Charros de Jalisco",
-      "score_fav": "5",
-      "score_opp": "4",
-      "state": "Final",
-      "result": "win",
-      "label": "📋",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Falta confirmación de abridores.",
-      "llm_factores": "[]",
-      "resultado_llm": "Acertado",
-      "game_pk": 0,
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 0,
-        "away_runs": 4,
-        "home_runs": 5,
-        "away_hits": 9,
-        "home_hits": 10,
-        "away_errors": 4,
-        "home_errors": 1,
-        "away_team_name": "Charros de Jalisco",
-        "home_team_name": "Toros de Tijuana",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "4",
-        "opp_score": "5",
-        "score_fav": "4",
-        "score_opp": "5"
-      }
-    },
-    {
-      "liga": "LMB",
-      "game_date": "2026-06-04",
       "status_emoji": "❌",
       "fav_team": "Caliente de Durango",
       "opp_team": "Dorados de Chihuahua",
@@ -3214,9 +3048,13 @@
       "result": "loss",
       "label": "📋",
       "llm_ir_favorito": "SÍ",
-      "llm_porque": "Falta confirmación de abridores",
-      "llm_factores": "[]",
-      "resultado_llm": "Fallido",
+      "llm_porque": "Mejor récord, ventaja en casa y racha reciente positiva.",
+      "llm_factores": [
+        "Racha reciente de Yankees (7-3)",
+        "Historial favorable en casa",
+        "Lesiones de jugadores clave en Red Sox"
+      ],
+      "resultado_llm": "",
       "game_pk": 0,
       "linescore": {
         "innings": [
@@ -3283,7 +3121,41 @@
         "opp_score": "3",
         "score_fav": "5",
         "score_opp": "3"
-      }
+      },
+      "llm_goles": "",
+      "llm_corners_est": 0,
+      "llm_tiros_porteria": [],
+      "llm_lineas": {
+        "goles": {},
+        "corners": {}
+      },
+      "llm_favorito": "New York Yankees",
+      "llm_carreras": "6-4",
+      "llm_carreras_lineas": {
+        "over_7.5": 75,
+        "over_8.5": 60,
+        "over_9.5": 45
+      },
+      "llm_ranking_local": "AL Este: 1º (42-28, Dif +85)",
+      "llm_ranking_visitante": "AL Este: 4º (30-35)",
+      "llm_abridor_local": "Gerrit Cole (3.10, 8-2, 95)",
+      "llm_abridor_visitante": "Chris Sale (4.50, 5-4, 75)",
+      "llm_bateadores_clave": [
+        {
+          "jugador": "Aaron Judge",
+          "equipo": "New York Yankees",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2
+        },
+        {
+          "jugador": "Rafael Devers",
+          "equipo": "Boston Red Sox",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1
+        }
+      ],
+      "llm_relevo_local": "Bullpen sólido con ERA de 3.20, confiable en momentos críticos.",
+      "llm_relevo_visitante": "Bullpen inconsistente, ERA de 4.50, problemas en situaciones de presión."
     },
     {
       "liga": "MLB",
@@ -6830,24 +6702,6 @@
       "liga": "LMB",
       "game_date": "2026-06-09",
       "status_emoji": "❌",
-      "fav_team": "Toros de Tijuana",
-      "opp_team": "El Aguila de Veracruz",
-      "score_fav": "2",
-      "score_opp": "3",
-      "state": "Final",
-      "result": "loss",
-      "label": "🎯",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Falta confirmación de abridores",
-      "llm_factores": "[]",
-      "resultado_llm": "Fallido",
-      "game_pk": 0,
-      "linescore": {}
-    },
-    {
-      "liga": "LMB",
-      "game_date": "2026-06-09",
-      "status_emoji": "❌",
       "fav_team": "Sultanes de Monterrey",
       "opp_team": "Tigres de Quintana Roo",
       "score_fav": "2",
@@ -7815,107 +7669,6 @@
       "liga": "LMB",
       "game_date": "2026-06-09",
       "status_emoji": "✅",
-      "fav_team": "Charros de Jalisco",
-      "opp_team": "Guerreros de Oaxaca",
-      "score_fav": "6",
-      "score_opp": "2",
-      "state": "Final",
-      "result": "win",
-      "label": "📋",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Falta confirmación de abridores",
-      "llm_factores": "[]",
-      "resultado_llm": "Acertado",
-      "game_pk": 0,
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 1,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 4
-          }
-        ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 1,
-        "balls": 2,
-        "strikes": 2,
-        "away_runs": 2,
-        "home_runs": 6,
-        "away_hits": 7,
-        "home_hits": 13,
-        "away_errors": 0,
-        "home_errors": 1,
-        "away_team_name": "Guerreros de Oaxaca",
-        "home_team_name": "Charros de Jalisco",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "2",
-        "opp_score": "6",
-        "score_fav": "2",
-        "score_opp": "6"
-      }
-    },
-    {
-      "liga": "LMB",
-      "game_date": "2026-06-09",
-      "status_emoji": "✅",
-      "fav_team": "Algodoneros Union Laguna",
-      "opp_team": "Conspiradores de Queretaro",
-      "score_fav": "6",
-      "score_opp": "5",
-      "state": "Final",
-      "result": "win",
-      "label": "📋",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Falta confirmación de abridores",
-      "llm_factores": "[]",
-      "resultado_llm": "Acertado",
-      "game_pk": 0,
-      "linescore": {}
-    },
-    {
-      "liga": "LMB",
-      "game_date": "2026-06-09",
-      "status_emoji": "✅",
       "fav_team": "Dorados de Chihuahua",
       "opp_team": "Piratas de Campeche",
       "score_fav": "2",
@@ -8165,24 +7918,6 @@
       "llm_porque": "Falta confirmación de abridores",
       "llm_factores": "[]",
       "resultado_llm": "Fallido",
-      "game_pk": 0,
-      "linescore": {}
-    },
-    {
-      "liga": "LMB",
-      "game_date": "2026-06-10",
-      "status_emoji": "✅",
-      "fav_team": "Toros de Tijuana",
-      "opp_team": "El Aguila de Veracruz",
-      "score_fav": "9",
-      "score_opp": "5",
-      "state": "Final",
-      "result": "win",
-      "label": "🎯",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Falta confirmación de abridores",
-      "llm_factores": "[]",
-      "resultado_llm": "Acertado",
       "game_pk": 0,
       "linescore": {}
     },
@@ -9236,24 +8971,6 @@
       "liga": "LMB",
       "game_date": "2026-06-10",
       "status_emoji": "❌",
-      "fav_team": "Algodoneros Union Laguna",
-      "opp_team": "Conspiradores de Queretaro",
-      "score_fav": "1",
-      "score_opp": "3",
-      "state": "Final",
-      "result": "loss",
-      "label": "📋",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Falta confirmación de abridores",
-      "llm_factores": "[]",
-      "resultado_llm": "Fallido",
-      "game_pk": 0,
-      "linescore": {}
-    },
-    {
-      "liga": "LMB",
-      "game_date": "2026-06-10",
-      "status_emoji": "❌",
       "fav_team": "Dorados de Chihuahua",
       "opp_team": "Piratas de Campeche",
       "score_fav": "4",
@@ -10084,42 +9801,6 @@
       "llm_porque": "Falta confirmación de abridores",
       "llm_factores": "[]",
       "resultado_llm": "Fallido",
-      "game_pk": 0,
-      "linescore": {}
-    },
-    {
-      "liga": "LMB",
-      "game_date": "2026-06-11",
-      "status_emoji": "❌",
-      "fav_team": "Algodoneros Union Laguna",
-      "opp_team": "Conspiradores de Queretaro",
-      "score_fav": "6",
-      "score_opp": "11",
-      "state": "Final",
-      "result": "loss",
-      "label": "📋",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Falta confirmación de abridores",
-      "llm_factores": "[]",
-      "resultado_llm": "Fallido",
-      "game_pk": 0,
-      "linescore": {}
-    },
-    {
-      "liga": "LMB",
-      "game_date": "2026-06-11",
-      "status_emoji": "✅",
-      "fav_team": "Toros de Tijuana",
-      "opp_team": "El Aguila de Veracruz",
-      "score_fav": "6",
-      "score_opp": "0",
-      "state": "Final",
-      "result": "win",
-      "label": "📋",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Falta confirmación de abridores",
-      "llm_factores": "[]",
-      "resultado_llm": "Acertado",
       "game_pk": 0,
       "linescore": {}
     },
@@ -12075,169 +11756,6 @@
       ],
       "llm_relevo_local": "Bullpen con ERA de 3.50, confiable en finales.",
       "llm_relevo_visitante": "Bullpen con ERA de 4.20, ha tenido problemas en presión."
-    },
-    {
-      "liga": "LMB",
-      "game_date": "2026-06-12",
-      "status_emoji": "🏁",
-      "fav_team": "Tecos de los Dos Laredos",
-      "opp_team": "Conspiradores de Queretaro",
-      "score_fav": "",
-      "score_opp": "",
-      "state": "Pend.",
-      "result": "completed",
-      "label": "📋",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor posición en la tabla y localía.",
-      "llm_factores": [
-        "Mejor récord en casa",
-        "Racha de 7-3 en últimos 10",
-        "Historial favorable"
-      ],
-      "resultado_llm": "",
-      "game_pk": 0,
-      "linescore": {},
-      "llm_favorito": "Tecos de los Dos Laredos",
-      "llm_carreras": "6-4",
-      "llm_carreras_lineas": {
-        "over_7.5": 75,
-        "over_8.5": 60,
-        "over_9.5": 45
-      },
-      "llm_ranking_local": "LMB Zona Norte: 2º (30-20)",
-      "llm_ranking_visitante": "LMB Zona Norte: 4º (25-25)",
-      "llm_abridor_local": "Luis Cessa (3.80, 5-2, 70)",
-      "llm_abridor_visitante": "Jorge Reyes (4.50, 4-4, 50)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "Jorge Flores",
-          "equipo": "Tecos de los Dos Laredos",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 2
-        },
-        {
-          "jugador": "Javier Salazar",
-          "equipo": "Conspiradores de Queretaro",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 3.80, sólido.",
-      "llm_relevo_visitante": "Bullpen con ERA de 4.50, menos confiable."
-    },
-    {
-      "liga": "LMB",
-      "game_date": "2026-06-12",
-      "status_emoji": "❌",
-      "fav_team": "El Aguila de Veracruz",
-      "opp_team": "Saraperos de Saltillo",
-      "score_fav": "2",
-      "score_opp": "3",
-      "state": "Final",
-      "result": "loss",
-      "label": "📋",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y localía.",
-      "llm_factores": [
-        "Racha de 8-2 en últimos 10",
-        "Mejor posición en la tabla",
-        "Ventaja de local"
-      ],
-      "resultado_llm": "",
-      "game_pk": 0,
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 2,
-        "away_runs": 3,
-        "home_runs": 2,
-        "away_hits": 7,
-        "home_hits": 6,
-        "away_errors": 1,
-        "home_errors": 1,
-        "away_team_name": "Saraperos de Saltillo",
-        "home_team_name": "El Aguila de Veracruz",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "3",
-        "opp_score": "2",
-        "score_fav": "3",
-        "score_opp": "2"
-      },
-      "llm_favorito": "El Aguila de Veracruz",
-      "llm_carreras": "5-3",
-      "llm_carreras_lineas": {
-        "over_7.5": 70,
-        "over_8.5": 55,
-        "over_9.5": 40
-      },
-      "llm_ranking_local": "LMB Zona Sur: 1º (35-15)",
-      "llm_ranking_visitante": "LMB Zona Sur: 3º (28-22)",
-      "llm_abridor_local": "Joaquín Soria (2.90, 6-1, 65)",
-      "llm_abridor_visitante": "Jorge Reyes (4.00, 4-5, 50)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "Javier Salazar",
-          "equipo": "El Aguila de Veracruz",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2
-        },
-        {
-          "jugador": "Jesse Castillo",
-          "equipo": "Saraperos de Saltillo",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 3.40, confiable.",
-      "llm_relevo_visitante": "Bullpen con ERA de 4.60, menos efectivo."
     },
     {
       "liga": "LMB",
@@ -15085,110 +14603,6 @@
       "liga": "MLB",
       "game_date": "2026-06-21",
       "status_emoji": "⏳",
-      "fav_team": "Cleveland Guardians",
-      "opp_team": "Houston Astros",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Pre-Game",
-      "result": "pending",
-      "label": "📋",
-      "game_pk": 824177,
-      "fav_abbr": "CLE",
-      "opp_abbr": "HOU",
-      "home_team": "Houston Astros",
-      "away_team": "Cleveland Guardians",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Astros tienen mejor récord y racha reciente.",
-      "llm_factores": [
-        "Racha de 7-3 en últimos 10",
-        "Astros 1º en AL Oeste",
-        "Guardians 4º en AL Central"
-      ],
-      "resultado_llm": "pendiente",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 1,
-        "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 0,
-        "home_runs": 0,
-        "away_hits": 0,
-        "home_hits": 0,
-        "away_errors": 0,
-        "home_errors": 0,
-        "away_team_name": "Cleveland Guardians",
-        "home_team_name": "Houston Astros",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Pre-Game",
-        "fav_score": "0",
-        "opp_score": "0",
-        "score_fav": "0",
-        "score_opp": "0"
-      },
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40",
-      "llm_favorito": "Houston Astros",
-      "llm_carreras": "6-3",
-      "llm_carreras_lineas": {
-        "over_7.5": 75,
-        "over_8.5": 60,
-        "over_9.5": 45
-      },
-      "llm_ranking_local": "AL Oeste: 1º (45-25)",
-      "llm_ranking_visitante": "AL Central: 4º (30-40)",
-      "llm_abridor_local": "Framber Valdez (3.20, 8-3, 95)",
-      "llm_abridor_visitante": "Shane Bieber (4.10, 5-6, 85)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "José Altuve",
-          "equipo": "Houston Astros",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2,
-          "confianza_bateo": 85
-        },
-        {
-          "jugador": "Yordan Álvarez",
-          "equipo": "Houston Astros",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 3,
-          "confianza_bateo": 90
-        },
-        {
-          "jugador": "José Ramírez",
-          "equipo": "Cleveland Guardians",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 70
-        },
-        {
-          "jugador": "Josh Naylor",
-          "equipo": "Cleveland Guardians",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 65
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 3.50, confiable en finales.",
-      "llm_relevo_visitante": "Bullpen con ERA de 4.80, menos confiable."
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-21",
-      "status_emoji": "⏳",
       "fav_team": "Detroit Tigers",
       "opp_team": "Chicago White Sox",
       "score_fav": "—",
@@ -15699,6 +15113,109 @@
       ],
       "llm_relevo_local": "Bullpen con ERA de 3.50, confiable en situaciones cerradas.",
       "llm_relevo_visitante": "Bullpen con ERA de 4.20, menos efectivo en finales de juegos."
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-21",
+      "status_emoji": "⏳",
+      "fav_team": "Cleveland Guardians",
+      "opp_team": "Houston Astros",
+      "score_fav": "—",
+      "score_opp": "",
+      "state": "Pre-Game",
+      "result": "pending",
+      "label": "📋",
+      "game_pk": 824177,
+      "fav_abbr": "CLE",
+      "opp_abbr": "HOU",
+      "home_team": "Houston Astros",
+      "away_team": "Cleveland Guardians",
+      "linescore": {
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "1st",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Cleveland Guardians",
+        "home_team_name": "Houston Astros",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Pre-Game",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Astros tienen mejor récord y racha reciente.",
+      "llm_factores": [
+        "Racha de 7-3 en últimos 10",
+        "Astros 1º en AL Oeste",
+        "Guardians 4º en AL Central"
+      ],
+      "llm_favorito": "Houston Astros",
+      "llm_carreras": "6-3",
+      "llm_carreras_lineas": {
+        "over_7.5": 75,
+        "over_8.5": 60,
+        "over_9.5": 45
+      },
+      "llm_ranking_local": "AL Oeste: 1º (45-25)",
+      "llm_ranking_visitante": "AL Central: 4º (30-40)",
+      "llm_abridor_local": "Framber Valdez (3.20, 8-3, 95)",
+      "llm_abridor_visitante": "Shane Bieber (4.10, 5-6, 85)",
+      "llm_bateadores_clave": [
+        {
+          "jugador": "José Altuve",
+          "equipo": "Houston Astros",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2,
+          "confianza_bateo": 85
+        },
+        {
+          "jugador": "Yordan Álvarez",
+          "equipo": "Houston Astros",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 3,
+          "confianza_bateo": 90
+        },
+        {
+          "jugador": "José Ramírez",
+          "equipo": "Cleveland Guardians",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 70
+        },
+        {
+          "jugador": "Josh Naylor",
+          "equipo": "Cleveland Guardians",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 65
+        }
+      ],
+      "llm_relevo_local": "Bullpen con ERA de 3.50, confiable en finales.",
+      "llm_relevo_visitante": "Bullpen con ERA de 4.80, menos confiable."
     },
     {
       "liga": "MLB",
@@ -16387,49 +15904,6 @@
         "score_opp": "0"
       }
     },
-    "824177": {
-      "is_live": false,
-      "is_final": false,
-      "status": "Pre-Game",
-      "away_runs": 0,
-      "home_runs": 0,
-      "away_team_name": "Houston Astros",
-      "home_team_name": "Cleveland Guardians",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 1,
-        "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 0,
-        "home_runs": 0,
-        "away_hits": 0,
-        "home_hits": 0,
-        "away_errors": 0,
-        "home_errors": 0,
-        "away_team_name": "Cleveland Guardians",
-        "home_team_name": "Houston Astros",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Pre-Game",
-        "fav_score": "0",
-        "opp_score": "0",
-        "score_fav": "0",
-        "score_opp": "0"
-      }
-    },
     "824260": {
       "is_live": false,
       "is_final": false,
@@ -16640,6 +16114,49 @@
         "score_opp": "0"
       }
     },
+    "824177": {
+      "is_live": false,
+      "is_final": false,
+      "status": "Pre-Game",
+      "away_runs": 0,
+      "home_runs": 0,
+      "away_team_name": "Houston Astros",
+      "home_team_name": "Cleveland Guardians",
+      "linescore": {
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "1st",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Cleveland Guardians",
+        "home_team_name": "Houston Astros",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Pre-Game",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      }
+    },
     "401815848": {
       "is_live": false,
       "is_final": false,
@@ -16653,22 +16170,22 @@
   },
   "updated_at": "21/06/2026 11:00",
   "stats": {
-    "total": 85,
-    "acertados": 53,
-    "fallidos": 32,
-    "win_rate": 62.4,
-    "alta_total": 34,
-    "alta_acertados": 21,
-    "alta_fallidos": 13,
-    "alta_win_rate": 61.8,
+    "total": 82,
+    "acertados": 52,
+    "fallidos": 30,
+    "win_rate": 63.4,
+    "alta_total": 32,
+    "alta_acertados": 20,
+    "alta_fallidos": 12,
+    "alta_win_rate": 62.5,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 149,
-    "baja_acertados": 74,
-    "baja_fallidos": 75,
-    "baja_win_rate": 49.7,
+    "baja_total": 141,
+    "baja_acertados": 70,
+    "baja_fallidos": 71,
+    "baja_win_rate": 49.6,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -16677,16 +16194,16 @@
     "hits_fallidos": 0,
     "hits_pendientes": 162,
     "hits_win_rate": 0.0,
-    "llm_total": 183,
-    "llm_acertados": 95,
-    "llm_fallidos": 88,
-    "llm_win_rate": 51.9
+    "llm_total": 173,
+    "llm_acertados": 90,
+    "llm_fallidos": 83,
+    "llm_win_rate": 52.0
   },
   "stats_mlb": {
-    "total": 61,
+    "total": 60,
     "acertados": 41,
-    "fallidos": 20,
-    "win_rate": 67.2,
+    "fallidos": 19,
+    "win_rate": 68.3,
     "alta_total": 19,
     "alta_acertados": 13,
     "alta_fallidos": 6,
@@ -16695,10 +16212,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 94,
+    "baja_total": 93,
     "baja_acertados": 56,
-    "baja_fallidos": 38,
-    "baja_win_rate": 59.6,
+    "baja_fallidos": 37,
+    "baja_win_rate": 60.2,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -16707,28 +16224,28 @@
     "hits_fallidos": 0,
     "hits_pendientes": 162,
     "hits_win_rate": 0.0,
-    "llm_total": 113,
+    "llm_total": 112,
     "llm_acertados": 69,
-    "llm_fallidos": 44,
-    "llm_win_rate": 61.1
+    "llm_fallidos": 43,
+    "llm_win_rate": 61.6
   },
   "stats_lmb": {
-    "total": 24,
-    "acertados": 12,
-    "fallidos": 12,
+    "total": 22,
+    "acertados": 11,
+    "fallidos": 11,
     "win_rate": 50.0,
-    "alta_total": 15,
-    "alta_acertados": 8,
-    "alta_fallidos": 7,
-    "alta_win_rate": 53.3,
+    "alta_total": 13,
+    "alta_acertados": 7,
+    "alta_fallidos": 6,
+    "alta_win_rate": 53.8,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 55,
-    "baja_acertados": 18,
-    "baja_fallidos": 37,
-    "baja_win_rate": 32.7,
+    "baja_total": 48,
+    "baja_acertados": 14,
+    "baja_fallidos": 34,
+    "baja_win_rate": 29.2,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -16737,10 +16254,10 @@
     "hits_fallidos": 0,
     "hits_pendientes": 162,
     "hits_win_rate": 0.0,
-    "llm_total": 70,
-    "llm_acertados": 26,
-    "llm_fallidos": 44,
-    "llm_win_rate": 37.1
+    "llm_total": 61,
+    "llm_acertados": 21,
+    "llm_fallidos": 40,
+    "llm_win_rate": 34.4
   },
   "stats_hoy": {
     "total": 0,
@@ -17023,7 +16540,9 @@
     "2026-06-10",
     "2026-06-11",
     "2026-06-12",
-    "2026-06-21"
+    "2026-06-21",
+    "50.74%",
+    "78.8"
   ],
   "stats_por_fecha": {
     "2026-06-03": {
@@ -17035,36 +16554,6 @@
       "alta_acertados": 1,
       "alta_fallidos": 1,
       "alta_win_rate": 50.0,
-      "media_total": 0,
-      "media_acertados": 0,
-      "media_fallidos": 0,
-      "media_win_rate": 0,
-      "baja_total": 19,
-      "baja_acertados": 7,
-      "baja_fallidos": 12,
-      "baja_win_rate": 36.8,
-      "valor_ok": 0,
-      "valor_total": 0,
-      "valor_rate": 0,
-      "hits_total": 162,
-      "hits_acertados": 0,
-      "hits_fallidos": 0,
-      "hits_pendientes": 162,
-      "hits_win_rate": 0.0,
-      "llm_total": 21,
-      "llm_acertados": 8,
-      "llm_fallidos": 13,
-      "llm_win_rate": 38.1
-    },
-    "2026-06-04": {
-      "total": 11,
-      "acertados": 6,
-      "fallidos": 5,
-      "win_rate": 54.5,
-      "alta_total": 5,
-      "alta_acertados": 4,
-      "alta_fallidos": 1,
-      "alta_win_rate": 80.0,
       "media_total": 0,
       "media_acertados": 0,
       "media_fallidos": 0,
@@ -17081,28 +16570,28 @@
       "hits_fallidos": 0,
       "hits_pendientes": 162,
       "hits_win_rate": 0.0,
-      "llm_total": 23,
-      "llm_acertados": 11,
+      "llm_total": 20,
+      "llm_acertados": 8,
       "llm_fallidos": 12,
-      "llm_win_rate": 47.8
+      "llm_win_rate": 40.0
     },
-    "2026-06-05": {
+    "2026-06-04": {
       "total": 11,
-      "acertados": 7,
-      "fallidos": 4,
-      "win_rate": 63.6,
-      "alta_total": 4,
-      "alta_acertados": 3,
+      "acertados": 6,
+      "fallidos": 5,
+      "win_rate": 54.5,
+      "alta_total": 5,
+      "alta_acertados": 4,
       "alta_fallidos": 1,
-      "alta_win_rate": 75.0,
+      "alta_win_rate": 80.0,
       "media_total": 0,
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 20,
-      "baja_acertados": 8,
-      "baja_fallidos": 12,
-      "baja_win_rate": 40.0,
+      "baja_total": 17,
+      "baja_acertados": 6,
+      "baja_fallidos": 11,
+      "baja_win_rate": 35.3,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
@@ -17111,10 +16600,40 @@
       "hits_fallidos": 0,
       "hits_pendientes": 162,
       "hits_win_rate": 0.0,
-      "llm_total": 24,
+      "llm_total": 22,
+      "llm_acertados": 10,
+      "llm_fallidos": 12,
+      "llm_win_rate": 45.5
+    },
+    "2026-06-05": {
+      "total": 10,
+      "acertados": 7,
+      "fallidos": 3,
+      "win_rate": 70.0,
+      "alta_total": 4,
+      "alta_acertados": 3,
+      "alta_fallidos": 1,
+      "alta_win_rate": 75.0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 19,
+      "baja_acertados": 8,
+      "baja_fallidos": 11,
+      "baja_win_rate": 42.1,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "hits_total": 162,
+      "hits_acertados": 0,
+      "hits_fallidos": 0,
+      "hits_pendientes": 162,
+      "hits_win_rate": 0.0,
+      "llm_total": 23,
       "llm_acertados": 11,
-      "llm_fallidos": 13,
-      "llm_win_rate": 45.8
+      "llm_fallidos": 12,
+      "llm_win_rate": 47.8
     },
     "2026-06-06": {
       "total": 7,
@@ -17207,22 +16726,22 @@
       "llm_win_rate": 66.7
     },
     "2026-06-09": {
-      "total": 16,
+      "total": 15,
       "acertados": 10,
-      "fallidos": 6,
-      "win_rate": 62.5,
-      "alta_total": 8,
+      "fallidos": 5,
+      "win_rate": 66.7,
+      "alta_total": 7,
       "alta_acertados": 5,
-      "alta_fallidos": 3,
-      "alta_win_rate": 62.5,
+      "alta_fallidos": 2,
+      "alta_win_rate": 71.4,
       "media_total": 0,
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 17,
-      "baja_acertados": 11,
+      "baja_total": 15,
+      "baja_acertados": 9,
       "baja_fallidos": 6,
-      "baja_win_rate": 64.7,
+      "baja_win_rate": 60.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
@@ -17231,28 +16750,28 @@
       "hits_fallidos": 0,
       "hits_pendientes": 162,
       "hits_win_rate": 0.0,
-      "llm_total": 25,
-      "llm_acertados": 16,
-      "llm_fallidos": 9,
-      "llm_win_rate": 64.0
+      "llm_total": 22,
+      "llm_acertados": 14,
+      "llm_fallidos": 8,
+      "llm_win_rate": 63.6
     },
     "2026-06-10": {
-      "total": 11,
-      "acertados": 6,
+      "total": 10,
+      "acertados": 5,
       "fallidos": 5,
-      "win_rate": 54.5,
-      "alta_total": 6,
-      "alta_acertados": 2,
+      "win_rate": 50.0,
+      "alta_total": 5,
+      "alta_acertados": 1,
       "alta_fallidos": 4,
-      "alta_win_rate": 33.3,
+      "alta_win_rate": 20.0,
       "media_total": 0,
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 20,
+      "baja_total": 19,
       "baja_acertados": 10,
-      "baja_fallidos": 10,
-      "baja_win_rate": 50.0,
+      "baja_fallidos": 9,
+      "baja_win_rate": 52.6,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
@@ -17261,10 +16780,10 @@
       "hits_fallidos": 0,
       "hits_pendientes": 162,
       "hits_win_rate": 0.0,
-      "llm_total": 26,
-      "llm_acertados": 12,
-      "llm_fallidos": 14,
-      "llm_win_rate": 46.2
+      "llm_total": 24,
+      "llm_acertados": 11,
+      "llm_fallidos": 13,
+      "llm_win_rate": 45.8
     },
     "2026-06-11": {
       "total": 5,
@@ -17279,10 +16798,10 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 13,
-      "baja_acertados": 7,
-      "baja_fallidos": 6,
-      "baja_win_rate": 53.8,
+      "baja_total": 11,
+      "baja_acertados": 6,
+      "baja_fallidos": 5,
+      "baja_win_rate": 54.5,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
@@ -17291,10 +16810,10 @@
       "hits_fallidos": 0,
       "hits_pendientes": 162,
       "hits_win_rate": 0.0,
-      "llm_total": 14,
-      "llm_acertados": 8,
-      "llm_fallidos": 6,
-      "llm_win_rate": 57.1
+      "llm_total": 12,
+      "llm_acertados": 7,
+      "llm_fallidos": 5,
+      "llm_win_rate": 58.3
     },
     "2026-06-12": {
       "total": 0,
@@ -17327,6 +16846,66 @@
       "llm_win_rate": 0
     },
     "2026-06-21": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "hits_total": 162,
+      "hits_acertados": 0,
+      "hits_fallidos": 0,
+      "hits_pendientes": 162,
+      "hits_win_rate": 0.0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
+    },
+    "50.74%": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "hits_total": 162,
+      "hits_acertados": 0,
+      "hits_fallidos": 0,
+      "hits_pendientes": 162,
+      "hits_win_rate": 0.0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
+    },
+    "78.8": {
       "total": 0,
       "acertados": 0,
       "fallidos": 0,
@@ -17419,10 +16998,10 @@
       "llm_win_rate": 53.8
     },
     "2026-06-05": {
-      "total": 9,
+      "total": 8,
       "acertados": 5,
-      "fallidos": 4,
-      "win_rate": 55.6,
+      "fallidos": 3,
+      "win_rate": 62.5,
       "alta_total": 3,
       "alta_acertados": 2,
       "alta_fallidos": 1,
@@ -17431,10 +17010,10 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 12,
+      "baja_total": 11,
       "baja_acertados": 6,
-      "baja_fallidos": 6,
-      "baja_win_rate": 50.0,
+      "baja_fallidos": 5,
+      "baja_win_rate": 54.5,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
@@ -17443,10 +17022,10 @@
       "hits_fallidos": 0,
       "hits_pendientes": 162,
       "hits_win_rate": 0.0,
-      "llm_total": 15,
+      "llm_total": 14,
       "llm_acertados": 8,
-      "llm_fallidos": 7,
-      "llm_win_rate": 53.3
+      "llm_fallidos": 6,
+      "llm_win_rate": 57.1
     },
     "2026-06-06": {
       "total": 7,
@@ -17687,6 +17266,66 @@
       "llm_acertados": 0,
       "llm_fallidos": 0,
       "llm_win_rate": 0
+    },
+    "50.74%": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "hits_total": 162,
+      "hits_acertados": 0,
+      "hits_fallidos": 0,
+      "hits_pendientes": 162,
+      "hits_win_rate": 0.0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
+    },
+    "78.8": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "hits_total": 162,
+      "hits_acertados": 0,
+      "hits_fallidos": 0,
+      "hits_pendientes": 162,
+      "hits_win_rate": 0.0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
     }
   },
   "stats_por_fecha_lmb": {
@@ -17703,10 +17342,10 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 9,
+      "baja_total": 8,
       "baja_acertados": 3,
-      "baja_fallidos": 6,
-      "baja_win_rate": 33.3,
+      "baja_fallidos": 5,
+      "baja_win_rate": 37.5,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
@@ -17715,10 +17354,10 @@
       "hits_fallidos": 0,
       "hits_pendientes": 162,
       "hits_win_rate": 0.0,
-      "llm_total": 10,
+      "llm_total": 9,
       "llm_acertados": 3,
-      "llm_fallidos": 7,
-      "llm_win_rate": 30.0
+      "llm_fallidos": 6,
+      "llm_win_rate": 33.3
     },
     "2026-06-04": {
       "total": 2,
@@ -17733,10 +17372,10 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 9,
-      "baja_acertados": 3,
+      "baja_total": 8,
+      "baja_acertados": 2,
       "baja_fallidos": 6,
-      "baja_win_rate": 33.3,
+      "baja_win_rate": 25.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
@@ -17745,10 +17384,10 @@
       "hits_fallidos": 0,
       "hits_pendientes": 162,
       "hits_win_rate": 0.0,
-      "llm_total": 10,
-      "llm_acertados": 4,
+      "llm_total": 9,
+      "llm_acertados": 3,
       "llm_fallidos": 6,
-      "llm_win_rate": 40.0
+      "llm_win_rate": 33.3
     },
     "2026-06-05": {
       "total": 2,
@@ -17871,22 +17510,22 @@
       "llm_win_rate": 100.0
     },
     "2026-06-09": {
-      "total": 7,
+      "total": 6,
       "acertados": 3,
-      "fallidos": 4,
-      "win_rate": 42.9,
-      "alta_total": 4,
+      "fallidos": 3,
+      "win_rate": 50.0,
+      "alta_total": 3,
       "alta_acertados": 1,
-      "alta_fallidos": 3,
-      "alta_win_rate": 25.0,
+      "alta_fallidos": 2,
+      "alta_win_rate": 33.3,
       "media_total": 0,
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 6,
-      "baja_acertados": 5,
+      "baja_total": 4,
+      "baja_acertados": 3,
       "baja_fallidos": 1,
-      "baja_win_rate": 83.3,
+      "baja_win_rate": 75.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
@@ -17895,28 +17534,28 @@
       "hits_fallidos": 0,
       "hits_pendientes": 162,
       "hits_win_rate": 0.0,
-      "llm_total": 10,
-      "llm_acertados": 6,
-      "llm_fallidos": 4,
-      "llm_win_rate": 60.0
+      "llm_total": 7,
+      "llm_acertados": 4,
+      "llm_fallidos": 3,
+      "llm_win_rate": 57.1
     },
     "2026-06-10": {
-      "total": 3,
-      "acertados": 2,
+      "total": 2,
+      "acertados": 1,
       "fallidos": 1,
-      "win_rate": 66.7,
-      "alta_total": 3,
-      "alta_acertados": 2,
+      "win_rate": 50.0,
+      "alta_total": 2,
+      "alta_acertados": 1,
       "alta_fallidos": 1,
-      "alta_win_rate": 66.7,
+      "alta_win_rate": 50.0,
       "media_total": 0,
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 8,
+      "baja_total": 7,
       "baja_acertados": 1,
-      "baja_fallidos": 7,
-      "baja_win_rate": 12.5,
+      "baja_fallidos": 6,
+      "baja_win_rate": 14.3,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
@@ -17925,10 +17564,10 @@
       "hits_fallidos": 0,
       "hits_pendientes": 162,
       "hits_win_rate": 0.0,
-      "llm_total": 11,
-      "llm_acertados": 3,
-      "llm_fallidos": 8,
-      "llm_win_rate": 27.3
+      "llm_total": 9,
+      "llm_acertados": 2,
+      "llm_fallidos": 7,
+      "llm_win_rate": 22.2
     },
     "2026-06-11": {
       "total": 1,
@@ -17943,10 +17582,10 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 6,
-      "baja_acertados": 2,
-      "baja_fallidos": 4,
-      "baja_win_rate": 33.3,
+      "baja_total": 4,
+      "baja_acertados": 1,
+      "baja_fallidos": 3,
+      "baja_win_rate": 25.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
@@ -17955,10 +17594,10 @@
       "hits_fallidos": 0,
       "hits_pendientes": 162,
       "hits_win_rate": 0.0,
-      "llm_total": 7,
-      "llm_acertados": 3,
-      "llm_fallidos": 4,
-      "llm_win_rate": 42.9
+      "llm_total": 5,
+      "llm_acertados": 2,
+      "llm_fallidos": 3,
+      "llm_win_rate": 40.0
     },
     "2026-06-12": {
       "total": 0,
@@ -17991,6 +17630,66 @@
       "llm_win_rate": 0
     },
     "2026-06-21": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "hits_total": 162,
+      "hits_acertados": 0,
+      "hits_fallidos": 0,
+      "hits_pendientes": 162,
+      "hits_win_rate": 0.0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
+    },
+    "50.74%": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "hits_total": 162,
+      "hits_acertados": 0,
+      "hits_fallidos": 0,
+      "hits_pendientes": 162,
+      "hits_win_rate": 0.0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
+    },
+    "78.8": {
       "total": 0,
       "acertados": 0,
       "fallidos": 0,
@@ -18817,78 +18516,6 @@
       ],
       "relevo_local": "Bullpen con ERA de 3.50, confiable en finales.",
       "relevo_visitante": "Bullpen con ERA de 4.20, ha tenido problemas en presión."
-    },
-    "2026-06-12___LMB___Tecos de los Dos Laredos___Conspiradores de Queretaro": {
-      "ir": "SÍ",
-      "pq": "Mejor posición en la tabla y localía.",
-      "factores": [
-        "Mejor récord en casa",
-        "Racha de 7-3 en últimos 10",
-        "Historial favorable"
-      ],
-      "favorito": "Tecos de los Dos Laredos",
-      "carreras_esperadas": "6-4",
-      "carreras_lineas": {
-        "over_7.5": 75,
-        "over_8.5": 60,
-        "over_9.5": 45
-      },
-      "ranking_local": "LMB Zona Norte: 2º (30-20)",
-      "ranking_visitante": "LMB Zona Norte: 4º (25-25)",
-      "abridor_local": "Luis Cessa (3.80, 5-2, 70)",
-      "abridor_visitante": "Jorge Reyes (4.50, 4-4, 50)",
-      "bateadores_clave": [
-        {
-          "jugador": "Jorge Flores",
-          "equipo": "Tecos de los Dos Laredos",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 2
-        },
-        {
-          "jugador": "Javier Salazar",
-          "equipo": "Conspiradores de Queretaro",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1
-        }
-      ],
-      "relevo_local": "Bullpen con ERA de 3.80, sólido.",
-      "relevo_visitante": "Bullpen con ERA de 4.50, menos confiable."
-    },
-    "2026-06-12___LMB___El Aguila de Veracruz___Saraperos de Saltillo": {
-      "ir": "SÍ",
-      "pq": "Mejor récord y localía.",
-      "factores": [
-        "Racha de 8-2 en últimos 10",
-        "Mejor posición en la tabla",
-        "Ventaja de local"
-      ],
-      "favorito": "El Aguila de Veracruz",
-      "carreras_esperadas": "5-3",
-      "carreras_lineas": {
-        "over_7.5": 70,
-        "over_8.5": 55,
-        "over_9.5": 40
-      },
-      "ranking_local": "LMB Zona Sur: 1º (35-15)",
-      "ranking_visitante": "LMB Zona Sur: 3º (28-22)",
-      "abridor_local": "Joaquín Soria (2.90, 6-1, 65)",
-      "abridor_visitante": "Jorge Reyes (4.00, 4-5, 50)",
-      "bateadores_clave": [
-        {
-          "jugador": "Javier Salazar",
-          "equipo": "El Aguila de Veracruz",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2
-        },
-        {
-          "jugador": "Jesse Castillo",
-          "equipo": "Saraperos de Saltillo",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1
-        }
-      ],
-      "relevo_local": "Bullpen con ERA de 3.40, confiable.",
-      "relevo_visitante": "Bullpen con ERA de 4.60, menos efectivo."
     },
     "2026-06-12___LMB___Sultanes de Monterrey___Piratas de Campeche": {
       "ir": "SÍ",
@@ -20598,58 +20225,6 @@
       "relevo_local": "Bullpen con ERA de 5.00, vulnerable en finales.",
       "relevo_visitante": "Bullpen con ERA de 3.90, sólido en situaciones apremiantes."
     },
-    "2026-06-21___MLB___Houston Astros___Cleveland Guardians": {
-      "ir": "SÍ",
-      "pq": "Astros tienen mejor récord y racha reciente.",
-      "factores": [
-        "Racha de 7-3 en últimos 10",
-        "Astros 1º en AL Oeste",
-        "Guardians 4º en AL Central"
-      ],
-      "favorito": "Houston Astros",
-      "carreras_esperadas": "6-3",
-      "carreras_lineas": {
-        "over_7.5": 75,
-        "over_8.5": 60,
-        "over_9.5": 45
-      },
-      "ranking_local": "AL Oeste: 1º (45-25)",
-      "ranking_visitante": "AL Central: 4º (30-40)",
-      "abridor_local": "Framber Valdez (3.20, 8-3, 95)",
-      "abridor_visitante": "Shane Bieber (4.10, 5-6, 85)",
-      "bateadores_clave": [
-        {
-          "jugador": "José Altuve",
-          "equipo": "Houston Astros",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2,
-          "confianza_bateo": 85
-        },
-        {
-          "jugador": "Yordan Álvarez",
-          "equipo": "Houston Astros",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 3,
-          "confianza_bateo": 90
-        },
-        {
-          "jugador": "José Ramírez",
-          "equipo": "Cleveland Guardians",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 70
-        },
-        {
-          "jugador": "Josh Naylor",
-          "equipo": "Cleveland Guardians",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 65
-        }
-      ],
-      "relevo_local": "Bullpen con ERA de 3.50, confiable en finales.",
-      "relevo_visitante": "Bullpen con ERA de 4.80, menos confiable."
-    },
     "2026-06-21___MLB___Detroit Tigers___Chicago White Sox": {
       "ir": "SÍ",
       "pq": "Mejor récord y racha reciente más fuerte.",
@@ -20909,6 +20484,58 @@
       ],
       "relevo_local": "Bullpen con ERA de 3.50, confiable en situaciones cerradas.",
       "relevo_visitante": "Bullpen con ERA de 4.20, menos efectivo en finales de juegos."
+    },
+    "2026-06-21___MLB___Houston Astros___Cleveland Guardians": {
+      "ir": "SÍ",
+      "pq": "Astros tienen mejor récord y racha reciente.",
+      "factores": [
+        "Racha de 7-3 en últimos 10",
+        "Astros 1º en AL Oeste",
+        "Guardians 4º en AL Central"
+      ],
+      "favorito": "Houston Astros",
+      "carreras_esperadas": "6-3",
+      "carreras_lineas": {
+        "over_7.5": 75,
+        "over_8.5": 60,
+        "over_9.5": 45
+      },
+      "ranking_local": "AL Oeste: 1º (45-25)",
+      "ranking_visitante": "AL Central: 4º (30-40)",
+      "abridor_local": "Framber Valdez (3.20, 8-3, 95)",
+      "abridor_visitante": "Shane Bieber (4.10, 5-6, 85)",
+      "bateadores_clave": [
+        {
+          "jugador": "José Altuve",
+          "equipo": "Houston Astros",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2,
+          "confianza_bateo": 85
+        },
+        {
+          "jugador": "Yordan Álvarez",
+          "equipo": "Houston Astros",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 3,
+          "confianza_bateo": 90
+        },
+        {
+          "jugador": "José Ramírez",
+          "equipo": "Cleveland Guardians",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 70
+        },
+        {
+          "jugador": "Josh Naylor",
+          "equipo": "Cleveland Guardians",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 65
+        }
+      ],
+      "relevo_local": "Bullpen con ERA de 3.50, confiable en finales.",
+      "relevo_visitante": "Bullpen con ERA de 4.80, menos confiable."
     },
     "2026-06-21___MLB___Chicago Cubs___Toronto Blue Jays": {
       "ir": "SÍ",
@@ -21237,6 +20864,49 @@
       "linea_ou": 172.0,
       "b2b_impacto": "",
       "lesion_clave": ""
+    },
+    "2026-06-05___MLB___New York Yankees___Boston Red Sox": {
+      "ir": "SÍ",
+      "pq": "Mejor récord, ventaja en casa y racha reciente positiva.",
+      "factores": [
+        "Racha reciente de Yankees (7-3)",
+        "Historial favorable en casa",
+        "Lesiones de jugadores clave en Red Sox"
+      ],
+      "favorito": "New York Yankees",
+      "goles": "",
+      "corners": 0,
+      "tiros_porteria": [],
+      "lineas": {
+        "goles": {},
+        "corners": {}
+      },
+      "carreras_esperadas": "6-4",
+      "carreras_lineas": {
+        "over_7.5": 75,
+        "over_8.5": 60,
+        "over_9.5": 45
+      },
+      "ranking_local": "AL Este: 1º (42-28, Dif +85)",
+      "ranking_visitante": "AL Este: 4º (30-35)",
+      "abridor_local": "Gerrit Cole (3.10, 8-2, 95)",
+      "abridor_visitante": "Chris Sale (4.50, 5-4, 75)",
+      "bateadores_clave": [
+        {
+          "jugador": "Aaron Judge",
+          "equipo": "New York Yankees",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2
+        },
+        {
+          "jugador": "Rafael Devers",
+          "equipo": "Boston Red Sox",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1
+        }
+      ],
+      "relevo_local": "Bullpen sólido con ERA de 3.20, confiable en momentos críticos.",
+      "relevo_visitante": "Bullpen inconsistente, ERA de 4.50, problemas en situaciones de presión."
     }
   },
   "nba_games": [],
