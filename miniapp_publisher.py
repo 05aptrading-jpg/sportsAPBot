@@ -2272,6 +2272,7 @@ def publicar() -> bool:
             import shutil
             shutil.copy2(live_path, docs_path)
         pushear_archivo("live_data.json", live_json, "Actualizar live_data.json")
+        pushear_archivo("docs/live_data.json", live_json, "Actualizar docs/live_data.json")
     except Exception as e:
         logger.error(f"Error generando live_data.json: {e}")
 
@@ -2304,6 +2305,14 @@ def publicar() -> bool:
             with open(ruta_local, "r", encoding="utf-8") as f:
                 contenido = f.read()
             pushear_archivo(archivo, contenido, f"Actualizar {archivo}")
+
+    # Push dashboard + index.html to docs/ for GitHub Pages
+    for archivo in ("index.html", "dashboard.html"):
+        ruta_local = os.path.join(miniapp_dir, archivo)
+        if os.path.exists(ruta_local):
+            with open(ruta_local, "r", encoding="utf-8") as f:
+                contenido = f.read()
+            pushear_archivo(f"docs/{archivo}", contenido, f"Actualizar docs/{archivo}")
 
     habilitar_pages()
 
@@ -2341,6 +2350,7 @@ def publicar_live_data() -> bool:
             import shutil
             shutil.copy2(live_path, docs_path)
         ok_live = pushear_archivo("live_data.json", live_json, "Update live scores")
+        pushear_archivo("docs/live_data.json", live_json, "Update docs/live scores")
 
         # Soccer: copiar, inyectar LLM y subir
         soccer_path = os.path.join(config.FUTBOL_DIR, "soccer_data.json")

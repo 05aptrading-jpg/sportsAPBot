@@ -383,9 +383,20 @@ def main():
         "autorizados": _load_autorizados(),
     }
 
-    # Preserve LLM data from existing file (LLM analysis, llm_by_sport, hits_llm)
+    # Preserve LLM data from root live_data.json (updated by miniapp_publisher with real LLM data)
     try:
-        if os.path.exists("docs/live_data.json"):
+        root_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "live_data.json")
+        if os.path.exists(root_path):
+            with open(root_path, "r", encoding="utf-8") as f:
+                root_data = json.load(f)
+            for preserve_key in ("llm_analysis", "llm_by_sport", "hits_llm"):
+                if preserve_key in root_data:
+                    data[preserve_key] = root_data[preserve_key]
+    except Exception:
+        pass
+    # Fallback: preserve from existing docs/ copy if root has nothing
+    try:
+        if "llm_by_sport" not in data and os.path.exists("docs/live_data.json"):
             with open("docs/live_data.json", "r", encoding="utf-8") as f:
                 existing = json.load(f)
             for preserve_key in ("llm_analysis", "llm_by_sport", "hits_llm"):
