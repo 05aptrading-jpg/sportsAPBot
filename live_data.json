@@ -1,5 +1,5 @@
 {
-  "fecha": "21/06/2026 18:42",
+  "fecha": "21/06/2026 18:43",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782136800,
@@ -13835,7 +13835,7 @@
       "opp_team": "New York Mets",
       "score_fav": "5",
       "score_opp": "1",
-      "state": "End 4th",
+      "state": "Top 5th",
       "result": "live",
       "label": "🎯",
       "game_pk": 823449,
@@ -13868,14 +13868,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 3,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 0,
         "balls": 1,
-        "strikes": 3,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 5,
         "away_hits": 4,
@@ -16064,7 +16068,7 @@
     "823449": {
       "is_live": true,
       "is_final": false,
-      "status": "End 4th",
+      "status": "Top 5th",
       "away_runs": 5,
       "home_runs": 1,
       "away_team_name": "New York Mets",
@@ -16086,14 +16090,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 3,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 0,
         "balls": 1,
-        "strikes": 3,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 5,
         "away_hits": 4,
@@ -17106,7 +17114,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "21/06/2026 18:42",
+  "updated_at": "21/06/2026 18:43",
   "stats": {
     "total": 89,
     "acertados": 54,
@@ -22044,8 +22052,8 @@
         },
         {
           "period": 2,
-          "value": 12,
-          "display": "12"
+          "value": 14,
+          "display": "14"
         }
       ],
       "away_linescores": [
@@ -22060,9 +22068,9 @@
           "display": "8"
         }
       ],
-      "clock": "6:16",
+      "clock": "5:45",
       "period": 2,
-      "state": "Q2 6:16",
+      "state": "Q2 5:45",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/LA.png&h=40&w=40",
