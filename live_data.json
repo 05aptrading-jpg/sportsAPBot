@@ -1,5 +1,5 @@
 {
-  "fecha": "22/06/2026 16:28",
+  "fecha": "22/06/2026 16:40",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782223200,
@@ -1592,6 +1592,14 @@
       "opp_abbr": "ARI",
       "home_team": "St. Louis Cardinals",
       "away_team": "Arizona Diamondbacks",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Racha ganadora y mejor posición en la tabla.",
+      "llm_factores": [
+        "Cardinals en racha de 8-2",
+        "Diamondbacks en caída con 3-7",
+        "Historial reciente favorable a Cardinals"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -1628,13 +1636,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/STL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ARI.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Racha ganadora y mejor posición en la tabla.",
-      "llm_factores": [
-        "Cardinals en racha de 8-2",
-        "Diamondbacks en caída con 3-7",
-        "Historial reciente favorable a Cardinals"
-      ],
       "llm_favorito": "St. Louis Cardinals",
       "llm_carreras": "5-4",
       "llm_carreras_lineas": {
@@ -1679,6 +1680,14 @@
       "opp_abbr": "CIN",
       "home_team": "Cincinnati Reds",
       "away_team": "Milwaukee Brewers",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Brewers tienen mejor récord y bullpen.",
+      "llm_factores": [
+        "Brewers 8-2 en últimos 10",
+        "Lesiones en Reds afectan alineación",
+        "Historial reciente favorece a Brewers"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -1715,13 +1724,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CIN.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Brewers tienen mejor récord y bullpen.",
-      "llm_factores": [
-        "Brewers 8-2 en últimos 10",
-        "Lesiones en Reds afectan alineación",
-        "Historial reciente favorece a Brewers"
-      ],
       "llm_favorito": "Milwaukee Brewers",
       "llm_carreras": "3-5",
       "llm_carreras_lineas": {
@@ -1756,9 +1758,9 @@
       "status_emoji": "🔴",
       "fav_team": "New York Yankees",
       "opp_team": "Detroit Tigers",
-      "score_fav": "0",
+      "score_fav": "1",
       "score_opp": "0",
-      "state": "Bottom 1st",
+      "state": "Middle 2nd",
       "result": "live",
       "label": "🎯",
       "game_pk": 824261,
@@ -1766,22 +1768,34 @@
       "opp_abbr": "DET",
       "home_team": "Detroit Tigers",
       "away_team": "New York Yankees",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor posición en la división y ofensiva potente.",
+      "llm_factores": [
+        "Racha reciente de Yankees",
+        "Historial dominante contra Tigers",
+        "Lesiones mínimas en Yankees"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 2,
-        "balls": 2,
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
+        "outs": 3,
+        "balls": 1,
         "strikes": 2,
-        "away_runs": 0,
+        "away_runs": 1,
         "home_runs": 0,
-        "away_hits": 1,
+        "away_hits": 2,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -1795,20 +1809,13 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "0"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYY.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor posición en la división y ofensiva potente.",
-      "llm_factores": [
-        "Racha reciente de Yankees",
-        "Historial dominante contra Tigers",
-        "Lesiones mínimas en Yankees"
-      ],
       "llm_favorito": "New York Yankees",
       "llm_carreras": "3-5",
       "llm_carreras_lineas": {
@@ -1841,93 +1848,6 @@
       "liga": "MLB",
       "game_date": "2026-06-22",
       "status_emoji": "⏳",
-      "fav_team": "Chicago Cubs",
-      "opp_team": "New York Mets",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Pre-Game",
-      "result": "pending",
-      "label": "🎯",
-      "game_pk": 823613,
-      "fav_abbr": "CHC",
-      "opp_abbr": "NYM",
-      "home_team": "New York Mets",
-      "away_team": "Chicago Cubs",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 1,
-        "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 0,
-        "home_runs": 0,
-        "away_hits": 0,
-        "home_hits": 0,
-        "away_errors": 0,
-        "home_errors": 0,
-        "away_team_name": "Chicago Cubs",
-        "home_team_name": "New York Mets",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Pre-Game",
-        "fav_score": "0",
-        "opp_score": "0",
-        "score_fav": "0",
-        "score_opp": "0"
-      },
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHC.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYM.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mets tienen ventaja en casa y mejor récord.",
-      "llm_factores": [
-        "Mets 6-4 en últimos 10",
-        "Cubs con lesiones clave",
-        "Historial reciente favorece a Mets"
-      ],
-      "llm_favorito": "New York Mets",
-      "llm_carreras": "5-3",
-      "llm_carreras_lineas": {
-        "over_7.5": 70,
-        "over_8.5": 55,
-        "over_9.5": 40
-      },
-      "llm_ranking_local": "NL Este: 1º (41-29)",
-      "llm_ranking_visitante": "NL Central: 4º (30-40)",
-      "llm_abridor_local": "Max Scherzer (3.10, 7-3, 95)",
-      "llm_abridor_visitante": "Marcus Stroman (4.20, 5-7, 70)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "Pete Alonso",
-          "equipo": "New York Mets",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2
-        },
-        {
-          "jugador": "Ian Happ",
-          "equipo": "Chicago Cubs",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 3.80, confiable en finales.",
-      "llm_relevo_visitante": "Bullpen con ERA de 4.50, vulnerable en presión."
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-22",
-      "status_emoji": "⏳",
       "fav_team": "Cleveland Guardians",
       "opp_team": "Chicago White Sox",
       "score_fav": "—",
@@ -1940,6 +1860,14 @@
       "opp_abbr": "CHW",
       "home_team": "Chicago White Sox",
       "away_team": "Cleveland Guardians",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "White Sox tienen ventaja en casa y mejor ofensiva.",
+      "llm_factores": [
+        "White Sox 6-4 en últimos 10",
+        "Cleveland con lesiones en el bullpen",
+        "Historial reciente favorece a White Sox"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -1976,13 +1904,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHW.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "White Sox tienen ventaja en casa y mejor ofensiva.",
-      "llm_factores": [
-        "White Sox 6-4 en últimos 10",
-        "Cleveland con lesiones en el bullpen",
-        "Historial reciente favorece a White Sox"
-      ],
       "llm_favorito": "Chicago White Sox",
       "llm_carreras": "4-3",
       "llm_carreras_lineas": {
@@ -2027,6 +1948,14 @@
       "opp_abbr": "MIN",
       "home_team": "Minnesota Twins",
       "away_team": "Los Angeles Dodgers",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Dodgers tienen mejor récord y ofensiva.",
+      "llm_factores": [
+        "Dodgers 7-3 en últimos 10",
+        "Twins con lesiones en la rotación",
+        "Historial reciente favorece a Dodgers"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2063,13 +1992,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Dodgers tienen mejor récord y ofensiva.",
-      "llm_factores": [
-        "Dodgers 7-3 en últimos 10",
-        "Twins con lesiones en la rotación",
-        "Historial reciente favorece a Dodgers"
-      ],
       "llm_favorito": "Los Angeles Dodgers",
       "llm_carreras": "3-5",
       "llm_carreras_lineas": {
@@ -2114,6 +2036,14 @@
       "opp_abbr": "HOU",
       "home_team": "Toronto Blue Jays",
       "away_team": "Houston Astros",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y ofensiva más potente.",
+      "llm_factores": [
+        "Astros 7-3 en últimos 10",
+        "Blue Jays 4-6 en últimos 10",
+        "Historial reciente favorable a Astros"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2150,13 +2080,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TOR.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y ofensiva más potente.",
-      "llm_factores": [
-        "Astros 7-3 en últimos 10",
-        "Blue Jays 4-6 en últimos 10",
-        "Historial reciente favorable a Astros"
-      ],
       "llm_favorito": "Houston Astros",
       "llm_carreras": "6-4",
       "llm_carreras_lineas": {
@@ -2201,6 +2124,14 @@
       "opp_abbr": "SD",
       "home_team": "San Diego Padres",
       "away_team": "Atlanta Braves",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y ofensiva explosiva.",
+      "llm_factores": [
+        "Racha de 8-2 en últimos 10",
+        "Historial favorable reciente",
+        "Alineación más potente"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2237,13 +2168,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SD.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y ofensiva explosiva.",
-      "llm_factores": [
-        "Racha de 8-2 en últimos 10",
-        "Historial favorable reciente",
-        "Alineación más potente"
-      ],
       "llm_favorito": "Atlanta Braves",
       "llm_carreras": "6-5",
       "llm_carreras_lineas": {
@@ -2288,6 +2212,14 @@
       "opp_abbr": "LAA",
       "home_team": "Los Angeles Angels",
       "away_team": "Baltimore Orioles",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Local fuerte y ofensiva equilibrada.",
+      "llm_factores": [
+        "Racha de 6-4 en últimos 10",
+        "Mejor récord en casa",
+        "Alineación con poder"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2324,13 +2256,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BAL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Local fuerte y ofensiva equilibrada.",
-      "llm_factores": [
-        "Racha de 6-4 en últimos 10",
-        "Mejor récord en casa",
-        "Alineación con poder"
-      ],
       "llm_favorito": "Los Angeles Angels",
       "llm_carreras": "5-3",
       "llm_carreras_lineas": {
@@ -2362,19 +2287,27 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-22",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Tampa Bay Rays",
       "opp_team": "Kansas City Royals",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 822964,
       "fav_abbr": "TB",
       "opp_abbr": "KC",
       "home_team": "Tampa Bay Rays",
       "away_team": "Kansas City Royals",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Rays en buena forma y Royals en problemas.",
+      "llm_factores": [
+        "Rays 8-2 en últimos 10",
+        "Royals 3-7 en últimos 10",
+        "Historial favorable a Rays"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2401,9 +2334,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -2411,13 +2344,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/KC.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Rays en buena forma y Royals en problemas.",
-      "llm_factores": [
-        "Rays 8-2 en últimos 10",
-        "Royals 3-7 en últimos 10",
-        "Historial favorable a Rays"
-      ],
       "llm_favorito": "Tampa Bay Rays",
       "llm_carreras": "5-2",
       "llm_carreras_lineas": {
@@ -2462,6 +2388,14 @@
       "opp_abbr": "WSH",
       "home_team": "Washington Nationals",
       "away_team": "Philadelphia Phillies",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y ofensiva más potente.",
+      "llm_factores": [
+        "Racha reciente de Phillies",
+        "Historial favorable contra Nationals",
+        "Lesiones mínimas en Phillies"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2498,13 +2432,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PHI.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/WSH.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y ofensiva más potente.",
-      "llm_factores": [
-        "Racha reciente de Phillies",
-        "Historial favorable contra Nationals",
-        "Lesiones mínimas en Phillies"
-      ],
       "llm_favorito": "Philadelphia Phillies",
       "llm_carreras": "3-5",
       "llm_carreras_lineas": {
@@ -2549,6 +2476,14 @@
       "opp_abbr": "BOS",
       "home_team": "Colorado Rockies",
       "away_team": "Boston Red Sox",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y ofensiva más poderosa.",
+      "llm_factores": [
+        "Red Sox 7-3 en últimos 10",
+        "Rockies 4-6 en últimos 10",
+        "Historial reciente favorable a Red Sox"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2585,13 +2520,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/COL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BOS.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y ofensiva más poderosa.",
-      "llm_factores": [
-        "Red Sox 7-3 en últimos 10",
-        "Rockies 4-6 en últimos 10",
-        "Historial reciente favorable a Red Sox"
-      ],
       "llm_favorito": "Boston Red Sox",
       "llm_carreras": "4-6",
       "llm_carreras_lineas": {
@@ -2636,6 +2564,14 @@
       "opp_abbr": "TEX",
       "home_team": "Miami Marlins",
       "away_team": "Texas Rangers",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Rangers tienen mejor récord y racha reciente.",
+      "llm_factores": [
+        "Rango de carreras anotadas",
+        "Rendimiento de abridores",
+        "Lesiones en el equipo local"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2672,13 +2608,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIA.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TEX.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Rangers tienen mejor récord y racha reciente.",
-      "llm_factores": [
-        "Rango de carreras anotadas",
-        "Rendimiento de abridores",
-        "Lesiones en el equipo local"
-      ],
       "llm_favorito": "Texas Rangers",
       "llm_carreras": "4-6",
       "llm_carreras_lineas": {
@@ -2706,6 +2635,60 @@
       ],
       "llm_relevo_local": "Bullpen con ERA de 4.50, algo inconsistente.",
       "llm_relevo_visitante": "Bullpen sólido con ERA de 3.20, confiable en presión."
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-22",
+      "status_emoji": "🚫",
+      "fav_team": "Chicago Cubs",
+      "opp_team": "New York Mets",
+      "score_fav": "—",
+      "score_opp": "",
+      "state": "Posp.",
+      "result": "pending",
+      "label": "📋",
+      "game_pk": 401815854,
+      "fav_abbr": "CHC",
+      "opp_abbr": "NYM",
+      "home_team": "New York Mets",
+      "away_team": "Chicago Cubs",
+      "linescore": {},
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHC.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYM.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mets tienen ventaja en casa y mejor récord.",
+      "llm_factores": [
+        "Mets 6-4 en últimos 10",
+        "Cubs con lesiones clave",
+        "Historial reciente favorece a Mets"
+      ],
+      "llm_favorito": "New York Mets",
+      "llm_carreras": "5-3",
+      "llm_carreras_lineas": {
+        "over_7.5": 70,
+        "over_8.5": 55,
+        "over_9.5": 40
+      },
+      "llm_ranking_local": "NL Este: 1º (41-29)",
+      "llm_ranking_visitante": "NL Central: 4º (30-40)",
+      "llm_abridor_local": "Max Scherzer (3.10, 7-3, 95)",
+      "llm_abridor_visitante": "Marcus Stroman (4.20, 5-7, 70)",
+      "llm_bateadores_clave": [
+        {
+          "jugador": "Pete Alonso",
+          "equipo": "New York Mets",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2
+        },
+        {
+          "jugador": "Ian Happ",
+          "equipo": "Chicago Cubs",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1
+        }
+      ],
+      "llm_relevo_local": "Bullpen con ERA de 3.80, confiable en finales.",
+      "llm_relevo_visitante": "Bullpen con ERA de 4.50, vulnerable en presión."
     }
   ],
   "bot_username": "MLBAnalyticsBot",
@@ -3099,8 +3082,8 @@
     "824261": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
-      "away_runs": 0,
+      "status": "Middle 2nd",
+      "away_runs": 1,
       "home_runs": 0,
       "away_team_name": "Detroit Tigers",
       "home_team_name": "New York Yankees",
@@ -3109,17 +3092,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 2,
-        "balls": 2,
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
+        "outs": 3,
+        "balls": 1,
         "strikes": 2,
-        "away_runs": 0,
+        "away_runs": 1,
         "home_runs": 0,
-        "away_hits": 1,
+        "away_hits": 2,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -3133,52 +3120,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "0",
-        "score_fav": "0",
-        "score_opp": "0"
-      }
-    },
-    "823613": {
-      "is_live": false,
-      "is_final": false,
-      "status": "Pre-Game",
-      "away_runs": 0,
-      "home_runs": 0,
-      "away_team_name": "New York Mets",
-      "home_team_name": "Chicago Cubs",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 1,
-        "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 0,
-        "home_runs": 0,
-        "away_hits": 0,
-        "home_hits": 0,
-        "away_errors": 0,
-        "home_errors": 0,
-        "away_team_name": "Chicago Cubs",
-        "home_team_name": "New York Mets",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Pre-Game",
-        "fav_score": "0",
-        "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "0"
       }
     },
@@ -3398,9 +3342,9 @@
       }
     },
     "822964": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Kansas City Royals",
@@ -3431,9 +3375,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3568,9 +3512,19 @@
         "score_fav": "0",
         "score_opp": "0"
       }
+    },
+    "401815854": {
+      "is_live": false,
+      "is_final": false,
+      "status": "Posp.",
+      "away_runs": 0,
+      "home_runs": 0,
+      "away_team_name": "New York Mets",
+      "home_team_name": "Chicago Cubs",
+      "linescore": {}
     }
   },
-  "updated_at": "22/06/2026 16:28",
+  "updated_at": "22/06/2026 16:40",
   "stats": {
     "total": 0,
     "acertados": 0,
@@ -5187,42 +5141,6 @@
       "relevo_local": "Bullpen con ERA de 5.00, poco confiable.",
       "relevo_visitante": "Bullpen fuerte, ERA de 3.20."
     },
-    "2026-06-22___MLB___New York Mets___Chicago Cubs": {
-      "ir": "SÍ",
-      "pq": "Mets tienen ventaja en casa y mejor récord.",
-      "factores": [
-        "Mets 6-4 en últimos 10",
-        "Cubs con lesiones clave",
-        "Historial reciente favorece a Mets"
-      ],
-      "favorito": "New York Mets",
-      "carreras_esperadas": "5-3",
-      "carreras_lineas": {
-        "over_7.5": 70,
-        "over_8.5": 55,
-        "over_9.5": 40
-      },
-      "ranking_local": "NL Este: 1º (41-29)",
-      "ranking_visitante": "NL Central: 4º (30-40)",
-      "abridor_local": "Max Scherzer (3.10, 7-3, 95)",
-      "abridor_visitante": "Marcus Stroman (4.20, 5-7, 70)",
-      "bateadores_clave": [
-        {
-          "jugador": "Pete Alonso",
-          "equipo": "New York Mets",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2
-        },
-        {
-          "jugador": "Ian Happ",
-          "equipo": "Chicago Cubs",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1
-        }
-      ],
-      "relevo_local": "Bullpen con ERA de 3.80, confiable en finales.",
-      "relevo_visitante": "Bullpen con ERA de 4.50, vulnerable en presión."
-    },
     "2026-06-22___MLB___Chicago White Sox___Cleveland Guardians": {
       "ir": "SÍ",
       "pq": "White Sox tienen ventaja en casa y mejor ofensiva.",
@@ -5546,6 +5464,42 @@
       ],
       "relevo_local": "Bullpen con ERA de 4.50, algo inconsistente.",
       "relevo_visitante": "Bullpen sólido con ERA de 3.20, confiable en presión."
+    },
+    "2026-06-22___MLB___New York Mets___Chicago Cubs": {
+      "ir": "SÍ",
+      "pq": "Mets tienen ventaja en casa y mejor récord.",
+      "factores": [
+        "Mets 6-4 en últimos 10",
+        "Cubs con lesiones clave",
+        "Historial reciente favorece a Mets"
+      ],
+      "favorito": "New York Mets",
+      "carreras_esperadas": "5-3",
+      "carreras_lineas": {
+        "over_7.5": 70,
+        "over_8.5": 55,
+        "over_9.5": 40
+      },
+      "ranking_local": "NL Este: 1º (41-29)",
+      "ranking_visitante": "NL Central: 4º (30-40)",
+      "abridor_local": "Max Scherzer (3.10, 7-3, 95)",
+      "abridor_visitante": "Marcus Stroman (4.20, 5-7, 70)",
+      "bateadores_clave": [
+        {
+          "jugador": "Pete Alonso",
+          "equipo": "New York Mets",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2
+        },
+        {
+          "jugador": "Ian Happ",
+          "equipo": "Chicago Cubs",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1
+        }
+      ],
+      "relevo_local": "Bullpen con ERA de 3.80, confiable en finales.",
+      "relevo_visitante": "Bullpen con ERA de 4.50, vulnerable en presión."
     },
     "2026-07-01___Group L Winner___Third Place Group E/H/I/J/K": {
       "ir": "SÍ",
