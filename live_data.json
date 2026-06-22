@@ -1,5 +1,5 @@
 {
-  "fecha": "21/06/2026 19:21",
+  "fecha": "21/06/2026 19:28",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782136800,
@@ -13835,7 +13835,7 @@
       "opp_team": "New York Mets",
       "score_fav": "6",
       "score_opp": "2",
-      "state": "Bottom 6th",
+      "state": "Top 7th",
       "result": "live",
       "label": "🎯",
       "game_pk": 823449,
@@ -13876,14 +13876,18 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 1,
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
+        "outs": 1,
+        "balls": 3,
+        "strikes": 3,
         "away_runs": 2,
         "home_runs": 6,
         "away_hits": 4,
@@ -16072,7 +16076,7 @@
     "823449": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 6th",
+      "status": "Top 7th",
       "away_runs": 6,
       "home_runs": 2,
       "away_team_name": "New York Mets",
@@ -16102,14 +16106,18 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 1,
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
+        "outs": 1,
+        "balls": 3,
+        "strikes": 3,
         "away_runs": 2,
         "home_runs": 6,
         "away_hits": 4,
@@ -17122,7 +17130,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "21/06/2026 19:21",
+  "updated_at": "21/06/2026 19:28",
   "stats": {
     "total": 89,
     "acertados": 54,
@@ -22050,8 +22058,8 @@
       "away": "New York Liberty",
       "home_abbr": "LA",
       "away_abbr": "NY",
-      "home_score": 46,
-      "away_score": 58,
+      "home_score": 54,
+      "away_score": 67,
       "home_linescores": [
         {
           "period": 1,
@@ -22065,8 +22073,8 @@
         },
         {
           "period": 3,
-          "value": 3,
-          "display": "3"
+          "value": 11,
+          "display": "11"
         }
       ],
       "away_linescores": [
@@ -22082,13 +22090,13 @@
         },
         {
           "period": 3,
-          "value": 3,
-          "display": "3"
+          "value": 12,
+          "display": "12"
         }
       ],
-      "clock": "8:36",
+      "clock": "5:00",
       "period": 3,
-      "state": "Q3 8:36",
+      "state": "Q3 5:00",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/LA.png&h=40&w=40",
