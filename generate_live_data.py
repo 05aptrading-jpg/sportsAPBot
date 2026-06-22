@@ -389,7 +389,7 @@ def main():
         if os.path.exists(root_path):
             with open(root_path, "r", encoding="utf-8") as f:
                 root_data = json.load(f)
-            for preserve_key in ("llm_analysis", "llm_by_sport", "hits_llm"):
+            for preserve_key in ("llm_analysis", "llm_by_sport", "hits_llm", "llm_sections"):
                 if preserve_key in root_data:
                     data[preserve_key] = root_data[preserve_key]
     except Exception:
@@ -399,7 +399,7 @@ def main():
         if "llm_by_sport" not in data and os.path.exists("docs/live_data.json"):
             with open("docs/live_data.json", "r", encoding="utf-8") as f:
                 existing = json.load(f)
-            for preserve_key in ("llm_analysis", "llm_by_sport", "hits_llm"):
+            for preserve_key in ("llm_analysis", "llm_by_sport", "hits_llm", "llm_sections"):
                 if preserve_key in existing:
                     data[preserve_key] = existing[preserve_key]
     except Exception:

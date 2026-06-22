@@ -855,10 +855,23 @@ def _save_llm_to_csv(ir: str, pq: str, factores: list, game: dict):
                 row["llm_porque"] = pq
                 row["llm_factores"] = json.dumps(factores, ensure_ascii=False) if factores else ""
                 row["resultado_llm"] = dm._computar_resultado_llm(ir, row.get("resultado", "pendiente"))
+                # Guardar campos detallados del LLM para comparar predicción vs resultado
+                row["llm_carreras"] = game.get("llm_carreras", "")
+                row["llm_carreras_lineas"] = json.dumps(game.get("llm_carreras_lineas", {}), ensure_ascii=False) if game.get("llm_carreras_lineas") else ""
+                row["llm_ranking_local"] = str(game.get("llm_ranking_local", ""))
+                row["llm_ranking_visitante"] = str(game.get("llm_ranking_visitante", ""))
+                row["llm_abridor_local"] = game.get("llm_abridor_local", "")
+                row["llm_abridor_visitante"] = game.get("llm_abridor_visitante", "")
+                row["llm_bateadores_clave"] = json.dumps(game.get("llm_bateadores_clave", []), ensure_ascii=False) if game.get("llm_bateadores_clave") else ""
+                row["llm_relevo_local"] = game.get("llm_relevo_local", "")
+                row["llm_relevo_visitante"] = game.get("llm_relevo_visitante", "")
                 updated = True
         if updated:
             # Asegurar que las columnas LLM estén en fieldnames
-            llm_cols = ["llm_ir_favorito", "llm_porque", "llm_factores", "resultado_llm"]
+            llm_cols = ["llm_ir_favorito", "llm_porque", "llm_factores", "resultado_llm",
+                        "llm_carreras", "llm_carreras_lineas", "llm_ranking_local", "llm_ranking_visitante",
+                        "llm_abridor_local", "llm_abridor_visitante", "llm_bateadores_clave",
+                        "llm_relevo_local", "llm_relevo_visitante"]
             for c in llm_cols:
                 if c not in cols:
                     cols.append(c)
@@ -2144,6 +2157,31 @@ def _build_data(skip_llm: bool = False) -> dict:
             if _prev_llm and any(v.get("llm_total", 0) > 0 for v in _prev_llm.values()):
                 data["llm_by_sport"] = _prev_llm
                 logger.info("llm_by_sport preservado del live_data.json existente")
+    except Exception:
+        pass
+
+    # llm_sections: desglose por secciones por deporte (equipo, lanzadores, bateadores, etc.)
+    try:
+        import data_manager as dm
+        _sports_for_sections = ("MLB", "LMB", "NBA", "WNBA", "SOCCER", "NFL")
+        _sections_data = {}
+        for _sp in _sports_for_sections:
+            try:
+                _sec = dm.obtener_secciones_llm(_sp)
+                if _sec:
+                    _sections_data[_sp] = _sec
+            except Exception:
+                pass
+        if _sections_data:
+            data["llm_sections"] = _sections_data
+        # Preservar llm_sections del archivo existente si la computación dio vacío
+        elif not _sections_data and os.path.exists(live_json_path):
+            with open(live_json_path, encoding="utf-8") as _f:
+                _prev = json.load(_f)
+            _prev_sec = _prev.get("llm_sections", {})
+            if _prev_sec:
+                data["llm_sections"] = _prev_sec
+                logger.info("llm_sections preservado del live_data.json existente")
     except Exception:
         pass
 

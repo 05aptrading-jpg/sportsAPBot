@@ -76,6 +76,13 @@ body {
 .llm-bar-fill {
   height: 100%; border-radius: 3px; transition: width 0.5s ease;
 }
+.section-bar {
+  height: 4px; border-radius: 2px; background: rgba(255,255,255,0.04);
+  margin-top: 4px; overflow: hidden;
+}
+.section-bar-fill {
+  height: 100%; border-radius: 2px; transition: width 0.5s ease;
+}
 .empty-state { text-align: center; padding: 40px; color: #6b7280; font-size: 14px; }
 .badge {
   display: inline-block; padding: 2px 8px; border-radius: 4px;
@@ -92,6 +99,17 @@ body {
 .flex-between { display: flex; justify-content: space-between; align-items: center; }
 .gap-8 { gap: 8px; }
 .gap-12 { gap: 12px; }
+.section-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px; margin-top: 8px;
+}
+.section-item {
+  background: rgba(255,255,255,0.03); border-radius: 8px; padding: 10px;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+.section-item-label { font-size: 12px; color: #8b98a5; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; }
+.section-item-value { font-size: 18px; font-weight: 700; margin: 4px 0 2px; }
+.section-item-detail { font-size: 12px; color: #8b98a5; }
 </style>
 </head>
 <body>
@@ -134,12 +152,37 @@ function barColor(pct) {
   return '#ef4444';
 }
 
-function renderSportCard(label, icon, stats) {
+function renderSportCard(label, icon, stats, sections) {
   const total = stats.llm_total || 0;
   const ok = stats.llm_acertados || 0;
   const fail = stats.llm_fallidos || 0;
   const rate = stats.llm_win_rate || 0;
   if (total === 0) return '';
+
+  let sectionsHtml = '';
+  if (sections && Object.keys(sections).length > 0) {
+    const sectionLabels = {
+      equipo: '🏆 Equipo', marcador: '🔢 Marcador', lanzadores: '⚾ Lanzadores',
+      bateadores: '🏏 Bateadores', relevo: '🔄 Relevo',
+      spread: '📊 Spread', over_under: '📉 Over/Under',
+      handicap: '🎯 Handicap', corners: '🚩 Corners',
+    };
+    sectionsHtml = '<div class="section-grid">';
+    for (const [key, sec] of Object.entries(sections)) {
+      const sTotal = sec.total || 0;
+      const sOk = sec.acertados || 0;
+      const sRate = sec.win_rate || 0;
+      const label = sectionLabels[key] || key;
+      sectionsHtml += `<div class="section-item">
+        <div class="section-item-label">${label}</div>
+        <div class="section-item-value ${rateColor(sRate)}">${sRate}%</div>
+        <div class="section-item-detail">${sOk}✅ ${sTotal - sOk}❌ (${sTotal})</div>
+        <div class="section-bar"><div class="section-bar-fill" style="width:${sRate}%;background:${barColor(sRate)}"></div></div>
+      </div>`;
+    }
+    sectionsHtml += '</div>';
+  }
+
   return `<div class="card">
     <div class="card-title">${icon} ${label}</div>
     <div class="stat-row"><span class="stat-label">🤖 LLM</span>
@@ -151,11 +194,13 @@ function renderSportCard(label, icon, stats) {
       </span>
     </div>
     <div class="llm-bar"><div class="llm-bar-fill" style="width:${rate}%;background:${barColor(rate)}"></div></div>
+    ${sectionsHtml}
   </div>`;
 }
 
 function renderDashboard(liveData, soccerData) {
   const llmBySport = liveData.llm_by_sport || {};
+  const llmSections = liveData.llm_sections || {};
   const fecha = liveData.fecha || liveData.updated_at || '—';
   document.getElementById('fecha-actualizacion').textContent = 'Actualizado: ' + fecha;
 
@@ -182,7 +227,7 @@ function renderDashboard(liveData, soccerData) {
     <div class="llm-bar" style="margin-top:12px"><div class="llm-bar-fill" style="width:${globalRate}%;background:${barColor(globalRate)}"></div></div>
   </div>`;
 
-  // ── Per-Sport LLM Accuracy ──
+  // ── Per-Sport LLM Accuracy with Sections ──
   const sportMeta = {
     MLB:  { label: 'MLB', icon: '⚾' },
     LMB:  { label: 'LMB', icon: '🇲🇽' },
@@ -193,12 +238,13 @@ function renderDashboard(liveData, soccerData) {
   };
 
   html += `<h2 style="font-size:16px;font-weight:700;color:#f1f5f9;margin:16px 0 8px">🤖 Precisión por Deporte</h2>`;
-  html += `<div class="grid grid-3">`;
+  html += `<div class="grid grid-2">`;
   let hasAny = false;
   for (const sp of ['MLB','LMB','NBA','WNBA','NFL','SOCCER']) {
     const stats = llmBySport[sp] || {};
     const meta = sportMeta[sp] || { label: sp, icon: '📋' };
-    const card = renderSportCard(meta.label, meta.icon, stats);
+    const sections = llmSections[sp] || {};
+    const card = renderSportCard(meta.label, meta.icon, stats, sections);
     if (card) { html += card; hasAny = true; }
   }
   html += `</div>`;

@@ -66,6 +66,16 @@ CSV_COLUMNAS = [
     "llm_porque",       # Razón ultra-resumida
     "llm_factores",     # Lista JSON de factores clave
     "resultado_llm",    # Evaluación LLM: acertado|fallido|pendiente|N/D
+    # LLM detallado (respaldo para comparar predicción vs resultado)
+    "llm_carreras",         # Predicción de marcador "X-Y"
+    "llm_carreras_lineas",  # JSON: líneas over/under
+    "llm_ranking_local",    # Ranking del equipo local
+    "llm_ranking_visitante", # Ranking del equipo visitante
+    "llm_abridor_local",    # Análisis del abridor local
+    "llm_abridor_visitante", # Análisis del abridor visitante
+    "llm_bateadores_clave", # JSON: bateadores clave
+    "llm_relevo_local",     # Análisis del bullpen local
+    "llm_relevo_visitante", # Análisis del bullpen visitante
     # Resultado
     "descripcion_analisis",
     "resultado",            # "acertado" | "fallido" | "pendiente"
@@ -916,6 +926,181 @@ def obtener_estadisticas_llm(liga: str = None) -> dict:
         "llm_fallidos":   llm_fallidos,
         "llm_win_rate":   llm_win_rate,
     }
+
+
+def _section_stats(total: int, ok: int) -> dict:
+    return {"total": total, "acertados": ok, "fallidos": total - ok,
+            "win_rate": round(ok / total * 100, 1) if total > 0 else 0}
+
+
+def obtener_secciones_llm(liga: str = None) -> dict:
+    """Retorna accuracy del LLM desglosado por secciones/categorías por deporte.
+    Cada sección representa un aspecto del análisis: equipo, marcador, lanzadores, etc."""
+    liga_up = (liga or "").strip().upper()
+    result = {}
+
+    # ── NBA / WNBA ──
+    if liga_up in ("NBA", "WNBA"):
+        try:
+            from basquetbol_bot.data_manager import _load_sheet
+            df = _load_sheet("Games")
+            if not df.empty and liga_up:
+                df = df[df["liga"] == liga_up]
+            if df.empty:
+                return result
+            resolved = df[df["acierto_favorito"].isin(["ACERTO", "FALLO"])]
+            if resolved.empty:
+                return result
+            # Equipo
+            t = len(resolved)
+            ok = len(resolved[resolved["acierto_favorito"] == "ACERTO"])
+            result["equipo"] = _section_stats(t, ok)
+            # Spread
+            spr = df[df["acierto_spread"].isin(["ACERTO", "FALLO"])]
+            if not spr.empty:
+                result["spread"] = _section_stats(len(spr), len(spr[spr["acierto_spread"] == "ACERTO"]))
+            # Over/Under
+            ou = df[df["acierto_ou"].isin(["ACERTO", "FALLO"])]
+            if not ou.empty:
+                result["over_under"] = _section_stats(len(ou), len(ou[ou["acierto_ou"] == "ACERTO"]))
+        except Exception:
+            pass
+        return result
+
+    # ── Soccer ──
+    if liga_up in ("SOCCER", "FUTBOL", "MUNDIAL", "PREMIER_LEAGUE", "LA_LIGA",
+                   "BUNDESLIGA", "SERIE_A", "LIGUE_1", "LIGA_MX", "AMISTOSOS_INT"):
+        try:
+            from futbol_bot.data_manager import _leer_xlsx
+            rows = _leer_xlsx()
+            if not rows:
+                return result
+            # Equipo (llm_resultado)
+            team_total = team_ok = 0
+            for r in rows:
+                res = (r.get("llm_resultado") or "").strip().lower()
+                if res in ("acertado", "fallido"):
+                    team_total += 1
+                    if res == "acertado":
+                        team_ok += 1
+            if team_total > 0:
+                result["equipo"] = _section_stats(team_total, team_ok)
+            # AH0 (resultado_ah0)
+            ah_total = ah_ok = 0
+            for r in rows:
+                res = (r.get("resultado_ah0") or "").strip().lower()
+                if res in ("acertado", "fallido"):
+                    ah_total += 1
+                    if res == "acertado":
+                        ah_ok += 1
+            if ah_total > 0:
+                result["handicap"] = _section_stats(ah_total, ah_ok)
+            # O/U 2.5
+            ou_total = ou_ok = 0
+            for r in rows:
+                res = (r.get("resultado_ou25") or "").strip().lower()
+                if res in ("acertado", "fallido"):
+                    ou_total += 1
+                    if res == "acertado":
+                        ou_ok += 1
+            if ou_total > 0:
+                result["over_under"] = _section_stats(ou_total, ou_ok)
+            # Corners
+            c_total = c_ok = 0
+            for r in rows:
+                res = (r.get("resultado_corners") or "").strip().lower()
+                if res in ("acertado", "fallido"):
+                    c_total += 1
+                    if res == "acertado":
+                        c_ok += 1
+            if c_total > 0:
+                result["corners"] = _section_stats(c_total, c_ok)
+        except Exception:
+            pass
+        return result
+
+    # ── NFL (sin persistencia aún) ──
+    if liga_up == "NFL":
+        return result
+
+    # ── MLB / LMB (CSV) ──
+    filas = _leer_todas()
+    if liga:
+        filas = [f for f in filas if (f.get("liga", "MLB") or "MLB").strip() == liga]
+
+    def _ir(f):
+        return (f.get("llm_ir_favorito") or "").strip().upper()
+
+    def _res(f):
+        return (f.get("resultado") or "").strip().lower()
+
+    def _rllm(f):
+        return (f.get("resultado_llm") or "").strip().lower()
+
+    resolved = [f for f in filas if _ir(f) in ("SÍ", "NO") and _res(f) in ("acertado", "fallido")]
+    if not resolved:
+        return result
+
+    # Equipo (llm_ir_favorito vs resultado)
+    eq_ok = sum(1 for f in resolved if _rllm(f) == "acertado")
+    result["equipo"] = _section_stats(len(resolved), eq_ok)
+
+    # Marcador (llm_carreras vs marcador_final)
+    marc_total = marc_ok = 0
+    for f in resolved:
+        pred = (f.get("llm_carreras") or "").strip()
+        final = (f.get("marcador_final") or "").strip()
+        if pred and "-" in pred and final:
+            try:
+                p_home, p_away = [int(x.strip()) for x in pred.split("-")]
+                # marcador_final format: "TeamA 5 - 3 TeamB" or similar
+                import re
+                nums = re.findall(r"\d+", final)
+                if len(nums) >= 2:
+                    r_home, r_away = int(nums[0]), int(nums[1])
+                    # Acertó si la predicción del ganador coincide
+                    pred_winner = "home" if p_home > p_away else "away" if p_away > p_home else "tie"
+                    real_winner = "home" if r_home > r_away else "away" if r_away > r_home else "tie"
+                    marc_total += 1
+                    if pred_winner == real_winner:
+                        marc_ok += 1
+            except (ValueError, IndexError):
+                pass
+    if marc_total > 0:
+        result["marcador"] = _section_stats(marc_total, marc_ok)
+
+    # Lanzadores (presence of pitcher data = analyzed)
+    pit_total = pit_ok = 0
+    for f in resolved:
+        if (f.get("llm_abridor_local") or "").strip() and (f.get("llm_abridor_visitante") or "").strip():
+            pit_total += 1
+            if _rllm(f) == "acertado":
+                pit_ok += 1
+    if pit_total > 0:
+        result["lanzadores"] = _section_stats(pit_total, pit_ok)
+
+    # Bateadores (presence of batter data = analyzed)
+    bat_total = bat_ok = 0
+    for f in resolved:
+        batters = (f.get("llm_bateadores_clave") or "").strip()
+        if batters and batters != "[]":
+            bat_total += 1
+            if _rllm(f) == "acertado":
+                bat_ok += 1
+    if bat_total > 0:
+        result["bateadores"] = _section_stats(bat_total, bat_ok)
+
+    # Relevo (presence of bullpen data = analyzed)
+    rel_total = rel_ok = 0
+    for f in resolved:
+        if (f.get("llm_relevo_local") or "").strip() and (f.get("llm_relevo_visitante") or "").strip():
+            rel_total += 1
+            if _rllm(f) == "acertado":
+                rel_ok += 1
+    if rel_total > 0:
+        result["relevo"] = _section_stats(rel_total, rel_ok)
+
+    return result
 
 
 def fechas_disponibles_csv() -> list[str]:
