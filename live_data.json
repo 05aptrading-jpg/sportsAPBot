@@ -1,5 +1,5 @@
 {
-  "fecha": "22/06/2026 15:28",
+  "fecha": "22/06/2026 15:40",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782223200,
@@ -2439,13 +2439,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-22",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Philadelphia Phillies",
       "opp_team": "Washington Nationals",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Pre-Game",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Rain Delay, Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 822720,
       "fav_abbr": "PHI",
@@ -2480,7 +2480,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Delayed Start",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -2707,7 +2707,7 @@
     7303350094,
     8798256316
   ],
-  "has_live": false,
+  "has_live": true,
   "has_scheduled": true,
   "live_data": {
     "401815825": {
@@ -3421,9 +3421,9 @@
       }
     },
     "822720": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Rain Delay, Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Washington Nationals",
@@ -3456,7 +3456,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Delayed Start",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3550,7 +3550,7 @@
       }
     }
   },
-  "updated_at": "22/06/2026 15:28",
+  "updated_at": "22/06/2026 15:40",
   "stats": {
     "total": 0,
     "acertados": 0,
