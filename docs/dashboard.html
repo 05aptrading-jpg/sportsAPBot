@@ -34,8 +34,21 @@ body {
 .grid-2 { grid-template-columns: 1fr 1fr; }
 .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
 .grid-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
-@media (max-width:768px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; } }
-@media (max-width:480px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } }
+@media (max-width:768px) {
+  body { padding: 10px; }
+  .header { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .header .text-right { text-align: left; width: 100%; }
+  .header h1 { font-size: 20px; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width:480px) {
+  body { padding: 8px; }
+  .header h1 { font-size: 18px; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .card { padding: 12px; }
+  .stat-label { font-size: 13px; }
+  .stat-value { font-size: 13px; }
+}
 .card {
   background: linear-gradient(145deg, #131a2b 0%, #1a2337 100%);
   border: 1px solid rgba(255,255,255,0.06);
@@ -205,7 +218,7 @@ function renderDashboard(liveData, soccerData) {
     return { total, ok, fail, rate: total > 0 ? Math.round(ok/total*100) : 0 };
   }
 
-  html += `<h2 style="font-size:16px;font-weight:700;color:#f1f5f9;margin:16px 0 8px">📈 Resultados de Apuestas</h2>`;
+  html += `<h2 style="font-size:16px;font-weight:700;color:#f1f5f9;margin:16px 0 8px">📈 Rendimiento de Análisis</h2>`;
   html += `<div class="grid grid-3">`;
 
   const mlbBet = calcBetStats(games, 'MLB');
@@ -213,14 +226,14 @@ function renderDashboard(liveData, soccerData) {
 
   if (mlbBet.total > 0) {
     html += `<div class="card"><div class="card-title">⚾ MLB</div>
-      <div class="stat-row"><span class="stat-label">Apuestas</span><span class="stat-value">${mlbBet.ok}✅ ${mlbBet.fail}❌ <span class="stat-sub">(${mlbBet.total})</span></span></div>
+      <div class="stat-row"><span class="stat-label">Predicciones</span><span class="stat-value">${mlbBet.ok}✅ ${mlbBet.fail}❌ <span class="stat-sub">(${mlbBet.total})</span></span></div>
       <div class="stat-row"><span class="stat-label">Win Rate</span><span class="stat-value ${rateColor(mlbBet.rate).replace('rate-','')}">${mlbBet.rate}%</span></div>
       <div class="llm-bar"><div class="llm-bar-fill" style="width:${mlbBet.rate}%;background:${barColor(mlbBet.rate)}"></div></div>
     </div>`;
   }
   if (lmbBet.total > 0) {
     html += `<div class="card"><div class="card-title">🇲🇽 LMB</div>
-      <div class="stat-row"><span class="stat-label">Apuestas</span><span class="stat-value">${lmbBet.ok}✅ ${lmbBet.fail}❌ <span class="stat-sub">(${lmbBet.total})</span></span></div>
+      <div class="stat-row"><span class="stat-label">Predicciones</span><span class="stat-value">${lmbBet.ok}✅ ${lmbBet.fail}❌ <span class="stat-sub">(${lmbBet.total})</span></span></div>
       <div class="stat-row"><span class="stat-label">Win Rate</span><span class="stat-value ${rateColor(lmbBet.rate).replace('rate-','')}">${lmbBet.rate}%</span></div>
       <div class="llm-bar"><div class="llm-bar-fill" style="width:${lmbBet.rate}%;background:${barColor(lmbBet.rate)}"></div></div>
     </div>`;
@@ -229,7 +242,7 @@ function renderDashboard(liveData, soccerData) {
   const soccerBet = calcBetStats(soccerGames);
   if (soccerBet.total > 0) {
     html += `<div class="card"><div class="card-title">⚽ Fútbol</div>
-      <div class="stat-row"><span class="stat-label">Apuestas</span><span class="stat-value">${soccerBet.ok}✅ ${soccerBet.fail}❌ <span class="stat-sub">(${soccerBet.total})</span></span></div>
+      <div class="stat-row"><span class="stat-label">Predicciones</span><span class="stat-value">${soccerBet.ok}✅ ${soccerBet.fail}❌ <span class="stat-sub">(${soccerBet.total})</span></span></div>
       <div class="stat-row"><span class="stat-label">Win Rate</span><span class="stat-value ${rateColor(soccerBet.rate).replace('rate-','')}">${soccerBet.rate}%</span></div>
       <div class="llm-bar"><div class="llm-bar-fill" style="width:${soccerBet.rate}%;background:${barColor(soccerBet.rate)}"></div></div>
     </div>`;
@@ -266,7 +279,7 @@ function renderDashboard(liveData, soccerData) {
         const meta = ligaLabels[lk] || { label: lk, icon: '📋' };
         const rate = Math.round(s.ok / s.total * 100);
         html += `<div class="card"><div class="card-title">${meta.icon} ${meta.label}</div>
-          <div class="stat-row"><span class="stat-label">Apuestas</span><span class="stat-value">${s.ok}✅ ${s.fail}❌ <span class="stat-sub">(${s.total})</span></span></div>
+          <div class="stat-row"><span class="stat-label">Predicciones</span><span class="stat-value">${s.ok}✅ ${s.fail}❌ <span class="stat-sub">(${s.total})</span></span></div>
           <div class="stat-row"><span class="stat-label">Win Rate</span><span class="stat-value ${rateColor(rate).replace('rate-','')}">${rate}%</span></div>
           <div class="llm-bar"><div class="llm-bar-fill" style="width:${rate}%;background:${barColor(rate)}"></div></div>
         </div>`;

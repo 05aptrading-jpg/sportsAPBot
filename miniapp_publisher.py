@@ -1829,13 +1829,20 @@ def _build_data(skip_llm: bool = False) -> dict:
     stats_mlb = dm.obtener_estadisticas(liga="MLB")
     stats_lmb = dm.obtener_estadisticas(liga="LMB")
 
-    # LLM stats per sport
-    llm_mlb = dm.obtener_estadisticas_llm(liga="MLB")
-    llm_lmb = dm.obtener_estadisticas_llm(liga="LMB")
-    llm_nba = dm.obtener_estadisticas_llm(liga="NBA")
-    llm_wnba = dm.obtener_estadisticas_llm(liga="WNBA")
-    llm_nfl = dm.obtener_estadisticas_llm(liga="NFL")
-    llm_soccer = dm.obtener_estadisticas_llm(liga="SOCCER")
+    # LLM stats per sport (con try/except individual por deporte)
+    _llm_zero = {"llm_total": 0, "llm_acertados": 0, "llm_fallidos": 0, "llm_win_rate": 0}
+    try: llm_mlb = dm.obtener_estadisticas_llm(liga="MLB")
+    except Exception as e: logger.warning(f"LLM stats MLB failed: {e}"); llm_mlb = dict(_llm_zero)
+    try: llm_lmb = dm.obtener_estadisticas_llm(liga="LMB")
+    except Exception as e: logger.warning(f"LLM stats LMB failed: {e}"); llm_lmb = dict(_llm_zero)
+    try: llm_nba = dm.obtener_estadisticas_llm(liga="NBA")
+    except Exception as e: logger.warning(f"LLM stats NBA failed: {e}"); llm_nba = dict(_llm_zero)
+    try: llm_wnba = dm.obtener_estadisticas_llm(liga="WNBA")
+    except Exception as e: logger.warning(f"LLM stats WNBA failed: {e}"); llm_wnba = dict(_llm_zero)
+    try: llm_nfl = dm.obtener_estadisticas_llm(liga="NFL")
+    except Exception as e: logger.warning(f"LLM stats NFL failed: {e}"); llm_nfl = dict(_llm_zero)
+    try: llm_soccer = dm.obtener_estadisticas_llm(liga="SOCCER")
+    except Exception as e: logger.warning(f"LLM stats SOCCER failed: {e}"); llm_soccer = dict(_llm_zero)
 
     # Stats por rango de fecha para filtros del frontend
     hoy = date.today()
@@ -2121,6 +2128,22 @@ def _build_data(skip_llm: bool = False) -> dict:
                     data["hits_llm"] = hits_llm
             except Exception as e:
                 logger.warning(f"No se pudo generar hits_llm automático: {e}")
+    except Exception:
+        pass
+
+    # llm_by_sport: preservar del archivo existente si la computación dio todos 0
+    try:
+        _has_llm_data = any(
+            v.get("llm_total", 0) > 0
+            for v in data.get("llm_by_sport", {}).values()
+        )
+        if not _has_llm_data and os.path.exists(live_json_path):
+            with open(live_json_path, encoding="utf-8") as _f:
+                _prev = json.load(_f)
+            _prev_llm = _prev.get("llm_by_sport", {})
+            if _prev_llm and any(v.get("llm_total", 0) > 0 for v in _prev_llm.values()):
+                data["llm_by_sport"] = _prev_llm
+                logger.info("llm_by_sport preservado del live_data.json existente")
     except Exception:
         pass
 
