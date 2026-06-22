@@ -1,9 +1,9 @@
 {
-  "fecha": "22/06/2026 11:58",
+  "fecha": "22/06/2026 12:30",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782223200,
-  "proxima_actualizacion_lmb_ts": 1782153000,
+  "proxima_actualizacion_lmb_ts": 1782239400,
   "dias": [
     "2026-06-22",
     "2026-06-21",
@@ -2491,6 +2491,82 @@
       "llm_relevo_visitante": "Bullpen sólido, ERA de 3.50."
     },
     {
+      "liga": "LMB",
+      "game_date": "2026-06-22",
+      "status_emoji": "⏳",
+      "fav_team": "Diablos Rojos del Mexico",
+      "opp_team": "Piratas de Campeche",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Scheduled",
+      "result": "pending",
+      "label": "🎯",
+      "game_pk": 846531,
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Diablos Rojos del Mexico",
+        "home_team_name": "Piratas de Campeche",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      },
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y racha reciente.",
+      "llm_factores": [
+        "Mejor posición en la división",
+        "Racha positiva en últimos juegos",
+        "Historial favorable en enfrentamientos directos"
+      ],
+      "llm_favorito": "Diablos Rojos del Mexico",
+      "llm_carreras": "6-3",
+      "llm_carreras_lineas": {
+        "over_7.5": 75,
+        "over_8.5": 60,
+        "over_9.5": 45
+      },
+      "llm_ranking_local": "LMB Zona Sur: 1º (40-25)",
+      "llm_ranking_visitante": "LMB Zona Sur: 4º (30-35)",
+      "llm_abridor_local": "Luis Fernando Miranda (3.20, 8-2, 70)",
+      "llm_abridor_visitante": "Jorge Luis Castillo (4.50, 5-6, 55)",
+      "llm_bateadores_clave": [
+        {
+          "jugador": "Jorge Cantú",
+          "equipo": "Diablos Rojos del Mexico",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2
+        },
+        {
+          "jugador": "Javier Salazar",
+          "equipo": "Piratas de Campeche",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1
+        }
+      ],
+      "llm_relevo_local": "Bullpen sólido con ERA de 3.50 y buena efectividad en situaciones de presión.",
+      "llm_relevo_visitante": "Bullpen inconsistente, ERA de 4.80 y problemas en finales de juegos."
+    },
+    {
       "liga": "MLB",
       "game_date": "2026-06-22",
       "status_emoji": "⏳",
@@ -4409,6 +4485,44 @@
       "home_team_name": "Toronto Blue Jays",
       "linescore": {}
     },
+    "846531": {
+      "is_live": false,
+      "is_final": false,
+      "status": "Scheduled",
+      "away_runs": 0,
+      "home_runs": 0,
+      "away_team_name": "Piratas de Campeche",
+      "home_team_name": "Diablos Rojos del Mexico",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Diablos Rojos del Mexico",
+        "home_team_name": "Piratas de Campeche",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      }
+    },
     "401815858": {
       "is_live": false,
       "is_final": false,
@@ -4540,7 +4654,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "22/06/2026 11:58",
+  "updated_at": "22/06/2026 12:30",
   "stats": {
     "total": 0,
     "acertados": 0,
@@ -5954,6 +6068,42 @@
       "relevo_local": "Bullpen con ERA de 4.20, algo inconsistente.",
       "relevo_visitante": "Bullpen sólido, ERA de 3.50."
     },
+    "2026-06-22___LMB___Diablos Rojos del Mexico___Piratas de Campeche": {
+      "ir": "SÍ",
+      "pq": "Mejor récord y racha reciente.",
+      "factores": [
+        "Mejor posición en la división",
+        "Racha positiva en últimos juegos",
+        "Historial favorable en enfrentamientos directos"
+      ],
+      "favorito": "Diablos Rojos del Mexico",
+      "carreras_esperadas": "6-3",
+      "carreras_lineas": {
+        "over_7.5": 75,
+        "over_8.5": 60,
+        "over_9.5": 45
+      },
+      "ranking_local": "LMB Zona Sur: 1º (40-25)",
+      "ranking_visitante": "LMB Zona Sur: 4º (30-35)",
+      "abridor_local": "Luis Fernando Miranda (3.20, 8-2, 70)",
+      "abridor_visitante": "Jorge Luis Castillo (4.50, 5-6, 55)",
+      "bateadores_clave": [
+        {
+          "jugador": "Jorge Cantú",
+          "equipo": "Diablos Rojos del Mexico",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2
+        },
+        {
+          "jugador": "Javier Salazar",
+          "equipo": "Piratas de Campeche",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1
+        }
+      ],
+      "relevo_local": "Bullpen sólido con ERA de 3.50 y buena efectividad en situaciones de presión.",
+      "relevo_visitante": "Bullpen inconsistente, ERA de 4.80 y problemas en finales de juegos."
+    },
     "2026-06-22___MLB___Detroit Tigers___New York Yankees": {
       "ir": "SÍ",
       "pq": "Mejor posición en la división y ofensiva potente.",
@@ -7157,82 +7307,5 @@
       "llm_linea_ou": 171.0,
       "llm_favorito": "Seattle Storm"
     }
-  ],
-  "hits_llm": {
-    "Los Angeles Angels": {
-      "confianza": "BAJA",
-      "porque": "Menos de 3 jugadores listados para análisis confiable.",
-      "top_jugador": "N/A",
-      "factores": []
-    },
-    "Minnesota Twins": {
-      "confianza": "BAJA",
-      "porque": "Menos de 3 jugadores listados para análisis.",
-      "top_jugador": "N/A",
-      "factores": []
-    },
-    "Texas Rangers": {
-      "confianza": "BAJA",
-      "porque": "Faltan detalles sobre el lanzador y alineación, lo que afecta la evaluación.",
-      "top_jugador": "Josh Jung",
-      "factores": [
-        "Probabilidades altas",
-        "Falta de información sobre el lanzador"
-      ]
-    },
-    "Chicago White Sox": {
-      "confianza": "BAJA",
-      "porque": "Menos de 3 jugadores listados para análisis.",
-      "top_jugador": "Tristan Peters",
-      "factores": []
-    },
-    "New York Yankees": {
-      "confianza": "BAJA",
-      "porque": "Menos de 3 jugadores listados para análisis.",
-      "top_jugador": "Paul Goldschmidt",
-      "factores": []
-    },
-    "St. Louis Cardinals": {
-      "confianza": "ALTA",
-      "porque": "Las probabilidades son altas y los jugadores están en el lineup titular.",
-      "top_jugador": "Nelson Velázquez",
-      "factores": [
-        "probabilidades altas",
-        "jugadores titulares"
-      ]
-    },
-    "Baltimore Orioles": {
-      "confianza": "BAJA",
-      "porque": "Menos de 3 jugadores listados, no se puede evaluar adecuadamente.",
-      "top_jugador": "Blaze Alexander",
-      "factores": []
-    },
-    "Seattle Mariners": {
-      "confianza": "BAJA",
-      "porque": "Menos de 3 jugadores listados para análisis.",
-      "top_jugador": "Dominic Canzone",
-      "factores": []
-    },
-    "Toronto Blue Jays": {
-      "confianza": "BAJA",
-      "porque": "Menos de 3 jugadores listados para análisis confiable.",
-      "top_jugador": "N/A",
-      "factores": []
-    },
-    "Cleveland Guardians": {
-      "confianza": "BAJA",
-      "porque": "Faltan detalles sobre el lanzador y alineación titular.",
-      "top_jugador": "Brayan Rocchio",
-      "factores": [
-        "Probabilidades altas",
-        "Falta de información sobre el lanzador"
-      ]
-    },
-    "Milwaukee Brewers": {
-      "confianza": "BAJA",
-      "porque": "Menos de 3 jugadores listados para análisis.",
-      "top_jugador": "Andrew Vaughn",
-      "factores": []
-    }
-  }
+  ]
 }
