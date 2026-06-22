@@ -1,5 +1,5 @@
 {
-  "fecha": "21/06/2026 18:01",
+  "fecha": "21/06/2026 18:13",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782136800,
@@ -13833,9 +13833,9 @@
       "status_emoji": "🔴",
       "fav_team": "Philadelphia Phillies",
       "opp_team": "New York Mets",
-      "score_fav": "2",
+      "score_fav": "5",
       "score_opp": "0",
-      "state": "Bottom 2nd",
+      "state": "End 2nd",
       "result": "live",
       "label": "🎯",
       "game_pk": 823449,
@@ -13859,19 +13859,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 3
           }
         ],
         "current_inning": 2,
         "is_top": false,
         "inning_ordinal": "2nd",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 1,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 0,
-        "home_runs": 2,
+        "home_runs": 5,
         "away_hits": 2,
-        "home_hits": 2,
+        "home_hits": 6,
         "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "New York Mets",
@@ -13885,9 +13885,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "2",
+        "opp_score": "5",
         "score_fav": "0",
-        "score_opp": "2"
+        "score_opp": "5"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PHI.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYM.png&h=40&w=40",
@@ -16056,8 +16056,8 @@
     "823449": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 2nd",
-      "away_runs": 2,
+      "status": "End 2nd",
+      "away_runs": 5,
       "home_runs": 0,
       "away_team_name": "New York Mets",
       "home_team_name": "Philadelphia Phillies",
@@ -16069,19 +16069,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 3
           }
         ],
         "current_inning": 2,
         "is_top": false,
         "inning_ordinal": "2nd",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 1,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 0,
-        "home_runs": 2,
+        "home_runs": 5,
         "away_hits": 2,
-        "home_hits": 2,
+        "home_hits": 6,
         "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "New York Mets",
@@ -16095,9 +16095,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "2",
+        "opp_score": "5",
         "score_fav": "0",
-        "score_opp": "2"
+        "score_opp": "5"
       }
     },
     "823852": {
@@ -17090,7 +17090,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "21/06/2026 18:01",
+  "updated_at": "21/06/2026 18:13",
   "stats": {
     "total": 89,
     "acertados": 54,
@@ -21944,8 +21944,8 @@
       "away": "Washington Mystics",
       "home_abbr": "MIN",
       "away_abbr": "WSH",
-      "home_score": 75,
-      "away_score": 70,
+      "home_score": 76,
+      "away_score": 80,
       "home_linescores": [
         {
           "period": 1,
@@ -21964,8 +21964,8 @@
         },
         {
           "period": 4,
-          "value": 15,
-          "display": "15"
+          "value": 16,
+          "display": "16"
         }
       ],
       "away_linescores": [
@@ -21986,13 +21986,13 @@
         },
         {
           "period": 4,
-          "value": 14,
-          "display": "14"
+          "value": 24,
+          "display": "24"
         }
       ],
-      "clock": "2:39",
+      "clock": "6.2",
       "period": 4,
-      "state": "Q4 2:39",
+      "state": "Q4 6.2",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/MIN.png&h=40&w=40",
@@ -22013,19 +22013,31 @@
     {
       "game_date": "2026-06-21",
       "game_id": "401857011",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Los Angeles Sparks",
       "away": "New York Liberty",
       "home_abbr": "LA",
       "away_abbr": "NY",
-      "home_score": 0,
-      "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "home_score": 7,
+      "away_score": 8,
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 7,
+          "display": "7"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 8,
+          "display": "8"
+        }
+      ],
+      "clock": "5:48",
+      "period": 1,
+      "state": "Q1 5:48",
+      "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/LA.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/NY.png&h=40&w=40",
@@ -22562,44 +22574,6 @@
       "porque": "Menos de 3 jugadores listados para análisis.",
       "top_jugador": "Andrew Vaughn",
       "factores": []
-    }
-  },
-  "llm_by_sport": {
-    "MLB": {
-      "llm_total": 124,
-      "llm_acertados": 73,
-      "llm_fallidos": 51,
-      "llm_win_rate": 58.9
-    },
-    "LMB": {
-      "llm_total": 61,
-      "llm_acertados": 21,
-      "llm_fallidos": 40,
-      "llm_win_rate": 34.4
-    },
-    "NBA": {
-      "llm_total": 0,
-      "llm_acertados": 0,
-      "llm_fallidos": 0,
-      "llm_win_rate": 0
-    },
-    "WNBA": {
-      "llm_total": 0,
-      "llm_acertados": 0,
-      "llm_fallidos": 0,
-      "llm_win_rate": 0
-    },
-    "NFL": {
-      "llm_total": 0,
-      "llm_acertados": 0,
-      "llm_fallidos": 0,
-      "llm_win_rate": 0
-    },
-    "SOCCER": {
-      "llm_total": 0,
-      "llm_acertados": 0,
-      "llm_fallidos": 0,
-      "llm_win_rate": 0
     }
   }
 }
