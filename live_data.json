@@ -1,5 +1,5 @@
 {
-  "fecha": "22/06/2026 16:00",
+  "fecha": "22/06/2026 16:13",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782223200,
@@ -1753,13 +1753,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-22",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "New York Yankees",
       "opp_team": "Detroit Tigers",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "🎯",
       "game_pk": 824261,
       "fav_abbr": "NYY",
@@ -1792,9 +1792,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3092,9 +3092,9 @@
       }
     },
     "824261": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Detroit Tigers",
@@ -3125,9 +3125,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3560,7 +3560,7 @@
       }
     }
   },
-  "updated_at": "22/06/2026 16:00",
+  "updated_at": "22/06/2026 16:13",
   "stats": {
     "total": 0,
     "acertados": 0,
