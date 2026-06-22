@@ -8637,40 +8637,56 @@
   },
   "MLB_2026-06-21_San Diego Padres_Texas Rangers": {
     "ir": "SÍ",
-    "pq": "Rangers tienen ventaja en casa y récord superior.",
+    "pq": "Mejor récord y racha reciente favorable.",
     "factores": [
-      "Racha de 7-3 en últimos 10 juegos",
-      "Historial reciente favorable",
-      "Padres con lesiones en su alineación"
+      "Rangers en casa",
+      "Racha de 7-3 en últimos 10",
+      "Historial favorable contra Padres"
     ],
     "favorito": "Texas Rangers",
     "sport": "baseball",
-    "carreras_esperadas": "5-4",
+    "carreras_esperadas": "6-4",
     "carreras_lineas": {
       "over_7.5": 75,
       "over_8.5": 60,
       "over_9.5": 45
     },
-    "ranking_local": "AL Oeste: 2º (42-28)",
+    "ranking_local": "AL Oeste: 1º (45-25)",
     "ranking_visitante": "NL Oeste: 4º (30-40)",
-    "abridor_local": "Jon Gray (3.80, 6-4, 85)",
-    "abridor_visitante": "Blake Snell (4.50, 5-6, 90)",
+    "abridor_local": "Jon Gray (3.45, 8-3, 90)",
+    "abridor_visitante": "Blake Snell (4.10, 5-6, 85)",
     "bateadores_clave": [
       {
         "jugador": "Corey Seager",
-        "equipo": "Rangers",
+        "equipo": "Texas Rangers",
         "hrs_estimados": 1,
-        "remolcadas_estimadas": 2
+        "remolcadas_estimadas": 2,
+        "confianza_bateo": 85
+      },
+      {
+        "jugador": "Adolis García",
+        "equipo": "Texas Rangers",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 80
       },
       {
         "jugador": "Fernando Tatis Jr.",
-        "equipo": "Padres",
+        "equipo": "San Diego Padres",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 75
+      },
+      {
+        "jugador": "Juan Soto",
+        "equipo": "San Diego Padres",
         "hrs_estimados": 0,
-        "remolcadas_estimadas": 1
+        "remolcadas_estimadas": 2,
+        "confianza_bateo": 70
       }
     ],
-    "relevo_local": "Bullpen con ERA de 3.80, confiable.",
-    "relevo_visitante": "Bullpen con ERA de 4.10, menos confiable."
+    "relevo_local": "Bullpen sólido con un ERA de 3.20, confiable en situaciones críticas.",
+    "relevo_visitante": "Bullpen con problemas, ERA de 4.50, menos confiable en finales cerrados."
   },
   "MLB_2026-06-21_Cleveland Guardians_Houston Astros": {
     "ir": "SÍ",
