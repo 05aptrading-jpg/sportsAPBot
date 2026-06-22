@@ -1,5 +1,5 @@
 {
-  "fecha": "21/06/2026 19:01",
+  "fecha": "21/06/2026 19:13",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782136800,
@@ -13834,8 +13834,8 @@
       "fav_team": "Philadelphia Phillies",
       "opp_team": "New York Mets",
       "score_fav": "6",
-      "score_opp": "1",
-      "state": "End 5th",
+      "score_opp": "2",
+      "state": "Top 6th",
       "result": "live",
       "label": "🎯",
       "game_pk": 823449,
@@ -13872,15 +13872,19 @@
           {
             "away_runs": 0,
             "home_runs": 1
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 2,
-        "away_runs": 1,
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 2,
         "home_runs": 6,
         "away_hits": 4,
         "home_hits": 7,
@@ -13896,9 +13900,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "1",
+        "fav_score": "2",
         "opp_score": "6",
-        "score_fav": "1",
+        "score_fav": "2",
         "score_opp": "6"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PHI.png&h=40&w=40",
@@ -16068,9 +16072,9 @@
     "823449": {
       "is_live": true,
       "is_final": false,
-      "status": "End 5th",
+      "status": "Top 6th",
       "away_runs": 6,
-      "home_runs": 1,
+      "home_runs": 2,
       "away_team_name": "New York Mets",
       "home_team_name": "Philadelphia Phillies",
       "linescore": {
@@ -16094,15 +16098,19 @@
           {
             "away_runs": 0,
             "home_runs": 1
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 2,
-        "away_runs": 1,
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 2,
         "home_runs": 6,
         "away_hits": 4,
         "home_hits": 7,
@@ -16118,9 +16126,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "1",
+        "fav_score": "2",
         "opp_score": "6",
-        "score_fav": "1",
+        "score_fav": "2",
         "score_opp": "6"
       }
     },
@@ -17114,7 +17122,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "21/06/2026 19:01",
+  "updated_at": "21/06/2026 19:13",
   "stats": {
     "total": 89,
     "acertados": 54,
