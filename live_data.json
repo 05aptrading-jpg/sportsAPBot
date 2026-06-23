@@ -1,5 +1,5 @@
 {
-  "fecha": "23/06/2026 14:20",
+  "fecha": "23/06/2026 14:28",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782309600,
@@ -1708,10 +1708,15 @@
       "home_team": "St. Louis Cardinals",
       "away_team": "Arizona Diamondbacks",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2640,12 +2645,12 @@
         "is_top": false,
         "inning_ordinal": "1st",
         "outs": 2,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 2,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Houston Astros",
@@ -3171,10 +3176,15 @@
       "away_team_name": "St. Louis Cardinals",
       "home_team_name": "Arizona Diamondbacks",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3619,12 +3629,12 @@
         "is_top": false,
         "inning_ordinal": "1st",
         "outs": 2,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 2,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Houston Astros",
@@ -3687,7 +3697,7 @@
       }
     }
   },
-  "updated_at": "23/06/2026 14:20",
+  "updated_at": "23/06/2026 14:28",
   "stats": {
     "total": 5,
     "acertados": 3,
