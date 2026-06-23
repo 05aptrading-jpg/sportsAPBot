@@ -1,5 +1,5 @@
 {
-  "fecha": "23/06/2026 13:43",
+  "fecha": "23/06/2026 13:58",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782309600,
@@ -2201,7 +2201,7 @@
       "opp_team": "Minnesota Twins",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 823690,
@@ -2232,7 +2232,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -2461,10 +2461,15 @@
       "home_team": "Detroit Tigers",
       "away_team": "New York Yankees",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3398,7 +3403,7 @@
     "823690": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Minnesota Twins",
@@ -3426,7 +3431,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3523,10 +3528,15 @@
       "away_team_name": "Detroit Tigers",
       "home_team_name": "New York Yankees",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3677,7 +3687,7 @@
       }
     }
   },
-  "updated_at": "23/06/2026 13:43",
+  "updated_at": "23/06/2026 13:58",
   "stats": {
     "total": 5,
     "acertados": 3,
