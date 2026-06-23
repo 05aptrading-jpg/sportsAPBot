@@ -1,5 +1,5 @@
 {
-  "fecha": "23/06/2026 14:28",
+  "fecha": "23/06/2026 14:40",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782309600,
@@ -2215,10 +2215,15 @@
       "home_team": "Minnesota Twins",
       "away_team": "Los Angeles Dodgers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2553,10 +2558,15 @@
       "home_team": "Chicago White Sox",
       "away_team": "Cleveland Guardians",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2626,7 +2636,7 @@
       "opp_team": "Toronto Blue Jays",
       "score_fav": "1",
       "score_opp": "0",
-      "state": "Bottom 1st",
+      "state": "Bottom 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 822799,
@@ -2639,18 +2649,22 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 2,
-        "balls": 1,
+        "inning_ordinal": "2nd",
+        "outs": 0,
+        "balls": 0,
         "strikes": 1,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 2,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Houston Astros",
@@ -3419,10 +3433,15 @@
       "away_team_name": "Minnesota Twins",
       "home_team_name": "Los Angeles Dodgers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3581,10 +3600,15 @@
       "away_team_name": "Chicago White Sox",
       "home_team_name": "Cleveland Guardians",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3613,7 +3637,7 @@
     "822799": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Bottom 2nd",
       "away_runs": 1,
       "home_runs": 0,
       "away_team_name": "Toronto Blue Jays",
@@ -3623,18 +3647,22 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 2,
-        "balls": 1,
+        "inning_ordinal": "2nd",
+        "outs": 0,
+        "balls": 0,
         "strikes": 1,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 2,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Houston Astros",
@@ -3697,7 +3725,7 @@
       }
     }
   },
-  "updated_at": "23/06/2026 14:28",
+  "updated_at": "23/06/2026 14:40",
   "stats": {
     "total": 5,
     "acertados": 3,
