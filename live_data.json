@@ -1,5 +1,5 @@
 {
-  "fecha": "23/06/2026 16:28",
+  "fecha": "23/06/2026 16:40",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782309600,
@@ -1607,13 +1607,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-23",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Tampa Bay Rays",
       "opp_team": "Kansas City Royals",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "🎯",
       "game_pk": 822963,
       "fav_abbr": "TB",
@@ -1646,9 +1646,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -1795,10 +1795,15 @@
       "home_team": "San Francisco Giants",
       "away_team": "Athletics",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2042,7 +2047,7 @@
       "opp_team": "Washington Nationals",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "📋",
       "game_pk": 822718,
@@ -2078,7 +2083,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -2225,7 +2230,12 @@
       "home_team": "Minnesota Twins",
       "away_team": "Los Angeles Dodgers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
@@ -2467,13 +2477,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-23",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "New York Yankees",
       "opp_team": "Detroit Tigers",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 824262,
       "fav_abbr": "NYY",
@@ -2506,9 +2516,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -2646,7 +2656,7 @@
       "opp_team": "Toronto Blue Jays",
       "score_fav": "4",
       "score_opp": "4",
-      "state": "Bottom 7th",
+      "state": "Top 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 822799,
@@ -2683,17 +2693,21 @@
           {
             "away_runs": 0,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 3,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 1,
         "balls": 3,
-        "strikes": 2,
+        "strikes": 1,
         "away_runs": 4,
         "home_runs": 4,
-        "away_hits": 9,
+        "away_hits": 11,
         "home_hits": 11,
         "away_errors": 0,
         "home_errors": 0,
@@ -2752,13 +2766,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-23",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Texas Rangers",
       "opp_team": "Miami Marlins",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "state": "In Progress",
+      "result": "live",
       "label": "📋",
       "game_pk": 823849,
       "fav_abbr": "TEX",
@@ -2791,9 +2805,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3169,9 +3183,9 @@
       }
     },
     "822963": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Kansas City Royals",
@@ -3202,9 +3216,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3263,10 +3277,15 @@
       "away_team_name": "San Francisco Giants",
       "home_team_name": "Athletics",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3381,7 +3400,7 @@
     "822718": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Washington Nationals",
@@ -3414,7 +3433,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3473,7 +3492,12 @@
       "away_team_name": "Minnesota Twins",
       "home_team_name": "Los Angeles Dodgers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
@@ -3589,9 +3613,9 @@
       }
     },
     "824262": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Detroit Tigers",
@@ -3622,9 +3646,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3677,7 +3701,7 @@
     "822799": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 7th",
+      "status": "Top 8th",
       "away_runs": 4,
       "home_runs": 4,
       "away_team_name": "Toronto Blue Jays",
@@ -3711,17 +3735,21 @@
           {
             "away_runs": 0,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 3,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 1,
         "balls": 3,
-        "strikes": 2,
+        "strikes": 1,
         "away_runs": 4,
         "home_runs": 4,
-        "away_hits": 9,
+        "away_hits": 11,
         "home_hits": 11,
         "away_errors": 0,
         "home_errors": 0,
@@ -3742,9 +3770,9 @@
       }
     },
     "823849": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "In Progress",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Miami Marlins",
@@ -3775,9 +3803,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3785,7 +3813,7 @@
       }
     }
   },
-  "updated_at": "23/06/2026 16:28",
+  "updated_at": "23/06/2026 16:40",
   "stats": {
     "total": 5,
     "acertados": 3,
