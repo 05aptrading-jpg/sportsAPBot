@@ -1,5 +1,5 @@
 {
-  "fecha": "22/06/2026 22:13",
+  "fecha": "22/06/2026 22:20",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782223200,
@@ -2308,7 +2308,7 @@
       "opp_team": "San Diego Padres",
       "score_fav": "0",
       "score_opp": "1",
-      "state": "End 7th",
+      "state": "Middle 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 823288,
@@ -2353,14 +2353,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
         "outs": 3,
-        "balls": 3,
-        "strikes": 3,
+        "balls": 2,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 6,
@@ -2415,13 +2419,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-22",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Baltimore Orioles",
       "opp_team": "Los Angeles Angels",
       "score_fav": "6",
       "score_opp": "1",
-      "state": "Bottom 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 824016,
       "fav_abbr": "BAL",
@@ -2435,7 +2439,7 @@
         "Mejor récord en casa",
         "Alineación con poder"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "acertado",
       "linescore": {
         "innings": [
           {
@@ -2478,9 +2482,9 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
+        "outs": 3,
         "balls": 2,
-        "strikes": 2,
+        "strikes": 3,
         "away_runs": 6,
         "home_runs": 1,
         "away_hits": 11,
@@ -2494,9 +2498,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "6",
         "opp_score": "1",
         "score_fav": "6",
@@ -3827,7 +3831,7 @@
     "823288": {
       "is_live": true,
       "is_final": false,
-      "status": "End 7th",
+      "status": "Middle 8th",
       "away_runs": 0,
       "home_runs": 1,
       "away_team_name": "San Diego Padres",
@@ -3861,14 +3865,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
         "outs": 3,
-        "balls": 3,
-        "strikes": 3,
+        "balls": 2,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 6,
@@ -3892,9 +3900,9 @@
       }
     },
     "824016": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 6,
       "home_runs": 1,
       "away_team_name": "Los Angeles Angels",
@@ -3941,9 +3949,9 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
+        "outs": 3,
         "balls": 2,
-        "strikes": 2,
+        "strikes": 3,
         "away_runs": 6,
         "home_runs": 1,
         "away_hits": 11,
@@ -3957,9 +3965,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "6",
         "opp_score": "1",
         "score_fav": "6",
@@ -4277,7 +4285,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "22/06/2026 22:13",
+  "updated_at": "22/06/2026 22:20",
   "stats": {
     "total": 5,
     "acertados": 3,
@@ -4291,10 +4299,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 7,
-    "baja_acertados": 3,
+    "baja_total": 8,
+    "baja_acertados": 4,
     "baja_fallidos": 4,
-    "baja_win_rate": 42.9,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -4303,10 +4311,10 @@
     "hits_fallidos": 0,
     "hits_pendientes": 162,
     "hits_win_rate": 0.0,
-    "llm_total": 10,
-    "llm_acertados": 5,
+    "llm_total": 11,
+    "llm_acertados": 6,
     "llm_fallidos": 5,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 54.5
   },
   "stats_mlb": {
     "total": 5,
@@ -4321,10 +4329,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 7,
-    "baja_acertados": 3,
+    "baja_total": 8,
+    "baja_acertados": 4,
     "baja_fallidos": 4,
-    "baja_win_rate": 42.9,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -4333,10 +4341,10 @@
     "hits_fallidos": 0,
     "hits_pendientes": 162,
     "hits_win_rate": 0.0,
-    "llm_total": 10,
-    "llm_acertados": 5,
+    "llm_total": 11,
+    "llm_acertados": 6,
     "llm_fallidos": 5,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 54.5
   },
   "stats_lmb": {
     "total": 0,
@@ -4381,10 +4389,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 7,
-    "baja_acertados": 3,
+    "baja_total": 8,
+    "baja_acertados": 4,
     "baja_fallidos": 4,
-    "baja_win_rate": 42.9,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -4393,10 +4401,10 @@
     "hits_fallidos": 0,
     "hits_pendientes": 162,
     "hits_win_rate": 0.0,
-    "llm_total": 10,
-    "llm_acertados": 5,
+    "llm_total": 11,
+    "llm_acertados": 6,
     "llm_fallidos": 5,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 54.5
   },
   "stats_hoy_mlb": {
     "total": 5,
@@ -4411,10 +4419,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 7,
-    "baja_acertados": 3,
+    "baja_total": 8,
+    "baja_acertados": 4,
     "baja_fallidos": 4,
-    "baja_win_rate": 42.9,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -4423,10 +4431,10 @@
     "hits_fallidos": 0,
     "hits_pendientes": 162,
     "hits_win_rate": 0.0,
-    "llm_total": 10,
-    "llm_acertados": 5,
+    "llm_total": 11,
+    "llm_acertados": 6,
     "llm_fallidos": 5,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 54.5
   },
   "stats_hoy_lmb": {
     "total": 0,
@@ -4471,10 +4479,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 7,
-    "baja_acertados": 3,
+    "baja_total": 8,
+    "baja_acertados": 4,
     "baja_fallidos": 4,
-    "baja_win_rate": 42.9,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -4483,10 +4491,10 @@
     "hits_fallidos": 0,
     "hits_pendientes": 162,
     "hits_win_rate": 0.0,
-    "llm_total": 10,
-    "llm_acertados": 5,
+    "llm_total": 11,
+    "llm_acertados": 6,
     "llm_fallidos": 5,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 54.5
   },
   "stats_3dias_mlb": {
     "total": 5,
@@ -4501,10 +4509,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 7,
-    "baja_acertados": 3,
+    "baja_total": 8,
+    "baja_acertados": 4,
     "baja_fallidos": 4,
-    "baja_win_rate": 42.9,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -4513,10 +4521,10 @@
     "hits_fallidos": 0,
     "hits_pendientes": 162,
     "hits_win_rate": 0.0,
-    "llm_total": 10,
-    "llm_acertados": 5,
+    "llm_total": 11,
+    "llm_acertados": 6,
     "llm_fallidos": 5,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 54.5
   },
   "stats_3dias_lmb": {
     "total": 0,
@@ -4561,10 +4569,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 7,
-    "baja_acertados": 3,
+    "baja_total": 8,
+    "baja_acertados": 4,
     "baja_fallidos": 4,
-    "baja_win_rate": 42.9,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -4573,10 +4581,10 @@
     "hits_fallidos": 0,
     "hits_pendientes": 162,
     "hits_win_rate": 0.0,
-    "llm_total": 10,
-    "llm_acertados": 5,
+    "llm_total": 11,
+    "llm_acertados": 6,
     "llm_fallidos": 5,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 54.5
   },
   "stats_semanal_mlb": {
     "total": 5,
@@ -4591,10 +4599,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 7,
-    "baja_acertados": 3,
+    "baja_total": 8,
+    "baja_acertados": 4,
     "baja_fallidos": 4,
-    "baja_win_rate": 42.9,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -4603,10 +4611,10 @@
     "hits_fallidos": 0,
     "hits_pendientes": 162,
     "hits_win_rate": 0.0,
-    "llm_total": 10,
-    "llm_acertados": 5,
+    "llm_total": 11,
+    "llm_acertados": 6,
     "llm_fallidos": 5,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 54.5
   },
   "stats_semanal_lmb": {
     "total": 0,
@@ -4655,10 +4663,10 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 7,
-      "baja_acertados": 3,
+      "baja_total": 8,
+      "baja_acertados": 4,
       "baja_fallidos": 4,
-      "baja_win_rate": 42.9,
+      "baja_win_rate": 50.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
@@ -4667,10 +4675,10 @@
       "hits_fallidos": 0,
       "hits_pendientes": 162,
       "hits_win_rate": 0.0,
-      "llm_total": 10,
-      "llm_acertados": 5,
+      "llm_total": 11,
+      "llm_acertados": 6,
       "llm_fallidos": 5,
-      "llm_win_rate": 50.0
+      "llm_win_rate": 54.5
     }
   },
   "stats_por_fecha_mlb": {
@@ -4687,10 +4695,10 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 7,
-      "baja_acertados": 3,
+      "baja_total": 8,
+      "baja_acertados": 4,
       "baja_fallidos": 4,
-      "baja_win_rate": 42.9,
+      "baja_win_rate": 50.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
@@ -4699,10 +4707,10 @@
       "hits_fallidos": 0,
       "hits_pendientes": 162,
       "hits_win_rate": 0.0,
-      "llm_total": 10,
-      "llm_acertados": 5,
+      "llm_total": 11,
+      "llm_acertados": 6,
       "llm_fallidos": 5,
-      "llm_win_rate": 50.0
+      "llm_win_rate": 54.5
     }
   },
   "stats_por_fecha_lmb": {
@@ -7218,7 +7226,7 @@
     {
       "game_date": "2026-06-22",
       "game_id": "401857015",
-      "status_emoji": "🔴",
+      "status_emoji": "🏁",
       "home": "Seattle Storm",
       "away": "Dallas Wings",
       "home_abbr": "SEA",
@@ -7279,10 +7287,10 @@
           "display": "16"
         }
       ],
-      "clock": "1.6",
+      "clock": "0.0",
       "period": 5,
-      "state": "Q5 1.6",
-      "result": "live",
+      "state": "Final",
+      "result": "completed",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/SEA.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/DAL.png&h=40&w=40",
