@@ -1,5 +1,5 @@
 {
-  "fecha": "23/06/2026 16:00",
+  "fecha": "23/06/2026 16:13",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782309600,
@@ -1530,7 +1530,7 @@
       "opp_team": "Los Angeles Angels",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "🎯",
       "game_pk": 824017,
@@ -1561,7 +1561,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -2646,7 +2646,7 @@
       "opp_team": "Toronto Blue Jays",
       "score_fav": "4",
       "score_opp": "2",
-      "state": "Bottom 6th",
+      "state": "Top 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 822799,
@@ -2679,18 +2679,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
         "outs": 0,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 4,
         "home_runs": 2,
         "away_hits": 9,
-        "home_hits": 7,
+        "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Houston Astros",
@@ -3129,7 +3133,7 @@
     "824017": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Los Angeles Angels",
@@ -3157,7 +3161,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3673,7 +3677,7 @@
     "822799": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 6th",
+      "status": "Top 7th",
       "away_runs": 4,
       "home_runs": 2,
       "away_team_name": "Toronto Blue Jays",
@@ -3703,18 +3707,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
         "outs": 0,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 4,
         "home_runs": 2,
         "away_hits": 9,
-        "home_hits": 7,
+        "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Houston Astros",
@@ -3777,7 +3785,7 @@
       }
     }
   },
-  "updated_at": "23/06/2026 16:00",
+  "updated_at": "23/06/2026 16:13",
   "stats": {
     "total": 5,
     "acertados": 3,
