@@ -1,5 +1,5 @@
 {
-  "fecha": "23/06/2026 17:43",
+  "fecha": "23/06/2026 17:44",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782309600,
@@ -823,22 +823,163 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-22",
-      "status_emoji": "🏁",
+      "status_emoji": "✅",
+      "fav_team": "St. Louis Cardinals",
+      "opp_team": "Arizona Diamondbacks",
+      "score_fav": "3",
+      "score_opp": "2",
+      "state": "Final",
+      "result": "win",
+      "label": "🎯",
+      "game_pk": 401815861,
+      "fav_abbr": "STL",
+      "opp_abbr": "ARI",
+      "home_team": "St. Louis Cardinals",
+      "away_team": "Arizona Diamondbacks",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Racha ganadora y mejor posición en la tabla.",
+      "llm_factores": "[\"Cardinals en racha de 8-2\", \"Diamondbacks en caída con 3-7\", \"Historial reciente favorable a Cardinals\"]",
+      "resultado_llm": "acertado",
+      "linescore": {
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 1,
+        "strikes": 1,
+        "away_runs": 2,
+        "home_runs": 3,
+        "away_hits": 8,
+        "home_hits": 7,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Arizona Diamondbacks",
+        "home_team_name": "St. Louis Cardinals",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
+        "fav_score": "2",
+        "opp_score": "3",
+        "score_fav": "2",
+        "score_opp": "3"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/STL.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ARI.png&h=40&w=40"
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-22",
+      "status_emoji": "✅",
+      "fav_team": "Milwaukee Brewers",
+      "opp_team": "Cincinnati Reds",
+      "score_fav": "2",
+      "score_opp": "1",
+      "state": "Final",
+      "result": "win",
+      "label": "🎯",
+      "game_pk": 401815857,
+      "fav_abbr": "MIL",
+      "opp_abbr": "CIN",
+      "home_team": "Cincinnati Reds",
+      "away_team": "Milwaukee Brewers",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Brewers tienen mejor récord y bullpen.",
+      "llm_factores": [
+        "Brewers en buena racha",
+        "Reds con problemas de lesiones",
+        "Historial reciente a favor de Brewers"
+      ],
+      "resultado_llm": "acertado",
+      "linescore": {},
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CIN.png&h=40&w=40",
+      "llm_favorito": "Milwaukee Brewers",
+      "llm_carreras": "4-6",
+      "llm_carreras_lineas": {
+        "over_7.5": 75,
+        "over_8.5": 65,
+        "over_9.5": 55
+      },
+      "llm_ranking_local": "NL Central: 3º (35-35)",
+      "llm_ranking_visitante": "NL Central: 1º (44-26)",
+      "llm_abridor_local": "Hunter Greene (4.20, 4-6, 90)",
+      "llm_abridor_visitante": "Corbin Burnes (2.90, 8-2, 100)",
+      "llm_bateadores_clave": [
+        {
+          "jugador": "Joey Votto",
+          "equipo": "Cincinnati Reds",
+          "hrs_estimados": 0.4,
+          "remolcadas_estimadas": 1
+        },
+        {
+          "jugador": "Christian Yelich",
+          "equipo": "Milwaukee Brewers",
+          "hrs_estimados": 0.5,
+          "remolcadas_estimadas": 2
+        }
+      ],
+      "llm_relevo_local": "Bullpen con ERA de 4.50, poco confiable.",
+      "llm_relevo_visitante": "Bullpen fuerte con ERA de 3.40."
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-22",
+      "status_emoji": "❌",
       "fav_team": "New York Yankees",
       "opp_team": "Detroit Tigers",
       "score_fav": "3",
       "score_opp": "5",
       "state": "Final",
-      "result": "completed",
-      "label": "📋",
+      "result": "loss",
+      "label": "🎯",
       "game_pk": 401815858,
       "fav_abbr": "NYY",
       "opp_abbr": "DET",
       "home_team": "Detroit Tigers",
       "away_team": "New York Yankees",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYY.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Mejor equipo y racha reciente.",
       "llm_factores": [
@@ -846,6 +987,10 @@
         "Historial dominante contra Tigers",
         "Tigers con lesiones clave"
       ],
+      "resultado_llm": "fallido",
+      "linescore": {},
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYY.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
       "llm_favorito": "New York Yankees",
       "llm_carreras": "3-5",
       "llm_carreras_lineas": {
@@ -877,40 +1022,415 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-22",
-      "status_emoji": "🏁",
-      "fav_team": "Kansas City Royals",
-      "opp_team": "Tampa Bay Rays",
+      "status_emoji": "❌",
+      "fav_team": "Cleveland Guardians",
+      "opp_team": "Chicago White Sox",
+      "score_fav": "5",
+      "score_opp": "6",
+      "state": "Final",
+      "result": "loss",
+      "label": "📋",
+      "game_pk": 401815862,
+      "fav_abbr": "CLE",
+      "opp_abbr": "CHW",
+      "home_team": "Chicago White Sox",
+      "away_team": "Cleveland Guardians",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Guardians tienen mejor récord y bullpen superior.",
+      "llm_factores": [
+        "Guardians en buena forma",
+        "White Sox con lesiones",
+        "Historial reciente a favor de Guardians"
+      ],
+      "resultado_llm": "fallido",
+      "linescore": {},
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHW.png&h=40&w=40",
+      "llm_favorito": "Cleveland Guardians",
+      "llm_carreras": "3-5",
+      "llm_carreras_lineas": {
+        "over_7.5": 70,
+        "over_8.5": 60,
+        "over_9.5": 50
+      },
+      "llm_ranking_local": "AL Central: 4º (30-40)",
+      "llm_ranking_visitante": "AL Central: 1º (42-28)",
+      "llm_abridor_local": "Dylan Cease (3.80, 6-4, 95)",
+      "llm_abridor_visitante": "Shane Bieber (3.10, 7-3, 110)",
+      "llm_bateadores_clave": [
+        {
+          "jugador": "Luis Robert",
+          "equipo": "Chicago White Sox",
+          "hrs_estimados": 0.3,
+          "remolcadas_estimadas": 1
+        },
+        {
+          "jugador": "José Ramírez",
+          "equipo": "Cleveland Guardians",
+          "hrs_estimados": 0.5,
+          "remolcadas_estimadas": 2
+        }
+      ],
+      "llm_relevo_local": "Bullpen con ERA de 4.60, poco confiable.",
+      "llm_relevo_visitante": "Bullpen sólido con ERA de 3.50."
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-22",
+      "status_emoji": "✅",
+      "fav_team": "Los Angeles Dodgers",
+      "opp_team": "Minnesota Twins",
       "score_fav": "2",
       "score_opp": "1",
       "state": "Final",
-      "result": "completed",
+      "result": "win",
+      "label": "📋",
+      "game_pk": 401815863,
+      "fav_abbr": "LAD",
+      "opp_abbr": "MIN",
+      "home_team": "Minnesota Twins",
+      "away_team": "Los Angeles Dodgers",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y racha reciente favorable.",
+      "llm_factores": [
+        "Mejor posición en la división",
+        "Racha de 7-3 en últimos 10",
+        "Historial favorable ante Minnesota"
+      ],
+      "resultado_llm": "acertado",
+      "linescore": {},
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40",
+      "llm_favorito": "Los Angeles Dodgers",
+      "llm_carreras": "4-6",
+      "llm_carreras_lineas": {
+        "over_7.5": 75,
+        "over_8.5": 60,
+        "over_9.5": 45
+      },
+      "llm_ranking_local": "AL Central: 2º (38-32)",
+      "llm_ranking_visitante": "NL Oeste: 1º (45-25)",
+      "llm_abridor_local": "Sonny Gray (3.50, 6-4, 80)",
+      "llm_abridor_visitante": "Clayton Kershaw (2.80, 8-2, 90)",
+      "llm_bateadores_clave": [
+        {
+          "jugador": "Carlos Correa",
+          "equipo": "Minnesota Twins",
+          "hrs_estimados": 0.5,
+          "remolcadas_estimadas": 1
+        },
+        {
+          "jugador": "Mookie Betts",
+          "equipo": "Los Angeles Dodgers",
+          "hrs_estimados": 0.7,
+          "remolcadas_estimadas": 2
+        }
+      ],
+      "llm_relevo_local": "Bullpen con ERA de 4.20, confiable en situaciones de presión.",
+      "llm_relevo_visitante": "Bullpen con ERA de 3.50, sólido y efectivo."
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-22",
+      "status_emoji": "✅",
+      "fav_team": "Toronto Blue Jays",
+      "opp_team": "Houston Astros",
+      "score_fav": "4",
+      "score_opp": "2",
+      "state": "Final",
+      "result": "win",
+      "label": "📋",
+      "game_pk": 401815855,
+      "fav_abbr": "TOR",
+      "opp_abbr": "HOU",
+      "home_team": "Toronto Blue Jays",
+      "away_team": "Houston Astros",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y ofensiva más potente.",
+      "llm_factores": "[\"Astros 7-3 en últimos 10\", \"Blue Jays 4-6 en últimos 10\", \"Historial reciente favorable a Astros\"]",
+      "resultado_llm": "acertado",
+      "linescore": {
+        "innings": [
+          {
+            "away_runs": 1,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 1,
+        "strikes": 3,
+        "away_runs": 2,
+        "home_runs": 4,
+        "away_hits": 5,
+        "home_hits": 11,
+        "away_errors": 1,
+        "home_errors": 0,
+        "away_team_name": "Houston Astros",
+        "home_team_name": "Toronto Blue Jays",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
+        "fav_score": "2",
+        "opp_score": "4",
+        "score_fav": "2",
+        "score_opp": "4"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TOR.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40"
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-22",
+      "status_emoji": "❌",
+      "fav_team": "Atlanta Braves",
+      "opp_team": "San Diego Padres",
+      "score_fav": "0",
+      "score_opp": "1",
+      "state": "Final",
+      "result": "loss",
+      "label": "📋",
+      "game_pk": 401815865,
+      "fav_abbr": "ATL",
+      "opp_abbr": "SD",
+      "home_team": "San Diego Padres",
+      "away_team": "Atlanta Braves",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y ofensiva más potente.",
+      "llm_factores": [
+        "Posición en la división superior",
+        "Racha de 8-2 en últimos 10",
+        "Historial reciente favorable"
+      ],
+      "resultado_llm": "fallido",
+      "linescore": {},
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATL.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SD.png&h=40&w=40",
+      "llm_favorito": "Atlanta Braves",
+      "llm_carreras": "4-5",
+      "llm_carreras_lineas": {
+        "over_7.5": 70,
+        "over_8.5": 55,
+        "over_9.5": 40
+      },
+      "llm_ranking_local": "NL Oeste: 2º (39-31)",
+      "llm_ranking_visitante": "NL Este: 1º (44-26)",
+      "llm_abridor_local": "Yu Darvish (3.80, 6-4, 90)",
+      "llm_abridor_visitante": "Max Fried (3.10, 8-2, 85)",
+      "llm_bateadores_clave": [
+        {
+          "jugador": "Fernando Tatis Jr.",
+          "equipo": "San Diego Padres",
+          "hrs_estimados": 0.5,
+          "remolcadas_estimadas": 1
+        },
+        {
+          "jugador": "Ronald Acuña Jr.",
+          "equipo": "Atlanta Braves",
+          "hrs_estimados": 0.6,
+          "remolcadas_estimadas": 2
+        }
+      ],
+      "llm_relevo_local": "Bullpen con ERA de 4.00, confiable en finales apretados.",
+      "llm_relevo_visitante": "Bullpen con ERA de 3.50, sólido y efectivo."
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-22",
+      "status_emoji": "✅",
+      "fav_team": "Baltimore Orioles",
+      "opp_team": "Los Angeles Angels",
+      "score_fav": "6",
+      "score_opp": "1",
+      "state": "Final",
+      "result": "win",
+      "label": "📋",
+      "game_pk": 401815866,
+      "fav_abbr": "BAL",
+      "opp_abbr": "LAA",
+      "home_team": "Los Angeles Angels",
+      "away_team": "Baltimore Orioles",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Ventaja en casa y mejor alineación ofensiva.",
+      "llm_factores": [
+        "Mejor récord en casa",
+        "Racha de 6-4 en últimos 10",
+        "Historial reciente favorable"
+      ],
+      "resultado_llm": "acertado",
+      "linescore": {},
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BAL.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40",
+      "llm_favorito": "Los Angeles Angels",
+      "llm_carreras": "5-3",
+      "llm_carreras_lineas": {
+        "over_7.5": 75,
+        "over_8.5": 60,
+        "over_9.5": 45
+      },
+      "llm_ranking_local": "AL Oeste: 3º (36-34)",
+      "llm_ranking_visitante": "AL Este: 4º (31-39)",
+      "llm_abridor_local": "Shohei Ohtani (3.10, 7-3, 120)",
+      "llm_abridor_visitante": "Grayson Rodriguez (4.20, 4-5, 70)",
+      "llm_bateadores_clave": [
+        {
+          "jugador": "Mike Trout",
+          "equipo": "Los Angeles Angels",
+          "hrs_estimados": 0.5,
+          "remolcadas_estimadas": 1
+        },
+        {
+          "jugador": "Adley Rutschman",
+          "equipo": "Baltimore Orioles",
+          "hrs_estimados": 0.3,
+          "remolcadas_estimadas": 1
+        }
+      ],
+      "llm_relevo_local": "Bullpen con ERA de 4.20, confiable en momentos críticos.",
+      "llm_relevo_visitante": "Bullpen con ERA de 4.50, inconsistente."
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-22",
+      "status_emoji": "❌",
+      "fav_team": "Tampa Bay Rays",
+      "opp_team": "Kansas City Royals",
+      "score_fav": "1",
+      "score_opp": "2",
+      "state": "Final",
+      "result": "loss",
       "label": "📋",
       "game_pk": 401815856,
-      "fav_abbr": "KC",
-      "opp_abbr": "TB",
+      "fav_abbr": "TB",
+      "opp_abbr": "KC",
       "home_team": "Tampa Bay Rays",
       "away_team": "Kansas City Royals",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/KC.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
       "llm_ir_favorito": "SÍ",
-      "llm_porque": "Racha positiva y mejor récord.",
+      "llm_porque": "Mejor récord y racha reciente favorable.",
       "llm_factores": [
-        "Rays 7-3 en últimos 10 juegos",
-        "Dominio en enfrentamientos directos",
-        "Lesiones mínimas en Rays"
+        "Racha de 7-3 en últimos 10 juegos",
+        "Kansas City con lesiones clave",
+        "Historial reciente favorece a Tampa Bay"
       ],
+      "resultado_llm": "fallido",
+      "linescore": {
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
+        "current_inning": 9,
+        "is_top": false,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 2,
+        "strikes": 1,
+        "away_runs": 2,
+        "home_runs": 1,
+        "away_hits": 4,
+        "home_hits": 6,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Kansas City Royals",
+        "home_team_name": "Tampa Bay Rays",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
+        "fav_score": "2",
+        "opp_score": "1",
+        "score_fav": "2",
+        "score_opp": "1"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/KC.png&h=40&w=40",
       "llm_favorito": "Tampa Bay Rays",
       "llm_carreras": "6-3",
       "llm_carreras_lineas": {
-        "over_7.5": 80,
-        "over_8.5": 70,
-        "over_9.5": 50
+        "over_7.5": 75,
+        "over_8.5": 60,
+        "over_9.5": 45
       },
       "llm_ranking_local": "AL Este: 1º (45-25)",
-      "llm_ranking_visitante": "AL Central: 4º (30-40)",
-      "llm_abridor_local": "Shane McClanahan (2.50, 10-2, 110)",
-      "llm_abridor_visitante": "Brad Keller (5.30, 4-8, 70)",
+      "llm_ranking_visitante": "AL Central: 4º (25-45)",
+      "llm_abridor_local": "Shane McClanahan (2.85, 10-3, 120)",
+      "llm_abridor_visitante": "Brady Singer (4.50, 5-8, 90)",
       "llm_bateadores_clave": [
         {
           "jugador": "Wander Franco",
@@ -925,82 +1445,25 @@
           "remolcadas_estimadas": 1
         }
       ],
-      "llm_relevo_local": "Bullpen con ERA de 3.30, excelente en finales.",
-      "llm_relevo_visitante": "Bullpen con ERA de 5.00, débil en situaciones críticas."
+      "llm_relevo_local": "Bullpen con ERA de 3.10, confiable en finales.",
+      "llm_relevo_visitante": "Bullpen con ERA de 4.80, vulnerable en situaciones críticas."
     },
     {
       "liga": "MLB",
       "game_date": "2026-06-22",
-      "status_emoji": "🏁",
-      "fav_team": "Texas Rangers",
-      "opp_team": "Miami Marlins",
-      "score_fav": "4",
-      "score_opp": "3",
-      "state": "Final",
-      "result": "completed",
-      "label": "📋",
-      "game_pk": 401815860,
-      "fav_abbr": "TEX",
-      "opp_abbr": "MIA",
-      "home_team": "Miami Marlins",
-      "away_team": "Texas Rangers",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TEX.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIA.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Rangers tienen mejor récord y racha reciente.",
-      "llm_factores": [
-        "Rangers en racha positiva",
-        "Marlins con lesiones clave",
-        "Historial favorable para Rangers"
-      ],
-      "llm_favorito": "Texas Rangers",
-      "llm_carreras": "4-6",
-      "llm_carreras_lineas": {
-        "over_7.5": 70,
-        "over_8.5": 60,
-        "over_9.5": 50
-      },
-      "llm_ranking_local": "NL Este: 4º (30-40)",
-      "llm_ranking_visitante": "AL Oeste: 1º (45-25)",
-      "llm_abridor_local": "Pablo López (3.50, 6-5, 85)",
-      "llm_abridor_visitante": "Jon Gray (3.20, 8-3, 90)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "Jazz Chisholm",
-          "equipo": "Miami Marlins",
-          "hrs_estimados": 0.5,
-          "remolcadas_estimadas": 1
-        },
-        {
-          "jugador": "Corey Seager",
-          "equipo": "Texas Rangers",
-          "hrs_estimados": 0.7,
-          "remolcadas_estimadas": 2
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 4.20, confianza limitada.",
-      "llm_relevo_visitante": "Bullpen sólido con ERA de 3.50."
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-22",
-      "status_emoji": "🏁",
+      "status_emoji": "❌",
       "fav_team": "Philadelphia Phillies",
       "opp_team": "Washington Nationals",
       "score_fav": "1",
       "score_opp": "4",
       "state": "Final",
-      "result": "completed",
+      "result": "loss",
       "label": "📋",
       "game_pk": 401815859,
       "fav_abbr": "PHI",
       "opp_abbr": "WSH",
       "home_team": "Washington Nationals",
       "away_team": "Philadelphia Phillies",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PHI.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/WSH.png&h=40&w=40",
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Phillies tienen mejor récord y ofensiva más potente.",
       "llm_factores": [
@@ -1008,6 +1471,10 @@
         "Nats con problemas de lesiones",
         "Historial reciente a favor de Phillies"
       ],
+      "resultado_llm": "fallido",
+      "linescore": {},
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PHI.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/WSH.png&h=40&w=40",
       "llm_favorito": "Philadelphia Phillies",
       "llm_carreras": "3-5",
       "llm_carreras_lineas": {
@@ -1039,56 +1506,180 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-22",
-      "status_emoji": "🏁",
-      "fav_team": "Houston Astros",
-      "opp_team": "Toronto Blue Jays",
-      "score_fav": "2",
+      "status_emoji": "✅",
+      "fav_team": "Colorado Rockies",
+      "opp_team": "Boston Red Sox",
+      "score_fav": "3",
+      "score_opp": "2",
+      "state": "Final",
+      "result": "win",
+      "label": "📋",
+      "game_pk": 401815864,
+      "fav_abbr": "COL",
+      "opp_abbr": "BOS",
+      "home_team": "Colorado Rockies",
+      "away_team": "Boston Red Sox",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y ofensiva más poderosa.",
+      "llm_factores": "[\"Red Sox 7-3 en últimos 10\", \"Rockies 4-6 en últimos 10\", \"Historial reciente favorable a Red Sox\"]",
+      "resultado_llm": "acertado",
+      "linescore": {
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 2,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 3
+          }
+        ],
+        "current_inning": 9,
+        "is_top": false,
+        "inning_ordinal": "9th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 1,
+        "away_runs": 2,
+        "home_runs": 3,
+        "away_hits": 5,
+        "home_hits": 12,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Boston Red Sox",
+        "home_team_name": "Colorado Rockies",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
+        "fav_score": "2",
+        "opp_score": "3",
+        "score_fav": "2",
+        "score_opp": "3"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/COL.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BOS.png&h=40&w=40"
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-06-22",
+      "status_emoji": "❌",
+      "fav_team": "Miami Marlins",
+      "opp_team": "Texas Rangers",
+      "score_fav": "3",
       "score_opp": "4",
       "state": "Final",
-      "result": "completed",
+      "result": "loss",
       "label": "📋",
-      "game_pk": 401815855,
-      "fav_abbr": "HOU",
-      "opp_abbr": "TOR",
-      "home_team": "Toronto Blue Jays",
-      "away_team": "Houston Astros",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TOR.png&h=40&w=40",
+      "game_pk": 401815860,
+      "fav_abbr": "MIA",
+      "opp_abbr": "TEX",
+      "home_team": "Miami Marlins",
+      "away_team": "Texas Rangers",
       "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor posición en la división y bullpen sólido.",
-      "llm_factores": [
-        "Astros 8-2 en últimos 10 juegos",
-        "Historial reciente favorable contra Blue Jays",
-        "Bajo número de lesiones en Astros"
-      ],
-      "llm_favorito": "Houston Astros",
-      "llm_carreras": "4-6",
-      "llm_carreras_lineas": {
-        "over_7.5": 70,
-        "over_8.5": 65,
-        "over_9.5": 50
-      },
-      "llm_ranking_local": "AL Este: 3º (37-33)",
-      "llm_ranking_visitante": "AL Oeste: 1º (44-26)",
-      "llm_abridor_local": "Alek Manoah (3.80, 7-5, 90)",
-      "llm_abridor_visitante": "Framber Valdez (2.90, 9-3, 85)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "Vladimir Guerrero Jr.",
-          "equipo": "Toronto Blue Jays",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1
+      "llm_porque": "Rangers tienen mejor récord y racha reciente.",
+      "llm_factores": "[\"Rango de carreras anotadas\", \"Rendimiento de abridores\", \"Lesiones en el equipo local\"]",
+      "resultado_llm": "fallido",
+      "linescore": {
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 2,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 2,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
+        "current_inning": 9,
+        "is_top": false,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 1,
+        "strikes": 2,
+        "away_runs": 4,
+        "home_runs": 3,
+        "away_hits": 9,
+        "home_hits": 7,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Texas Rangers",
+        "home_team_name": "Miami Marlins",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
         },
-        {
-          "jugador": "Yordan Álvarez",
-          "equipo": "Houston Astros",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 4.00, puede ser vulnerable.",
-      "llm_relevo_visitante": "Bullpen sólido con ERA de 3.20, confiable."
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
+        "fav_score": "4",
+        "opp_score": "3",
+        "score_fav": "4",
+        "score_opp": "3"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIA.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TEX.png&h=40&w=40"
     },
     {
       "liga": "MLB",
@@ -1146,384 +1737,6 @@
     },
     {
       "liga": "MLB",
-      "game_date": "2026-06-22",
-      "status_emoji": "🏁",
-      "fav_team": "Milwaukee Brewers",
-      "opp_team": "Cincinnati Reds",
-      "score_fav": "2",
-      "score_opp": "1",
-      "state": "Final",
-      "result": "completed",
-      "label": "📋",
-      "game_pk": 401815857,
-      "fav_abbr": "MIL",
-      "opp_abbr": "CIN",
-      "home_team": "Cincinnati Reds",
-      "away_team": "Milwaukee Brewers",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CIN.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Brewers tienen mejor récord y bullpen.",
-      "llm_factores": [
-        "Brewers en buena racha",
-        "Reds con problemas de lesiones",
-        "Historial reciente a favor de Brewers"
-      ],
-      "llm_favorito": "Milwaukee Brewers",
-      "llm_carreras": "4-6",
-      "llm_carreras_lineas": {
-        "over_7.5": 75,
-        "over_8.5": 65,
-        "over_9.5": 55
-      },
-      "llm_ranking_local": "NL Central: 3º (35-35)",
-      "llm_ranking_visitante": "NL Central: 1º (44-26)",
-      "llm_abridor_local": "Hunter Greene (4.20, 4-6, 90)",
-      "llm_abridor_visitante": "Corbin Burnes (2.90, 8-2, 100)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "Joey Votto",
-          "equipo": "Cincinnati Reds",
-          "hrs_estimados": 0.4,
-          "remolcadas_estimadas": 1
-        },
-        {
-          "jugador": "Christian Yelich",
-          "equipo": "Milwaukee Brewers",
-          "hrs_estimados": 0.5,
-          "remolcadas_estimadas": 2
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 4.50, poco confiable.",
-      "llm_relevo_visitante": "Bullpen fuerte con ERA de 3.40."
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-22",
-      "status_emoji": "🏁",
-      "fav_team": "Cleveland Guardians",
-      "opp_team": "Chicago White Sox",
-      "score_fav": "5",
-      "score_opp": "6",
-      "state": "Final",
-      "result": "completed",
-      "label": "📋",
-      "game_pk": 401815862,
-      "fav_abbr": "CLE",
-      "opp_abbr": "CHW",
-      "home_team": "Chicago White Sox",
-      "away_team": "Cleveland Guardians",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHW.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Guardians tienen mejor récord y bullpen superior.",
-      "llm_factores": [
-        "Guardians en buena forma",
-        "White Sox con lesiones",
-        "Historial reciente a favor de Guardians"
-      ],
-      "llm_favorito": "Cleveland Guardians",
-      "llm_carreras": "3-5",
-      "llm_carreras_lineas": {
-        "over_7.5": 70,
-        "over_8.5": 60,
-        "over_9.5": 50
-      },
-      "llm_ranking_local": "AL Central: 4º (30-40)",
-      "llm_ranking_visitante": "AL Central: 1º (42-28)",
-      "llm_abridor_local": "Dylan Cease (3.80, 6-4, 95)",
-      "llm_abridor_visitante": "Shane Bieber (3.10, 7-3, 110)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "Luis Robert",
-          "equipo": "Chicago White Sox",
-          "hrs_estimados": 0.3,
-          "remolcadas_estimadas": 1
-        },
-        {
-          "jugador": "José Ramírez",
-          "equipo": "Cleveland Guardians",
-          "hrs_estimados": 0.5,
-          "remolcadas_estimadas": 2
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 4.60, poco confiable.",
-      "llm_relevo_visitante": "Bullpen sólido con ERA de 3.50."
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-22",
-      "status_emoji": "🏁",
-      "fav_team": "Los Angeles Dodgers",
-      "opp_team": "Minnesota Twins",
-      "score_fav": "2",
-      "score_opp": "1",
-      "state": "Final",
-      "result": "completed",
-      "label": "📋",
-      "game_pk": 401815863,
-      "fav_abbr": "LAD",
-      "opp_abbr": "MIN",
-      "home_team": "Minnesota Twins",
-      "away_team": "Los Angeles Dodgers",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y racha reciente favorable.",
-      "llm_factores": [
-        "Mejor posición en la división",
-        "Racha de 7-3 en últimos 10",
-        "Historial favorable ante Minnesota"
-      ],
-      "llm_favorito": "Los Angeles Dodgers",
-      "llm_carreras": "4-6",
-      "llm_carreras_lineas": {
-        "over_7.5": 75,
-        "over_8.5": 60,
-        "over_9.5": 45
-      },
-      "llm_ranking_local": "AL Central: 2º (38-32)",
-      "llm_ranking_visitante": "NL Oeste: 1º (45-25)",
-      "llm_abridor_local": "Sonny Gray (3.50, 6-4, 80)",
-      "llm_abridor_visitante": "Clayton Kershaw (2.80, 8-2, 90)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "Carlos Correa",
-          "equipo": "Minnesota Twins",
-          "hrs_estimados": 0.5,
-          "remolcadas_estimadas": 1
-        },
-        {
-          "jugador": "Mookie Betts",
-          "equipo": "Los Angeles Dodgers",
-          "hrs_estimados": 0.7,
-          "remolcadas_estimadas": 2
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 4.20, confiable en situaciones de presión.",
-      "llm_relevo_visitante": "Bullpen con ERA de 3.50, sólido y efectivo."
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-22",
-      "status_emoji": "🏁",
-      "fav_team": "Arizona Diamondbacks",
-      "opp_team": "St. Louis Cardinals",
-      "score_fav": "2",
-      "score_opp": "3",
-      "state": "Final",
-      "result": "completed",
-      "label": "📋",
-      "game_pk": 401815861,
-      "fav_abbr": "ARI",
-      "opp_abbr": "STL",
-      "home_team": "St. Louis Cardinals",
-      "away_team": "Arizona Diamondbacks",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ARI.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/STL.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y ventaja en casa.",
-      "llm_factores": [
-        "Posición en la división superior",
-        "Racha de 6-4 en últimos 10",
-        "Historial reciente favorable"
-      ],
-      "llm_favorito": "St. Louis Cardinals",
-      "llm_carreras": "5-4",
-      "llm_carreras_lineas": {
-        "over_7.5": 70,
-        "over_8.5": 55,
-        "over_9.5": 40
-      },
-      "llm_ranking_local": "NL Central: 1º (40-30)",
-      "llm_ranking_visitante": "NL Oeste: 3º (33-37)",
-      "llm_abridor_local": "Jack Flaherty (3.90, 5-3, 75)",
-      "llm_abridor_visitante": "Zac Gallen (3.20, 7-3, 85)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "Paul Goldschmidt",
-          "equipo": "St. Louis Cardinals",
-          "hrs_estimados": 0.6,
-          "remolcadas_estimadas": 1
-        },
-        {
-          "jugador": "Ketel Marte",
-          "equipo": "Arizona Diamondbacks",
-          "hrs_estimados": 0.4,
-          "remolcadas_estimadas": 1
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 3.80, confiable en finales apretados.",
-      "llm_relevo_visitante": "Bullpen con ERA de 4.10, algo inconsistente."
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-22",
-      "status_emoji": "🏁",
-      "fav_team": "Boston Red Sox",
-      "opp_team": "Colorado Rockies",
-      "score_fav": "2",
-      "score_opp": "3",
-      "state": "Final",
-      "result": "completed",
-      "label": "📋",
-      "game_pk": 401815864,
-      "fav_abbr": "BOS",
-      "opp_abbr": "COL",
-      "home_team": "Colorado Rockies",
-      "away_team": "Boston Red Sox",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BOS.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/COL.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor rendimiento ofensivo y récord.",
-      "llm_factores": [
-        "Mejor posición en la división",
-        "Racha de 7-3 en últimos 10",
-        "Historial reciente favorable"
-      ],
-      "llm_favorito": "Boston Red Sox",
-      "llm_carreras": "3-6",
-      "llm_carreras_lineas": {
-        "over_7.5": 80,
-        "over_8.5": 65,
-        "over_9.5": 50
-      },
-      "llm_ranking_local": "NL Oeste: 4º (30-40)",
-      "llm_ranking_visitante": "AL Este: 2º (41-29)",
-      "llm_abridor_local": "Kyle Freeland (4.50, 4-6, 70)",
-      "llm_abridor_visitante": "Chris Sale (2.90, 8-2, 100)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "C.J. Cron",
-          "equipo": "Colorado Rockies",
-          "hrs_estimados": 0.5,
-          "remolcadas_estimadas": 1
-        },
-        {
-          "jugador": "Rafael Devers",
-          "equipo": "Boston Red Sox",
-          "hrs_estimados": 0.6,
-          "remolcadas_estimadas": 2
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 5.00, poco confiable.",
-      "llm_relevo_visitante": "Bullpen con ERA de 3.60, sólido en situaciones críticas."
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-22",
-      "status_emoji": "🏁",
-      "fav_team": "Baltimore Orioles",
-      "opp_team": "Los Angeles Angels",
-      "score_fav": "6",
-      "score_opp": "1",
-      "state": "Final",
-      "result": "completed",
-      "label": "📋",
-      "game_pk": 401815866,
-      "fav_abbr": "BAL",
-      "opp_abbr": "LAA",
-      "home_team": "Los Angeles Angels",
-      "away_team": "Baltimore Orioles",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BAL.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Ventaja en casa y mejor alineación ofensiva.",
-      "llm_factores": [
-        "Mejor récord en casa",
-        "Racha de 6-4 en últimos 10",
-        "Historial reciente favorable"
-      ],
-      "llm_favorito": "Los Angeles Angels",
-      "llm_carreras": "5-3",
-      "llm_carreras_lineas": {
-        "over_7.5": 75,
-        "over_8.5": 60,
-        "over_9.5": 45
-      },
-      "llm_ranking_local": "AL Oeste: 3º (36-34)",
-      "llm_ranking_visitante": "AL Este: 4º (31-39)",
-      "llm_abridor_local": "Shohei Ohtani (3.10, 7-3, 120)",
-      "llm_abridor_visitante": "Grayson Rodriguez (4.20, 4-5, 70)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "Mike Trout",
-          "equipo": "Los Angeles Angels",
-          "hrs_estimados": 0.5,
-          "remolcadas_estimadas": 1
-        },
-        {
-          "jugador": "Adley Rutschman",
-          "equipo": "Baltimore Orioles",
-          "hrs_estimados": 0.3,
-          "remolcadas_estimadas": 1
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 4.20, confiable en momentos críticos.",
-      "llm_relevo_visitante": "Bullpen con ERA de 4.50, inconsistente."
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-06-22",
-      "status_emoji": "🏁",
-      "fav_team": "Atlanta Braves",
-      "opp_team": "San Diego Padres",
-      "score_fav": "0",
-      "score_opp": "1",
-      "state": "Final",
-      "result": "completed",
-      "label": "📋",
-      "game_pk": 401815865,
-      "fav_abbr": "ATL",
-      "opp_abbr": "SD",
-      "home_team": "San Diego Padres",
-      "away_team": "Atlanta Braves",
-      "linescore": {},
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATL.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SD.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y ofensiva más potente.",
-      "llm_factores": [
-        "Posición en la división superior",
-        "Racha de 8-2 en últimos 10",
-        "Historial reciente favorable"
-      ],
-      "llm_favorito": "Atlanta Braves",
-      "llm_carreras": "4-5",
-      "llm_carreras_lineas": {
-        "over_7.5": 70,
-        "over_8.5": 55,
-        "over_9.5": 40
-      },
-      "llm_ranking_local": "NL Oeste: 2º (39-31)",
-      "llm_ranking_visitante": "NL Este: 1º (44-26)",
-      "llm_abridor_local": "Yu Darvish (3.80, 6-4, 90)",
-      "llm_abridor_visitante": "Max Fried (3.10, 8-2, 85)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "Fernando Tatis Jr.",
-          "equipo": "San Diego Padres",
-          "hrs_estimados": 0.5,
-          "remolcadas_estimadas": 1
-        },
-        {
-          "jugador": "Ronald Acuña Jr.",
-          "equipo": "Atlanta Braves",
-          "hrs_estimados": 0.6,
-          "remolcadas_estimadas": 2
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 4.00, confiable en finales apretados.",
-      "llm_relevo_visitante": "Bullpen con ERA de 3.50, sólido y efectivo."
-    },
-    {
-      "liga": "MLB",
       "game_date": "2026-06-23",
       "status_emoji": "⏳",
       "fav_team": "Baltimore Orioles",
@@ -1538,6 +1751,14 @@
       "opp_abbr": "LAA",
       "home_team": "Los Angeles Angels",
       "away_team": "Baltimore Orioles",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Ventaja en casa y mejor alineación ofensiva.",
+      "llm_factores": [
+        "Mejor récord en casa",
+        "Racha de 6-4 en últimos 10",
+        "Historial reciente favorable"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -1574,13 +1795,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BAL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Ventaja en casa y mejor alineación ofensiva.",
-      "llm_factores": [
-        "Mejor récord en casa",
-        "Racha de 6-4 en últimos 10",
-        "Historial reciente favorable"
-      ],
       "llm_favorito": "Los Angeles Angels",
       "llm_carreras": "5-3",
       "llm_carreras_lineas": {
@@ -1625,6 +1839,14 @@
       "opp_abbr": "KC",
       "home_team": "Tampa Bay Rays",
       "away_team": "Kansas City Royals",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y racha reciente favorable.",
+      "llm_factores": [
+        "Racha de 7-3 en últimos 10 juegos",
+        "Kansas City con lesiones clave",
+        "Historial reciente favorece a Tampa Bay"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -1648,8 +1870,8 @@
         "is_top": false,
         "inning_ordinal": "4th",
         "outs": 2,
-        "balls": 1,
-        "strikes": 1,
+        "balls": 2,
+        "strikes": 0,
         "away_runs": 2,
         "home_runs": 1,
         "away_hits": 3,
@@ -1663,9 +1885,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Player challenge",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "2",
         "opp_score": "1",
         "score_fav": "2",
@@ -1673,13 +1895,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/KC.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y racha reciente favorable.",
-      "llm_factores": [
-        "Racha de 7-3 en últimos 10 juegos",
-        "Kansas City con lesiones clave",
-        "Historial reciente favorece a Tampa Bay"
-      ],
       "llm_favorito": "Tampa Bay Rays",
       "llm_carreras": "6-3",
       "llm_carreras_lineas": {
@@ -1724,6 +1939,14 @@
       "opp_abbr": "STL",
       "home_team": "St. Louis Cardinals",
       "away_team": "Arizona Diamondbacks",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y ventaja en casa.",
+      "llm_factores": [
+        "Posición en la división superior",
+        "Racha de 6-4 en últimos 10",
+        "Historial reciente favorable"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -1760,13 +1983,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ARI.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/STL.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y ventaja en casa.",
-      "llm_factores": [
-        "Posición en la división superior",
-        "Racha de 6-4 en últimos 10",
-        "Historial reciente favorable"
-      ],
       "llm_favorito": "St. Louis Cardinals",
       "llm_carreras": "5-4",
       "llm_carreras_lineas": {
@@ -1811,6 +2027,14 @@
       "opp_abbr": "SF",
       "home_team": "San Francisco Giants",
       "away_team": "Athletics",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y racha reciente favorable.",
+      "llm_factores": [
+        "Racha de 7-3 en últimos 10",
+        "Mejor posición en división",
+        "Historial favorable en enfrentamientos directos"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -1847,13 +2071,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SF.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y racha reciente favorable.",
-      "llm_factores": [
-        "Racha de 7-3 en últimos 10",
-        "Mejor posición en división",
-        "Historial favorable en enfrentamientos directos"
-      ],
       "llm_favorito": "San Francisco Giants",
       "llm_carreras": "6-4",
       "llm_carreras_lineas": {
@@ -1898,6 +2115,14 @@
       "opp_abbr": "SD",
       "home_team": "San Diego Padres",
       "away_team": "Atlanta Braves",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y ofensiva más potente.",
+      "llm_factores": [
+        "Posición en la división superior",
+        "Racha de 8-2 en últimos 10",
+        "Historial reciente favorable"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -1934,13 +2159,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SD.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y ofensiva más potente.",
-      "llm_factores": [
-        "Posición en la división superior",
-        "Racha de 8-2 en últimos 10",
-        "Historial reciente favorable"
-      ],
       "llm_favorito": "Atlanta Braves",
       "llm_carreras": "4-5",
       "llm_carreras_lineas": {
@@ -1985,6 +2203,14 @@
       "opp_abbr": "COL",
       "home_team": "Colorado Rockies",
       "away_team": "Boston Red Sox",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor rendimiento ofensivo y récord.",
+      "llm_factores": [
+        "Mejor posición en la división",
+        "Racha de 7-3 en últimos 10",
+        "Historial reciente favorable"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2021,13 +2247,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BOS.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/COL.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor rendimiento ofensivo y récord.",
-      "llm_factores": [
-        "Mejor posición en la división",
-        "Racha de 7-3 en últimos 10",
-        "Historial reciente favorable"
-      ],
       "llm_favorito": "Boston Red Sox",
       "llm_carreras": "3-6",
       "llm_carreras_lineas": {
@@ -2072,6 +2291,14 @@
       "opp_abbr": "WSH",
       "home_team": "Washington Nationals",
       "away_team": "Philadelphia Phillies",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Phillies tienen mejor récord y ofensiva más potente.",
+      "llm_factores": [
+        "Phillies en buena racha",
+        "Nats con problemas de lesiones",
+        "Historial reciente a favor de Phillies"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2124,13 +2351,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PHI.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/WSH.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Phillies tienen mejor récord y ofensiva más potente.",
-      "llm_factores": [
-        "Phillies en buena racha",
-        "Nats con problemas de lesiones",
-        "Historial reciente a favor de Phillies"
-      ],
       "llm_favorito": "Philadelphia Phillies",
       "llm_carreras": "3-5",
       "llm_carreras_lineas": {
@@ -2175,6 +2395,14 @@
       "opp_abbr": "CIN",
       "home_team": "Cincinnati Reds",
       "away_team": "Milwaukee Brewers",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Brewers tienen mejor récord y bullpen.",
+      "llm_factores": [
+        "Brewers en buena racha",
+        "Reds con problemas de lesiones",
+        "Historial reciente a favor de Brewers"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2219,13 +2447,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CIN.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Brewers tienen mejor récord y bullpen.",
-      "llm_factores": [
-        "Brewers en buena racha",
-        "Reds con problemas de lesiones",
-        "Historial reciente a favor de Brewers"
-      ],
       "llm_favorito": "Milwaukee Brewers",
       "llm_carreras": "4-6",
       "llm_carreras_lineas": {
@@ -2270,6 +2491,14 @@
       "opp_abbr": "MIN",
       "home_team": "Minnesota Twins",
       "away_team": "Los Angeles Dodgers",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y racha reciente favorable.",
+      "llm_factores": [
+        "Mejor posición en la división",
+        "Racha de 7-3 en últimos 10",
+        "Historial favorable ante Minnesota"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2306,13 +2535,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y racha reciente favorable.",
-      "llm_factores": [
-        "Mejor posición en la división",
-        "Racha de 7-3 en últimos 10",
-        "Historial favorable ante Minnesota"
-      ],
       "llm_favorito": "Los Angeles Dodgers",
       "llm_carreras": "4-6",
       "llm_carreras_lineas": {
@@ -2357,6 +2579,14 @@
       "opp_abbr": "NYM",
       "home_team": "New York Mets",
       "away_team": "Chicago Cubs",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mets tienen ventaja en casa y mejor récord.",
+      "llm_factores": [
+        "Mets en buena forma",
+        "Cubs con lesiones",
+        "Historial reciente favorable a Mets"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2397,13 +2627,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHC.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYM.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mets tienen ventaja en casa y mejor récord.",
-      "llm_factores": [
-        "Mets en buena forma",
-        "Cubs con lesiones",
-        "Historial reciente favorable a Mets"
-      ],
       "llm_favorito": "New York Mets",
       "llm_carreras": "5-4",
       "llm_carreras_lineas": {
@@ -2448,6 +2671,14 @@
       "opp_abbr": "PIT",
       "home_team": "Pittsburgh Pirates",
       "away_team": "Seattle Mariners",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y racha reciente.",
+      "llm_factores": [
+        "Mariners 8-2 en últimos 10 juegos",
+        "Historial favorable contra Pirates",
+        "Lesiones mínimas en Mariners"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2470,9 +2701,9 @@
         "current_inning": 4,
         "is_top": false,
         "inning_ordinal": "4th",
-        "outs": 2,
+        "outs": 3,
         "balls": 0,
-        "strikes": 2,
+        "strikes": 3,
         "away_runs": 1,
         "home_runs": 2,
         "away_hits": 3,
@@ -2496,13 +2727,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SEA.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PIT.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y racha reciente.",
-      "llm_factores": [
-        "Mariners 8-2 en últimos 10 juegos",
-        "Historial favorable contra Pirates",
-        "Lesiones mínimas en Mariners"
-      ],
       "llm_favorito": "Seattle Mariners",
       "llm_carreras": "4-5",
       "llm_carreras_lineas": {
@@ -2547,6 +2771,14 @@
       "opp_abbr": "DET",
       "home_team": "Detroit Tigers",
       "away_team": "New York Yankees",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor equipo y racha reciente.",
+      "llm_factores": [
+        "Yankees 6-4 en últimos 10 juegos",
+        "Historial dominante contra Tigers",
+        "Tigers con lesiones clave"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2595,13 +2827,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYY.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor equipo y racha reciente.",
-      "llm_factores": [
-        "Yankees 6-4 en últimos 10 juegos",
-        "Historial dominante contra Tigers",
-        "Tigers con lesiones clave"
-      ],
       "llm_favorito": "New York Yankees",
       "llm_carreras": "3-5",
       "llm_carreras_lineas": {
@@ -2646,6 +2871,14 @@
       "opp_abbr": "CHW",
       "home_team": "Chicago White Sox",
       "away_team": "Cleveland Guardians",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Guardians tienen mejor récord y bullpen superior.",
+      "llm_factores": [
+        "Guardians en buena forma",
+        "White Sox con lesiones",
+        "Historial reciente a favor de Guardians"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2656,9 +2889,9 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 2,
+        "outs": 3,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -2682,13 +2915,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHW.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Guardians tienen mejor récord y bullpen superior.",
-      "llm_factores": [
-        "Guardians en buena forma",
-        "White Sox con lesiones",
-        "Historial reciente a favor de Guardians"
-      ],
       "llm_favorito": "Cleveland Guardians",
       "llm_carreras": "3-5",
       "llm_carreras_lineas": {
@@ -2733,6 +2959,14 @@
       "opp_abbr": "TOR",
       "home_team": "Toronto Blue Jays",
       "away_team": "Houston Astros",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor posición en la división y bullpen sólido.",
+      "llm_factores": [
+        "Astros 8-2 en últimos 10 juegos",
+        "Historial reciente favorable contra Blue Jays",
+        "Bajo número de lesiones en Astros"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2785,7 +3019,7 @@
         "inning_ordinal": "11th",
         "outs": 2,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 9,
         "home_runs": 7,
         "away_hits": 15,
@@ -2809,13 +3043,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TOR.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor posición en la división y bullpen sólido.",
-      "llm_factores": [
-        "Astros 8-2 en últimos 10 juegos",
-        "Historial reciente favorable contra Blue Jays",
-        "Bajo número de lesiones en Astros"
-      ],
       "llm_favorito": "Houston Astros",
       "llm_carreras": "4-6",
       "llm_carreras_lineas": {
@@ -2860,6 +3087,14 @@
       "opp_abbr": "MIA",
       "home_team": "Miami Marlins",
       "away_team": "Texas Rangers",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Rangers tienen mejor récord y racha reciente.",
+      "llm_factores": [
+        "Rangers en racha positiva",
+        "Marlins con lesiones clave",
+        "Historial favorable para Rangers"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
         "innings": [
           {
@@ -2908,13 +3143,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TEX.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIA.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Rangers tienen mejor récord y racha reciente.",
-      "llm_factores": [
-        "Rangers en racha positiva",
-        "Marlins con lesiones clave",
-        "Historial favorable para Rangers"
-      ],
       "llm_favorito": "Texas Rangers",
       "llm_carreras": "4-6",
       "llm_carreras_lineas": {
@@ -3107,65 +3335,80 @@
       "home_team_name": "New York Mets",
       "linescore": {}
     },
-    "401815858": {
+    "401815861": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
       "away_runs": 3,
-      "home_runs": 5,
-      "away_team_name": "Detroit Tigers",
-      "home_team_name": "New York Yankees",
-      "linescore": {}
-    },
-    "401815856": {
-      "is_live": false,
-      "is_final": true,
-      "status": "Final",
-      "away_runs": 2,
-      "home_runs": 1,
-      "away_team_name": "Tampa Bay Rays",
-      "home_team_name": "Kansas City Royals",
-      "linescore": {}
-    },
-    "401815860": {
-      "is_live": false,
-      "is_final": true,
-      "status": "Final",
-      "away_runs": 4,
-      "home_runs": 3,
-      "away_team_name": "Miami Marlins",
-      "home_team_name": "Texas Rangers",
-      "linescore": {}
-    },
-    "401815859": {
-      "is_live": false,
-      "is_final": true,
-      "status": "Final",
-      "away_runs": 1,
-      "home_runs": 4,
-      "away_team_name": "Washington Nationals",
-      "home_team_name": "Philadelphia Phillies",
-      "linescore": {}
-    },
-    "401815855": {
-      "is_live": false,
-      "is_final": true,
-      "status": "Final",
-      "away_runs": 2,
-      "home_runs": 4,
-      "away_team_name": "Toronto Blue Jays",
-      "home_team_name": "Houston Astros",
-      "linescore": {}
-    },
-    "401815854": {
-      "is_live": false,
-      "is_final": false,
-      "status": "Posp.",
-      "away_runs": 0,
-      "home_runs": 0,
-      "away_team_name": "New York Mets",
-      "home_team_name": "Chicago Cubs",
-      "linescore": {}
+      "home_runs": 2,
+      "away_team_name": "Arizona Diamondbacks",
+      "home_team_name": "St. Louis Cardinals",
+      "linescore": {
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 1,
+        "strikes": 1,
+        "away_runs": 2,
+        "home_runs": 3,
+        "away_hits": 8,
+        "home_hits": 7,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Arizona Diamondbacks",
+        "home_team_name": "St. Louis Cardinals",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
+        "fav_score": "2",
+        "opp_score": "3",
+        "score_fav": "2",
+        "score_opp": "3"
+      }
     },
     "401815857": {
       "is_live": false,
@@ -3175,6 +3418,16 @@
       "home_runs": 1,
       "away_team_name": "Cincinnati Reds",
       "home_team_name": "Milwaukee Brewers",
+      "linescore": {}
+    },
+    "401815858": {
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
+      "away_runs": 3,
+      "home_runs": 5,
+      "away_team_name": "Detroit Tigers",
+      "home_team_name": "New York Yankees",
       "linescore": {}
     },
     "401815862": {
@@ -3197,24 +3450,89 @@
       "home_team_name": "Los Angeles Dodgers",
       "linescore": {}
     },
-    "401815861": {
+    "401815855": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
-      "away_runs": 2,
-      "home_runs": 3,
-      "away_team_name": "St. Louis Cardinals",
-      "home_team_name": "Arizona Diamondbacks",
-      "linescore": {}
+      "away_runs": 4,
+      "home_runs": 2,
+      "away_team_name": "Houston Astros",
+      "home_team_name": "Toronto Blue Jays",
+      "linescore": {
+        "innings": [
+          {
+            "away_runs": 1,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 1,
+        "strikes": 3,
+        "away_runs": 2,
+        "home_runs": 4,
+        "away_hits": 5,
+        "home_hits": 11,
+        "away_errors": 1,
+        "home_errors": 0,
+        "away_team_name": "Houston Astros",
+        "home_team_name": "Toronto Blue Jays",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
+        "fav_score": "2",
+        "opp_score": "4",
+        "score_fav": "2",
+        "score_opp": "4"
+      }
     },
-    "401815864": {
+    "401815865": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
-      "away_runs": 2,
-      "home_runs": 3,
-      "away_team_name": "Colorado Rockies",
-      "home_team_name": "Boston Red Sox",
+      "away_runs": 0,
+      "home_runs": 1,
+      "away_team_name": "San Diego Padres",
+      "home_team_name": "Atlanta Braves",
       "linescore": {}
     },
     "401815866": {
@@ -3227,14 +3545,249 @@
       "home_team_name": "Baltimore Orioles",
       "linescore": {}
     },
-    "401815865": {
+    "401815856": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
+      "away_runs": 1,
+      "home_runs": 2,
+      "away_team_name": "Kansas City Royals",
+      "home_team_name": "Tampa Bay Rays",
+      "linescore": {
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
+        "current_inning": 9,
+        "is_top": false,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 2,
+        "strikes": 1,
+        "away_runs": 2,
+        "home_runs": 1,
+        "away_hits": 4,
+        "home_hits": 6,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Kansas City Royals",
+        "home_team_name": "Tampa Bay Rays",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
+        "fav_score": "2",
+        "opp_score": "1",
+        "score_fav": "2",
+        "score_opp": "1"
+      }
+    },
+    "401815859": {
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
+      "away_runs": 1,
+      "home_runs": 4,
+      "away_team_name": "Washington Nationals",
+      "home_team_name": "Philadelphia Phillies",
+      "linescore": {}
+    },
+    "401815864": {
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
+      "away_runs": 3,
+      "home_runs": 2,
+      "away_team_name": "Boston Red Sox",
+      "home_team_name": "Colorado Rockies",
+      "linescore": {
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 2,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 3
+          }
+        ],
+        "current_inning": 9,
+        "is_top": false,
+        "inning_ordinal": "9th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 1,
+        "away_runs": 2,
+        "home_runs": 3,
+        "away_hits": 5,
+        "home_hits": 12,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Boston Red Sox",
+        "home_team_name": "Colorado Rockies",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
+        "fav_score": "2",
+        "opp_score": "3",
+        "score_fav": "2",
+        "score_opp": "3"
+      }
+    },
+    "401815860": {
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
+      "away_runs": 3,
+      "home_runs": 4,
+      "away_team_name": "Texas Rangers",
+      "home_team_name": "Miami Marlins",
+      "linescore": {
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 2,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 2,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
+        "current_inning": 9,
+        "is_top": false,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 1,
+        "strikes": 2,
+        "away_runs": 4,
+        "home_runs": 3,
+        "away_hits": 9,
+        "home_hits": 7,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Texas Rangers",
+        "home_team_name": "Miami Marlins",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
+        "fav_score": "4",
+        "opp_score": "3",
+        "score_fav": "4",
+        "score_opp": "3"
+      }
+    },
+    "401815854": {
+      "is_live": false,
+      "is_final": false,
+      "status": "Posp.",
       "away_runs": 0,
-      "home_runs": 1,
-      "away_team_name": "San Diego Padres",
-      "home_team_name": "Atlanta Braves",
+      "home_runs": 0,
+      "away_team_name": "New York Mets",
+      "home_team_name": "Chicago Cubs",
       "linescore": {}
     },
     "824017": {
@@ -3311,8 +3864,8 @@
         "is_top": false,
         "inning_ordinal": "4th",
         "outs": 2,
-        "balls": 1,
-        "strikes": 1,
+        "balls": 2,
+        "strikes": 0,
         "away_runs": 2,
         "home_runs": 1,
         "away_hits": 3,
@@ -3326,9 +3879,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Player challenge",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "2",
         "opp_score": "1",
         "score_fav": "2",
@@ -3737,9 +4290,9 @@
         "current_inning": 4,
         "is_top": false,
         "inning_ordinal": "4th",
-        "outs": 2,
+        "outs": 3,
         "balls": 0,
-        "strikes": 2,
+        "strikes": 3,
         "away_runs": 1,
         "home_runs": 2,
         "away_hits": 3,
@@ -3835,9 +4388,9 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 2,
+        "outs": 3,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -3920,7 +4473,7 @@
         "inning_ordinal": "11th",
         "outs": 2,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 9,
         "home_runs": 7,
         "away_hits": 15,
@@ -3999,7 +4552,7 @@
       }
     }
   },
-  "updated_at": "23/06/2026 17:43",
+  "updated_at": "23/06/2026 17:44",
   "stats": {
     "total": 5,
     "acertados": 3,
@@ -5095,222 +5648,6 @@
       "relevo_local": "Bullpen con ERA de 3.60, confiable en finales.",
       "relevo_visitante": "Bullpen con ERA de 4.00, algo vulnerable."
     },
-    "2026-06-22___MLB___Detroit Tigers___New York Yankees": {
-      "ir": "SÍ",
-      "pq": "Mejor equipo y racha reciente.",
-      "factores": [
-        "Yankees 6-4 en últimos 10 juegos",
-        "Historial dominante contra Tigers",
-        "Tigers con lesiones clave"
-      ],
-      "favorito": "New York Yankees",
-      "carreras_esperadas": "3-5",
-      "carreras_lineas": {
-        "over_7.5": 75,
-        "over_8.5": 60,
-        "over_9.5": 40
-      },
-      "ranking_local": "AL Central: 3º (32-38)",
-      "ranking_visitante": "AL Este: 2º (41-29)",
-      "abridor_local": "Tarik Skubal (3.90, 5-6, 85)",
-      "abridor_visitante": "Gerrit Cole (2.80, 10-4, 120)",
-      "bateadores_clave": [
-        {
-          "jugador": "Riley Greene",
-          "equipo": "Detroit Tigers",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1
-        },
-        {
-          "jugador": "Aaron Judge",
-          "equipo": "New York Yankees",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2
-        }
-      ],
-      "relevo_local": "Bullpen con ERA de 4.50, puede ser un problema.",
-      "relevo_visitante": "Bullpen sólido con ERA de 3.50, confiable."
-    },
-    "2026-06-22___MLB___Tampa Bay Rays___Kansas City Royals": {
-      "ir": "SÍ",
-      "pq": "Racha positiva y mejor récord.",
-      "factores": [
-        "Rays 7-3 en últimos 10 juegos",
-        "Dominio en enfrentamientos directos",
-        "Lesiones mínimas en Rays"
-      ],
-      "favorito": "Tampa Bay Rays",
-      "carreras_esperadas": "6-3",
-      "carreras_lineas": {
-        "over_7.5": 80,
-        "over_8.5": 70,
-        "over_9.5": 50
-      },
-      "ranking_local": "AL Este: 1º (45-25)",
-      "ranking_visitante": "AL Central: 4º (30-40)",
-      "abridor_local": "Shane McClanahan (2.50, 10-2, 110)",
-      "abridor_visitante": "Brad Keller (5.30, 4-8, 70)",
-      "bateadores_clave": [
-        {
-          "jugador": "Wander Franco",
-          "equipo": "Tampa Bay Rays",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2
-        },
-        {
-          "jugador": "Salvador Pérez",
-          "equipo": "Kansas City Royals",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1
-        }
-      ],
-      "relevo_local": "Bullpen con ERA de 3.30, excelente en finales.",
-      "relevo_visitante": "Bullpen con ERA de 5.00, débil en situaciones críticas."
-    },
-    "2026-06-22___MLB___Miami Marlins___Texas Rangers": {
-      "ir": "SÍ",
-      "pq": "Rangers tienen mejor récord y racha reciente.",
-      "factores": [
-        "Rangers en racha positiva",
-        "Marlins con lesiones clave",
-        "Historial favorable para Rangers"
-      ],
-      "favorito": "Texas Rangers",
-      "carreras_esperadas": "4-6",
-      "carreras_lineas": {
-        "over_7.5": 70,
-        "over_8.5": 60,
-        "over_9.5": 50
-      },
-      "ranking_local": "NL Este: 4º (30-40)",
-      "ranking_visitante": "AL Oeste: 1º (45-25)",
-      "abridor_local": "Pablo López (3.50, 6-5, 85)",
-      "abridor_visitante": "Jon Gray (3.20, 8-3, 90)",
-      "bateadores_clave": [
-        {
-          "jugador": "Jazz Chisholm",
-          "equipo": "Miami Marlins",
-          "hrs_estimados": 0.5,
-          "remolcadas_estimadas": 1
-        },
-        {
-          "jugador": "Corey Seager",
-          "equipo": "Texas Rangers",
-          "hrs_estimados": 0.7,
-          "remolcadas_estimadas": 2
-        }
-      ],
-      "relevo_local": "Bullpen con ERA de 4.20, confianza limitada.",
-      "relevo_visitante": "Bullpen sólido con ERA de 3.50."
-    },
-    "2026-06-22___MLB___Washington Nationals___Philadelphia Phillies": {
-      "ir": "SÍ",
-      "pq": "Phillies tienen mejor récord y ofensiva más potente.",
-      "factores": [
-        "Phillies en buena racha",
-        "Nats con problemas de lesiones",
-        "Historial reciente a favor de Phillies"
-      ],
-      "favorito": "Philadelphia Phillies",
-      "carreras_esperadas": "3-5",
-      "carreras_lineas": {
-        "over_7.5": 75,
-        "over_8.5": 65,
-        "over_9.5": 55
-      },
-      "ranking_local": "NL Este: 5º (25-45)",
-      "ranking_visitante": "NL Este: 2º (40-30)",
-      "abridor_local": "Josiah Gray (4.10, 5-7, 80)",
-      "abridor_visitante": "Zack Wheeler (3.00, 7-4, 100)",
-      "bateadores_clave": [
-        {
-          "jugador": "Juan Soto",
-          "equipo": "Washington Nationals",
-          "hrs_estimados": 0.4,
-          "remolcadas_estimadas": 1
-        },
-        {
-          "jugador": "Bryce Harper",
-          "equipo": "Philadelphia Phillies",
-          "hrs_estimados": 0.6,
-          "remolcadas_estimadas": 2
-        }
-      ],
-      "relevo_local": "Bullpen con ERA de 5.00, poco confiable.",
-      "relevo_visitante": "Bullpen efectivo con ERA de 3.80."
-    },
-    "2026-06-22___MLB___Toronto Blue Jays___Houston Astros": {
-      "ir": "SÍ",
-      "pq": "Mejor posición en la división y bullpen sólido.",
-      "factores": [
-        "Astros 8-2 en últimos 10 juegos",
-        "Historial reciente favorable contra Blue Jays",
-        "Bajo número de lesiones en Astros"
-      ],
-      "favorito": "Houston Astros",
-      "carreras_esperadas": "4-6",
-      "carreras_lineas": {
-        "over_7.5": 70,
-        "over_8.5": 65,
-        "over_9.5": 50
-      },
-      "ranking_local": "AL Este: 3º (37-33)",
-      "ranking_visitante": "AL Oeste: 1º (44-26)",
-      "abridor_local": "Alek Manoah (3.80, 7-5, 90)",
-      "abridor_visitante": "Framber Valdez (2.90, 9-3, 85)",
-      "bateadores_clave": [
-        {
-          "jugador": "Vladimir Guerrero Jr.",
-          "equipo": "Toronto Blue Jays",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1
-        },
-        {
-          "jugador": "Yordan Álvarez",
-          "equipo": "Houston Astros",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2
-        }
-      ],
-      "relevo_local": "Bullpen con ERA de 4.00, puede ser vulnerable.",
-      "relevo_visitante": "Bullpen sólido con ERA de 3.20, confiable."
-    },
-    "2026-06-22___MLB___New York Mets___Chicago Cubs": {
-      "ir": "SÍ",
-      "pq": "Mets tienen ventaja en casa y mejor récord.",
-      "factores": [
-        "Mets en buena forma",
-        "Cubs con lesiones",
-        "Historial reciente favorable a Mets"
-      ],
-      "favorito": "New York Mets",
-      "carreras_esperadas": "5-4",
-      "carreras_lineas": {
-        "over_7.5": 80,
-        "over_8.5": 70,
-        "over_9.5": 60
-      },
-      "ranking_local": "NL Este: 3º (38-32)",
-      "ranking_visitante": "NL Central: 4º (30-40)",
-      "abridor_local": "Max Scherzer (2.80, 8-3, 110)",
-      "abridor_visitante": "Marcus Stroman (3.50, 6-5, 85)",
-      "bateadores_clave": [
-        {
-          "jugador": "Pete Alonso",
-          "equipo": "New York Mets",
-          "hrs_estimados": 0.5,
-          "remolcadas_estimadas": 2
-        },
-        {
-          "jugador": "Ian Happ",
-          "equipo": "Chicago Cubs",
-          "hrs_estimados": 0.3,
-          "remolcadas_estimadas": 1
-        }
-      ],
-      "relevo_local": "Bullpen sólido con ERA de 3.60.",
-      "relevo_visitante": "Bullpen con problemas, ERA de 4.50."
-    },
     "2026-06-22___MLB___Cincinnati Reds___Milwaukee Brewers": {
       "ir": "SÍ",
       "pq": "Brewers tienen mejor récord y bullpen.",
@@ -5346,6 +5683,42 @@
       ],
       "relevo_local": "Bullpen con ERA de 4.50, poco confiable.",
       "relevo_visitante": "Bullpen fuerte con ERA de 3.40."
+    },
+    "2026-06-22___MLB___Detroit Tigers___New York Yankees": {
+      "ir": "SÍ",
+      "pq": "Mejor equipo y racha reciente.",
+      "factores": [
+        "Yankees 6-4 en últimos 10 juegos",
+        "Historial dominante contra Tigers",
+        "Tigers con lesiones clave"
+      ],
+      "favorito": "New York Yankees",
+      "carreras_esperadas": "3-5",
+      "carreras_lineas": {
+        "over_7.5": 75,
+        "over_8.5": 60,
+        "over_9.5": 40
+      },
+      "ranking_local": "AL Central: 3º (32-38)",
+      "ranking_visitante": "AL Este: 2º (41-29)",
+      "abridor_local": "Tarik Skubal (3.90, 5-6, 85)",
+      "abridor_visitante": "Gerrit Cole (2.80, 10-4, 120)",
+      "bateadores_clave": [
+        {
+          "jugador": "Riley Greene",
+          "equipo": "Detroit Tigers",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1
+        },
+        {
+          "jugador": "Aaron Judge",
+          "equipo": "New York Yankees",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2
+        }
+      ],
+      "relevo_local": "Bullpen con ERA de 4.50, puede ser un problema.",
+      "relevo_visitante": "Bullpen sólido con ERA de 3.50, confiable."
     },
     "2026-06-22___MLB___Chicago White Sox___Cleveland Guardians": {
       "ir": "SÍ",
@@ -5419,77 +5792,41 @@
       "relevo_local": "Bullpen con ERA de 4.20, confiable en situaciones de presión.",
       "relevo_visitante": "Bullpen con ERA de 3.50, sólido y efectivo."
     },
-    "2026-06-22___MLB___St. Louis Cardinals___Arizona Diamondbacks": {
+    "2026-06-22___MLB___San Diego Padres___Atlanta Braves": {
       "ir": "SÍ",
-      "pq": "Mejor récord y ventaja en casa.",
+      "pq": "Mejor récord y ofensiva más potente.",
       "factores": [
         "Posición en la división superior",
-        "Racha de 6-4 en últimos 10",
+        "Racha de 8-2 en últimos 10",
         "Historial reciente favorable"
       ],
-      "favorito": "St. Louis Cardinals",
-      "carreras_esperadas": "5-4",
+      "favorito": "Atlanta Braves",
+      "carreras_esperadas": "4-5",
       "carreras_lineas": {
         "over_7.5": 70,
         "over_8.5": 55,
         "over_9.5": 40
       },
-      "ranking_local": "NL Central: 1º (40-30)",
-      "ranking_visitante": "NL Oeste: 3º (33-37)",
-      "abridor_local": "Jack Flaherty (3.90, 5-3, 75)",
-      "abridor_visitante": "Zac Gallen (3.20, 7-3, 85)",
+      "ranking_local": "NL Oeste: 2º (39-31)",
+      "ranking_visitante": "NL Este: 1º (44-26)",
+      "abridor_local": "Yu Darvish (3.80, 6-4, 90)",
+      "abridor_visitante": "Max Fried (3.10, 8-2, 85)",
       "bateadores_clave": [
         {
-          "jugador": "Paul Goldschmidt",
-          "equipo": "St. Louis Cardinals",
-          "hrs_estimados": 0.6,
-          "remolcadas_estimadas": 1
-        },
-        {
-          "jugador": "Ketel Marte",
-          "equipo": "Arizona Diamondbacks",
-          "hrs_estimados": 0.4,
-          "remolcadas_estimadas": 1
-        }
-      ],
-      "relevo_local": "Bullpen con ERA de 3.80, confiable en finales apretados.",
-      "relevo_visitante": "Bullpen con ERA de 4.10, algo inconsistente."
-    },
-    "2026-06-22___MLB___Colorado Rockies___Boston Red Sox": {
-      "ir": "SÍ",
-      "pq": "Mejor rendimiento ofensivo y récord.",
-      "factores": [
-        "Mejor posición en la división",
-        "Racha de 7-3 en últimos 10",
-        "Historial reciente favorable"
-      ],
-      "favorito": "Boston Red Sox",
-      "carreras_esperadas": "3-6",
-      "carreras_lineas": {
-        "over_7.5": 80,
-        "over_8.5": 65,
-        "over_9.5": 50
-      },
-      "ranking_local": "NL Oeste: 4º (30-40)",
-      "ranking_visitante": "AL Este: 2º (41-29)",
-      "abridor_local": "Kyle Freeland (4.50, 4-6, 70)",
-      "abridor_visitante": "Chris Sale (2.90, 8-2, 100)",
-      "bateadores_clave": [
-        {
-          "jugador": "C.J. Cron",
-          "equipo": "Colorado Rockies",
+          "jugador": "Fernando Tatis Jr.",
+          "equipo": "San Diego Padres",
           "hrs_estimados": 0.5,
           "remolcadas_estimadas": 1
         },
         {
-          "jugador": "Rafael Devers",
-          "equipo": "Boston Red Sox",
+          "jugador": "Ronald Acuña Jr.",
+          "equipo": "Atlanta Braves",
           "hrs_estimados": 0.6,
           "remolcadas_estimadas": 2
         }
       ],
-      "relevo_local": "Bullpen con ERA de 5.00, poco confiable.",
-      "relevo_visitante": "Bullpen con ERA de 3.60, sólido en situaciones críticas."
+      "relevo_local": "Bullpen con ERA de 4.00, confiable en finales apretados.",
+      "relevo_visitante": "Bullpen con ERA de 3.50, sólido y efectivo."
     },
     "2026-06-22___MLB___Los Angeles Angels___Baltimore Orioles": {
       "ir": "SÍ",
@@ -5527,41 +5864,113 @@
       "relevo_local": "Bullpen con ERA de 4.20, confiable en momentos críticos.",
       "relevo_visitante": "Bullpen con ERA de 4.50, inconsistente."
     },
-    "2026-06-22___MLB___San Diego Padres___Atlanta Braves": {
+    "2026-06-22___MLB___Tampa Bay Rays___Kansas City Royals": {
       "ir": "SÍ",
-      "pq": "Mejor récord y ofensiva más potente.",
+      "pq": "Mejor récord y racha reciente favorable.",
       "factores": [
-        "Posición en la división superior",
-        "Racha de 8-2 en últimos 10",
-        "Historial reciente favorable"
+        "Racha de 7-3 en últimos 10 juegos",
+        "Kansas City con lesiones clave",
+        "Historial reciente favorece a Tampa Bay"
       ],
-      "favorito": "Atlanta Braves",
-      "carreras_esperadas": "4-5",
+      "favorito": "Tampa Bay Rays",
+      "carreras_esperadas": "6-3",
       "carreras_lineas": {
-        "over_7.5": 70,
-        "over_8.5": 55,
-        "over_9.5": 40
+        "over_7.5": 75,
+        "over_8.5": 60,
+        "over_9.5": 45
       },
-      "ranking_local": "NL Oeste: 2º (39-31)",
-      "ranking_visitante": "NL Este: 1º (44-26)",
-      "abridor_local": "Yu Darvish (3.80, 6-4, 90)",
-      "abridor_visitante": "Max Fried (3.10, 8-2, 85)",
+      "ranking_local": "AL Este: 1º (45-25)",
+      "ranking_visitante": "AL Central: 4º (25-45)",
+      "abridor_local": "Shane McClanahan (2.85, 10-3, 120)",
+      "abridor_visitante": "Brady Singer (4.50, 5-8, 90)",
       "bateadores_clave": [
         {
-          "jugador": "Fernando Tatis Jr.",
-          "equipo": "San Diego Padres",
-          "hrs_estimados": 0.5,
+          "jugador": "Wander Franco",
+          "equipo": "Tampa Bay Rays",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2
+        },
+        {
+          "jugador": "Salvador Pérez",
+          "equipo": "Kansas City Royals",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1
+        }
+      ],
+      "relevo_local": "Bullpen con ERA de 3.10, confiable en finales.",
+      "relevo_visitante": "Bullpen con ERA de 4.80, vulnerable en situaciones críticas."
+    },
+    "2026-06-22___MLB___Washington Nationals___Philadelphia Phillies": {
+      "ir": "SÍ",
+      "pq": "Phillies tienen mejor récord y ofensiva más potente.",
+      "factores": [
+        "Phillies en buena racha",
+        "Nats con problemas de lesiones",
+        "Historial reciente a favor de Phillies"
+      ],
+      "favorito": "Philadelphia Phillies",
+      "carreras_esperadas": "3-5",
+      "carreras_lineas": {
+        "over_7.5": 75,
+        "over_8.5": 65,
+        "over_9.5": 55
+      },
+      "ranking_local": "NL Este: 5º (25-45)",
+      "ranking_visitante": "NL Este: 2º (40-30)",
+      "abridor_local": "Josiah Gray (4.10, 5-7, 80)",
+      "abridor_visitante": "Zack Wheeler (3.00, 7-4, 100)",
+      "bateadores_clave": [
+        {
+          "jugador": "Juan Soto",
+          "equipo": "Washington Nationals",
+          "hrs_estimados": 0.4,
           "remolcadas_estimadas": 1
         },
         {
-          "jugador": "Ronald Acuña Jr.",
-          "equipo": "Atlanta Braves",
+          "jugador": "Bryce Harper",
+          "equipo": "Philadelphia Phillies",
           "hrs_estimados": 0.6,
           "remolcadas_estimadas": 2
         }
       ],
-      "relevo_local": "Bullpen con ERA de 4.00, confiable en finales apretados.",
-      "relevo_visitante": "Bullpen con ERA de 3.50, sólido y efectivo."
+      "relevo_local": "Bullpen con ERA de 5.00, poco confiable.",
+      "relevo_visitante": "Bullpen efectivo con ERA de 3.80."
+    },
+    "2026-06-22___MLB___New York Mets___Chicago Cubs": {
+      "ir": "SÍ",
+      "pq": "Mets tienen ventaja en casa y mejor récord.",
+      "factores": [
+        "Mets en buena forma",
+        "Cubs con lesiones",
+        "Historial reciente favorable a Mets"
+      ],
+      "favorito": "New York Mets",
+      "carreras_esperadas": "5-4",
+      "carreras_lineas": {
+        "over_7.5": 80,
+        "over_8.5": 70,
+        "over_9.5": 60
+      },
+      "ranking_local": "NL Este: 3º (38-32)",
+      "ranking_visitante": "NL Central: 4º (30-40)",
+      "abridor_local": "Max Scherzer (2.80, 8-3, 110)",
+      "abridor_visitante": "Marcus Stroman (3.50, 6-5, 85)",
+      "bateadores_clave": [
+        {
+          "jugador": "Pete Alonso",
+          "equipo": "New York Mets",
+          "hrs_estimados": 0.5,
+          "remolcadas_estimadas": 2
+        },
+        {
+          "jugador": "Ian Happ",
+          "equipo": "Chicago Cubs",
+          "hrs_estimados": 0.3,
+          "remolcadas_estimadas": 1
+        }
+      ],
+      "relevo_local": "Bullpen sólido con ERA de 3.60.",
+      "relevo_visitante": "Bullpen con problemas, ERA de 4.50."
     },
     "2026-06-23___MLB___Los Angeles Angels___Baltimore Orioles": {
       "ir": "SÍ",
