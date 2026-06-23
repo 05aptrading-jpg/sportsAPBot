@@ -1,5 +1,5 @@
 {
-  "fecha": "22/06/2026 22:43",
+  "fecha": "22/06/2026 22:58",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782223200,
@@ -2303,13 +2303,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-22",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "Atlanta Braves",
       "opp_team": "San Diego Padres",
       "score_fav": "0",
       "score_opp": "1",
-      "state": "Top 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "loss",
       "label": "📋",
       "game_pk": 823288,
       "fav_abbr": "ATL",
@@ -2366,9 +2366,9 @@
         "current_inning": 9,
         "is_top": true,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 2,
-        "strikes": 1,
+        "outs": 3,
+        "balls": 0,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 7,
@@ -2382,9 +2382,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "0",
         "opp_score": "1",
         "score_fav": "0",
@@ -3085,7 +3085,7 @@
     8798256316,
     8331855257
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": true,
   "live_data": {
     "401815825": {
@@ -3833,9 +3833,9 @@
       }
     },
     "823288": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Top 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 0,
       "home_runs": 1,
       "away_team_name": "San Diego Padres",
@@ -3882,9 +3882,9 @@
         "current_inning": 9,
         "is_top": true,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 2,
-        "strikes": 1,
+        "outs": 3,
+        "balls": 0,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 7,
@@ -3898,9 +3898,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "0",
         "opp_score": "1",
         "score_fav": "0",
@@ -4293,7 +4293,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "22/06/2026 22:43",
+  "updated_at": "22/06/2026 22:58",
   "stats": {
     "total": 5,
     "acertados": 3,
