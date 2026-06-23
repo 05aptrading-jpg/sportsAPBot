@@ -1,5 +1,5 @@
 {
-  "fecha": "23/06/2026 15:58",
+  "fecha": "23/06/2026 16:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782309600,
@@ -1868,7 +1868,7 @@
       "opp_team": "San Diego Padres",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 823286,
@@ -1877,10 +1877,15 @@
       "home_team": "San Diego Padres",
       "away_team": "Atlanta Braves",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -1899,7 +1904,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -2641,7 +2646,7 @@
       "opp_team": "Toronto Blue Jays",
       "score_fav": "4",
       "score_opp": "2",
-      "state": "Top 6th",
+      "state": "Middle 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 822799,
@@ -2679,7 +2684,7 @@
         "current_inning": 6,
         "is_top": true,
         "inning_ordinal": "6th",
-        "outs": 2,
+        "outs": 3,
         "balls": 0,
         "strikes": 2,
         "away_runs": 4,
@@ -3286,16 +3291,21 @@
     "823286": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "San Diego Padres",
       "home_team_name": "Atlanta Braves",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3314,7 +3324,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3663,7 +3673,7 @@
     "822799": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 6th",
+      "status": "Middle 6th",
       "away_runs": 4,
       "home_runs": 2,
       "away_team_name": "Toronto Blue Jays",
@@ -3698,7 +3708,7 @@
         "current_inning": 6,
         "is_top": true,
         "inning_ordinal": "6th",
-        "outs": 2,
+        "outs": 3,
         "balls": 0,
         "strikes": 2,
         "away_runs": 4,
@@ -3767,7 +3777,7 @@
       }
     }
   },
-  "updated_at": "23/06/2026 15:58",
+  "updated_at": "23/06/2026 16:00",
   "stats": {
     "total": 5,
     "acertados": 3,
