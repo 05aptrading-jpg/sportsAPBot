@@ -1,5 +1,5 @@
 {
-  "fecha": "23/06/2026 15:00",
+  "fecha": "23/06/2026 15:13",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782309600,
@@ -2297,10 +2297,15 @@
       "home_team": "New York Mets",
       "away_team": "Chicago Cubs",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2629,9 +2634,9 @@
       "status_emoji": "🔴",
       "fav_team": "Houston Astros",
       "opp_team": "Toronto Blue Jays",
-      "score_fav": "1",
+      "score_fav": "4",
       "score_opp": "0",
-      "state": "End 3rd",
+      "state": "Top 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 822799,
@@ -2652,17 +2657,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 3,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 3,
-        "balls": 3,
-        "strikes": 3,
-        "away_runs": 1,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 2,
+        "away_runs": 4,
         "home_runs": 0,
-        "away_hits": 4,
+        "away_hits": 8,
         "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
@@ -2676,9 +2685,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "1",
+        "fav_score": "4",
         "opp_score": "0",
-        "score_fav": "1",
+        "score_fav": "4",
         "score_opp": "0"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40",
@@ -3470,10 +3479,15 @@
       "away_team_name": "New York Mets",
       "home_team_name": "Chicago Cubs",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3631,8 +3645,8 @@
     "822799": {
       "is_live": true,
       "is_final": false,
-      "status": "End 3rd",
-      "away_runs": 1,
+      "status": "Top 4th",
+      "away_runs": 4,
       "home_runs": 0,
       "away_team_name": "Toronto Blue Jays",
       "home_team_name": "Houston Astros",
@@ -3649,17 +3663,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 3,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 3,
-        "balls": 3,
-        "strikes": 3,
-        "away_runs": 1,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 2,
+        "away_runs": 4,
         "home_runs": 0,
-        "away_hits": 4,
+        "away_hits": 8,
         "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
@@ -3673,9 +3691,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "1",
+        "fav_score": "4",
         "opp_score": "0",
-        "score_fav": "1",
+        "score_fav": "4",
         "score_opp": "0"
       }
     },
@@ -3723,7 +3741,7 @@
       }
     }
   },
-  "updated_at": "23/06/2026 15:00",
+  "updated_at": "23/06/2026 15:13",
   "stats": {
     "total": 5,
     "acertados": 3,
