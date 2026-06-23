@@ -1,5 +1,5 @@
 {
-  "fecha": "23/06/2026 13:13",
+  "fecha": "23/06/2026 13:20",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782309600,
@@ -2359,10 +2359,15 @@
       "home_team": "Pittsburgh Pirates",
       "away_team": "Seattle Mariners",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3445,10 +3450,15 @@
       "away_team_name": "Pittsburgh Pirates",
       "home_team_name": "Seattle Mariners",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3637,7 +3647,7 @@
       }
     }
   },
-  "updated_at": "23/06/2026 13:13",
+  "updated_at": "23/06/2026 13:20",
   "stats": {
     "total": 5,
     "acertados": 3,
@@ -5740,6 +5750,138 @@
       ],
       "relevo_local": "Bullpen con ERA de 4.20, confianza limitada.",
       "relevo_visitante": "Bullpen sólido con ERA de 3.50."
+    },
+    "2026-07-02___Group H Winner___Group J 2nd Place": {
+      "ir": "SÍ",
+      "pq": "Mayor calidad de jugadores y mejor rendimiento en la fase de grupos.",
+      "factores": [
+        "Rendimiento superior en la fase de grupos",
+        "Mejor ranking FIFA",
+        "Posibilidad de lesiones en el rival"
+      ],
+      "favorito": "Group H Winner",
+      "goles": "2-0",
+      "corners": 6,
+      "tiros_porteria": [
+        {
+          "jugador": "Delantero A",
+          "equipo": "Group H Winner",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Mediocampista B",
+          "equipo": "Group H Winner",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Delantero C",
+          "equipo": "Group J 2nd Place",
+          "tiros_estimados": 1
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 30,
+          "over_10.5": 15
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-07-02___Group K 2nd Place___Group L 2nd Place": {
+      "ir": "NO",
+      "pq": "Ambos equipos tienen rendimiento similar y no hay claro favorito.",
+      "factores": [
+        "Rendimiento parejo en la fase de grupos",
+        "Historial de enfrentamientos equilibrado",
+        "Lesiones no reportadas"
+      ],
+      "favorito": "Group K 2nd Place",
+      "goles": "1-1",
+      "corners": 5,
+      "tiros_porteria": [
+        {
+          "jugador": "Delantero D",
+          "equipo": "Group K 2nd Place",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Delantero E",
+          "equipo": "Group L 2nd Place",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Mediocampista F",
+          "equipo": "Group K 2nd Place",
+          "tiros_estimados": 1
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 50,
+          "over_2.5": 35,
+          "over_3.5": 20
+        },
+        "corners": {
+          "over_8.5": 25,
+          "over_9.5": 15,
+          "over_10.5": 5
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-07-02___Group B Winner___Third Place Group E/F/G/I/J": {
+      "ir": "SÍ",
+      "pq": "Grupo B ha mostrado un rendimiento superior y tiene jugadores destacados.",
+      "factores": [
+        "Rendimiento destacado en la fase de grupos",
+        "Mayor experiencia en torneos",
+        "Rival con menor calidad de jugadores"
+      ],
+      "favorito": "Group B Winner",
+      "goles": "3-1",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Delantero G",
+          "equipo": "Group B Winner",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Mediocampista H",
+          "equipo": "Group B Winner",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Delantero I",
+          "equipo": "Third Place Group E/F/G/I/J",
+          "tiros_estimados": 1
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 45
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 30,
+          "over_10.5": 10
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-06-23___WNBA___Las Vegas Aces___New York Liberty": {
       "ir": "SÍ",
