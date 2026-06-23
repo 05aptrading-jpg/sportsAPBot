@@ -1,5 +1,5 @@
 {
-  "fecha": "22/06/2026 21:43",
+  "fecha": "22/06/2026 21:58",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782223200,
@@ -2308,7 +2308,7 @@
       "opp_team": "San Diego Padres",
       "score_fav": "0",
       "score_opp": "1",
-      "state": "Top 6th",
+      "state": "Top 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 823288,
@@ -2349,20 +2349,24 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": true,
-        "inning_ordinal": "6th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "inning_ordinal": "7th",
+        "outs": 0,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 5,
         "home_hits": 3,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "Atlanta Braves",
         "home_team_name": "San Diego Padres",
         "bases": {
@@ -2416,7 +2420,7 @@
       "opp_team": "Los Angeles Angels",
       "score_fav": "6",
       "score_opp": "0",
-      "state": "End 7th",
+      "state": "Bottom 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 824016,
@@ -2461,18 +2465,22 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
+        "inning_ordinal": "8th",
         "outs": 3,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 3,
         "away_runs": 6,
         "home_runs": 0,
-        "away_hits": 9,
-        "home_hits": 5,
+        "away_hits": 10,
+        "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Baltimore Orioles",
@@ -3815,7 +3823,7 @@
     "823288": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 6th",
+      "status": "Top 7th",
       "away_runs": 0,
       "home_runs": 1,
       "away_team_name": "San Diego Padres",
@@ -3845,20 +3853,24 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": true,
-        "inning_ordinal": "6th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "inning_ordinal": "7th",
+        "outs": 0,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 5,
         "home_hits": 3,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "Atlanta Braves",
         "home_team_name": "San Diego Padres",
         "bases": {
@@ -3878,7 +3890,7 @@
     "824016": {
       "is_live": true,
       "is_final": false,
-      "status": "End 7th",
+      "status": "Bottom 8th",
       "away_runs": 6,
       "home_runs": 0,
       "away_team_name": "Los Angeles Angels",
@@ -3912,18 +3924,22 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
+        "inning_ordinal": "8th",
         "outs": 3,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 3,
         "away_runs": 6,
         "home_runs": 0,
-        "away_hits": 9,
-        "home_hits": 5,
+        "away_hits": 10,
+        "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Baltimore Orioles",
@@ -4253,7 +4269,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "22/06/2026 21:43",
+  "updated_at": "22/06/2026 21:58",
   "stats": {
     "total": 5,
     "acertados": 3,
@@ -7199,8 +7215,8 @@
       "away": "Dallas Wings",
       "home_abbr": "SEA",
       "away_abbr": "DAL",
-      "home_score": 89,
-      "away_score": 88,
+      "home_score": 100,
+      "away_score": 98,
       "home_linescores": [
         {
           "period": 1,
@@ -7219,8 +7235,13 @@
         },
         {
           "period": 4,
-          "value": 23,
-          "display": "23"
+          "value": 30,
+          "display": "30"
+        },
+        {
+          "period": 5,
+          "value": 4,
+          "display": "4"
         }
       ],
       "away_linescores": [
@@ -7241,13 +7262,18 @@
         },
         {
           "period": 4,
-          "value": 21,
-          "display": "21"
+          "value": 29,
+          "display": "29"
+        },
+        {
+          "period": 5,
+          "value": 2,
+          "display": "2"
         }
       ],
-      "clock": "2:22",
-      "period": 4,
-      "state": "Q4 2:22",
+      "clock": "3:58",
+      "period": 5,
+      "state": "Q5 3:58",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/SEA.png&h=40&w=40",
