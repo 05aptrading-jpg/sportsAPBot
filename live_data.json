@@ -1,5 +1,5 @@
 {
-  "fecha": "22/06/2026 21:28",
+  "fecha": "22/06/2026 21:40",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782223200,
@@ -2063,13 +2063,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-22",
-      "status_emoji": "🏁",
+      "status_emoji": "✅",
       "fav_team": "Los Angeles Dodgers",
       "opp_team": "Minnesota Twins",
-      "score_fav": "—",
-      "score_opp": "",
+      "score_fav": "2",
+      "score_opp": "1",
       "state": "Final",
-      "result": "completed",
+      "result": "win",
       "label": "📋",
       "game_pk": 823692,
       "fav_abbr": "LAD",
@@ -2308,7 +2308,7 @@
       "opp_team": "San Diego Padres",
       "score_fav": "0",
       "score_opp": "1",
-      "state": "Bottom 5th",
+      "state": "End 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 823288,
@@ -2350,9 +2350,9 @@
         "current_inning": 5,
         "is_top": false,
         "inning_ordinal": "5th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 1,
+        "outs": 3,
+        "balls": 1,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 4,
@@ -2410,9 +2410,9 @@
       "status_emoji": "🔴",
       "fav_team": "Baltimore Orioles",
       "opp_team": "Los Angeles Angels",
-      "score_fav": "5",
+      "score_fav": "6",
       "score_opp": "0",
-      "state": "Bottom 6th",
+      "state": "Bottom 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 824016,
@@ -2453,17 +2453,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": false,
-        "inning_ordinal": "6th",
-        "outs": 2,
-        "balls": 3,
+        "inning_ordinal": "7th",
+        "outs": 1,
+        "balls": 1,
         "strikes": 2,
-        "away_runs": 5,
+        "away_runs": 6,
         "home_runs": 0,
-        "away_hits": 7,
+        "away_hits": 9,
         "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
@@ -2477,9 +2481,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "5",
+        "fav_score": "6",
         "opp_score": "0",
-        "score_fav": "5",
+        "score_fav": "6",
         "score_opp": "0"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BAL.png&h=40&w=40",
@@ -3658,8 +3662,8 @@
       "is_live": false,
       "is_final": true,
       "status": "Final",
-      "away_runs": 0,
-      "home_runs": 0,
+      "away_runs": 2,
+      "home_runs": 1,
       "away_team_name": "Minnesota Twins",
       "home_team_name": "Los Angeles Dodgers",
       "linescore": {
@@ -3807,7 +3811,7 @@
     "823288": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 5th",
+      "status": "End 5th",
       "away_runs": 0,
       "home_runs": 1,
       "away_team_name": "San Diego Padres",
@@ -3838,9 +3842,9 @@
         "current_inning": 5,
         "is_top": false,
         "inning_ordinal": "5th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 1,
+        "outs": 3,
+        "balls": 1,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 4,
@@ -3866,8 +3870,8 @@
     "824016": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 6th",
-      "away_runs": 5,
+      "status": "Bottom 7th",
+      "away_runs": 6,
       "home_runs": 0,
       "away_team_name": "Los Angeles Angels",
       "home_team_name": "Baltimore Orioles",
@@ -3896,17 +3900,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": false,
-        "inning_ordinal": "6th",
-        "outs": 2,
-        "balls": 3,
+        "inning_ordinal": "7th",
+        "outs": 1,
+        "balls": 1,
         "strikes": 2,
-        "away_runs": 5,
+        "away_runs": 6,
         "home_runs": 0,
-        "away_hits": 7,
+        "away_hits": 9,
         "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
@@ -3920,9 +3928,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "5",
+        "fav_score": "6",
         "opp_score": "0",
-        "score_fav": "5",
+        "score_fav": "6",
         "score_opp": "0"
       }
     },
@@ -4237,7 +4245,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "22/06/2026 21:28",
+  "updated_at": "22/06/2026 21:40",
   "stats": {
     "total": 5,
     "acertados": 3,
@@ -7183,8 +7191,8 @@
       "away": "Dallas Wings",
       "home_abbr": "SEA",
       "away_abbr": "DAL",
-      "home_score": 70,
-      "away_score": 76,
+      "home_score": 84,
+      "away_score": 86,
       "home_linescores": [
         {
           "period": 1,
@@ -7203,8 +7211,8 @@
         },
         {
           "period": 4,
-          "value": 4,
-          "display": "4"
+          "value": 18,
+          "display": "18"
         }
       ],
       "away_linescores": [
@@ -7225,13 +7233,13 @@
         },
         {
           "period": 4,
-          "value": 9,
-          "display": "9"
+          "value": 19,
+          "display": "19"
         }
       ],
-      "clock": "7:59",
+      "clock": "4:07",
       "period": 4,
-      "state": "Q4 7:59",
+      "state": "Q4 4:07",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/SEA.png&h=40&w=40",
