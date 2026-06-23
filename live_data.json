@@ -1,5 +1,5 @@
 {
-  "fecha": "23/06/2026 15:28",
+  "fecha": "23/06/2026 15:40",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782309600,
@@ -2641,7 +2641,7 @@
       "opp_team": "Toronto Blue Jays",
       "score_fav": "4",
       "score_opp": "2",
-      "state": "Bottom 4th",
+      "state": "Middle 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 822799,
@@ -2666,14 +2666,18 @@
           {
             "away_runs": 3,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 3,
+        "balls": 3,
+        "strikes": 3,
         "away_runs": 4,
         "home_runs": 2,
         "away_hits": 9,
@@ -3655,7 +3659,7 @@
     "822799": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 4th",
+      "status": "Middle 5th",
       "away_runs": 4,
       "home_runs": 2,
       "away_team_name": "Toronto Blue Jays",
@@ -3677,14 +3681,18 @@
           {
             "away_runs": 3,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 3,
+        "balls": 3,
+        "strikes": 3,
         "away_runs": 4,
         "home_runs": 2,
         "away_hits": 9,
@@ -3751,7 +3759,7 @@
       }
     }
   },
-  "updated_at": "23/06/2026 15:28",
+  "updated_at": "23/06/2026 15:40",
   "stats": {
     "total": 5,
     "acertados": 3,
