@@ -1,5 +1,5 @@
 {
-  "fecha": "26/06/2026 17:20",
+  "fecha": "26/06/2026 17:36",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782568800,
@@ -1450,7 +1450,7 @@
       "opp_team": "New York Mets",
       "score_fav": "1",
       "score_opp": "0",
-      "state": "Middle 1st",
+      "state": "Bottom 2nd",
       "result": "live",
       "label": "🎯",
       "game_pk": 823610,
@@ -1471,18 +1471,22 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 3,
+        "current_inning": 2,
+        "is_top": false,
+        "inning_ordinal": "2nd",
+        "outs": 0,
         "balls": 0,
-        "strikes": 3,
+        "strikes": 0,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 3,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Philadelphia Phillies",
@@ -1554,7 +1558,7 @@
       "opp_team": "Chicago Cubs",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "🎯",
       "game_pk": 823773,
@@ -1598,7 +1602,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -1656,9 +1660,9 @@
       "status_emoji": "🔴",
       "fav_team": "Tampa Bay Rays",
       "opp_team": "Arizona Diamondbacks",
-      "score_fav": "0",
+      "score_fav": "3",
       "score_opp": "1",
-      "state": "Bottom 1st",
+      "state": "Bottom 2nd",
       "result": "live",
       "label": "🎯",
       "game_pk": 822962,
@@ -1678,19 +1682,23 @@
         "innings": [
           {
             "away_runs": 1,
+            "home_runs": 3
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
+        "inning_ordinal": "2nd",
         "outs": 0,
         "balls": 1,
-        "strikes": 0,
+        "strikes": 2,
         "away_runs": 1,
-        "home_runs": 0,
+        "home_runs": 3,
         "away_hits": 2,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Arizona Diamondbacks",
@@ -1704,9 +1712,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "1",
-        "opp_score": "0",
+        "opp_score": "3",
         "score_fav": "1",
-        "score_opp": "0"
+        "score_opp": "3"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ARI.png&h=40&w=40",
@@ -1866,7 +1874,7 @@
       "opp_team": "Baltimore Orioles",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Top 2nd",
+      "state": "Top 3rd",
       "result": "live",
       "label": "🎯",
       "game_pk": 824824,
@@ -1891,18 +1899,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
-        "outs": 1,
+        "inning_ordinal": "3rd",
+        "outs": 0,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Washington Nationals",
@@ -1973,8 +1985,8 @@
       "fav_team": "New York Yankees",
       "opp_team": "Boston Red Sox",
       "score_fav": "0",
-      "score_opp": "0",
-      "state": "Bottom 1st",
+      "score_opp": "1",
+      "state": "Bottom 2nd",
       "result": "live",
       "label": "🎯",
       "game_pk": 824743,
@@ -1994,19 +2006,23 @@
         "innings": [
           {
             "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 1,
+        "inning_ordinal": "2nd",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 1,
         "away_hits": 0,
-        "home_hits": 1,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "New York Yankees",
@@ -2020,9 +2036,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "1",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "1"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYY.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BOS.png&h=40&w=40",
@@ -2284,9 +2300,9 @@
       "status_emoji": "🔴",
       "fav_team": "Detroit Tigers",
       "opp_team": "Houston Astros",
-      "score_fav": "0",
+      "score_fav": "3",
       "score_opp": "0",
-      "state": "Top 3rd",
+      "state": "End 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 824255,
@@ -2314,20 +2330,20 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 3
           }
         ],
         "current_inning": 3,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "3rd",
         "outs": 3,
         "balls": 2,
-        "strikes": 2,
+        "strikes": 3,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 3,
         "away_hits": 0,
-        "home_hits": 0,
-        "away_errors": 0,
+        "home_hits": 2,
+        "away_errors": 1,
         "home_errors": 1,
         "away_team_name": "Houston Astros",
         "home_team_name": "Detroit Tigers",
@@ -2340,9 +2356,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "3",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "3"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40",
@@ -2398,7 +2414,7 @@
       "opp_team": "Cincinnati Reds",
       "score_fav": "1",
       "score_opp": "4",
-      "state": "Bottom 2nd",
+      "state": "Bottom 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 823363,
@@ -2423,18 +2439,22 @@
           {
             "away_runs": 4,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 0,
+        "inning_ordinal": "3rd",
+        "outs": 1,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 4,
         "home_runs": 1,
         "away_hits": 5,
-        "home_hits": 2,
+        "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Cincinnati Reds",
@@ -2622,9 +2642,9 @@
       "status_emoji": "🔴",
       "fav_team": "Cleveland Guardians",
       "opp_team": "Seattle Mariners",
-      "score_fav": "0",
+      "score_fav": "1",
       "score_opp": "0",
-      "state": "Bottom 1st",
+      "state": "Middle 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 824423,
@@ -2644,20 +2664,24 @@
         "innings": [
           {
             "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 1,
+        "inning_ordinal": "2nd",
+        "outs": 0,
         "balls": 0,
-        "strikes": 2,
+        "strikes": 0,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 1,
         "away_hits": 0,
-        "home_hits": 0,
-        "away_errors": 0,
+        "home_hits": 2,
+        "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Seattle Mariners",
         "home_team_name": "Cleveland Guardians",
@@ -2670,9 +2694,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "1",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "1"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SEA.png&h=40&w=40",
@@ -2839,7 +2863,7 @@
       "opp_team": "Toronto Blue Jays",
       "score_fav": "3",
       "score_opp": "0",
-      "state": "Top 1st",
+      "state": "Middle 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 822796,
@@ -2860,17 +2884,21 @@
           {
             "away_runs": 3,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 1,
+        "inning_ordinal": "2nd",
+        "outs": 3,
+        "balls": 2,
+        "strikes": 3,
         "away_runs": 3,
         "home_runs": 0,
-        "away_hits": 4,
+        "away_hits": 5,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -3306,7 +3334,7 @@
     "823610": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 1st",
+      "status": "Bottom 2nd",
       "away_runs": 1,
       "home_runs": 0,
       "away_team_name": "New York Mets",
@@ -3316,18 +3344,22 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 3,
+        "current_inning": 2,
+        "is_top": false,
+        "inning_ordinal": "2nd",
+        "outs": 0,
         "balls": 0,
-        "strikes": 3,
+        "strikes": 0,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 3,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Philadelphia Phillies",
@@ -3349,7 +3381,7 @@
     "823773": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Chicago Cubs",
@@ -3382,7 +3414,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3392,8 +3424,8 @@
     "822962": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
-      "away_runs": 0,
+      "status": "Bottom 2nd",
+      "away_runs": 3,
       "home_runs": 1,
       "away_team_name": "Arizona Diamondbacks",
       "home_team_name": "Tampa Bay Rays",
@@ -3401,19 +3433,23 @@
         "innings": [
           {
             "away_runs": 1,
+            "home_runs": 3
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
+        "inning_ordinal": "2nd",
         "outs": 0,
         "balls": 1,
-        "strikes": 0,
+        "strikes": 2,
         "away_runs": 1,
-        "home_runs": 0,
+        "home_runs": 3,
         "away_hits": 2,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Arizona Diamondbacks",
@@ -3427,9 +3463,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "1",
-        "opp_score": "0",
+        "opp_score": "3",
         "score_fav": "1",
-        "score_opp": "0"
+        "score_opp": "3"
       }
     },
     "823206": {
@@ -3478,7 +3514,7 @@
     "824824": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 2nd",
+      "status": "Top 3rd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Baltimore Orioles",
@@ -3492,18 +3528,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
-        "outs": 1,
+        "inning_ordinal": "3rd",
+        "outs": 0,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Washington Nationals",
@@ -3525,28 +3565,32 @@
     "824743": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Bottom 2nd",
       "away_runs": 0,
-      "home_runs": 0,
+      "home_runs": 1,
       "away_team_name": "Boston Red Sox",
       "home_team_name": "New York Yankees",
       "linescore": {
         "innings": [
           {
             "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 1,
+        "inning_ordinal": "2nd",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 1,
         "away_hits": 0,
-        "home_hits": 1,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "New York Yankees",
@@ -3560,9 +3604,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "1",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "1"
       }
     },
     "824014": {
@@ -3654,8 +3698,8 @@
     "824255": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 3rd",
-      "away_runs": 0,
+      "status": "End 3rd",
+      "away_runs": 3,
       "home_runs": 0,
       "away_team_name": "Houston Astros",
       "home_team_name": "Detroit Tigers",
@@ -3671,20 +3715,20 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 3
           }
         ],
         "current_inning": 3,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "3rd",
         "outs": 3,
         "balls": 2,
-        "strikes": 2,
+        "strikes": 3,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 3,
         "away_hits": 0,
-        "home_hits": 0,
-        "away_errors": 0,
+        "home_hits": 2,
+        "away_errors": 1,
         "home_errors": 1,
         "away_team_name": "Houston Astros",
         "home_team_name": "Detroit Tigers",
@@ -3697,15 +3741,15 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "3",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "3"
       }
     },
     "823363": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 2nd",
+      "status": "Bottom 3rd",
       "away_runs": 1,
       "home_runs": 4,
       "away_team_name": "Cincinnati Reds",
@@ -3719,18 +3763,22 @@
           {
             "away_runs": 4,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 0,
+        "inning_ordinal": "3rd",
+        "outs": 1,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 4,
         "home_runs": 1,
         "away_hits": 5,
-        "home_hits": 2,
+        "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Cincinnati Reds",
@@ -3795,8 +3843,8 @@
     "824423": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
-      "away_runs": 0,
+      "status": "Middle 2nd",
+      "away_runs": 1,
       "home_runs": 0,
       "away_team_name": "Seattle Mariners",
       "home_team_name": "Cleveland Guardians",
@@ -3804,20 +3852,24 @@
         "innings": [
           {
             "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 1,
+        "inning_ordinal": "2nd",
+        "outs": 0,
         "balls": 0,
-        "strikes": 2,
+        "strikes": 0,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 1,
         "away_hits": 0,
-        "home_hits": 0,
-        "away_errors": 0,
+        "home_hits": 2,
+        "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Seattle Mariners",
         "home_team_name": "Cleveland Guardians",
@@ -3830,9 +3882,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "1",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "1"
       }
     },
     "823688": {
@@ -3881,7 +3933,7 @@
     "822796": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 1st",
+      "status": "Middle 2nd",
       "away_runs": 3,
       "home_runs": 0,
       "away_team_name": "Toronto Blue Jays",
@@ -3891,17 +3943,21 @@
           {
             "away_runs": 3,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 1,
+        "inning_ordinal": "2nd",
+        "outs": 3,
+        "balls": 2,
+        "strikes": 3,
         "away_runs": 3,
         "home_runs": 0,
-        "away_hits": 4,
+        "away_hits": 5,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -3965,7 +4021,7 @@
       }
     }
   },
-  "updated_at": "26/06/2026 17:20",
+  "updated_at": "26/06/2026 17:36",
   "stats": {
     "total": 0,
     "acertados": 0,
@@ -4541,11 +4597,11 @@
         },
         {
           "nombre": "Kevin McGonigle",
-          "prob": 67.7,
+          "prob": 100.0,
           "player_id": 805808,
           "game_pk": "824255",
           "equipo": "Detroit Tigers",
-          "status": "pendiente"
+          "status": "cumplio"
         },
         {
           "nombre": "Dillon Dingler",
@@ -4593,11 +4649,11 @@
         },
         {
           "nombre": "Jake Mangum",
-          "prob": 70.8,
+          "prob": 100.0,
           "player_id": 663968,
           "game_pk": "823363",
           "equipo": "Pittsburgh Pirates",
-          "status": "pendiente"
+          "status": "cumplio"
         },
         {
           "nombre": "Ryan O'Hearn",
@@ -4660,108 +4716,264 @@
           "status": "pendiente"
         }
       ],
-      "Kansas City Royals": [
+      "Texas Rangers": [
         {
-          "nombre": "Bobby Witt Jr.",
-          "prob": 70.6,
-          "player_id": 677951,
-          "game_pk": "824582",
-          "equipo": "Kansas City Royals",
+          "nombre": "Nicky Lopez",
+          "prob": 71.6,
+          "player_id": 670032,
+          "game_pk": "822796",
+          "equipo": "Texas Rangers",
           "status": "pendiente"
         },
         {
-          "nombre": "Michael Massey",
-          "prob": 68.7,
-          "player_id": 686681,
-          "game_pk": "824582",
-          "equipo": "Kansas City Royals",
+          "nombre": "Josh Jung",
+          "prob": 71.3,
+          "player_id": 673962,
+          "game_pk": "822796",
+          "equipo": "Texas Rangers",
           "status": "pendiente"
         },
         {
-          "nombre": "Kameron Misner",
-          "prob": 68.3,
-          "player_id": 670224,
-          "game_pk": "824582",
-          "equipo": "Kansas City Royals",
-          "status": "pendiente"
+          "nombre": "Wyatt Langford",
+          "prob": 100.0,
+          "player_id": 694671,
+          "game_pk": "822796",
+          "equipo": "Texas Rangers",
+          "status": "cumplio"
         }
       ],
-      "Chicago White Sox": [
+      "Toronto Blue Jays": [
         {
-          "nombre": "Tristan Peters",
+          "nombre": "Ernie Clement",
+          "prob": 73.5,
+          "player_id": 676391,
+          "game_pk": "822796",
+          "equipo": "Toronto Blue Jays",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Nathan Lukes",
+          "prob": 71.0,
+          "player_id": 664770,
+          "game_pk": "822796",
+          "equipo": "Toronto Blue Jays",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Jesús Sánchez",
           "prob": 69.4,
-          "player_id": 671976,
-          "game_pk": "824582",
-          "equipo": "Chicago White Sox",
+          "player_id": 660821,
+          "game_pk": "822796",
+          "equipo": "Toronto Blue Jays",
+          "status": "pendiente"
+        }
+      ],
+      "Seattle Mariners": [
+        {
+          "nombre": "Randy Arozarena",
+          "prob": 68.2,
+          "player_id": 668227,
+          "game_pk": "824423",
+          "equipo": "Seattle Mariners",
           "status": "pendiente"
         },
         {
-          "nombre": "Randal Grichuk",
-          "prob": 68.9,
-          "player_id": 545341,
-          "game_pk": "824582",
-          "equipo": "Chicago White Sox",
+          "nombre": "Dominic Canzone",
+          "prob": 67.7,
+          "player_id": 686527,
+          "game_pk": "824423",
+          "equipo": "Seattle Mariners",
           "status": "pendiente"
         },
         {
-          "nombre": "Sam Antonacci",
+          "nombre": "Josh Naylor",
+          "prob": 66.5,
+          "player_id": 647304,
+          "game_pk": "824423",
+          "equipo": "Seattle Mariners",
+          "status": "pendiente"
+        }
+      ],
+      "Cleveland Guardians": [
+        {
+          "nombre": "Kahlil Watson",
+          "prob": 100.0,
+          "player_id": 696135,
+          "game_pk": "824423",
+          "equipo": "Cleveland Guardians",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Brayan Rocchio",
+          "prob": 66.8,
+          "player_id": 677587,
+          "game_pk": "824423",
+          "equipo": "Cleveland Guardians",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Austin Hedges",
+          "prob": 66.3,
+          "player_id": 595978,
+          "game_pk": "824423",
+          "equipo": "Cleveland Guardians",
+          "status": "pendiente"
+        }
+      ],
+      "Arizona Diamondbacks": [
+        {
+          "nombre": "Corbin Carroll",
+          "prob": 100.0,
+          "player_id": 682998,
+          "game_pk": "822962",
+          "equipo": "Arizona Diamondbacks",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Ildemaro Vargas",
           "prob": 67.8,
-          "player_id": 803011,
-          "game_pk": "824582",
-          "equipo": "Chicago White Sox",
+          "player_id": 545121,
+          "game_pk": "822962",
+          "equipo": "Arizona Diamondbacks",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Ketel Marte",
+          "prob": 67.6,
+          "player_id": 606466,
+          "game_pk": "822962",
+          "equipo": "Arizona Diamondbacks",
           "status": "pendiente"
         }
       ],
-      "Chicago Cubs": [
+      "Tampa Bay Rays": [
         {
-          "nombre": "Pete Crow-Armstrong",
-          "prob": 69.2,
-          "player_id": 691718,
-          "game_pk": "823773",
-          "equipo": "Chicago Cubs",
+          "nombre": "Yandy Díaz",
+          "prob": 74.1,
+          "player_id": 650490,
+          "game_pk": "822962",
+          "equipo": "Tampa Bay Rays",
           "status": "pendiente"
         },
         {
-          "nombre": "Carson Kelly",
-          "prob": 68.6,
-          "player_id": 608348,
-          "game_pk": "823773",
-          "equipo": "Chicago Cubs",
+          "nombre": "Jonny DeLuca",
+          "prob": 69.0,
+          "player_id": 676356,
+          "game_pk": "822962",
+          "equipo": "Tampa Bay Rays",
           "status": "pendiente"
         },
         {
-          "nombre": "Pedro Ramírez",
-          "prob": 67.3,
-          "player_id": 699393,
-          "game_pk": "823773",
-          "equipo": "Chicago Cubs",
+          "nombre": "Junior Caminero",
+          "prob": 100.0,
+          "player_id": 691406,
+          "game_pk": "822962",
+          "equipo": "Tampa Bay Rays",
+          "status": "cumplio"
+        }
+      ],
+      "Philadelphia Phillies": [
+        {
+          "nombre": "Brandon Marsh",
+          "prob": 76.0,
+          "player_id": 669016,
+          "game_pk": "823610",
+          "equipo": "Philadelphia Phillies",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Derek Hill",
+          "prob": 65.6,
+          "player_id": 656537,
+          "game_pk": "823610",
+          "equipo": "Philadelphia Phillies",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Justin Crawford",
+          "prob": 65.2,
+          "player_id": 702222,
+          "game_pk": "823610",
+          "equipo": "Philadelphia Phillies",
           "status": "pendiente"
         }
       ],
-      "Milwaukee Brewers": [
+      "New York Mets": [
         {
-          "nombre": "Andrew Vaughn",
-          "prob": 74.2,
-          "player_id": 683734,
-          "game_pk": "823773",
-          "equipo": "Milwaukee Brewers",
+          "nombre": "Juan Soto",
+          "prob": 69.4,
+          "player_id": 665742,
+          "game_pk": "823610",
+          "equipo": "New York Mets",
           "status": "pendiente"
         },
         {
-          "nombre": "Jackson Chourio",
-          "prob": 71.8,
-          "player_id": 694192,
-          "game_pk": "823773",
-          "equipo": "Milwaukee Brewers",
+          "nombre": "Bo Bichette",
+          "prob": 66.6,
+          "player_id": 666182,
+          "game_pk": "823610",
+          "equipo": "New York Mets",
           "status": "pendiente"
         },
         {
-          "nombre": "William Contreras",
+          "nombre": "Carson Benge",
+          "prob": 100.0,
+          "player_id": 701807,
+          "game_pk": "823610",
+          "equipo": "New York Mets",
+          "status": "cumplio"
+        }
+      ],
+      "New York Yankees": [
+        {
+          "nombre": "Paul Goldschmidt",
           "prob": 71.7,
-          "player_id": 661388,
-          "game_pk": "823773",
-          "equipo": "Milwaukee Brewers",
+          "player_id": 502671,
+          "game_pk": "824743",
+          "equipo": "New York Yankees",
           "status": "pendiente"
+        },
+        {
+          "nombre": "Ali Sánchez",
+          "prob": 68.8,
+          "player_id": 645305,
+          "game_pk": "824743",
+          "equipo": "New York Yankees",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Ben Rice",
+          "prob": 67.9,
+          "player_id": 700250,
+          "game_pk": "824743",
+          "equipo": "New York Yankees",
+          "status": "pendiente"
+        }
+      ],
+      "Boston Red Sox": [
+        {
+          "nombre": "Anthony Seigler",
+          "prob": 100.0,
+          "player_id": 678011,
+          "game_pk": "824743",
+          "equipo": "Boston Red Sox",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Ceddanne Rafaela",
+          "prob": 70.8,
+          "player_id": 678882,
+          "game_pk": "824743",
+          "equipo": "Boston Red Sox",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Wilyer Abreu",
+          "prob": 100.0,
+          "player_id": 677800,
+          "game_pk": "824743",
+          "equipo": "Boston Red Sox",
+          "status": "cumplio"
         }
       ],
       "Colorado Rockies": [
@@ -8300,19 +8512,31 @@
     {
       "game_date": "2026-06-26",
       "game_id": "401857024",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Connecticut Sun",
       "away": "Washington Mystics",
       "home_abbr": "CON",
       "away_abbr": "WSH",
       "home_score": 0,
-      "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "away_score": 2,
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 0,
+          "display": "0"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 2,
+          "display": "2"
+        }
+      ],
+      "clock": "9:08",
+      "period": 1,
+      "state": "Q1 9:08",
+      "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/CON.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/WSH.png&h=40&w=40",
@@ -8397,19 +8621,31 @@
     {
       "game_date": "2026-06-26",
       "game_id": "401857025",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Chicago Sky",
       "away": "Portland Fire",
       "home_abbr": "CHI",
       "away_abbr": "POR",
-      "home_score": 0,
-      "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "home_score": 7,
+      "away_score": 3,
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 7,
+          "display": "7"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 3,
+          "display": "3"
+        }
+      ],
+      "clock": "7:52",
+      "period": 1,
+      "state": "Q1 7:52",
+      "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/CHI.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/POR.png&h=40&w=40",
