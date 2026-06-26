@@ -34,21 +34,8 @@ body {
 .grid-2 { grid-template-columns: 1fr 1fr; }
 .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
 .grid-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
-@media (max-width:768px) {
-  body { padding: 10px; }
-  .header { flex-direction: column; align-items: flex-start; gap: 10px; }
-  .header .text-right { text-align: left; width: 100%; }
-  .header h1 { font-size: 20px; }
-  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; }
-}
-@media (max-width:480px) {
-  body { padding: 8px; }
-  .header h1 { font-size: 18px; }
-  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-  .card { padding: 12px; }
-  .stat-label { font-size: 13px; }
-  .stat-value { font-size: 13px; }
-}
+@media (max-width:768px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width:480px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } }
 .card {
   background: linear-gradient(145deg, #131a2b 0%, #1a2337 100%);
   border: 1px solid rgba(255,255,255,0.06);
@@ -76,13 +63,6 @@ body {
 .llm-bar-fill {
   height: 100%; border-radius: 3px; transition: width 0.5s ease;
 }
-.section-bar {
-  height: 4px; border-radius: 2px; background: rgba(255,255,255,0.04);
-  margin-top: 4px; overflow: hidden;
-}
-.section-bar-fill {
-  height: 100%; border-radius: 2px; transition: width 0.5s ease;
-}
 .empty-state { text-align: center; padding: 40px; color: #6b7280; font-size: 14px; }
 .badge {
   display: inline-block; padding: 2px 8px; border-radius: 4px;
@@ -99,17 +79,6 @@ body {
 .flex-between { display: flex; justify-content: space-between; align-items: center; }
 .gap-8 { gap: 8px; }
 .gap-12 { gap: 12px; }
-.section-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 8px; margin-top: 8px;
-}
-.section-item {
-  background: rgba(255,255,255,0.03); border-radius: 8px; padding: 10px;
-  border: 1px solid rgba(255,255,255,0.04);
-}
-.section-item-label { font-size: 12px; color: #8b98a5; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; }
-.section-item-value { font-size: 18px; font-weight: 700; margin: 4px 0 2px; }
-.section-item-detail { font-size: 12px; color: #8b98a5; }
 </style>
 </head>
 <body>
@@ -152,37 +121,12 @@ function barColor(pct) {
   return '#ef4444';
 }
 
-function renderSportCard(label, icon, stats, sections) {
+function renderSportCard(label, icon, stats) {
   const total = stats.llm_total || 0;
   const ok = stats.llm_acertados || 0;
   const fail = stats.llm_fallidos || 0;
   const rate = stats.llm_win_rate || 0;
   if (total === 0) return '';
-
-  let sectionsHtml = '';
-  if (sections && Object.keys(sections).length > 0) {
-    const sectionLabels = {
-      equipo: '🏆 Equipo', marcador: '🔢 Marcador', lanzadores: '⚾ Lanzadores',
-      bateadores: '🏏 Bateadores', relevo: '🔄 Relevo',
-      spread: '📊 Spread', over_under: '📉 Over/Under',
-      handicap: '🎯 Handicap', corners: '🚩 Corners',
-    };
-    sectionsHtml = '<div class="section-grid">';
-    for (const [key, sec] of Object.entries(sections)) {
-      const sTotal = sec.total || 0;
-      const sOk = sec.acertados || 0;
-      const sRate = sec.win_rate || 0;
-      const label = sectionLabels[key] || key;
-      sectionsHtml += `<div class="section-item">
-        <div class="section-item-label">${label}</div>
-        <div class="section-item-value ${rateColor(sRate)}">${sRate}%</div>
-        <div class="section-item-detail">${sOk}✅ ${sTotal - sOk}❌ (${sTotal})</div>
-        <div class="section-bar"><div class="section-bar-fill" style="width:${sRate}%;background:${barColor(sRate)}"></div></div>
-      </div>`;
-    }
-    sectionsHtml += '</div>';
-  }
-
   return `<div class="card">
     <div class="card-title">${icon} ${label}</div>
     <div class="stat-row"><span class="stat-label">🤖 LLM</span>
@@ -194,13 +138,11 @@ function renderSportCard(label, icon, stats, sections) {
       </span>
     </div>
     <div class="llm-bar"><div class="llm-bar-fill" style="width:${rate}%;background:${barColor(rate)}"></div></div>
-    ${sectionsHtml}
   </div>`;
 }
 
 function renderDashboard(liveData, soccerData) {
   const llmBySport = liveData.llm_by_sport || {};
-  const llmSections = liveData.llm_sections || {};
   const fecha = liveData.fecha || liveData.updated_at || '—';
   document.getElementById('fecha-actualizacion').textContent = 'Actualizado: ' + fecha;
 
@@ -227,7 +169,7 @@ function renderDashboard(liveData, soccerData) {
     <div class="llm-bar" style="margin-top:12px"><div class="llm-bar-fill" style="width:${globalRate}%;background:${barColor(globalRate)}"></div></div>
   </div>`;
 
-  // ── Per-Sport LLM Accuracy with Sections ──
+  // ── Per-Sport LLM Accuracy ──
   const sportMeta = {
     MLB:  { label: 'MLB', icon: '⚾' },
     LMB:  { label: 'LMB', icon: '🇲🇽' },
@@ -238,13 +180,12 @@ function renderDashboard(liveData, soccerData) {
   };
 
   html += `<h2 style="font-size:16px;font-weight:700;color:#f1f5f9;margin:16px 0 8px">🤖 Precisión por Deporte</h2>`;
-  html += `<div class="grid grid-2">`;
+  html += `<div class="grid grid-3">`;
   let hasAny = false;
   for (const sp of ['MLB','LMB','NBA','WNBA','NFL','SOCCER']) {
     const stats = llmBySport[sp] || {};
     const meta = sportMeta[sp] || { label: sp, icon: '📋' };
-    const sections = llmSections[sp] || {};
-    const card = renderSportCard(meta.label, meta.icon, stats, sections);
+    const card = renderSportCard(meta.label, meta.icon, stats);
     if (card) { html += card; hasAny = true; }
   }
   html += `</div>`;
@@ -264,7 +205,7 @@ function renderDashboard(liveData, soccerData) {
     return { total, ok, fail, rate: total > 0 ? Math.round(ok/total*100) : 0 };
   }
 
-  html += `<h2 style="font-size:16px;font-weight:700;color:#f1f5f9;margin:16px 0 8px">📈 Rendimiento de Análisis</h2>`;
+  html += `<h2 style="font-size:16px;font-weight:700;color:#f1f5f9;margin:16px 0 8px">📈 Resultados de Apuestas</h2>`;
   html += `<div class="grid grid-3">`;
 
   const mlbBet = calcBetStats(games, 'MLB');
@@ -272,14 +213,14 @@ function renderDashboard(liveData, soccerData) {
 
   if (mlbBet.total > 0) {
     html += `<div class="card"><div class="card-title">⚾ MLB</div>
-      <div class="stat-row"><span class="stat-label">Predicciones</span><span class="stat-value">${mlbBet.ok}✅ ${mlbBet.fail}❌ <span class="stat-sub">(${mlbBet.total})</span></span></div>
+      <div class="stat-row"><span class="stat-label">Apuestas</span><span class="stat-value">${mlbBet.ok}✅ ${mlbBet.fail}❌ <span class="stat-sub">(${mlbBet.total})</span></span></div>
       <div class="stat-row"><span class="stat-label">Win Rate</span><span class="stat-value ${rateColor(mlbBet.rate).replace('rate-','')}">${mlbBet.rate}%</span></div>
       <div class="llm-bar"><div class="llm-bar-fill" style="width:${mlbBet.rate}%;background:${barColor(mlbBet.rate)}"></div></div>
     </div>`;
   }
   if (lmbBet.total > 0) {
     html += `<div class="card"><div class="card-title">🇲🇽 LMB</div>
-      <div class="stat-row"><span class="stat-label">Predicciones</span><span class="stat-value">${lmbBet.ok}✅ ${lmbBet.fail}❌ <span class="stat-sub">(${lmbBet.total})</span></span></div>
+      <div class="stat-row"><span class="stat-label">Apuestas</span><span class="stat-value">${lmbBet.ok}✅ ${lmbBet.fail}❌ <span class="stat-sub">(${lmbBet.total})</span></span></div>
       <div class="stat-row"><span class="stat-label">Win Rate</span><span class="stat-value ${rateColor(lmbBet.rate).replace('rate-','')}">${lmbBet.rate}%</span></div>
       <div class="llm-bar"><div class="llm-bar-fill" style="width:${lmbBet.rate}%;background:${barColor(lmbBet.rate)}"></div></div>
     </div>`;
@@ -288,7 +229,7 @@ function renderDashboard(liveData, soccerData) {
   const soccerBet = calcBetStats(soccerGames);
   if (soccerBet.total > 0) {
     html += `<div class="card"><div class="card-title">⚽ Fútbol</div>
-      <div class="stat-row"><span class="stat-label">Predicciones</span><span class="stat-value">${soccerBet.ok}✅ ${soccerBet.fail}❌ <span class="stat-sub">(${soccerBet.total})</span></span></div>
+      <div class="stat-row"><span class="stat-label">Apuestas</span><span class="stat-value">${soccerBet.ok}✅ ${soccerBet.fail}❌ <span class="stat-sub">(${soccerBet.total})</span></span></div>
       <div class="stat-row"><span class="stat-label">Win Rate</span><span class="stat-value ${rateColor(soccerBet.rate).replace('rate-','')}">${soccerBet.rate}%</span></div>
       <div class="llm-bar"><div class="llm-bar-fill" style="width:${soccerBet.rate}%;background:${barColor(soccerBet.rate)}"></div></div>
     </div>`;
@@ -325,7 +266,7 @@ function renderDashboard(liveData, soccerData) {
         const meta = ligaLabels[lk] || { label: lk, icon: '📋' };
         const rate = Math.round(s.ok / s.total * 100);
         html += `<div class="card"><div class="card-title">${meta.icon} ${meta.label}</div>
-          <div class="stat-row"><span class="stat-label">Predicciones</span><span class="stat-value">${s.ok}✅ ${s.fail}❌ <span class="stat-sub">(${s.total})</span></span></div>
+          <div class="stat-row"><span class="stat-label">Apuestas</span><span class="stat-value">${s.ok}✅ ${s.fail}❌ <span class="stat-sub">(${s.total})</span></span></div>
           <div class="stat-row"><span class="stat-label">Win Rate</span><span class="stat-value ${rateColor(rate).replace('rate-','')}">${rate}%</span></div>
           <div class="llm-bar"><div class="llm-bar-fill" style="width:${rate}%;background:${barColor(rate)}"></div></div>
         </div>`;
