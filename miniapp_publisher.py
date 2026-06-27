@@ -877,7 +877,9 @@ def _save_llm_to_csv(ir: str, pq: str, factores: list, game: dict):
                     cols.append(c)
             import csv as _csv_out
             with open(csv_path, "w", newline="", encoding="utf-8") as f:
-                _csv_out.DictWriter(f, fieldnames=cols).writerows(rows)
+                w = _csv_out.DictWriter(f, fieldnames=cols)
+                w.writeheader()
+                w.writerows(rows)
             logger.info(f"CSV actualizado con LLM: {fav} vs {opp}")
     except Exception as e:
         logger.warning(f"Error guardando LLM en CSV: {e}")
@@ -2162,7 +2164,6 @@ def _build_data(skip_llm: bool = False) -> dict:
 
     # llm_sections: desglose por secciones por deporte (equipo, lanzadores, bateadores, etc.)
     try:
-        import data_manager as dm
         _sports_for_sections = ("MLB", "LMB", "NBA", "WNBA", "SOCCER", "NFL")
         _sections_data = {}
         for _sp in _sports_for_sections:

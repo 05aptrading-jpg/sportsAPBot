@@ -258,8 +258,9 @@ function renderDashboard(liveData, soccerData) {
     let total = 0, ok = 0, fail = 0;
     for (const g of gamesList) {
       if (ligaFilter && g.liga !== ligaFilter) continue;
-      if (g.resultado === 'acertado') { total++; ok++; }
-      else if (g.resultado === 'fallido') { total++; fail++; }
+      const r = (g.resultado || g.result || '').toLowerCase();
+      if (r === 'acertado' || r === 'win') { total++; ok++; }
+      else if (r === 'fallido' || r === 'loss') { total++; fail++; }
     }
     return { total, ok, fail, rate: total > 0 ? Math.round(ok/total*100) : 0 };
   }
@@ -335,7 +336,10 @@ function renderDashboard(liveData, soccerData) {
   }
 
   // ── Recientes (últimos partidos) ──
-  const allGames = [...games, ...soccerGames].filter(g => g.resultado === 'acertado' || g.resultado === 'fallido');
+  const allGames = [...games, ...soccerGames].filter(g => {
+    const r = (g.resultado || g.result || '').toLowerCase();
+    return r === 'acertado' || r === 'win' || r === 'fallido' || r === 'loss';
+  });
   allGames.sort((a, b) => ((b.fecha_partido || b.fecha_hora || '') > (a.fecha_partido || a.fecha_hora || '')) ? 1 : -1);
   const recent = allGames.slice(0, 20);
   if (recent.length > 0) {
@@ -343,7 +347,8 @@ function renderDashboard(liveData, soccerData) {
     html += `<div class="card">
       <div style="display:flex;flex-direction:column;gap:4px">`;
     for (const g of recent) {
-      const emoji = g.resultado === 'acertado' ? '✅' : '❌';
+      const r = (g.resultado || g.result || '').toLowerCase();
+      const emoji = (r === 'acertado' || r === 'win') ? '✅' : '❌';
       const local = g.local || g.home || '?';
       const visit = g.visitante || g.away || '?';
       const marcador = g.marcador_final || '';
