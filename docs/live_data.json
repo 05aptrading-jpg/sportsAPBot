@@ -1,5 +1,5 @@
 {
-  "fecha": "26/06/2026 21:36",
+  "fecha": "26/06/2026 21:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782568800,
@@ -12857,7 +12857,7 @@
       "opp_team": "San Francisco Giants",
       "score_fav": "3",
       "score_opp": "1",
-      "state": "Bottom 5th",
+      "state": "Top 6th",
       "result": "live",
       "label": "🎯",
       "game_pk": 823206,
@@ -12894,18 +12894,22 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
         "outs": 1,
-        "balls": 2,
+        "balls": 4,
         "strikes": 1,
         "away_runs": 3,
         "home_runs": 1,
         "away_hits": 7,
-        "home_hits": 4,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Atlanta Braves",
@@ -14078,8 +14082,8 @@
       "fav_team": "Los Angeles Angels",
       "opp_team": "Athletics",
       "score_fav": "3",
-      "score_opp": "7",
-      "state": "Top 7th",
+      "score_opp": "9",
+      "state": "Bottom 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 824014,
@@ -14118,19 +14122,19 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
+            "away_runs": 2,
             "home_runs": 0
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 3,
+        "outs": 2,
+        "balls": 2,
         "strikes": 2,
-        "away_runs": 7,
+        "away_runs": 9,
         "home_runs": 3,
-        "away_hits": 7,
+        "away_hits": 10,
         "home_hits": 8,
         "away_errors": 0,
         "home_errors": 2,
@@ -14144,9 +14148,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "7",
+        "fav_score": "9",
         "opp_score": "3",
-        "score_fav": "7",
+        "score_fav": "9",
         "score_opp": "3"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40",
@@ -14160,7 +14164,7 @@
       "opp_team": "Los Angeles Dodgers",
       "score_fav": "3",
       "score_opp": "1",
-      "state": "Bottom 6th",
+      "state": "Bottom 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 823285,
@@ -14197,14 +14201,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": false,
-        "inning_ordinal": "6th",
+        "inning_ordinal": "7th",
         "outs": 2,
-        "balls": 0,
-        "strikes": 1,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 1,
         "home_runs": 3,
         "away_hits": 4,
@@ -14315,9 +14323,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "8",
         "opp_score": "9",
         "score_fav": "8",
@@ -14998,7 +15006,7 @@
     "823206": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 5th",
+      "status": "Top 6th",
       "away_runs": 3,
       "home_runs": 1,
       "away_team_name": "San Francisco Giants",
@@ -15024,18 +15032,22 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
         "outs": 1,
-        "balls": 2,
+        "balls": 4,
         "strikes": 1,
         "away_runs": 3,
         "home_runs": 1,
         "away_hits": 7,
-        "home_hits": 4,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Atlanta Braves",
@@ -15657,9 +15669,9 @@
     "824014": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 7th",
+      "status": "Bottom 7th",
       "away_runs": 3,
-      "home_runs": 7,
+      "home_runs": 9,
       "away_team_name": "Athletics",
       "home_team_name": "Los Angeles Angels",
       "linescore": {
@@ -15689,19 +15701,19 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
+            "away_runs": 2,
             "home_runs": 0
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 3,
+        "outs": 2,
+        "balls": 2,
         "strikes": 2,
-        "away_runs": 7,
+        "away_runs": 9,
         "home_runs": 3,
-        "away_hits": 7,
+        "away_hits": 10,
         "home_hits": 8,
         "away_errors": 0,
         "home_errors": 2,
@@ -15715,16 +15727,16 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "7",
+        "fav_score": "9",
         "opp_score": "3",
-        "score_fav": "7",
+        "score_fav": "9",
         "score_opp": "3"
       }
     },
     "823285": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 6th",
+      "status": "Bottom 7th",
       "away_runs": 3,
       "home_runs": 1,
       "away_team_name": "Los Angeles Dodgers",
@@ -15754,14 +15766,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": false,
-        "inning_ordinal": "6th",
+        "inning_ordinal": "7th",
         "outs": 2,
-        "balls": 0,
-        "strikes": 1,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 1,
         "home_runs": 3,
         "away_hits": 4,
@@ -15854,9 +15870,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "8",
         "opp_score": "9",
         "score_fav": "8",
@@ -16014,7 +16030,7 @@
       }
     }
   },
-  "updated_at": "26/06/2026 21:36",
+  "updated_at": "26/06/2026 21:52",
   "stats": {
     "total": 92,
     "acertados": 57,
@@ -21265,8 +21281,8 @@
       "away": "Atlanta Dream",
       "home_abbr": "GS",
       "away_abbr": "ATL",
-      "home_score": 49,
-      "away_score": 51,
+      "home_score": 59,
+      "away_score": 59,
       "home_linescores": [
         {
           "period": 1,
@@ -21280,8 +21296,13 @@
         },
         {
           "period": 3,
-          "value": 17,
-          "display": "17"
+          "value": 19,
+          "display": "19"
+        },
+        {
+          "period": 4,
+          "value": 8,
+          "display": "8"
         }
       ],
       "away_linescores": [
@@ -21297,13 +21318,18 @@
         },
         {
           "period": 3,
-          "value": 16,
-          "display": "16"
+          "value": 20,
+          "display": "20"
+        },
+        {
+          "period": 4,
+          "value": 4,
+          "display": "4"
         }
       ],
-      "clock": "36.3",
-      "period": 3,
-      "state": "Q3 36.3",
+      "clock": "6:03",
+      "period": 4,
+      "state": "Q4 6:03",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/GS.png&h=40&w=40",
