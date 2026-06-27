@@ -1,5 +1,5 @@
 {
-  "fecha": "27/06/2026 11:37",
+  "fecha": "27/06/2026 11:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782655200,
@@ -13654,8 +13654,8 @@
       "fav_team": "Detroit Tigers",
       "opp_team": "Houston Astros",
       "score_fav": "0",
-      "score_opp": "2",
-      "state": "Middle 2nd",
+      "score_opp": "3",
+      "state": "Top 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 824257,
@@ -13676,20 +13676,24 @@
           {
             "away_runs": 2,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
-        "outs": 3,
-        "balls": 1,
+        "inning_ordinal": "3rd",
+        "outs": 2,
+        "balls": 3,
         "strikes": 2,
-        "away_runs": 2,
+        "away_runs": 3,
         "home_runs": 0,
-        "away_hits": 2,
-        "home_hits": 1,
+        "away_hits": 5,
+        "home_hits": 3,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "Houston Astros",
         "home_team_name": "Detroit Tigers",
         "bases": {
@@ -13700,9 +13704,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "2",
+        "fav_score": "3",
         "opp_score": "0",
-        "score_fav": "2",
+        "score_fav": "3",
         "score_opp": "0"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
@@ -13933,8 +13937,8 @@
       "fav_team": "New York Yankees",
       "opp_team": "Boston Red Sox",
       "score_fav": "0",
-      "score_opp": "1",
-      "state": "Bottom 2nd",
+      "score_opp": "2",
+      "state": "Bottom 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 824745,
@@ -13954,19 +13958,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "inning_ordinal": "3rd",
+        "outs": 0,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 0,
-        "home_runs": 1,
+        "home_runs": 2,
         "away_hits": 0,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "New York Yankees",
@@ -13980,9 +13988,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "1",
+        "opp_score": "2",
         "score_fav": "0",
-        "score_opp": "1"
+        "score_opp": "2"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYY.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BOS.png&h=40&w=40"
@@ -15206,9 +15214,9 @@
     "824257": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 2nd",
+      "status": "Top 3rd",
       "away_runs": 0,
-      "home_runs": 2,
+      "home_runs": 3,
       "away_team_name": "Houston Astros",
       "home_team_name": "Detroit Tigers",
       "linescore": {
@@ -15220,20 +15228,24 @@
           {
             "away_runs": 2,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
-        "outs": 3,
-        "balls": 1,
+        "inning_ordinal": "3rd",
+        "outs": 2,
+        "balls": 3,
         "strikes": 2,
-        "away_runs": 2,
+        "away_runs": 3,
         "home_runs": 0,
-        "away_hits": 2,
-        "home_hits": 1,
+        "away_hits": 5,
+        "home_hits": 3,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "Houston Astros",
         "home_team_name": "Detroit Tigers",
         "bases": {
@@ -15244,9 +15256,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "2",
+        "fav_score": "3",
         "opp_score": "0",
-        "score_fav": "2",
+        "score_fav": "3",
         "score_opp": "0"
       }
     },
@@ -15415,9 +15427,9 @@
     "824745": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 2nd",
+      "status": "Bottom 3rd",
       "away_runs": 0,
-      "home_runs": 1,
+      "home_runs": 2,
       "away_team_name": "Boston Red Sox",
       "home_team_name": "New York Yankees",
       "linescore": {
@@ -15428,19 +15440,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "inning_ordinal": "3rd",
+        "outs": 0,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 0,
-        "home_runs": 1,
+        "home_runs": 2,
         "away_hits": 0,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "New York Yankees",
@@ -15454,9 +15470,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "1",
+        "opp_score": "2",
         "score_fav": "0",
-        "score_opp": "1"
+        "score_opp": "2"
       }
     },
     "824825": {
@@ -15536,7 +15552,7 @@
       }
     }
   },
-  "updated_at": "27/06/2026 11:37",
+  "updated_at": "27/06/2026 11:52",
   "stats": {
     "total": 95,
     "acertados": 58,
