@@ -1,5 +1,5 @@
 {
-  "fecha": "27/06/2026 12:36",
+  "fecha": "27/06/2026 12:51",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782655200,
@@ -13658,9 +13658,9 @@
       "status_emoji": "🔴",
       "fav_team": "Detroit Tigers",
       "opp_team": "Houston Astros",
-      "score_fav": "5",
+      "score_fav": "6",
       "score_opp": "4",
-      "state": "Top 5th",
+      "state": "Bottom 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 824257,
@@ -13692,19 +13692,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": true,
-        "inning_ordinal": "5th",
-        "outs": 2,
+        "current_inning": 6,
+        "is_top": false,
+        "inning_ordinal": "6th",
+        "outs": 0,
         "balls": 0,
         "strikes": 0,
         "away_runs": 4,
-        "home_runs": 5,
+        "home_runs": 6,
         "away_hits": 8,
-        "home_hits": 8,
+        "home_hits": 9,
         "away_errors": 1,
         "home_errors": 1,
         "away_team_name": "Houston Astros",
@@ -13718,9 +13722,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "4",
-        "opp_score": "5",
+        "opp_score": "6",
         "score_fav": "4",
-        "score_opp": "5"
+        "score_opp": "6"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40"
@@ -13733,7 +13737,7 @@
       "opp_team": "Texas Rangers",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "📋",
       "game_pk": 822794,
@@ -13773,7 +13777,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -13951,7 +13955,7 @@
       "opp_team": "Boston Red Sox",
       "score_fav": "1",
       "score_opp": "4",
-      "state": "Bottom 6th",
+      "state": "Top 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 824745,
@@ -13988,18 +13992,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
         "outs": 0,
-        "balls": 1,
+        "balls": 0,
         "strikes": 2,
         "away_runs": 1,
         "home_runs": 4,
-        "away_hits": 1,
-        "home_hits": 6,
+        "away_hits": 2,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "New York Yankees",
@@ -15244,8 +15252,8 @@
     "824257": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 5th",
-      "away_runs": 5,
+      "status": "Bottom 6th",
+      "away_runs": 6,
       "home_runs": 4,
       "away_team_name": "Houston Astros",
       "home_team_name": "Detroit Tigers",
@@ -15269,19 +15277,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": true,
-        "inning_ordinal": "5th",
-        "outs": 2,
+        "current_inning": 6,
+        "is_top": false,
+        "inning_ordinal": "6th",
+        "outs": 0,
         "balls": 0,
         "strikes": 0,
         "away_runs": 4,
-        "home_runs": 5,
+        "home_runs": 6,
         "away_hits": 8,
-        "home_hits": 8,
+        "home_hits": 9,
         "away_errors": 1,
         "home_errors": 1,
         "away_team_name": "Houston Astros",
@@ -15295,15 +15307,15 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "4",
-        "opp_score": "5",
+        "opp_score": "6",
         "score_fav": "4",
-        "score_opp": "5"
+        "score_opp": "6"
       }
     },
     "822794": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Texas Rangers",
@@ -15336,7 +15348,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -15465,7 +15477,7 @@
     "824745": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 6th",
+      "status": "Top 7th",
       "away_runs": 1,
       "home_runs": 4,
       "away_team_name": "Boston Red Sox",
@@ -15495,18 +15507,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
         "outs": 0,
-        "balls": 1,
+        "balls": 0,
         "strikes": 2,
         "away_runs": 1,
         "home_runs": 4,
-        "away_hits": 1,
-        "home_hits": 6,
+        "away_hits": 2,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "New York Yankees",
@@ -15602,7 +15618,7 @@
       }
     }
   },
-  "updated_at": "27/06/2026 12:36",
+  "updated_at": "27/06/2026 12:51",
   "stats": {
     "total": 95,
     "acertados": 58,
@@ -18993,8 +19009,8 @@
       "away": "Phoenix Mercury",
       "home_abbr": "TOR",
       "away_abbr": "PHX",
-      "home_score": 22,
-      "away_score": 26,
+      "home_score": 34,
+      "away_score": 34,
       "home_linescores": [
         {
           "period": 1,
@@ -19003,8 +19019,8 @@
         },
         {
           "period": 2,
-          "value": 0,
-          "display": "0"
+          "value": 12,
+          "display": "12"
         }
       ],
       "away_linescores": [
@@ -19015,13 +19031,13 @@
         },
         {
           "period": 2,
-          "value": 6,
-          "display": "6"
+          "value": 14,
+          "display": "14"
         }
       ],
-      "clock": "8:34",
+      "clock": "4:09",
       "period": 2,
-      "state": "Q2 8:34",
+      "state": "Q2 4:09",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/TOR.png&h=40&w=40",
