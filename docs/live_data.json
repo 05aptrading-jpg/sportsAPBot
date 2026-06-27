@@ -1,5 +1,5 @@
 {
-  "fecha": "27/06/2026 14:07",
+  "fecha": "27/06/2026 14:22",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782655200,
@@ -13373,7 +13373,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Delayed Start",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -13735,9 +13735,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "8",
         "opp_score": "6",
         "score_fav": "8",
@@ -13754,7 +13754,7 @@
       "opp_team": "Texas Rangers",
       "score_fav": "0",
       "score_opp": "1",
-      "state": "Top 4th",
+      "state": "Top 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 822794,
@@ -13783,14 +13783,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": true,
-        "inning_ordinal": "4th",
-        "outs": 2,
-        "balls": 2,
-        "strikes": 1,
+        "inning_ordinal": "5th",
+        "outs": 1,
+        "balls": 3,
+        "strikes": 3,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 2,
@@ -13870,13 +13874,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-27",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Chicago White Sox",
       "opp_team": "Kansas City Royals",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "End 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 824581,
       "fav_abbr": "CHW",
@@ -13895,9 +13899,9 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 3,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
@@ -13913,9 +13917,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -15094,7 +15098,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Delayed Start",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -15372,9 +15376,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "8",
         "opp_score": "6",
         "score_fav": "8",
@@ -15384,7 +15388,7 @@
     "822794": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 4th",
+      "status": "Top 5th",
       "away_runs": 0,
       "home_runs": 1,
       "away_team_name": "Texas Rangers",
@@ -15406,14 +15410,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": true,
-        "inning_ordinal": "4th",
-        "outs": 2,
-        "balls": 2,
-        "strikes": 1,
+        "inning_ordinal": "5th",
+        "outs": 1,
+        "balls": 3,
+        "strikes": 3,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 2,
@@ -15475,9 +15483,9 @@
       }
     },
     "824581": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "End 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Kansas City Royals",
@@ -15490,9 +15498,9 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 3,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
@@ -15508,9 +15516,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -15722,7 +15730,7 @@
       }
     }
   },
-  "updated_at": "27/06/2026 14:07",
+  "updated_at": "27/06/2026 14:22",
   "stats": {
     "total": 95,
     "acertados": 58,
@@ -19108,13 +19116,13 @@
     {
       "game_date": "2026-06-27",
       "game_id": "401857027",
-      "status_emoji": "🔴",
+      "status_emoji": "🏁",
       "home": "Toronto Tempo",
       "away": "Phoenix Mercury",
       "home_abbr": "TOR",
       "away_abbr": "PHX",
       "home_score": 80,
-      "away_score": 83,
+      "away_score": 89,
       "home_linescores": [
         {
           "period": 1,
@@ -19155,14 +19163,14 @@
         },
         {
           "period": 4,
-          "value": 18,
-          "display": "18"
+          "value": 24,
+          "display": "24"
         }
       ],
-      "clock": "1:28",
+      "clock": "0.0",
       "period": 4,
-      "state": "Q4 1:28",
-      "result": "live",
+      "state": "Final",
+      "result": "completed",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/TOR.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/PHX.png&h=40&w=40"
