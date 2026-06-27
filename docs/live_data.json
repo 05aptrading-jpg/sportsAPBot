@@ -1,5 +1,5 @@
 {
-  "fecha": "26/06/2026 20:35",
+  "fecha": "26/06/2026 20:54",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782568800,
@@ -12855,9 +12855,9 @@
       "status_emoji": "🔴",
       "fav_team": "Atlanta Braves",
       "opp_team": "San Francisco Giants",
-      "score_fav": "0",
+      "score_fav": "1",
       "score_opp": "1",
-      "state": "Top 2nd",
+      "state": "Top 3rd",
       "result": "live",
       "label": "🎯",
       "game_pk": 823206,
@@ -12880,22 +12880,26 @@
             "home_runs": 1
           },
           {
+            "away_runs": 1,
+            "home_runs": 0
+          },
+          {
             "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
+        "inning_ordinal": "3rd",
         "outs": 1,
-        "balls": 0,
-        "strikes": 2,
-        "away_runs": 0,
+        "balls": 1,
+        "strikes": 1,
+        "away_runs": 1,
         "home_runs": 1,
-        "away_hits": 1,
-        "home_hits": 2,
+        "away_hits": 4,
+        "home_hits": 3,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "Atlanta Braves",
         "home_team_name": "San Francisco Giants",
         "bases": {
@@ -12906,9 +12910,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "1",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "1"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATL.png&h=40&w=40",
@@ -12960,13 +12964,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-26",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Milwaukee Brewers",
       "opp_team": "Chicago Cubs",
       "score_fav": "6",
       "score_opp": "2",
-      "state": "Top 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 823773,
       "fav_abbr": "MIL",
@@ -13023,8 +13027,8 @@
         "current_inning": 9,
         "is_top": true,
         "inning_ordinal": "9th",
-        "outs": 1,
-        "balls": 3,
+        "outs": 3,
+        "balls": 2,
         "strikes": 2,
         "away_runs": 2,
         "home_runs": 6,
@@ -13039,9 +13043,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "2",
         "opp_score": "6",
         "score_fav": "2",
@@ -13786,9 +13790,9 @@
       "status_emoji": "🔴",
       "fav_team": "Miami Marlins",
       "opp_team": "St. Louis Cardinals",
-      "score_fav": "1",
+      "score_fav": "2",
       "score_opp": "0",
-      "state": "Rain Delay, Top 8th",
+      "state": "Bottom 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 823039,
@@ -13835,17 +13839,17 @@
             "home_runs": 0
           },
           {
-            "away_runs": 1,
+            "away_runs": 2,
             "home_runs": 0
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
         "outs": 0,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 1,
+        "balls": 1,
+        "strikes": 1,
+        "away_runs": 2,
         "home_runs": 0,
         "away_hits": 7,
         "home_hits": 2,
@@ -13858,12 +13862,12 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Delayed",
-        "fav_score": "1",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
+        "fav_score": "2",
         "opp_score": "0",
-        "score_fav": "1",
+        "score_fav": "2",
         "score_opp": "0"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIA.png&h=40&w=40",
@@ -14061,9 +14065,9 @@
       "status_emoji": "🔴",
       "fav_team": "Los Angeles Angels",
       "opp_team": "Athletics",
-      "score_fav": "0",
-      "score_opp": "0",
-      "state": "Bottom 4th",
+      "score_fav": "1",
+      "score_opp": "5",
+      "state": "Top 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 824014,
@@ -14092,20 +14096,24 @@
           {
             "away_runs": 0,
             "home_runs": 1
+          },
+          {
+            "away_runs": 6,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 2,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
-        "away_runs": 0,
+        "away_runs": 6,
         "home_runs": 1,
-        "away_hits": 0,
+        "away_hits": 5,
         "home_hits": 5,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "Athletics",
         "home_team_name": "Los Angeles Angels",
         "bases": {
@@ -14116,9 +14124,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "6",
         "opp_score": "1",
-        "score_fav": "0",
+        "score_fav": "6",
         "score_opp": "1"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40",
@@ -14132,7 +14140,7 @@
       "opp_team": "Los Angeles Dodgers",
       "score_fav": "3",
       "score_opp": "1",
-      "state": "Bottom 3rd",
+      "state": "Bottom 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 823285,
@@ -14157,18 +14165,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": false,
-        "inning_ordinal": "3rd",
+        "inning_ordinal": "4th",
         "outs": 2,
-        "balls": 1,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 1,
         "home_runs": 3,
         "away_hits": 3,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Los Angeles Dodgers",
@@ -14195,9 +14207,9 @@
       "status_emoji": "🔴",
       "fav_team": "Colorado Rockies",
       "opp_team": "Minnesota Twins",
-      "score_fav": "3",
+      "score_fav": "8",
       "score_opp": "7",
-      "state": "Top 9th",
+      "state": "Bottom 9th",
       "result": "live",
       "label": "📋",
       "game_pk": 823688,
@@ -14248,20 +14260,20 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
+            "away_runs": 5,
             "home_runs": 0
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
-        "strikes": 1,
-        "away_runs": 3,
+        "strikes": 2,
+        "away_runs": 8,
         "home_runs": 7,
-        "away_hits": 6,
-        "home_hits": 10,
+        "away_hits": 11,
+        "home_hits": 11,
         "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Colorado Rockies",
@@ -14274,9 +14286,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "3",
+        "fav_score": "8",
         "opp_score": "7",
-        "score_fav": "3",
+        "score_fav": "8",
         "score_opp": "7"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/COL.png&h=40&w=40",
@@ -14417,13 +14429,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-26",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "Kansas City Royals",
       "opp_team": "Chicago White Sox",
       "score_fav": "1",
       "score_opp": "22",
-      "state": "Top 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "loss",
       "label": "📋",
       "game_pk": 824582,
       "fav_abbr": "KC",
@@ -14480,7 +14492,7 @@
         "current_inning": 9,
         "is_top": true,
         "inning_ordinal": "9th",
-        "outs": 2,
+        "outs": 3,
         "balls": 1,
         "strikes": 0,
         "away_runs": 1,
@@ -14496,9 +14508,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "1",
         "opp_score": "22",
         "score_fav": "1",
@@ -14954,8 +14966,8 @@
     "823206": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 2nd",
-      "away_runs": 0,
+      "status": "Top 3rd",
+      "away_runs": 1,
       "home_runs": 1,
       "away_team_name": "San Francisco Giants",
       "home_team_name": "Atlanta Braves",
@@ -14966,22 +14978,26 @@
             "home_runs": 1
           },
           {
+            "away_runs": 1,
+            "home_runs": 0
+          },
+          {
             "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
+        "inning_ordinal": "3rd",
         "outs": 1,
-        "balls": 0,
-        "strikes": 2,
-        "away_runs": 0,
+        "balls": 1,
+        "strikes": 1,
+        "away_runs": 1,
         "home_runs": 1,
-        "away_hits": 1,
-        "home_hits": 2,
+        "away_hits": 4,
+        "home_hits": 3,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "Atlanta Braves",
         "home_team_name": "San Francisco Giants",
         "bases": {
@@ -14992,16 +15008,16 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "1",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "1"
       }
     },
     "823773": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Top 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 6,
       "home_runs": 2,
       "away_team_name": "Chicago Cubs",
@@ -15048,8 +15064,8 @@
         "current_inning": 9,
         "is_top": true,
         "inning_ordinal": "9th",
-        "outs": 1,
-        "balls": 3,
+        "outs": 3,
+        "balls": 2,
         "strikes": 2,
         "away_runs": 2,
         "home_runs": 6,
@@ -15064,9 +15080,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "2",
         "opp_score": "6",
         "score_fav": "2",
@@ -15451,8 +15467,8 @@
     "823039": {
       "is_live": true,
       "is_final": false,
-      "status": "Rain Delay, Top 8th",
-      "away_runs": 1,
+      "status": "Bottom 8th",
+      "away_runs": 2,
       "home_runs": 0,
       "away_team_name": "St. Louis Cardinals",
       "home_team_name": "Miami Marlins",
@@ -15487,17 +15503,17 @@
             "home_runs": 0
           },
           {
-            "away_runs": 1,
+            "away_runs": 2,
             "home_runs": 0
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
         "outs": 0,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 1,
+        "balls": 1,
+        "strikes": 1,
+        "away_runs": 2,
         "home_runs": 0,
         "away_hits": 7,
         "home_hits": 2,
@@ -15510,12 +15526,12 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Delayed",
-        "fav_score": "1",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
+        "fav_score": "2",
         "opp_score": "0",
-        "score_fav": "1",
+        "score_fav": "2",
         "score_opp": "0"
       }
     },
@@ -15597,9 +15613,9 @@
     "824014": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 4th",
-      "away_runs": 0,
-      "home_runs": 0,
+      "status": "Top 5th",
+      "away_runs": 1,
+      "home_runs": 5,
       "away_team_name": "Athletics",
       "home_team_name": "Los Angeles Angels",
       "linescore": {
@@ -15619,20 +15635,24 @@
           {
             "away_runs": 0,
             "home_runs": 1
+          },
+          {
+            "away_runs": 6,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 2,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
-        "away_runs": 0,
+        "away_runs": 6,
         "home_runs": 1,
-        "away_hits": 0,
+        "away_hits": 5,
         "home_hits": 5,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "Athletics",
         "home_team_name": "Los Angeles Angels",
         "bases": {
@@ -15643,16 +15663,16 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "6",
         "opp_score": "1",
-        "score_fav": "0",
+        "score_fav": "6",
         "score_opp": "1"
       }
     },
     "823285": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 3rd",
+      "status": "Bottom 4th",
       "away_runs": 3,
       "home_runs": 1,
       "away_team_name": "Los Angeles Dodgers",
@@ -15670,18 +15690,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": false,
-        "inning_ordinal": "3rd",
+        "inning_ordinal": "4th",
         "outs": 2,
-        "balls": 1,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 1,
         "home_runs": 3,
         "away_hits": 3,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Los Angeles Dodgers",
@@ -15703,8 +15727,8 @@
     "823688": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 9th",
-      "away_runs": 3,
+      "status": "Bottom 9th",
+      "away_runs": 8,
       "home_runs": 7,
       "away_team_name": "Minnesota Twins",
       "home_team_name": "Colorado Rockies",
@@ -15743,20 +15767,20 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
+            "away_runs": 5,
             "home_runs": 0
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
-        "strikes": 1,
-        "away_runs": 3,
+        "strikes": 2,
+        "away_runs": 8,
         "home_runs": 7,
-        "away_hits": 6,
-        "home_hits": 10,
+        "away_hits": 11,
+        "home_hits": 11,
         "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Colorado Rockies",
@@ -15769,9 +15793,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "3",
+        "fav_score": "8",
         "opp_score": "7",
-        "score_fav": "3",
+        "score_fav": "8",
         "score_opp": "7"
       }
     },
@@ -15851,9 +15875,9 @@
       }
     },
     "824582": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Top 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 1,
       "home_runs": 22,
       "away_team_name": "Chicago White Sox",
@@ -15900,7 +15924,7 @@
         "current_inning": 9,
         "is_top": true,
         "inning_ordinal": "9th",
-        "outs": 2,
+        "outs": 3,
         "balls": 1,
         "strikes": 0,
         "away_runs": 1,
@@ -15916,9 +15940,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "1",
         "opp_score": "22",
         "score_fav": "1",
@@ -15926,7 +15950,7 @@
       }
     }
   },
-  "updated_at": "26/06/2026 20:35",
+  "updated_at": "26/06/2026 20:54",
   "stats": {
     "total": 92,
     "acertados": 57,
@@ -17073,92 +17097,40 @@
   },
   "hits_board": {
     "MLB": {
-      "Kansas City Royals": [
-        {
-          "nombre": "Bobby Witt Jr.",
-          "prob": 70.3,
-          "player_id": 677951,
-          "game_pk": "824582",
-          "equipo": "Kansas City Royals",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Kameron Misner",
-          "prob": 68.3,
-          "player_id": 670224,
-          "game_pk": "824582",
-          "equipo": "Kansas City Royals",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Michael Massey",
-          "prob": 68.2,
-          "player_id": 686681,
-          "game_pk": "824582",
-          "equipo": "Kansas City Royals",
-          "status": "pendiente"
-        }
-      ],
-      "Chicago White Sox": [
-        {
-          "nombre": "Tristan Peters",
-          "prob": 100.0,
-          "player_id": 671976,
-          "game_pk": "824582",
-          "equipo": "Chicago White Sox",
-          "status": "cumplio"
-        },
-        {
-          "nombre": "Randal Grichuk",
-          "prob": 68.9,
-          "player_id": 545341,
-          "game_pk": "824582",
-          "equipo": "Chicago White Sox",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Sam Antonacci",
-          "prob": 100.0,
-          "player_id": 803011,
-          "game_pk": "824582",
-          "equipo": "Chicago White Sox",
-          "status": "cumplio"
-        }
-      ],
       "Chicago Cubs": [
         {
           "nombre": "Pete Crow-Armstrong",
-          "prob": 68.8,
+          "prob": 61.8,
           "player_id": 691718,
           "game_pk": "823773",
           "equipo": "Chicago Cubs",
-          "status": "pendiente"
+          "status": "fallido"
         },
         {
           "nombre": "Carson Kelly",
-          "prob": 68.1,
+          "prob": 61.0,
           "player_id": 608348,
           "game_pk": "823773",
           "equipo": "Chicago Cubs",
-          "status": "pendiente"
+          "status": "fallido"
         },
         {
           "nombre": "Pedro Ramírez",
-          "prob": 67.3,
+          "prob": 60.4,
           "player_id": 699393,
           "game_pk": "823773",
           "equipo": "Chicago Cubs",
-          "status": "pendiente"
+          "status": "fallido"
         }
       ],
       "Milwaukee Brewers": [
         {
           "nombre": "Andrew Vaughn",
-          "prob": 73.6,
+          "prob": 73.7,
           "player_id": 683734,
           "game_pk": "823773",
           "equipo": "Milwaukee Brewers",
-          "status": "pendiente"
+          "status": "fallido"
         },
         {
           "nombre": "Jackson Chourio",
@@ -17174,6 +17146,578 @@
           "player_id": 661388,
           "game_pk": "823773",
           "equipo": "Milwaukee Brewers",
+          "status": "cumplio"
+        }
+      ],
+      "Philadelphia Phillies": [
+        {
+          "nombre": "Brandon Marsh",
+          "prob": 74.7,
+          "player_id": 669016,
+          "game_pk": "823610",
+          "equipo": "Philadelphia Phillies",
+          "status": "fallido"
+        },
+        {
+          "nombre": "Bryce Harper",
+          "prob": 100.0,
+          "player_id": 547180,
+          "game_pk": "823610",
+          "equipo": "Philadelphia Phillies",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Derek Hill",
+          "prob": 100.0,
+          "player_id": 656537,
+          "game_pk": "823610",
+          "equipo": "Philadelphia Phillies",
+          "status": "cumplio"
+        }
+      ],
+      "New York Mets": [
+        {
+          "nombre": "Juan Soto",
+          "prob": 63.2,
+          "player_id": 665742,
+          "game_pk": "823610",
+          "equipo": "New York Mets",
+          "status": "fallido"
+        },
+        {
+          "nombre": "Bo Bichette",
+          "prob": 100.0,
+          "player_id": 666182,
+          "game_pk": "823610",
+          "equipo": "New York Mets",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Carson Benge",
+          "prob": 100.0,
+          "player_id": 701807,
+          "game_pk": "823610",
+          "equipo": "New York Mets",
+          "status": "cumplio"
+        }
+      ],
+      "Atlanta Braves": [
+        {
+          "nombre": "Michael Harris II",
+          "prob": 100.0,
+          "player_id": 671739,
+          "game_pk": "823206",
+          "equipo": "Atlanta Braves",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Dominic Smith",
+          "prob": 100.0,
+          "player_id": 642086,
+          "game_pk": "823206",
+          "equipo": "Atlanta Braves",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Ozzie Albies",
+          "prob": 69.1,
+          "player_id": 645277,
+          "game_pk": "823206",
+          "equipo": "Atlanta Braves",
+          "status": "pendiente"
+        }
+      ],
+      "San Francisco Giants": [
+        {
+          "nombre": "Jung Hoo Lee",
+          "prob": 74.6,
+          "player_id": 808982,
+          "game_pk": "823206",
+          "equipo": "San Francisco Giants",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Luis Arraez",
+          "prob": 100.0,
+          "player_id": 650333,
+          "game_pk": "823206",
+          "equipo": "San Francisco Giants",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Casey Schmitt",
+          "prob": 70.6,
+          "player_id": 669477,
+          "game_pk": "823206",
+          "equipo": "San Francisco Giants",
+          "status": "pendiente"
+        }
+      ],
+      "Houston Astros": [
+        {
+          "nombre": "Yordan Alvarez",
+          "prob": 67.8,
+          "player_id": 670541,
+          "game_pk": "824255",
+          "equipo": "Houston Astros",
+          "status": "fallido"
+        },
+        {
+          "nombre": "Jeremy Peña",
+          "prob": 100.0,
+          "player_id": 665161,
+          "game_pk": "824255",
+          "equipo": "Houston Astros",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Taylor Trammell",
+          "prob": 65.2,
+          "player_id": 666211,
+          "game_pk": "824255",
+          "equipo": "Houston Astros",
+          "status": "fallido"
+        }
+      ],
+      "Detroit Tigers": [
+        {
+          "nombre": "Riley Greene",
+          "prob": 67.2,
+          "player_id": 682985,
+          "game_pk": "824255",
+          "equipo": "Detroit Tigers",
+          "status": "fallido"
+        },
+        {
+          "nombre": "Kevin McGonigle",
+          "prob": 100.0,
+          "player_id": 805808,
+          "game_pk": "824255",
+          "equipo": "Detroit Tigers",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Dillon Dingler",
+          "prob": 100.0,
+          "player_id": 693307,
+          "game_pk": "824255",
+          "equipo": "Detroit Tigers",
+          "status": "cumplio"
+        }
+      ],
+      "Arizona Diamondbacks": [
+        {
+          "nombre": "Corbin Carroll",
+          "prob": 100.0,
+          "player_id": 682998,
+          "game_pk": "822962",
+          "equipo": "Arizona Diamondbacks",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Gabriel Moreno",
+          "prob": 100.0,
+          "player_id": 672515,
+          "game_pk": "822962",
+          "equipo": "Arizona Diamondbacks",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Ildemaro Vargas",
+          "prob": 63.4,
+          "player_id": 545121,
+          "game_pk": "822962",
+          "equipo": "Arizona Diamondbacks",
+          "status": "fallido"
+        }
+      ],
+      "Tampa Bay Rays": [
+        {
+          "nombre": "Yandy Díaz",
+          "prob": 100.0,
+          "player_id": 650490,
+          "game_pk": "822962",
+          "equipo": "Tampa Bay Rays",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Chandler Simpson",
+          "prob": 71.2,
+          "player_id": 802415,
+          "game_pk": "822962",
+          "equipo": "Tampa Bay Rays",
+          "status": "fallido"
+        },
+        {
+          "nombre": "Jonny DeLuca",
+          "prob": 71.0,
+          "player_id": 676356,
+          "game_pk": "822962",
+          "equipo": "Tampa Bay Rays",
+          "status": "fallido"
+        }
+      ],
+      "Texas Rangers": [
+        {
+          "nombre": "Nicky Lopez",
+          "prob": 100.0,
+          "player_id": 670032,
+          "game_pk": "822796",
+          "equipo": "Texas Rangers",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Josh Jung",
+          "prob": 71.6,
+          "player_id": 673962,
+          "game_pk": "822796",
+          "equipo": "Texas Rangers",
+          "status": "fallido"
+        },
+        {
+          "nombre": "Wyatt Langford",
+          "prob": 100.0,
+          "player_id": 694671,
+          "game_pk": "822796",
+          "equipo": "Texas Rangers",
+          "status": "cumplio"
+        }
+      ],
+      "Toronto Blue Jays": [
+        {
+          "nombre": "Ernie Clement",
+          "prob": 100.0,
+          "player_id": 676391,
+          "game_pk": "822796",
+          "equipo": "Toronto Blue Jays",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Nathan Lukes",
+          "prob": 100.0,
+          "player_id": 664770,
+          "game_pk": "822796",
+          "equipo": "Toronto Blue Jays",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Jesús Sánchez",
+          "prob": 67.5,
+          "player_id": 660821,
+          "game_pk": "822796",
+          "equipo": "Toronto Blue Jays",
+          "status": "fallido"
+        }
+      ],
+      "Seattle Mariners": [
+        {
+          "nombre": "Randy Arozarena",
+          "prob": 100.0,
+          "player_id": 668227,
+          "game_pk": "824423",
+          "equipo": "Seattle Mariners",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Dominic Canzone",
+          "prob": 65.5,
+          "player_id": 686527,
+          "game_pk": "824423",
+          "equipo": "Seattle Mariners",
+          "status": "fallido"
+        },
+        {
+          "nombre": "Josh Naylor",
+          "prob": 64.4,
+          "player_id": 647304,
+          "game_pk": "824423",
+          "equipo": "Seattle Mariners",
+          "status": "fallido"
+        }
+      ],
+      "Cleveland Guardians": [
+        {
+          "nombre": "Brayan Rocchio",
+          "prob": 100.0,
+          "player_id": 677587,
+          "game_pk": "824423",
+          "equipo": "Cleveland Guardians",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Austin Hedges",
+          "prob": 66.4,
+          "player_id": 595978,
+          "game_pk": "824423",
+          "equipo": "Cleveland Guardians",
+          "status": "fallido"
+        },
+        {
+          "nombre": "Kahlil Watson",
+          "prob": 100.0,
+          "player_id": 696135,
+          "game_pk": "824423",
+          "equipo": "Cleveland Guardians",
+          "status": "cumplio"
+        }
+      ],
+      "Washington Nationals": [
+        {
+          "nombre": "Keibert Ruiz",
+          "prob": 100.0,
+          "player_id": 660688,
+          "game_pk": "824824",
+          "equipo": "Washington Nationals",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Luis García Jr.",
+          "prob": 69.3,
+          "player_id": 671277,
+          "game_pk": "824824",
+          "equipo": "Washington Nationals",
+          "status": "fallido"
+        },
+        {
+          "nombre": "CJ Abrams",
+          "prob": 68.9,
+          "player_id": 682928,
+          "game_pk": "824824",
+          "equipo": "Washington Nationals",
+          "status": "fallido"
+        }
+      ],
+      "Baltimore Orioles": [
+        {
+          "nombre": "Blaze Alexander",
+          "prob": 100.0,
+          "player_id": 677942,
+          "game_pk": "824824",
+          "equipo": "Baltimore Orioles",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Jeremiah Jackson",
+          "prob": 65.1,
+          "player_id": 669236,
+          "game_pk": "824824",
+          "equipo": "Baltimore Orioles",
+          "status": "fallido"
+        },
+        {
+          "nombre": "Samuel Basallo",
+          "prob": 63.2,
+          "player_id": 694212,
+          "game_pk": "824824",
+          "equipo": "Baltimore Orioles",
+          "status": "fallido"
+        }
+      ],
+      "Miami Marlins": [
+        {
+          "nombre": "Otto Lopez",
+          "prob": 73.9,
+          "player_id": 672640,
+          "game_pk": "823039",
+          "equipo": "Miami Marlins",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Xavier Edwards",
+          "prob": 100.0,
+          "player_id": 669364,
+          "game_pk": "823039",
+          "equipo": "Miami Marlins",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Javier Sanoja",
+          "prob": 62.8,
+          "player_id": 691594,
+          "game_pk": "823039",
+          "equipo": "Miami Marlins",
+          "status": "pendiente"
+        }
+      ],
+      "St. Louis Cardinals": [
+        {
+          "nombre": "Jordan Walker",
+          "prob": 100.0,
+          "player_id": 691023,
+          "game_pk": "823039",
+          "equipo": "St. Louis Cardinals",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Alec Burleson",
+          "prob": 65.4,
+          "player_id": 676475,
+          "game_pk": "823039",
+          "equipo": "St. Louis Cardinals",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "José Fermín",
+          "prob": 63.8,
+          "player_id": 665877,
+          "game_pk": "823039",
+          "equipo": "St. Louis Cardinals",
+          "status": "pendiente"
+        }
+      ],
+      "Cincinnati Reds": [
+        {
+          "nombre": "Blake Dunn",
+          "prob": 100.0,
+          "player_id": 694362,
+          "game_pk": "823363",
+          "equipo": "Cincinnati Reds",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Elly De La Cruz",
+          "prob": 64.7,
+          "player_id": 682829,
+          "game_pk": "823363",
+          "equipo": "Cincinnati Reds",
+          "status": "fallido"
+        },
+        {
+          "nombre": "Nathaniel Lowe",
+          "prob": 100.0,
+          "player_id": 663993,
+          "game_pk": "823363",
+          "equipo": "Cincinnati Reds",
+          "status": "cumplio"
+        }
+      ],
+      "Pittsburgh Pirates": [
+        {
+          "nombre": "Nick Gonzales",
+          "prob": 70.6,
+          "player_id": 693304,
+          "game_pk": "823363",
+          "equipo": "Pittsburgh Pirates",
+          "status": "fallido"
+        },
+        {
+          "nombre": "Jake Mangum",
+          "prob": 100.0,
+          "player_id": 663968,
+          "game_pk": "823363",
+          "equipo": "Pittsburgh Pirates",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Ryan O'Hearn",
+          "prob": 68.0,
+          "player_id": 656811,
+          "game_pk": "823363",
+          "equipo": "Pittsburgh Pirates",
+          "status": "fallido"
+        }
+      ],
+      "Athletics": [
+        {
+          "nombre": "Alika Williams",
+          "prob": 100.0,
+          "player_id": 675961,
+          "game_pk": "824014",
+          "equipo": "Athletics",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Henry Bolte",
+          "prob": 100.0,
+          "player_id": 703607,
+          "game_pk": "824014",
+          "equipo": "Athletics",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Jacob Wilson",
+          "prob": 65.2,
+          "player_id": 805779,
+          "game_pk": "824014",
+          "equipo": "Athletics",
+          "status": "pendiente"
+        }
+      ],
+      "Los Angeles Angels": [
+        {
+          "nombre": "Donovan Walton",
+          "prob": 100.0,
+          "player_id": 622268,
+          "game_pk": "824014",
+          "equipo": "Los Angeles Angels",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Wade Meckler",
+          "prob": 100.0,
+          "player_id": 685133,
+          "game_pk": "824014",
+          "equipo": "Los Angeles Angels",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Oswald Peraza",
+          "prob": 63.5,
+          "player_id": 672724,
+          "game_pk": "824014",
+          "equipo": "Los Angeles Angels",
+          "status": "pendiente"
+        }
+      ],
+      "Los Angeles Dodgers": [
+        {
+          "nombre": "Tommy Edman",
+          "prob": 100.0,
+          "player_id": 669242,
+          "game_pk": "823285",
+          "equipo": "Los Angeles Dodgers",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Freddie Freeman",
+          "prob": 66.1,
+          "player_id": 518692,
+          "game_pk": "823285",
+          "equipo": "Los Angeles Dodgers",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Andy Pages",
+          "prob": 65.9,
+          "player_id": 681624,
+          "game_pk": "823285",
+          "equipo": "Los Angeles Dodgers",
+          "status": "pendiente"
+        }
+      ],
+      "San Diego Padres": [
+        {
+          "nombre": "Samad Taylor",
+          "prob": 75.2,
+          "player_id": 669392,
+          "game_pk": "823285",
+          "equipo": "San Diego Padres",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Fernando Tatis Jr.",
+          "prob": 69.5,
+          "player_id": 665487,
+          "game_pk": "823285",
+          "equipo": "San Diego Padres",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Ty France",
+          "prob": 100.0,
+          "player_id": 664034,
+          "game_pk": "823285",
+          "equipo": "San Diego Padres",
           "status": "cumplio"
         }
       ],
@@ -17206,7 +17750,7 @@
       "Minnesota Twins": [
         {
           "nombre": "Alex Jackson",
-          "prob": 71.6,
+          "prob": 71.7,
           "player_id": 656577,
           "game_pk": "823688",
           "equipo": "Minnesota Twins",
@@ -17222,167 +17766,115 @@
         },
         {
           "nombre": "Ryan Kreidler",
-          "prob": 68.3,
+          "prob": 68.4,
           "player_id": 668952,
           "game_pk": "823688",
           "equipo": "Minnesota Twins",
           "status": "pendiente"
         }
       ],
-      "Athletics": [
+      "New York Yankees": [
         {
-          "nombre": "Henry Bolte",
-          "prob": 71.1,
-          "player_id": 703607,
-          "game_pk": "824014",
-          "equipo": "Athletics",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Alika Williams",
-          "prob": 70.6,
-          "player_id": 675961,
-          "game_pk": "824014",
-          "equipo": "Athletics",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Jacob Wilson",
-          "prob": 70.3,
-          "player_id": 805779,
-          "game_pk": "824014",
-          "equipo": "Athletics",
-          "status": "pendiente"
-        }
-      ],
-      "Los Angeles Angels": [
-        {
-          "nombre": "Donovan Walton",
-          "prob": 100.0,
-          "player_id": 622268,
-          "game_pk": "824014",
-          "equipo": "Los Angeles Angels",
-          "status": "cumplio"
-        },
-        {
-          "nombre": "Wade Meckler",
-          "prob": 100.0,
-          "player_id": 685133,
-          "game_pk": "824014",
-          "equipo": "Los Angeles Angels",
-          "status": "cumplio"
-        },
-        {
-          "nombre": "Oswald Peraza",
+          "nombre": "Paul Goldschmidt",
           "prob": 67.2,
-          "player_id": 672724,
-          "game_pk": "824014",
-          "equipo": "Los Angeles Angels",
-          "status": "pendiente"
+          "player_id": 502671,
+          "game_pk": "824743",
+          "equipo": "New York Yankees",
+          "status": "fallido"
+        },
+        {
+          "nombre": "Ben Rice",
+          "prob": 63.8,
+          "player_id": 700250,
+          "game_pk": "824743",
+          "equipo": "New York Yankees",
+          "status": "fallido"
+        },
+        {
+          "nombre": "Ali Sánchez",
+          "prob": 63.6,
+          "player_id": 645305,
+          "game_pk": "824743",
+          "equipo": "New York Yankees",
+          "status": "fallido"
         }
       ],
-      "Los Angeles Dodgers": [
+      "Boston Red Sox": [
         {
-          "nombre": "Tommy Edman",
+          "nombre": "Anthony Seigler",
           "prob": 100.0,
-          "player_id": 669242,
-          "game_pk": "823285",
-          "equipo": "Los Angeles Dodgers",
+          "player_id": 678011,
+          "game_pk": "824743",
+          "equipo": "Boston Red Sox",
           "status": "cumplio"
         },
         {
-          "nombre": "Freddie Freeman",
-          "prob": 67.9,
-          "player_id": 518692,
-          "game_pk": "823285",
-          "equipo": "Los Angeles Dodgers",
-          "status": "pendiente"
+          "nombre": "Ceddanne Rafaela",
+          "prob": 68.5,
+          "player_id": 678882,
+          "game_pk": "824743",
+          "equipo": "Boston Red Sox",
+          "status": "fallido"
         },
         {
-          "nombre": "Andy Pages",
-          "prob": 67.7,
-          "player_id": 681624,
-          "game_pk": "823285",
-          "equipo": "Los Angeles Dodgers",
-          "status": "pendiente"
-        }
-      ],
-      "San Diego Padres": [
-        {
-          "nombre": "Samad Taylor",
-          "prob": 75.1,
-          "player_id": 669392,
-          "game_pk": "823285",
-          "equipo": "San Diego Padres",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Fernando Tatis Jr.",
-          "prob": 69.1,
-          "player_id": 665487,
-          "game_pk": "823285",
-          "equipo": "San Diego Padres",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Ty France",
+          "nombre": "Wilyer Abreu",
           "prob": 100.0,
-          "player_id": 664034,
-          "game_pk": "823285",
-          "equipo": "San Diego Padres",
+          "player_id": 677800,
+          "game_pk": "824743",
+          "equipo": "Boston Red Sox",
           "status": "cumplio"
         }
       ],
-      "Atlanta Braves": [
+      "Kansas City Royals": [
         {
-          "nombre": "Michael Harris II",
-          "prob": 74.2,
-          "player_id": 671739,
-          "game_pk": "823206",
-          "equipo": "Atlanta Braves",
-          "status": "pendiente"
+          "nombre": "Bobby Witt Jr.",
+          "prob": 72.6,
+          "player_id": 677951,
+          "game_pk": "824582",
+          "equipo": "Kansas City Royals",
+          "status": "fallido"
         },
         {
-          "nombre": "Dominic Smith",
-          "prob": 69.0,
-          "player_id": 642086,
-          "game_pk": "823206",
-          "equipo": "Atlanta Braves",
-          "status": "pendiente"
+          "nombre": "Kameron Misner",
+          "prob": 70.8,
+          "player_id": 670224,
+          "game_pk": "824582",
+          "equipo": "Kansas City Royals",
+          "status": "fallido"
         },
         {
-          "nombre": "Ozzie Albies",
-          "prob": 69.0,
-          "player_id": 645277,
-          "game_pk": "823206",
-          "equipo": "Atlanta Braves",
-          "status": "pendiente"
+          "nombre": "Michael Massey",
+          "prob": 70.5,
+          "player_id": 686681,
+          "game_pk": "824582",
+          "equipo": "Kansas City Royals",
+          "status": "fallido"
         }
       ],
-      "San Francisco Giants": [
+      "Chicago White Sox": [
         {
-          "nombre": "Jung Hoo Lee",
-          "prob": 76.8,
-          "player_id": 808982,
-          "game_pk": "823206",
-          "equipo": "San Francisco Giants",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Luis Arraez",
+          "nombre": "Tristan Peters",
           "prob": 100.0,
-          "player_id": 650333,
-          "game_pk": "823206",
-          "equipo": "San Francisco Giants",
+          "player_id": 671976,
+          "game_pk": "824582",
+          "equipo": "Chicago White Sox",
           "status": "cumplio"
         },
         {
-          "nombre": "Casey Schmitt",
-          "prob": 72.9,
-          "player_id": 669477,
-          "game_pk": "823206",
-          "equipo": "San Francisco Giants",
-          "status": "pendiente"
+          "nombre": "Randal Grichuk",
+          "prob": 71.1,
+          "player_id": 545341,
+          "game_pk": "824582",
+          "equipo": "Chicago White Sox",
+          "status": "fallido"
+        },
+        {
+          "nombre": "Sam Antonacci",
+          "prob": 100.0,
+          "player_id": 803011,
+          "game_pk": "824582",
+          "equipo": "Chicago White Sox",
+          "status": "cumplio"
         }
       ]
     },
@@ -18944,6 +19436,470 @@
       ],
       "relevo_local": "Bullpen sólido, ERA de 3.40, confiable en situaciones de presión.",
       "relevo_visitante": "Bullpen con ERA de 5.00, menos confiable."
+    },
+    "2026-06-28___Sudáfrica___Canadá": {
+      "ir": "SÍ",
+      "pq": "Canadá tiene mejor ranking y forma reciente.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Lesiones mínimas"
+      ],
+      "favorito": "Canadá",
+      "goles": "1-2",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Lebo Mothiba",
+          "equipo": "Sudáfrica",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Jonathan David",
+          "equipo": "Canadá",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Cyle Larin",
+          "equipo": "Canadá",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 70,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 35,
+          "over_10.5": 25
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-29___Brasil___Japón": {
+      "ir": "SÍ",
+      "pq": "Brasil es un gigante del fútbol con gran calidad.",
+      "factores": [
+        "Ranking FIFA muy alto",
+        "Racha de victorias reciente",
+        "Experiencia en torneos"
+      ],
+      "favorito": "Brasil",
+      "goles": "3-0",
+      "corners": 9,
+      "tiros_porteria": [
+        {
+          "jugador": "Neymar",
+          "equipo": "Brasil",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Vinícius Júnior",
+          "equipo": "Brasil",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Takefusa Kubo",
+          "equipo": "Japón",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 70,
+          "over_3.5": 50
+        },
+        "corners": {
+          "over_8.5": 60,
+          "over_9.5": 50,
+          "over_10.5": 30
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-29___Países Bajos___Marruecos": {
+      "ir": "SÍ",
+      "pq": "Países Bajos tiene un mejor historial y ranking.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente sólida",
+        "Historial favorable"
+      ],
+      "favorito": "Países Bajos",
+      "goles": "2-1",
+      "corners": 8,
+      "tiros_porteria": [
+        {
+          "jugador": "Memphis Depay",
+          "equipo": "Países Bajos",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Cody Gakpo",
+          "equipo": "Países Bajos",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Hakim Ziyech",
+          "equipo": "Marruecos",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 40,
+          "over_10.5": 25
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-06-30___Costa de Marfil___Noruega": {
+      "ir": "SÍ",
+      "pq": "Noruega tiene mejor calidad individual y ranking.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Jugadores clave en forma"
+      ],
+      "favorito": "Noruega",
+      "goles": "1-2",
+      "corners": 6,
+      "tiros_porteria": [
+        {
+          "jugador": "Wilfried Zaha",
+          "equipo": "Costa de Marfil",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Erling Haaland",
+          "equipo": "Noruega",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Martin Ødegaard",
+          "equipo": "Noruega",
+          "tiros_estimados": 3
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 65,
+          "over_2.5": 50,
+          "over_3.5": 25
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-07-01___Estados Unidos___Bosnia-Herzegovina": {
+      "ir": "SÍ",
+      "pq": "Mejor ranking FIFA y racha reciente favorable.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Racha reciente positiva",
+        "Historial de enfrentamientos favorables"
+      ],
+      "favorito": "Estados Unidos",
+      "goles": "2-1",
+      "corners": 7,
+      "tiros_porteria": [],
+      "lineas": {
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 60,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 40,
+          "over_10.5": 30
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-07-02___Suiza___Third Place Group E/F/G/I/J": {
+      "ir": "SÍ",
+      "pq": "Suiza tiene un mejor ranking y experiencia en torneos.",
+      "factores": [
+        "Ranking FIFA superior",
+        "Experiencia en torneos",
+        "Posibilidad de enfrentar un rival débil"
+      ],
+      "favorito": "Suiza",
+      "goles": "2-0",
+      "corners": 6,
+      "tiros_porteria": [],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-07-03___Australia___Group G 2nd Place": {
+      "ir": "NO",
+      "pq": "Desconocido el rival, difícil de evaluar.",
+      "factores": [
+        "Rival desconocido",
+        "Posición en grupo incierta",
+        "Racha reciente variable"
+      ],
+      "favorito": "Australia",
+      "goles": "1-1",
+      "corners": 5,
+      "tiros_porteria": [],
+      "lineas": {
+        "goles": {
+          "over_0.5": 80,
+          "over_1.5": 60,
+          "over_2.5": 40,
+          "over_3.5": 20
+        },
+        "corners": {
+          "over_8.5": 30,
+          "over_9.5": 20,
+          "over_10.5": 10
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-07-03___Group K Winner___Third Place Group D/E/I/J/L": {
+      "ir": "SÍ",
+      "pq": "Grupo K probablemente contendiente fuerte.",
+      "factores": [
+        "Rival débil",
+        "Grupo K con potencial fuerte",
+        "Racha reciente positiva"
+      ],
+      "favorito": "Group K Winner",
+      "goles": "2-0",
+      "corners": 7,
+      "tiros_porteria": [],
+      "lineas": {
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 50,
+          "over_9.5": 40,
+          "over_10.5": 25
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-07-04___Round of 32 1 Winner___Round of 32 3 Winner": {
+      "ir": "NO",
+      "pq": "No hay información suficiente para determinar un favorito claro.",
+      "factores": [
+        "Desconocido el rendimiento de los equipos",
+        "Sin historial de enfrentamientos directos",
+        "Lesiones no reportadas"
+      ],
+      "favorito": "Round of 32 1 Winner",
+      "goles": "1-2",
+      "corners": 6,
+      "tiros_porteria": [
+        {
+          "jugador": "Desconocido",
+          "equipo": "Round of 32 1 Winner",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Desconocido",
+          "equipo": "Round of 32 3 Winner",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Desconocido",
+          "equipo": "Round of 32 1 Winner",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 75,
+          "over_1.5": 60,
+          "over_2.5": 40,
+          "over_3.5": 20
+        },
+        "corners": {
+          "over_8.5": 30,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-07-04___Round of 32 2 Winner___Round of 32 5 Winner": {
+      "ir": "NO",
+      "pq": "No hay información suficiente para determinar un favorito claro.",
+      "factores": [
+        "Desconocido el rendimiento de los equipos",
+        "Sin historial de enfrentamientos directos",
+        "Lesiones no reportadas"
+      ],
+      "favorito": "Round of 32 2 Winner",
+      "goles": "1-2",
+      "corners": 6,
+      "tiros_porteria": [
+        {
+          "jugador": "Desconocido",
+          "equipo": "Round of 32 2 Winner",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Desconocido",
+          "equipo": "Round of 32 5 Winner",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Desconocido",
+          "equipo": "Round of 32 2 Winner",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 75,
+          "over_1.5": 60,
+          "over_2.5": 40,
+          "over_3.5": 20
+        },
+        "corners": {
+          "over_8.5": 30,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-07-05___Round of 32 4 Winner___Round of 32 6 Winner": {
+      "ir": "NO",
+      "pq": "No hay información suficiente para determinar un favorito claro.",
+      "factores": [
+        "Desconocido el rendimiento de los equipos",
+        "Sin historial de enfrentamientos directos",
+        "Lesiones no reportadas"
+      ],
+      "favorito": "Round of 32 4 Winner",
+      "goles": "1-2",
+      "corners": 6,
+      "tiros_porteria": [
+        {
+          "jugador": "Desconocido",
+          "equipo": "Round of 32 4 Winner",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Desconocido",
+          "equipo": "Round of 32 6 Winner",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Desconocido",
+          "equipo": "Round of 32 4 Winner",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 75,
+          "over_1.5": 60,
+          "over_2.5": 40,
+          "over_3.5": 20
+        },
+        "corners": {
+          "over_8.5": 30,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
+    },
+    "2026-07-05___Round of 32 7 Winner___Round of 32 8 Winner": {
+      "ir": "NO",
+      "pq": "No hay información suficiente para determinar un favorito claro.",
+      "factores": [
+        "Desconocido el rendimiento de los equipos",
+        "Sin historial de enfrentamientos directos",
+        "Lesiones no reportadas"
+      ],
+      "favorito": "Round of 32 7 Winner",
+      "goles": "1-2",
+      "corners": 6,
+      "tiros_porteria": [
+        {
+          "jugador": "Desconocido",
+          "equipo": "Round of 32 7 Winner",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Desconocido",
+          "equipo": "Round of 32 8 Winner",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Desconocido",
+          "equipo": "Round of 32 7 Winner",
+          "tiros_estimados": 2
+        }
+      ],
+      "lineas": {
+        "goles": {
+          "over_0.5": 75,
+          "over_1.5": 60,
+          "over_2.5": 40,
+          "over_3.5": 20
+        },
+        "corners": {
+          "over_8.5": 30,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     }
   },
   "llm_by_sport": {
@@ -20245,8 +21201,8 @@
       "away": "Atlanta Dream",
       "home_abbr": "GS",
       "away_abbr": "ATL",
-      "home_score": 22,
-      "away_score": 26,
+      "home_score": 32,
+      "away_score": 35,
       "home_linescores": [
         {
           "period": 1,
@@ -20255,8 +21211,8 @@
         },
         {
           "period": 2,
-          "value": 2,
-          "display": "2"
+          "value": 12,
+          "display": "12"
         }
       ],
       "away_linescores": [
@@ -20267,13 +21223,13 @@
         },
         {
           "period": 2,
-          "value": 5,
-          "display": "5"
+          "value": 14,
+          "display": "14"
         }
       ],
-      "clock": "7:08",
+      "clock": "4.2",
       "period": 2,
-      "state": "Q2 7:08",
+      "state": "Q2 4.2",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/GS.png&h=40&w=40",
