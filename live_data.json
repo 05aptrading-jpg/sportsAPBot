@@ -1,5 +1,5 @@
 {
-  "fecha": "27/06/2026 08:22",
+  "fecha": "27/06/2026 08:37",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782655200,
@@ -13923,10 +13923,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -15364,10 +15369,15 @@
       "away_team_name": "Boston Red Sox",
       "home_team_name": "New York Yankees",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -15470,7 +15480,7 @@
       }
     }
   },
-  "updated_at": "27/06/2026 08:22",
+  "updated_at": "27/06/2026 08:37",
   "stats": {
     "total": 95,
     "acertados": 58,
@@ -16730,7 +16740,7 @@
         },
         {
           "nombre": "Jackson Chourio",
-          "prob": 100.0,
+          "prob": 72.3,
           "player_id": 694192,
           "game_pk": "823773",
           "equipo": "Milwaukee Brewers",
@@ -16738,7 +16748,7 @@
         },
         {
           "nombre": "William Contreras",
-          "prob": 100.0,
+          "prob": 72.2,
           "player_id": 661388,
           "game_pk": "823773",
           "equipo": "Milwaukee Brewers",
@@ -16756,7 +16766,7 @@
         },
         {
           "nombre": "Bryce Harper",
-          "prob": 100.0,
+          "prob": 65.3,
           "player_id": 547180,
           "game_pk": "823610",
           "equipo": "Philadelphia Phillies",
@@ -16764,7 +16774,7 @@
         },
         {
           "nombre": "Derek Hill",
-          "prob": 100.0,
+          "prob": 65.0,
           "player_id": 656537,
           "game_pk": "823610",
           "equipo": "Philadelphia Phillies",
@@ -16782,7 +16792,7 @@
         },
         {
           "nombre": "Bo Bichette",
-          "prob": 100.0,
+          "prob": 61.0,
           "player_id": 666182,
           "game_pk": "823610",
           "equipo": "New York Mets",
@@ -16790,7 +16800,7 @@
         },
         {
           "nombre": "Carson Benge",
-          "prob": 100.0,
+          "prob": 61.0,
           "player_id": 701807,
           "game_pk": "823610",
           "equipo": "New York Mets",
@@ -16800,7 +16810,7 @@
       "Atlanta Braves": [
         {
           "nombre": "Michael Harris II",
-          "prob": 100.0,
+          "prob": 74.4,
           "player_id": 671739,
           "game_pk": "823206",
           "equipo": "Atlanta Braves",
@@ -16808,7 +16818,7 @@
         },
         {
           "nombre": "Dominic Smith",
-          "prob": 100.0,
+          "prob": 69.7,
           "player_id": 642086,
           "game_pk": "823206",
           "equipo": "Atlanta Braves",
@@ -16816,7 +16826,7 @@
         },
         {
           "nombre": "Ozzie Albies",
-          "prob": 100.0,
+          "prob": 69.1,
           "player_id": 645277,
           "game_pk": "823206",
           "equipo": "Atlanta Braves",
@@ -16834,7 +16844,7 @@
         },
         {
           "nombre": "Luis Arraez",
-          "prob": 100.0,
+          "prob": 72.5,
           "player_id": 650333,
           "game_pk": "823206",
           "equipo": "San Francisco Giants",
@@ -16860,7 +16870,7 @@
         },
         {
           "nombre": "Jeremy Peña",
-          "prob": 100.0,
+          "prob": 67.4,
           "player_id": 665161,
           "game_pk": "824255",
           "equipo": "Houston Astros",
@@ -16886,7 +16896,7 @@
         },
         {
           "nombre": "Kevin McGonigle",
-          "prob": 100.0,
+          "prob": 66.2,
           "player_id": 805808,
           "game_pk": "824255",
           "equipo": "Detroit Tigers",
@@ -16894,7 +16904,7 @@
         },
         {
           "nombre": "Dillon Dingler",
-          "prob": 100.0,
+          "prob": 65.9,
           "player_id": 693307,
           "game_pk": "824255",
           "equipo": "Detroit Tigers",
@@ -16904,7 +16914,7 @@
       "Arizona Diamondbacks": [
         {
           "nombre": "Corbin Carroll",
-          "prob": 100.0,
+          "prob": 64.1,
           "player_id": 682998,
           "game_pk": "822962",
           "equipo": "Arizona Diamondbacks",
@@ -16912,7 +16922,7 @@
         },
         {
           "nombre": "Gabriel Moreno",
-          "prob": 100.0,
+          "prob": 63.5,
           "player_id": 672515,
           "game_pk": "822962",
           "equipo": "Arizona Diamondbacks",
@@ -16930,7 +16940,7 @@
       "Tampa Bay Rays": [
         {
           "nombre": "Yandy Díaz",
-          "prob": 100.0,
+          "prob": 77.1,
           "player_id": 650490,
           "game_pk": "822962",
           "equipo": "Tampa Bay Rays",
@@ -16956,7 +16966,7 @@
       "Texas Rangers": [
         {
           "nombre": "Nicky Lopez",
-          "prob": 100.0,
+          "prob": 72.5,
           "player_id": 670032,
           "game_pk": "822796",
           "equipo": "Texas Rangers",
@@ -16972,7 +16982,7 @@
         },
         {
           "nombre": "Wyatt Langford",
-          "prob": 100.0,
+          "prob": 70.7,
           "player_id": 694671,
           "game_pk": "822796",
           "equipo": "Texas Rangers",
@@ -16982,7 +16992,7 @@
       "Toronto Blue Jays": [
         {
           "nombre": "Ernie Clement",
-          "prob": 100.0,
+          "prob": 72.3,
           "player_id": 676391,
           "game_pk": "822796",
           "equipo": "Toronto Blue Jays",
@@ -16990,7 +17000,7 @@
         },
         {
           "nombre": "Nathan Lukes",
-          "prob": 100.0,
+          "prob": 69.8,
           "player_id": 664770,
           "game_pk": "822796",
           "equipo": "Toronto Blue Jays",
@@ -17008,7 +17018,7 @@
       "Seattle Mariners": [
         {
           "nombre": "Randy Arozarena",
-          "prob": 100.0,
+          "prob": 66.6,
           "player_id": 668227,
           "game_pk": "824423",
           "equipo": "Seattle Mariners",
@@ -17034,7 +17044,7 @@
       "Cleveland Guardians": [
         {
           "nombre": "Brayan Rocchio",
-          "prob": 100.0,
+          "prob": 67.3,
           "player_id": 677587,
           "game_pk": "824423",
           "equipo": "Cleveland Guardians",
@@ -17050,7 +17060,7 @@
         },
         {
           "nombre": "Kahlil Watson",
-          "prob": 100.0,
+          "prob": 66.3,
           "player_id": 696135,
           "game_pk": "824423",
           "equipo": "Cleveland Guardians",
@@ -17060,7 +17070,7 @@
       "Washington Nationals": [
         {
           "nombre": "Keibert Ruiz",
-          "prob": 100.0,
+          "prob": 70.8,
           "player_id": 660688,
           "game_pk": "824824",
           "equipo": "Washington Nationals",
@@ -17086,7 +17096,7 @@
       "Baltimore Orioles": [
         {
           "nombre": "Blaze Alexander",
-          "prob": 100.0,
+          "prob": 69.1,
           "player_id": 677942,
           "game_pk": "824824",
           "equipo": "Baltimore Orioles",
@@ -17120,7 +17130,7 @@
         },
         {
           "nombre": "Xavier Edwards",
-          "prob": 100.0,
+          "prob": 66.3,
           "player_id": 669364,
           "game_pk": "823039",
           "equipo": "Miami Marlins",
@@ -17138,7 +17148,7 @@
       "St. Louis Cardinals": [
         {
           "nombre": "Jordan Walker",
-          "prob": 100.0,
+          "prob": 67.0,
           "player_id": 691023,
           "game_pk": "823039",
           "equipo": "St. Louis Cardinals",
@@ -17154,7 +17164,7 @@
         },
         {
           "nombre": "José Fermín",
-          "prob": 100.0,
+          "prob": 63.8,
           "player_id": 665877,
           "game_pk": "823039",
           "equipo": "St. Louis Cardinals",
@@ -17164,7 +17174,7 @@
       "Cincinnati Reds": [
         {
           "nombre": "Blake Dunn",
-          "prob": 100.0,
+          "prob": 66.3,
           "player_id": 694362,
           "game_pk": "823363",
           "equipo": "Cincinnati Reds",
@@ -17180,7 +17190,7 @@
         },
         {
           "nombre": "Nathaniel Lowe",
-          "prob": 100.0,
+          "prob": 61.8,
           "player_id": 663993,
           "game_pk": "823363",
           "equipo": "Cincinnati Reds",
@@ -17198,7 +17208,7 @@
         },
         {
           "nombre": "Jake Mangum",
-          "prob": 100.0,
+          "prob": 70.4,
           "player_id": 663968,
           "game_pk": "823363",
           "equipo": "Pittsburgh Pirates",
@@ -17216,7 +17226,7 @@
       "Athletics": [
         {
           "nombre": "Alika Williams",
-          "prob": 100.0,
+          "prob": 66.6,
           "player_id": 675961,
           "game_pk": "824014",
           "equipo": "Athletics",
@@ -17224,7 +17234,7 @@
         },
         {
           "nombre": "Henry Bolte",
-          "prob": 100.0,
+          "prob": 66.4,
           "player_id": 703607,
           "game_pk": "824014",
           "equipo": "Athletics",
@@ -17242,7 +17252,7 @@
       "Los Angeles Angels": [
         {
           "nombre": "Donovan Walton",
-          "prob": 100.0,
+          "prob": 71.3,
           "player_id": 622268,
           "game_pk": "824014",
           "equipo": "Los Angeles Angels",
@@ -17250,7 +17260,7 @@
         },
         {
           "nombre": "Wade Meckler",
-          "prob": 100.0,
+          "prob": 66.0,
           "player_id": 685133,
           "game_pk": "824014",
           "equipo": "Los Angeles Angels",
@@ -17268,7 +17278,7 @@
       "Los Angeles Dodgers": [
         {
           "nombre": "Tommy Edman",
-          "prob": 100.0,
+          "prob": 71.5,
           "player_id": 669242,
           "game_pk": "823285",
           "equipo": "Los Angeles Dodgers",
@@ -17276,7 +17286,7 @@
         },
         {
           "nombre": "Freddie Freeman",
-          "prob": 100.0,
+          "prob": 66.1,
           "player_id": 518692,
           "game_pk": "823285",
           "equipo": "Los Angeles Dodgers",
@@ -17284,7 +17294,7 @@
         },
         {
           "nombre": "Andy Pages",
-          "prob": 100.0,
+          "prob": 65.9,
           "player_id": 681624,
           "game_pk": "823285",
           "equipo": "Los Angeles Dodgers",
@@ -17302,7 +17312,7 @@
         },
         {
           "nombre": "Fernando Tatis Jr.",
-          "prob": 100.0,
+          "prob": 69.5,
           "player_id": 665487,
           "game_pk": "823285",
           "equipo": "San Diego Padres",
@@ -17310,7 +17320,7 @@
         },
         {
           "nombre": "Ty France",
-          "prob": 100.0,
+          "prob": 67.3,
           "player_id": 664034,
           "game_pk": "823285",
           "equipo": "San Diego Padres",
@@ -17320,7 +17330,7 @@
       "Colorado Rockies": [
         {
           "nombre": "Troy Johnston",
-          "prob": 100.0,
+          "prob": 71.6,
           "player_id": 687859,
           "game_pk": "823688",
           "equipo": "Colorado Rockies",
@@ -17328,7 +17338,7 @@
         },
         {
           "nombre": "Jake McCarthy",
-          "prob": 100.0,
+          "prob": 70.9,
           "player_id": 664983,
           "game_pk": "823688",
           "equipo": "Colorado Rockies",
@@ -17336,7 +17346,7 @@
         },
         {
           "nombre": "TJ Rumfield",
-          "prob": 100.0,
+          "prob": 68.0,
           "player_id": 681198,
           "game_pk": "823688",
           "equipo": "Colorado Rockies",
@@ -17354,7 +17364,7 @@
         },
         {
           "nombre": "Byron Buxton",
-          "prob": 100.0,
+          "prob": 69.2,
           "player_id": 621439,
           "game_pk": "823688",
           "equipo": "Minnesota Twins",
@@ -17362,7 +17372,7 @@
         },
         {
           "nombre": "Ryan Kreidler",
-          "prob": 100.0,
+          "prob": 68.4,
           "player_id": 668952,
           "game_pk": "823688",
           "equipo": "Minnesota Twins",
@@ -17398,7 +17408,7 @@
       "Boston Red Sox": [
         {
           "nombre": "Anthony Seigler",
-          "prob": 100.0,
+          "prob": 68.5,
           "player_id": 678011,
           "game_pk": "824743",
           "equipo": "Boston Red Sox",
@@ -17414,7 +17424,7 @@
         },
         {
           "nombre": "Wilyer Abreu",
-          "prob": 100.0,
+          "prob": 66.0,
           "player_id": 677800,
           "game_pk": "824743",
           "equipo": "Boston Red Sox",
@@ -17450,7 +17460,7 @@
       "Chicago White Sox": [
         {
           "nombre": "Tristan Peters",
-          "prob": 100.0,
+          "prob": 71.9,
           "player_id": 671976,
           "game_pk": "824582",
           "equipo": "Chicago White Sox",
@@ -17466,7 +17476,7 @@
         },
         {
           "nombre": "Sam Antonacci",
-          "prob": 100.0,
+          "prob": 70.9,
           "player_id": 803011,
           "game_pk": "824582",
           "equipo": "Chicago White Sox",
