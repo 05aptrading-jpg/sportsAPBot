@@ -1,5 +1,5 @@
 {
-  "fecha": "27/06/2026 10:52",
+  "fecha": "27/06/2026 11:06",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782655200,
@@ -13346,10 +13346,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -14951,10 +14956,15 @@
       "away_team_name": "Pittsburgh Pirates",
       "home_team_name": "Cincinnati Reds",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -15490,7 +15500,7 @@
       }
     }
   },
-  "updated_at": "27/06/2026 10:52",
+  "updated_at": "27/06/2026 11:06",
   "stats": {
     "total": 95,
     "acertados": 58,
