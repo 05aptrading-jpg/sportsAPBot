@@ -1,5 +1,5 @@
 {
-  "fecha": "27/06/2026 08:10",
+  "fecha": "27/06/2026 08:22",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782655200,
@@ -13658,10 +13658,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -15164,10 +15169,15 @@
       "away_team_name": "Houston Astros",
       "home_team_name": "Detroit Tigers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -15460,7 +15470,7 @@
       }
     }
   },
-  "updated_at": "27/06/2026 08:10",
+  "updated_at": "27/06/2026 08:22",
   "stats": {
     "total": 95,
     "acertados": 58,
