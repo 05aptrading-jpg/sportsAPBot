@@ -1,5 +1,5 @@
 {
-  "fecha": "27/06/2026 14:01",
+  "fecha": "27/06/2026 14:07",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782655200,
@@ -13788,9 +13788,9 @@
         "current_inning": 4,
         "is_top": true,
         "inning_ordinal": "4th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 0,
+        "outs": 2,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 2,
@@ -14091,10 +14091,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -15406,9 +15411,9 @@
         "current_inning": 4,
         "is_top": true,
         "inning_ordinal": "4th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 0,
+        "outs": 2,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 2,
@@ -15639,10 +15644,15 @@
       "away_team_name": "Washington Nationals",
       "home_team_name": "Baltimore Orioles",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -15712,7 +15722,7 @@
       }
     }
   },
-  "updated_at": "27/06/2026 14:01",
+  "updated_at": "27/06/2026 14:07",
   "stats": {
     "total": 95,
     "acertados": 58,
@@ -19103,8 +19113,8 @@
       "away": "Phoenix Mercury",
       "home_abbr": "TOR",
       "away_abbr": "PHX",
-      "home_score": 76,
-      "away_score": 80,
+      "home_score": 80,
+      "away_score": 83,
       "home_linescores": [
         {
           "period": 1,
@@ -19123,8 +19133,8 @@
         },
         {
           "period": 4,
-          "value": 10,
-          "display": "10"
+          "value": 14,
+          "display": "14"
         }
       ],
       "away_linescores": [
@@ -19145,13 +19155,13 @@
         },
         {
           "period": 4,
-          "value": 15,
-          "display": "15"
+          "value": 18,
+          "display": "18"
         }
       ],
-      "clock": "3:10",
+      "clock": "1:28",
       "period": 4,
-      "state": "Q4 3:10",
+      "state": "Q4 1:28",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/TOR.png&h=40&w=40",
