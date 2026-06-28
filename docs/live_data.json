@@ -1,5 +1,5 @@
 {
-  "fecha": "28/06/2026 16:37",
+  "fecha": "28/06/2026 16:51",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782741600,
@@ -14168,9 +14168,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "2",
         "opp_score": "3",
         "score_fav": "2",
@@ -14814,7 +14814,7 @@
       "opp_team": "Los Angeles Dodgers",
       "score_fav": "2",
       "score_opp": "4",
-      "state": "Bottom 7th",
+      "state": "Bottom 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 823281,
@@ -14855,18 +14855,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 3,
-        "balls": 0,
+        "inning_ordinal": "8th",
+        "outs": 1,
+        "balls": 3,
         "strikes": 3,
         "away_runs": 4,
         "home_runs": 2,
         "away_hits": 5,
-        "home_hits": 5,
+        "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Los Angeles Dodgers",
@@ -16833,9 +16837,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "2",
         "opp_score": "3",
         "score_fav": "2",
@@ -17374,7 +17378,7 @@
     "823281": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 7th",
+      "status": "Bottom 8th",
       "away_runs": 2,
       "home_runs": 4,
       "away_team_name": "Los Angeles Dodgers",
@@ -17408,18 +17412,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 3,
-        "balls": 0,
+        "inning_ordinal": "8th",
+        "outs": 1,
+        "balls": 3,
         "strikes": 3,
         "away_runs": 4,
         "home_runs": 2,
         "away_hits": 5,
-        "home_hits": 5,
+        "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Los Angeles Dodgers",
@@ -17749,7 +17757,7 @@
       }
     }
   },
-  "updated_at": "28/06/2026 16:37",
+  "updated_at": "28/06/2026 16:51",
   "stats": {
     "total": 110,
     "acertados": 64,
@@ -20856,7 +20864,7 @@
     {
       "game_date": "2026-06-28",
       "game_id": "401857031",
-      "status_emoji": "🔴",
+      "status_emoji": "🏁",
       "home": "Washington Mystics",
       "away": "Portland Fire",
       "home_abbr": "WSH",
@@ -20947,10 +20955,10 @@
           "display": "7"
         }
       ],
-      "clock": "13.1",
+      "clock": "0.0",
       "period": 8,
-      "state": "Q8 13.1",
-      "result": "live",
+      "state": "Final",
+      "result": "completed",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/WSH.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/POR.png&h=40&w=40"
