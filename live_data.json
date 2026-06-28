@@ -1,5 +1,5 @@
 {
-  "fecha": "28/06/2026 16:51",
+  "fecha": "28/06/2026 17:06",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782741600,
@@ -14809,13 +14809,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-28",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "San Diego Padres",
       "opp_team": "Los Angeles Dodgers",
       "score_fav": "2",
       "score_opp": "4",
-      "state": "Bottom 8th",
-      "result": "live",
+      "state": "Final",
+      "result": "loss",
       "label": "📋",
       "game_pk": 823281,
       "fav_abbr": "SD",
@@ -14859,14 +14859,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 1,
-        "balls": 3,
-        "strikes": 3,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 4,
         "home_runs": 2,
         "away_hits": 5,
@@ -14880,9 +14884,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "4",
         "opp_score": "2",
         "score_fav": "4",
@@ -15170,7 +15174,7 @@
       "opp_team": "New York Yankees",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "📋",
       "game_pk": 824744,
@@ -15210,7 +15214,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -15274,7 +15278,7 @@
     1992258520,
     8670833401
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": true,
   "live_data": {
     "401815910": {
@@ -17376,9 +17380,9 @@
       }
     },
     "823281": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 8th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 2,
       "home_runs": 4,
       "away_team_name": "Los Angeles Dodgers",
@@ -17416,14 +17420,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 1,
-        "balls": 3,
-        "strikes": 3,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 4,
         "home_runs": 2,
         "away_hits": 5,
@@ -17437,9 +17445,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "4",
         "opp_score": "2",
         "score_fav": "4",
@@ -17678,7 +17686,7 @@
     "824744": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "New York Yankees",
@@ -17711,7 +17719,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -17757,7 +17765,7 @@
       }
     }
   },
-  "updated_at": "28/06/2026 16:51",
+  "updated_at": "28/06/2026 17:06",
   "stats": {
     "total": 110,
     "acertados": 64,
@@ -21028,19 +21036,31 @@
     {
       "game_date": "2026-06-28",
       "game_id": "401857033",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Golden State Valkyries",
       "away": "New York Liberty",
       "home_abbr": "GS",
       "away_abbr": "NY",
-      "home_score": 0,
+      "home_score": 4,
       "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 4,
+          "display": "4"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 0,
+          "display": "0"
+        }
+      ],
+      "clock": "8:28",
+      "period": 1,
+      "state": "Q1 8:28",
+      "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/GS.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/NY.png&h=40&w=40"
