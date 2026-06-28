@@ -1,5 +1,5 @@
 {
-  "fecha": "28/06/2026 17:06",
+  "fecha": "28/06/2026 17:22",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782741600,
@@ -14884,9 +14884,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "4",
         "opp_score": "2",
         "score_fav": "4",
@@ -15169,13 +15169,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-28",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Boston Red Sox",
       "opp_team": "New York Yankees",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 824744,
       "fav_abbr": "BOS",
@@ -15197,8 +15197,8 @@
         "is_top": true,
         "inning_ordinal": "1st",
         "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -15212,9 +15212,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -15231,7 +15231,7 @@
       "opp_team": "Mexico National Team",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "home_team": "Mexico National Team",
       "away_team": "LMB All-Stars",
@@ -15242,10 +15242,15 @@
       "resultado_llm": "pendiente",
       "game_pk": 846139,
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -15264,7 +15269,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -15278,7 +15283,7 @@
     1992258520,
     8670833401
   ],
-  "has_live": false,
+  "has_live": true,
   "has_scheduled": true,
   "live_data": {
     "401815910": {
@@ -17445,9 +17450,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "4",
         "opp_score": "2",
         "score_fav": "4",
@@ -17684,13 +17689,56 @@
       }
     },
     "824744": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "New York Yankees",
       "home_team_name": "Boston Red Sox",
+      "linescore": {
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "1st",
+        "outs": 0,
+        "balls": 1,
+        "strikes": 1,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "New York Yankees",
+        "home_team_name": "Boston Red Sox",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      }
+    },
+    "846139": {
+      "is_live": false,
+      "is_final": false,
+      "status": "Pre-Game",
+      "away_runs": 0,
+      "home_runs": 0,
+      "away_team_name": "Mexico National Team",
+      "home_team_name": "LMB All-Stars",
       "linescore": {
         "innings": [
           {
@@ -17710,44 +17758,6 @@
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
-        "away_team_name": "New York Yankees",
-        "home_team_name": "Boston Red Sox",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
-        "fav_score": "0",
-        "opp_score": "0",
-        "score_fav": "0",
-        "score_opp": "0"
-      }
-    },
-    "846139": {
-      "is_live": false,
-      "is_final": false,
-      "status": "Scheduled",
-      "away_runs": 0,
-      "home_runs": 0,
-      "away_team_name": "Mexico National Team",
-      "home_team_name": "LMB All-Stars",
-      "linescore": {
-        "innings": [],
-        "current_inning": 1,
-        "is_top": true,
-        "inning_ordinal": "",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 0,
-        "home_runs": 0,
-        "away_hits": 0,
-        "home_hits": 0,
-        "away_errors": 0,
-        "home_errors": 0,
         "away_team_name": "LMB All-Stars",
         "home_team_name": "Mexico National Team",
         "bases": {
@@ -17757,7 +17767,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -17765,7 +17775,7 @@
       }
     }
   },
-  "updated_at": "28/06/2026 17:06",
+  "updated_at": "28/06/2026 17:22",
   "stats": {
     "total": 110,
     "acertados": 64,
@@ -21041,25 +21051,25 @@
       "away": "New York Liberty",
       "home_abbr": "GS",
       "away_abbr": "NY",
-      "home_score": 4,
-      "away_score": 0,
+      "home_score": 17,
+      "away_score": 12,
       "home_linescores": [
         {
           "period": 1,
-          "value": 4,
-          "display": "4"
+          "value": 17,
+          "display": "17"
         }
       ],
       "away_linescores": [
         {
           "period": 1,
-          "value": 0,
-          "display": "0"
+          "value": 12,
+          "display": "12"
         }
       ],
-      "clock": "8:28",
+      "clock": "1:41",
       "period": 1,
-      "state": "Q1 8:28",
+      "state": "Q1 1:41",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/GS.png&h=40&w=40",
