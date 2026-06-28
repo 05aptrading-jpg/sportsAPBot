@@ -1,5 +1,5 @@
 {
-  "fecha": "27/06/2026 19:51",
+  "fecha": "27/06/2026 20:01",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782655200,
@@ -13292,7 +13292,7 @@
       "llm_ir_favorito": "",
       "llm_porque": "",
       "llm_factores": "",
-      "resultado_llm": "pendiente",
+      "resultado_llm": "N/D",
       "linescore": {
         "innings": [
           {
@@ -13351,9 +13351,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "8",
         "opp_score": "2",
         "score_fav": "8",
@@ -13470,7 +13470,7 @@
       "llm_ir_favorito": "",
       "llm_porque": "",
       "llm_factores": "",
-      "resultado_llm": "pendiente",
+      "resultado_llm": "N/D",
       "linescore": {
         "innings": [
           {
@@ -13547,8 +13547,8 @@
       "fav_team": "Los Angeles Angels",
       "opp_team": "Athletics",
       "score_fav": "0",
-      "score_opp": "0",
-      "state": "Bottom 1st",
+      "score_opp": "1",
+      "state": "Top 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 824015,
@@ -13565,17 +13565,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
         "outs": 2,
         "balls": 1,
-        "strikes": 2,
-        "away_runs": 0,
+        "strikes": 0,
+        "away_runs": 1,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -13589,9 +13593,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "0"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40",
@@ -13604,8 +13608,8 @@
       "fav_team": "Los Angeles Dodgers",
       "opp_team": "San Diego Padres",
       "score_fav": "1",
-      "score_opp": "0",
-      "state": "Top 5th",
+      "score_opp": "1",
+      "state": "Bottom 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 823283,
@@ -13637,19 +13641,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 5,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "5th",
-        "outs": 1,
-        "balls": 2,
-        "strikes": 2,
+        "outs": 3,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 1,
-        "home_runs": 0,
+        "home_runs": 1,
         "away_hits": 5,
-        "home_hits": 2,
+        "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Los Angeles Dodgers",
@@ -13663,9 +13667,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "1",
-        "opp_score": "0",
+        "opp_score": "1",
         "score_fav": "1",
-        "score_opp": "0"
+        "score_opp": "1"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SD.png&h=40&w=40"
@@ -13673,13 +13677,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-27",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "St. Louis Cardinals",
       "opp_team": "Miami Marlins",
       "score_fav": "1",
       "score_opp": "5",
-      "state": "Middle 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "loss",
       "label": "📋",
       "game_pk": 823038,
       "fav_abbr": "STL",
@@ -13689,7 +13693,7 @@
       "llm_ir_favorito": "",
       "llm_porque": "",
       "llm_factores": "",
-      "resultado_llm": "pendiente",
+      "resultado_llm": "N/D",
       "linescore": {
         "innings": [
           {
@@ -13732,15 +13736,15 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 3,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 5,
         "home_runs": 1,
-        "away_hits": 12,
+        "away_hits": 13,
         "home_hits": 7,
         "away_errors": 0,
-        "home_errors": 1,
+        "home_errors": 0,
         "away_team_name": "Miami Marlins",
         "home_team_name": "St. Louis Cardinals",
         "bases": {
@@ -13748,9 +13752,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "5",
         "opp_score": "1",
         "score_fav": "5",
@@ -13778,7 +13782,7 @@
       "llm_ir_favorito": "",
       "llm_porque": "",
       "llm_factores": "",
-      "resultado_llm": "pendiente",
+      "resultado_llm": "N/D",
       "linescore": {
         "innings": [
           {
@@ -14033,8 +14037,8 @@
       "fav_team": "Atlanta Braves",
       "opp_team": "San Francisco Giants",
       "score_fav": "0",
-      "score_opp": "2",
-      "state": "Bottom 3rd",
+      "score_opp": "5",
+      "state": "Top 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 823207,
@@ -14058,19 +14062,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 3
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 3,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 3,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 0,
-        "home_runs": 2,
+        "home_runs": 5,
         "away_hits": 1,
-        "home_hits": 4,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Atlanta Braves",
@@ -14084,9 +14092,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "2",
+        "opp_score": "5",
         "score_fav": "0",
-        "score_opp": "2"
+        "score_opp": "5"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SF.png&h=40&w=40"
@@ -14199,7 +14207,7 @@
       "llm_ir_favorito": "",
       "llm_porque": "",
       "llm_factores": "",
-      "resultado_llm": "pendiente",
+      "resultado_llm": "N/D",
       "linescore": {
         "innings": [
           {
@@ -14258,9 +14266,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "3",
         "opp_score": "4",
         "score_fav": "3",
@@ -14366,7 +14374,7 @@
       "opp_team": "Washington Nationals",
       "score_fav": "3",
       "score_opp": "3",
-      "state": "Bottom 9th",
+      "state": "Top 10th",
       "result": "live",
       "label": "📋",
       "game_pk": 824825,
@@ -14415,17 +14423,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 1,
+        "current_inning": 10,
+        "is_top": true,
+        "inning_ordinal": "10th",
+        "outs": 0,
         "balls": 0,
         "strikes": 0,
-        "away_runs": 3,
+        "away_runs": 4,
         "home_runs": 3,
-        "away_hits": 11,
+        "away_hits": 12,
         "home_hits": 6,
         "away_errors": 1,
         "home_errors": 2,
@@ -14439,9 +14451,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "3",
+        "fav_score": "4",
         "opp_score": "3",
-        "score_fav": "3",
+        "score_fav": "4",
         "score_opp": "3"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BAL.png&h=40&w=40",
@@ -14509,13 +14521,13 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 1,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 8,
         "home_runs": 2,
         "away_hits": 12,
-        "home_hits": 7,
+        "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Colorado Rockies",
@@ -15438,9 +15450,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "8",
         "opp_score": "2",
         "score_fav": "8",
@@ -15600,9 +15612,9 @@
     "824015": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Top 2nd",
       "away_runs": 0,
-      "home_runs": 0,
+      "home_runs": 1,
       "away_team_name": "Athletics",
       "home_team_name": "Los Angeles Angels",
       "linescore": {
@@ -15610,17 +15622,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
         "outs": 2,
         "balls": 1,
-        "strikes": 2,
-        "away_runs": 0,
+        "strikes": 0,
+        "away_runs": 1,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -15634,18 +15650,18 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "0"
       }
     },
     "823283": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 5th",
+      "status": "Bottom 5th",
       "away_runs": 1,
-      "home_runs": 0,
+      "home_runs": 1,
       "away_team_name": "San Diego Padres",
       "home_team_name": "Los Angeles Dodgers",
       "linescore": {
@@ -15668,19 +15684,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 5,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "5th",
-        "outs": 1,
-        "balls": 2,
-        "strikes": 2,
+        "outs": 3,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 1,
-        "home_runs": 0,
+        "home_runs": 1,
         "away_hits": 5,
-        "home_hits": 2,
+        "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Los Angeles Dodgers",
@@ -15694,15 +15710,15 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "1",
-        "opp_score": "0",
+        "opp_score": "1",
         "score_fav": "1",
-        "score_opp": "0"
+        "score_opp": "1"
       }
     },
     "823038": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Middle 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 1,
       "home_runs": 5,
       "away_team_name": "Miami Marlins",
@@ -15749,15 +15765,15 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 3,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 5,
         "home_runs": 1,
-        "away_hits": 12,
+        "away_hits": 13,
         "home_hits": 7,
         "away_errors": 0,
-        "home_errors": 1,
+        "home_errors": 0,
         "away_team_name": "Miami Marlins",
         "home_team_name": "St. Louis Cardinals",
         "bases": {
@@ -15765,9 +15781,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "5",
         "opp_score": "1",
         "score_fav": "5",
@@ -16002,9 +16018,9 @@
     "823207": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 3rd",
+      "status": "Top 4th",
       "away_runs": 0,
-      "home_runs": 2,
+      "home_runs": 5,
       "away_team_name": "San Francisco Giants",
       "home_team_name": "Atlanta Braves",
       "linescore": {
@@ -16019,19 +16035,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 3
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 3,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 3,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 0,
-        "home_runs": 2,
+        "home_runs": 5,
         "away_hits": 1,
-        "home_hits": 4,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Atlanta Braves",
@@ -16045,9 +16065,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "2",
+        "opp_score": "5",
         "score_fav": "0",
-        "score_opp": "2"
+        "score_opp": "5"
       }
     },
     "824581": {
@@ -16191,9 +16211,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "3",
         "opp_score": "4",
         "score_fav": "3",
@@ -16278,7 +16298,7 @@
     "824825": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 9th",
+      "status": "Top 10th",
       "away_runs": 3,
       "home_runs": 3,
       "away_team_name": "Washington Nationals",
@@ -16320,17 +16340,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 1,
+        "current_inning": 10,
+        "is_top": true,
+        "inning_ordinal": "10th",
+        "outs": 0,
         "balls": 0,
         "strikes": 0,
-        "away_runs": 3,
+        "away_runs": 4,
         "home_runs": 3,
-        "away_hits": 11,
+        "away_hits": 12,
         "home_hits": 6,
         "away_errors": 1,
         "home_errors": 2,
@@ -16344,9 +16368,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "3",
+        "fav_score": "4",
         "opp_score": "3",
-        "score_fav": "3",
+        "score_fav": "4",
         "score_opp": "3"
       }
     },
@@ -16400,13 +16424,13 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 1,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 8,
         "home_runs": 2,
         "away_hits": 12,
-        "home_hits": 7,
+        "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Colorado Rockies",
@@ -16426,12 +16450,12 @@
       }
     }
   },
-  "updated_at": "27/06/2026 19:51",
+  "updated_at": "27/06/2026 20:01",
   "stats": {
-    "total": 97,
+    "total": 100,
     "acertados": 59,
-    "fallidos": 38,
-    "win_rate": 60.8,
+    "fallidos": 41,
+    "win_rate": 59.0,
     "alta_total": 36,
     "alta_acertados": 23,
     "alta_fallidos": 13,
@@ -16440,10 +16464,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 167,
+    "baja_total": 172,
     "baja_acertados": 83,
-    "baja_fallidos": 84,
-    "baja_win_rate": 49.7,
+    "baja_fallidos": 89,
+    "baja_win_rate": 48.3,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -16453,10 +16477,10 @@
     "llm_win_rate": 52.3
   },
   "stats_mlb": {
-    "total": 73,
+    "total": 76,
     "acertados": 47,
-    "fallidos": 26,
-    "win_rate": 64.4,
+    "fallidos": 29,
+    "win_rate": 61.8,
     "alta_total": 21,
     "alta_acertados": 15,
     "alta_fallidos": 6,
@@ -16465,10 +16489,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 112,
+    "baja_total": 117,
     "baja_acertados": 65,
-    "baja_fallidos": 47,
-    "baja_win_rate": 58.0,
+    "baja_fallidos": 52,
+    "baja_win_rate": 55.6,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -16503,10 +16527,10 @@
     "llm_win_rate": 37.1
   },
   "stats_hoy": {
-    "total": 2,
+    "total": 5,
     "acertados": 1,
-    "fallidos": 1,
-    "win_rate": 50.0,
+    "fallidos": 4,
+    "win_rate": 20.0,
     "alta_total": 0,
     "alta_acertados": 0,
     "alta_fallidos": 0,
@@ -16515,10 +16539,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 5,
+    "baja_total": 10,
     "baja_acertados": 2,
-    "baja_fallidos": 3,
-    "baja_win_rate": 40.0,
+    "baja_fallidos": 8,
+    "baja_win_rate": 20.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -16528,10 +16552,10 @@
     "llm_win_rate": 0
   },
   "stats_hoy_mlb": {
-    "total": 2,
+    "total": 5,
     "acertados": 1,
-    "fallidos": 1,
-    "win_rate": 50.0,
+    "fallidos": 4,
+    "win_rate": 20.0,
     "alta_total": 0,
     "alta_acertados": 0,
     "alta_fallidos": 0,
@@ -16540,10 +16564,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 5,
+    "baja_total": 10,
     "baja_acertados": 2,
-    "baja_fallidos": 3,
-    "baja_win_rate": 40.0,
+    "baja_fallidos": 8,
+    "baja_win_rate": 20.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -16578,10 +16602,10 @@
     "llm_win_rate": 0
   },
   "stats_3dias": {
-    "total": 12,
+    "total": 15,
     "acertados": 6,
-    "fallidos": 6,
-    "win_rate": 50.0,
+    "fallidos": 9,
+    "win_rate": 40.0,
     "alta_total": 2,
     "alta_acertados": 2,
     "alta_fallidos": 0,
@@ -16590,10 +16614,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 18,
+    "baja_total": 23,
     "baja_acertados": 9,
-    "baja_fallidos": 9,
-    "baja_win_rate": 50.0,
+    "baja_fallidos": 14,
+    "baja_win_rate": 39.1,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -16603,10 +16627,10 @@
     "llm_win_rate": 58.3
   },
   "stats_3dias_mlb": {
-    "total": 12,
+    "total": 15,
     "acertados": 6,
-    "fallidos": 6,
-    "win_rate": 50.0,
+    "fallidos": 9,
+    "win_rate": 40.0,
     "alta_total": 2,
     "alta_acertados": 2,
     "alta_fallidos": 0,
@@ -16615,10 +16639,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 18,
+    "baja_total": 23,
     "baja_acertados": 9,
-    "baja_fallidos": 9,
-    "baja_win_rate": 50.0,
+    "baja_fallidos": 14,
+    "baja_win_rate": 39.1,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -16653,10 +16677,10 @@
     "llm_win_rate": 0
   },
   "stats_semanal": {
-    "total": 12,
+    "total": 15,
     "acertados": 6,
-    "fallidos": 6,
-    "win_rate": 50.0,
+    "fallidos": 9,
+    "win_rate": 40.0,
     "alta_total": 2,
     "alta_acertados": 2,
     "alta_fallidos": 0,
@@ -16665,10 +16689,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 18,
+    "baja_total": 23,
     "baja_acertados": 9,
-    "baja_fallidos": 9,
-    "baja_win_rate": 50.0,
+    "baja_fallidos": 14,
+    "baja_win_rate": 39.1,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -16678,10 +16702,10 @@
     "llm_win_rate": 58.3
   },
   "stats_semanal_mlb": {
-    "total": 12,
+    "total": 15,
     "acertados": 6,
-    "fallidos": 6,
-    "win_rate": 50.0,
+    "fallidos": 9,
+    "win_rate": 40.0,
     "alta_total": 2,
     "alta_acertados": 2,
     "alta_fallidos": 0,
@@ -16690,10 +16714,10 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 18,
+    "baja_total": 23,
     "baja_acertados": 9,
-    "baja_fallidos": 9,
-    "baja_win_rate": 50.0,
+    "baja_fallidos": 14,
+    "baja_win_rate": 39.1,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
@@ -17018,10 +17042,10 @@
       "llm_win_rate": 58.3
     },
     "2026-06-27": {
-      "total": 2,
+      "total": 5,
       "acertados": 1,
-      "fallidos": 1,
-      "win_rate": 50.0,
+      "fallidos": 4,
+      "win_rate": 20.0,
       "alta_total": 0,
       "alta_acertados": 0,
       "alta_fallidos": 0,
@@ -17030,10 +17054,10 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 5,
+      "baja_total": 10,
       "baja_acertados": 2,
-      "baja_fallidos": 3,
-      "baja_win_rate": 40.0,
+      "baja_fallidos": 8,
+      "baja_win_rate": 20.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
@@ -17320,10 +17344,10 @@
       "llm_win_rate": 58.3
     },
     "2026-06-27": {
-      "total": 2,
+      "total": 5,
       "acertados": 1,
-      "fallidos": 1,
-      "win_rate": 50.0,
+      "fallidos": 4,
+      "win_rate": 20.0,
       "alta_total": 0,
       "alta_acertados": 0,
       "alta_fallidos": 0,
@@ -17332,10 +17356,10 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 5,
+      "baja_total": 10,
       "baja_acertados": 2,
-      "baja_fallidos": 3,
-      "baja_win_rate": 40.0,
+      "baja_fallidos": 8,
+      "baja_win_rate": 20.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
@@ -19392,589 +19416,6 @@
   },
   "nba_games": [],
   "wnba_games": [
-    {
-      "game_date": "2026-06-25",
-      "game_id": "401857021",
-      "status_emoji": "🏁",
-      "home": "Toronto Tempo",
-      "away": "Los Angeles Sparks",
-      "home_abbr": "TOR",
-      "away_abbr": "LA",
-      "home_score": 125,
-      "away_score": 97,
-      "home_linescores": [
-        {
-          "period": 1,
-          "value": 38,
-          "display": "38"
-        },
-        {
-          "period": 2,
-          "value": 25,
-          "display": "25"
-        },
-        {
-          "period": 3,
-          "value": 32,
-          "display": "32"
-        },
-        {
-          "period": 4,
-          "value": 30,
-          "display": "30"
-        }
-      ],
-      "away_linescores": [
-        {
-          "period": 1,
-          "value": 24,
-          "display": "24"
-        },
-        {
-          "period": 2,
-          "value": 15,
-          "display": "15"
-        },
-        {
-          "period": 3,
-          "value": 27,
-          "display": "27"
-        },
-        {
-          "period": 4,
-          "value": 31,
-          "display": "31"
-        }
-      ],
-      "clock": "0.0",
-      "period": 4,
-      "state": "Final",
-      "result": "completed",
-      "liga": "WNBA",
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/TOR.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/LA.png&h=40&w=40",
-      "llm_puntos_local": 92,
-      "llm_puntos_visitante": 87,
-      "llm_spread": 5.0,
-      "llm_confianza_ou": 65,
-      "llm_linea_ou": 179,
-      "llm_anotadores": [
-        {
-          "nombre": "Marina Mabrey",
-          "equipo": "Local",
-          "pts_estimados": 28.5,
-          "confianza_pts": 75
-        },
-        {
-          "nombre": "Dearica Hamby",
-          "equipo": "Visitante",
-          "pts_estimados": 21.0,
-          "confianza_pts": 70
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Laura Juskaite",
-          "equipo": "Local",
-          "reb_estimados": 12.0,
-          "robos_estimados": 1.0,
-          "bloqueos_estimados": 0.5,
-          "confianza_def": 80
-        },
-        {
-          "nombre": "Dearica Hamby",
-          "equipo": "Visitante",
-          "reb_estimados": 9.0,
-          "robos_estimados": 1.5,
-          "bloqueos_estimados": 0.3,
-          "confianza_def": 75
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Julie Allemand",
-          "equipo": "Local",
-          "ast_estimadas": 14.0,
-          "confianza_ast": 80
-        },
-        {
-          "nombre": "Erica Wheeler",
-          "equipo": "Visitante",
-          "ast_estimadas": 5.0,
-          "confianza_ast": 65
-        }
-      ],
-      "llm_ranking_local": "Este: 6° (9-9)",
-      "llm_ranking_visitante": "Oeste: 5° (8-9)",
-      "llm_stats_comparison": {
-        "ppg_local": 91.4,
-        "ppg_visitante": 88.9,
-        "opp_ppg_local": 95.2,
-        "opp_ppg_visitante": 99.8,
-        "fg_pct_local": 44.4,
-        "fg_pct_visitante": 45.7,
-        "pace_analysis": "Ritmo moderado, ambos equipos tienen un juego equilibrado."
-      },
-      "llm_lineas_ou": {
-        "over_140": 80,
-        "over_150": 65,
-        "over_160": 50
-      },
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord local y eficiencia ofensiva.",
-      "llm_factores": [
-        "Localía",
-        "Eficiencia ofensiva superior"
-      ],
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_favorito": "Toronto Tempo"
-    },
-    {
-      "game_date": "2026-06-25",
-      "game_id": "401857022",
-      "status_emoji": "🏁",
-      "home": "Las Vegas Aces",
-      "away": "Dallas Wings",
-      "home_abbr": "LV",
-      "away_abbr": "DAL",
-      "home_score": 99,
-      "away_score": 84,
-      "home_linescores": [
-        {
-          "period": 1,
-          "value": 28,
-          "display": "28"
-        },
-        {
-          "period": 2,
-          "value": 21,
-          "display": "21"
-        },
-        {
-          "period": 3,
-          "value": 22,
-          "display": "22"
-        },
-        {
-          "period": 4,
-          "value": 28,
-          "display": "28"
-        }
-      ],
-      "away_linescores": [
-        {
-          "period": 1,
-          "value": 17,
-          "display": "17"
-        },
-        {
-          "period": 2,
-          "value": 22,
-          "display": "22"
-        },
-        {
-          "period": 3,
-          "value": 24,
-          "display": "24"
-        },
-        {
-          "period": 4,
-          "value": 21,
-          "display": "21"
-        }
-      ],
-      "clock": "10:00",
-      "period": 4,
-      "state": "Final",
-      "result": "completed",
-      "liga": "WNBA",
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/LV.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/DAL.png&h=40&w=40",
-      "llm_puntos_local": 92,
-      "llm_puntos_visitante": 89,
-      "llm_spread": 3.0,
-      "llm_confianza_ou": 70,
-      "llm_linea_ou": 181,
-      "llm_anotadores": [
-        {
-          "nombre": "A'ja Wilson",
-          "equipo": "Local",
-          "pts_estimados": 32.0,
-          "confianza_pts": 80
-        },
-        {
-          "nombre": "Paige Bueckers",
-          "equipo": "Visitante",
-          "pts_estimados": 25.0,
-          "confianza_pts": 75
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "NaLyssa Smith",
-          "equipo": "Local",
-          "reb_estimados": 11.0,
-          "robos_estimados": 1.0,
-          "bloqueos_estimados": 1.0,
-          "confianza_def": 85
-        },
-        {
-          "nombre": "Jessica Shepard",
-          "equipo": "Visitante",
-          "reb_estimados": 14.0,
-          "robos_estimados": 0.5,
-          "bloqueos_estimados": 0.2,
-          "confianza_def": 70
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Chelsea Gray",
-          "equipo": "Local",
-          "ast_estimadas": 9.0,
-          "confianza_ast": 75
-        },
-        {
-          "nombre": "Paige Bueckers",
-          "equipo": "Visitante",
-          "ast_estimadas": 6.0,
-          "confianza_ast": 70
-        }
-      ],
-      "llm_ranking_local": "Oeste: 1° (13-5)",
-      "llm_ranking_visitante": "Oeste: 4° (11-7)",
-      "llm_stats_comparison": {
-        "ppg_local": 89.8,
-        "ppg_visitante": 89.1,
-        "opp_ppg_local": 99.8,
-        "opp_ppg_visitante": 99.8,
-        "fg_pct_local": 48.7,
-        "fg_pct_visitante": 46.3,
-        "pace_analysis": "Ritmo alto, ambos equipos juegan rápido y anotan con eficacia."
-      },
-      "llm_lineas_ou": {
-        "over_140": 85,
-        "over_150": 70,
-        "over_160": 55
-      },
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y eficiencia ofensiva en casa.",
-      "llm_factores": [
-        "Localía",
-        "Eficiencia ofensiva superior"
-      ],
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_favorito": "Las Vegas Aces"
-    },
-    {
-      "game_date": "2026-06-25",
-      "game_id": "401857023",
-      "status_emoji": "🏁",
-      "home": "Seattle Storm",
-      "away": "New York Liberty",
-      "home_abbr": "SEA",
-      "away_abbr": "NY",
-      "home_score": 99,
-      "away_score": 88,
-      "home_linescores": [
-        {
-          "period": 1,
-          "value": 28,
-          "display": "28"
-        },
-        {
-          "period": 2,
-          "value": 20,
-          "display": "20"
-        },
-        {
-          "period": 3,
-          "value": 24,
-          "display": "24"
-        },
-        {
-          "period": 4,
-          "value": 27,
-          "display": "27"
-        }
-      ],
-      "away_linescores": [
-        {
-          "period": 1,
-          "value": 24,
-          "display": "24"
-        },
-        {
-          "period": 2,
-          "value": 16,
-          "display": "16"
-        },
-        {
-          "period": 3,
-          "value": 20,
-          "display": "20"
-        },
-        {
-          "period": 4,
-          "value": 28,
-          "display": "28"
-        }
-      ],
-      "clock": "10:00",
-      "period": 4,
-      "state": "Final",
-      "result": "completed",
-      "liga": "WNBA",
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/SEA.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/NY.png&h=40&w=40",
-      "llm_puntos_local": 80,
-      "llm_puntos_visitante": 90,
-      "llm_spread": 10.0,
-      "llm_confianza_ou": 60,
-      "llm_linea_ou": 170,
-      "llm_anotadores": [
-        {
-          "nombre": "Flau'jae Johnson",
-          "equipo": "Local",
-          "pts_estimados": 28.0,
-          "confianza_pts": 75
-        },
-        {
-          "nombre": "Jonquel Jones",
-          "equipo": "Visitante",
-          "pts_estimados": 26.0,
-          "confianza_pts": 75
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Dominique Malonga",
-          "equipo": "Local",
-          "reb_estimados": 10.0,
-          "robos_estimados": 1.0,
-          "bloqueos_estimados": 0.5,
-          "confianza_def": 70
-        },
-        {
-          "nombre": "Jonquel Jones",
-          "equipo": "Visitante",
-          "reb_estimados": 8.0,
-          "robos_estimados": 1.0,
-          "bloqueos_estimados": 0.5,
-          "confianza_def": 75
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Jade Melbourne",
-          "equipo": "Local",
-          "ast_estimadas": 7.0,
-          "confianza_ast": 70
-        },
-        {
-          "nombre": "Sabrina Ionescu",
-          "equipo": "Visitante",
-          "ast_estimadas": 5.0,
-          "confianza_ast": 65
-        }
-      ],
-      "llm_ranking_local": "Oeste: 12° (4-15)",
-      "llm_ranking_visitante": "Este: 2° (12-7)",
-      "llm_stats_comparison": {
-        "ppg_local": 79.8,
-        "ppg_visitante": 88.9,
-        "opp_ppg_local": 99.8,
-        "opp_ppg_visitante": 95.2,
-        "fg_pct_local": 41.9,
-        "fg_pct_visitante": 46.2,
-        "pace_analysis": "Ritmo lento, Seattle lucha por anotar consistentemente."
-      },
-      "llm_lineas_ou": {
-        "over_140": 70,
-        "over_150": 55,
-        "over_160": 40
-      },
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y eficiencia ofensiva en general.",
-      "llm_factores": [
-        "Eficiencia ofensiva superior",
-        "Rendimiento en carretera"
-      ],
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_favorito": "New York Liberty"
-    },
-    {
-      "game_date": "2026-06-27",
-      "game_id": "401857027",
-      "status_emoji": "🏁",
-      "home": "Toronto Tempo",
-      "away": "Phoenix Mercury",
-      "home_abbr": "TOR",
-      "away_abbr": "PHX",
-      "home_score": 80,
-      "away_score": 89,
-      "home_linescores": [
-        {
-          "period": 1,
-          "value": 22,
-          "display": "22"
-        },
-        {
-          "period": 2,
-          "value": 22,
-          "display": "22"
-        },
-        {
-          "period": 3,
-          "value": 22,
-          "display": "22"
-        },
-        {
-          "period": 4,
-          "value": 14,
-          "display": "14"
-        }
-      ],
-      "away_linescores": [
-        {
-          "period": 1,
-          "value": 20,
-          "display": "20"
-        },
-        {
-          "period": 2,
-          "value": 22,
-          "display": "22"
-        },
-        {
-          "period": 3,
-          "value": 23,
-          "display": "23"
-        },
-        {
-          "period": 4,
-          "value": 24,
-          "display": "24"
-        }
-      ],
-      "clock": "0.0",
-      "period": 4,
-      "state": "Final",
-      "result": "completed",
-      "liga": "WNBA",
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/TOR.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/PHX.png&h=40&w=40"
-    },
-    {
-      "game_date": "2026-06-27",
-      "game_id": "401857028",
-      "status_emoji": "🔴",
-      "home": "Indiana Fever",
-      "away": "Los Angeles Sparks",
-      "home_abbr": "IND",
-      "away_abbr": "LA",
-      "home_score": 95,
-      "away_score": 62,
-      "home_linescores": [
-        {
-          "period": 1,
-          "value": 27,
-          "display": "27"
-        },
-        {
-          "period": 2,
-          "value": 30,
-          "display": "30"
-        },
-        {
-          "period": 3,
-          "value": 32,
-          "display": "32"
-        },
-        {
-          "period": 4,
-          "value": 6,
-          "display": "6"
-        }
-      ],
-      "away_linescores": [
-        {
-          "period": 1,
-          "value": 21,
-          "display": "21"
-        },
-        {
-          "period": 2,
-          "value": 16,
-          "display": "16"
-        },
-        {
-          "period": 3,
-          "value": 21,
-          "display": "21"
-        },
-        {
-          "period": 4,
-          "value": 4,
-          "display": "4"
-        }
-      ],
-      "clock": "8:14",
-      "period": 4,
-      "state": "Q4 8:14",
-      "result": "live",
-      "liga": "WNBA",
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/IND.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/LA.png&h=40&w=40"
-    },
-    {
-      "game_date": "2026-06-27",
-      "game_id": "401857029",
-      "status_emoji": "🔴",
-      "home": "Seattle Storm",
-      "away": "Atlanta Dream",
-      "home_abbr": "SEA",
-      "away_abbr": "ATL",
-      "home_score": 44,
-      "away_score": 36,
-      "home_linescores": [
-        {
-          "period": 1,
-          "value": 21,
-          "display": "21"
-        },
-        {
-          "period": 2,
-          "value": 23,
-          "display": "23"
-        }
-      ],
-      "away_linescores": [
-        {
-          "period": 1,
-          "value": 13,
-          "display": "13"
-        },
-        {
-          "period": 2,
-          "value": 23,
-          "display": "23"
-        }
-      ],
-      "clock": "1:26",
-      "period": 2,
-      "state": "Q2 1:26",
-      "result": "live",
-      "liga": "WNBA",
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/SEA.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/ATL.png&h=40&w=40"
-    },
     {
       "game_date": "2026-06-26",
       "game_id": "401857024",
