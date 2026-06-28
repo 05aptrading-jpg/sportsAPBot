@@ -1,5 +1,5 @@
 {
-  "fecha": "27/06/2026 22:07",
+  "fecha": "27/06/2026 22:22",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782655200,
@@ -13543,13 +13543,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-27",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Los Angeles Angels",
       "opp_team": "Athletics",
-      "score_fav": "3",
+      "score_fav": "5",
       "score_opp": "2",
-      "state": "Bottom 8th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 824015,
       "fav_abbr": "LAA",
@@ -13592,19 +13592,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 1,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 3,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 3,
         "away_runs": 2,
-        "home_runs": 3,
+        "home_runs": 5,
         "away_hits": 5,
-        "home_hits": 8,
+        "home_hits": 10,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Athletics",
@@ -13614,13 +13618,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "2",
-        "opp_score": "3",
+        "opp_score": "5",
         "score_fav": "2",
-        "score_opp": "3"
+        "score_opp": "5"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40"
@@ -14616,7 +14620,7 @@
     1992258520,
     8670833401
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": true,
   "live_data": {
     "401815899": {
@@ -15670,10 +15674,10 @@
       }
     },
     "824015": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 8th",
-      "away_runs": 3,
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
+      "away_runs": 5,
       "home_runs": 2,
       "away_team_name": "Athletics",
       "home_team_name": "Los Angeles Angels",
@@ -15709,19 +15713,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 1,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 3,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 3,
         "away_runs": 2,
-        "home_runs": 3,
+        "home_runs": 5,
         "away_hits": 5,
-        "home_hits": 8,
+        "home_hits": 10,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Athletics",
@@ -15731,13 +15739,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "2",
-        "opp_score": "3",
+        "opp_score": "5",
         "score_fav": "2",
-        "score_opp": "3"
+        "score_opp": "5"
       }
     },
     "823283": {
@@ -16570,7 +16578,7 @@
       }
     }
   },
-  "updated_at": "27/06/2026 22:07",
+  "updated_at": "27/06/2026 22:22",
   "stats": {
     "total": 103,
     "acertados": 60,
