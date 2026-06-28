@@ -1,5 +1,5 @@
 {
-  "fecha": "28/06/2026 11:21",
+  "fecha": "28/06/2026 11:37",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782741600,
@@ -14423,13 +14423,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-28",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Cincinnati Reds",
       "opp_team": "Pittsburgh Pirates",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 823362,
       "fav_abbr": "CIN",
@@ -14466,9 +14466,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -14764,7 +14764,7 @@
     1992258520,
     8670833401
   ],
-  "has_live": false,
+  "has_live": true,
   "has_scheduled": true,
   "live_data": {
     "401815910": {
@@ -16494,9 +16494,9 @@
       }
     },
     "823362": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Pittsburgh Pirates",
@@ -16527,9 +16527,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -16747,7 +16747,7 @@
       }
     }
   },
-  "updated_at": "28/06/2026 11:21",
+  "updated_at": "28/06/2026 11:37",
   "stats": {
     "total": 103,
     "acertados": 60,
