@@ -1,5 +1,5 @@
 {
-  "fecha": "28/06/2026 21:07",
+  "fecha": "28/06/2026 21:22",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782741600,
@@ -15262,13 +15262,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-06-28",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "LMB All-Stars",
       "opp_team": "Mexico National Team",
       "score_fav": "5",
       "score_opp": "3",
-      "state": "In Progress",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "home_team": "Mexico National Team",
       "away_team": "LMB All-Stars",
       "label": "📋",
@@ -15319,8 +15319,8 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
-        "balls": 0,
+        "outs": 3,
+        "balls": 3,
         "strikes": 1,
         "away_runs": 5,
         "home_runs": 3,
@@ -15335,9 +15335,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "5",
         "opp_score": "3",
         "score_fav": "5",
@@ -15351,7 +15351,7 @@
     1992258520,
     8670833401
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": false,
   "live_data": {
     "401815910": {
@@ -17836,9 +17836,9 @@
       }
     },
     "846139": {
-      "is_live": true,
-      "is_final": false,
-      "status": "In Progress",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 5,
       "home_runs": 3,
       "away_team_name": "Mexico National Team",
@@ -17885,8 +17885,8 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
-        "balls": 0,
+        "outs": 3,
+        "balls": 3,
         "strikes": 1,
         "away_runs": 5,
         "home_runs": 3,
@@ -17901,9 +17901,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "5",
         "opp_score": "3",
         "score_fav": "5",
@@ -17911,7 +17911,7 @@
       }
     }
   },
-  "updated_at": "28/06/2026 21:07",
+  "updated_at": "28/06/2026 21:22",
   "stats": {
     "total": 111,
     "acertados": 64,
