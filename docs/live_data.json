@@ -1,5 +1,5 @@
 {
-  "fecha": "29/06/2026 16:43",
+  "fecha": "29/06/2026 16:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782828000,
@@ -14752,13 +14752,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ARI.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SF.png&h=40&w=40",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "llm_carreras": "",
       "llm_carreras_lineas": {},
       "llm_ranking_local": "",
@@ -14825,13 +14818,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BOS.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/WSH.png&h=40&w=40",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "llm_carreras": "",
       "llm_carreras_lineas": {},
       "llm_ranking_local": "",
@@ -14863,10 +14849,15 @@
       "llm_factores": [],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -14893,13 +14884,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SEA.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "llm_carreras": "",
       "llm_carreras_lineas": {},
       "llm_ranking_local": "",
@@ -14918,7 +14902,7 @@
       "opp_team": "New York Mets",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "📋",
       "game_pk": 822792,
@@ -14958,7 +14942,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -14966,13 +14950,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TOR.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYM.png&h=40&w=40",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "llm_carreras": "",
       "llm_carreras_lineas": {},
       "llm_ranking_local": "",
@@ -15039,13 +15016,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "llm_carreras": "",
       "llm_carreras_lineas": {},
       "llm_ranking_local": "",
@@ -15063,8 +15033,8 @@
       "fav_team": "Chicago White Sox",
       "opp_team": "Baltimore Orioles",
       "score_fav": "0",
-      "score_opp": "0",
-      "state": "Top 1st",
+      "score_opp": "1",
+      "state": "Bottom 1st",
       "result": "live",
       "label": "📋",
       "game_pk": 824822,
@@ -15080,19 +15050,19 @@
         "innings": [
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
         "outs": 2,
-        "balls": 0,
+        "balls": 2,
         "strikes": 2,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 1,
         "away_hits": 1,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Chicago White Sox",
@@ -15106,19 +15076,12 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "1",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "1"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHW.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BAL.png&h=40&w=40",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "llm_carreras": "",
       "llm_carreras_lineas": {},
       "llm_ranking_local": "",
@@ -15136,8 +15099,8 @@
       "fav_team": "Pittsburgh Pirates",
       "opp_team": "Philadelphia Phillies",
       "score_fav": "0",
-      "score_opp": "0",
-      "state": "Top 1st",
+      "score_opp": "1",
+      "state": "Bottom 1st",
       "result": "live",
       "label": "📋",
       "game_pk": 823444,
@@ -15153,19 +15116,19 @@
         "innings": [
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
         "outs": 2,
-        "balls": 3,
-        "strikes": 3,
+        "balls": 0,
+        "strikes": 2,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 1,
         "away_hits": 0,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Pittsburgh Pirates",
@@ -15179,19 +15142,12 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "1",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "1"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PIT.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PHI.png&h=40&w=40",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "llm_carreras": "",
       "llm_carreras_lineas": {},
       "llm_ranking_local": "",
@@ -15258,13 +15214,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHC.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SD.png&h=40&w=40",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "llm_carreras": "",
       "llm_carreras_lineas": {},
       "llm_ranking_local": "",
@@ -15331,13 +15280,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CIN.png&h=40&w=40",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "llm_carreras": "",
       "llm_carreras_lineas": {},
       "llm_ranking_local": "",
@@ -15404,13 +15346,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYY.png&h=40&w=40",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "llm_carreras": "",
       "llm_carreras_lineas": {},
       "llm_ranking_local": "",
@@ -15477,13 +15412,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "llm_carreras": "",
       "llm_carreras_lineas": {},
       "llm_ranking_local": "",
@@ -15550,13 +15478,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIA.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/COL.png&h=40&w=40",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "llm_carreras": "",
       "llm_carreras_lineas": {},
       "llm_ranking_local": "",
@@ -15623,13 +15544,6 @@
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TEX.png&h=40&w=40",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "llm_carreras": "",
       "llm_carreras_lineas": {},
       "llm_ranking_local": "",
@@ -17031,10 +16945,15 @@
       "away_team_name": "Los Angeles Angels",
       "home_team_name": "Seattle Mariners",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -17063,7 +16982,7 @@
     "822792": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "New York Mets",
@@ -17096,7 +17015,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -17149,28 +17068,28 @@
     "824822": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 1st",
+      "status": "Bottom 1st",
       "away_runs": 0,
-      "home_runs": 0,
+      "home_runs": 1,
       "away_team_name": "Baltimore Orioles",
       "home_team_name": "Chicago White Sox",
       "linescore": {
         "innings": [
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
         "outs": 2,
-        "balls": 0,
+        "balls": 2,
         "strikes": 2,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 1,
         "away_hits": 1,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Chicago White Sox",
@@ -17184,36 +17103,36 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "1",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "1"
       }
     },
     "823444": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 1st",
+      "status": "Bottom 1st",
       "away_runs": 0,
-      "home_runs": 0,
+      "home_runs": 1,
       "away_team_name": "Philadelphia Phillies",
       "home_team_name": "Pittsburgh Pirates",
       "linescore": {
         "innings": [
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
         "outs": 2,
-        "balls": 3,
-        "strikes": 3,
+        "balls": 0,
+        "strikes": 2,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 1,
         "away_hits": 0,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Pittsburgh Pirates",
@@ -17227,9 +17146,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "1",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "1"
       }
     },
     "824662": {
@@ -17491,7 +17410,7 @@
       }
     }
   },
-  "updated_at": "29/06/2026 16:43",
+  "updated_at": "29/06/2026 16:52",
   "stats": {
     "total": 111,
     "acertados": 64,
@@ -20568,18 +20487,123 @@
         "over_160": 50
       }
     },
+    "2026-06-28___WNBA___Dallas Wings___Minnesota Lynx": {
+      "ir": "N/D",
+      "pq": "LLM no disponible",
+      "factores": [],
+      "favorito": "",
+      "b2b_impacto": "",
+      "lesion_clave": "",
+      "jugadores_clave": [],
+      "anotadores": [],
+      "defensores": [],
+      "armadores": [],
+      "ranking_local": "",
+      "ranking_visitante": "",
+      "stats_comparison": {},
+      "lineas_ou": {}
+    },
+    "2026-06-28___WNBA___Washington Mystics___Portland Fire": {
+      "ir": "N/D",
+      "pq": "LLM no disponible",
+      "factores": [],
+      "favorito": "",
+      "b2b_impacto": "",
+      "lesion_clave": "",
+      "jugadores_clave": [],
+      "anotadores": [],
+      "defensores": [],
+      "armadores": [],
+      "ranking_local": "",
+      "ranking_visitante": "",
+      "stats_comparison": {},
+      "lineas_ou": {}
+    },
+    "2026-06-28___WNBA___Chicago Sky___Las Vegas Aces": {
+      "ir": "N/D",
+      "pq": "LLM no disponible",
+      "factores": [],
+      "favorito": "",
+      "b2b_impacto": "",
+      "lesion_clave": "",
+      "jugadores_clave": [],
+      "anotadores": [],
+      "defensores": [],
+      "armadores": [],
+      "ranking_local": "",
+      "ranking_visitante": "",
+      "stats_comparison": {},
+      "lineas_ou": {}
+    },
+    "2026-06-28___WNBA___Golden State Valkyries___New York Liberty": {
+      "ir": "N/D",
+      "pq": "LLM no disponible",
+      "factores": [],
+      "favorito": "",
+      "b2b_impacto": "",
+      "lesion_clave": "",
+      "jugadores_clave": [],
+      "anotadores": [],
+      "defensores": [],
+      "armadores": [],
+      "ranking_local": "",
+      "ranking_visitante": "",
+      "stats_comparison": {},
+      "lineas_ou": {}
+    },
+    "2026-06-27___WNBA___Toronto Tempo___Phoenix Mercury": {
+      "ir": "N/D",
+      "pq": "LLM no disponible",
+      "factores": [],
+      "favorito": "",
+      "b2b_impacto": "",
+      "lesion_clave": "",
+      "jugadores_clave": [],
+      "anotadores": [],
+      "defensores": [],
+      "armadores": [],
+      "ranking_local": "",
+      "ranking_visitante": "",
+      "stats_comparison": {},
+      "lineas_ou": {}
+    },
+    "2026-06-27___WNBA___Indiana Fever___Los Angeles Sparks": {
+      "ir": "N/D",
+      "pq": "LLM no disponible",
+      "factores": [],
+      "favorito": "",
+      "b2b_impacto": "",
+      "lesion_clave": "",
+      "jugadores_clave": [],
+      "anotadores": [],
+      "defensores": [],
+      "armadores": [],
+      "ranking_local": "",
+      "ranking_visitante": "",
+      "stats_comparison": {},
+      "lineas_ou": {}
+    },
+    "2026-06-27___WNBA___Seattle Storm___Atlanta Dream": {
+      "ir": "N/D",
+      "pq": "LLM no disponible",
+      "factores": [],
+      "favorito": "",
+      "b2b_impacto": "",
+      "lesion_clave": "",
+      "jugadores_clave": [],
+      "anotadores": [],
+      "defensores": [],
+      "armadores": [],
+      "ranking_local": "",
+      "ranking_visitante": "",
+      "stats_comparison": {},
+      "lineas_ou": {}
+    },
     "2026-06-29___MLB___Arizona Diamondbacks___San Francisco Giants": {
       "ir": "N/D",
       "pq": "LLM no disponible",
       "factores": [],
       "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "carreras_esperadas": "",
       "carreras_lineas": {},
       "ranking_local": "",
@@ -20595,13 +20619,6 @@
       "pq": "LLM no disponible",
       "factores": [],
       "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "carreras_esperadas": "",
       "carreras_lineas": {},
       "ranking_local": "",
@@ -20617,13 +20634,6 @@
       "pq": "LLM no disponible",
       "factores": [],
       "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "carreras_esperadas": "",
       "carreras_lineas": {},
       "ranking_local": "",
@@ -20639,13 +20649,6 @@
       "pq": "LLM no disponible",
       "factores": [],
       "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "carreras_esperadas": "",
       "carreras_lineas": {},
       "ranking_local": "",
@@ -20661,13 +20664,6 @@
       "pq": "LLM no disponible",
       "factores": [],
       "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "carreras_esperadas": "",
       "carreras_lineas": {},
       "ranking_local": "",
@@ -20683,13 +20679,6 @@
       "pq": "LLM no disponible",
       "factores": [],
       "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "carreras_esperadas": "",
       "carreras_lineas": {},
       "ranking_local": "",
@@ -20705,13 +20694,6 @@
       "pq": "LLM no disponible",
       "factores": [],
       "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "carreras_esperadas": "",
       "carreras_lineas": {},
       "ranking_local": "",
@@ -20727,13 +20709,6 @@
       "pq": "LLM no disponible",
       "factores": [],
       "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "carreras_esperadas": "",
       "carreras_lineas": {},
       "ranking_local": "",
@@ -20749,13 +20724,6 @@
       "pq": "LLM no disponible",
       "factores": [],
       "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "carreras_esperadas": "",
       "carreras_lineas": {},
       "ranking_local": "",
@@ -20771,13 +20739,6 @@
       "pq": "LLM no disponible",
       "factores": [],
       "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "carreras_esperadas": "",
       "carreras_lineas": {},
       "ranking_local": "",
@@ -20793,13 +20754,6 @@
       "pq": "LLM no disponible",
       "factores": [],
       "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "carreras_esperadas": "",
       "carreras_lineas": {},
       "ranking_local": "",
@@ -20815,13 +20769,6 @@
       "pq": "LLM no disponible",
       "factores": [],
       "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "carreras_esperadas": "",
       "carreras_lineas": {},
       "ranking_local": "",
@@ -20837,13 +20784,6 @@
       "pq": "LLM no disponible",
       "factores": [],
       "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
       "carreras_esperadas": "",
       "carreras_lineas": {},
       "ranking_local": "",
@@ -20865,7 +20805,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-06-29___Brasil___Japón": {
       "ir": "N/D",
@@ -20878,7 +20820,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-06-29___Alemania___Paraguay": {
       "ir": "N/D",
@@ -20891,7 +20835,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-06-29___Países Bajos___Marruecos": {
       "ir": "N/D",
@@ -20904,7 +20850,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-06-30___Costa de Marfil___Noruega": {
       "ir": "N/D",
@@ -20917,7 +20865,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-06-30___Francia___Suecia": {
       "ir": "N/D",
@@ -20930,7 +20880,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-06-30___México___Third Place Group C/E/F/H/I": {
       "ir": "N/D",
@@ -20943,7 +20895,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-01___Group L Winner___Third Place Group E/H/I/J/K": {
       "ir": "N/D",
@@ -20956,7 +20910,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-01___Group G Winner___Third Place Group A/E/H/I/J": {
       "ir": "N/D",
@@ -20969,7 +20925,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-01___Estados Unidos___Bosnia-Herzegovina": {
       "ir": "N/D",
@@ -20982,7 +20940,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-02___España___Group J 2nd Place": {
       "ir": "N/D",
@@ -20995,7 +20955,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-02___Group K 2nd Place___Group L 2nd Place": {
       "ir": "N/D",
@@ -21008,7 +20970,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-02___Suiza___Third Place Group E/F/G/I/J": {
       "ir": "N/D",
@@ -21021,7 +20985,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-03___Australia___Group G 2nd Place": {
       "ir": "N/D",
@@ -21034,7 +21000,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-03___Argentina___Cape Verde": {
       "ir": "N/D",
@@ -21047,7 +21015,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-03___Group K Winner___Third Place Group D/E/I/J/L": {
       "ir": "N/D",
@@ -21060,7 +21030,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-04___Round of 32 1 Winner___Round of 32 3 Winner": {
       "ir": "N/D",
@@ -21073,7 +21045,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-04___Round of 32 2 Winner___Round of 32 5 Winner": {
       "ir": "N/D",
@@ -21086,7 +21060,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-05___Round of 32 4 Winner___Round of 32 6 Winner": {
       "ir": "N/D",
@@ -21099,7 +21075,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-05___Round of 32 7 Winner___Round of 32 8 Winner": {
       "ir": "N/D",
@@ -21112,7 +21090,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-01___Bélgica___Third Place Group A/E/H/I/J": {
       "ir": "N/D",
@@ -21125,7 +21105,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-03___Australia___Egypt": {
       "ir": "N/D",
@@ -21138,7 +21120,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-06-30___México___Ecuador": {
       "ir": "N/D",
@@ -21151,7 +21135,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-01___Inglaterra___Third Place Group E/H/I/J/K": {
       "ir": "N/D",
@@ -21164,7 +21150,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-02___Group K 2nd Place___Croacia": {
       "ir": "N/D",
@@ -21177,7 +21165,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-03___Group K Winner___Ghana": {
       "ir": "N/D",
@@ -21190,7 +21180,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-06___Round of 32 11 Winner___Round of 32 12 Winner": {
       "ir": "N/D",
@@ -21203,7 +21195,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-06___Round of 32 9 Winner___Round of 32 10 Winner": {
       "ir": "N/D",
@@ -21216,7 +21210,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-01___Inglaterra___RD Congo": {
       "ir": "N/D",
@@ -21229,7 +21225,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-01___Bélgica___Senegal": {
       "ir": "N/D",
@@ -21242,7 +21240,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-02___Portugal___Croacia": {
       "ir": "N/D",
@@ -21255,7 +21255,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-03___Colombia___Ghana": {
       "ir": "N/D",
@@ -21268,7 +21270,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-02___España___Austria": {
       "ir": "N/D",
@@ -21281,7 +21285,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-02___Suiza___Argelia": {
       "ir": "N/D",
@@ -21294,7 +21300,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-04___Canadá___Round of 32 3 Winner": {
       "ir": "N/D",
@@ -21307,7 +21315,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-07___Round of 32 14 Winner___Round of 32 16 Winner": {
       "ir": "N/D",
@@ -21320,7 +21330,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-07___Round of 32 13 Winner___Round of 32 15 Winner": {
       "ir": "N/D",
@@ -21333,7 +21345,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
+      },
+      "ranking_local": "",
+      "ranking_visitante": ""
     },
     "2026-07-05___Brasil___Round of 32 6 Winner": {
       "ir": "N/D",
@@ -21346,203 +21360,9 @@
       "lineas": {
         "goles": {},
         "corners": {}
-      }
-    },
-    "2026-06-28___WNBA___Dallas Wings___Minnesota Lynx": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
       },
-      "puntos_local": null,
-      "puntos_visitante": null,
-      "spread": null,
-      "confianza_ou": null,
-      "linea_ou": null,
-      "b2b_impacto": "",
-      "lesion_clave": "",
-      "jugadores_clave": [],
-      "anotadores": [],
-      "defensores": [],
-      "armadores": [],
       "ranking_local": "",
-      "ranking_visitante": "",
-      "stats_comparison": {},
-      "lineas_ou": {}
-    },
-    "2026-06-28___WNBA___Washington Mystics___Portland Fire": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "puntos_local": null,
-      "puntos_visitante": null,
-      "spread": null,
-      "confianza_ou": null,
-      "linea_ou": null,
-      "b2b_impacto": "",
-      "lesion_clave": "",
-      "jugadores_clave": [],
-      "anotadores": [],
-      "defensores": [],
-      "armadores": [],
-      "ranking_local": "",
-      "ranking_visitante": "",
-      "stats_comparison": {},
-      "lineas_ou": {}
-    },
-    "2026-06-28___WNBA___Chicago Sky___Las Vegas Aces": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "puntos_local": null,
-      "puntos_visitante": null,
-      "spread": null,
-      "confianza_ou": null,
-      "linea_ou": null,
-      "b2b_impacto": "",
-      "lesion_clave": "",
-      "jugadores_clave": [],
-      "anotadores": [],
-      "defensores": [],
-      "armadores": [],
-      "ranking_local": "",
-      "ranking_visitante": "",
-      "stats_comparison": {},
-      "lineas_ou": {}
-    },
-    "2026-06-28___WNBA___Golden State Valkyries___New York Liberty": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "puntos_local": null,
-      "puntos_visitante": null,
-      "spread": null,
-      "confianza_ou": null,
-      "linea_ou": null,
-      "b2b_impacto": "",
-      "lesion_clave": "",
-      "jugadores_clave": [],
-      "anotadores": [],
-      "defensores": [],
-      "armadores": [],
-      "ranking_local": "",
-      "ranking_visitante": "",
-      "stats_comparison": {},
-      "lineas_ou": {}
-    },
-    "2026-06-27___WNBA___Toronto Tempo___Phoenix Mercury": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "puntos_local": null,
-      "puntos_visitante": null,
-      "spread": null,
-      "confianza_ou": null,
-      "linea_ou": null,
-      "b2b_impacto": "",
-      "lesion_clave": "",
-      "jugadores_clave": [],
-      "anotadores": [],
-      "defensores": [],
-      "armadores": [],
-      "ranking_local": "",
-      "ranking_visitante": "",
-      "stats_comparison": {},
-      "lineas_ou": {}
-    },
-    "2026-06-27___WNBA___Indiana Fever___Los Angeles Sparks": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "puntos_local": null,
-      "puntos_visitante": null,
-      "spread": null,
-      "confianza_ou": null,
-      "linea_ou": null,
-      "b2b_impacto": "",
-      "lesion_clave": "",
-      "jugadores_clave": [],
-      "anotadores": [],
-      "defensores": [],
-      "armadores": [],
-      "ranking_local": "",
-      "ranking_visitante": "",
-      "stats_comparison": {},
-      "lineas_ou": {}
-    },
-    "2026-06-27___WNBA___Seattle Storm___Atlanta Dream": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "puntos_local": null,
-      "puntos_visitante": null,
-      "spread": null,
-      "confianza_ou": null,
-      "linea_ou": null,
-      "b2b_impacto": "",
-      "lesion_clave": "",
-      "jugadores_clave": [],
-      "anotadores": [],
-      "defensores": [],
-      "armadores": [],
-      "ranking_local": "",
-      "ranking_visitante": "",
-      "stats_comparison": {},
-      "lineas_ou": {}
+      "ranking_visitante": ""
     }
   },
   "llm_by_sport": {
@@ -21649,18 +21469,11 @@
       "llm_ir_favorito": "N/D",
       "llm_porque": "LLM no disponible",
       "llm_factores": [],
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "llm_puntos_local": null,
-      "llm_puntos_visitante": null,
-      "llm_spread": null,
-      "llm_confianza_ou": null,
-      "llm_linea_ou": null,
+      "llm_puntos_local": 0,
+      "llm_puntos_visitante": 0,
+      "llm_spread": 0.0,
+      "llm_confianza_ou": 0,
+      "llm_linea_ou": 0.0,
       "llm_b2b_impacto": "",
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
@@ -21670,7 +21483,8 @@
       "llm_ranking_local": "",
       "llm_ranking_visitante": "",
       "llm_stats_comparison": {},
-      "llm_lineas_ou": {}
+      "llm_lineas_ou": {},
+      "llm_favorito": ""
     },
     {
       "game_date": "2026-06-28",
@@ -21776,18 +21590,11 @@
       "llm_ir_favorito": "N/D",
       "llm_porque": "LLM no disponible",
       "llm_factores": [],
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "llm_puntos_local": null,
-      "llm_puntos_visitante": null,
-      "llm_spread": null,
-      "llm_confianza_ou": null,
-      "llm_linea_ou": null,
+      "llm_puntos_local": 0,
+      "llm_puntos_visitante": 0,
+      "llm_spread": 0.0,
+      "llm_confianza_ou": 0,
+      "llm_linea_ou": 0.0,
       "llm_b2b_impacto": "",
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
@@ -21797,7 +21604,8 @@
       "llm_ranking_local": "",
       "llm_ranking_visitante": "",
       "llm_stats_comparison": {},
-      "llm_lineas_ou": {}
+      "llm_lineas_ou": {},
+      "llm_favorito": ""
     },
     {
       "game_date": "2026-06-28",
@@ -21863,18 +21671,11 @@
       "llm_ir_favorito": "N/D",
       "llm_porque": "LLM no disponible",
       "llm_factores": [],
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "llm_puntos_local": null,
-      "llm_puntos_visitante": null,
-      "llm_spread": null,
-      "llm_confianza_ou": null,
-      "llm_linea_ou": null,
+      "llm_puntos_local": 0,
+      "llm_puntos_visitante": 0,
+      "llm_spread": 0.0,
+      "llm_confianza_ou": 0,
+      "llm_linea_ou": 0.0,
       "llm_b2b_impacto": "",
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
@@ -21884,7 +21685,8 @@
       "llm_ranking_local": "",
       "llm_ranking_visitante": "",
       "llm_stats_comparison": {},
-      "llm_lineas_ou": {}
+      "llm_lineas_ou": {},
+      "llm_favorito": ""
     },
     {
       "game_date": "2026-06-28",
@@ -21950,18 +21752,11 @@
       "llm_ir_favorito": "N/D",
       "llm_porque": "LLM no disponible",
       "llm_factores": [],
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "llm_puntos_local": null,
-      "llm_puntos_visitante": null,
-      "llm_spread": null,
-      "llm_confianza_ou": null,
-      "llm_linea_ou": null,
+      "llm_puntos_local": 0,
+      "llm_puntos_visitante": 0,
+      "llm_spread": 0.0,
+      "llm_confianza_ou": 0,
+      "llm_linea_ou": 0.0,
       "llm_b2b_impacto": "",
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
@@ -21971,7 +21766,8 @@
       "llm_ranking_local": "",
       "llm_ranking_visitante": "",
       "llm_stats_comparison": {},
-      "llm_lineas_ou": {}
+      "llm_lineas_ou": {},
+      "llm_favorito": ""
     },
     {
       "game_date": "2026-06-27",
@@ -22037,18 +21833,11 @@
       "llm_ir_favorito": "N/D",
       "llm_porque": "LLM no disponible",
       "llm_factores": [],
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "llm_puntos_local": null,
-      "llm_puntos_visitante": null,
-      "llm_spread": null,
-      "llm_confianza_ou": null,
-      "llm_linea_ou": null,
+      "llm_puntos_local": 0,
+      "llm_puntos_visitante": 0,
+      "llm_spread": 0.0,
+      "llm_confianza_ou": 0,
+      "llm_linea_ou": 0.0,
       "llm_b2b_impacto": "",
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
@@ -22058,7 +21847,8 @@
       "llm_ranking_local": "",
       "llm_ranking_visitante": "",
       "llm_stats_comparison": {},
-      "llm_lineas_ou": {}
+      "llm_lineas_ou": {},
+      "llm_favorito": ""
     },
     {
       "game_date": "2026-06-27",
@@ -22124,18 +21914,11 @@
       "llm_ir_favorito": "N/D",
       "llm_porque": "LLM no disponible",
       "llm_factores": [],
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "llm_puntos_local": null,
-      "llm_puntos_visitante": null,
-      "llm_spread": null,
-      "llm_confianza_ou": null,
-      "llm_linea_ou": null,
+      "llm_puntos_local": 0,
+      "llm_puntos_visitante": 0,
+      "llm_spread": 0.0,
+      "llm_confianza_ou": 0,
+      "llm_linea_ou": 0.0,
       "llm_b2b_impacto": "",
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
@@ -22145,7 +21928,8 @@
       "llm_ranking_local": "",
       "llm_ranking_visitante": "",
       "llm_stats_comparison": {},
-      "llm_lineas_ou": {}
+      "llm_lineas_ou": {},
+      "llm_favorito": ""
     },
     {
       "game_date": "2026-06-27",
@@ -22211,18 +21995,11 @@
       "llm_ir_favorito": "N/D",
       "llm_porque": "LLM no disponible",
       "llm_factores": [],
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "llm_puntos_local": null,
-      "llm_puntos_visitante": null,
-      "llm_spread": null,
-      "llm_confianza_ou": null,
-      "llm_linea_ou": null,
+      "llm_puntos_local": 0,
+      "llm_puntos_visitante": 0,
+      "llm_spread": 0.0,
+      "llm_confianza_ou": 0,
+      "llm_linea_ou": 0.0,
       "llm_b2b_impacto": "",
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
@@ -22232,7 +22009,8 @@
       "llm_ranking_local": "",
       "llm_ranking_visitante": "",
       "llm_stats_comparison": {},
-      "llm_lineas_ou": {}
+      "llm_lineas_ou": {},
+      "llm_favorito": ""
     }
   ],
   "nfl_games": [],
