@@ -1,5 +1,5 @@
 {
-  "fecha": "29/06/2026 14:52",
+  "fecha": "29/06/2026 15:06",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782828000,
@@ -14769,7 +14769,12 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
@@ -15091,10 +15096,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -16740,7 +16750,12 @@
       "away_team_name": "Washington Nationals",
       "home_team_name": "Boston Red Sox",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
@@ -16978,10 +16993,15 @@
       "away_team_name": "San Diego Padres",
       "home_team_name": "Chicago Cubs",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -17213,7 +17233,7 @@
       }
     }
   },
-  "updated_at": "29/06/2026 14:52",
+  "updated_at": "29/06/2026 15:06",
   "stats": {
     "total": 111,
     "acertados": 64,
@@ -19126,9 +19146,9 @@
           "status": "pendiente"
         },
         {
-          "nombre": "Jacob Wilson",
-          "prob": 65.2,
-          "player_id": 805779,
+          "nombre": "Carlos Cortes",
+          "prob": 62.6,
+          "player_id": 666126,
           "game_pk": "824014",
           "equipo": "Athletics",
           "status": "pendiente"
