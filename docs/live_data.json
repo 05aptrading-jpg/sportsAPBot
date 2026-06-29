@@ -1,5 +1,5 @@
 {
-  "fecha": "29/06/2026 13:36",
+  "fecha": "29/06/2026 13:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782828000,
@@ -15195,10 +15195,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -17039,10 +17044,15 @@
       "away_team_name": "New York Yankees",
       "home_team_name": "Detroit Tigers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -17183,7 +17193,7 @@
       }
     }
   },
-  "updated_at": "29/06/2026 13:36",
+  "updated_at": "29/06/2026 13:52",
   "stats": {
     "total": 111,
     "acertados": 64,
