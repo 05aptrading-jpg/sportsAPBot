@@ -1,5 +1,5 @@
 {
-  "fecha": "29/06/2026 15:51",
+  "fecha": "29/06/2026 16:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782828000,
@@ -14704,7 +14704,7 @@
       "opp_team": "San Francisco Giants",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "🎯",
       "game_pk": 825065,
@@ -14739,7 +14739,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -14935,10 +14935,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -16721,7 +16726,7 @@
     "825065": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "San Francisco Giants",
@@ -16749,7 +16754,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -16889,10 +16894,15 @@
       "away_team_name": "Los Angeles Dodgers",
       "home_team_name": "Athletics",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -17263,7 +17273,7 @@
       }
     }
   },
-  "updated_at": "29/06/2026 15:51",
+  "updated_at": "29/06/2026 16:00",
   "stats": {
     "total": 111,
     "acertados": 64,
