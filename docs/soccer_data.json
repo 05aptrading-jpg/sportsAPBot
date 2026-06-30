@@ -2027,17 +2027,14 @@
       "hora_partido": "13:00",
       "id_partido": "13723111059312803153",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2067,17 +2064,14 @@
       "hora_partido": "11:00",
       "id_partido": "7477669039367770720",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2107,17 +2101,14 @@
       "hora_partido": "14:30",
       "id_partido": "8054238194587819217",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2147,17 +2138,14 @@
       "hora_partido": "19:00",
       "id_partido": "11983165979707472577",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2186,18 +2174,47 @@
       "fecha_partido": "2026-06-30",
       "hora_partido": "11:00",
       "id_partido": "5021757881898585475",
-      "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
+      "llm_favorito": "Noruega",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "1-2",
+      "llm_corners_est": 7,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Wilfried Zaha",
+          "equipo": "Costa de Marfil",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Erling Haaland",
+          "equipo": "Noruega",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Martin Ødegaard",
+          "equipo": "Noruega",
+          "tiros_estimados": 3
+        }
+      ],
       "llm_lineas": {
-        "goles": {},
-        "corners": {}
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
       },
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": "Noruega tiene jugadores clave en forma y mejor ranking.",
+      "llm_factores": [
+        "Ranking FIFA superior de Noruega",
+        "Racha reciente positiva",
+        "Lesiones de jugadores clave en Costa de Marfil"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2226,18 +2243,47 @@
       "fecha_partido": "2026-06-30",
       "hora_partido": "15:00",
       "id_partido": "14129556182914772596",
-      "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
+      "llm_favorito": "Francia",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-1",
+      "llm_corners_est": 8,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Kylian Mbappé",
+          "equipo": "Francia",
+          "tiros_estimados": 5
+        },
+        {
+          "jugador": "Karim Benzema",
+          "equipo": "Francia",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Alexander Isak",
+          "equipo": "Suecia",
+          "tiros_estimados": 2
+        }
+      ],
       "llm_lineas": {
-        "goles": {},
-        "corners": {}
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
       },
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": "Francia es favorita por su calidad y ranking FIFA.",
+      "llm_factores": [
+        "Ranking FIFA superior de Francia",
+        "Racha reciente muy positiva",
+        "Historial favorable contra Suecia"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2266,18 +2312,47 @@
       "fecha_partido": "2026-06-30",
       "hora_partido": "19:00",
       "id_partido": "5748002095428483255",
-      "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
+      "llm_favorito": "México",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-0",
+      "llm_corners_est": 5,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Raúl Jiménez",
+          "equipo": "México",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Hirving Lozano",
+          "equipo": "México",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Edson Álvarez",
+          "equipo": "México",
+          "tiros_estimados": 2
+        }
+      ],
       "llm_lineas": {
-        "goles": {},
-        "corners": {}
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 30,
+          "over_9.5": 20,
+          "over_10.5": 10
+        }
       },
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": "México tiene ventaja por localía y experiencia.",
+      "llm_factores": [
+        "Localía a favor de México",
+        "Experiencia en mundiales",
+        "Racha reciente positiva"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2307,17 +2382,14 @@
       "hora_partido": "10:00",
       "id_partido": "2518581116961050436",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2347,17 +2419,14 @@
       "hora_partido": "14:00",
       "id_partido": "14712592586477611711",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2387,17 +2456,14 @@
       "hora_partido": "18:00",
       "id_partido": "14823177186929444815",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2427,17 +2493,14 @@
       "hora_partido": "13:00",
       "id_partido": "6671584423806046323",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2467,17 +2530,14 @@
       "hora_partido": "17:00",
       "id_partido": "8464788738220679968",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2507,17 +2567,14 @@
       "hora_partido": "21:00",
       "id_partido": "9519869445944161586",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2547,17 +2604,14 @@
       "hora_partido": "12:00",
       "id_partido": "14911020346058759996",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2587,17 +2641,14 @@
       "hora_partido": "16:00",
       "id_partido": "6634883064895261195",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2627,17 +2678,14 @@
       "hora_partido": "19:30",
       "id_partido": "14114221683773999128",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2667,17 +2715,14 @@
       "hora_partido": "11:00",
       "id_partido": "6083362905194365528",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2707,17 +2752,14 @@
       "hora_partido": "15:00",
       "id_partido": "13060569890729213071",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2747,17 +2789,14 @@
       "hora_partido": "14:00",
       "id_partido": "17473767052164106689",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2787,17 +2826,14 @@
       "hora_partido": "18:00",
       "id_partido": "13738473810702640192",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2827,17 +2863,14 @@
       "hora_partido": "14:00",
       "id_partido": "15228067841222985622",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2867,17 +2900,14 @@
       "hora_partido": "12:00",
       "id_partido": "10676069039971669632",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2906,18 +2936,47 @@
       "fecha_partido": "2026-06-30",
       "hora_partido": "19:00",
       "id_partido": "5701462589169209199",
-      "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
+      "llm_favorito": "México",
+      "llm_ir_favorito": "SÍ",
+      "llm_goles": "2-1",
+      "llm_corners_est": 7,
+      "llm_tiros_porteria": [
+        {
+          "jugador": "Hirving Lozano",
+          "equipo": "México",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Raúl Jiménez",
+          "equipo": "México",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Enner Valencia",
+          "equipo": "Ecuador",
+          "tiros_estimados": 2
+        }
+      ],
       "llm_lineas": {
-        "goles": {},
-        "corners": {}
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
       },
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": "México tiene un equipo sólido y experiencia en mundiales.",
+      "llm_factores": [
+        "Racha reciente positiva",
+        "Ventaja local",
+        "Historial favorable"
+      ]
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2947,17 +3006,14 @@
       "hora_partido": "10:00",
       "id_partido": "1629493794569032189",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -2987,17 +3043,14 @@
       "hora_partido": "17:00",
       "id_partido": "5137967612056781502",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -3027,17 +3080,14 @@
       "hora_partido": "19:30",
       "id_partido": "3694260310244207512",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -3067,17 +3117,14 @@
       "hora_partido": "13:00",
       "id_partido": "17459872139029752769",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -3107,17 +3154,14 @@
       "hora_partido": "18:00",
       "id_partido": "2221689055850692059",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -3147,17 +3191,14 @@
       "hora_partido": "10:00",
       "id_partido": "4772931144926068645",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -3187,17 +3228,14 @@
       "hora_partido": "14:00",
       "id_partido": "4561580801504203148",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -3227,17 +3265,14 @@
       "hora_partido": "17:00",
       "id_partido": "2742675069892757094",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -3267,17 +3302,14 @@
       "hora_partido": "19:30",
       "id_partido": "10755661194099288165",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -3307,17 +3339,14 @@
       "hora_partido": "13:00",
       "id_partido": "15515800600679809251",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -3347,17 +3376,14 @@
       "hora_partido": "21:00",
       "id_partido": "7949063671936033858",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -3387,17 +3413,14 @@
       "hora_partido": "11:00",
       "id_partido": "8962015213654178473",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -3427,17 +3450,14 @@
       "hora_partido": "10:00",
       "id_partido": "13998747255049174879",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -3467,17 +3487,14 @@
       "hora_partido": "14:00",
       "id_partido": "3207637653712308105",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -3507,17 +3524,14 @@
       "hora_partido": "14:00",
       "id_partido": "3647668387069007883",
       "llm_favorito": null,
-      "llm_ir_favorito": "N/D",
-      "llm_goles": "",
-      "llm_corners_est": 0,
-      "llm_tiros_porteria": [],
-      "llm_lineas": {
-        "goles": {},
-        "corners": {}
-      },
+      "llm_ir_favorito": null,
+      "llm_goles": null,
+      "llm_corners_est": null,
+      "llm_tiros_porteria": null,
+      "llm_lineas": null,
       "llm_resultado": null,
-      "llm_porque": "LLM no disponible",
-      "llm_factores": []
+      "llm_porque": null,
+      "llm_factores": null
     },
     {
       "liga": "🌍 FIFA World Cup 2026",
@@ -3709,572 +3723,178 @@
     "ligamx_corners_win_rate": 0
   },
   "llm_analysis": {
-    "2026-06-28___Sudáfrica___Canadá": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-06-29___Brasil___Japón": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-06-29___Alemania___Paraguay": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-06-29___Países Bajos___Marruecos": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
     "2026-06-30___Costa de Marfil___Noruega": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
+      "ir": "SÍ",
+      "pq": "Noruega tiene jugadores clave en forma y mejor ranking.",
+      "factores": [
+        "Ranking FIFA superior de Noruega",
+        "Racha reciente positiva",
+        "Lesiones de jugadores clave en Costa de Marfil"
+      ],
+      "favorito": "Noruega",
+      "goles": "1-2",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Wilfried Zaha",
+          "equipo": "Costa de Marfil",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Erling Haaland",
+          "equipo": "Noruega",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Martin Ødegaard",
+          "equipo": "Noruega",
+          "tiros_estimados": 3
+        }
+      ],
       "lineas": {
-        "goles": {},
-        "corners": {}
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 35
+        },
+        "corners": {
+          "over_8.5": 35,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
       },
       "ranking_local": "",
       "ranking_visitante": ""
     },
     "2026-06-30___Francia___Suecia": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
+      "ir": "SÍ",
+      "pq": "Francia es favorita por su calidad y ranking FIFA.",
+      "factores": [
+        "Ranking FIFA superior de Francia",
+        "Racha reciente muy positiva",
+        "Historial favorable contra Suecia"
+      ],
+      "favorito": "Francia",
+      "goles": "2-1",
+      "corners": 8,
+      "tiros_porteria": [
+        {
+          "jugador": "Kylian Mbappé",
+          "equipo": "Francia",
+          "tiros_estimados": 5
+        },
+        {
+          "jugador": "Karim Benzema",
+          "equipo": "Francia",
+          "tiros_estimados": 4
+        },
+        {
+          "jugador": "Alexander Isak",
+          "equipo": "Suecia",
+          "tiros_estimados": 2
+        }
+      ],
       "lineas": {
-        "goles": {},
-        "corners": {}
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 80,
+          "over_2.5": 65,
+          "over_3.5": 40
+        },
+        "corners": {
+          "over_8.5": 45,
+          "over_9.5": 30,
+          "over_10.5": 20
+        }
       },
       "ranking_local": "",
       "ranking_visitante": ""
     },
     "2026-06-30___México___Third Place Group C/E/F/H/I": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
+      "ir": "SÍ",
+      "pq": "México tiene ventaja por localía y experiencia.",
+      "factores": [
+        "Localía a favor de México",
+        "Experiencia en mundiales",
+        "Racha reciente positiva"
+      ],
+      "favorito": "México",
+      "goles": "2-0",
+      "corners": 5,
+      "tiros_porteria": [
+        {
+          "jugador": "Raúl Jiménez",
+          "equipo": "México",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Hirving Lozano",
+          "equipo": "México",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Edson Álvarez",
+          "equipo": "México",
+          "tiros_estimados": 2
+        }
+      ],
       "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-01___Group L Winner___Third Place Group E/H/I/J/K": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-01___Group G Winner___Third Place Group A/E/H/I/J": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-01___Estados Unidos___Bosnia-Herzegovina": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-02___España___Group J 2nd Place": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-02___Group K 2nd Place___Group L 2nd Place": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-02___Suiza___Third Place Group E/F/G/I/J": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-03___Australia___Group G 2nd Place": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-03___Argentina___Cape Verde": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-03___Group K Winner___Third Place Group D/E/I/J/L": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-04___Round of 32 1 Winner___Round of 32 3 Winner": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-04___Round of 32 2 Winner___Round of 32 5 Winner": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-05___Round of 32 4 Winner___Round of 32 6 Winner": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-05___Round of 32 7 Winner___Round of 32 8 Winner": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-01___Bélgica___Third Place Group A/E/H/I/J": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-03___Australia___Egypt": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
+        "goles": {
+          "over_0.5": 85,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 30,
+          "over_9.5": 20,
+          "over_10.5": 10
+        }
       },
       "ranking_local": "",
       "ranking_visitante": ""
     },
     "2026-06-30___México___Ecuador": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
+      "ir": "SÍ",
+      "pq": "México tiene un equipo sólido y experiencia en mundiales.",
+      "factores": [
+        "Racha reciente positiva",
+        "Ventaja local",
+        "Historial favorable"
+      ],
+      "favorito": "México",
+      "goles": "2-1",
+      "corners": 7,
+      "tiros_porteria": [
+        {
+          "jugador": "Hirving Lozano",
+          "equipo": "México",
+          "tiros_estimados": 3
+        },
+        {
+          "jugador": "Raúl Jiménez",
+          "equipo": "México",
+          "tiros_estimados": 2
+        },
+        {
+          "jugador": "Enner Valencia",
+          "equipo": "Ecuador",
+          "tiros_estimados": 2
+        }
+      ],
       "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-01___Inglaterra___Third Place Group E/H/I/J/K": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-02___Group K 2nd Place___Croacia": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-03___Group K Winner___Ghana": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-06___Round of 32 11 Winner___Round of 32 12 Winner": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-06___Round of 32 9 Winner___Round of 32 10 Winner": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-01___Inglaterra___RD Congo": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-01___Bélgica___Senegal": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-02___Portugal___Croacia": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-03___Colombia___Ghana": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-02___España___Austria": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-02___Suiza___Argelia": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-04___Canadá___Round of 32 3 Winner": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-07___Round of 32 14 Winner___Round of 32 16 Winner": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-07___Round of 32 13 Winner___Round of 32 15 Winner": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
-      },
-      "ranking_local": "",
-      "ranking_visitante": ""
-    },
-    "2026-07-05___Brasil___Round of 32 6 Winner": {
-      "ir": "N/D",
-      "pq": "LLM no disponible",
-      "factores": [],
-      "favorito": "",
-      "goles": "",
-      "corners": 0,
-      "tiros_porteria": [],
-      "lineas": {
-        "goles": {},
-        "corners": {}
+        "goles": {
+          "over_0.5": 90,
+          "over_1.5": 75,
+          "over_2.5": 55,
+          "over_3.5": 30
+        },
+        "corners": {
+          "over_8.5": 40,
+          "over_9.5": 25,
+          "over_10.5": 15
+        }
       },
       "ranking_local": "",
       "ranking_visitante": ""
