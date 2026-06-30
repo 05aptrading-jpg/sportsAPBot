@@ -1,5 +1,5 @@
 {
-  "fecha": "29/06/2026 22:06",
+  "fecha": "29/06/2026 22:21",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782828000,
@@ -14699,13 +14699,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-29",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Arizona Diamondbacks",
       "opp_team": "San Francisco Giants",
       "score_fav": "5",
       "score_opp": "4",
-      "state": "Top 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "🎯",
       "game_pk": 825065,
       "fav_abbr": "ARI",
@@ -14762,9 +14762,9 @@
         "current_inning": 9,
         "is_top": true,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 1,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 4,
         "home_runs": 5,
         "away_hits": 9,
@@ -14778,9 +14778,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "4",
         "opp_score": "5",
         "score_fav": "4",
@@ -15248,7 +15248,7 @@
       "opp_team": "Los Angeles Dodgers",
       "score_fav": "3",
       "score_opp": "9",
-      "state": "Top 8th",
+      "state": "Top 9th",
       "result": "live",
       "label": "📋",
       "game_pk": 824986,
@@ -15297,13 +15297,17 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": true,
-        "inning_ordinal": "8th",
-        "outs": 2,
-        "balls": 2,
+        "inning_ordinal": "9th",
+        "outs": 0,
+        "balls": 3,
         "strikes": 2,
         "away_runs": 9,
         "home_runs": 3,
@@ -17757,9 +17761,9 @@
       }
     },
     "825065": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Top 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 5,
       "home_runs": 4,
       "away_team_name": "San Francisco Giants",
@@ -17806,9 +17810,9 @@
         "current_inning": 9,
         "is_top": true,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 1,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 4,
         "home_runs": 5,
         "away_hits": 9,
@@ -17822,9 +17826,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "4",
         "opp_score": "5",
         "score_fav": "4",
@@ -18059,7 +18063,7 @@
     "824986": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 8th",
+      "status": "Top 9th",
       "away_runs": 3,
       "home_runs": 9,
       "away_team_name": "Los Angeles Dodgers",
@@ -18097,13 +18101,17 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": true,
-        "inning_ordinal": "8th",
-        "outs": 2,
-        "balls": 2,
+        "inning_ordinal": "9th",
+        "outs": 0,
+        "balls": 3,
         "strikes": 2,
         "away_runs": 9,
         "home_runs": 3,
@@ -18728,7 +18736,7 @@
       }
     }
   },
-  "updated_at": "29/06/2026 22:06",
+  "updated_at": "29/06/2026 22:21",
   "stats": {
     "total": 117,
     "acertados": 70,
