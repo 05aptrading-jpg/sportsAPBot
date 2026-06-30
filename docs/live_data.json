@@ -1,5 +1,5 @@
 {
-  "fecha": "30/06/2026 16:22",
+  "fecha": "30/06/2026 16:36",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782914400,
@@ -15765,13 +15765,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-30",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Chicago White Sox",
       "opp_team": "Baltimore Orioles",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 824819,
       "fav_abbr": "CHW",
@@ -15794,7 +15794,7 @@
         "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -15808,9 +15808,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -16296,10 +16296,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -16518,7 +16523,7 @@
     6099564810,
     8670833401
   ],
-  "has_live": false,
+  "has_live": true,
   "has_scheduled": true,
   "live_data": {
     "401815940": {
@@ -18022,9 +18027,9 @@
       }
     },
     "824819": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Baltimore Orioles",
@@ -18041,7 +18046,7 @@
         "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -18055,9 +18060,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -18417,10 +18422,15 @@
       "away_team_name": "Seattle Mariners",
       "home_team_name": "Los Angeles Angels",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -18490,7 +18500,7 @@
       }
     }
   },
-  "updated_at": "30/06/2026 16:22",
+  "updated_at": "30/06/2026 16:36",
   "stats": {
     "total": 118,
     "acertados": 71,
