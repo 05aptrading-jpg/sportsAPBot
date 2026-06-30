@@ -1,5 +1,5 @@
 {
-  "fecha": "30/06/2026 13:36",
+  "fecha": "30/06/2026 13:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782914400,
@@ -15716,10 +15716,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -15812,7 +15817,7 @@
       "opp_team": "Washington Nationals",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 824742,
@@ -15847,7 +15852,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -15916,7 +15921,7 @@
       "opp_team": "Kansas City Royals",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 824096,
@@ -15951,7 +15956,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -16085,10 +16090,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -18029,10 +18039,15 @@
       "away_team_name": "Pittsburgh Pirates",
       "home_team_name": "Philadelphia Phillies",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -18104,7 +18119,7 @@
     "824742": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Washington Nationals",
@@ -18132,7 +18147,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -18180,7 +18195,7 @@
     "824096": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Kansas City Royals",
@@ -18208,7 +18223,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -18300,10 +18315,15 @@
       "away_team_name": "Cleveland Guardians",
       "home_team_name": "Texas Rangers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -18672,7 +18692,7 @@
       }
     }
   },
-  "updated_at": "30/06/2026 13:36",
+  "updated_at": "30/06/2026 13:52",
   "stats": {
     "total": 118,
     "acertados": 71,
@@ -20289,17 +20309,17 @@
           "status": "pendiente"
         },
         {
-          "nombre": "Jeremy Peña",
-          "prob": 67.4,
-          "player_id": 665161,
+          "nombre": "Taylor Trammell",
+          "prob": 65.2,
+          "player_id": 666211,
           "game_pk": "824255",
           "equipo": "Houston Astros",
           "status": "pendiente"
         },
         {
-          "nombre": "Taylor Trammell",
-          "prob": 65.2,
-          "player_id": 666211,
+          "nombre": "Raynel Delgado",
+          "prob": 64.9,
+          "player_id": 669384,
           "game_pk": "824255",
           "equipo": "Houston Astros",
           "status": "pendiente"
