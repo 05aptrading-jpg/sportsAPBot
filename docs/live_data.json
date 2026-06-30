@@ -1,5 +1,5 @@
 {
-  "fecha": "29/06/2026 22:37",
+  "fecha": "29/06/2026 22:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782828000,
@@ -15243,13 +15243,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-06-29",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "Athletics",
       "opp_team": "Los Angeles Dodgers",
-      "score_fav": "3",
+      "score_fav": "4",
       "score_opp": "9",
-      "state": "Bottom 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "loss",
       "label": "📋",
       "game_pk": 824986,
       "fav_abbr": "ATH",
@@ -15300,17 +15300,17 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 3,
         "away_runs": 9,
-        "home_runs": 3,
+        "home_runs": 4,
         "away_hits": 17,
         "home_hits": 11,
         "away_errors": 0,
@@ -15322,13 +15322,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "9",
-        "opp_score": "3",
+        "opp_score": "4",
         "score_fav": "9",
-        "score_opp": "3"
+        "score_opp": "4"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
@@ -16470,7 +16470,7 @@
     6099564810,
     8670833401
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": false,
   "live_data": {
     "401815929": {
@@ -18061,10 +18061,10 @@
       }
     },
     "824986": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 9th",
-      "away_runs": 3,
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
+      "away_runs": 4,
       "home_runs": 9,
       "away_team_name": "Los Angeles Dodgers",
       "home_team_name": "Athletics",
@@ -18104,17 +18104,17 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 3,
         "away_runs": 9,
-        "home_runs": 3,
+        "home_runs": 4,
         "away_hits": 17,
         "home_hits": 11,
         "away_errors": 0,
@@ -18126,13 +18126,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "9",
-        "opp_score": "3",
+        "opp_score": "4",
         "score_fav": "9",
-        "score_opp": "3"
+        "score_opp": "4"
       }
     },
     "824822": {
@@ -18736,7 +18736,7 @@
       }
     }
   },
-  "updated_at": "29/06/2026 22:37",
+  "updated_at": "29/06/2026 22:52",
   "stats": {
     "total": 117,
     "acertados": 70,
