@@ -1,5 +1,5 @@
 {
-  "fecha": "29/06/2026 17:52",
+  "fecha": "29/06/2026 18:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782828000,
@@ -14808,7 +14808,7 @@
       "opp_team": "Washington Nationals",
       "score_fav": "5",
       "score_opp": "1",
-      "state": "Bottom 2nd",
+      "state": "Bottom 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 824741,
@@ -14833,14 +14833,18 @@
           {
             "away_runs": 0,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 2,
+        "inning_ordinal": "3rd",
+        "outs": 1,
         "balls": 1,
-        "strikes": 2,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 5,
         "away_hits": 1,
@@ -15020,7 +15024,7 @@
       "opp_team": "New York Mets",
       "score_fav": "1",
       "score_opp": "0",
-      "state": "Bottom 3rd",
+      "state": "Top 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 822792,
@@ -15049,14 +15053,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 1,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 3,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 2,
@@ -15236,7 +15244,7 @@
       "opp_team": "Baltimore Orioles",
       "score_fav": "2",
       "score_opp": "2",
-      "state": "Bottom 4th",
+      "state": "Middle 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 824822,
@@ -15269,14 +15277,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 2,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 3,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 2,
         "away_runs": 2,
         "home_runs": 2,
         "away_hits": 4,
@@ -15350,7 +15362,7 @@
       "status_emoji": "🔴",
       "fav_team": "Pittsburgh Pirates",
       "opp_team": "Philadelphia Phillies",
-      "score_fav": "2",
+      "score_fav": "4",
       "score_opp": "5",
       "state": "Top 5th",
       "result": "live",
@@ -15387,22 +15399,22 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
+            "away_runs": 2,
             "home_runs": 0
           }
         ],
         "current_inning": 5,
         "is_top": true,
         "inning_ordinal": "5th",
-        "outs": 0,
-        "balls": 3,
-        "strikes": 1,
-        "away_runs": 2,
+        "outs": 1,
+        "balls": 0,
+        "strikes": 2,
+        "away_runs": 4,
         "home_runs": 5,
-        "away_hits": 4,
+        "away_hits": 7,
         "home_hits": 5,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "Pittsburgh Pirates",
         "home_team_name": "Philadelphia Phillies",
         "bases": {
@@ -15413,9 +15425,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "2",
+        "fav_score": "4",
         "opp_score": "5",
-        "score_fav": "2",
+        "score_fav": "4",
         "score_opp": "5"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PIT.png&h=40&w=40",
@@ -15576,7 +15588,7 @@
       "opp_team": "Cincinnati Reds",
       "score_fav": "0",
       "score_opp": "1",
-      "state": "Top 1st",
+      "state": "Bottom 1st",
       "result": "live",
       "label": "📋",
       "game_pk": 823771,
@@ -15600,11 +15612,11 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
         "outs": 2,
-        "balls": 0,
-        "strikes": 2,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 2,
@@ -15680,7 +15692,7 @@
       "opp_team": "New York Yankees",
       "score_fav": "5",
       "score_opp": "0",
-      "state": "Middle 2nd",
+      "state": "Top 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 823529,
@@ -15705,12 +15717,16 @@
           {
             "away_runs": 4,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 0,
+        "current_inning": 3,
+        "is_top": true,
+        "inning_ordinal": "3rd",
+        "outs": 2,
         "balls": 0,
         "strikes": 0,
         "away_runs": 5,
@@ -15996,7 +16012,7 @@
       "opp_team": "Texas Rangers",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Bottom 3rd",
+      "state": "Top 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 824420,
@@ -16025,17 +16041,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
         "outs": 1,
-        "balls": 1,
-        "strikes": 1,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 1,
+        "away_hits": 2,
         "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
@@ -17442,7 +17462,7 @@
     "824741": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 2nd",
+      "status": "Bottom 3rd",
       "away_runs": 5,
       "home_runs": 1,
       "away_team_name": "Washington Nationals",
@@ -17456,14 +17476,18 @@
           {
             "away_runs": 0,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 2,
+        "inning_ordinal": "3rd",
+        "outs": 1,
         "balls": 1,
-        "strikes": 2,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 5,
         "away_hits": 1,
@@ -17532,7 +17556,7 @@
     "822792": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 3rd",
+      "status": "Top 4th",
       "away_runs": 1,
       "home_runs": 0,
       "away_team_name": "New York Mets",
@@ -17550,14 +17574,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 1,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 3,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 2,
@@ -17626,7 +17654,7 @@
     "824822": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 4th",
+      "status": "Middle 5th",
       "away_runs": 2,
       "home_runs": 2,
       "away_team_name": "Baltimore Orioles",
@@ -17648,14 +17676,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 2,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 3,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 2,
         "away_runs": 2,
         "home_runs": 2,
         "away_hits": 4,
@@ -17682,7 +17714,7 @@
       "is_live": true,
       "is_final": false,
       "status": "Top 5th",
-      "away_runs": 2,
+      "away_runs": 4,
       "home_runs": 5,
       "away_team_name": "Philadelphia Phillies",
       "home_team_name": "Pittsburgh Pirates",
@@ -17705,22 +17737,22 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
+            "away_runs": 2,
             "home_runs": 0
           }
         ],
         "current_inning": 5,
         "is_top": true,
         "inning_ordinal": "5th",
-        "outs": 0,
-        "balls": 3,
-        "strikes": 1,
-        "away_runs": 2,
+        "outs": 1,
+        "balls": 0,
+        "strikes": 2,
+        "away_runs": 4,
         "home_runs": 5,
-        "away_hits": 4,
+        "away_hits": 7,
         "home_hits": 5,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "Pittsburgh Pirates",
         "home_team_name": "Philadelphia Phillies",
         "bases": {
@@ -17731,9 +17763,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "2",
+        "fav_score": "4",
         "opp_score": "5",
-        "score_fav": "2",
+        "score_fav": "4",
         "score_opp": "5"
       }
     },
@@ -17783,7 +17815,7 @@
     "823771": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 1st",
+      "status": "Bottom 1st",
       "away_runs": 0,
       "home_runs": 1,
       "away_team_name": "Cincinnati Reds",
@@ -17796,11 +17828,11 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
         "outs": 2,
-        "balls": 0,
-        "strikes": 2,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 2,
@@ -17826,7 +17858,7 @@
     "823529": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 2nd",
+      "status": "Top 3rd",
       "away_runs": 5,
       "home_runs": 0,
       "away_team_name": "New York Yankees",
@@ -17840,12 +17872,16 @@
           {
             "away_runs": 4,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 0,
+        "current_inning": 3,
+        "is_top": true,
+        "inning_ordinal": "3rd",
+        "outs": 2,
         "balls": 0,
         "strikes": 0,
         "away_runs": 5,
@@ -17959,7 +17995,7 @@
     "824420": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 3rd",
+      "status": "Top 4th",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Texas Rangers",
@@ -17977,17 +18013,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
         "outs": 1,
-        "balls": 1,
-        "strikes": 1,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 1,
+        "away_hits": 2,
         "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
@@ -18008,7 +18048,7 @@
       }
     }
   },
-  "updated_at": "29/06/2026 17:52",
+  "updated_at": "29/06/2026 18:00",
   "stats": {
     "total": 111,
     "acertados": 64,
