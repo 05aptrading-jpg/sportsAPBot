@@ -1,5 +1,5 @@
 {
-  "fecha": "30/06/2026 14:36",
+  "fecha": "30/06/2026 14:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1782914400,
@@ -15944,10 +15944,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -18236,10 +18241,15 @@
       "away_team_name": "Kansas City Royals",
       "home_team_name": "Tampa Bay Rays",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -18742,7 +18752,7 @@
       }
     }
   },
-  "updated_at": "30/06/2026 14:36",
+  "updated_at": "30/06/2026 14:52",
   "stats": {
     "total": 118,
     "acertados": 71,
