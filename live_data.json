@@ -1,5 +1,5 @@
 {
-  "fecha": "01/07/2026 14:51",
+  "fecha": "01/07/2026 15:07",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783000800,
@@ -16540,7 +16540,7 @@
       "opp_team": "New York Mets",
       "score_fav": "5",
       "score_opp": "0",
-      "state": "Top 5th",
+      "state": "Top 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 822791,
@@ -16573,17 +16573,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": true,
-        "inning_ordinal": "5th",
-        "outs": 0,
-        "balls": 0,
+        "inning_ordinal": "6th",
+        "outs": 2,
+        "balls": 3,
         "strikes": 2,
         "away_runs": 0,
         "home_runs": 5,
-        "away_hits": 1,
+        "away_hits": 2,
         "home_hits": 7,
         "away_errors": 0,
         "home_errors": 0,
@@ -16697,13 +16701,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-01",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "San Diego Padres",
       "opp_team": "Chicago Cubs",
       "score_fav": "3",
       "score_opp": "23",
-      "state": "Top 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "loss",
       "label": "📋",
       "game_pk": 824660,
       "fav_abbr": "SD",
@@ -16756,12 +16760,12 @@
         "current_inning": 9,
         "is_top": true,
         "inning_ordinal": "9th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 3,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 3,
         "home_runs": 23,
-        "away_hits": 9,
+        "away_hits": 11,
         "home_hits": 17,
         "away_errors": 1,
         "home_errors": 0,
@@ -16772,9 +16776,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "3",
         "opp_score": "23",
         "score_fav": "3",
@@ -17111,10 +17115,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -18798,7 +18807,7 @@
     "822791": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 5th",
+      "status": "Top 6th",
       "away_runs": 5,
       "home_runs": 0,
       "away_team_name": "New York Mets",
@@ -18824,17 +18833,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": true,
-        "inning_ordinal": "5th",
-        "outs": 0,
-        "balls": 0,
+        "inning_ordinal": "6th",
+        "outs": 2,
+        "balls": 3,
         "strikes": 2,
         "away_runs": 0,
         "home_runs": 5,
-        "away_hits": 1,
+        "away_hits": 2,
         "home_hits": 7,
         "away_errors": 0,
         "home_errors": 0,
@@ -18930,9 +18943,9 @@
       }
     },
     "824660": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Top 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 3,
       "home_runs": 23,
       "away_team_name": "Chicago Cubs",
@@ -18979,12 +18992,12 @@
         "current_inning": 9,
         "is_top": true,
         "inning_ordinal": "9th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 3,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 3,
         "home_runs": 23,
-        "away_hits": 9,
+        "away_hits": 11,
         "home_hits": 17,
         "away_errors": 1,
         "home_errors": 0,
@@ -18995,9 +19008,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "3",
         "opp_score": "23",
         "score_fav": "3",
@@ -19250,10 +19263,15 @@
       "away_team_name": "Cincinnati Reds",
       "home_team_name": "Milwaukee Brewers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -19476,7 +19494,7 @@
       }
     }
   },
-  "updated_at": "01/07/2026 14:51",
+  "updated_at": "01/07/2026 15:07",
   "stats": {
     "total": 126,
     "acertados": 73,
