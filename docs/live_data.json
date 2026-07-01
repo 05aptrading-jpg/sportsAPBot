@@ -1,5 +1,5 @@
 {
-  "fecha": "01/07/2026 09:21",
+  "fecha": "01/07/2026 09:36",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783000800,
@@ -16530,7 +16530,7 @@
       "opp_team": "New York Mets",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 822791,
@@ -16565,7 +16565,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -16652,10 +16652,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -18569,7 +18574,7 @@
     "822791": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "New York Mets",
@@ -18597,7 +18602,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -18656,10 +18661,15 @@
       "away_team_name": "Chicago Cubs",
       "home_team_name": "San Diego Padres",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -19038,7 +19048,7 @@
       }
     }
   },
-  "updated_at": "01/07/2026 09:21",
+  "updated_at": "01/07/2026 09:36",
   "stats": {
     "total": 126,
     "acertados": 73,
