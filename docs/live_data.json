@@ -1,5 +1,5 @@
 {
-  "fecha": "01/07/2026 08:21",
+  "fecha": "01/07/2026 08:37",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783000800,
@@ -16582,7 +16582,7 @@
       "opp_team": "Washington Nationals",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 824740,
@@ -16617,7 +16617,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -17115,10 +17115,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -18592,7 +18597,7 @@
     "824740": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Washington Nationals",
@@ -18620,7 +18625,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -18978,10 +18983,15 @@
       "away_team_name": "Cleveland Guardians",
       "home_team_name": "Texas Rangers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -19008,7 +19018,7 @@
       }
     }
   },
-  "updated_at": "01/07/2026 08:21",
+  "updated_at": "01/07/2026 08:37",
   "stats": {
     "total": 126,
     "acertados": 73,
