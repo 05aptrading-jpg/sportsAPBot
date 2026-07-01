@@ -1,5 +1,5 @@
 {
-  "fecha": "01/07/2026 09:07",
+  "fecha": "01/07/2026 09:21",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783000800,
@@ -16756,10 +16756,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -18727,10 +18732,15 @@
       "away_team_name": "Chicago White Sox",
       "home_team_name": "Baltimore Orioles",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -19028,7 +19038,7 @@
       }
     }
   },
-  "updated_at": "01/07/2026 09:07",
+  "updated_at": "01/07/2026 09:21",
   "stats": {
     "total": 126,
     "acertados": 73,
