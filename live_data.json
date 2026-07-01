@@ -1,5 +1,5 @@
 {
-  "fecha": "01/07/2026 15:36",
+  "fecha": "01/07/2026 15:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783000800,
@@ -16538,9 +16538,9 @@
       "status_emoji": "🔴",
       "fav_team": "Toronto Blue Jays",
       "opp_team": "New York Mets",
-      "score_fav": "6",
+      "score_fav": "9",
       "score_opp": "0",
-      "state": "Bottom 7th",
+      "state": "Top 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 822791,
@@ -16580,19 +16580,23 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 1
+            "home_runs": 4
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 0,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 2,
+        "balls": 1,
         "strikes": 1,
         "away_runs": 0,
-        "home_runs": 6,
-        "away_hits": 2,
-        "home_hits": 9,
+        "home_runs": 9,
+        "away_hits": 3,
+        "home_hits": 12,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "New York Mets",
@@ -16606,9 +16610,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "6",
+        "opp_score": "9",
         "score_fav": "0",
-        "score_opp": "6"
+        "score_opp": "9"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TOR.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYM.png&h=40&w=40"
@@ -16812,10 +16816,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -18811,8 +18820,8 @@
     "822791": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 7th",
-      "away_runs": 6,
+      "status": "Top 8th",
+      "away_runs": 9,
       "home_runs": 0,
       "away_team_name": "New York Mets",
       "home_team_name": "Toronto Blue Jays",
@@ -18844,19 +18853,23 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 1
+            "home_runs": 4
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 0,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 2,
+        "balls": 1,
         "strikes": 1,
         "away_runs": 0,
-        "home_runs": 6,
-        "away_hits": 2,
-        "home_hits": 9,
+        "home_runs": 9,
+        "away_hits": 3,
+        "home_hits": 12,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "New York Mets",
@@ -18870,9 +18883,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "6",
+        "opp_score": "9",
         "score_fav": "0",
-        "score_opp": "6"
+        "score_opp": "9"
       }
     },
     "824740": {
@@ -19034,10 +19047,15 @@
       "away_team_name": "Colorado Rockies",
       "home_team_name": "Miami Marlins",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -19502,7 +19520,7 @@
       }
     }
   },
-  "updated_at": "01/07/2026 15:36",
+  "updated_at": "01/07/2026 15:52",
   "stats": {
     "total": 126,
     "acertados": 73,
