@@ -1,5 +1,5 @@
 {
-  "fecha": "01/07/2026 16:01",
+  "fecha": "01/07/2026 16:07",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783000800,
@@ -16539,8 +16539,8 @@
       "fav_team": "Toronto Blue Jays",
       "opp_team": "New York Mets",
       "score_fav": "9",
-      "score_opp": "2",
-      "state": "Bottom 8th",
+      "score_opp": "3",
+      "state": "Top 9th",
       "result": "live",
       "label": "📋",
       "game_pk": 822791,
@@ -16585,17 +16585,21 @@
           {
             "away_runs": 2,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 1,
-        "away_runs": 2,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 3,
         "home_runs": 9,
-        "away_hits": 4,
+        "away_hits": 5,
         "home_hits": 12,
         "away_errors": 0,
         "home_errors": 0,
@@ -16609,9 +16613,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "2",
+        "fav_score": "3",
         "opp_score": "9",
-        "score_fav": "2",
+        "score_fav": "3",
         "score_opp": "9"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TOR.png&h=40&w=40",
@@ -17076,10 +17080,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -18820,9 +18829,9 @@
     "822791": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 8th",
+      "status": "Top 9th",
       "away_runs": 9,
-      "home_runs": 2,
+      "home_runs": 3,
       "away_team_name": "New York Mets",
       "home_team_name": "Toronto Blue Jays",
       "linescore": {
@@ -18858,17 +18867,21 @@
           {
             "away_runs": 2,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 1,
-        "away_runs": 2,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 3,
         "home_runs": 9,
-        "away_hits": 4,
+        "away_hits": 5,
         "home_hits": 12,
         "away_errors": 0,
         "home_errors": 0,
@@ -18882,9 +18895,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "2",
+        "fav_score": "3",
         "opp_score": "9",
-        "score_fav": "2",
+        "score_fav": "3",
         "score_opp": "9"
       }
     },
@@ -19251,10 +19264,15 @@
       "away_team_name": "Los Angeles Dodgers",
       "home_team_name": "Athletics",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -19520,7 +19538,7 @@
       }
     }
   },
-  "updated_at": "01/07/2026 16:01",
+  "updated_at": "01/07/2026 16:07",
   "stats": {
     "total": 128,
     "acertados": 74,
