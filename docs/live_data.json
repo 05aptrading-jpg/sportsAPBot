@@ -1,5 +1,5 @@
 {
-  "fecha": "02/07/2026 14:36",
+  "fecha": "02/07/2026 14:51",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783087200,
@@ -17651,7 +17651,7 @@
       "opp_team": "Miami Marlins",
       "score_fav": "5",
       "score_opp": "4",
-      "state": "End 4th",
+      "state": "Top 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 824335,
@@ -17680,14 +17680,18 @@
           {
             "away_runs": 1,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
         "outs": 3,
-        "balls": 0,
-        "strikes": 3,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 4,
         "home_runs": 5,
         "away_hits": 4,
@@ -17767,13 +17771,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-02",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "Milwaukee Brewers",
       "opp_team": "Cincinnati Reds",
       "score_fav": "2",
       "score_opp": "7",
-      "state": "Top 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "loss",
       "label": "📋",
       "game_pk": 823765,
       "fav_abbr": "MIL",
@@ -17824,14 +17828,14 @@
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
+        "outs": 3,
         "balls": 0,
         "strikes": 0,
         "away_runs": 7,
         "home_runs": 2,
-        "away_hits": 10,
+        "away_hits": 11,
         "home_hits": 4,
         "away_errors": 1,
         "home_errors": 1,
@@ -17842,9 +17846,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "7",
         "opp_score": "2",
         "score_fav": "7",
@@ -19920,7 +19924,7 @@
     "824335": {
       "is_live": true,
       "is_final": false,
-      "status": "End 4th",
+      "status": "Top 5th",
       "away_runs": 5,
       "home_runs": 4,
       "away_team_name": "Miami Marlins",
@@ -19942,14 +19946,18 @@
           {
             "away_runs": 1,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
         "outs": 3,
-        "balls": 0,
-        "strikes": 3,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 4,
         "home_runs": 5,
         "away_hits": 4,
@@ -20011,9 +20019,9 @@
       }
     },
     "823765": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Top 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 2,
       "home_runs": 7,
       "away_team_name": "Cincinnati Reds",
@@ -20058,14 +20066,14 @@
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
+        "outs": 3,
         "balls": 0,
         "strikes": 0,
         "away_runs": 7,
         "home_runs": 2,
-        "away_hits": 10,
+        "away_hits": 11,
         "home_hits": 4,
         "away_errors": 1,
         "home_errors": 1,
@@ -20076,9 +20084,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "7",
         "opp_score": "2",
         "score_fav": "7",
@@ -20471,7 +20479,7 @@
       }
     }
   },
-  "updated_at": "02/07/2026 14:36",
+  "updated_at": "02/07/2026 14:51",
   "stats": {
     "total": 135,
     "acertados": 79,
