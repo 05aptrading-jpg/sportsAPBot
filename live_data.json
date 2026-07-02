@@ -1,5 +1,5 @@
 {
-  "fecha": "02/07/2026 15:21",
+  "fecha": "02/07/2026 15:36",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783087200,
@@ -17503,10 +17503,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -17649,9 +17654,9 @@
       "status_emoji": "🔴",
       "fav_team": "Colorado Rockies",
       "opp_team": "Miami Marlins",
-      "score_fav": "7",
+      "score_fav": "12",
       "score_opp": "4",
-      "state": "Bottom 6th",
+      "state": "Middle 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 824335,
@@ -17687,19 +17692,23 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 2
+            "home_runs": 7
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
+        "outs": 3,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 4,
-        "home_runs": 7,
-        "away_hits": 5,
-        "home_hits": 8,
+        "home_runs": 12,
+        "away_hits": 6,
+        "home_hits": 11,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Miami Marlins",
@@ -17713,9 +17722,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "4",
-        "opp_score": "7",
+        "opp_score": "12",
         "score_fav": "4",
-        "score_opp": "7"
+        "score_opp": "12"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/COL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIA.png&h=40&w=40"
@@ -19820,10 +19829,15 @@
       "away_team_name": "St. Louis Cardinals",
       "home_team_name": "Atlanta Braves",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -19933,8 +19947,8 @@
     "824335": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 6th",
-      "away_runs": 7,
+      "status": "Middle 7th",
+      "away_runs": 12,
       "home_runs": 4,
       "away_team_name": "Miami Marlins",
       "home_team_name": "Colorado Rockies",
@@ -19962,19 +19976,23 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 2
+            "home_runs": 7
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
+        "outs": 3,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 4,
-        "home_runs": 7,
-        "away_hits": 5,
-        "home_hits": 8,
+        "home_runs": 12,
+        "away_hits": 6,
+        "home_hits": 11,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Miami Marlins",
@@ -19988,9 +20006,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "4",
-        "opp_score": "7",
+        "opp_score": "12",
         "score_fav": "4",
-        "score_opp": "7"
+        "score_opp": "12"
       }
     },
     "823935": {
@@ -20497,7 +20515,7 @@
       }
     }
   },
-  "updated_at": "02/07/2026 15:21",
+  "updated_at": "02/07/2026 15:36",
   "stats": {
     "total": 135,
     "acertados": 79,
