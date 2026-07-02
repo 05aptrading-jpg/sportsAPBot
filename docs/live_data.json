@@ -1,5 +1,5 @@
 {
-  "fecha": "01/07/2026 21:36",
+  "fecha": "01/07/2026 21:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783000800,
@@ -16317,7 +16317,7 @@
       "fav_team": "Pericos de Puebla",
       "opp_team": "Leones de Yucatan",
       "score_fav": "5",
-      "score_opp": "8",
+      "score_opp": "9",
       "state": "In Progress",
       "result": "live",
       "home_team": "Pericos de Puebla",
@@ -16351,19 +16351,19 @@
             "home_runs": 3
           },
           {
-            "away_runs": 0,
+            "away_runs": 1,
             "home_runs": 0
           }
         ],
         "current_inning": 6,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "6th",
-        "outs": 0,
-        "balls": 3,
-        "strikes": 2,
-        "away_runs": 8,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 3,
+        "away_runs": 9,
         "home_runs": 5,
-        "away_hits": 12,
+        "away_hits": 14,
         "home_hits": 5,
         "away_errors": 0,
         "home_errors": 0,
@@ -16377,9 +16377,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "8",
+        "fav_score": "9",
         "opp_score": "5",
-        "score_fav": "8",
+        "score_fav": "9",
         "score_opp": "5"
       }
     },
@@ -16521,9 +16521,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "8",
         "opp_score": "3",
         "score_fav": "8",
@@ -17252,7 +17252,7 @@
       "opp_team": "Los Angeles Dodgers",
       "score_fav": "6",
       "score_opp": "1",
-      "state": "Bottom 7th",
+      "state": "Bottom 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 824985,
@@ -17293,17 +17293,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 1,
+        "inning_ordinal": "8th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 1,
         "home_runs": 6,
-        "away_hits": 3,
+        "away_hits": 4,
         "home_hits": 11,
         "away_errors": 0,
         "home_errors": 0,
@@ -17422,7 +17426,7 @@
       "opp_team": "San Francisco Giants",
       "score_fav": "0",
       "score_opp": "6",
-      "state": "Top 7th",
+      "state": "Top 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 825064,
@@ -17463,18 +17467,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": true,
-        "inning_ordinal": "7th",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 1,
+        "inning_ordinal": "8th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 6,
         "home_runs": 0,
         "away_hits": 11,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "San Francisco Giants",
@@ -19076,9 +19084,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "8",
         "opp_score": "3",
         "score_fav": "8",
@@ -19688,7 +19696,7 @@
     "824985": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 7th",
+      "status": "Bottom 8th",
       "away_runs": 6,
       "home_runs": 1,
       "away_team_name": "Los Angeles Dodgers",
@@ -19722,17 +19730,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 1,
+        "inning_ordinal": "8th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 1,
         "home_runs": 6,
-        "away_hits": 3,
+        "away_hits": 4,
         "home_hits": 11,
         "away_errors": 0,
         "home_errors": 0,
@@ -19830,7 +19842,7 @@
     "825064": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 7th",
+      "status": "Top 8th",
       "away_runs": 0,
       "home_runs": 6,
       "away_team_name": "San Francisco Giants",
@@ -19864,18 +19876,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": true,
-        "inning_ordinal": "7th",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 1,
+        "inning_ordinal": "8th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 6,
         "home_runs": 0,
         "away_hits": 11,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "San Francisco Giants",
@@ -20053,7 +20069,7 @@
       }
     }
   },
-  "updated_at": "01/07/2026 21:36",
+  "updated_at": "01/07/2026 21:52",
   "stats": {
     "total": 130,
     "acertados": 76,
