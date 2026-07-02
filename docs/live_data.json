@@ -1,5 +1,5 @@
 {
-  "fecha": "02/07/2026 11:36",
+  "fecha": "02/07/2026 11:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783087200,
@@ -17353,7 +17353,7 @@
       "opp_team": "Pittsburgh Pirates",
       "score_fav": "1",
       "score_opp": "0",
-      "state": "Bottom 3rd",
+      "state": "Top 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 823442,
@@ -17378,14 +17378,18 @@
           {
             "away_runs": 0,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 1,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 3,
@@ -17683,7 +17687,7 @@
       "opp_team": "Cincinnati Reds",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "📋",
       "game_pk": 823765,
@@ -17723,7 +17727,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -19178,7 +19182,7 @@
     "823442": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 3rd",
+      "status": "Top 4th",
       "away_runs": 1,
       "home_runs": 0,
       "away_team_name": "Pittsburgh Pirates",
@@ -19196,14 +19200,18 @@
           {
             "away_runs": 0,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 1,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 3,
@@ -19424,7 +19432,7 @@
     "823765": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Cincinnati Reds",
@@ -19457,7 +19465,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -19541,7 +19549,7 @@
       }
     }
   },
-  "updated_at": "02/07/2026 11:36",
+  "updated_at": "02/07/2026 11:52",
   "stats": {
     "total": 135,
     "acertados": 79,
