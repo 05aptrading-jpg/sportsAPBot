@@ -1,5 +1,5 @@
 {
-  "fecha": "02/07/2026 17:21",
+  "fecha": "02/07/2026 17:36",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783087200,
@@ -17495,7 +17495,7 @@
       "opp_team": "St. Louis Cardinals",
       "score_fav": "0",
       "score_opp": "3",
-      "state": "Top 1st",
+      "state": "Bottom 1st",
       "result": "live",
       "label": "📋",
       "game_pk": 824906,
@@ -17515,15 +17515,15 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
         "outs": 1,
-        "balls": 0,
+        "balls": 1,
         "strikes": 0,
         "away_runs": 3,
         "home_runs": 0,
-        "away_hits": 2,
-        "home_hits": 0,
+        "away_hits": 3,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "St. Louis Cardinals",
@@ -17551,8 +17551,8 @@
       "fav_team": "Chicago White Sox",
       "opp_team": "Cleveland Guardians",
       "score_fav": "0",
-      "score_opp": "0",
-      "state": "Middle 3rd",
+      "score_opp": "2",
+      "state": "Top 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 824416,
@@ -17576,19 +17576,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": true,
-        "inning_ordinal": "3rd",
-        "outs": 3,
-        "balls": 3,
-        "strikes": 3,
+        "inning_ordinal": "4th",
+        "outs": 0,
+        "balls": 1,
+        "strikes": 0,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 2,
         "away_hits": 2,
-        "home_hits": 2,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Chicago White Sox",
@@ -17602,9 +17606,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "2",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "2"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHW.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40"
@@ -19859,7 +19863,7 @@
     "824906": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 1st",
+      "status": "Bottom 1st",
       "away_runs": 0,
       "home_runs": 3,
       "away_team_name": "St. Louis Cardinals",
@@ -19872,15 +19876,15 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
         "outs": 1,
-        "balls": 0,
+        "balls": 1,
         "strikes": 0,
         "away_runs": 3,
         "home_runs": 0,
-        "away_hits": 2,
-        "home_hits": 0,
+        "away_hits": 3,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "St. Louis Cardinals",
@@ -19902,9 +19906,9 @@
     "824416": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 3rd",
+      "status": "Top 4th",
       "away_runs": 0,
-      "home_runs": 0,
+      "home_runs": 2,
       "away_team_name": "Cleveland Guardians",
       "home_team_name": "Chicago White Sox",
       "linescore": {
@@ -19919,19 +19923,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": true,
-        "inning_ordinal": "3rd",
-        "outs": 3,
-        "balls": 3,
-        "strikes": 3,
+        "inning_ordinal": "4th",
+        "outs": 0,
+        "balls": 1,
+        "strikes": 0,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 2,
         "away_hits": 2,
-        "home_hits": 2,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Chicago White Sox",
@@ -19945,9 +19953,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "2",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "2"
       }
     },
     "823119": {
@@ -20582,7 +20590,7 @@
       }
     }
   },
-  "updated_at": "02/07/2026 17:21",
+  "updated_at": "02/07/2026 17:36",
   "stats": {
     "total": 136,
     "acertados": 79,
@@ -24871,19 +24879,31 @@
     {
       "game_date": "2026-07-02",
       "game_id": "401857034",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Washington Mystics",
       "away": "Atlanta Dream",
       "home_abbr": "WSH",
       "away_abbr": "ATL",
-      "home_score": 0,
-      "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "home_score": 4,
+      "away_score": 5,
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 4,
+          "display": "4"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 5,
+          "display": "5"
+        }
+      ],
+      "clock": "8:20",
+      "period": 1,
+      "state": "Q1 8:20",
+      "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/WSH.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/ATL.png&h=40&w=40"
