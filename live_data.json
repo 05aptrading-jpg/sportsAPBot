@@ -1,5 +1,5 @@
 {
-  "fecha": "02/07/2026 15:36",
+  "fecha": "02/07/2026 15:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783087200,
@@ -17617,10 +17617,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -17656,7 +17661,7 @@
       "opp_team": "Miami Marlins",
       "score_fav": "12",
       "score_opp": "4",
-      "state": "Middle 7th",
+      "state": "Middle 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 824335,
@@ -17697,18 +17702,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": true,
-        "inning_ordinal": "7th",
+        "inning_ordinal": "8th",
         "outs": 3,
-        "balls": 2,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 4,
         "home_runs": 12,
         "away_hits": 6,
-        "home_hits": 11,
+        "home_hits": 12,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Miami Marlins",
@@ -19915,10 +19924,15 @@
       "away_team_name": "Los Angeles Angels",
       "home_team_name": "Seattle Mariners",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -19947,7 +19961,7 @@
     "824335": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 7th",
+      "status": "Middle 8th",
       "away_runs": 12,
       "home_runs": 4,
       "away_team_name": "Miami Marlins",
@@ -19981,18 +19995,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": true,
-        "inning_ordinal": "7th",
+        "inning_ordinal": "8th",
         "outs": 3,
-        "balls": 2,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 4,
         "home_runs": 12,
         "away_hits": 6,
-        "home_hits": 11,
+        "home_hits": 12,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Miami Marlins",
@@ -20515,7 +20533,7 @@
       }
     }
   },
-  "updated_at": "02/07/2026 15:36",
+  "updated_at": "02/07/2026 15:52",
   "stats": {
     "total": 135,
     "acertados": 79,
