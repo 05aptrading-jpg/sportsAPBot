@@ -1,5 +1,5 @@
 {
-  "fecha": "01/07/2026 22:07",
+  "fecha": "01/07/2026 22:21",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783000800,
@@ -16313,13 +16313,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-06-30",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "Pericos de Puebla",
       "opp_team": "Leones de Yucatan",
       "score_fav": "5",
       "score_opp": "11",
-      "state": "In Progress",
-      "result": "live",
+      "state": "Final",
+      "result": "loss",
       "home_team": "Pericos de Puebla",
       "away_team": "Leones de Yucatan",
       "label": "📋",
@@ -16362,13 +16362,13 @@
         "current_inning": 7,
         "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 0,
+        "outs": 3,
+        "balls": 1,
         "strikes": 1,
         "away_runs": 11,
         "home_runs": 5,
         "away_hits": 16,
-        "home_hits": 6,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Leones de Yucatan",
@@ -16378,9 +16378,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "11",
         "opp_score": "5",
         "score_fav": "11",
@@ -17326,9 +17326,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "1",
         "opp_score": "7",
         "score_fav": "1",
@@ -17432,9 +17432,9 @@
       "status_emoji": "🔴",
       "fav_team": "Arizona Diamondbacks",
       "opp_team": "San Francisco Giants",
-      "score_fav": "1",
+      "score_fav": "4",
       "score_opp": "6",
-      "state": "Bottom 8th",
+      "state": "Top 9th",
       "result": "live",
       "label": "📋",
       "game_pk": 825064,
@@ -17478,20 +17478,24 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 1
+            "home_runs": 4
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 1,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 6,
-        "home_runs": 1,
+        "home_runs": 4,
         "away_hits": 11,
-        "home_hits": 4,
-        "away_errors": 0,
+        "home_hits": 7,
+        "away_errors": 2,
         "home_errors": 0,
         "away_team_name": "San Francisco Giants",
         "home_team_name": "Arizona Diamondbacks",
@@ -17504,9 +17508,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "6",
-        "opp_score": "1",
+        "opp_score": "4",
         "score_fav": "6",
-        "score_opp": "1"
+        "score_opp": "4"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ARI.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SF.png&h=40&w=40"
@@ -19767,9 +19771,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "1",
         "opp_score": "7",
         "score_fav": "1",
@@ -19854,8 +19858,8 @@
     "825064": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 8th",
-      "away_runs": 1,
+      "status": "Top 9th",
+      "away_runs": 4,
       "home_runs": 6,
       "away_team_name": "San Francisco Giants",
       "home_team_name": "Arizona Diamondbacks",
@@ -19891,20 +19895,24 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 1
+            "home_runs": 4
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 1,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 6,
-        "home_runs": 1,
+        "home_runs": 4,
         "away_hits": 11,
-        "home_hits": 4,
-        "away_errors": 0,
+        "home_hits": 7,
+        "away_errors": 2,
         "home_errors": 0,
         "away_team_name": "San Francisco Giants",
         "home_team_name": "Arizona Diamondbacks",
@@ -19917,9 +19925,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "6",
-        "opp_score": "1",
+        "opp_score": "4",
         "score_fav": "6",
-        "score_opp": "1"
+        "score_opp": "4"
       }
     },
     "823530": {
@@ -20081,7 +20089,7 @@
       }
     }
   },
-  "updated_at": "01/07/2026 22:07",
+  "updated_at": "01/07/2026 22:21",
   "stats": {
     "total": 134,
     "acertados": 79,
