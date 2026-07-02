@@ -1,5 +1,5 @@
 {
-  "fecha": "02/07/2026 12:01",
+  "fecha": "02/07/2026 12:06",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783087200,
@@ -17353,7 +17353,7 @@
       "opp_team": "Pittsburgh Pirates",
       "score_fav": "1",
       "score_opp": "0",
-      "state": "Bottom 4th",
+      "state": "Top 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 823442,
@@ -17382,17 +17382,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 3,
-        "balls": 2,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 1,
+        "balls": 0,
         "strikes": 3,
         "away_runs": 0,
         "home_runs": 1,
-        "away_hits": 3,
+        "away_hits": 5,
         "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
@@ -19182,7 +19186,7 @@
     "823442": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 4th",
+      "status": "Top 5th",
       "away_runs": 1,
       "home_runs": 0,
       "away_team_name": "Pittsburgh Pirates",
@@ -19204,17 +19208,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 3,
-        "balls": 2,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 1,
+        "balls": 0,
         "strikes": 3,
         "away_runs": 0,
         "home_runs": 1,
-        "away_hits": 3,
+        "away_hits": 5,
         "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
@@ -19549,7 +19557,7 @@
       }
     }
   },
-  "updated_at": "02/07/2026 12:01",
+  "updated_at": "02/07/2026 12:06",
   "stats": {
     "total": 135,
     "acertados": 79,
