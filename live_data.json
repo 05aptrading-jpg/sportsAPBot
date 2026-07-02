@@ -1,5 +1,5 @@
 {
-  "fecha": "02/07/2026 14:06",
+  "fecha": "02/07/2026 14:22",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783087200,
@@ -17650,8 +17650,8 @@
       "fav_team": "Colorado Rockies",
       "opp_team": "Miami Marlins",
       "score_fav": "3",
-      "score_opp": "3",
-      "state": "Bottom 3rd",
+      "score_opp": "4",
+      "state": "Top 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 824335,
@@ -17676,17 +17676,21 @@
           {
             "away_runs": 1,
             "home_runs": 2
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
         "outs": 3,
-        "balls": 0,
-        "strikes": 3,
-        "away_runs": 3,
+        "balls": 3,
+        "strikes": 2,
+        "away_runs": 4,
         "home_runs": 3,
-        "away_hits": 3,
+        "away_hits": 4,
         "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
@@ -17700,9 +17704,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "3",
+        "fav_score": "4",
         "opp_score": "3",
-        "score_fav": "3",
+        "score_fav": "4",
         "score_opp": "3"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/COL.png&h=40&w=40",
@@ -17768,7 +17772,7 @@
       "opp_team": "Cincinnati Reds",
       "score_fav": "2",
       "score_opp": "6",
-      "state": "Bottom 7th",
+      "state": "Top 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 823765,
@@ -17809,17 +17813,21 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 1,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 2,
+        "balls": 2,
         "strikes": 0,
         "away_runs": 6,
         "home_runs": 2,
-        "away_hits": 7,
+        "away_hits": 9,
         "home_hits": 4,
         "away_errors": 1,
         "home_errors": 1,
@@ -17849,7 +17857,7 @@
       "opp_team": "Texas Rangers",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 822884,
@@ -17884,7 +17892,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -19903,9 +19911,9 @@
     "824335": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 3rd",
+      "status": "Top 4th",
       "away_runs": 3,
-      "home_runs": 3,
+      "home_runs": 4,
       "away_team_name": "Miami Marlins",
       "home_team_name": "Colorado Rockies",
       "linescore": {
@@ -19921,17 +19929,21 @@
           {
             "away_runs": 1,
             "home_runs": 2
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
         "outs": 3,
-        "balls": 0,
-        "strikes": 3,
-        "away_runs": 3,
+        "balls": 3,
+        "strikes": 2,
+        "away_runs": 4,
         "home_runs": 3,
-        "away_hits": 3,
+        "away_hits": 4,
         "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
@@ -19945,9 +19957,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "3",
+        "fav_score": "4",
         "opp_score": "3",
-        "score_fav": "3",
+        "score_fav": "4",
         "score_opp": "3"
       }
     },
@@ -19992,7 +20004,7 @@
     "823765": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 7th",
+      "status": "Top 8th",
       "away_runs": 2,
       "home_runs": 6,
       "away_team_name": "Cincinnati Reds",
@@ -20026,17 +20038,21 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 1,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 2,
+        "balls": 2,
         "strikes": 0,
         "away_runs": 6,
         "home_runs": 2,
-        "away_hits": 7,
+        "away_hits": 9,
         "home_hits": 4,
         "away_errors": 1,
         "home_errors": 1,
@@ -20059,7 +20075,7 @@
     "822884": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Texas Rangers",
@@ -20087,7 +20103,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -20437,7 +20453,7 @@
       }
     }
   },
-  "updated_at": "02/07/2026 14:06",
+  "updated_at": "02/07/2026 14:22",
   "stats": {
     "total": 135,
     "acertados": 79,
