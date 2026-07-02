@@ -1,5 +1,5 @@
 {
-  "fecha": "01/07/2026 20:51",
+  "fecha": "01/07/2026 21:06",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783000800,
@@ -16317,7 +16317,7 @@
       "fav_team": "Pericos de Puebla",
       "opp_team": "Leones de Yucatan",
       "score_fav": "2",
-      "score_opp": "4",
+      "score_opp": "5",
       "state": "In Progress",
       "result": "live",
       "home_team": "Pericos de Puebla",
@@ -16345,17 +16345,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 2,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
-        "away_runs": 4,
+        "away_runs": 5,
         "home_runs": 2,
-        "away_hits": 7,
+        "away_hits": 10,
         "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
@@ -16369,9 +16373,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "4",
+        "fav_score": "5",
         "opp_score": "2",
-        "score_fav": "4",
+        "score_fav": "5",
         "score_opp": "2"
       }
     },
@@ -16441,9 +16445,9 @@
       "status_emoji": "🔴",
       "fav_team": "Minnesota Twins",
       "opp_team": "Houston Astros",
-      "score_fav": "7",
+      "score_fav": "8",
       "score_opp": "3",
-      "state": "End 7th",
+      "state": "Bottom 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 824174,
@@ -16484,17 +16488,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 1,
-        "away_runs": 7,
+        "inning_ordinal": "8th",
+        "outs": 1,
+        "balls": 1,
+        "strikes": 2,
+        "away_runs": 8,
         "home_runs": 3,
-        "away_hits": 7,
+        "away_hits": 8,
         "home_hits": 7,
         "away_errors": 1,
         "home_errors": 0,
@@ -16508,9 +16516,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "7",
+        "fav_score": "8",
         "opp_score": "3",
-        "score_fav": "7",
+        "score_fav": "8",
         "score_opp": "3"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40",
@@ -17234,9 +17242,9 @@
       "status_emoji": "🔴",
       "fav_team": "Athletics",
       "opp_team": "Los Angeles Dodgers",
-      "score_fav": "3",
+      "score_fav": "5",
       "score_opp": "1",
-      "state": "Bottom 4th",
+      "state": "Bottom 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 824985,
@@ -17265,18 +17273,22 @@
           {
             "away_runs": 0,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 2
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 0,
+        "inning_ordinal": "5th",
+        "outs": 0,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 1,
-        "home_runs": 3,
+        "home_runs": 5,
         "away_hits": 3,
-        "home_hits": 6,
+        "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Los Angeles Dodgers",
@@ -17290,9 +17302,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "1",
-        "opp_score": "3",
+        "opp_score": "5",
         "score_fav": "1",
-        "score_opp": "3"
+        "score_opp": "5"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40"
@@ -17300,13 +17312,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-01",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Milwaukee Brewers",
       "opp_team": "Cincinnati Reds",
       "score_fav": "4",
       "score_opp": "2",
-      "state": "Bottom 8th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 823767,
       "fav_abbr": "MIL",
@@ -17350,17 +17362,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
         "outs": 3,
-        "balls": 2,
+        "balls": 1,
         "strikes": 3,
         "away_runs": 2,
         "home_runs": 4,
-        "away_hits": 7,
+        "away_hits": 8,
         "home_hits": 8,
         "away_errors": 2,
         "home_errors": 0,
@@ -17371,9 +17387,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "2",
         "opp_score": "4",
         "score_fav": "2",
@@ -17390,7 +17406,7 @@
       "opp_team": "San Francisco Giants",
       "score_fav": "0",
       "score_opp": "3",
-      "state": "Top 5th",
+      "state": "Top 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 825064,
@@ -17423,14 +17439,18 @@
           {
             "away_runs": 3,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": true,
-        "inning_ordinal": "5th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 2,
+        "inning_ordinal": "6th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 3,
         "home_runs": 0,
         "away_hits": 5,
@@ -18973,8 +18993,8 @@
     "824174": {
       "is_live": true,
       "is_final": false,
-      "status": "End 7th",
-      "away_runs": 7,
+      "status": "Bottom 8th",
+      "away_runs": 8,
       "home_runs": 3,
       "away_team_name": "Houston Astros",
       "home_team_name": "Minnesota Twins",
@@ -19007,17 +19027,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 1,
-        "away_runs": 7,
+        "inning_ordinal": "8th",
+        "outs": 1,
+        "balls": 1,
+        "strikes": 2,
+        "away_runs": 8,
         "home_runs": 3,
-        "away_hits": 7,
+        "away_hits": 8,
         "home_hits": 7,
         "away_errors": 1,
         "home_errors": 0,
@@ -19031,9 +19055,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "7",
+        "fav_score": "8",
         "opp_score": "3",
-        "score_fav": "7",
+        "score_fav": "8",
         "score_opp": "3"
       }
     },
@@ -19640,8 +19664,8 @@
     "824985": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 4th",
-      "away_runs": 3,
+      "status": "Bottom 5th",
+      "away_runs": 5,
       "home_runs": 1,
       "away_team_name": "Los Angeles Dodgers",
       "home_team_name": "Athletics",
@@ -19662,18 +19686,22 @@
           {
             "away_runs": 0,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 2
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 0,
+        "inning_ordinal": "5th",
+        "outs": 0,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 1,
-        "home_runs": 3,
+        "home_runs": 5,
         "away_hits": 3,
-        "home_hits": 6,
+        "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Los Angeles Dodgers",
@@ -19687,15 +19715,15 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "1",
-        "opp_score": "3",
+        "opp_score": "5",
         "score_fav": "1",
-        "score_opp": "3"
+        "score_opp": "5"
       }
     },
     "823767": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 8th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 4,
       "home_runs": 2,
       "away_team_name": "Cincinnati Reds",
@@ -19733,17 +19761,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
         "outs": 3,
-        "balls": 2,
+        "balls": 1,
         "strikes": 3,
         "away_runs": 2,
         "home_runs": 4,
-        "away_hits": 7,
+        "away_hits": 8,
         "home_hits": 8,
         "away_errors": 2,
         "home_errors": 0,
@@ -19754,9 +19786,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "2",
         "opp_score": "4",
         "score_fav": "2",
@@ -19766,7 +19798,7 @@
     "825064": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 5th",
+      "status": "Top 6th",
       "away_runs": 0,
       "home_runs": 3,
       "away_team_name": "San Francisco Giants",
@@ -19792,14 +19824,18 @@
           {
             "away_runs": 3,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": true,
-        "inning_ordinal": "5th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 2,
+        "inning_ordinal": "6th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 3,
         "home_runs": 0,
         "away_hits": 5,
@@ -19981,7 +20017,7 @@
       }
     }
   },
-  "updated_at": "01/07/2026 20:51",
+  "updated_at": "01/07/2026 21:06",
   "stats": {
     "total": 130,
     "acertados": 76,
