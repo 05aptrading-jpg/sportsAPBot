@@ -1,5 +1,5 @@
 {
-  "fecha": "01/07/2026 22:21",
+  "fecha": "01/07/2026 22:37",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783000800,
@@ -17429,13 +17429,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-01",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "Arizona Diamondbacks",
       "opp_team": "San Francisco Giants",
       "score_fav": "4",
       "score_opp": "6",
-      "state": "Top 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "loss",
       "label": "📋",
       "game_pk": 825064,
       "fav_abbr": "ARI",
@@ -17486,9 +17486,9 @@
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 1,
+        "outs": 3,
         "balls": 0,
         "strikes": 0,
         "away_runs": 6,
@@ -17496,7 +17496,7 @@
         "away_hits": 11,
         "home_hits": 7,
         "away_errors": 2,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "San Francisco Giants",
         "home_team_name": "Arizona Diamondbacks",
         "bases": {
@@ -17504,9 +17504,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "6",
         "opp_score": "4",
         "score_fav": "6",
@@ -17707,7 +17707,7 @@
     6099564810,
     8670833401
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": false,
   "live_data": {
     "401815963": {
@@ -19856,9 +19856,9 @@
       }
     },
     "825064": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Top 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 4,
       "home_runs": 6,
       "away_team_name": "San Francisco Giants",
@@ -19903,9 +19903,9 @@
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 1,
+        "outs": 3,
         "balls": 0,
         "strikes": 0,
         "away_runs": 6,
@@ -19913,7 +19913,7 @@
         "away_hits": 11,
         "home_hits": 7,
         "away_errors": 2,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "San Francisco Giants",
         "home_team_name": "Arizona Diamondbacks",
         "bases": {
@@ -19921,9 +19921,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "6",
         "opp_score": "4",
         "score_fav": "6",
@@ -20089,7 +20089,7 @@
       }
     }
   },
-  "updated_at": "01/07/2026 22:21",
+  "updated_at": "01/07/2026 22:37",
   "stats": {
     "total": 134,
     "acertados": 79,
