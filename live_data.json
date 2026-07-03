@@ -1,5 +1,5 @@
 {
-  "fecha": "02/07/2026 23:21",
+  "fecha": "02/07/2026 23:36",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783087200,
@@ -13258,9 +13258,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "7",
         "opp_score": "12",
         "score_fav": "7",
@@ -17990,9 +17990,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "7",
         "opp_score": "12",
         "score_fav": "7",
@@ -18510,13 +18510,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-02",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "Olmecas de Tabasco",
       "opp_team": "Bravos de Leon",
       "score_fav": "2",
       "score_opp": "6",
-      "state": "In Progress",
-      "result": "live",
+      "state": "Final",
+      "result": "loss",
       "home_team": "Bravos de Leon",
       "away_team": "Olmecas de Tabasco",
       "label": "📋",
@@ -18554,17 +18554,25 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 9,
         "is_top": true,
-        "inning_ordinal": "7th",
+        "inning_ordinal": "9th",
         "outs": 3,
-        "balls": 2,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 2,
         "home_runs": 6,
-        "away_hits": 6,
+        "away_hits": 8,
         "home_hits": 10,
         "away_errors": 0,
         "home_errors": 1,
@@ -18575,9 +18583,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "2",
         "opp_score": "6",
         "score_fav": "2",
@@ -20694,9 +20702,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "7",
         "opp_score": "12",
         "score_fav": "7",
@@ -21128,9 +21136,9 @@
       }
     },
     "846807": {
-      "is_live": true,
-      "is_final": false,
-      "status": "In Progress",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 2,
       "home_runs": 6,
       "away_team_name": "Bravos de Leon",
@@ -21164,17 +21172,25 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 9,
         "is_top": true,
-        "inning_ordinal": "7th",
+        "inning_ordinal": "9th",
         "outs": 3,
-        "balls": 2,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 2,
         "home_runs": 6,
-        "away_hits": 6,
+        "away_hits": 8,
         "home_hits": 10,
         "away_errors": 0,
         "home_errors": 1,
@@ -21185,9 +21201,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "2",
         "opp_score": "6",
         "score_fav": "2",
@@ -21420,7 +21436,7 @@
       }
     }
   },
-  "updated_at": "02/07/2026 23:21",
+  "updated_at": "02/07/2026 23:36",
   "stats": {
     "total": 141,
     "acertados": 80,
