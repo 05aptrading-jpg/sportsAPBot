@@ -1,5 +1,5 @@
 {
-  "fecha": "03/07/2026 14:21",
+  "fecha": "03/07/2026 14:37",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783173600,
@@ -18491,10 +18491,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -18852,7 +18857,7 @@
       "opp_team": "Chicago Cubs",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Top 1st",
+      "state": "Top 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 824659,
@@ -18869,18 +18874,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 2,
+        "inning_ordinal": "2nd",
+        "outs": 1,
         "balls": 0,
         "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 1,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "St. Louis Cardinals",
@@ -20449,10 +20458,15 @@
       "away_team_name": "San Francisco Giants",
       "home_team_name": "Colorado Rockies",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -20719,7 +20733,7 @@
     "824659": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 1st",
+      "status": "Top 2nd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Chicago Cubs",
@@ -20729,18 +20743,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 2,
+        "inning_ordinal": "2nd",
+        "outs": 1,
         "balls": 0,
         "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 1,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "St. Louis Cardinals",
@@ -20927,7 +20945,7 @@
       }
     }
   },
-  "updated_at": "03/07/2026 14:21",
+  "updated_at": "03/07/2026 14:37",
   "stats": {
     "total": 145,
     "acertados": 83,
