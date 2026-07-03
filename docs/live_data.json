@@ -1,5 +1,5 @@
 {
-  "fecha": "03/07/2026 12:06",
+  "fecha": "03/07/2026 12:21",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783173600,
@@ -18855,10 +18855,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -20685,10 +20690,15 @@
       "away_team_name": "Chicago Cubs",
       "home_team_name": "St. Louis Cardinals",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -20867,7 +20877,7 @@
       }
     }
   },
-  "updated_at": "03/07/2026 12:06",
+  "updated_at": "03/07/2026 12:21",
   "stats": {
     "total": 145,
     "acertados": 83,
