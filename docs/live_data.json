@@ -1,5 +1,5 @@
 {
-  "fecha": "02/07/2026 22:37",
+  "fecha": "02/07/2026 22:51",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783087200,
@@ -13229,13 +13229,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": true,
-        "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 1,
+        "inning_ordinal": "8th",
+        "outs": 0,
+        "balls": 2,
         "strikes": 2,
         "away_runs": 6,
         "home_runs": 11,
@@ -17377,13 +17381,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-02",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Diablos Rojos del Mexico",
       "opp_team": "Guerreros de Oaxaca",
       "score_fav": "9",
       "score_opp": "4",
-      "state": "In Progress",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "home_team": "Guerreros de Oaxaca",
       "away_team": "Diablos Rojos del Mexico",
       "label": "🎯",
@@ -17434,7 +17438,7 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
+        "outs": 3,
         "balls": 0,
         "strikes": 1,
         "away_runs": 9,
@@ -17450,9 +17454,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "9",
         "opp_score": "4",
         "score_fav": "9",
@@ -17912,7 +17916,7 @@
       "opp_team": "San Diego Padres",
       "score_fav": "11",
       "score_opp": "6",
-      "state": "Top 7th",
+      "state": "Top 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 823935,
@@ -17953,13 +17957,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": true,
-        "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 1,
+        "inning_ordinal": "8th",
+        "outs": 0,
+        "balls": 2,
         "strikes": 2,
         "away_runs": 6,
         "home_runs": 11,
@@ -18534,17 +18542,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
         "outs": 3,
-        "balls": 1,
-        "strikes": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 2,
         "home_runs": 6,
-        "away_hits": 5,
+        "away_hits": 6,
         "home_hits": 10,
         "away_errors": 0,
         "home_errors": 1,
@@ -18652,13 +18664,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-02",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "Saraperos de Saltillo",
       "opp_team": "Tecos de los Dos Laredos",
       "score_fav": "5",
-      "score_opp": "10",
-      "state": "In Progress",
-      "result": "live",
+      "score_opp": "12",
+      "state": "Final",
+      "result": "loss",
       "home_team": "Saraperos de Saltillo",
       "away_team": "Tecos de los Dos Laredos",
       "label": "📋",
@@ -18702,19 +18714,19 @@
             "home_runs": 0
           },
           {
-            "away_runs": 1,
+            "away_runs": 3,
             "home_runs": 0
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 3,
-        "strikes": 2,
-        "away_runs": 10,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 3,
+        "away_runs": 12,
         "home_runs": 5,
-        "away_hits": 13,
+        "away_hits": 15,
         "home_hits": 9,
         "away_errors": 0,
         "home_errors": 2,
@@ -18725,12 +18737,12 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
-        "fav_score": "10",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
+        "fav_score": "12",
         "opp_score": "5",
-        "score_fav": "10",
+        "score_fav": "12",
         "score_opp": "5"
       }
     },
@@ -20159,9 +20171,9 @@
       }
     },
     "846162": {
-      "is_live": true,
-      "is_final": false,
-      "status": "In Progress",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 9,
       "home_runs": 4,
       "away_team_name": "Guerreros de Oaxaca",
@@ -20208,7 +20220,7 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
+        "outs": 3,
         "balls": 0,
         "strikes": 1,
         "away_runs": 9,
@@ -20224,9 +20236,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "9",
         "opp_score": "4",
         "score_fav": "9",
@@ -20611,7 +20623,7 @@
     "823935": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 7th",
+      "status": "Top 8th",
       "away_runs": 11,
       "home_runs": 6,
       "away_team_name": "San Diego Padres",
@@ -20645,13 +20657,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": true,
-        "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 1,
+        "inning_ordinal": "8th",
+        "outs": 0,
+        "balls": 2,
         "strikes": 2,
         "away_runs": 6,
         "home_runs": 11,
@@ -21132,17 +21148,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
         "outs": 3,
-        "balls": 1,
-        "strikes": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 2,
         "home_runs": 6,
-        "away_hits": 5,
+        "away_hits": 6,
         "home_hits": 10,
         "away_errors": 0,
         "home_errors": 1,
@@ -21238,11 +21258,11 @@
       }
     },
     "846621": {
-      "is_live": true,
-      "is_final": false,
-      "status": "In Progress",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 5,
-      "home_runs": 10,
+      "home_runs": 12,
       "away_team_name": "Tecos de los Dos Laredos",
       "home_team_name": "Saraperos de Saltillo",
       "linescore": {
@@ -21280,19 +21300,19 @@
             "home_runs": 0
           },
           {
-            "away_runs": 1,
+            "away_runs": 3,
             "home_runs": 0
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 3,
-        "strikes": 2,
-        "away_runs": 10,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 3,
+        "away_runs": 12,
         "home_runs": 5,
-        "away_hits": 13,
+        "away_hits": 15,
         "home_hits": 9,
         "away_errors": 0,
         "home_errors": 2,
@@ -21303,12 +21323,12 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
-        "fav_score": "10",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
+        "fav_score": "12",
         "opp_score": "5",
-        "score_fav": "10",
+        "score_fav": "12",
         "score_opp": "5"
       }
     },
@@ -21388,7 +21408,7 @@
       }
     }
   },
-  "updated_at": "02/07/2026 22:37",
+  "updated_at": "02/07/2026 22:51",
   "stats": {
     "total": 141,
     "acertados": 80,
