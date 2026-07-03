@@ -1,5 +1,5 @@
 {
-  "fecha": "03/07/2026 14:06",
+  "fecha": "03/07/2026 14:21",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783173600,
@@ -18652,10 +18652,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -18847,7 +18852,7 @@
       "opp_team": "Chicago Cubs",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Rain Delay, Top 1st",
+      "state": "Top 1st",
       "result": "live",
       "label": "📋",
       "game_pk": 824659,
@@ -18869,15 +18874,15 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 2,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 0,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "St. Louis Cardinals",
         "home_team_name": "Chicago Cubs",
         "bases": {
@@ -18885,9 +18890,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -19026,10 +19031,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -20558,10 +20568,15 @@
       "away_team_name": "Pittsburgh Pirates",
       "home_team_name": "Washington Nationals",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -20704,7 +20719,7 @@
     "824659": {
       "is_live": true,
       "is_final": false,
-      "status": "Rain Delay, Top 1st",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Chicago Cubs",
@@ -20719,15 +20734,15 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 2,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 0,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "St. Louis Cardinals",
         "home_team_name": "Chicago Cubs",
         "bases": {
@@ -20735,9 +20750,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -20834,10 +20849,15 @@
       "away_team_name": "Chicago White Sox",
       "home_team_name": "Cleveland Guardians",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -20907,7 +20927,7 @@
       }
     }
   },
-  "updated_at": "03/07/2026 14:06",
+  "updated_at": "03/07/2026 14:21",
   "stats": {
     "total": 145,
     "acertados": 83,
