@@ -1,5 +1,5 @@
 {
-  "fecha": "04/07/2026 08:51",
+  "fecha": "04/07/2026 09:07",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783260000,
@@ -19662,13 +19662,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-04",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Pittsburgh Pirates",
       "opp_team": "Washington Nationals",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 822716,
       "fav_abbr": "PIT",
@@ -19705,9 +19705,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -21452,9 +21452,9 @@
       }
     },
     "822716": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Washington Nationals",
@@ -21485,9 +21485,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -21647,7 +21647,7 @@
       }
     }
   },
-  "updated_at": "04/07/2026 08:51",
+  "updated_at": "04/07/2026 09:07",
   "stats": {
     "total": 150,
     "acertados": 88,
