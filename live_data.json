@@ -1,5 +1,5 @@
 {
-  "fecha": "04/07/2026 13:22",
+  "fecha": "04/07/2026 13:37",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783260000,
@@ -19506,8 +19506,8 @@
       "fav_team": "Minnesota Twins",
       "opp_team": "New York Yankees",
       "score_fav": "6",
-      "score_opp": "3",
-      "state": "Bottom 5th",
+      "score_opp": "4",
+      "state": "Top 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 823526,
@@ -19539,19 +19539,23 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 2
+            "home_runs": 3
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 2,
-        "balls": 3,
-        "strikes": 0,
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 6,
-        "home_runs": 3,
+        "home_runs": 4,
         "away_hits": 7,
-        "home_hits": 3,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Minnesota Twins",
@@ -19565,9 +19569,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "6",
-        "opp_score": "3",
+        "opp_score": "4",
         "score_fav": "6",
-        "score_opp": "3"
+        "score_opp": "4"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYY.png&h=40&w=40"
@@ -19929,7 +19933,7 @@
       "opp_team": "Houston Astros",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 824171,
@@ -19964,7 +19968,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -19981,7 +19985,7 @@
       "opp_team": "Texas Rangers",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "📋",
       "game_pk": 822882,
@@ -20021,7 +20025,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -21878,9 +21882,9 @@
     "823526": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 5th",
+      "status": "Top 6th",
       "away_runs": 6,
-      "home_runs": 3,
+      "home_runs": 4,
       "away_team_name": "New York Yankees",
       "home_team_name": "Minnesota Twins",
       "linescore": {
@@ -21903,19 +21907,23 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 2
+            "home_runs": 3
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 2,
-        "balls": 3,
-        "strikes": 0,
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 6,
-        "home_runs": 3,
+        "home_runs": 4,
         "away_hits": 7,
-        "home_hits": 3,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Minnesota Twins",
@@ -21929,9 +21937,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "6",
-        "opp_score": "3",
+        "opp_score": "4",
         "score_fav": "6",
-        "score_opp": "3"
+        "score_opp": "4"
       }
     },
     "824334": {
@@ -22202,7 +22210,7 @@
     "824171": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Houston Astros",
@@ -22230,7 +22238,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -22240,7 +22248,7 @@
     "822882": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Texas Rangers",
@@ -22273,7 +22281,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -22623,7 +22631,7 @@
       }
     }
   },
-  "updated_at": "04/07/2026 13:22",
+  "updated_at": "04/07/2026 13:37",
   "stats": {
     "total": 150,
     "acertados": 88,
@@ -27336,13 +27344,13 @@
     {
       "game_date": "2026-07-04",
       "game_id": "401857039",
-      "status_emoji": "🔴",
+      "status_emoji": "🏁",
       "home": "Atlanta Dream",
       "away": "Golden State Valkyries",
       "home_abbr": "ATL",
       "away_abbr": "GS",
-      "home_score": 80,
-      "away_score": 84,
+      "home_score": 83,
+      "away_score": 88,
       "home_linescores": [
         {
           "period": 1,
@@ -27361,8 +27369,8 @@
         },
         {
           "period": 4,
-          "value": 21,
-          "display": "21"
+          "value": 24,
+          "display": "24"
         }
       ],
       "away_linescores": [
@@ -27383,14 +27391,14 @@
         },
         {
           "period": 4,
-          "value": 27,
-          "display": "27"
+          "value": 31,
+          "display": "31"
         }
       ],
-      "clock": "37.3",
+      "clock": "10:00",
       "period": 4,
-      "state": "Q4 37.3",
-      "result": "live",
+      "state": "Final",
+      "result": "completed",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/ATL.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/GS.png&h=40&w=40"
