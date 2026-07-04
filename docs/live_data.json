@@ -1,5 +1,5 @@
 {
-  "fecha": "04/07/2026 12:36",
+  "fecha": "04/07/2026 12:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783260000,
@@ -19505,9 +19505,9 @@
       "status_emoji": "🔴",
       "fav_team": "Minnesota Twins",
       "opp_team": "New York Yankees",
-      "score_fav": "5",
-      "score_opp": "0",
-      "state": "Top 4th",
+      "score_fav": "6",
+      "score_opp": "1",
+      "state": "End 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 823526,
@@ -19534,20 +19534,24 @@
             "home_runs": 0
           },
           {
+            "away_runs": 1,
+            "home_runs": 1
+          },
+          {
             "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": true,
-        "inning_ordinal": "4th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 2,
-        "away_runs": 5,
-        "home_runs": 0,
-        "away_hits": 5,
-        "home_hits": 1,
+        "inning_ordinal": "5th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 6,
+        "home_runs": 1,
+        "away_hits": 6,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Minnesota Twins",
@@ -19560,10 +19564,10 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "5",
-        "opp_score": "0",
-        "score_fav": "5",
-        "score_opp": "0"
+        "fav_score": "6",
+        "opp_score": "1",
+        "score_fav": "6",
+        "score_opp": "1"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYY.png&h=40&w=40"
@@ -21874,9 +21878,9 @@
     "823526": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 4th",
-      "away_runs": 5,
-      "home_runs": 0,
+      "status": "End 4th",
+      "away_runs": 6,
+      "home_runs": 1,
       "away_team_name": "New York Yankees",
       "home_team_name": "Minnesota Twins",
       "linescore": {
@@ -21894,20 +21898,24 @@
             "home_runs": 0
           },
           {
+            "away_runs": 1,
+            "home_runs": 1
+          },
+          {
             "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": true,
-        "inning_ordinal": "4th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 2,
-        "away_runs": 5,
-        "home_runs": 0,
-        "away_hits": 5,
-        "home_hits": 1,
+        "inning_ordinal": "5th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 6,
+        "home_runs": 1,
+        "away_hits": 6,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Minnesota Twins",
@@ -21920,10 +21928,10 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "5",
-        "opp_score": "0",
-        "score_fav": "5",
-        "score_opp": "0"
+        "fav_score": "6",
+        "opp_score": "1",
+        "score_fav": "6",
+        "score_opp": "1"
       }
     },
     "824334": {
@@ -22615,7 +22623,7 @@
       }
     }
   },
-  "updated_at": "04/07/2026 12:36",
+  "updated_at": "04/07/2026 12:52",
   "stats": {
     "total": 150,
     "acertados": 88,
@@ -27333,8 +27341,8 @@
       "away": "Golden State Valkyries",
       "home_abbr": "ATL",
       "away_abbr": "GS",
-      "home_score": 52,
-      "away_score": 55,
+      "home_score": 62,
+      "away_score": 59,
       "home_linescores": [
         {
           "period": 1,
@@ -27348,8 +27356,13 @@
         },
         {
           "period": 3,
-          "value": 17,
-          "display": "17"
+          "value": 24,
+          "display": "24"
+        },
+        {
+          "period": 4,
+          "value": 3,
+          "display": "3"
         }
       ],
       "away_linescores": [
@@ -27365,13 +27378,18 @@
         },
         {
           "period": 3,
-          "value": 13,
-          "display": "13"
+          "value": 15,
+          "display": "15"
+        },
+        {
+          "period": 4,
+          "value": 2,
+          "display": "2"
         }
       ],
-      "clock": "2:44",
-      "period": 3,
-      "state": "Q3 2:44",
+      "clock": "9:20",
+      "period": 4,
+      "state": "Q4 9:20",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/ATL.png&h=40&w=40",
