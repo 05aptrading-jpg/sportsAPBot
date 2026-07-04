@@ -1,5 +1,5 @@
 {
-  "fecha": "04/07/2026 15:07",
+  "fecha": "04/07/2026 15:22",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783260000,
@@ -19246,7 +19246,7 @@
       "opp_team": "Arizona Diamondbacks",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "🎯",
       "game_pk": 825063,
@@ -19281,7 +19281,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -19398,7 +19398,7 @@
       "opp_team": "Toronto Blue Jays",
       "score_fav": "5",
       "score_opp": "0",
-      "state": "Top 4th",
+      "state": "Top 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 823118,
@@ -19427,14 +19427,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": true,
-        "inning_ordinal": "4th",
+        "inning_ordinal": "5th",
         "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 5,
         "away_hits": 0,
@@ -19722,7 +19726,7 @@
       "opp_team": "Athletics",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 824983,
@@ -19757,7 +19761,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -20029,7 +20033,7 @@
       "opp_team": "Texas Rangers",
       "score_fav": "3",
       "score_opp": "0",
-      "state": "Bottom 4th",
+      "state": "Bottom 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 822882,
@@ -20058,18 +20062,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": false,
-        "inning_ordinal": "4th",
+        "inning_ordinal": "5th",
         "outs": 1,
-        "balls": 0,
-        "strikes": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 3,
         "home_runs": 0,
         "away_hits": 3,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Detroit Tigers",
@@ -21743,7 +21751,7 @@
     "825063": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Arizona Diamondbacks",
@@ -21771,7 +21779,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -21857,7 +21865,7 @@
     "823118": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 4th",
+      "status": "Top 5th",
       "away_runs": 5,
       "home_runs": 0,
       "away_team_name": "Toronto Blue Jays",
@@ -21879,14 +21887,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": true,
-        "inning_ordinal": "4th",
+        "inning_ordinal": "5th",
         "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 5,
         "away_hits": 0,
@@ -22111,7 +22123,7 @@
     "824983": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Athletics",
@@ -22139,7 +22151,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -22348,7 +22360,7 @@
     "822882": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 4th",
+      "status": "Bottom 5th",
       "away_runs": 3,
       "home_runs": 0,
       "away_team_name": "Texas Rangers",
@@ -22370,18 +22382,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": false,
-        "inning_ordinal": "4th",
+        "inning_ordinal": "5th",
         "outs": 1,
-        "balls": 0,
-        "strikes": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 3,
         "home_runs": 0,
         "away_hits": 3,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Detroit Tigers",
@@ -22743,7 +22759,7 @@
       }
     }
   },
-  "updated_at": "04/07/2026 15:07",
+  "updated_at": "04/07/2026 15:22",
   "stats": {
     "total": 150,
     "acertados": 88,
