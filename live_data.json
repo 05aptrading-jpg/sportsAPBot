@@ -1,5 +1,5 @@
 {
-  "fecha": "03/07/2026 22:51",
+  "fecha": "03/07/2026 23:06",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783173600,
@@ -18869,9 +18869,9 @@
       "status_emoji": "🔴",
       "fav_team": "Milwaukee Brewers",
       "opp_team": "Arizona Diamondbacks",
-      "score_fav": "3",
+      "score_fav": "7",
       "score_opp": "3",
-      "state": "Middle 10th",
+      "state": "Top 11th",
       "result": "live",
       "label": "📋",
       "game_pk": 825062,
@@ -18924,20 +18924,24 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 4,
+            "home_runs": 0
           }
         ],
-        "current_inning": 10,
-        "is_top": false,
-        "inning_ordinal": "10th",
-        "outs": 0,
+        "current_inning": 11,
+        "is_top": true,
+        "inning_ordinal": "11th",
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
-        "away_runs": 3,
+        "away_runs": 7,
         "home_runs": 3,
-        "away_hits": 10,
+        "away_hits": 12,
         "home_hits": 8,
         "away_errors": 1,
-        "home_errors": 2,
+        "home_errors": 3,
         "away_team_name": "Milwaukee Brewers",
         "home_team_name": "Arizona Diamondbacks",
         "bases": {
@@ -18948,9 +18952,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "3",
+        "fav_score": "7",
         "opp_score": "3",
-        "score_fav": "3",
+        "score_fav": "7",
         "score_opp": "3"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
@@ -21239,8 +21243,8 @@
     "825062": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 10th",
-      "away_runs": 3,
+      "status": "Top 11th",
+      "away_runs": 7,
       "home_runs": 3,
       "away_team_name": "Arizona Diamondbacks",
       "home_team_name": "Milwaukee Brewers",
@@ -21285,20 +21289,24 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 4,
+            "home_runs": 0
           }
         ],
-        "current_inning": 10,
-        "is_top": false,
-        "inning_ordinal": "10th",
-        "outs": 0,
+        "current_inning": 11,
+        "is_top": true,
+        "inning_ordinal": "11th",
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
-        "away_runs": 3,
+        "away_runs": 7,
         "home_runs": 3,
-        "away_hits": 10,
+        "away_hits": 12,
         "home_hits": 8,
         "away_errors": 1,
-        "home_errors": 2,
+        "home_errors": 3,
         "away_team_name": "Milwaukee Brewers",
         "home_team_name": "Arizona Diamondbacks",
         "bases": {
@@ -21309,9 +21317,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "3",
+        "fav_score": "7",
         "opp_score": "3",
-        "score_fav": "3",
+        "score_fav": "7",
         "score_opp": "3"
       }
     },
@@ -21845,7 +21853,7 @@
       }
     }
   },
-  "updated_at": "03/07/2026 22:51",
+  "updated_at": "03/07/2026 23:06",
   "stats": {
     "total": 147,
     "acertados": 85,
