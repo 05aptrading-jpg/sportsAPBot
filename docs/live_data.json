@@ -1,5 +1,5 @@
 {
-  "fecha": "04/07/2026 12:06",
+  "fecha": "04/07/2026 12:21",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783260000,
@@ -19459,7 +19459,7 @@
       "opp_team": "New York Yankees",
       "score_fav": "5",
       "score_opp": "0",
-      "state": "Top 2nd",
+      "state": "Top 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 823526,
@@ -19480,18 +19480,22 @@
           {
             "away_runs": 2,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 1,
+        "inning_ordinal": "3rd",
+        "outs": 0,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 5,
         "home_runs": 0,
-        "away_hits": 4,
-        "home_hits": 0,
+        "away_hits": 5,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Minnesota Twins",
@@ -19746,9 +19750,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "7",
         "opp_score": "1",
         "score_fav": "7",
@@ -21348,7 +21352,7 @@
     "823526": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 2nd",
+      "status": "Top 3rd",
       "away_runs": 5,
       "home_runs": 0,
       "away_team_name": "New York Yankees",
@@ -21362,18 +21366,22 @@
           {
             "away_runs": 2,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 1,
+        "inning_ordinal": "3rd",
+        "outs": 0,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 5,
         "home_runs": 0,
-        "away_hits": 4,
-        "home_hits": 0,
+        "away_hits": 5,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Minnesota Twins",
@@ -21572,9 +21580,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "7",
         "opp_score": "1",
         "score_fav": "7",
@@ -21739,7 +21747,7 @@
       }
     }
   },
-  "updated_at": "04/07/2026 12:06",
+  "updated_at": "04/07/2026 12:21",
   "stats": {
     "total": 150,
     "acertados": 88,
@@ -26457,7 +26465,7 @@
       "away": "Golden State Valkyries",
       "home_abbr": "ATL",
       "away_abbr": "GS",
-      "home_score": 35,
+      "home_score": 40,
       "away_score": 42,
       "home_linescores": [
         {
@@ -26469,6 +26477,11 @@
           "period": 2,
           "value": 13,
           "display": "13"
+        },
+        {
+          "period": 3,
+          "value": 5,
+          "display": "5"
         }
       ],
       "away_linescores": [
@@ -26481,11 +26494,16 @@
           "period": 2,
           "value": 23,
           "display": "23"
+        },
+        {
+          "period": 3,
+          "value": 0,
+          "display": "0"
         }
       ],
-      "clock": "0.0",
-      "period": 2,
-      "state": "Q2 0.0",
+      "clock": "7:53",
+      "period": 3,
+      "state": "Q3 7:53",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/ATL.png&h=40&w=40",
