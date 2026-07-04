@@ -1,5 +1,5 @@
 {
-  "fecha": "04/07/2026 14:36",
+  "fecha": "04/07/2026 14:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783260000,
@@ -19396,9 +19396,9 @@
       "status_emoji": "🔴",
       "fav_team": "Seattle Mariners",
       "opp_team": "Toronto Blue Jays",
-      "score_fav": "0",
+      "score_fav": "5",
       "score_opp": "0",
-      "state": "Bottom 2nd",
+      "state": "End 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 823118,
@@ -19418,19 +19418,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 5
           }
         ],
         "current_inning": 2,
         "is_top": false,
         "inning_ordinal": "2nd",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 3,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 5,
         "away_hits": 0,
-        "home_hits": 1,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Toronto Blue Jays",
@@ -19444,9 +19444,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "5",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "5"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SEA.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TOR.png&h=40&w=40"
@@ -19472,10 +19472,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -19511,7 +19516,7 @@
       "opp_team": "New York Yankees",
       "score_fav": "11",
       "score_opp": "4",
-      "state": "Middle 8th",
+      "state": "Top 9th",
       "result": "live",
       "label": "📋",
       "game_pk": 823526,
@@ -19556,18 +19561,22 @@
           {
             "away_runs": 4,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": true,
-        "inning_ordinal": "8th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 3,
+        "inning_ordinal": "9th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 11,
         "home_runs": 4,
         "away_hits": 11,
-        "home_hits": 6,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Minnesota Twins",
@@ -19846,7 +19855,7 @@
       "opp_team": "St. Louis Cardinals",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 824658,
@@ -19881,7 +19890,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -20012,7 +20021,7 @@
       "opp_team": "Texas Rangers",
       "score_fav": "3",
       "score_opp": "0",
-      "state": "Middle 2nd",
+      "state": "Middle 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 822882,
@@ -20033,14 +20042,18 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
+        "inning_ordinal": "3rd",
         "outs": 3,
-        "balls": 1,
-        "strikes": 2,
+        "balls": 3,
+        "strikes": 3,
         "away_runs": 3,
         "home_runs": 0,
         "away_hits": 3,
@@ -21832,8 +21845,8 @@
     "823118": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 2nd",
-      "away_runs": 0,
+      "status": "End 2nd",
+      "away_runs": 5,
       "home_runs": 0,
       "away_team_name": "Toronto Blue Jays",
       "home_team_name": "Seattle Mariners",
@@ -21845,19 +21858,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 5
           }
         ],
         "current_inning": 2,
         "is_top": false,
         "inning_ordinal": "2nd",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 3,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 5,
         "away_hits": 0,
-        "home_hits": 1,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Toronto Blue Jays",
@@ -21871,9 +21884,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "5",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "5"
       }
     },
     "824092": {
@@ -21885,10 +21898,15 @@
       "away_team_name": "Kansas City Royals",
       "home_team_name": "Philadelphia Phillies",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -21917,7 +21935,7 @@
     "823526": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 8th",
+      "status": "Top 9th",
       "away_runs": 11,
       "home_runs": 4,
       "away_team_name": "New York Yankees",
@@ -21955,18 +21973,22 @@
           {
             "away_runs": 4,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": true,
-        "inning_ordinal": "8th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 3,
+        "inning_ordinal": "9th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 11,
         "home_runs": 4,
         "away_hits": 11,
-        "home_hits": 6,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Minnesota Twins",
@@ -22182,7 +22204,7 @@
     "824658": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "St. Louis Cardinals",
@@ -22210,7 +22232,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -22306,7 +22328,7 @@
     "822882": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 2nd",
+      "status": "Middle 3rd",
       "away_runs": 3,
       "home_runs": 0,
       "away_team_name": "Texas Rangers",
@@ -22320,14 +22342,18 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
+        "inning_ordinal": "3rd",
         "outs": 3,
-        "balls": 1,
-        "strikes": 2,
+        "balls": 3,
+        "strikes": 3,
         "away_runs": 3,
         "home_runs": 0,
         "away_hits": 3,
@@ -22693,7 +22719,7 @@
       }
     }
   },
-  "updated_at": "04/07/2026 14:36",
+  "updated_at": "04/07/2026 14:52",
   "stats": {
     "total": 150,
     "acertados": 88,
