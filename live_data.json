@@ -1,5 +1,5 @@
 {
-  "fecha": "04/07/2026 14:52",
+  "fecha": "04/07/2026 15:07",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783260000,
@@ -19346,7 +19346,7 @@
       "opp_team": "Los Angeles Angels",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 824012,
@@ -19381,7 +19381,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -19398,7 +19398,7 @@
       "opp_team": "Toronto Blue Jays",
       "score_fav": "5",
       "score_opp": "0",
-      "state": "End 2nd",
+      "state": "Top 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 823118,
@@ -19419,14 +19419,22 @@
           {
             "away_runs": 0,
             "home_runs": 5
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 2,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 5,
         "away_hits": 0,
@@ -19511,13 +19519,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-04",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Minnesota Twins",
       "opp_team": "New York Yankees",
       "score_fav": "11",
       "score_opp": "4",
-      "state": "Top 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 823526,
       "fav_abbr": "MIN",
@@ -19568,17 +19576,17 @@
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 11,
         "home_runs": 4,
         "away_hits": 11,
         "home_hits": 7,
         "away_errors": 0,
-        "home_errors": 1,
+        "home_errors": 2,
         "away_team_name": "Minnesota Twins",
         "home_team_name": "New York Yankees",
         "bases": {
@@ -19586,9 +19594,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "11",
         "opp_score": "4",
         "score_fav": "11",
@@ -20021,7 +20029,7 @@
       "opp_team": "Texas Rangers",
       "score_fav": "3",
       "score_opp": "0",
-      "state": "Middle 3rd",
+      "state": "Bottom 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 822882,
@@ -20046,14 +20054,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": true,
-        "inning_ordinal": "3rd",
-        "outs": 3,
-        "balls": 3,
-        "strikes": 3,
+        "current_inning": 4,
+        "is_top": false,
+        "inning_ordinal": "4th",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 3,
         "home_runs": 0,
         "away_hits": 3,
@@ -21807,7 +21819,7 @@
     "824012": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Los Angeles Angels",
@@ -21835,7 +21847,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -21845,7 +21857,7 @@
     "823118": {
       "is_live": true,
       "is_final": false,
-      "status": "End 2nd",
+      "status": "Top 4th",
       "away_runs": 5,
       "home_runs": 0,
       "away_team_name": "Toronto Blue Jays",
@@ -21859,14 +21871,22 @@
           {
             "away_runs": 0,
             "home_runs": 5
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 2,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 5,
         "away_hits": 0,
@@ -21933,9 +21953,9 @@
       }
     },
     "823526": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Top 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 11,
       "home_runs": 4,
       "away_team_name": "New York Yankees",
@@ -21980,17 +22000,17 @@
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 11,
         "home_runs": 4,
         "away_hits": 11,
         "home_hits": 7,
         "away_errors": 0,
-        "home_errors": 1,
+        "home_errors": 2,
         "away_team_name": "Minnesota Twins",
         "home_team_name": "New York Yankees",
         "bases": {
@@ -21998,9 +22018,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "11",
         "opp_score": "4",
         "score_fav": "11",
@@ -22328,7 +22348,7 @@
     "822882": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 3rd",
+      "status": "Bottom 4th",
       "away_runs": 3,
       "home_runs": 0,
       "away_team_name": "Texas Rangers",
@@ -22346,14 +22366,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": true,
-        "inning_ordinal": "3rd",
-        "outs": 3,
-        "balls": 3,
-        "strikes": 3,
+        "current_inning": 4,
+        "is_top": false,
+        "inning_ordinal": "4th",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 3,
         "home_runs": 0,
         "away_hits": 3,
@@ -22719,7 +22743,7 @@
       }
     }
   },
-  "updated_at": "04/07/2026 14:52",
+  "updated_at": "04/07/2026 15:07",
   "stats": {
     "total": 150,
     "acertados": 88,
@@ -25012,9 +25036,9 @@
           "status": "pendiente"
         },
         {
-          "nombre": "Carlos Cortes",
-          "prob": 62.6,
-          "player_id": 666126,
+          "nombre": "Zack Gelof",
+          "prob": 64.9,
+          "player_id": 680869,
           "game_pk": "824014",
           "equipo": "Athletics",
           "status": "pendiente"
