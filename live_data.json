@@ -1,5 +1,5 @@
 {
-  "fecha": "04/07/2026 12:31",
+  "fecha": "04/07/2026 12:36",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783260000,
@@ -19507,7 +19507,7 @@
       "opp_team": "New York Yankees",
       "score_fav": "5",
       "score_opp": "0",
-      "state": "Bottom 3rd",
+      "state": "Top 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 823526,
@@ -19532,12 +19532,16 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 2,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 1,
         "balls": 1,
         "strikes": 2,
         "away_runs": 5,
@@ -21870,7 +21874,7 @@
     "823526": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 3rd",
+      "status": "Top 4th",
       "away_runs": 5,
       "home_runs": 0,
       "away_team_name": "New York Yankees",
@@ -21888,12 +21892,16 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 2,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 1,
         "balls": 1,
         "strikes": 2,
         "away_runs": 5,
@@ -22607,7 +22615,7 @@
       }
     }
   },
-  "updated_at": "04/07/2026 12:31",
+  "updated_at": "04/07/2026 12:36",
   "stats": {
     "total": 150,
     "acertados": 88,
@@ -27325,8 +27333,8 @@
       "away": "Golden State Valkyries",
       "home_abbr": "ATL",
       "away_abbr": "GS",
-      "home_score": 47,
-      "away_score": 45,
+      "home_score": 52,
+      "away_score": 55,
       "home_linescores": [
         {
           "period": 1,
@@ -27340,8 +27348,8 @@
         },
         {
           "period": 3,
-          "value": 12,
-          "display": "12"
+          "value": 17,
+          "display": "17"
         }
       ],
       "away_linescores": [
@@ -27357,13 +27365,13 @@
         },
         {
           "period": 3,
-          "value": 3,
-          "display": "3"
+          "value": 13,
+          "display": "13"
         }
       ],
-      "clock": "5:18",
+      "clock": "2:44",
       "period": 3,
-      "state": "Q3 5:18",
+      "state": "Q3 2:44",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/ATL.png&h=40&w=40",
