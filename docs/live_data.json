@@ -1,5 +1,5 @@
 {
-  "fecha": "04/07/2026 09:22",
+  "fecha": "04/07/2026 09:36",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783260000,
@@ -19667,7 +19667,7 @@
       "opp_team": "Washington Nationals",
       "score_fav": "1",
       "score_opp": "1",
-      "state": "Bottom 1st",
+      "state": "Top 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 822716,
@@ -19684,17 +19684,21 @@
           {
             "away_runs": 1,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
         "outs": 0,
-        "balls": 2,
+        "balls": 0,
         "strikes": 1,
         "away_runs": 1,
         "home_runs": 1,
-        "away_hits": 2,
+        "away_hits": 4,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -21454,7 +21458,7 @@
     "822716": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Top 2nd",
       "away_runs": 1,
       "home_runs": 1,
       "away_team_name": "Washington Nationals",
@@ -21464,17 +21468,21 @@
           {
             "away_runs": 1,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
         "outs": 0,
-        "balls": 2,
+        "balls": 0,
         "strikes": 1,
         "away_runs": 1,
         "home_runs": 1,
-        "away_hits": 2,
+        "away_hits": 4,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -21647,7 +21655,7 @@
       }
     }
   },
-  "updated_at": "04/07/2026 09:22",
+  "updated_at": "04/07/2026 09:36",
   "stats": {
     "total": 150,
     "acertados": 88,
