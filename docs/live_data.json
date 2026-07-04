@@ -1,5 +1,5 @@
 {
-  "fecha": "04/07/2026 13:52",
+  "fecha": "04/07/2026 14:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783260000,
@@ -19507,7 +19507,7 @@
       "opp_team": "New York Yankees",
       "score_fav": "6",
       "score_opp": "4",
-      "state": "Bottom 6th",
+      "state": "Top 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 823526,
@@ -19544,14 +19544,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
-        "outs": 1,
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
+        "outs": 0,
         "balls": 2,
-        "strikes": 2,
+        "strikes": 1,
         "away_runs": 6,
         "home_runs": 4,
         "away_hits": 7,
@@ -19951,10 +19955,15 @@
       "llm_factores": "",
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -21887,7 +21896,7 @@
     "823526": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 6th",
+      "status": "Top 7th",
       "away_runs": 6,
       "home_runs": 4,
       "away_team_name": "New York Yankees",
@@ -21917,14 +21926,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
-        "outs": 1,
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
+        "outs": 0,
         "balls": 2,
-        "strikes": 2,
+        "strikes": 1,
         "away_runs": 6,
         "home_runs": 4,
         "away_hits": 7,
@@ -22226,10 +22239,15 @@
       "away_team_name": "Houston Astros",
       "home_team_name": "Tampa Bay Rays",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -22641,7 +22659,7 @@
       }
     }
   },
-  "updated_at": "04/07/2026 13:52",
+  "updated_at": "04/07/2026 14:00",
   "stats": {
     "total": 150,
     "acertados": 88,
