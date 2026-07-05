@@ -1,5 +1,5 @@
 {
-  "fecha": "04/07/2026 22:37",
+  "fecha": "04/07/2026 22:52",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783260000,
@@ -19137,13 +19137,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-04",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Los Angeles Dodgers",
       "opp_team": "San Diego Padres",
       "score_fav": "3",
       "score_opp": "0",
-      "state": "Top 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "🎯",
       "game_pk": 823932,
       "fav_abbr": "LAD",
@@ -19196,9 +19196,9 @@
         "current_inning": 9,
         "is_top": true,
         "inning_ordinal": "9th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 1,
+        "outs": 3,
+        "balls": 0,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 3,
         "away_hits": 4,
@@ -19212,9 +19212,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "0",
         "opp_score": "3",
         "score_fav": "0",
@@ -20090,9 +20090,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "7",
         "opp_score": "2",
         "score_fav": "7",
@@ -20811,19 +20811,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 3
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
+        "current_inning": 3,
+        "is_top": true,
+        "inning_ordinal": "3rd",
         "outs": 1,
         "balls": 1,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 1,
-        "home_runs": 1,
-        "away_hits": 1,
-        "home_hits": 3,
+        "home_runs": 4,
+        "away_hits": 2,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Bravos de Leon",
@@ -20837,9 +20841,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "1",
-        "opp_score": "1",
+        "opp_score": "4",
         "score_fav": "1",
-        "score_opp": "1"
+        "score_opp": "4"
       }
     },
     {
@@ -20965,19 +20969,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": false,
-        "inning_ordinal": "5th",
+        "inning_ordinal": "6th",
         "outs": 2,
-        "balls": 3,
+        "balls": 0,
         "strikes": 0,
         "away_runs": 3,
-        "home_runs": 0,
+        "home_runs": 1,
         "away_hits": 6,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Rieleros de Aguascalientes",
@@ -20991,9 +20999,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "0",
+        "opp_score": "1",
         "score_fav": "3",
-        "score_opp": "0"
+        "score_opp": "1"
       }
     },
     {
@@ -21035,18 +21043,22 @@
           {
             "away_runs": 3,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 1,
+        "inning_ordinal": "6th",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 8,
-        "home_runs": 5,
+        "home_runs": 6,
         "away_hits": 7,
-        "home_hits": 5,
+        "home_hits": 6,
         "away_errors": 1,
         "home_errors": 3,
         "away_team_name": "Caliente de Durango",
@@ -21060,21 +21072,21 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "8",
-        "opp_score": "5",
+        "opp_score": "6",
         "score_fav": "8",
-        "score_opp": "5"
+        "score_opp": "6"
       }
     },
     {
       "liga": "LMB",
       "game_date": "2026-07-04",
-      "status_emoji": "⏳",
+      "status_emoji": "❌",
       "fav_team": "Tecos de los Dos Laredos",
       "opp_team": "Sultanes de Monterrey",
       "score_fav": "4",
       "score_opp": "7",
-      "state": "Game Over",
-      "result": "pending",
+      "state": "Final",
+      "result": "loss",
       "home_team": "Tecos de los Dos Laredos",
       "away_team": "Sultanes de Monterrey",
       "label": "📋",
@@ -21149,9 +21161,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "7",
         "opp_score": "4",
         "score_fav": "7",
@@ -21249,7 +21261,7 @@
     6099564810
   ],
   "has_live": true,
-  "has_scheduled": true,
+  "has_scheduled": false,
   "live_data": {
     "401815994": {
       "is_live": false,
@@ -22386,9 +22398,9 @@
       }
     },
     "823932": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Top 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 3,
       "home_runs": 0,
       "away_team_name": "San Diego Padres",
@@ -22435,9 +22447,9 @@
         "current_inning": 9,
         "is_top": true,
         "inning_ordinal": "9th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 1,
+        "outs": 3,
+        "balls": 0,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 3,
         "away_hits": 4,
@@ -22451,9 +22463,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "0",
         "opp_score": "3",
         "score_fav": "0",
@@ -23193,9 +23205,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "7",
         "opp_score": "2",
         "score_fav": "7",
@@ -23802,19 +23814,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 3
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
+        "current_inning": 3,
+        "is_top": true,
+        "inning_ordinal": "3rd",
         "outs": 1,
         "balls": 1,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 1,
-        "home_runs": 1,
-        "away_hits": 1,
-        "home_hits": 3,
+        "home_runs": 4,
+        "away_hits": 2,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Bravos de Leon",
@@ -23828,9 +23844,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "1",
-        "opp_score": "1",
+        "opp_score": "4",
         "score_fav": "1",
-        "score_opp": "1"
+        "score_opp": "4"
       }
     },
     "846625": {
@@ -23936,19 +23952,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": false,
-        "inning_ordinal": "5th",
+        "inning_ordinal": "6th",
         "outs": 2,
-        "balls": 3,
+        "balls": 0,
         "strikes": 0,
         "away_runs": 3,
-        "home_runs": 0,
+        "home_runs": 1,
         "away_hits": 6,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Rieleros de Aguascalientes",
@@ -23962,9 +23982,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "0",
+        "opp_score": "1",
         "score_fav": "3",
-        "score_opp": "0"
+        "score_opp": "1"
       }
     },
     "846064": {
@@ -23996,18 +24016,22 @@
           {
             "away_runs": 3,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 1,
+        "inning_ordinal": "6th",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 8,
-        "home_runs": 5,
+        "home_runs": 6,
         "away_hits": 7,
-        "home_hits": 5,
+        "home_hits": 6,
         "away_errors": 1,
         "home_errors": 3,
         "away_team_name": "Caliente de Durango",
@@ -24021,15 +24045,15 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "8",
-        "opp_score": "5",
+        "opp_score": "6",
         "score_fav": "8",
-        "score_opp": "5"
+        "score_opp": "6"
       }
     },
     "846383": {
       "is_live": false,
-      "is_final": false,
-      "status": "Game Over",
+      "is_final": true,
+      "status": "Final",
       "away_runs": 4,
       "home_runs": 7,
       "away_team_name": "Sultanes de Monterrey",
@@ -24100,9 +24124,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "7",
         "opp_score": "4",
         "score_fav": "7",
@@ -24185,7 +24209,7 @@
       }
     }
   },
-  "updated_at": "04/07/2026 22:37",
+  "updated_at": "04/07/2026 22:52",
   "stats": {
     "total": 157,
     "acertados": 90,
