@@ -1,5 +1,5 @@
 {
-  "fecha": "05/07/2026 11:21",
+  "fecha": "05/07/2026 11:36",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783346400,
@@ -27253,7 +27253,7 @@
       "opp_team": "Milwaukee Brewers",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 825061,
@@ -27292,7 +27292,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -27664,7 +27664,7 @@
       "opp_team": "Miami Marlins",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 824980,
@@ -27703,7 +27703,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -27762,8 +27762,8 @@
       "fav_team": "Washington Nationals",
       "opp_team": "Pittsburgh Pirates",
       "score_fav": "0",
-      "score_opp": "0",
-      "state": "Bottom 1st",
+      "score_opp": "3",
+      "state": "Top 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 822715,
@@ -27784,20 +27784,24 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 3,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
         "outs": 1,
-        "balls": 0,
-        "strikes": 1,
-        "away_runs": 0,
+        "balls": 2,
+        "strikes": 2,
+        "away_runs": 3,
         "home_runs": 0,
-        "away_hits": 1,
+        "away_hits": 4,
         "home_hits": 0,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "Pittsburgh Pirates",
         "home_team_name": "Washington Nationals",
         "bases": {
@@ -27808,9 +27812,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "3",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "3",
         "score_opp": "0"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/WSH.png&h=40&w=40",
@@ -28174,7 +28178,7 @@
       "opp_team": "Cincinnati Reds",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Top 2nd",
+      "state": "Top 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 824497,
@@ -28199,13 +28203,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
+        "inning_ordinal": "3rd",
         "outs": 0,
-        "balls": 2,
+        "balls": 1,
         "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
@@ -28277,13 +28285,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-05",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Cleveland Guardians",
       "opp_team": "Chicago White Sox",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Pre-Game",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Rain Delay, Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 824413,
       "fav_abbr": "CLE",
@@ -28326,7 +28334,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Delayed Start",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -29680,7 +29688,7 @@
     "825061": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Milwaukee Brewers",
@@ -29708,7 +29716,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -29847,7 +29855,7 @@
     "824980": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Miami Marlins",
@@ -29875,7 +29883,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -29885,9 +29893,9 @@
     "822715": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Top 2nd",
       "away_runs": 0,
-      "home_runs": 0,
+      "home_runs": 3,
       "away_team_name": "Pittsburgh Pirates",
       "home_team_name": "Washington Nationals",
       "linescore": {
@@ -29895,20 +29903,24 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 3,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
         "outs": 1,
-        "balls": 0,
-        "strikes": 1,
-        "away_runs": 0,
+        "balls": 2,
+        "strikes": 2,
+        "away_runs": 3,
         "home_runs": 0,
-        "away_hits": 1,
+        "away_hits": 4,
         "home_hits": 0,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "Pittsburgh Pirates",
         "home_team_name": "Washington Nationals",
         "bases": {
@@ -29919,9 +29931,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "3",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "3",
         "score_opp": "0"
       }
     },
@@ -30052,7 +30064,7 @@
     "824497": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 2nd",
+      "status": "Top 3rd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Cincinnati Reds",
@@ -30066,13 +30078,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
+        "inning_ordinal": "3rd",
         "outs": 0,
-        "balls": 2,
+        "balls": 1,
         "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
@@ -30097,9 +30113,9 @@
       }
     },
     "824413": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Rain Delay, Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Chicago White Sox",
@@ -30132,7 +30148,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Delayed Start",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -30140,7 +30156,7 @@
       }
     }
   },
-  "updated_at": "05/07/2026 11:21",
+  "updated_at": "05/07/2026 11:36",
   "stats": {
     "total": 161,
     "acertados": 92,
@@ -32442,11 +32458,11 @@
       "Pittsburgh Pirates": [
         {
           "nombre": "Nick Gonzales",
-          "prob": 71.2,
+          "prob": 100.0,
           "player_id": 693304,
           "game_pk": "822715",
           "equipo": "Pittsburgh Pirates",
-          "status": "pendiente"
+          "status": "cumplio"
         },
         {
           "nombre": "Esmerlyn Valdez",
@@ -32458,11 +32474,11 @@
         },
         {
           "nombre": "Jake Mangum",
-          "prob": 70.7,
+          "prob": 100.0,
           "player_id": 663968,
           "game_pk": "822715",
           "equipo": "Pittsburgh Pirates",
-          "status": "pendiente"
+          "status": "cumplio"
         }
       ],
       "Washington Nationals": [
