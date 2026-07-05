@@ -1,5 +1,5 @@
 {
-  "fecha": "05/07/2026 10:50",
+  "fecha": "05/07/2026 11:06",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783346400,
@@ -27062,10 +27062,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -27753,13 +27758,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-05",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Washington Nationals",
       "opp_team": "Pittsburgh Pirates",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 822715,
       "fav_abbr": "WSH",
@@ -27785,8 +27790,8 @@
         "is_top": true,
         "inning_ordinal": "1st",
         "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -27800,9 +27805,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -28164,13 +28169,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-05",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Baltimore Orioles",
       "opp_team": "Cincinnati Reds",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 824497,
       "fav_abbr": "BAL",
@@ -28211,9 +28216,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -29591,10 +29596,15 @@
       "away_team_name": "San Francisco Giants",
       "home_team_name": "Colorado Rockies",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -29869,9 +29879,9 @@
       }
     },
     "822715": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Pittsburgh Pirates",
@@ -29887,8 +29897,8 @@
         "is_top": true,
         "inning_ordinal": "1st",
         "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -29902,9 +29912,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -30036,9 +30046,9 @@
       }
     },
     "824497": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Cincinnati Reds",
@@ -30069,9 +30079,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -30122,7 +30132,7 @@
       }
     }
   },
-  "updated_at": "05/07/2026 10:50",
+  "updated_at": "05/07/2026 11:06",
   "stats": {
     "total": 161,
     "acertados": 92,
