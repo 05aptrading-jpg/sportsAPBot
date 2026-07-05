@@ -1,5 +1,5 @@
 {
-  "fecha": "05/07/2026 10:05",
+  "fecha": "05/07/2026 10:21",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783346400,
@@ -27545,7 +27545,7 @@
       "opp_team": "New York Mets",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Delayed Start",
       "result": "pending",
       "label": "📋",
       "game_pk": 824902,
@@ -27589,7 +27589,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Delayed Start",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -27765,10 +27765,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -29765,7 +29770,7 @@
     "824902": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Delayed Start",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "New York Mets",
@@ -29798,7 +29803,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Delayed Start",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -29852,10 +29857,15 @@
       "away_team_name": "Pittsburgh Pirates",
       "home_team_name": "Washington Nationals",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -30092,7 +30102,7 @@
       }
     }
   },
-  "updated_at": "05/07/2026 10:05",
+  "updated_at": "05/07/2026 10:21",
   "stats": {
     "total": 161,
     "acertados": 92,
