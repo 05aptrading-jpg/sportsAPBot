@@ -1,5 +1,5 @@
 {
-  "fecha": "04/07/2026 20:06",
+  "fecha": "04/07/2026 20:22",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783260000,
@@ -19137,13 +19137,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-04",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Los Angeles Dodgers",
       "opp_team": "San Diego Padres",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Bottom 1st",
+      "result": "live",
       "label": "🎯",
       "game_pk": 823932,
       "fav_abbr": "LAD",
@@ -19162,14 +19162,14 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 2,
+        "balls": 3,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 2,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -19180,9 +19180,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -19197,9 +19197,9 @@
       "status_emoji": "🔴",
       "fav_team": "Atlanta Braves",
       "opp_team": "New York Mets",
-      "score_fav": "6",
+      "score_fav": "8",
       "score_opp": "3",
-      "state": "Bottom 6th",
+      "state": "Top 7th",
       "result": "live",
       "label": "🎯",
       "game_pk": 824903,
@@ -19235,19 +19235,23 @@
           },
           {
             "away_runs": 2,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
         "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 3,
-        "home_runs": 6,
+        "home_runs": 8,
         "away_hits": 7,
-        "home_hits": 6,
+        "home_hits": 8,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "New York Mets",
@@ -19261,9 +19265,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "6",
+        "opp_score": "8",
         "score_fav": "3",
-        "score_opp": "6"
+        "score_opp": "8"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYM.png&h=40&w=40"
@@ -19276,7 +19280,7 @@
       "opp_team": "Arizona Diamondbacks",
       "score_fav": "0",
       "score_opp": "3",
-      "state": "Top 2nd",
+      "state": "Top 3rd",
       "result": "live",
       "label": "🎯",
       "game_pk": 825063,
@@ -19297,14 +19301,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
+        "inning_ordinal": "3rd",
         "outs": 1,
-        "balls": 0,
-        "strikes": 2,
+        "balls": 3,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 3,
         "away_hits": 1,
@@ -19413,8 +19421,8 @@
       "fav_team": "Boston Red Sox",
       "opp_team": "Los Angeles Angels",
       "score_fav": "3",
-      "score_opp": "0",
-      "state": "Top 2nd",
+      "score_opp": "1",
+      "state": "Bottom 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 824012,
@@ -19434,19 +19442,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 2,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "2nd",
-        "outs": 1,
-        "balls": 2,
-        "strikes": 2,
+        "outs": 2,
+        "balls": 1,
+        "strikes": 3,
         "away_runs": 3,
-        "home_runs": 0,
+        "home_runs": 1,
         "away_hits": 1,
-        "home_hits": 0,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Boston Red Sox",
@@ -19460,9 +19468,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "0",
+        "opp_score": "1",
         "score_fav": "3",
-        "score_opp": "0"
+        "score_opp": "1"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/BOS.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40"
@@ -19562,9 +19570,9 @@
       "status_emoji": "🔴",
       "fav_team": "Philadelphia Phillies",
       "opp_team": "Kansas City Royals",
-      "score_fav": "5",
+      "score_fav": "6",
       "score_opp": "1",
-      "state": "Bottom 7th",
+      "state": "Middle 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 824092,
@@ -19605,17 +19613,21 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 0,
-        "balls": 0,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 3,
+        "balls": 1,
         "strikes": 2,
-        "away_runs": 5,
+        "away_runs": 6,
         "home_runs": 1,
-        "away_hits": 9,
+        "away_hits": 11,
         "home_hits": 5,
         "away_errors": 0,
         "home_errors": 1,
@@ -19629,9 +19641,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "5",
+        "fav_score": "6",
         "opp_score": "1",
-        "score_fav": "5",
+        "score_fav": "6",
         "score_opp": "1"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PHI.png&h=40&w=40",
@@ -19734,7 +19746,7 @@
       "opp_team": "San Francisco Giants",
       "score_fav": "3",
       "score_opp": "6",
-      "state": "Bottom 4th",
+      "state": "Top 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 824334,
@@ -19763,14 +19775,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
         "outs": 0,
-        "balls": 3,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 6,
         "home_runs": 3,
         "away_hits": 9,
@@ -19798,13 +19814,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-04",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Baltimore Orioles",
       "opp_team": "Cincinnati Reds",
       "score_fav": "8",
       "score_opp": "5",
-      "state": "Bottom 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 824499,
       "fav_abbr": "BAL",
@@ -19857,13 +19873,13 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 3,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 8,
         "home_runs": 5,
         "away_hits": 10,
-        "home_hits": 10,
+        "home_hits": 11,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Baltimore Orioles",
@@ -19873,9 +19889,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "8",
         "opp_score": "5",
         "score_fav": "8",
@@ -19890,9 +19906,9 @@
       "status_emoji": "🔴",
       "fav_team": "Miami Marlins",
       "opp_team": "Athletics",
-      "score_fav": "0",
+      "score_fav": "1",
       "score_opp": "0",
-      "state": "Top 2nd",
+      "state": "Top 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 824983,
@@ -19913,18 +19929,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
+        "inning_ordinal": "3rd",
         "outs": 2,
         "balls": 0,
         "strikes": 0,
-        "away_runs": 0,
+        "away_runs": 1,
         "home_runs": 0,
-        "away_hits": 1,
-        "home_hits": 1,
+        "away_hits": 3,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Miami Marlins",
@@ -19937,9 +19957,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "0"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIA.png&h=40&w=40",
@@ -20042,7 +20062,7 @@
       "opp_team": "St. Louis Cardinals",
       "score_fav": "0",
       "score_opp": "2",
-      "state": "Bottom 3rd",
+      "state": "End 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 824658,
@@ -20067,18 +20087,22 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 2,
-        "balls": 2,
-        "strikes": 1,
+        "inning_ordinal": "4th",
+        "outs": 3,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 2,
         "home_runs": 0,
-        "away_hits": 2,
-        "home_hits": 1,
+        "away_hits": 3,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "St. Louis Cardinals",
@@ -20191,13 +20215,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-04",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "Tampa Bay Rays",
       "opp_team": "Houston Astros",
       "score_fav": "8",
-      "score_opp": "8",
-      "state": "Top 9th",
-      "result": "live",
+      "score_opp": "10",
+      "state": "Final",
+      "result": "loss",
       "label": "📋",
       "game_pk": 824171,
       "fav_abbr": "TB",
@@ -20244,19 +20268,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 2
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 0,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 8,
-        "home_runs": 8,
+        "home_runs": 10,
         "away_hits": 9,
-        "home_hits": 10,
+        "home_hits": 11,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Tampa Bay Rays",
@@ -20266,13 +20290,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "8",
-        "opp_score": "8",
+        "opp_score": "10",
         "score_fav": "8",
-        "score_opp": "8"
+        "score_opp": "10"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/HOU.png&h=40&w=40"
@@ -20469,19 +20493,23 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 2
+            "home_runs": 3
+          },
+          {
+            "away_runs": 2,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
+        "current_inning": 3,
+        "is_top": true,
+        "inning_ordinal": "3rd",
         "outs": 2,
         "balls": 1,
         "strikes": 1,
-        "away_runs": 0,
-        "home_runs": 2,
-        "away_hits": 3,
-        "home_hits": 4,
+        "away_runs": 2,
+        "home_runs": 3,
+        "away_hits": 6,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Olmecas de Tabasco",
@@ -20494,10 +20522,10 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
-        "opp_score": "2",
-        "score_fav": "0",
-        "score_opp": "2"
+        "fav_score": "2",
+        "opp_score": "3",
+        "score_fav": "2",
+        "score_opp": "3"
       }
     },
     {
@@ -20683,14 +20711,14 @@
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 3,
         "home_runs": 1,
-        "away_hits": 7,
+        "away_hits": 8,
         "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
@@ -20812,7 +20840,7 @@
       "status_emoji": "🔴",
       "fav_team": "Tecos de los Dos Laredos",
       "opp_team": "Sultanes de Monterrey",
-      "score_fav": "2",
+      "score_fav": "3",
       "score_opp": "2",
       "state": "In Progress",
       "result": "live",
@@ -20844,19 +20872,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 5,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "5th",
-        "outs": 0,
-        "balls": 3,
+        "outs": 2,
+        "balls": 0,
         "strikes": 1,
         "away_runs": 2,
-        "home_runs": 2,
+        "home_runs": 3,
         "away_hits": 2,
-        "home_hits": 3,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Sultanes de Monterrey",
@@ -20870,9 +20898,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "2",
-        "opp_score": "2",
+        "opp_score": "3",
         "score_fav": "2",
-        "score_opp": "2"
+        "score_opp": "3"
       }
     },
     {
@@ -20910,18 +20938,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": false,
-        "inning_ordinal": "4th",
+        "inning_ordinal": "5th",
         "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
         "home_runs": 3,
         "away_hits": 3,
-        "home_hits": 3,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Tigres de Quintana Roo",
@@ -22083,9 +22115,9 @@
       }
     },
     "823932": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Bottom 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "San Diego Padres",
@@ -22098,14 +22130,14 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 2,
+        "balls": 3,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 2,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -22116,9 +22148,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -22128,8 +22160,8 @@
     "824903": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 6th",
-      "away_runs": 6,
+      "status": "Top 7th",
+      "away_runs": 8,
       "home_runs": 3,
       "away_team_name": "New York Mets",
       "home_team_name": "Atlanta Braves",
@@ -22157,19 +22189,23 @@
           },
           {
             "away_runs": 2,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
         "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 3,
-        "home_runs": 6,
+        "home_runs": 8,
         "away_hits": 7,
-        "home_hits": 6,
+        "home_hits": 8,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "New York Mets",
@@ -22183,15 +22219,15 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "6",
+        "opp_score": "8",
         "score_fav": "3",
-        "score_opp": "6"
+        "score_opp": "8"
       }
     },
     "825063": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 2nd",
+      "status": "Top 3rd",
       "away_runs": 0,
       "home_runs": 3,
       "away_team_name": "Arizona Diamondbacks",
@@ -22205,14 +22241,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
+        "inning_ordinal": "3rd",
         "outs": 1,
-        "balls": 0,
-        "strikes": 2,
+        "balls": 3,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 3,
         "away_hits": 1,
@@ -22305,9 +22345,9 @@
     "824012": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 2nd",
+      "status": "Bottom 2nd",
       "away_runs": 3,
-      "home_runs": 0,
+      "home_runs": 1,
       "away_team_name": "Los Angeles Angels",
       "home_team_name": "Boston Red Sox",
       "linescore": {
@@ -22318,19 +22358,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 2,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "2nd",
-        "outs": 1,
-        "balls": 2,
-        "strikes": 2,
+        "outs": 2,
+        "balls": 1,
+        "strikes": 3,
         "away_runs": 3,
-        "home_runs": 0,
+        "home_runs": 1,
         "away_hits": 1,
-        "home_hits": 0,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Boston Red Sox",
@@ -22344,9 +22384,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "0",
+        "opp_score": "1",
         "score_fav": "3",
-        "score_opp": "0"
+        "score_opp": "1"
       }
     },
     "823118": {
@@ -22427,8 +22467,8 @@
     "824092": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 7th",
-      "away_runs": 5,
+      "status": "Middle 8th",
+      "away_runs": 6,
       "home_runs": 1,
       "away_team_name": "Kansas City Royals",
       "home_team_name": "Philadelphia Phillies",
@@ -22461,17 +22501,21 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 0,
-        "balls": 0,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 3,
+        "balls": 1,
         "strikes": 2,
-        "away_runs": 5,
+        "away_runs": 6,
         "home_runs": 1,
-        "away_hits": 9,
+        "away_hits": 11,
         "home_hits": 5,
         "away_errors": 0,
         "home_errors": 1,
@@ -22485,9 +22529,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "5",
+        "fav_score": "6",
         "opp_score": "1",
-        "score_fav": "5",
+        "score_fav": "6",
         "score_opp": "1"
       }
     },
@@ -22569,7 +22613,7 @@
     "824334": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 4th",
+      "status": "Top 5th",
       "away_runs": 3,
       "home_runs": 6,
       "away_team_name": "San Francisco Giants",
@@ -22591,14 +22635,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
         "outs": 0,
-        "balls": 3,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 6,
         "home_runs": 3,
         "away_hits": 9,
@@ -22622,9 +22670,9 @@
       }
     },
     "824499": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 8,
       "home_runs": 5,
       "away_team_name": "Cincinnati Reds",
@@ -22671,13 +22719,13 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 3,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 8,
         "home_runs": 5,
         "away_hits": 10,
-        "home_hits": 10,
+        "home_hits": 11,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Baltimore Orioles",
@@ -22687,9 +22735,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "8",
         "opp_score": "5",
         "score_fav": "8",
@@ -22699,8 +22747,8 @@
     "824983": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 2nd",
-      "away_runs": 0,
+      "status": "Top 3rd",
+      "away_runs": 1,
       "home_runs": 0,
       "away_team_name": "Athletics",
       "home_team_name": "Miami Marlins",
@@ -22713,18 +22761,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
+        "inning_ordinal": "3rd",
         "outs": 2,
         "balls": 0,
         "strikes": 0,
-        "away_runs": 0,
+        "away_runs": 1,
         "home_runs": 0,
-        "away_hits": 1,
-        "home_hits": 1,
+        "away_hits": 3,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Miami Marlins",
@@ -22737,9 +22789,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "0"
       }
     },
@@ -22821,7 +22873,7 @@
     "824658": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 3rd",
+      "status": "End 4th",
       "away_runs": 0,
       "home_runs": 2,
       "away_team_name": "St. Louis Cardinals",
@@ -22839,18 +22891,22 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 2,
-        "balls": 2,
-        "strikes": 1,
+        "inning_ordinal": "4th",
+        "outs": 3,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 2,
         "home_runs": 0,
-        "away_hits": 2,
-        "home_hits": 1,
+        "away_hits": 3,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "St. Louis Cardinals",
@@ -22945,11 +23001,11 @@
       }
     },
     "824171": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Top 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 8,
-      "home_runs": 8,
+      "home_runs": 10,
       "away_team_name": "Houston Astros",
       "home_team_name": "Tampa Bay Rays",
       "linescore": {
@@ -22988,19 +23044,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 2
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 0,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 8,
-        "home_runs": 8,
+        "home_runs": 10,
         "away_hits": 9,
-        "home_hits": 10,
+        "home_hits": 11,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Tampa Bay Rays",
@@ -23010,13 +23066,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "8",
-        "opp_score": "8",
+        "opp_score": "10",
         "score_fav": "8",
-        "score_opp": "8"
+        "score_opp": "10"
       }
     },
     "822882": {
@@ -23177,19 +23233,23 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 2
+            "home_runs": 3
+          },
+          {
+            "away_runs": 2,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
+        "current_inning": 3,
+        "is_top": true,
+        "inning_ordinal": "3rd",
         "outs": 2,
         "balls": 1,
         "strikes": 1,
-        "away_runs": 0,
-        "home_runs": 2,
-        "away_hits": 3,
-        "home_hits": 4,
+        "away_runs": 2,
+        "home_runs": 3,
+        "away_hits": 6,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Olmecas de Tabasco",
@@ -23202,10 +23262,10 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
-        "opp_score": "2",
-        "score_fav": "0",
-        "score_opp": "2"
+        "fav_score": "2",
+        "opp_score": "3",
+        "score_fav": "2",
+        "score_opp": "3"
       }
     },
     "846148": {
@@ -23361,14 +23421,14 @@
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 3,
         "home_runs": 1,
-        "away_hits": 7,
+        "away_hits": 8,
         "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
@@ -23468,7 +23528,7 @@
       "is_live": true,
       "is_final": false,
       "status": "In Progress",
-      "away_runs": 2,
+      "away_runs": 3,
       "home_runs": 2,
       "away_team_name": "Sultanes de Monterrey",
       "home_team_name": "Tecos de los Dos Laredos",
@@ -23492,19 +23552,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 5,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "5th",
-        "outs": 0,
-        "balls": 3,
+        "outs": 2,
+        "balls": 0,
         "strikes": 1,
         "away_runs": 2,
-        "home_runs": 2,
+        "home_runs": 3,
         "away_hits": 2,
-        "home_hits": 3,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Sultanes de Monterrey",
@@ -23518,9 +23578,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "2",
-        "opp_score": "2",
+        "opp_score": "3",
         "score_fav": "2",
-        "score_opp": "2"
+        "score_opp": "3"
       }
     },
     "846663": {
@@ -23548,18 +23608,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": false,
-        "inning_ordinal": "4th",
+        "inning_ordinal": "5th",
         "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
         "home_runs": 3,
         "away_hits": 3,
-        "home_hits": 3,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Tigres de Quintana Roo",
@@ -23579,7 +23643,7 @@
       }
     }
   },
-  "updated_at": "04/07/2026 20:06",
+  "updated_at": "04/07/2026 20:22",
   "stats": {
     "total": 154,
     "acertados": 89,
@@ -28359,8 +28423,8 @@
       "away": "Portland Fire",
       "home_abbr": "SEA",
       "away_abbr": "POR",
-      "home_score": 35,
-      "away_score": 38,
+      "home_score": 43,
+      "away_score": 52,
       "home_linescores": [
         {
           "period": 1,
@@ -28374,8 +28438,8 @@
         },
         {
           "period": 3,
-          "value": 5,
-          "display": "5"
+          "value": 13,
+          "display": "13"
         }
       ],
       "away_linescores": [
@@ -28391,13 +28455,13 @@
         },
         {
           "period": 3,
-          "value": 6,
-          "display": "6"
+          "value": 20,
+          "display": "20"
         }
       ],
-      "clock": "7:37",
+      "clock": "52.6",
       "period": 3,
-      "state": "Q3 7:37",
+      "state": "Q3 52.6",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/SEA.png&h=40&w=40",
