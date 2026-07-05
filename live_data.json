@@ -1,5 +1,5 @@
 {
-  "fecha": "05/07/2026 11:51",
+  "fecha": "05/07/2026 12:01",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1783346400,
@@ -27604,7 +27604,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Delayed Start",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -27802,12 +27802,12 @@
         "current_inning": 3,
         "is_top": true,
         "inning_ordinal": "3rd",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 2,
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 4,
         "home_runs": 0,
-        "away_hits": 5,
+        "away_hits": 6,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 1,
@@ -27984,7 +27984,7 @@
       "opp_team": "Minnesota Twins",
       "score_fav": "0",
       "score_opp": "1",
-      "state": "Bottom 1st",
+      "state": "Top 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 823525,
@@ -28005,17 +28005,21 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
         "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 1,
         "home_runs": 0,
-        "away_hits": 3,
+        "away_hits": 4,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -28187,7 +28191,7 @@
       "opp_team": "Cincinnati Reds",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "End 3rd",
+      "state": "Bottom 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 824497,
@@ -28216,13 +28220,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 3,
-        "balls": 1,
+        "inning_ordinal": "4th",
+        "outs": 2,
+        "balls": 0,
         "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
@@ -29854,7 +29862,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Delayed Start",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -29930,12 +29938,12 @@
         "current_inning": 3,
         "is_top": true,
         "inning_ordinal": "3rd",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 2,
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 4,
         "home_runs": 0,
-        "away_hits": 5,
+        "away_hits": 6,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 1,
@@ -30001,7 +30009,7 @@
     "823525": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Top 2nd",
       "away_runs": 0,
       "home_runs": 1,
       "away_team_name": "Minnesota Twins",
@@ -30011,17 +30019,21 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
         "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 1,
         "home_runs": 0,
-        "away_hits": 3,
+        "away_hits": 4,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -30082,7 +30094,7 @@
     "824497": {
       "is_live": true,
       "is_final": false,
-      "status": "End 3rd",
+      "status": "Bottom 4th",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Cincinnati Reds",
@@ -30100,13 +30112,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 3,
-        "balls": 1,
+        "inning_ordinal": "4th",
+        "outs": 2,
+        "balls": 0,
         "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
@@ -30174,7 +30190,7 @@
       }
     }
   },
-  "updated_at": "05/07/2026 11:51",
+  "updated_at": "05/07/2026 12:01",
   "stats": {
     "total": 161,
     "acertados": 92,
