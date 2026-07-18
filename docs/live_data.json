@@ -1,5 +1,5 @@
 {
-  "fecha": "18/07/2026 13:46",
+  "fecha": "18/07/2026 14:02",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784469600,
@@ -4365,7 +4365,7 @@
       "opp_team": "Toronto Blue Jays",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Top 1st",
+      "state": "Bottom 1st",
       "result": "live",
       "label": "🎯",
       "game_pk": 822790,
@@ -4381,15 +4381,15 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 3,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
-        "home_hits": 0,
+        "away_hits": 1,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Chicago White Sox",
@@ -4763,7 +4763,7 @@
       "opp_team": "New York Mets",
       "score_fav": "2",
       "score_opp": "1",
-      "state": "End 2nd",
+      "state": "Top 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 823441,
@@ -4780,13 +4780,21 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 3,
-        "balls": 1,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 2,
+        "balls": 0,
         "strikes": 0,
         "away_runs": 1,
         "home_runs": 2,
@@ -5174,7 +5182,7 @@
       "opp_team": "San Francisco Giants",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 823116,
@@ -5205,7 +5213,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5370,7 +5378,7 @@
       "opp_team": "Chicago Cubs",
       "score_fav": "1",
       "score_opp": "5",
-      "state": "Top 5th",
+      "state": "Bottom 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 824657,
@@ -5399,18 +5407,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": true,
-        "inning_ordinal": "5th",
-        "outs": 1,
-        "balls": 2,
-        "strikes": 2,
+        "current_inning": 6,
+        "is_top": false,
+        "inning_ordinal": "6th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 1,
         "home_runs": 5,
-        "away_hits": 2,
-        "home_hits": 6,
+        "away_hits": 3,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Minnesota Twins",
@@ -5489,7 +5501,7 @@
       "opp_team": "Houston Astros",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "📋",
       "game_pk": 824169,
@@ -5525,7 +5537,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5694,8 +5706,8 @@
       "fav_team": "Colorado Rockies",
       "opp_team": "Cincinnati Reds",
       "score_fav": "6",
-      "score_opp": "0",
-      "state": "End 2nd",
+      "score_opp": "1",
+      "state": "Bottom 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 824331,
@@ -5712,18 +5724,22 @@
           {
             "away_runs": 0,
             "home_runs": 4
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 3,
-        "balls": 3,
-        "strikes": 0,
-        "away_runs": 0,
+        "inning_ordinal": "3rd",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 2,
+        "away_runs": 1,
         "home_runs": 6,
-        "away_hits": 0,
-        "home_hits": 9,
+        "away_hits": 2,
+        "home_hits": 10,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Cincinnati Reds",
@@ -5736,9 +5752,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "6",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "6"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/COL.png&h=40&w=40",
@@ -5900,7 +5916,7 @@
       "opp_team": "Miami Marlins",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "📋",
       "game_pk": 823763,
@@ -5936,7 +5952,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -7012,7 +7028,7 @@
     "822790": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 1st",
+      "status": "Bottom 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Toronto Blue Jays",
@@ -7025,15 +7041,15 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 3,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
-        "home_hits": 0,
+        "away_hits": 1,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Chicago White Sox",
@@ -7174,7 +7190,7 @@
     "823441": {
       "is_live": true,
       "is_final": false,
-      "status": "End 2nd",
+      "status": "Top 4th",
       "away_runs": 2,
       "home_runs": 1,
       "away_team_name": "New York Mets",
@@ -7188,13 +7204,21 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 3,
-        "balls": 1,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 2,
+        "balls": 0,
         "strikes": 0,
         "away_runs": 1,
         "home_runs": 2,
@@ -7345,7 +7369,7 @@
     "823116": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "San Francisco Giants",
@@ -7373,7 +7397,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -7421,7 +7445,7 @@
     "824657": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 5th",
+      "status": "Bottom 6th",
       "away_runs": 1,
       "home_runs": 5,
       "away_team_name": "Chicago Cubs",
@@ -7447,18 +7471,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": true,
-        "inning_ordinal": "5th",
-        "outs": 1,
-        "balls": 2,
-        "strikes": 2,
+        "current_inning": 6,
+        "is_top": false,
+        "inning_ordinal": "6th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 1,
         "home_runs": 5,
-        "away_hits": 2,
-        "home_hits": 6,
+        "away_hits": 3,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Minnesota Twins",
@@ -7480,7 +7508,7 @@
     "824169": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Houston Astros",
@@ -7513,7 +7541,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -7566,9 +7594,9 @@
     "824331": {
       "is_live": true,
       "is_final": false,
-      "status": "End 2nd",
+      "status": "Bottom 3rd",
       "away_runs": 6,
-      "home_runs": 0,
+      "home_runs": 1,
       "away_team_name": "Cincinnati Reds",
       "home_team_name": "Colorado Rockies",
       "linescore": {
@@ -7580,18 +7608,22 @@
           {
             "away_runs": 0,
             "home_runs": 4
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 3,
-        "balls": 3,
-        "strikes": 0,
-        "away_runs": 0,
+        "inning_ordinal": "3rd",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 2,
+        "away_runs": 1,
         "home_runs": 6,
-        "away_hits": 0,
-        "home_hits": 9,
+        "away_hits": 2,
+        "home_hits": 10,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Cincinnati Reds",
@@ -7604,9 +7636,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "6",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "6"
       }
     },
@@ -7651,7 +7683,7 @@
     "823763": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Miami Marlins",
@@ -7684,7 +7716,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -8034,7 +8066,7 @@
       }
     }
   },
-  "updated_at": "18/07/2026 13:46",
+  "updated_at": "18/07/2026 14:02",
   "stats": {
     "total": 4,
     "acertados": 3,
@@ -8497,270 +8529,10 @@
   },
   "hits_board": {
     "MLB": {
-      "Detroit Tigers": [
-        {
-          "nombre": "Riley Greene",
-          "prob": 73.8,
-          "player_id": 682985,
-          "game_pk": "824008",
-          "equipo": "Detroit Tigers",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Hao-Yu Lee",
-          "prob": 72.7,
-          "player_id": 701678,
-          "game_pk": "824008",
-          "equipo": "Detroit Tigers",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Kevin McGonigle",
-          "prob": 72.2,
-          "player_id": 805808,
-          "game_pk": "824008",
-          "equipo": "Detroit Tigers",
-          "status": "pendiente"
-        }
-      ],
-      "Los Angeles Angels": [
-        {
-          "nombre": "Wade Meckler",
-          "prob": 68.4,
-          "player_id": 685133,
-          "game_pk": "824008",
-          "equipo": "Los Angeles Angels",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Nolan Schanuel",
-          "prob": 64.7,
-          "player_id": 694384,
-          "game_pk": "824008",
-          "equipo": "Los Angeles Angels",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Jose Siri",
-          "prob": 63.4,
-          "player_id": 642350,
-          "game_pk": "824008",
-          "equipo": "Los Angeles Angels",
-          "status": "pendiente"
-        }
-      ],
-      "Tampa Bay Rays": [
-        {
-          "nombre": "Yandy Díaz",
-          "prob": 67.3,
-          "player_id": 650490,
-          "game_pk": "824738",
-          "equipo": "Tampa Bay Rays",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Chandler Simpson",
-          "prob": 64.5,
-          "player_id": 802415,
-          "game_pk": "824738",
-          "equipo": "Tampa Bay Rays",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Jonathan Aranda",
-          "prob": 62.6,
-          "player_id": 666018,
-          "game_pk": "824738",
-          "equipo": "Tampa Bay Rays",
-          "status": "pendiente"
-        }
-      ],
-      "Boston Red Sox": [
-        {
-          "nombre": "Ceddanne Rafaela",
-          "prob": 70.2,
-          "player_id": 678882,
-          "game_pk": "824738",
-          "equipo": "Boston Red Sox",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Tsung-Che Cheng",
-          "prob": 68.1,
-          "player_id": 691907,
-          "game_pk": "824738",
-          "equipo": "Boston Red Sox",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Willson Contreras",
-          "prob": 67.9,
-          "player_id": 575929,
-          "game_pk": "824738",
-          "equipo": "Boston Red Sox",
-          "status": "pendiente"
-        }
-      ],
-      "Chicago White Sox": [
-        {
-          "nombre": "Tristan Peters",
-          "prob": 77.1,
-          "player_id": 671976,
-          "game_pk": "822790",
-          "equipo": "Chicago White Sox",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Sam Antonacci",
-          "prob": 74.1,
-          "player_id": 803011,
-          "game_pk": "822790",
-          "equipo": "Chicago White Sox",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Chase Meidroth",
-          "prob": 72.8,
-          "player_id": 805367,
-          "game_pk": "822790",
-          "equipo": "Chicago White Sox",
-          "status": "pendiente"
-        }
-      ],
-      "Toronto Blue Jays": [
-        {
-          "nombre": "Ernie Clement",
-          "prob": 71.3,
-          "player_id": 676391,
-          "game_pk": "822790",
-          "equipo": "Toronto Blue Jays",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Nathan Lukes",
-          "prob": 67.5,
-          "player_id": 664770,
-          "game_pk": "822790",
-          "equipo": "Toronto Blue Jays",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Jonatan Clase",
-          "prob": 66.7,
-          "player_id": 682729,
-          "game_pk": "822790",
-          "equipo": "Toronto Blue Jays",
-          "status": "pendiente"
-        }
-      ],
-      "New York Mets": [
-        {
-          "nombre": "A.J. Ewing",
-          "prob": 65.2,
-          "player_id": 805999,
-          "game_pk": "823441",
-          "equipo": "New York Mets",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Carson Benge",
-          "prob": 65.1,
-          "player_id": 701807,
-          "game_pk": "823441",
-          "equipo": "New York Mets",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Juan Soto",
-          "prob": 64.8,
-          "player_id": 665742,
-          "game_pk": "823441",
-          "equipo": "New York Mets",
-          "status": "pendiente"
-        }
-      ],
-      "Philadelphia Phillies": [
-        {
-          "nombre": "Brandon Marsh",
-          "prob": 72.5,
-          "player_id": 669016,
-          "game_pk": "823441",
-          "equipo": "Philadelphia Phillies",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Justin Crawford",
-          "prob": 67.3,
-          "player_id": 702222,
-          "game_pk": "823441",
-          "equipo": "Philadelphia Phillies",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Derek Hill",
-          "prob": 66.1,
-          "player_id": 656537,
-          "game_pk": "823441",
-          "equipo": "Philadelphia Phillies",
-          "status": "pendiente"
-        }
-      ],
-      "Texas Rangers": [
-        {
-          "nombre": "Nicky Lopez",
-          "prob": 67.6,
-          "player_id": 670032,
-          "game_pk": "824899",
-          "equipo": "Texas Rangers",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Josh Jung",
-          "prob": 65.8,
-          "player_id": 673962,
-          "game_pk": "824899",
-          "equipo": "Texas Rangers",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Elias Díaz",
-          "prob": 64.2,
-          "player_id": 553869,
-          "game_pk": "824899",
-          "equipo": "Texas Rangers",
-          "status": "pendiente"
-        }
-      ],
-      "Atlanta Braves": [
-        {
-          "nombre": "Michael Harris II",
-          "prob": 73.2,
-          "player_id": 671739,
-          "game_pk": "824899",
-          "equipo": "Atlanta Braves",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Jim Jarvis",
-          "prob": 70.6,
-          "player_id": 805347,
-          "game_pk": "824899",
-          "equipo": "Atlanta Braves",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Mauricio Dubón",
-          "prob": 68.3,
-          "player_id": 643289,
-          "game_pk": "824899",
-          "equipo": "Atlanta Braves",
-          "status": "pendiente"
-        }
-      ],
       "Pittsburgh Pirates": [
         {
           "nombre": "Nick Gonzales",
-          "prob": 63.0,
+          "prob": 73.4,
           "player_id": 693304,
           "game_pk": "824412",
           "equipo": "Pittsburgh Pirates",
@@ -8768,7 +8540,7 @@
         },
         {
           "nombre": "Jake Mangum",
-          "prob": 61.9,
+          "prob": 72.3,
           "player_id": 663968,
           "game_pk": "824412",
           "equipo": "Pittsburgh Pirates",
@@ -8776,7 +8548,7 @@
         },
         {
           "nombre": "Esmerlyn Valdez",
-          "prob": 60.8,
+          "prob": 71.2,
           "player_id": 699013,
           "game_pk": "824412",
           "equipo": "Pittsburgh Pirates",
@@ -8809,166 +8581,10 @@
           "status": "fallido"
         }
       ],
-      "San Diego Padres": [
-        {
-          "nombre": "Miguel Andujar",
-          "prob": 63.4,
-          "player_id": 609280,
-          "game_pk": "824088",
-          "equipo": "San Diego Padres",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Fernando Tatis Jr.",
-          "prob": 63.3,
-          "player_id": 665487,
-          "game_pk": "824088",
-          "equipo": "San Diego Padres",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Luis Campusano",
-          "prob": 62.1,
-          "player_id": 669134,
-          "game_pk": "824088",
-          "equipo": "San Diego Padres",
-          "status": "pendiente"
-        }
-      ],
-      "Kansas City Royals": [
-        {
-          "nombre": "Tyler Tolbert",
-          "prob": 78.3,
-          "player_id": 686475,
-          "game_pk": "824088",
-          "equipo": "Kansas City Royals",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Bobby Witt Jr.",
-          "prob": 72.7,
-          "player_id": 677951,
-          "game_pk": "824088",
-          "equipo": "Kansas City Royals",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Michael Massey",
-          "prob": 71.7,
-          "player_id": 686681,
-          "game_pk": "824088",
-          "equipo": "Kansas City Royals",
-          "status": "pendiente"
-        }
-      ],
-      "San Francisco Giants": [
-        {
-          "nombre": "Luis Arraez",
-          "prob": 74.3,
-          "player_id": 650333,
-          "game_pk": "823116",
-          "equipo": "San Francisco Giants",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Jung Hoo Lee",
-          "prob": 73.5,
-          "player_id": 808982,
-          "game_pk": "823116",
-          "equipo": "San Francisco Giants",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Casey Schmitt",
-          "prob": 70.4,
-          "player_id": 669477,
-          "game_pk": "823116",
-          "equipo": "San Francisco Giants",
-          "status": "pendiente"
-        }
-      ],
-      "Seattle Mariners": [
-        {
-          "nombre": "Randy Arozarena",
-          "prob": 66.2,
-          "player_id": 668227,
-          "game_pk": "823116",
-          "equipo": "Seattle Mariners",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Dominic Canzone",
-          "prob": 64.5,
-          "player_id": 686527,
-          "game_pk": "823116",
-          "equipo": "Seattle Mariners",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Josh Naylor",
-          "prob": 64.1,
-          "player_id": 647304,
-          "game_pk": "823116",
-          "equipo": "Seattle Mariners",
-          "status": "pendiente"
-        }
-      ],
-      "Los Angeles Dodgers": [
-        {
-          "nombre": "Tommy Edman",
-          "prob": 71.6,
-          "player_id": 669242,
-          "game_pk": "823523",
-          "equipo": "Los Angeles Dodgers",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Miguel Rojas",
-          "prob": 68.0,
-          "player_id": 500743,
-          "game_pk": "823523",
-          "equipo": "Los Angeles Dodgers",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Freddie Freeman",
-          "prob": 67.9,
-          "player_id": 518692,
-          "game_pk": "823523",
-          "equipo": "Los Angeles Dodgers",
-          "status": "pendiente"
-        }
-      ],
-      "New York Yankees": [
-        {
-          "nombre": "Ben Rice",
-          "prob": 68.2,
-          "player_id": 700250,
-          "game_pk": "823523",
-          "equipo": "New York Yankees",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Paul Goldschmidt",
-          "prob": 66.5,
-          "player_id": 502671,
-          "game_pk": "823523",
-          "equipo": "New York Yankees",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Ali Sánchez",
-          "prob": 65.9,
-          "player_id": 645305,
-          "game_pk": "823523",
-          "equipo": "New York Yankees",
-          "status": "pendiente"
-        }
-      ],
       "Minnesota Twins": [
         {
           "nombre": "Alex Jackson",
-          "prob": 70.5,
+          "prob": 71.0,
           "player_id": 656577,
           "game_pk": "824657",
           "equipo": "Minnesota Twins",
@@ -8976,7 +8592,7 @@
         },
         {
           "nombre": "Trevor Larnach",
-          "prob": 68.4,
+          "prob": 68.8,
           "player_id": 663616,
           "game_pk": "824657",
           "equipo": "Minnesota Twins",
@@ -8984,26 +8600,18 @@
         },
         {
           "nombre": "Ryan Jeffers",
-          "prob": 66.7,
+          "prob": 100.0,
           "player_id": 680777,
           "game_pk": "824657",
           "equipo": "Minnesota Twins",
-          "status": "pendiente"
+          "status": "cumplio"
         }
       ],
       "Chicago Cubs": [
         {
           "nombre": "Pete Crow-Armstrong",
-          "prob": 66.0,
+          "prob": 68.2,
           "player_id": 691718,
-          "game_pk": "824657",
-          "equipo": "Chicago Cubs",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Carson Kelly",
-          "prob": 64.4,
-          "player_id": 608348,
           "game_pk": "824657",
           "equipo": "Chicago Cubs",
           "status": "pendiente"
@@ -9015,132 +8623,140 @@
           "game_pk": "824657",
           "equipo": "Chicago Cubs",
           "status": "cumplio"
-        }
-      ],
-      "Baltimore Orioles": [
-        {
-          "nombre": "Jeremiah Jackson",
-          "prob": 67.3,
-          "player_id": 669236,
-          "game_pk": "824169",
-          "equipo": "Baltimore Orioles",
-          "status": "pendiente"
         },
         {
-          "nombre": "Samuel Basallo",
-          "prob": 64.3,
-          "player_id": 694212,
-          "game_pk": "824169",
-          "equipo": "Baltimore Orioles",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Adley Rutschman",
-          "prob": 64.2,
-          "player_id": 668939,
-          "game_pk": "824169",
-          "equipo": "Baltimore Orioles",
+          "nombre": "Carson Kelly",
+          "prob": 66.7,
+          "player_id": 608348,
+          "game_pk": "824657",
+          "equipo": "Chicago Cubs",
           "status": "pendiente"
         }
       ],
-      "Houston Astros": [
+      "New York Mets": [
         {
-          "nombre": "Yordan Alvarez",
-          "prob": 70.9,
-          "player_id": 670541,
-          "game_pk": "824169",
-          "equipo": "Houston Astros",
+          "nombre": "A.J. Ewing",
+          "prob": 67.5,
+          "player_id": 805999,
+          "game_pk": "823441",
+          "equipo": "New York Mets",
           "status": "pendiente"
         },
         {
-          "nombre": "Jeremy Peña",
-          "prob": 70.0,
-          "player_id": 665161,
-          "game_pk": "824169",
-          "equipo": "Houston Astros",
+          "nombre": "Carson Benge",
+          "prob": 67.5,
+          "player_id": 701807,
+          "game_pk": "823441",
+          "equipo": "New York Mets",
           "status": "pendiente"
         },
         {
-          "nombre": "Yainer Diaz",
-          "prob": 66.2,
-          "player_id": 673237,
-          "game_pk": "824169",
-          "equipo": "Houston Astros",
+          "nombre": "Juan Soto",
+          "prob": 67.2,
+          "player_id": 665742,
+          "game_pk": "823441",
+          "equipo": "New York Mets",
           "status": "pendiente"
         }
       ],
-      "St. Louis Cardinals": [
+      "Philadelphia Phillies": [
         {
-          "nombre": "Jordan Walker",
-          "prob": 71.2,
-          "player_id": 691023,
-          "game_pk": "825059",
-          "equipo": "St. Louis Cardinals",
+          "nombre": "Brandon Marsh",
+          "prob": 72.9,
+          "player_id": 669016,
+          "game_pk": "823441",
+          "equipo": "Philadelphia Phillies",
           "status": "pendiente"
         },
         {
-          "nombre": "Alec Burleson",
-          "prob": 68.3,
-          "player_id": 676475,
-          "game_pk": "825059",
-          "equipo": "St. Louis Cardinals",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "José Fermín",
+          "nombre": "Justin Crawford",
           "prob": 67.6,
-          "player_id": 665877,
-          "game_pk": "825059",
-          "equipo": "St. Louis Cardinals",
+          "player_id": 702222,
+          "game_pk": "823441",
+          "equipo": "Philadelphia Phillies",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Derek Hill",
+          "prob": 66.3,
+          "player_id": 656537,
+          "game_pk": "823441",
+          "equipo": "Philadelphia Phillies",
           "status": "pendiente"
         }
       ],
-      "Arizona Diamondbacks": [
+      "Chicago White Sox": [
         {
-          "nombre": "Gabriel Moreno",
-          "prob": 70.2,
-          "player_id": 672515,
-          "game_pk": "825059",
-          "equipo": "Arizona Diamondbacks",
+          "nombre": "Tristan Peters",
+          "prob": 71.9,
+          "player_id": 671976,
+          "game_pk": "822790",
+          "equipo": "Chicago White Sox",
           "status": "pendiente"
         },
         {
-          "nombre": "Ildemaro Vargas",
-          "prob": 67.1,
-          "player_id": 545121,
-          "game_pk": "825059",
-          "equipo": "Arizona Diamondbacks",
+          "nombre": "Sam Antonacci",
+          "prob": 68.7,
+          "player_id": 803011,
+          "game_pk": "822790",
+          "equipo": "Chicago White Sox",
           "status": "pendiente"
         },
         {
-          "nombre": "Ketel Marte",
-          "prob": 66.2,
-          "player_id": 606466,
-          "game_pk": "825059",
-          "equipo": "Arizona Diamondbacks",
+          "nombre": "Chase Meidroth",
+          "prob": 67.5,
+          "player_id": 805367,
+          "game_pk": "822790",
+          "equipo": "Chicago White Sox",
+          "status": "pendiente"
+        }
+      ],
+      "Toronto Blue Jays": [
+        {
+          "nombre": "Ernie Clement",
+          "prob": 73.8,
+          "player_id": 676391,
+          "game_pk": "822790",
+          "equipo": "Toronto Blue Jays",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Nathan Lukes",
+          "prob": 70.0,
+          "player_id": 664770,
+          "game_pk": "822790",
+          "equipo": "Toronto Blue Jays",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Jonatan Clase",
+          "prob": 69.4,
+          "player_id": 682729,
+          "game_pk": "822790",
+          "equipo": "Toronto Blue Jays",
           "status": "pendiente"
         }
       ],
       "Cincinnati Reds": [
         {
           "nombre": "Elly De La Cruz",
-          "prob": 69.3,
+          "prob": 100.0,
           "player_id": 682829,
           "game_pk": "824331",
           "equipo": "Cincinnati Reds",
-          "status": "pendiente"
+          "status": "cumplio"
         },
         {
           "nombre": "Jose Trevino",
-          "prob": 65.9,
+          "prob": 100.0,
           "player_id": 624431,
           "game_pk": "824331",
           "equipo": "Cincinnati Reds",
-          "status": "pendiente"
+          "status": "cumplio"
         },
         {
           "nombre": "Sal Stewart",
-          "prob": 65.0,
+          "prob": 64.8,
           "player_id": 701398,
           "game_pk": "824331",
           "equipo": "Cincinnati Reds",
@@ -9158,7 +8774,7 @@
         },
         {
           "nombre": "Troy Johnston",
-          "prob": 71.2,
+          "prob": 70.8,
           "player_id": 687859,
           "game_pk": "824331",
           "equipo": "Colorado Rockies",
@@ -9173,10 +8789,114 @@
           "status": "cumplio"
         }
       ],
+      "San Francisco Giants": [
+        {
+          "nombre": "Luis Arraez",
+          "prob": 75.3,
+          "player_id": 650333,
+          "game_pk": "823116",
+          "equipo": "San Francisco Giants",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Jung Hoo Lee",
+          "prob": 74.5,
+          "player_id": 808982,
+          "game_pk": "823116",
+          "equipo": "San Francisco Giants",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Casey Schmitt",
+          "prob": 71.4,
+          "player_id": 669477,
+          "game_pk": "823116",
+          "equipo": "San Francisco Giants",
+          "status": "pendiente"
+        }
+      ],
+      "Seattle Mariners": [
+        {
+          "nombre": "Randy Arozarena",
+          "prob": 67.9,
+          "player_id": 668227,
+          "game_pk": "823116",
+          "equipo": "Seattle Mariners",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Julio Rodríguez",
+          "prob": 66.8,
+          "player_id": 677594,
+          "game_pk": "823116",
+          "equipo": "Seattle Mariners",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Dominic Canzone",
+          "prob": 66.3,
+          "player_id": 686527,
+          "game_pk": "823116",
+          "equipo": "Seattle Mariners",
+          "status": "pendiente"
+        }
+      ],
+      "Los Angeles Dodgers": [
+        {
+          "nombre": "Tommy Edman",
+          "prob": 72.8,
+          "player_id": 669242,
+          "game_pk": "823523",
+          "equipo": "Los Angeles Dodgers",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Miguel Rojas",
+          "prob": 69.2,
+          "player_id": 500743,
+          "game_pk": "823523",
+          "equipo": "Los Angeles Dodgers",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Freddie Freeman",
+          "prob": 69.0,
+          "player_id": 518692,
+          "game_pk": "823523",
+          "equipo": "Los Angeles Dodgers",
+          "status": "pendiente"
+        }
+      ],
+      "New York Yankees": [
+        {
+          "nombre": "Ben Rice",
+          "prob": 68.0,
+          "player_id": 700250,
+          "game_pk": "823523",
+          "equipo": "New York Yankees",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Paul Goldschmidt",
+          "prob": 66.4,
+          "player_id": 502671,
+          "game_pk": "823523",
+          "equipo": "New York Yankees",
+          "status": "pendiente"
+        },
+        {
+          "nombre": "Ali Sánchez",
+          "prob": 65.8,
+          "player_id": 645305,
+          "game_pk": "823523",
+          "equipo": "New York Yankees",
+          "status": "pendiente"
+        }
+      ],
       "Washington Nationals": [
         {
           "nombre": "Luis García Jr.",
-          "prob": 69.6,
+          "prob": 71.7,
           "player_id": 671277,
           "game_pk": "824979",
           "equipo": "Washington Nationals",
@@ -9184,7 +8904,7 @@
         },
         {
           "nombre": "Keibert Ruiz",
-          "prob": 67.9,
+          "prob": 70.0,
           "player_id": 660688,
           "game_pk": "824979",
           "equipo": "Washington Nationals",
@@ -9192,7 +8912,7 @@
         },
         {
           "nombre": "CJ Abrams",
-          "prob": 65.7,
+          "prob": 67.9,
           "player_id": 682928,
           "game_pk": "824979",
           "equipo": "Washington Nationals",
@@ -9202,7 +8922,7 @@
       "Athletics": [
         {
           "nombre": "Joshua Kuroda-Grauer",
-          "prob": 80.5,
+          "prob": 80.2,
           "player_id": 811965,
           "game_pk": "824979",
           "equipo": "Athletics",
@@ -9210,7 +8930,7 @@
         },
         {
           "nombre": "Donovan Walton",
-          "prob": 72.7,
+          "prob": 72.4,
           "player_id": 622268,
           "game_pk": "824979",
           "equipo": "Athletics",
@@ -9218,588 +8938,67 @@
         },
         {
           "nombre": "Jacob Wilson",
-          "prob": 71.4,
+          "prob": 71.1,
           "player_id": 805779,
           "game_pk": "824979",
           "equipo": "Athletics",
           "status": "pendiente"
         }
       ],
-      "Miami Marlins": [
+      "Detroit Tigers": [
         {
-          "nombre": "Otto Lopez",
-          "prob": 74.1,
-          "player_id": 672640,
-          "game_pk": "823763",
-          "equipo": "Miami Marlins",
+          "nombre": "Riley Greene",
+          "prob": 68.7,
+          "player_id": 682985,
+          "game_pk": "824008",
+          "equipo": "Detroit Tigers",
           "status": "pendiente"
         },
         {
-          "nombre": "Xavier Edwards",
-          "prob": 67.4,
-          "player_id": 669364,
-          "game_pk": "823763",
-          "equipo": "Miami Marlins",
+          "nombre": "Hao-Yu Lee",
+          "prob": 67.6,
+          "player_id": 701678,
+          "game_pk": "824008",
+          "equipo": "Detroit Tigers",
           "status": "pendiente"
         },
         {
-          "nombre": "Javier Sanoja",
-          "prob": 66.2,
-          "player_id": 691594,
-          "game_pk": "823763",
-          "equipo": "Miami Marlins",
+          "nombre": "Kevin McGonigle",
+          "prob": 67.1,
+          "player_id": 805808,
+          "game_pk": "824008",
+          "equipo": "Detroit Tigers",
           "status": "pendiente"
         }
       ],
-      "Milwaukee Brewers": [
+      "Los Angeles Angels": [
         {
-          "nombre": "Andrew Vaughn",
-          "prob": 66.5,
-          "player_id": 683734,
-          "game_pk": "823763",
-          "equipo": "Milwaukee Brewers",
+          "nombre": "Wade Meckler",
+          "prob": 71.8,
+          "player_id": 685133,
+          "game_pk": "824008",
+          "equipo": "Los Angeles Angels",
           "status": "pendiente"
         },
         {
-          "nombre": "Jackson Chourio",
-          "prob": 65.5,
-          "player_id": 694192,
-          "game_pk": "823763",
-          "equipo": "Milwaukee Brewers",
+          "nombre": "Nolan Schanuel",
+          "prob": 68.0,
+          "player_id": 694384,
+          "game_pk": "824008",
+          "equipo": "Los Angeles Angels",
           "status": "pendiente"
         },
         {
-          "nombre": "William Contreras",
-          "prob": 64.5,
-          "player_id": 661388,
-          "game_pk": "823763",
-          "equipo": "Milwaukee Brewers",
+          "nombre": "Jose Siri",
+          "prob": 66.7,
+          "player_id": 642350,
+          "game_pk": "824008",
+          "equipo": "Los Angeles Angels",
           "status": "pendiente"
         }
       ]
     },
-    "LMB": {
-      "Pericos de Puebla": [
-        {
-          "nombre": "Brayan Quintero",
-          "prob": 66.9,
-          "player_id": 678540,
-          "game_pk": "846429",
-          "equipo": "Pericos de Puebla",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Cristhian Adames",
-          "prob": 66.9,
-          "player_id": 542436,
-          "game_pk": "846429",
-          "equipo": "Pericos de Puebla",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Daniel Mercado",
-          "prob": 66.9,
-          "player_id": 680023,
-          "game_pk": "846429",
-          "equipo": "Pericos de Puebla",
-          "status": "pendiente"
-        }
-      ],
-      "Diablos Rojos del Mexico": [
-        {
-          "nombre": "Carlos Pérez",
-          "prob": 66.2,
-          "player_id": 656024,
-          "game_pk": "846429",
-          "equipo": "Diablos Rojos del Mexico",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Carlos Sepulveda",
-          "prob": 66.2,
-          "player_id": 661148,
-          "game_pk": "846429",
-          "equipo": "Diablos Rojos del Mexico",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Francisco Mejía",
-          "prob": 66.2,
-          "player_id": 642336,
-          "game_pk": "846429",
-          "equipo": "Diablos Rojos del Mexico",
-          "status": "pendiente"
-        }
-      ],
-      "Guerreros de Oaxaca": [
-        {
-          "nombre": "Alexi Amarista",
-          "prob": 69.8,
-          "player_id": 506560,
-          "game_pk": "846523",
-          "equipo": "Guerreros de Oaxaca",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Alfredo Lopez",
-          "prob": 69.8,
-          "player_id": 594906,
-          "game_pk": "846523",
-          "equipo": "Guerreros de Oaxaca",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Andres Sosa",
-          "prob": 69.8,
-          "player_id": 703245,
-          "game_pk": "846523",
-          "equipo": "Guerreros de Oaxaca",
-          "status": "pendiente"
-        }
-      ],
-      "Piratas de Campeche": [
-        {
-          "nombre": "Abraham Almonte",
-          "prob": 67.7,
-          "player_id": 501659,
-          "game_pk": "846518",
-          "equipo": "Piratas de Campeche",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Andrew Stevenson",
-          "prob": 67.7,
-          "player_id": 664057,
-          "game_pk": "846518",
-          "equipo": "Piratas de Campeche",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Armando Alvarez",
-          "prob": 67.7,
-          "player_id": 669137,
-          "game_pk": "846518",
-          "equipo": "Piratas de Campeche",
-          "status": "pendiente"
-        }
-      ],
-      "Rieleros de Aguascalientes": [
-        {
-          "nombre": "Aaron Antonini",
-          "prob": 67.1,
-          "player_id": 689577,
-          "game_pk": "846289",
-          "equipo": "Rieleros de Aguascalientes",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Amilcar Gomez",
-          "prob": 67.1,
-          "player_id": 653248,
-          "game_pk": "846289",
-          "equipo": "Rieleros de Aguascalientes",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Angel Camacho",
-          "prob": 67.1,
-          "player_id": 803376,
-          "game_pk": "846289",
-          "equipo": "Rieleros de Aguascalientes",
-          "status": "pendiente"
-        }
-      ],
-      "Sultanes de Monterrey": [
-        {
-          "nombre": "Gustavo Nunez",
-          "prob": 67.1,
-          "player_id": 516631,
-          "game_pk": "846289",
-          "equipo": "Sultanes de Monterrey",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Harold Ramírez",
-          "prob": 67.1,
-          "player_id": 623912,
-          "game_pk": "846289",
-          "equipo": "Sultanes de Monterrey",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Hector Jacquez",
-          "prob": 67.1,
-          "player_id": 832571,
-          "game_pk": "846289",
-          "equipo": "Sultanes de Monterrey",
-          "status": "pendiente"
-        }
-      ],
-      "Algodoneros Union Laguna": [
-        {
-          "nombre": "Adrian Tovalin",
-          "prob": 71.5,
-          "player_id": 668210,
-          "game_pk": "846373",
-          "equipo": "Algodoneros Union Laguna",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Albert Lara",
-          "prob": 71.5,
-          "player_id": 804107,
-          "game_pk": "846373",
-          "equipo": "Algodoneros Union Laguna",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Alberth Martinez",
-          "prob": 71.5,
-          "player_id": 594021,
-          "game_pk": "846373",
-          "equipo": "Algodoneros Union Laguna",
-          "status": "pendiente"
-        }
-      ],
-      "Tecos de los Dos Laredos": [
-        {
-          "nombre": "Alan Lopez",
-          "prob": 65.7,
-          "player_id": 674706,
-          "game_pk": "846373",
-          "equipo": "Tecos de los Dos Laredos",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Alejandro Flores",
-          "prob": 65.7,
-          "player_id": 642299,
-          "game_pk": "846373",
-          "equipo": "Tecos de los Dos Laredos",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Ali Castillo",
-          "prob": 65.7,
-          "player_id": 542419,
-          "game_pk": "846373",
-          "equipo": "Tecos de los Dos Laredos",
-          "status": "pendiente"
-        }
-      ],
-      "Leones de Yucatan": [
-        {
-          "nombre": "Addison Russell",
-          "prob": 69.0,
-          "player_id": 608365,
-          "game_pk": "846811",
-          "equipo": "Leones de Yucatan",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Breyvic Valera",
-          "prob": 69.0,
-          "player_id": 591971,
-          "game_pk": "846811",
-          "equipo": "Leones de Yucatan",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Dalton Guthrie",
-          "prob": 69.0,
-          "player_id": 656495,
-          "game_pk": "846811",
-          "equipo": "Leones de Yucatan",
-          "status": "pendiente"
-        }
-      ],
-      "Bravos de Leon": [
-        {
-          "nombre": "Alan Garcia",
-          "prob": 66.6,
-          "player_id": 664739,
-          "game_pk": "846811",
-          "equipo": "Bravos de Leon",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Balbino Fuenmayor",
-          "prob": 66.6,
-          "player_id": 515768,
-          "game_pk": "846811",
-          "equipo": "Bravos de Leon",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Carlos Martínez",
-          "prob": 66.6,
-          "player_id": 642751,
-          "game_pk": "846811",
-          "equipo": "Bravos de Leon",
-          "status": "pendiente"
-        }
-      ],
-      "Saraperos de Saltillo": [
-        {
-          "nombre": "Brandon Villarreal",
-          "prob": 65.5,
-          "player_id": 661311,
-          "game_pk": "845922",
-          "equipo": "Saraperos de Saltillo",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Chris Carter",
-          "prob": 65.5,
-          "player_id": 474892,
-          "game_pk": "845922",
-          "equipo": "Saraperos de Saltillo",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Christian Morales",
-          "prob": 65.5,
-          "player_id": 806157,
-          "game_pk": "845922",
-          "equipo": "Saraperos de Saltillo",
-          "status": "pendiente"
-        }
-      ],
-      "Charros de Jalisco": [
-        {
-          "nombre": "Alejandro Quezada",
-          "prob": 66.5,
-          "player_id": 832568,
-          "game_pk": "845922",
-          "equipo": "Charros de Jalisco",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Alex D. Mejia",
-          "prob": 66.5,
-          "player_id": 622270,
-          "game_pk": "845922",
-          "equipo": "Charros de Jalisco",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Alfredo Hurtado",
-          "prob": 66.5,
-          "player_id": 685771,
-          "game_pk": "845922",
-          "equipo": "Charros de Jalisco",
-          "status": "pendiente"
-        }
-      ],
-      "Conspiradores de Queretaro": [
-        {
-          "nombre": "Alen Hanson",
-          "prob": 64.8,
-          "player_id": 593700,
-          "game_pk": "846022",
-          "equipo": "Conspiradores de Queretaro",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Arturo Rodriguez",
-          "prob": 64.8,
-          "player_id": 585133,
-          "game_pk": "846022",
-          "equipo": "Conspiradores de Queretaro",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Daniel Castro",
-          "prob": 64.8,
-          "player_id": 593495,
-          "game_pk": "846022",
-          "equipo": "Conspiradores de Queretaro",
-          "status": "pendiente"
-        }
-      ],
-      "El Aguila de Veracruz": [
-        {
-          "nombre": "Andrés Alvarez",
-          "prob": 69.2,
-          "player_id": 687019,
-          "game_pk": "846022",
-          "equipo": "El Aguila de Veracruz",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Austin Shenton",
-          "prob": 69.2,
-          "player_id": 668853,
-          "game_pk": "846022",
-          "equipo": "El Aguila de Veracruz",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Carlos Pérez",
-          "prob": 69.2,
-          "player_id": 542208,
-          "game_pk": "846022",
-          "equipo": "El Aguila de Veracruz",
-          "status": "pendiente"
-        }
-      ],
-      "Tigres de Quintana Roo": [
-        {
-          "nombre": "Aldo Flores",
-          "prob": 65.6,
-          "player_id": 659253,
-          "game_pk": "846756",
-          "equipo": "Tigres de Quintana Roo",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Alexis Wilson",
-          "prob": 65.6,
-          "player_id": 656029,
-          "game_pk": "846756",
-          "equipo": "Tigres de Quintana Roo",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Calvin Estrada",
-          "prob": 65.6,
-          "player_id": 690414,
-          "game_pk": "846756",
-          "equipo": "Tigres de Quintana Roo",
-          "status": "pendiente"
-        }
-      ],
-      "Olmecas de Tabasco": [
-        {
-          "nombre": "Agustin Murillo",
-          "prob": 56.1,
-          "player_id": 473242,
-          "game_pk": "846756",
-          "equipo": "Olmecas de Tabasco",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Agustin Ruiz",
-          "prob": 56.1,
-          "player_id": 672361,
-          "game_pk": "846756",
-          "equipo": "Olmecas de Tabasco",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Alan Espinoza",
-          "prob": 56.1,
-          "player_id": 587275,
-          "game_pk": "846756",
-          "equipo": "Olmecas de Tabasco",
-          "status": "pendiente"
-        }
-      ],
-      "Toros de Tijuana": [
-        {
-          "nombre": "Aderlin Rodríguez",
-          "prob": 63.7,
-          "player_id": 573669,
-          "game_pk": "846201",
-          "equipo": "Toros de Tijuana",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Ali Solis",
-          "prob": 63.7,
-          "player_id": 455378,
-          "game_pk": "846201",
-          "equipo": "Toros de Tijuana",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Danry Vasquez",
-          "prob": 63.7,
-          "player_id": 606281,
-          "game_pk": "846201",
-          "equipo": "Toros de Tijuana",
-          "status": "pendiente"
-        }
-      ],
-      "Dorados de Chihuahua": [
-        {
-          "nombre": "Aaron Lugo",
-          "prob": 64.9,
-          "player_id": 822908,
-          "game_pk": "846201",
-          "equipo": "Dorados de Chihuahua",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Andre Lipcius",
-          "prob": 64.9,
-          "player_id": 686531,
-          "game_pk": "846201",
-          "equipo": "Dorados de Chihuahua",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Andrelton Simmons",
-          "prob": 64.9,
-          "player_id": 592743,
-          "game_pk": "846201",
-          "equipo": "Dorados de Chihuahua",
-          "status": "pendiente"
-        }
-      ],
-      "Caliente de Durango": [
-        {
-          "nombre": "Antonio Castaneda",
-          "prob": 64.5,
-          "player_id": 692270,
-          "game_pk": "846333",
-          "equipo": "Caliente de Durango",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "C.J. Hinojosa",
-          "prob": 64.5,
-          "player_id": 546994,
-          "game_pk": "846333",
-          "equipo": "Caliente de Durango",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Christopher Escarrega",
-          "prob": 64.5,
-          "player_id": 692473,
-          "game_pk": "846333",
-          "equipo": "Caliente de Durango",
-          "status": "pendiente"
-        }
-      ],
-      "Acereros del Norte": [
-        {
-          "nombre": "Alan Trejo",
-          "prob": 67.1,
-          "player_id": 676701,
-          "game_pk": "846333",
-          "equipo": "Acereros del Norte",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Aldo Nunez",
-          "prob": 67.1,
-          "player_id": 800096,
-          "game_pk": "846333",
-          "equipo": "Acereros del Norte",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Andretty Cordero",
-          "prob": 67.1,
-          "player_id": 650957,
-          "game_pk": "846333",
-          "equipo": "Acereros del Norte",
-          "status": "pendiente"
-        }
-      ]
-    }
+    "LMB": {}
   },
   "llm_analysis": {
     "2026-06-23___WNBA___Las Vegas Aces___New York Liberty": {
@@ -20962,34 +20161,34 @@
   "llm_sections": {
     "MLB": {
       "equipo": {
-        "total": 6,
-        "acertados": 3,
-        "fallidos": 3,
-        "win_rate": 50.0
+        "total": 3,
+        "acertados": 2,
+        "fallidos": 1,
+        "win_rate": 66.7
       },
       "marcador": {
-        "total": 6,
-        "acertados": 3,
-        "fallidos": 3,
-        "win_rate": 50.0
+        "total": 3,
+        "acertados": 1,
+        "fallidos": 2,
+        "win_rate": 33.3
       },
       "lanzadores": {
-        "total": 6,
-        "acertados": 3,
-        "fallidos": 3,
-        "win_rate": 50.0
+        "total": 3,
+        "acertados": 2,
+        "fallidos": 1,
+        "win_rate": 66.7
       },
       "bateadores": {
-        "total": 6,
-        "acertados": 3,
-        "fallidos": 3,
-        "win_rate": 50.0
+        "total": 3,
+        "acertados": 2,
+        "fallidos": 1,
+        "win_rate": 66.7
       },
       "relevo": {
-        "total": 6,
-        "acertados": 3,
-        "fallidos": 3,
-        "win_rate": 50.0
+        "total": 3,
+        "acertados": 2,
+        "fallidos": 1,
+        "win_rate": 66.7
       }
     }
   }
