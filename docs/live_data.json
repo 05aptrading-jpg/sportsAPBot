@@ -1,5 +1,5 @@
 {
-  "fecha": "18/07/2026 23:02",
+  "fecha": "18/07/2026 23:17",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784469600,
@@ -6513,13 +6513,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-18",
-      "status_emoji": "🔴",
+      "status_emoji": "⏳",
       "fav_team": "Acereros del Norte",
       "opp_team": "Caliente de Durango",
       "score_fav": "5",
       "score_opp": "10",
-      "state": "In Progress",
-      "result": "live",
+      "state": "Game Over",
+      "result": "pending",
       "home_team": "Acereros del Norte",
       "away_team": "Caliente de Durango",
       "label": "📋",
@@ -6564,11 +6564,11 @@
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 3,
+        "balls": 3,
+        "strikes": 3,
         "away_runs": 10,
         "home_runs": 5,
         "away_hits": 13,
@@ -6582,9 +6582,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "10",
         "opp_score": "5",
         "score_fav": "10",
@@ -6716,7 +6716,7 @@
   "autorizados": [
     6099564810
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": true,
   "live_data": {
     "401816143": {
@@ -8609,9 +8609,9 @@
       }
     },
     "846333": {
-      "is_live": true,
+      "is_live": false,
       "is_final": false,
-      "status": "In Progress",
+      "status": "Game Over",
       "away_runs": 5,
       "home_runs": 10,
       "away_team_name": "Caliente de Durango",
@@ -8656,11 +8656,11 @@
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 3,
+        "balls": 3,
+        "strikes": 3,
         "away_runs": 10,
         "home_runs": 5,
         "away_hits": 13,
@@ -8674,9 +8674,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "10",
         "opp_score": "5",
         "score_fav": "10",
@@ -8694,7 +8694,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "18/07/2026 23:02",
+  "updated_at": "18/07/2026 23:17",
   "stats": {
     "total": 2,
     "acertados": 2,
@@ -9181,7 +9181,7 @@
           "player_id": 692473,
           "game_pk": "846333",
           "equipo": "Caliente de Durango",
-          "status": "cumplio"
+          "status": "pendiente"
         }
       ],
       "Acereros del Norte": [
@@ -9191,7 +9191,7 @@
           "player_id": 676701,
           "game_pk": "846333",
           "equipo": "Acereros del Norte",
-          "status": "cumplio"
+          "status": "pendiente"
         },
         {
           "nombre": "Aldo Nunez",
@@ -9199,7 +9199,7 @@
           "player_id": 800096,
           "game_pk": "846333",
           "equipo": "Acereros del Norte",
-          "status": "cumplio"
+          "status": "pendiente"
         },
         {
           "nombre": "Andretty Cordero",
@@ -9207,7 +9207,7 @@
           "player_id": 650957,
           "game_pk": "846333",
           "equipo": "Acereros del Norte",
-          "status": "cumplio"
+          "status": "pendiente"
         }
       ]
     }
