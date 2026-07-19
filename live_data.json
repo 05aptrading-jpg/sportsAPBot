@@ -1,5 +1,5 @@
 {
-  "fecha": "18/07/2026 22:32",
+  "fecha": "18/07/2026 22:47",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784469600,
@@ -3706,13 +3706,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-18",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Detroit Tigers",
       "opp_team": "Los Angeles Angels",
       "score_fav": "7",
       "score_opp": "0",
-      "state": "Bottom 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 824008,
       "fav_abbr": "DET",
@@ -3761,13 +3761,13 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
-        "balls": 2,
-        "strikes": 2,
+        "outs": 3,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 7,
         "home_runs": 0,
         "away_hits": 11,
-        "home_hits": 6,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Detroit Tigers",
@@ -3777,9 +3777,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "7",
         "opp_score": "0",
         "score_fav": "7",
@@ -5206,9 +5206,9 @@
       "status_emoji": "🔴",
       "fav_team": "Athletics",
       "opp_team": "Washington Nationals",
-      "score_fav": "14",
-      "score_opp": "0",
-      "state": "Top 8th",
+      "score_fav": "15",
+      "score_opp": "1",
+      "state": "Top 9th",
       "result": "live",
       "label": "📋",
       "game_pk": 824979,
@@ -5248,19 +5248,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 1,
             "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": true,
-        "inning_ordinal": "8th",
+        "inning_ordinal": "9th",
         "outs": 2,
         "balls": 1,
         "strikes": 0,
-        "away_runs": 0,
-        "home_runs": 14,
-        "away_hits": 2,
-        "home_hits": 12,
+        "away_runs": 1,
+        "home_runs": 15,
+        "away_hits": 4,
+        "home_hits": 13,
         "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Washington Nationals",
@@ -5273,10 +5277,10 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
-        "opp_score": "14",
-        "score_fav": "0",
-        "score_opp": "14"
+        "fav_score": "1",
+        "opp_score": "15",
+        "score_fav": "1",
+        "score_opp": "15"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/WSH.png&h=40&w=40",
@@ -6513,7 +6517,7 @@
       "fav_team": "Acereros del Norte",
       "opp_team": "Caliente de Durango",
       "score_fav": "5",
-      "score_opp": "8",
+      "score_opp": "10",
       "state": "In Progress",
       "result": "live",
       "home_team": "Acereros del Norte",
@@ -6551,19 +6555,19 @@
             "home_runs": 0
           },
           {
-            "away_runs": 1,
+            "away_runs": 3,
             "home_runs": 0
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 8,
+        "outs": 0,
+        "balls": 3,
+        "strikes": 2,
+        "away_runs": 10,
         "home_runs": 5,
-        "away_hits": 11,
+        "away_hits": 12,
         "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
@@ -6577,9 +6581,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "8",
+        "fav_score": "10",
         "opp_score": "5",
-        "score_fav": "8",
+        "score_fav": "10",
         "score_opp": "5"
       },
       "llm_ir_favorito": "SÍ",
@@ -7022,9 +7026,9 @@
       }
     },
     "824008": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 7,
       "home_runs": 0,
       "away_team_name": "Los Angeles Angels",
@@ -7071,13 +7075,13 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
-        "balls": 2,
-        "strikes": 2,
+        "outs": 3,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 7,
         "home_runs": 0,
         "away_hits": 11,
-        "home_hits": 6,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Detroit Tigers",
@@ -7087,9 +7091,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "7",
         "opp_score": "0",
         "score_fav": "7",
@@ -7861,9 +7865,9 @@
     "824979": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 8th",
-      "away_runs": 14,
-      "home_runs": 0,
+      "status": "Top 9th",
+      "away_runs": 15,
+      "home_runs": 1,
       "away_team_name": "Washington Nationals",
       "home_team_name": "Athletics",
       "linescore": {
@@ -7898,19 +7902,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 1
+          },
+          {
+            "away_runs": 1,
             "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": true,
-        "inning_ordinal": "8th",
+        "inning_ordinal": "9th",
         "outs": 2,
         "balls": 1,
         "strikes": 0,
-        "away_runs": 0,
-        "home_runs": 14,
-        "away_hits": 2,
-        "home_hits": 12,
+        "away_runs": 1,
+        "home_runs": 15,
+        "away_hits": 4,
+        "home_hits": 13,
         "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Washington Nationals",
@@ -7923,10 +7931,10 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
-        "opp_score": "14",
-        "score_fav": "0",
-        "score_opp": "14"
+        "fav_score": "1",
+        "opp_score": "15",
+        "score_fav": "1",
+        "score_opp": "15"
       }
     },
     "823763": {
@@ -8601,7 +8609,7 @@
       "is_final": false,
       "status": "In Progress",
       "away_runs": 5,
-      "home_runs": 8,
+      "home_runs": 10,
       "away_team_name": "Caliente de Durango",
       "home_team_name": "Acereros del Norte",
       "linescore": {
@@ -8635,19 +8643,19 @@
             "home_runs": 0
           },
           {
-            "away_runs": 1,
+            "away_runs": 3,
             "home_runs": 0
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 8,
+        "outs": 0,
+        "balls": 3,
+        "strikes": 2,
+        "away_runs": 10,
         "home_runs": 5,
-        "away_hits": 11,
+        "away_hits": 12,
         "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
@@ -8661,9 +8669,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "8",
+        "fav_score": "10",
         "opp_score": "5",
-        "score_fav": "8",
+        "score_fav": "10",
         "score_opp": "5"
       }
     },
@@ -8678,7 +8686,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "18/07/2026 22:32",
+  "updated_at": "18/07/2026 22:47",
   "stats": {
     "total": 2,
     "acertados": 2,
@@ -9200,7 +9208,7 @@
           "player_id": 682985,
           "game_pk": "824008",
           "equipo": "Detroit Tigers",
-          "status": "pendiente"
+          "status": "fallido"
         },
         {
           "nombre": "Hao-Yu Lee",
@@ -9208,7 +9216,7 @@
           "player_id": 701678,
           "game_pk": "824008",
           "equipo": "Detroit Tigers",
-          "status": "pendiente"
+          "status": "fallido"
         },
         {
           "nombre": "Kevin McGonigle",
@@ -9226,7 +9234,7 @@
           "player_id": 685133,
           "game_pk": "824008",
           "equipo": "Los Angeles Angels",
-          "status": "pendiente"
+          "status": "fallido"
         },
         {
           "nombre": "Nolan Schanuel",
@@ -9242,7 +9250,7 @@
           "player_id": 642350,
           "game_pk": "824008",
           "equipo": "Los Angeles Angels",
-          "status": "pendiente"
+          "status": "fallido"
         }
       ]
     },
