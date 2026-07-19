@@ -1,5 +1,5 @@
 {
-  "fecha": "19/07/2026 15:47",
+  "fecha": "19/07/2026 16:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784556000,
@@ -2188,7 +2188,7 @@
       "opp_team": "Athletics",
       "score_fav": "5",
       "score_opp": "1",
-      "state": "Top 6th",
+      "state": "Top 7th",
       "result": "live",
       "label": "🎯",
       "game_pk": 824978,
@@ -2221,20 +2221,24 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": true,
-        "inning_ordinal": "6th",
+        "inning_ordinal": "7th",
         "outs": 2,
-        "balls": 2,
-        "strikes": 1,
+        "balls": 1,
+        "strikes": 0,
         "away_runs": 5,
         "home_runs": 1,
-        "away_hits": 4,
-        "home_hits": 6,
+        "away_hits": 6,
+        "home_hits": 7,
         "away_errors": 0,
-        "home_errors": 1,
+        "home_errors": 0,
         "away_team_name": "Washington Nationals",
         "home_team_name": "Athletics",
         "bases": {
@@ -2499,7 +2503,7 @@
       "opp_team": "Los Angeles Angels",
       "score_fav": "1",
       "score_opp": "2",
-      "state": "Bottom 5th",
+      "state": "Bottom 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 824007,
@@ -2528,14 +2532,18 @@
           {
             "away_runs": 0,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 2,
+        "inning_ordinal": "6th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 1,
         "home_runs": 2,
         "away_hits": 2,
@@ -2751,9 +2759,9 @@
       "status_emoji": "🔴",
       "fav_team": "Seattle Mariners",
       "opp_team": "San Francisco Giants",
-      "score_fav": "3",
+      "score_fav": "4",
       "score_opp": "3",
-      "state": "End 5th",
+      "state": "Bottom 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 823113,
@@ -2782,18 +2790,22 @@
           {
             "away_runs": 1,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 1,
+        "inning_ordinal": "6th",
+        "outs": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 3,
-        "home_runs": 3,
+        "home_runs": 4,
         "away_hits": 4,
-        "home_hits": 7,
+        "home_hits": 8,
         "away_errors": 2,
         "home_errors": 0,
         "away_team_name": "San Francisco Giants",
@@ -2807,9 +2819,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "3",
+        "opp_score": "4",
         "score_fav": "3",
-        "score_opp": "3"
+        "score_opp": "4"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SEA.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SF.png&h=40&w=40",
@@ -2867,13 +2879,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-19",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "Colorado Rockies",
       "opp_team": "Cincinnati Reds",
       "score_fav": "6",
       "score_opp": "9",
-      "state": "Bottom 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "loss",
       "label": "📋",
       "game_pk": 824330,
       "fav_abbr": "COL",
@@ -2922,9 +2934,9 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 1,
+        "outs": 3,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 9,
         "home_runs": 6,
         "away_hits": 10,
@@ -2938,9 +2950,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "9",
         "opp_score": "6",
         "score_fav": "9",
@@ -3007,7 +3019,7 @@
       "opp_team": "St. Louis Cardinals",
       "score_fav": "0",
       "score_opp": "7",
-      "state": "Bottom 5th",
+      "state": "Middle 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 825057,
@@ -3036,13 +3048,17 @@
           {
             "away_runs": 2,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 0,
-        "balls": 3,
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
+        "outs": 3,
+        "balls": 2,
         "strikes": 2,
         "away_runs": 7,
         "home_runs": 0,
@@ -4339,7 +4355,7 @@
       "status_emoji": "🔴",
       "fav_team": "Diablos Rojos del Mexico",
       "opp_team": "Pericos de Puebla",
-      "score_fav": "1",
+      "score_fav": "5",
       "score_opp": "1",
       "state": "In Progress",
       "result": "live",
@@ -4371,19 +4387,19 @@
           },
           {
             "away_runs": 1,
-            "home_runs": 0
+            "home_runs": 4
           }
         ],
         "current_inning": 6,
         "is_top": false,
         "inning_ordinal": "6th",
-        "outs": 1,
-        "balls": 0,
+        "outs": 2,
+        "balls": 1,
         "strikes": 0,
         "away_runs": 1,
-        "home_runs": 1,
+        "home_runs": 5,
         "away_hits": 6,
-        "home_hits": 8,
+        "home_hits": 11,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Pericos de Puebla",
@@ -4397,9 +4413,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "1",
-        "opp_score": "1",
+        "opp_score": "5",
         "score_fav": "1",
-        "score_opp": "1"
+        "score_opp": "5"
       },
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Mejor récord y ventaja de local.",
@@ -5431,7 +5447,7 @@
     "824978": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 6th",
+      "status": "Top 7th",
       "away_runs": 5,
       "home_runs": 1,
       "away_team_name": "Athletics",
@@ -5461,20 +5477,24 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": true,
-        "inning_ordinal": "6th",
+        "inning_ordinal": "7th",
         "outs": 2,
-        "balls": 2,
-        "strikes": 1,
+        "balls": 1,
+        "strikes": 0,
         "away_runs": 5,
         "home_runs": 1,
-        "away_hits": 4,
-        "home_hits": 6,
+        "away_hits": 6,
+        "home_hits": 7,
         "away_errors": 0,
-        "home_errors": 1,
+        "home_errors": 0,
         "away_team_name": "Washington Nationals",
         "home_team_name": "Athletics",
         "bases": {
@@ -5570,7 +5590,7 @@
     "824007": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 5th",
+      "status": "Bottom 6th",
       "away_runs": 1,
       "home_runs": 2,
       "away_team_name": "Los Angeles Angels",
@@ -5596,14 +5616,18 @@
           {
             "away_runs": 0,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 2,
+        "inning_ordinal": "6th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 1,
         "home_runs": 2,
         "away_hits": 2,
@@ -5704,8 +5728,8 @@
     "823113": {
       "is_live": true,
       "is_final": false,
-      "status": "End 5th",
-      "away_runs": 3,
+      "status": "Bottom 6th",
+      "away_runs": 4,
       "home_runs": 3,
       "away_team_name": "San Francisco Giants",
       "home_team_name": "Seattle Mariners",
@@ -5730,18 +5754,22 @@
           {
             "away_runs": 1,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 1
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 1,
+        "inning_ordinal": "6th",
+        "outs": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 3,
-        "home_runs": 3,
+        "home_runs": 4,
         "away_hits": 4,
-        "home_hits": 7,
+        "home_hits": 8,
         "away_errors": 2,
         "home_errors": 0,
         "away_team_name": "San Francisco Giants",
@@ -5755,15 +5783,15 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "3",
+        "opp_score": "4",
         "score_fav": "3",
-        "score_opp": "3"
+        "score_opp": "4"
       }
     },
     "824330": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 6,
       "home_runs": 9,
       "away_team_name": "Cincinnati Reds",
@@ -5810,9 +5838,9 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 1,
+        "outs": 3,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 9,
         "home_runs": 6,
         "away_hits": 10,
@@ -5826,9 +5854,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "9",
         "opp_score": "6",
         "score_fav": "9",
@@ -5838,7 +5866,7 @@
     "825057": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 5th",
+      "status": "Middle 6th",
       "away_runs": 0,
       "home_runs": 7,
       "away_team_name": "St. Louis Cardinals",
@@ -5864,13 +5892,17 @@
           {
             "away_runs": 2,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 0,
-        "balls": 3,
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
+        "outs": 3,
+        "balls": 2,
         "strikes": 2,
         "away_runs": 7,
         "home_runs": 0,
@@ -6573,7 +6605,7 @@
       "is_live": true,
       "is_final": false,
       "status": "In Progress",
-      "away_runs": 1,
+      "away_runs": 5,
       "home_runs": 1,
       "away_team_name": "Pericos de Puebla",
       "home_team_name": "Diablos Rojos del Mexico",
@@ -6601,19 +6633,19 @@
           },
           {
             "away_runs": 1,
-            "home_runs": 0
+            "home_runs": 4
           }
         ],
         "current_inning": 6,
         "is_top": false,
         "inning_ordinal": "6th",
-        "outs": 1,
-        "balls": 0,
+        "outs": 2,
+        "balls": 1,
         "strikes": 0,
         "away_runs": 1,
-        "home_runs": 1,
+        "home_runs": 5,
         "away_hits": 6,
-        "home_hits": 8,
+        "home_hits": 11,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Pericos de Puebla",
@@ -6627,9 +6659,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "1",
-        "opp_score": "1",
+        "opp_score": "5",
         "score_fav": "1",
-        "score_opp": "1"
+        "score_opp": "5"
       }
     },
     "846287": {
@@ -6899,7 +6931,7 @@
       }
     }
   },
-  "updated_at": "19/07/2026 15:47",
+  "updated_at": "19/07/2026 16:00",
   "stats": {
     "total": 0,
     "acertados": 0,
@@ -17839,8 +17871,8 @@
       "away": "Chicago Sky",
       "home_abbr": "ATL",
       "away_abbr": "CHI",
-      "home_score": 62,
-      "away_score": 61,
+      "home_score": 72,
+      "away_score": 71,
       "home_linescores": [
         {
           "period": 1,
@@ -17856,6 +17888,11 @@
           "period": 3,
           "value": 13,
           "display": "13"
+        },
+        {
+          "period": 4,
+          "value": 10,
+          "display": "10"
         }
       ],
       "away_linescores": [
@@ -17873,11 +17910,16 @@
           "period": 3,
           "value": 27,
           "display": "27"
+        },
+        {
+          "period": 4,
+          "value": 10,
+          "display": "10"
         }
       ],
-      "clock": "0.0",
-      "period": 3,
-      "state": "Q3 0.0",
+      "clock": "6:18",
+      "period": 4,
+      "state": "Q4 6:18",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/ATL.png&h=40&w=40",
