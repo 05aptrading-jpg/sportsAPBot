@@ -1,5 +1,5 @@
 {
-  "fecha": "18/07/2026 22:47",
+  "fecha": "18/07/2026 23:02",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784469600,
@@ -3777,9 +3777,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "7",
         "opp_score": "0",
         "score_fav": "7",
@@ -5203,13 +5203,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-18",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Athletics",
       "opp_team": "Washington Nationals",
       "score_fav": "15",
       "score_opp": "1",
-      "state": "Top 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 824979,
       "fav_abbr": "ATH",
@@ -5258,8 +5258,8 @@
         "current_inning": 9,
         "is_top": true,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 1,
+        "outs": 3,
+        "balls": 2,
         "strikes": 0,
         "away_runs": 1,
         "home_runs": 15,
@@ -5274,9 +5274,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "1",
         "opp_score": "15",
         "score_fav": "1",
@@ -6557,18 +6557,22 @@
           {
             "away_runs": 3,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 0,
-        "balls": 3,
-        "strikes": 2,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 10,
         "home_runs": 5,
-        "away_hits": 12,
-        "home_hits": 6,
+        "away_hits": 13,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Caliente de Durango",
@@ -7091,9 +7095,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "7",
         "opp_score": "0",
         "score_fav": "7",
@@ -7863,9 +7867,9 @@
       }
     },
     "824979": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Top 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 15,
       "home_runs": 1,
       "away_team_name": "Washington Nationals",
@@ -7912,8 +7916,8 @@
         "current_inning": 9,
         "is_top": true,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 1,
+        "outs": 3,
+        "balls": 2,
         "strikes": 0,
         "away_runs": 1,
         "home_runs": 15,
@@ -7928,9 +7932,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "1",
         "opp_score": "15",
         "score_fav": "1",
@@ -8645,18 +8649,22 @@
           {
             "away_runs": 3,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 0,
-        "balls": 3,
-        "strikes": 2,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 10,
         "home_runs": 5,
-        "away_hits": 12,
-        "home_hits": 6,
+        "away_hits": 13,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Caliente de Durango",
@@ -8686,7 +8694,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "18/07/2026 22:47",
+  "updated_at": "18/07/2026 23:02",
   "stats": {
     "total": 2,
     "acertados": 2,
@@ -9148,113 +9156,61 @@
     }
   },
   "hits_board": {
-    "MLB": {
-      "Washington Nationals": [
+    "MLB": {},
+    "LMB": {
+      "Caliente de Durango": [
         {
-          "nombre": "Luis García Jr.",
-          "prob": 71.7,
-          "player_id": 671277,
-          "game_pk": "824979",
-          "equipo": "Washington Nationals",
+          "nombre": "Antonio Castaneda",
+          "prob": 65.9,
+          "player_id": 692270,
+          "game_pk": "846333",
+          "equipo": "Caliente de Durango",
           "status": "pendiente"
         },
         {
-          "nombre": "Keibert Ruiz",
-          "prob": 100.0,
-          "player_id": 660688,
-          "game_pk": "824979",
-          "equipo": "Washington Nationals",
-          "status": "cumplio"
-        },
-        {
-          "nombre": "CJ Abrams",
-          "prob": 67.9,
-          "player_id": 682928,
-          "game_pk": "824979",
-          "equipo": "Washington Nationals",
-          "status": "pendiente"
-        }
-      ],
-      "Athletics": [
-        {
-          "nombre": "Joshua Kuroda-Grauer",
-          "prob": 100.0,
-          "player_id": 811965,
-          "game_pk": "824979",
-          "equipo": "Athletics",
-          "status": "cumplio"
-        },
-        {
-          "nombre": "Donovan Walton",
-          "prob": 72.4,
-          "player_id": 622268,
-          "game_pk": "824979",
-          "equipo": "Athletics",
+          "nombre": "C.J. Hinojosa",
+          "prob": 65.9,
+          "player_id": 546994,
+          "game_pk": "846333",
+          "equipo": "Caliente de Durango",
           "status": "pendiente"
         },
         {
-          "nombre": "Jacob Wilson",
+          "nombre": "Christopher Escarrega",
           "prob": 100.0,
-          "player_id": 805779,
-          "game_pk": "824979",
-          "equipo": "Athletics",
+          "player_id": 692473,
+          "game_pk": "846333",
+          "equipo": "Caliente de Durango",
           "status": "cumplio"
         }
       ],
-      "Detroit Tigers": [
+      "Acereros del Norte": [
         {
-          "nombre": "Riley Greene",
-          "prob": 68.7,
-          "player_id": 682985,
-          "game_pk": "824008",
-          "equipo": "Detroit Tigers",
-          "status": "fallido"
-        },
-        {
-          "nombre": "Hao-Yu Lee",
-          "prob": 67.6,
-          "player_id": 701678,
-          "game_pk": "824008",
-          "equipo": "Detroit Tigers",
-          "status": "fallido"
-        },
-        {
-          "nombre": "Kevin McGonigle",
+          "nombre": "Alan Trejo",
           "prob": 100.0,
-          "player_id": 805808,
-          "game_pk": "824008",
-          "equipo": "Detroit Tigers",
-          "status": "cumplio"
-        }
-      ],
-      "Los Angeles Angels": [
-        {
-          "nombre": "Wade Meckler",
-          "prob": 71.8,
-          "player_id": 685133,
-          "game_pk": "824008",
-          "equipo": "Los Angeles Angels",
-          "status": "fallido"
-        },
-        {
-          "nombre": "Nolan Schanuel",
-          "prob": 100.0,
-          "player_id": 694384,
-          "game_pk": "824008",
-          "equipo": "Los Angeles Angels",
+          "player_id": 676701,
+          "game_pk": "846333",
+          "equipo": "Acereros del Norte",
           "status": "cumplio"
         },
         {
-          "nombre": "Jose Siri",
-          "prob": 66.7,
-          "player_id": 642350,
-          "game_pk": "824008",
-          "equipo": "Los Angeles Angels",
-          "status": "fallido"
+          "nombre": "Aldo Nunez",
+          "prob": 100.0,
+          "player_id": 800096,
+          "game_pk": "846333",
+          "equipo": "Acereros del Norte",
+          "status": "cumplio"
+        },
+        {
+          "nombre": "Andretty Cordero",
+          "prob": 100.0,
+          "player_id": 650957,
+          "game_pk": "846333",
+          "equipo": "Acereros del Norte",
+          "status": "cumplio"
         }
       ]
-    },
-    "LMB": {}
+    }
   },
   "llm_analysis": {
     "2026-06-23___WNBA___Las Vegas Aces___New York Liberty": {
