@@ -1,5 +1,5 @@
 {
-  "fecha": "19/07/2026 17:32",
+  "fecha": "19/07/2026 17:47",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784556000,
@@ -2323,7 +2323,7 @@
       "opp_team": "Tigres de Quintana Roo",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "home_team": "Olmecas de Tabasco",
       "away_team": "Tigres de Quintana Roo",
@@ -2357,7 +2357,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -2436,15 +2436,15 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 1,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
-        "home_hits": 0,
+        "away_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Toros de Tijuana",
@@ -3056,13 +3056,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-19",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Arizona Diamondbacks",
       "opp_team": "St. Louis Cardinals",
-      "score_fav": "7",
+      "score_fav": "8",
       "score_opp": "7",
-      "state": "Bottom 10th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 825057,
       "fav_abbr": "ARI",
@@ -3109,19 +3109,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 10,
         "is_top": false,
         "inning_ordinal": "10th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 7,
-        "home_runs": 7,
+        "home_runs": 8,
         "away_hits": 13,
-        "home_hits": 9,
+        "home_hits": 10,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "St. Louis Cardinals",
@@ -3131,13 +3131,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "7",
-        "opp_score": "7",
+        "opp_score": "8",
         "score_fav": "7",
-        "score_opp": "7"
+        "score_opp": "8"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ARI.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/STL.png&h=40&w=40",
@@ -4545,7 +4545,7 @@
       "fav_team": "Sultanes de Monterrey",
       "opp_team": "Rieleros de Aguascalientes",
       "score_fav": "0",
-      "score_opp": "0",
+      "score_opp": "2",
       "state": "In Progress",
       "result": "live",
       "home_team": "Sultanes de Monterrey",
@@ -4563,19 +4563,19 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
+            "away_runs": 2,
             "home_runs": 0
           }
         ],
         "current_inning": 3,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "3rd",
-        "outs": 0,
-        "balls": 2,
-        "strikes": 2,
-        "away_runs": 0,
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 2,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 3,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -4589,9 +4589,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "2",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "2",
         "score_opp": "0"
       },
       "llm_ir_favorito": "SÍ",
@@ -4752,17 +4752,22 @@
       "opp_team": "Leones de Yucatan",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Scheduled",
+      "state": "Warmup",
       "result": "pending",
       "home_team": "Bravos de Leon",
       "away_team": "Leones de Yucatan",
       "label": "📋",
       "game_pk": 846812,
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4781,7 +4786,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4940,17 +4945,22 @@
       "opp_team": "Caliente de Durango",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "home_team": "Acereros del Norte",
       "away_team": "Caliente de Durango",
       "label": "📋",
       "game_pk": 846327,
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4969,7 +4979,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5610,7 +5620,7 @@
     "846759": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Tigres de Quintana Roo",
@@ -5643,7 +5653,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5666,15 +5676,15 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 1,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
-        "home_hits": 0,
+        "away_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Toros de Tijuana",
@@ -5994,10 +6004,10 @@
       }
     },
     "825057": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 10th",
-      "away_runs": 7,
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
+      "away_runs": 8,
       "home_runs": 7,
       "away_team_name": "St. Louis Cardinals",
       "home_team_name": "Arizona Diamondbacks",
@@ -6041,19 +6051,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 10,
         "is_top": false,
         "inning_ordinal": "10th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 7,
-        "home_runs": 7,
+        "home_runs": 8,
         "away_hits": 13,
-        "home_hits": 9,
+        "home_hits": 10,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "St. Louis Cardinals",
@@ -6063,13 +6073,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "7",
-        "opp_score": "7",
+        "opp_score": "8",
         "score_fav": "7",
-        "score_opp": "7"
+        "score_opp": "8"
       }
     },
     "824897": {
@@ -6827,7 +6837,7 @@
       "is_final": false,
       "status": "In Progress",
       "away_runs": 0,
-      "home_runs": 0,
+      "home_runs": 2,
       "away_team_name": "Rieleros de Aguascalientes",
       "home_team_name": "Sultanes de Monterrey",
       "linescore": {
@@ -6841,19 +6851,19 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
+            "away_runs": 2,
             "home_runs": 0
           }
         ],
         "current_inning": 3,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "3rd",
-        "outs": 0,
-        "balls": 2,
-        "strikes": 2,
-        "away_runs": 0,
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 2,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 3,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -6867,9 +6877,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "2",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "2",
         "score_opp": "0"
       }
     },
@@ -6919,16 +6929,21 @@
     "846812": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Leones de Yucatan",
       "home_team_name": "Bravos de Leon",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -6947,7 +6962,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -6995,16 +7010,21 @@
     "846327": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Caliente de Durango",
       "home_team_name": "Acereros del Norte",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -7023,7 +7043,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -7107,7 +7127,7 @@
       }
     }
   },
-  "updated_at": "19/07/2026 17:32",
+  "updated_at": "19/07/2026 17:47",
   "stats": {
     "total": 0,
     "acertados": 0,
@@ -18186,8 +18206,8 @@
       "away": "Connecticut Sun",
       "home_abbr": "PHX",
       "away_abbr": "CON",
-      "home_score": 22,
-      "away_score": 20,
+      "home_score": 35,
+      "away_score": 29,
       "home_linescores": [
         {
           "period": 1,
@@ -18196,8 +18216,8 @@
         },
         {
           "period": 2,
-          "value": 4,
-          "display": "4"
+          "value": 17,
+          "display": "17"
         }
       ],
       "away_linescores": [
@@ -18208,13 +18228,13 @@
         },
         {
           "period": 2,
-          "value": 8,
-          "display": "8"
+          "value": 17,
+          "display": "17"
         }
       ],
-      "clock": "6:57",
+      "clock": "1:54",
       "period": 2,
-      "state": "Q2 6:57",
+      "state": "Q2 1:54",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/PHX.png&h=40&w=40",
