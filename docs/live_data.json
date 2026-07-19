@@ -1,5 +1,5 @@
 {
-  "fecha": "18/07/2026 23:17",
+  "fecha": "18/07/2026 23:32",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784469600,
@@ -6513,13 +6513,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-18",
-      "status_emoji": "⏳",
+      "status_emoji": "❌",
       "fav_team": "Acereros del Norte",
       "opp_team": "Caliente de Durango",
       "score_fav": "5",
       "score_opp": "10",
-      "state": "Game Over",
-      "result": "pending",
+      "state": "Final",
+      "result": "loss",
       "home_team": "Acereros del Norte",
       "away_team": "Caliente de Durango",
       "label": "📋",
@@ -6582,9 +6582,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "10",
         "opp_score": "5",
         "score_fav": "10",
@@ -8610,8 +8610,8 @@
     },
     "846333": {
       "is_live": false,
-      "is_final": false,
-      "status": "Game Over",
+      "is_final": true,
+      "status": "Final",
       "away_runs": 5,
       "home_runs": 10,
       "away_team_name": "Caliente de Durango",
@@ -8674,9 +8674,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "10",
         "opp_score": "5",
         "score_fav": "10",
@@ -8694,7 +8694,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "18/07/2026 23:17",
+  "updated_at": "18/07/2026 23:32",
   "stats": {
     "total": 2,
     "acertados": 2,
@@ -9157,60 +9157,7 @@
   },
   "hits_board": {
     "MLB": {},
-    "LMB": {
-      "Caliente de Durango": [
-        {
-          "nombre": "Antonio Castaneda",
-          "prob": 65.9,
-          "player_id": 692270,
-          "game_pk": "846333",
-          "equipo": "Caliente de Durango",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "C.J. Hinojosa",
-          "prob": 65.9,
-          "player_id": 546994,
-          "game_pk": "846333",
-          "equipo": "Caliente de Durango",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Christopher Escarrega",
-          "prob": 100.0,
-          "player_id": 692473,
-          "game_pk": "846333",
-          "equipo": "Caliente de Durango",
-          "status": "pendiente"
-        }
-      ],
-      "Acereros del Norte": [
-        {
-          "nombre": "Alan Trejo",
-          "prob": 100.0,
-          "player_id": 676701,
-          "game_pk": "846333",
-          "equipo": "Acereros del Norte",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Aldo Nunez",
-          "prob": 100.0,
-          "player_id": 800096,
-          "game_pk": "846333",
-          "equipo": "Acereros del Norte",
-          "status": "pendiente"
-        },
-        {
-          "nombre": "Andretty Cordero",
-          "prob": 100.0,
-          "player_id": 650957,
-          "game_pk": "846333",
-          "equipo": "Acereros del Norte",
-          "status": "pendiente"
-        }
-      ]
-    }
+    "LMB": {}
   },
   "llm_analysis": {
     "2026-06-23___WNBA___Las Vegas Aces___New York Liberty": {
