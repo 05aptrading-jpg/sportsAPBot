@@ -1,5 +1,5 @@
 {
-  "fecha": "19/07/2026 17:02",
+  "fecha": "19/07/2026 17:17",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784556000,
@@ -2417,7 +2417,7 @@
       "opp_team": "Dorados de Chihuahua",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Pre-Game",
+      "state": "Delayed Start",
       "result": "pending",
       "home_team": "Dorados de Chihuahua",
       "away_team": "Toros de Tijuana",
@@ -2451,7 +2451,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Delayed Start",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -2582,9 +2582,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "2",
         "opp_score": "3",
         "score_fav": "2",
@@ -3056,7 +3056,7 @@
       "opp_team": "St. Louis Cardinals",
       "score_fav": "7",
       "score_opp": "7",
-      "state": "Bottom 8th",
+      "state": "Middle 9th",
       "result": "live",
       "label": "📋",
       "game_pk": 825057,
@@ -3097,17 +3097,21 @@
           {
             "away_runs": 0,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 2,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 3,
         "balls": 2,
         "strikes": 2,
         "away_runs": 7,
         "home_runs": 7,
-        "away_hits": 11,
+        "away_hits": 12,
         "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
@@ -4397,13 +4401,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-19",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Diablos Rojos del Mexico",
       "opp_team": "Pericos de Puebla",
-      "score_fav": "10",
+      "score_fav": "12",
       "score_opp": "1",
-      "state": "In Progress",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "home_team": "Diablos Rojos del Mexico",
       "away_team": "Pericos de Puebla",
       "label": "📋",
@@ -4440,19 +4444,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 1,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 0,
+        "strikes": 2,
         "away_runs": 1,
-        "home_runs": 10,
+        "home_runs": 12,
         "away_hits": 6,
-        "home_hits": 16,
+        "home_hits": 17,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Pericos de Puebla",
@@ -4462,13 +4470,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "1",
-        "opp_score": "10",
+        "opp_score": "12",
         "score_fav": "1",
-        "score_opp": "10"
+        "score_opp": "12"
       },
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Mejor récord y ventaja de local.",
@@ -4540,14 +4548,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "inning_ordinal": "2nd",
+        "outs": 3,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -4628,17 +4640,22 @@
       "opp_team": "Saraperos de Saltillo",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "home_team": "Charros de Jalisco",
       "away_team": "Saraperos de Saltillo",
       "label": "📋",
       "game_pk": 845924,
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4657,7 +4674,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5618,7 +5635,7 @@
     "846204": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Delayed Start",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Dorados de Chihuahua",
@@ -5651,7 +5668,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Delayed Start",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5724,9 +5741,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "2",
         "opp_score": "3",
         "score_fav": "2",
@@ -5961,7 +5978,7 @@
     "825057": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 8th",
+      "status": "Middle 9th",
       "away_runs": 7,
       "home_runs": 7,
       "away_team_name": "St. Louis Cardinals",
@@ -5999,17 +6016,21 @@
           {
             "away_runs": 0,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 2,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 3,
         "balls": 2,
         "strikes": 2,
         "away_runs": 7,
         "home_runs": 7,
-        "away_hits": 11,
+        "away_hits": 12,
         "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
@@ -6705,10 +6726,10 @@
       }
     },
     "846426": {
-      "is_live": true,
-      "is_final": false,
-      "status": "In Progress",
-      "away_runs": 10,
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
+      "away_runs": 12,
       "home_runs": 1,
       "away_team_name": "Pericos de Puebla",
       "home_team_name": "Diablos Rojos del Mexico",
@@ -6744,19 +6765,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 1,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 0,
+        "strikes": 2,
         "away_runs": 1,
-        "home_runs": 10,
+        "home_runs": 12,
         "away_hits": 6,
-        "home_hits": 16,
+        "home_hits": 17,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Pericos de Puebla",
@@ -6766,13 +6791,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "1",
-        "opp_score": "10",
+        "opp_score": "12",
         "score_fav": "1",
-        "score_opp": "10"
+        "score_opp": "12"
       }
     },
     "846287": {
@@ -6788,14 +6813,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "inning_ordinal": "2nd",
+        "outs": 3,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -6821,16 +6850,21 @@
     "845924": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Saraperos de Saltillo",
       "home_team_name": "Charros de Jalisco",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -6849,7 +6883,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -7047,7 +7081,7 @@
       }
     }
   },
-  "updated_at": "19/07/2026 17:02",
+  "updated_at": "19/07/2026 17:17",
   "stats": {
     "total": 0,
     "acertados": 0,
@@ -18121,19 +18155,31 @@
     {
       "game_date": "2026-07-19",
       "game_id": "401857082",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Phoenix Mercury",
       "away": "Connecticut Sun",
       "home_abbr": "PHX",
       "away_abbr": "CON",
-      "home_score": 0,
-      "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "home_score": 10,
+      "away_score": 10,
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 10,
+          "display": "10"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 10,
+          "display": "10"
+        }
+      ],
+      "clock": "3:14",
+      "period": 1,
+      "state": "Q1 3:14",
+      "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/PHX.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/CON.png&h=40&w=40",
