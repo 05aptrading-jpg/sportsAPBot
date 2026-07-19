@@ -1,5 +1,5 @@
 {
-  "fecha": "18/07/2026 20:02",
+  "fecha": "18/07/2026 20:17",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784469600,
@@ -3619,13 +3619,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 2,
-        "balls": 4,
+        "inning_ordinal": "9th",
+        "outs": 0,
+        "balls": 1,
         "strikes": 2,
         "away_runs": 3,
         "home_runs": 3,
@@ -3702,13 +3706,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-18",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Detroit Tigers",
       "opp_team": "Los Angeles Angels",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "4",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 824008,
       "fav_abbr": "DET",
@@ -3718,19 +3722,19 @@
       "linescore": {
         "innings": [
           {
-            "away_runs": 0,
+            "away_runs": 4,
             "home_runs": 0
           }
         ],
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 0,
+        "outs": 2,
+        "balls": 1,
+        "strikes": 2,
+        "away_runs": 4,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 3,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -3741,12 +3745,12 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
-        "fav_score": "0",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
+        "fav_score": "4",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "4",
         "score_opp": "0"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
@@ -4248,14 +4252,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": true,
-        "inning_ordinal": "6th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "inning_ordinal": "7th",
+        "outs": 2,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 3,
         "home_runs": 0,
         "away_hits": 6,
@@ -4471,9 +4479,9 @@
       "status_emoji": "🔴",
       "fav_team": "Seattle Mariners",
       "opp_team": "San Francisco Giants",
-      "score_fav": "0",
+      "score_fav": "3",
       "score_opp": "3",
-      "state": "Bottom 7th",
+      "state": "Top 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 823116,
@@ -4509,20 +4517,24 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 3
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 3,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 0,
+        "balls": 0,
         "strikes": 0,
         "away_runs": 3,
-        "home_runs": 0,
+        "home_runs": 3,
         "away_hits": 6,
-        "home_hits": 1,
-        "away_errors": 0,
+        "home_hits": 2,
+        "away_errors": 1,
         "home_errors": 1,
         "away_team_name": "San Francisco Giants",
         "home_team_name": "Seattle Mariners",
@@ -4535,9 +4547,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "0",
+        "opp_score": "3",
         "score_fav": "3",
-        "score_opp": "0"
+        "score_opp": "3"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SEA.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SF.png&h=40&w=40",
@@ -5143,13 +5155,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-18",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Athletics",
       "opp_team": "Washington Nationals",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "1",
+      "score_opp": "0",
+      "state": "Bottom 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 824979,
       "fav_abbr": "ATH",
@@ -5160,19 +5172,19 @@
         "innings": [
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 2
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 2,
         "away_hits": 0,
-        "home_hits": 0,
+        "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Washington Nationals",
@@ -5182,13 +5194,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "2",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "2"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/WSH.png&h=40&w=40",
@@ -5512,13 +5524,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-18",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Guerreros de Oaxaca",
       "opp_team": "Piratas de Campeche",
       "score_fav": "1",
       "score_opp": "1",
-      "state": "Manager challenge",
-      "result": "pending",
+      "state": "In Progress",
+      "result": "live",
       "home_team": "Piratas de Campeche",
       "away_team": "Guerreros de Oaxaca",
       "label": "📋",
@@ -5532,18 +5544,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 3,
+        "is_top": true,
+        "inning_ordinal": "3rd",
+        "outs": 3,
+        "balls": 1,
+        "strikes": 3,
         "away_runs": 1,
         "home_runs": 1,
-        "away_hits": 2,
-        "home_hits": 1,
+        "away_hits": 3,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Guerreros de Oaxaca",
@@ -5553,9 +5569,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Manager challenge",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "1",
         "opp_score": "1",
         "score_fav": "1",
@@ -5654,15 +5670,15 @@
           }
         ],
         "current_inning": 6,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "6th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 2,
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 2,
         "home_runs": 3,
         "away_hits": 4,
-        "home_hits": 6,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Algodoneros Union Laguna",
@@ -5781,15 +5797,15 @@
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
         "outs": 0,
-        "balls": 3,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 1,
         "home_runs": 2,
         "away_hits": 7,
-        "home_hits": 5,
+        "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Leones de Yucatan",
@@ -5865,7 +5881,7 @@
       "fav_team": "Charros de Jalisco",
       "opp_team": "Saraperos de Saltillo",
       "score_fav": "3",
-      "score_opp": "3",
+      "score_opp": "6",
       "state": "In Progress",
       "result": "live",
       "home_team": "Charros de Jalisco",
@@ -5899,20 +5915,20 @@
             "home_runs": 0
           },
           {
-            "away_runs": 3,
+            "away_runs": 6,
             "home_runs": 0
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 2,
+        "outs": 1,
         "balls": 0,
-        "strikes": 1,
-        "away_runs": 3,
+        "strikes": 2,
+        "away_runs": 6,
         "home_runs": 3,
-        "away_hits": 7,
-        "home_hits": 4,
+        "away_hits": 9,
+        "home_hits": 5,
         "away_errors": 4,
         "home_errors": 0,
         "away_team_name": "Saraperos de Saltillo",
@@ -5925,9 +5941,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "3",
+        "fav_score": "6",
         "opp_score": "3",
-        "score_fav": "3",
+        "score_fav": "6",
         "score_opp": "3"
       },
       "llm_ir_favorito": "SÍ",
@@ -6023,15 +6039,15 @@
           }
         ],
         "current_inning": 6,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "6th",
-        "outs": 1,
+        "outs": 0,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 4,
         "home_runs": 4,
-        "away_hits": 5,
-        "home_hits": 8,
+        "away_hits": 6,
+        "home_hits": 9,
         "away_errors": 1,
         "home_errors": 1,
         "away_team_name": "Conspiradores de Queretaro",
@@ -6103,13 +6119,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-18",
-      "status_emoji": "🔴",
+      "status_emoji": "⏳",
       "fav_team": "Olmecas de Tabasco",
       "opp_team": "Tigres de Quintana Roo",
       "score_fav": "1",
-      "score_opp": "0",
-      "state": "In Progress",
-      "result": "live",
+      "score_opp": "2",
+      "state": "Manager challenge",
+      "result": "pending",
       "home_team": "Olmecas de Tabasco",
       "away_team": "Tigres de Quintana Roo",
       "label": "📋",
@@ -6127,17 +6143,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 2,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 2,
-        "balls": 1,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 1,
+        "balls": 0,
         "strikes": 0,
-        "away_runs": 0,
+        "away_runs": 2,
         "home_runs": 1,
-        "away_hits": 1,
+        "away_hits": 5,
         "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
@@ -6148,12 +6168,12 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
-        "fav_score": "0",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Manager challenge",
+        "fav_score": "2",
         "opp_score": "1",
-        "score_fav": "0",
+        "score_fav": "2",
         "score_opp": "1"
       },
       "llm_ir_favorito": "SÍ",
@@ -6213,8 +6233,8 @@
       "status_emoji": "🔴",
       "fav_team": "Toros de Tijuana",
       "opp_team": "Dorados de Chihuahua",
-      "score_fav": "1",
-      "score_opp": "6",
+      "score_fav": "2",
+      "score_opp": "7",
       "state": "In Progress",
       "result": "live",
       "home_team": "Dorados de Chihuahua",
@@ -6252,20 +6272,20 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
-            "home_runs": 0
+            "away_runs": 1,
+            "home_runs": 1
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
         "outs": 0,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 1,
-        "home_runs": 6,
-        "away_hits": 5,
-        "home_hits": 9,
+        "balls": 2,
+        "strikes": 2,
+        "away_runs": 2,
+        "home_runs": 7,
+        "away_hits": 6,
+        "home_hits": 11,
         "away_errors": 1,
         "home_errors": 1,
         "away_team_name": "Toros de Tijuana",
@@ -6278,10 +6298,10 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "1",
-        "opp_score": "6",
-        "score_fav": "1",
-        "score_opp": "6"
+        "fav_score": "2",
+        "opp_score": "7",
+        "score_fav": "2",
+        "score_opp": "7"
       },
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Mejor récord y racha reciente.",
@@ -6353,14 +6373,18 @@
           {
             "away_runs": 3,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 3,
+        "current_inning": 2,
+        "is_top": false,
+        "inning_ordinal": "2nd",
+        "outs": 0,
         "balls": 0,
-        "strikes": 3,
+        "strikes": 2,
         "away_runs": 3,
         "home_runs": 0,
         "away_hits": 3,
@@ -6787,13 +6811,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 2,
-        "balls": 4,
+        "inning_ordinal": "9th",
+        "outs": 0,
+        "balls": 1,
         "strikes": 2,
         "away_runs": 3,
         "home_runs": 3,
@@ -6818,29 +6846,29 @@
       }
     },
     "824008": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
-      "away_runs": 0,
+      "status": "Top 1st",
+      "away_runs": 4,
       "home_runs": 0,
       "away_team_name": "Los Angeles Angels",
       "home_team_name": "Detroit Tigers",
       "linescore": {
         "innings": [
           {
-            "away_runs": 0,
+            "away_runs": 4,
             "home_runs": 0
           }
         ],
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 0,
+        "outs": 2,
+        "balls": 1,
+        "strikes": 2,
+        "away_runs": 4,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 3,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -6851,12 +6879,12 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
-        "fav_score": "0",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
+        "fav_score": "4",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "4",
         "score_opp": "0"
       }
     },
@@ -7118,14 +7146,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": true,
-        "inning_ordinal": "6th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "inning_ordinal": "7th",
+        "outs": 2,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 3,
         "home_runs": 0,
         "away_hits": 6,
@@ -7226,8 +7258,8 @@
     "823116": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 7th",
-      "away_runs": 0,
+      "status": "Top 8th",
+      "away_runs": 3,
       "home_runs": 3,
       "away_team_name": "San Francisco Giants",
       "home_team_name": "Seattle Mariners",
@@ -7259,20 +7291,24 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 3
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 3,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 0,
+        "balls": 0,
         "strikes": 0,
         "away_runs": 3,
-        "home_runs": 0,
+        "home_runs": 3,
         "away_hits": 6,
-        "home_hits": 1,
-        "away_errors": 0,
+        "home_hits": 2,
+        "away_errors": 1,
         "home_errors": 1,
         "away_team_name": "San Francisco Giants",
         "home_team_name": "Seattle Mariners",
@@ -7285,9 +7321,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "0",
+        "opp_score": "3",
         "score_fav": "3",
-        "score_opp": "0"
+        "score_opp": "3"
       }
     },
     "824657": {
@@ -7599,10 +7635,10 @@
       }
     },
     "824979": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
-      "away_runs": 0,
+      "status": "Bottom 1st",
+      "away_runs": 1,
       "home_runs": 0,
       "away_team_name": "Washington Nationals",
       "home_team_name": "Athletics",
@@ -7610,19 +7646,19 @@
         "innings": [
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 2
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 2,
         "away_hits": 0,
-        "home_hits": 0,
+        "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Washington Nationals",
@@ -7632,13 +7668,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "2",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "2"
       }
     },
     "823763": {
@@ -7792,9 +7828,9 @@
       }
     },
     "846523": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Manager challenge",
+      "status": "In Progress",
       "away_runs": 1,
       "home_runs": 1,
       "away_team_name": "Piratas de Campeche",
@@ -7808,18 +7844,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 3,
+        "is_top": true,
+        "inning_ordinal": "3rd",
+        "outs": 3,
+        "balls": 1,
+        "strikes": 3,
         "away_runs": 1,
         "home_runs": 1,
-        "away_hits": 2,
-        "home_hits": 1,
+        "away_hits": 3,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Guerreros de Oaxaca",
@@ -7829,9 +7869,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Manager challenge",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "1",
         "opp_score": "1",
         "score_fav": "1",
@@ -7874,15 +7914,15 @@
           }
         ],
         "current_inning": 6,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "6th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 2,
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 2,
         "home_runs": 3,
         "away_hits": 4,
-        "home_hits": 6,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Algodoneros Union Laguna",
@@ -7945,15 +7985,15 @@
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
         "outs": 0,
-        "balls": 3,
-        "strikes": 0,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 1,
         "home_runs": 2,
         "away_hits": 7,
-        "home_hits": 5,
+        "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Leones de Yucatan",
@@ -7977,7 +8017,7 @@
       "is_final": false,
       "status": "In Progress",
       "away_runs": 3,
-      "home_runs": 3,
+      "home_runs": 6,
       "away_team_name": "Saraperos de Saltillo",
       "home_team_name": "Charros de Jalisco",
       "linescore": {
@@ -8007,20 +8047,20 @@
             "home_runs": 0
           },
           {
-            "away_runs": 3,
+            "away_runs": 6,
             "home_runs": 0
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 2,
+        "outs": 1,
         "balls": 0,
-        "strikes": 1,
-        "away_runs": 3,
+        "strikes": 2,
+        "away_runs": 6,
         "home_runs": 3,
-        "away_hits": 7,
-        "home_hits": 4,
+        "away_hits": 9,
+        "home_hits": 5,
         "away_errors": 4,
         "home_errors": 0,
         "away_team_name": "Saraperos de Saltillo",
@@ -8033,9 +8073,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "3",
+        "fav_score": "6",
         "opp_score": "3",
-        "score_fav": "3",
+        "score_fav": "6",
         "score_opp": "3"
       }
     },
@@ -8075,15 +8115,15 @@
           }
         ],
         "current_inning": 6,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "6th",
-        "outs": 1,
+        "outs": 0,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 4,
         "home_runs": 4,
-        "away_hits": 5,
-        "home_hits": 8,
+        "away_hits": 6,
+        "home_hits": 9,
         "away_errors": 1,
         "home_errors": 1,
         "away_team_name": "Conspiradores de Queretaro",
@@ -8103,11 +8143,11 @@
       }
     },
     "846756": {
-      "is_live": true,
+      "is_live": false,
       "is_final": false,
-      "status": "In Progress",
+      "status": "Manager challenge",
       "away_runs": 1,
-      "home_runs": 0,
+      "home_runs": 2,
       "away_team_name": "Tigres de Quintana Roo",
       "home_team_name": "Olmecas de Tabasco",
       "linescore": {
@@ -8123,17 +8163,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 2,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 2,
-        "balls": 1,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 1,
+        "balls": 0,
         "strikes": 0,
-        "away_runs": 0,
+        "away_runs": 2,
         "home_runs": 1,
-        "away_hits": 1,
+        "away_hits": 5,
         "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
@@ -8144,12 +8188,12 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
-        "fav_score": "0",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Manager challenge",
+        "fav_score": "2",
         "opp_score": "1",
-        "score_fav": "0",
+        "score_fav": "2",
         "score_opp": "1"
       }
     },
@@ -8157,8 +8201,8 @@
       "is_live": true,
       "is_final": false,
       "status": "In Progress",
-      "away_runs": 1,
-      "home_runs": 6,
+      "away_runs": 2,
+      "home_runs": 7,
       "away_team_name": "Dorados de Chihuahua",
       "home_team_name": "Toros de Tijuana",
       "linescore": {
@@ -8192,20 +8236,20 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
-            "home_runs": 0
+            "away_runs": 1,
+            "home_runs": 1
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
         "outs": 0,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 1,
-        "home_runs": 6,
-        "away_hits": 5,
-        "home_hits": 9,
+        "balls": 2,
+        "strikes": 2,
+        "away_runs": 2,
+        "home_runs": 7,
+        "away_hits": 6,
+        "home_hits": 11,
         "away_errors": 1,
         "home_errors": 1,
         "away_team_name": "Toros de Tijuana",
@@ -8218,10 +8262,10 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "1",
-        "opp_score": "6",
-        "score_fav": "1",
-        "score_opp": "6"
+        "fav_score": "2",
+        "opp_score": "7",
+        "score_fav": "2",
+        "score_opp": "7"
       }
     },
     "846333": {
@@ -8237,14 +8281,18 @@
           {
             "away_runs": 3,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 3,
+        "current_inning": 2,
+        "is_top": false,
+        "inning_ordinal": "2nd",
+        "outs": 0,
         "balls": 0,
-        "strikes": 3,
+        "strikes": 2,
         "away_runs": 3,
         "home_runs": 0,
         "away_hits": 3,
@@ -8278,7 +8326,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "18/07/2026 20:02",
+  "updated_at": "18/07/2026 20:17",
   "stats": {
     "total": 2,
     "acertados": 2,
@@ -18626,8 +18674,8 @@
       "away": "New York Liberty",
       "home_abbr": "IND",
       "away_abbr": "NY",
-      "home_score": 83,
-      "away_score": 65,
+      "home_score": 102,
+      "away_score": 80,
       "home_linescores": [
         {
           "period": 1,
@@ -18646,8 +18694,8 @@
         },
         {
           "period": 4,
-          "value": 8,
-          "display": "8"
+          "value": 27,
+          "display": "27"
         }
       ],
       "away_linescores": [
@@ -18668,13 +18716,13 @@
         },
         {
           "period": 4,
-          "value": 4,
-          "display": "4"
+          "value": 19,
+          "display": "19"
         }
       ],
-      "clock": "7:16",
+      "clock": "2:51",
       "period": 4,
-      "state": "Q4 7:16",
+      "state": "Q4 2:51",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/IND.png&h=40&w=40",
@@ -18904,8 +18952,8 @@
       "away": "Washington Mystics",
       "home_abbr": "GS",
       "away_abbr": "WSH",
-      "home_score": 54,
-      "away_score": 57,
+      "home_score": 68,
+      "away_score": 65,
       "home_linescores": [
         {
           "period": 1,
@@ -18924,8 +18972,8 @@
         },
         {
           "period": 4,
-          "value": 2,
-          "display": "2"
+          "value": 16,
+          "display": "16"
         }
       ],
       "away_linescores": [
@@ -18946,13 +18994,13 @@
         },
         {
           "period": 4,
-          "value": 0,
-          "display": "0"
+          "value": 8,
+          "display": "8"
         }
       ],
-      "clock": "9:36",
+      "clock": "2:51",
       "period": 4,
-      "state": "Q4 9:36",
+      "state": "Q4 2:51",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/GS.png&h=40&w=40",
