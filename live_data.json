@@ -1,5 +1,5 @@
 {
-  "fecha": "19/07/2026 10:17",
+  "fecha": "19/07/2026 10:36",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784556000,
@@ -5220,10 +5220,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5614,7 +5619,7 @@
       "opp_team": "Toronto Blue Jays",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Top 1st",
+      "state": "Middle 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 822786,
@@ -5635,12 +5640,16 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 1,
+        "current_inning": 2,
+        "is_top": false,
+        "inning_ordinal": "2nd",
+        "outs": 0,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
@@ -6630,10 +6639,15 @@
       "away_team_name": "Houston Astros",
       "home_team_name": "Baltimore Orioles",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -6791,7 +6805,7 @@
     "822786": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 1st",
+      "status": "Middle 2nd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Toronto Blue Jays",
@@ -6801,12 +6815,16 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 1,
+        "current_inning": 2,
+        "is_top": false,
+        "inning_ordinal": "2nd",
+        "outs": 0,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
@@ -6961,7 +6979,7 @@
       }
     }
   },
-  "updated_at": "19/07/2026 10:17",
+  "updated_at": "19/07/2026 10:36",
   "stats": {
     "total": 2,
     "acertados": 2,
