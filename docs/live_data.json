@@ -1,5 +1,5 @@
 {
-  "fecha": "19/07/2026 17:17",
+  "fecha": "19/07/2026 17:32",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784556000,
@@ -2323,17 +2323,22 @@
       "opp_team": "Tigres de Quintana Roo",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "home_team": "Olmecas de Tabasco",
       "away_team": "Tigres de Quintana Roo",
       "label": "🎯",
       "game_pk": 846759,
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2352,7 +2357,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -2412,13 +2417,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-19",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Toros de Tijuana",
       "opp_team": "Dorados de Chihuahua",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Delayed Start",
-      "result": "pending",
+      "state": "In Progress",
+      "result": "live",
       "home_team": "Dorados de Chihuahua",
       "away_team": "Toros de Tijuana",
       "label": "🎯",
@@ -2449,9 +2454,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Delayed Start",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3056,7 +3061,7 @@
       "opp_team": "St. Louis Cardinals",
       "score_fav": "7",
       "score_opp": "7",
-      "state": "Middle 9th",
+      "state": "Bottom 10th",
       "result": "live",
       "label": "📋",
       "game_pk": 825057,
@@ -3101,17 +3106,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 2,
+        "current_inning": 10,
+        "is_top": false,
+        "inning_ordinal": "10th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 7,
         "home_runs": 7,
-        "away_hits": 12,
+        "away_hits": 13,
         "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
@@ -4552,13 +4561,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
-        "outs": 3,
-        "balls": 1,
+        "inning_ordinal": "3rd",
+        "outs": 0,
+        "balls": 2,
         "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
@@ -5597,16 +5610,21 @@
     "846759": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Tigres de Quintana Roo",
       "home_team_name": "Olmecas de Tabasco",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5625,7 +5643,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5633,9 +5651,9 @@
       }
     },
     "846204": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Delayed Start",
+      "status": "In Progress",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Dorados de Chihuahua",
@@ -5666,9 +5684,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Delayed Start",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5978,7 +5996,7 @@
     "825057": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 9th",
+      "status": "Bottom 10th",
       "away_runs": 7,
       "home_runs": 7,
       "away_team_name": "St. Louis Cardinals",
@@ -6020,17 +6038,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 2,
+        "current_inning": 10,
+        "is_top": false,
+        "inning_ordinal": "10th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 7,
         "home_runs": 7,
-        "away_hits": 12,
+        "away_hits": 13,
         "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
@@ -6817,13 +6839,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": true,
-        "inning_ordinal": "2nd",
-        "outs": 3,
-        "balls": 1,
+        "inning_ordinal": "3rd",
+        "outs": 0,
+        "balls": 2,
         "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
@@ -7081,7 +7107,7 @@
       }
     }
   },
-  "updated_at": "19/07/2026 17:17",
+  "updated_at": "19/07/2026 17:32",
   "stats": {
     "total": 0,
     "acertados": 0,
@@ -18160,25 +18186,35 @@
       "away": "Connecticut Sun",
       "home_abbr": "PHX",
       "away_abbr": "CON",
-      "home_score": 10,
-      "away_score": 10,
+      "home_score": 22,
+      "away_score": 20,
       "home_linescores": [
         {
           "period": 1,
-          "value": 10,
-          "display": "10"
+          "value": 18,
+          "display": "18"
+        },
+        {
+          "period": 2,
+          "value": 4,
+          "display": "4"
         }
       ],
       "away_linescores": [
         {
           "period": 1,
-          "value": 10,
-          "display": "10"
+          "value": 12,
+          "display": "12"
+        },
+        {
+          "period": 2,
+          "value": 8,
+          "display": "8"
         }
       ],
-      "clock": "3:14",
-      "period": 1,
-      "state": "Q1 3:14",
+      "clock": "6:57",
+      "period": 2,
+      "state": "Q2 6:57",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/PHX.png&h=40&w=40",
