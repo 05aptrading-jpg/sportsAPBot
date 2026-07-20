@@ -1,5 +1,5 @@
 {
-  "fecha": "20/07/2026 15:02",
+  "fecha": "20/07/2026 15:17",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784642400,
@@ -2466,7 +2466,7 @@
       "opp_team": "Chicago Cubs",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 824654,
@@ -2505,7 +2505,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3305,10 +3305,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3387,7 +3392,7 @@
       "opp_team": "Seattle Mariners",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 823112,
@@ -3426,7 +3431,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4202,7 +4207,7 @@
     "824654": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Chicago Cubs",
@@ -4230,7 +4235,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4542,10 +4547,15 @@
       "away_team_name": "Washington Nationals",
       "home_team_name": "Colorado Rockies",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4574,7 +4584,7 @@
     "823112": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Seattle Mariners",
@@ -4602,7 +4612,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4734,7 +4744,7 @@
       }
     }
   },
-  "updated_at": "20/07/2026 15:02",
+  "updated_at": "20/07/2026 15:17",
   "stats": {
     "total": 0,
     "acertados": 0,
