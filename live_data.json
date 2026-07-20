@@ -1,5 +1,5 @@
 {
-  "fecha": "19/07/2026 22:47",
+  "fecha": "19/07/2026 23:02",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784556000,
@@ -2318,13 +2318,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-19",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Olmecas de Tabasco",
       "opp_team": "Tigres de Quintana Roo",
-      "score_fav": "3",
+      "score_fav": "4",
       "score_opp": "3",
-      "state": "In Progress",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "home_team": "Olmecas de Tabasco",
       "away_team": "Tigres de Quintana Roo",
       "label": "🎯",
@@ -2389,17 +2389,17 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 15,
         "is_top": false,
         "inning_ordinal": "15th",
-        "outs": 1,
-        "balls": 3,
-        "strikes": 0,
+        "outs": 2,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 3,
-        "home_runs": 3,
+        "home_runs": 4,
         "away_hits": 6,
         "home_hits": 12,
         "away_errors": 2,
@@ -2411,13 +2411,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "3",
-        "opp_score": "3",
+        "opp_score": "4",
         "score_fav": "3",
-        "score_opp": "3"
+        "score_opp": "4"
       },
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Mejor récord y racha reciente favorable.",
@@ -5548,7 +5548,7 @@
   "autorizados": [
     6099564810
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": true,
   "live_data": {
     "401872178": {
@@ -5937,10 +5937,10 @@
       }
     },
     "846759": {
-      "is_live": true,
-      "is_final": false,
-      "status": "In Progress",
-      "away_runs": 3,
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
+      "away_runs": 4,
       "home_runs": 3,
       "away_team_name": "Tigres de Quintana Roo",
       "home_team_name": "Olmecas de Tabasco",
@@ -6004,17 +6004,17 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 15,
         "is_top": false,
         "inning_ordinal": "15th",
-        "outs": 1,
-        "balls": 3,
-        "strikes": 0,
+        "outs": 2,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 3,
-        "home_runs": 3,
+        "home_runs": 4,
         "away_hits": 6,
         "home_hits": 12,
         "away_errors": 2,
@@ -6026,13 +6026,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "3",
-        "opp_score": "3",
+        "opp_score": "4",
         "score_fav": "3",
-        "score_opp": "3"
+        "score_opp": "4"
       }
     },
     "846204": {
@@ -7765,7 +7765,7 @@
       }
     }
   },
-  "updated_at": "19/07/2026 22:47",
+  "updated_at": "19/07/2026 23:02",
   "stats": {
     "total": 0,
     "acertados": 0,
