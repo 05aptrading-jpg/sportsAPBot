@@ -1,5 +1,5 @@
 {
-  "fecha": "20/07/2026 14:17",
+  "fecha": "20/07/2026 14:32",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784642400,
@@ -2582,10 +2582,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2681,10 +2686,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4231,10 +4241,15 @@
       "away_team_name": "Tampa Bay Rays",
       "home_team_name": "Toronto Blue Jays",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4269,10 +4284,15 @@
       "away_team_name": "New York Mets",
       "home_team_name": "Milwaukee Brewers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4704,7 +4724,7 @@
       }
     }
   },
-  "updated_at": "20/07/2026 14:17",
+  "updated_at": "20/07/2026 14:32",
   "stats": {
     "total": 0,
     "acertados": 0,
