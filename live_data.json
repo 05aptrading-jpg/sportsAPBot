@@ -1,5 +1,5 @@
 {
-  "fecha": "19/07/2026 20:32",
+  "fecha": "19/07/2026 20:47",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784556000,
@@ -2322,7 +2322,7 @@
       "fav_team": "Olmecas de Tabasco",
       "opp_team": "Tigres de Quintana Roo",
       "score_fav": "3",
-      "score_opp": "2",
+      "score_opp": "3",
       "state": "In Progress",
       "result": "live",
       "home_team": "Olmecas de Tabasco",
@@ -2362,18 +2362,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 2,
-        "away_runs": 2,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 3,
         "home_runs": 3,
-        "away_hits": 4,
-        "home_hits": 8,
+        "away_hits": 5,
+        "home_hits": 9,
         "away_errors": 2,
         "home_errors": 1,
         "away_team_name": "Tigres de Quintana Roo",
@@ -2386,9 +2390,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "2",
+        "fav_score": "3",
         "opp_score": "3",
-        "score_fav": "2",
+        "score_fav": "3",
         "score_opp": "3"
       },
       "llm_ir_favorito": "SÍ",
@@ -2445,13 +2449,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-19",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Toros de Tijuana",
       "opp_team": "Dorados de Chihuahua",
       "score_fav": "9",
       "score_opp": "6",
-      "state": "In Progress",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "home_team": "Dorados de Chihuahua",
       "away_team": "Toros de Tijuana",
       "label": "🎯",
@@ -2496,15 +2500,15 @@
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
         "outs": 3,
-        "balls": 1,
+        "balls": 2,
         "strikes": 2,
         "away_runs": 9,
         "home_runs": 6,
         "away_hits": 19,
-        "home_hits": 10,
+        "home_hits": 11,
         "away_errors": 2,
         "home_errors": 0,
         "away_team_name": "Toros de Tijuana",
@@ -2514,9 +2518,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "9",
         "opp_score": "6",
         "score_fav": "9",
@@ -4735,7 +4739,7 @@
       "status_emoji": "🔴",
       "fav_team": "Charros de Jalisco",
       "opp_team": "Saraperos de Saltillo",
-      "score_fav": "1",
+      "score_fav": "2",
       "score_opp": "5",
       "state": "In Progress",
       "result": "live",
@@ -4775,19 +4779,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
-        "outs": 0,
+        "outs": 2,
         "balls": 0,
-        "strikes": 2,
+        "strikes": 0,
         "away_runs": 5,
-        "home_runs": 1,
+        "home_runs": 2,
         "away_hits": 7,
-        "home_hits": 4,
+        "home_hits": 7,
         "away_errors": 1,
         "home_errors": 1,
         "away_team_name": "Saraperos de Saltillo",
@@ -4801,9 +4805,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "5",
-        "opp_score": "1",
+        "opp_score": "2",
         "score_fav": "5",
-        "score_opp": "1"
+        "score_opp": "2"
       },
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Mejor récord y racha reciente favorable.",
@@ -4977,7 +4981,7 @@
       "status_emoji": "🔴",
       "fav_team": "Tecos de los Dos Laredos",
       "opp_team": "Algodoneros Union Laguna",
-      "score_fav": "0",
+      "score_fav": "2",
       "score_opp": "3",
       "state": "In Progress",
       "result": "live",
@@ -5005,19 +5009,23 @@
           },
           {
             "away_runs": 3,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
+        "outs": 0,
+        "balls": 3,
+        "strikes": 1,
         "away_runs": 3,
-        "home_runs": 0,
+        "home_runs": 2,
         "away_hits": 5,
-        "home_hits": 4,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Algodoneros Union Laguna",
@@ -5031,9 +5039,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "0",
+        "opp_score": "2",
         "score_fav": "3",
-        "score_opp": "0"
+        "score_opp": "2"
       },
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Mejor posición en la tabla y rendimiento reciente.",
@@ -5129,14 +5137,18 @@
           {
             "away_runs": 2,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 2,
+        "inning_ordinal": "8th",
+        "outs": 3,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 2,
         "home_runs": 7,
         "away_hits": 9,
@@ -5248,18 +5260,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": true,
-        "inning_ordinal": "6th",
+        "inning_ordinal": "7th",
         "outs": 3,
-        "balls": 3,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 4,
         "home_runs": 6,
         "away_hits": 7,
-        "home_hits": 9,
+        "home_hits": 10,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Conspiradores de Queretaro",
@@ -5371,17 +5387,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
+        "inning_ordinal": "8th",
         "outs": 1,
         "balls": 1,
-        "strikes": 0,
+        "strikes": 2,
         "away_runs": 4,
         "home_runs": 0,
-        "away_hits": 5,
+        "away_hits": 6,
         "home_hits": 2,
         "away_errors": 0,
         "home_errors": 1,
@@ -5849,7 +5869,7 @@
       "is_final": false,
       "status": "In Progress",
       "away_runs": 3,
-      "home_runs": 2,
+      "home_runs": 3,
       "away_team_name": "Tigres de Quintana Roo",
       "home_team_name": "Olmecas de Tabasco",
       "linescore": {
@@ -5885,18 +5905,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 2,
-        "away_runs": 2,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 3,
         "home_runs": 3,
-        "away_hits": 4,
-        "home_hits": 8,
+        "away_hits": 5,
+        "home_hits": 9,
         "away_errors": 2,
         "home_errors": 1,
         "away_team_name": "Tigres de Quintana Roo",
@@ -5909,16 +5933,16 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "2",
+        "fav_score": "3",
         "opp_score": "3",
-        "score_fav": "2",
+        "score_fav": "3",
         "score_opp": "3"
       }
     },
     "846204": {
-      "is_live": true,
-      "is_final": false,
-      "status": "In Progress",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 9,
       "home_runs": 6,
       "away_team_name": "Dorados de Chihuahua",
@@ -5963,15 +5987,15 @@
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
         "outs": 3,
-        "balls": 1,
+        "balls": 2,
         "strikes": 2,
         "away_runs": 9,
         "home_runs": 6,
         "away_hits": 19,
-        "home_hits": 10,
+        "home_hits": 11,
         "away_errors": 2,
         "home_errors": 0,
         "away_team_name": "Toros de Tijuana",
@@ -5981,9 +6005,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "9",
         "opp_score": "6",
         "score_fav": "9",
@@ -7198,7 +7222,7 @@
       "is_live": true,
       "is_final": false,
       "status": "In Progress",
-      "away_runs": 1,
+      "away_runs": 2,
       "home_runs": 5,
       "away_team_name": "Saraperos de Saltillo",
       "home_team_name": "Charros de Jalisco",
@@ -7234,19 +7258,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
-        "outs": 0,
+        "outs": 2,
         "balls": 0,
-        "strikes": 2,
+        "strikes": 0,
         "away_runs": 5,
-        "home_runs": 1,
+        "home_runs": 2,
         "away_hits": 7,
-        "home_hits": 4,
+        "home_hits": 7,
         "away_errors": 1,
         "home_errors": 1,
         "away_team_name": "Saraperos de Saltillo",
@@ -7260,9 +7284,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "5",
-        "opp_score": "1",
+        "opp_score": "2",
         "score_fav": "5",
-        "score_opp": "1"
+        "score_opp": "2"
       }
     },
     "846812": {
@@ -7328,7 +7352,7 @@
       "is_live": true,
       "is_final": false,
       "status": "In Progress",
-      "away_runs": 0,
+      "away_runs": 2,
       "home_runs": 3,
       "away_team_name": "Algodoneros Union Laguna",
       "home_team_name": "Tecos de los Dos Laredos",
@@ -7352,19 +7376,23 @@
           },
           {
             "away_runs": 3,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
+        "outs": 0,
+        "balls": 3,
+        "strikes": 1,
         "away_runs": 3,
-        "home_runs": 0,
+        "home_runs": 2,
         "away_hits": 5,
-        "home_hits": 4,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Algodoneros Union Laguna",
@@ -7378,9 +7406,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "0",
+        "opp_score": "2",
         "score_fav": "3",
-        "score_opp": "0"
+        "score_opp": "2"
       }
     },
     "846327": {
@@ -7420,14 +7448,18 @@
           {
             "away_runs": 2,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 2,
+        "inning_ordinal": "8th",
+        "outs": 3,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 2,
         "home_runs": 7,
         "away_hits": 9,
@@ -7483,18 +7515,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": true,
-        "inning_ordinal": "6th",
+        "inning_ordinal": "7th",
         "outs": 3,
-        "balls": 3,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 4,
         "home_runs": 6,
         "away_hits": 7,
-        "home_hits": 9,
+        "home_hits": 10,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Conspiradores de Queretaro",
@@ -7550,17 +7586,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
+        "inning_ordinal": "8th",
         "outs": 1,
         "balls": 1,
-        "strikes": 0,
+        "strikes": 2,
         "away_runs": 4,
         "home_runs": 0,
-        "away_hits": 5,
+        "away_hits": 6,
         "home_hits": 2,
         "away_errors": 0,
         "home_errors": 1,
@@ -7581,7 +7621,7 @@
       }
     }
   },
-  "updated_at": "19/07/2026 20:32",
+  "updated_at": "19/07/2026 20:47",
   "stats": {
     "total": 0,
     "acertados": 0,
