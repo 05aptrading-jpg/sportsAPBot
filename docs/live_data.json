@@ -1,5 +1,5 @@
 {
-  "fecha": "19/07/2026 22:02",
+  "fecha": "19/07/2026 22:17",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784556000,
@@ -2385,15 +2385,15 @@
           }
         ],
         "current_inning": 13,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "13th",
-        "outs": 0,
+        "outs": 2,
         "balls": 1,
         "strikes": 2,
         "away_runs": 3,
         "home_runs": 3,
         "away_hits": 5,
-        "home_hits": 10,
+        "home_hits": 11,
         "away_errors": 2,
         "home_errors": 1,
         "away_team_name": "Tigres de Quintana Roo",
@@ -4927,11 +4927,15 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": true,
-        "inning_ordinal": "8th",
+        "inning_ordinal": "9th",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5010,13 +5014,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-19",
-      "status_emoji": "⏳",
+      "status_emoji": "❌",
       "fav_team": "Tecos de los Dos Laredos",
       "opp_team": "Algodoneros Union Laguna",
       "score_fav": "2",
       "score_opp": "6",
-      "state": "Game Over",
-      "result": "pending",
+      "state": "Final",
+      "result": "loss",
       "home_team": "Tecos de los Dos Laredos",
       "away_team": "Algodoneros Union Laguna",
       "label": "📋",
@@ -5079,9 +5083,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "6",
         "opp_score": "2",
         "score_fav": "6",
@@ -5988,15 +5992,15 @@
           }
         ],
         "current_inning": 13,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "13th",
-        "outs": 0,
+        "outs": 2,
         "balls": 1,
         "strikes": 2,
         "away_runs": 3,
         "home_runs": 3,
         "away_hits": 5,
-        "home_hits": 10,
+        "home_hits": 11,
         "away_errors": 2,
         "home_errors": 1,
         "away_team_name": "Tigres de Quintana Roo",
@@ -7410,11 +7414,15 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": true,
-        "inning_ordinal": "8th",
+        "inning_ordinal": "9th",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -7442,8 +7450,8 @@
     },
     "846375": {
       "is_live": false,
-      "is_final": false,
-      "status": "Game Over",
+      "is_final": true,
+      "status": "Final",
       "away_runs": 2,
       "home_runs": 6,
       "away_team_name": "Algodoneros Union Laguna",
@@ -7506,9 +7514,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "6",
         "opp_score": "2",
         "score_fav": "6",
@@ -7741,7 +7749,7 @@
       }
     }
   },
-  "updated_at": "19/07/2026 22:02",
+  "updated_at": "19/07/2026 22:17",
   "stats": {
     "total": 0,
     "acertados": 0,
