@@ -1,9 +1,9 @@
 {
-  "fecha": "20/07/2026 12:17",
+  "fecha": "20/07/2026 12:32",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784642400,
-  "proxima_actualizacion_lmb_ts": 1784572200,
+  "proxima_actualizacion_lmb_ts": 1784658600,
   "dias": [
     "2026-07-20",
     "2026-07-19",
@@ -2852,7 +2852,7 @@
       "opp_team": "Cleveland Guardians",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 824410,
@@ -2869,10 +2869,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2891,7 +2896,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4294,16 +4299,21 @@
     "824410": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Cleveland Guardians",
       "home_team_name": "Minnesota Twins",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4322,7 +4332,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4634,7 +4644,7 @@
       }
     }
   },
-  "updated_at": "20/07/2026 12:17",
+  "updated_at": "20/07/2026 12:32",
   "stats": {
     "total": 0,
     "acertados": 0,
