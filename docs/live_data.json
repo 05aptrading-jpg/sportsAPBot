@@ -1,5 +1,5 @@
 {
-  "fecha": "21/07/2026 13:47",
+  "fecha": "21/07/2026 14:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784728800,
@@ -3057,141 +3057,6 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-21",
-      "status_emoji": "🏁",
-      "fav_team": "New York Yankees",
-      "opp_team": "Pittsburgh Pirates",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Final",
-      "result": "completed",
-      "label": "📋",
-      "game_pk": 823519,
-      "fav_abbr": "NYY",
-      "opp_abbr": "PIT",
-      "home_team": "New York Yankees",
-      "away_team": "Pittsburgh Pirates",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 4
-          },
-          {
-            "away_runs": 3,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 4
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 3,
-        "away_runs": 5,
-        "home_runs": 8,
-        "away_hits": 9,
-        "home_hits": 11,
-        "away_errors": 2,
-        "home_errors": 1,
-        "away_team_name": "Pittsburgh Pirates",
-        "home_team_name": "New York Yankees",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "5",
-        "opp_score": "8",
-        "score_fav": "5",
-        "score_opp": "8"
-      },
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYY.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PIT.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Dominan en casa y tienen mejor récord.",
-      "llm_factores": [
-        "Racha reciente",
-        "Posición en división",
-        "Calidad de abridores"
-      ],
-      "llm_favorito": "New York Yankees",
-      "llm_carreras": "7-3",
-      "llm_carreras_lineas": {
-        "over_7.5": 80,
-        "over_8.5": 70,
-        "over_9.5": 50
-      },
-      "llm_ranking_local": "AL Este: 1º (55-35)",
-      "llm_ranking_visitante": "NL Central: 3º (40-50)",
-      "llm_abridor_local": "Gerrit Cole (2.90, 10-3, 150)",
-      "llm_abridor_visitante": "Mitch Keller (4.50, 5-10, 100)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "Aaron Judge",
-          "equipo": "New York Yankees",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2,
-          "confianza_bateo": 90
-        },
-        {
-          "jugador": "Giancarlo Stanton",
-          "equipo": "New York Yankees",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 85
-        },
-        {
-          "jugador": "Ke'Bryan Hayes",
-          "equipo": "Pittsburgh Pirates",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 65
-        },
-        {
-          "jugador": "Oneil Cruz",
-          "equipo": "Pittsburgh Pirates",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 70
-        }
-      ],
-      "llm_relevo_local": "Bullpen fuerte, ERA de 3.20, excelente en finales.",
-      "llm_relevo_visitante": "Bullpen débil, ERA de 5.00, poco confiable."
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-07-21",
       "status_emoji": "⏳",
       "fav_team": "Arizona Diamondbacks",
       "opp_team": "Athletics",
@@ -3701,10 +3566,15 @@
       "home_team": "Kansas City Royals",
       "away_team": "San Francisco Giants",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4836,6 +4706,76 @@
       ],
       "llm_relevo_local": "Bullpen sólido con ERA de 3.40, confiable en finales.",
       "llm_relevo_visitante": "Bullpen con ERA de 4.50, menos efectivo en situaciones críticas."
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-07-21",
+      "status_emoji": "🚫",
+      "fav_team": "Pittsburgh Pirates",
+      "opp_team": "New York Yankees",
+      "score_fav": "—",
+      "score_opp": "",
+      "state": "Posp.",
+      "result": "pending",
+      "label": "📋",
+      "game_pk": 401816204,
+      "fav_abbr": "PIT",
+      "opp_abbr": "NYY",
+      "home_team": "New York Yankees",
+      "away_team": "Pittsburgh Pirates",
+      "linescore": {},
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/PIT.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYY.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y ventaja de local.",
+      "llm_factores": [
+        "Racha de 6-4 Yankees",
+        "Historial dominante Yankees",
+        "Lesiones mínimas en Yankees"
+      ],
+      "llm_favorito": "New York Yankees",
+      "llm_carreras": "6-3",
+      "llm_carreras_lineas": {
+        "over_7.5": 80,
+        "over_8.5": 65,
+        "over_9.5": 50
+      },
+      "llm_ranking_local": "AL Este: 1º (55-32)",
+      "llm_ranking_visitante": "NL Central: 4º (35-52)",
+      "llm_abridor_local": "Gerrit Cole (2.90, 11-4, 140)",
+      "llm_abridor_visitante": "Mitch Keller (4.50, 7-8, 100)",
+      "llm_bateadores_clave": [
+        {
+          "jugador": "Aaron Judge",
+          "equipo": "New York Yankees",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2,
+          "confianza_bateo": 90
+        },
+        {
+          "jugador": "Giancarlo Stanton",
+          "equipo": "New York Yankees",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 80
+        },
+        {
+          "jugador": "Ke'Bryan Hayes",
+          "equipo": "Pittsburgh Pirates",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 65
+        },
+        {
+          "jugador": "Oneil Cruz",
+          "equipo": "Pittsburgh Pirates",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 70
+        }
+      ],
+      "llm_relevo_local": "Bullpen con ERA de 3.80, sólido en finales.",
+      "llm_relevo_visitante": "Bullpen débil, ERA de 5.00, poco confiable."
     }
   ],
   "bot_username": "MLBAnalyticsRailwayBot",
@@ -5497,81 +5437,6 @@
         "score_opp": "0"
       }
     },
-    "823519": {
-      "is_live": false,
-      "is_final": true,
-      "status": "Final",
-      "away_runs": 0,
-      "home_runs": 0,
-      "away_team_name": "Pittsburgh Pirates",
-      "home_team_name": "New York Yankees",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 4
-          },
-          {
-            "away_runs": 3,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 4
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 3,
-        "away_runs": 5,
-        "home_runs": 8,
-        "away_hits": 9,
-        "home_hits": 11,
-        "away_errors": 2,
-        "home_errors": 1,
-        "away_team_name": "Pittsburgh Pirates",
-        "home_team_name": "New York Yankees",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "5",
-        "opp_score": "8",
-        "score_fav": "5",
-        "score_opp": "8"
-      }
-    },
     "825056": {
       "is_live": false,
       "is_final": false,
@@ -5776,10 +5641,15 @@
       "away_team_name": "San Francisco Giants",
       "home_team_name": "Kansas City Royals",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -6201,9 +6071,19 @@
         "score_fav": "0",
         "score_opp": "0"
       }
+    },
+    "401816204": {
+      "is_live": false,
+      "is_final": false,
+      "status": "Posp.",
+      "away_runs": 0,
+      "home_runs": 0,
+      "away_team_name": "New York Yankees",
+      "home_team_name": "Pittsburgh Pirates",
+      "linescore": {}
     }
   },
-  "updated_at": "21/07/2026 13:47",
+  "updated_at": "21/07/2026 14:00",
   "stats": {
     "total": 0,
     "acertados": 0,
@@ -12927,58 +12807,6 @@
       "relevo_local": "Bullpen sólido con ERA de 3.80, confiable en finales.",
       "relevo_visitante": "Bullpen con ERA de 4.50, menos confiable en situaciones críticas."
     },
-    "2026-07-21___MLB___New York Yankees___Pittsburgh Pirates": {
-      "ir": "SÍ",
-      "pq": "Dominan en casa y tienen mejor récord.",
-      "factores": [
-        "Racha reciente",
-        "Posición en división",
-        "Calidad de abridores"
-      ],
-      "favorito": "New York Yankees",
-      "carreras_esperadas": "7-3",
-      "carreras_lineas": {
-        "over_7.5": 80,
-        "over_8.5": 70,
-        "over_9.5": 50
-      },
-      "ranking_local": "AL Este: 1º (55-35)",
-      "ranking_visitante": "NL Central: 3º (40-50)",
-      "abridor_local": "Gerrit Cole (2.90, 10-3, 150)",
-      "abridor_visitante": "Mitch Keller (4.50, 5-10, 100)",
-      "bateadores_clave": [
-        {
-          "jugador": "Aaron Judge",
-          "equipo": "New York Yankees",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2,
-          "confianza_bateo": 90
-        },
-        {
-          "jugador": "Giancarlo Stanton",
-          "equipo": "New York Yankees",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 85
-        },
-        {
-          "jugador": "Ke'Bryan Hayes",
-          "equipo": "Pittsburgh Pirates",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 65
-        },
-        {
-          "jugador": "Oneil Cruz",
-          "equipo": "Pittsburgh Pirates",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 70
-        }
-      ],
-      "relevo_local": "Bullpen fuerte, ERA de 3.20, excelente en finales.",
-      "relevo_visitante": "Bullpen débil, ERA de 5.00, poco confiable."
-    },
     "2026-07-21___MLB___Arizona Diamondbacks___Athletics": {
       "ir": "SÍ",
       "pq": "Mejor desempeño en casa y récord superior.",
@@ -13862,6 +13690,58 @@
       ],
       "relevo_local": "Bullpen sólido con ERA de 3.40, confiable en finales.",
       "relevo_visitante": "Bullpen con ERA de 4.50, menos efectivo en situaciones críticas."
+    },
+    "2026-07-21___MLB___New York Yankees___Pittsburgh Pirates": {
+      "ir": "SÍ",
+      "pq": "Mejor récord y ventaja de local.",
+      "factores": [
+        "Racha de 6-4 Yankees",
+        "Historial dominante Yankees",
+        "Lesiones mínimas en Yankees"
+      ],
+      "favorito": "New York Yankees",
+      "carreras_esperadas": "6-3",
+      "carreras_lineas": {
+        "over_7.5": 80,
+        "over_8.5": 65,
+        "over_9.5": 50
+      },
+      "ranking_local": "AL Este: 1º (55-32)",
+      "ranking_visitante": "NL Central: 4º (35-52)",
+      "abridor_local": "Gerrit Cole (2.90, 11-4, 140)",
+      "abridor_visitante": "Mitch Keller (4.50, 7-8, 100)",
+      "bateadores_clave": [
+        {
+          "jugador": "Aaron Judge",
+          "equipo": "New York Yankees",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2,
+          "confianza_bateo": 90
+        },
+        {
+          "jugador": "Giancarlo Stanton",
+          "equipo": "New York Yankees",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 80
+        },
+        {
+          "jugador": "Ke'Bryan Hayes",
+          "equipo": "Pittsburgh Pirates",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 65
+        },
+        {
+          "jugador": "Oneil Cruz",
+          "equipo": "Pittsburgh Pirates",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 70
+        }
+      ],
+      "relevo_local": "Bullpen con ERA de 3.80, sólido en finales.",
+      "relevo_visitante": "Bullpen débil, ERA de 5.00, poco confiable."
     },
     "2026-06-28___Sudáfrica___Canadá": {
       "ir": "SÍ",
