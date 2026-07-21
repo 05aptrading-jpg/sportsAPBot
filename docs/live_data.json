@@ -1,5 +1,5 @@
 {
-  "fecha": "21/07/2026 14:00",
+  "fecha": "21/07/2026 14:02",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784728800,
@@ -2197,10 +2197,15 @@
       "home_team": "Atlanta Braves",
       "away_team": "San Diego Padres",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5104,10 +5109,15 @@
       "away_team_name": "San Diego Padres",
       "home_team_name": "Atlanta Braves",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -6083,7 +6093,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "21/07/2026 14:00",
+  "updated_at": "21/07/2026 14:02",
   "stats": {
     "total": 0,
     "acertados": 0,
