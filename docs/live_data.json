@@ -1,5 +1,5 @@
 {
-  "fecha": "21/07/2026 14:17",
+  "fecha": "21/07/2026 14:32",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784728800,
@@ -3380,10 +3380,15 @@
       "home_team": "Toronto Blue Jays",
       "away_team": "Tampa Bay Rays",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5585,10 +5590,15 @@
       "away_team_name": "Tampa Bay Rays",
       "home_team_name": "Toronto Blue Jays",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -6103,7 +6113,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "21/07/2026 14:17",
+  "updated_at": "21/07/2026 14:32",
   "stats": {
     "total": 0,
     "acertados": 0,
