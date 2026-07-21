@@ -1,5 +1,5 @@
 {
-  "fecha": "21/07/2026 16:47",
+  "fecha": "21/07/2026 17:02",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784728800,
@@ -2188,7 +2188,7 @@
       "opp_team": "San Diego Padres",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "🎯",
       "game_pk": 824895,
@@ -2232,7 +2232,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3020,7 +3020,7 @@
       "opp_team": "Minnesota Twins",
       "score_fav": "0",
       "score_opp": "1",
-      "state": "Bottom 1st",
+      "state": "Bottom 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 824409,
@@ -3041,12 +3041,16 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 0,
+        "inning_ordinal": "2nd",
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 1,
@@ -3993,7 +3997,7 @@
     "824895": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "San Diego Padres",
@@ -4026,7 +4030,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4337,7 +4341,7 @@
     "824409": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Bottom 2nd",
       "away_runs": 0,
       "home_runs": 1,
       "away_team_name": "Minnesota Twins",
@@ -4347,12 +4351,16 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 0,
+        "inning_ordinal": "2nd",
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 1,
@@ -4570,7 +4578,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "21/07/2026 16:47",
+  "updated_at": "21/07/2026 17:02",
   "stats": {
     "total": 0,
     "acertados": 0,
