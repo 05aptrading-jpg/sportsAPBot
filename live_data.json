@@ -1,5 +1,5 @@
 {
-  "fecha": "20/07/2026 21:32",
+  "fecha": "20/07/2026 21:47",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784642400,
@@ -2530,7 +2530,7 @@
       "opp_team": "Chicago Cubs",
       "score_fav": "5",
       "score_opp": "5",
-      "state": "Bottom 9th",
+      "state": "Top 10th",
       "result": "live",
       "label": "📋",
       "game_pk": 824654,
@@ -2583,17 +2583,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 2,
+        "current_inning": 10,
+        "is_top": true,
+        "inning_ordinal": "10th",
+        "outs": 0,
         "balls": 3,
         "strikes": 2,
         "away_runs": 5,
         "home_runs": 5,
-        "away_hits": 9,
+        "away_hits": 10,
         "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
@@ -3482,7 +3486,7 @@
       "opp_team": "St. Louis Cardinals",
       "score_fav": "1",
       "score_opp": "2",
-      "state": "End 5th",
+      "state": "Top 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 824006,
@@ -3519,13 +3523,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 3,
-        "balls": 1,
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
+        "outs": 0,
+        "balls": 0,
         "strikes": 0,
         "away_runs": 2,
         "home_runs": 1,
@@ -3737,7 +3749,7 @@
       "fav_team": "Cincinnati Reds",
       "opp_team": "Seattle Mariners",
       "score_fav": "0",
-      "score_opp": "1",
+      "score_opp": "7",
       "state": "Bottom 7th",
       "result": "live",
       "label": "📋",
@@ -3782,19 +3794,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 6
           }
         ],
         "current_inning": 7,
         "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 0,
+        "outs": 2,
         "balls": 1,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 0,
-        "home_runs": 1,
+        "home_runs": 7,
         "away_hits": 3,
-        "home_hits": 4,
+        "home_hits": 10,
         "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Cincinnati Reds",
@@ -3808,9 +3820,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "1",
+        "opp_score": "7",
         "score_fav": "0",
-        "score_opp": "1"
+        "score_opp": "7"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CIN.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SEA.png&h=40&w=40",
@@ -3864,7 +3876,7 @@
       "status_emoji": "🔴",
       "fav_team": "Arizona Diamondbacks",
       "opp_team": "Athletics",
-      "score_fav": "0",
+      "score_fav": "2",
       "score_opp": "2",
       "state": "Bottom 6th",
       "result": "live",
@@ -3906,20 +3918,20 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 2
           }
         ],
         "current_inning": 6,
         "is_top": false,
         "inning_ordinal": "6th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 2,
+        "balls": 3,
+        "strikes": 3,
         "away_runs": 2,
-        "home_runs": 0,
+        "home_runs": 2,
         "away_hits": 9,
-        "home_hits": 3,
-        "away_errors": 0,
+        "home_hits": 6,
+        "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Athletics",
         "home_team_name": "Arizona Diamondbacks",
@@ -3932,9 +3944,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "2",
-        "opp_score": "0",
+        "opp_score": "2",
         "score_fav": "2",
-        "score_opp": "0"
+        "score_opp": "2"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ARI.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40",
@@ -4735,7 +4747,7 @@
     "824654": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 9th",
+      "status": "Top 10th",
       "away_runs": 5,
       "home_runs": 5,
       "away_team_name": "Chicago Cubs",
@@ -4777,17 +4789,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 2,
+        "current_inning": 10,
+        "is_top": true,
+        "inning_ordinal": "10th",
+        "outs": 0,
         "balls": 3,
         "strikes": 2,
         "away_runs": 5,
         "home_runs": 5,
-        "away_hits": 9,
+        "away_hits": 10,
         "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
@@ -5260,7 +5276,7 @@
     "824006": {
       "is_live": true,
       "is_final": false,
-      "status": "End 5th",
+      "status": "Top 7th",
       "away_runs": 1,
       "home_runs": 2,
       "away_team_name": "St. Louis Cardinals",
@@ -5286,13 +5302,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 3,
-        "balls": 1,
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
+        "outs": 0,
+        "balls": 0,
         "strikes": 0,
         "away_runs": 2,
         "home_runs": 1,
@@ -5396,7 +5420,7 @@
       "is_final": false,
       "status": "Bottom 7th",
       "away_runs": 0,
-      "home_runs": 1,
+      "home_runs": 7,
       "away_team_name": "Seattle Mariners",
       "home_team_name": "Cincinnati Reds",
       "linescore": {
@@ -5427,19 +5451,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 6
           }
         ],
         "current_inning": 7,
         "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 0,
+        "outs": 2,
         "balls": 1,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 0,
-        "home_runs": 1,
+        "home_runs": 7,
         "away_hits": 3,
-        "home_hits": 4,
+        "home_hits": 10,
         "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Cincinnati Reds",
@@ -5453,16 +5477,16 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "1",
+        "opp_score": "7",
         "score_fav": "0",
-        "score_opp": "1"
+        "score_opp": "7"
       }
     },
     "825058": {
       "is_live": true,
       "is_final": false,
       "status": "Bottom 6th",
-      "away_runs": 0,
+      "away_runs": 2,
       "home_runs": 2,
       "away_team_name": "Athletics",
       "home_team_name": "Arizona Diamondbacks",
@@ -5490,20 +5514,20 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 2
           }
         ],
         "current_inning": 6,
         "is_top": false,
         "inning_ordinal": "6th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 2,
+        "balls": 3,
+        "strikes": 3,
         "away_runs": 2,
-        "home_runs": 0,
+        "home_runs": 2,
         "away_hits": 9,
-        "home_hits": 3,
-        "away_errors": 0,
+        "home_hits": 6,
+        "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Athletics",
         "home_team_name": "Arizona Diamondbacks",
@@ -5516,9 +5540,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "2",
-        "opp_score": "0",
+        "opp_score": "2",
         "score_fav": "2",
-        "score_opp": "0"
+        "score_opp": "2"
       }
     },
     "823522": {
@@ -5672,7 +5696,7 @@
       }
     }
   },
-  "updated_at": "20/07/2026 21:32",
+  "updated_at": "20/07/2026 21:47",
   "stats": {
     "total": 3,
     "acertados": 2,
@@ -16133,8 +16157,8 @@
       "away": "Washington Mystics",
       "home_abbr": "GS",
       "away_abbr": "WSH",
-      "home_score": 60,
-      "away_score": 54,
+      "home_score": 79,
+      "away_score": 73,
       "home_linescores": [
         {
           "period": 1,
@@ -16153,8 +16177,8 @@
         },
         {
           "period": 4,
-          "value": 2,
-          "display": "2"
+          "value": 21,
+          "display": "21"
         }
       ],
       "away_linescores": [
@@ -16175,13 +16199,13 @@
         },
         {
           "period": 4,
-          "value": 0,
-          "display": "0"
+          "value": 19,
+          "display": "19"
         }
       ],
-      "clock": "9:37",
+      "clock": "3:32",
       "period": 4,
-      "state": "Q4 9:37",
+      "state": "Q4 3:32",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/GS.png&h=40&w=40",
@@ -16272,8 +16296,8 @@
       "away": "Minnesota Lynx",
       "home_abbr": "SEA",
       "away_abbr": "MIN",
-      "home_score": 70,
-      "away_score": 71,
+      "home_score": 77,
+      "away_score": 82,
       "home_linescores": [
         {
           "period": 1,
@@ -16287,8 +16311,13 @@
         },
         {
           "period": 3,
-          "value": 16,
-          "display": "16"
+          "value": 23,
+          "display": "23"
+        },
+        {
+          "period": 4,
+          "value": 0,
+          "display": "0"
         }
       ],
       "away_linescores": [
@@ -16304,13 +16333,18 @@
         },
         {
           "period": 3,
-          "value": 18,
-          "display": "18"
+          "value": 26,
+          "display": "26"
+        },
+        {
+          "period": 4,
+          "value": 3,
+          "display": "3"
         }
       ],
-      "clock": "2:31",
-      "period": 3,
-      "state": "Q3 2:31",
+      "clock": "8:06",
+      "period": 4,
+      "state": "Q4 8:06",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/SEA.png&h=40&w=40",
