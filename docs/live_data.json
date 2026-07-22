@@ -1,5 +1,5 @@
 {
-  "fecha": "22/07/2026 16:17",
+  "fecha": "22/07/2026 16:32",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784815200,
@@ -3583,7 +3583,7 @@
       "opp_team": "Los Angeles Dodgers",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "📋",
       "game_pk": 823438,
@@ -3627,7 +3627,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3761,9 +3761,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "5",
         "opp_score": "3",
         "score_fav": "5",
@@ -3959,7 +3959,7 @@
       "opp_team": "St. Louis Cardinals",
       "score_fav": "0",
       "score_opp": "1",
-      "state": "End 8th",
+      "state": "Bottom 9th",
       "result": "live",
       "label": "📋",
       "game_pk": 824004,
@@ -4008,14 +4008,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 1,
+        "inning_ordinal": "9th",
+        "outs": 1,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 3,
@@ -4091,7 +4095,7 @@
       "opp_team": "Arizona Diamondbacks",
       "score_fav": "3",
       "score_opp": "14",
-      "state": "Bottom 7th",
+      "state": "Bottom 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 825055,
@@ -4136,18 +4140,22 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 1,
+        "inning_ordinal": "8th",
+        "outs": 2,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 3,
         "home_runs": 14,
         "away_hits": 8,
-        "home_hits": 14,
+        "home_hits": 16,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Athletics",
@@ -4219,7 +4227,7 @@
       "opp_team": "Minnesota Twins",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "📋",
       "game_pk": 824408,
@@ -4263,7 +4271,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5694,7 +5702,7 @@
     "823438": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Los Angeles Dodgers",
@@ -5727,7 +5735,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5800,9 +5808,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "5",
         "opp_score": "3",
         "score_fav": "5",
@@ -5887,7 +5895,7 @@
     "824004": {
       "is_live": true,
       "is_final": false,
-      "status": "End 8th",
+      "status": "Bottom 9th",
       "away_runs": 0,
       "home_runs": 1,
       "away_team_name": "St. Louis Cardinals",
@@ -5925,14 +5933,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 1,
+        "inning_ordinal": "9th",
+        "outs": 1,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 3,
@@ -5958,7 +5970,7 @@
     "825055": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 7th",
+      "status": "Bottom 8th",
       "away_runs": 3,
       "home_runs": 14,
       "away_team_name": "Arizona Diamondbacks",
@@ -5992,18 +6004,22 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 1,
+        "inning_ordinal": "8th",
+        "outs": 2,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 3,
         "home_runs": 14,
         "away_hits": 8,
-        "home_hits": 14,
+        "home_hits": 16,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Athletics",
@@ -6025,7 +6041,7 @@
     "824408": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Minnesota Twins",
@@ -6058,7 +6074,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -6109,7 +6125,7 @@
       }
     }
   },
-  "updated_at": "22/07/2026 16:17",
+  "updated_at": "22/07/2026 16:32",
   "stats": {
     "total": 9,
     "acertados": 5,
