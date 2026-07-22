@@ -1,5 +1,5 @@
 {
-  "fecha": "22/07/2026 11:17",
+  "fecha": "22/07/2026 11:32",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784815200,
@@ -2771,10 +2771,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2853,7 +2858,7 @@
       "opp_team": "Pittsburgh Pirates",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "End 1st",
+      "state": "End 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 823519,
@@ -5031,10 +5036,15 @@
       "away_team_name": "Washington Nationals",
       "home_team_name": "Colorado Rockies",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5063,7 +5073,7 @@
     "823519": {
       "is_live": true,
       "is_final": false,
-      "status": "End 1st",
+      "status": "End 2nd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Pittsburgh Pirates",
@@ -5575,7 +5585,7 @@
       }
     }
   },
-  "updated_at": "22/07/2026 11:17",
+  "updated_at": "22/07/2026 11:32",
   "stats": {
     "total": 6,
     "acertados": 3,
