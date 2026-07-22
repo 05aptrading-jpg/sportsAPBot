@@ -1,5 +1,5 @@
 {
-  "fecha": "22/07/2026 13:47",
+  "fecha": "22/07/2026 14:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784815200,
@@ -2754,7 +2754,7 @@
       "opp_team": "Washington Nationals",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "End 2nd",
+      "state": "Bottom 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 824327,
@@ -2779,19 +2779,23 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 3,
+        "inning_ordinal": "3rd",
+        "outs": 2,
+        "balls": 1,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 2,
-        "home_hits": 1,
-        "away_errors": 0,
+        "home_hits": 2,
+        "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Washington Nationals",
         "home_team_name": "Colorado Rockies",
@@ -2861,8 +2865,8 @@
       "fav_team": "New York Yankees",
       "opp_team": "Pittsburgh Pirates",
       "score_fav": "3",
-      "score_opp": "3",
-      "state": "Bottom 9th",
+      "score_opp": "4",
+      "state": "Top 10th",
       "result": "live",
       "label": "📋",
       "game_pk": 823519,
@@ -3055,13 +3059,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-22",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Boston Red Sox",
       "opp_team": "Baltimore Orioles",
       "score_fav": "6",
       "score_opp": "3",
-      "state": "End 8th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 824735,
       "fav_abbr": "BOS",
@@ -3075,7 +3079,7 @@
         "Historial favorable en casa",
         "Lesiones mínimas en Red Sox"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "acertado",
       "linescore": {
         "innings": [
           {
@@ -3109,17 +3113,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
         "outs": 3,
-        "balls": 3,
-        "strikes": 3,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 3,
         "home_runs": 6,
-        "away_hits": 10,
+        "away_hits": 11,
         "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
@@ -3130,9 +3138,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "3",
         "opp_score": "6",
         "score_fav": "3",
@@ -3432,13 +3440,13 @@
         "current_inning": 5,
         "is_top": false,
         "inning_ordinal": "5th",
-        "outs": 0,
-        "balls": 1,
+        "outs": 1,
+        "balls": 3,
         "strikes": 2,
         "away_runs": 2,
         "home_runs": 3,
         "away_hits": 5,
-        "home_hits": 5,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "New York Mets",
@@ -3614,7 +3622,7 @@
       "opp_team": "Cincinnati Reds",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Top 1st",
+      "state": "Top 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 823110,
@@ -3635,13 +3643,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": true,
-        "inning_ordinal": "1st",
+        "inning_ordinal": "2nd",
         "outs": 1,
-        "balls": 0,
+        "balls": 1,
         "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
@@ -3717,7 +3729,7 @@
       "fav_team": "San Francisco Giants",
       "opp_team": "Kansas City Royals",
       "score_fav": "3",
-      "score_opp": "2",
+      "score_opp": "3",
       "state": "Bottom 7th",
       "result": "live",
       "label": "📋",
@@ -3762,20 +3774,20 @@
           },
           {
             "away_runs": 2,
-            "home_runs": 2
+            "home_runs": 3
           }
         ],
         "current_inning": 7,
         "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 2,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 3,
-        "home_runs": 2,
+        "home_runs": 3,
         "away_hits": 3,
-        "home_hits": 4,
-        "away_errors": 0,
+        "home_hits": 7,
+        "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "San Francisco Giants",
         "home_team_name": "Kansas City Royals",
@@ -3788,9 +3800,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "2",
+        "opp_score": "3",
         "score_fav": "3",
-        "score_opp": "2"
+        "score_opp": "3"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SF.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/KC.png&h=40&w=40",
@@ -3846,7 +3858,7 @@
       "opp_team": "St. Louis Cardinals",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Warmup",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 824004,
@@ -3890,7 +3902,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Warmup",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3950,7 +3962,7 @@
       "opp_team": "Arizona Diamondbacks",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Top 1st",
+      "state": "End 1st",
       "result": "live",
       "label": "📋",
       "game_pk": 825055,
@@ -3974,15 +3986,15 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 1,
+        "outs": 3,
         "balls": 2,
-        "strikes": 2,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
-        "home_hits": 0,
+        "away_hits": 2,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Athletics",
@@ -5122,7 +5134,7 @@
     "824327": {
       "is_live": true,
       "is_final": false,
-      "status": "End 2nd",
+      "status": "Bottom 3rd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Washington Nationals",
@@ -5136,19 +5148,23 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 3,
+        "inning_ordinal": "3rd",
+        "outs": 2,
+        "balls": 1,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 2,
-        "home_hits": 1,
-        "away_errors": 0,
+        "home_hits": 2,
+        "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Washington Nationals",
         "home_team_name": "Colorado Rockies",
@@ -5169,9 +5185,9 @@
     "823519": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 9th",
+      "status": "Top 10th",
       "away_runs": 3,
-      "home_runs": 3,
+      "home_runs": 4,
       "away_team_name": "Pittsburgh Pirates",
       "home_team_name": "New York Yankees",
       "linescore": {
@@ -5243,9 +5259,9 @@
       }
     },
     "824735": {
-      "is_live": true,
-      "is_final": false,
-      "status": "End 8th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 6,
       "home_runs": 3,
       "away_team_name": "Baltimore Orioles",
@@ -5283,17 +5299,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
         "outs": 3,
-        "balls": 3,
-        "strikes": 3,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 3,
         "home_runs": 6,
-        "away_hits": 10,
+        "away_hits": 11,
         "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
@@ -5304,9 +5324,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "3",
         "opp_score": "6",
         "score_fav": "3",
@@ -5423,13 +5443,13 @@
         "current_inning": 5,
         "is_top": false,
         "inning_ordinal": "5th",
-        "outs": 0,
-        "balls": 1,
+        "outs": 1,
+        "balls": 3,
         "strikes": 2,
         "away_runs": 2,
         "home_runs": 3,
         "away_hits": 5,
-        "home_hits": 5,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "New York Mets",
@@ -5494,7 +5514,7 @@
     "823110": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 1st",
+      "status": "Top 2nd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Cincinnati Reds",
@@ -5504,13 +5524,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": true,
-        "inning_ordinal": "1st",
+        "inning_ordinal": "2nd",
         "outs": 1,
-        "balls": 0,
+        "balls": 1,
         "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
@@ -5539,7 +5563,7 @@
       "is_final": false,
       "status": "Bottom 7th",
       "away_runs": 3,
-      "home_runs": 2,
+      "home_runs": 3,
       "away_team_name": "Kansas City Royals",
       "home_team_name": "San Francisco Giants",
       "linescore": {
@@ -5570,20 +5594,20 @@
           },
           {
             "away_runs": 2,
-            "home_runs": 2
+            "home_runs": 3
           }
         ],
         "current_inning": 7,
         "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 2,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 3,
-        "home_runs": 2,
+        "home_runs": 3,
         "away_hits": 3,
-        "home_hits": 4,
-        "away_errors": 0,
+        "home_hits": 7,
+        "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "San Francisco Giants",
         "home_team_name": "Kansas City Royals",
@@ -5596,15 +5620,15 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "2",
+        "opp_score": "3",
         "score_fav": "3",
-        "score_opp": "2"
+        "score_opp": "3"
       }
     },
     "824004": {
       "is_live": false,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "St. Louis Cardinals",
@@ -5637,7 +5661,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Warmup",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5647,7 +5671,7 @@
     "825055": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 1st",
+      "status": "End 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Arizona Diamondbacks",
@@ -5660,15 +5684,15 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 1,
+        "outs": 3,
         "balls": 2,
-        "strikes": 2,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
-        "home_hits": 0,
+        "away_hits": 2,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Athletics",
@@ -5769,12 +5793,12 @@
       }
     }
   },
-  "updated_at": "22/07/2026 13:47",
+  "updated_at": "22/07/2026 14:00",
   "stats": {
-    "total": 6,
-    "acertados": 3,
+    "total": 7,
+    "acertados": 4,
     "fallidos": 3,
-    "win_rate": 50.0,
+    "win_rate": 57.1,
     "alta_total": 1,
     "alta_acertados": 0,
     "alta_fallidos": 1,
@@ -5783,23 +5807,23 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 12,
-    "baja_acertados": 7,
+    "baja_total": 13,
+    "baja_acertados": 8,
     "baja_fallidos": 5,
-    "baja_win_rate": 58.3,
+    "baja_win_rate": 61.5,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 13,
-    "llm_acertados": 6,
+    "llm_total": 14,
+    "llm_acertados": 7,
     "llm_fallidos": 7,
-    "llm_win_rate": 46.2
+    "llm_win_rate": 50.0
   },
   "stats_mlb": {
-    "total": 6,
-    "acertados": 3,
+    "total": 7,
+    "acertados": 4,
     "fallidos": 3,
-    "win_rate": 50.0,
+    "win_rate": 57.1,
     "alta_total": 1,
     "alta_acertados": 0,
     "alta_fallidos": 1,
@@ -5808,17 +5832,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 12,
-    "baja_acertados": 7,
+    "baja_total": 13,
+    "baja_acertados": 8,
     "baja_fallidos": 5,
-    "baja_win_rate": 58.3,
+    "baja_win_rate": 61.5,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 13,
-    "llm_acertados": 6,
+    "llm_total": 14,
+    "llm_acertados": 7,
     "llm_fallidos": 7,
-    "llm_win_rate": 46.2
+    "llm_win_rate": 50.0
   },
   "stats_lmb": {
     "total": 0,
@@ -5846,10 +5870,10 @@
     "llm_win_rate": 0
   },
   "stats_hoy": {
-    "total": 0,
-    "acertados": 0,
+    "total": 1,
+    "acertados": 1,
     "fallidos": 0,
-    "win_rate": 0,
+    "win_rate": 100.0,
     "alta_total": 0,
     "alta_acertados": 0,
     "alta_fallidos": 0,
@@ -5858,23 +5882,23 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 0,
-    "baja_acertados": 0,
+    "baja_total": 1,
+    "baja_acertados": 1,
     "baja_fallidos": 0,
-    "baja_win_rate": 0,
+    "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 0,
-    "llm_acertados": 0,
+    "llm_total": 1,
+    "llm_acertados": 1,
     "llm_fallidos": 0,
-    "llm_win_rate": 0
+    "llm_win_rate": 100.0
   },
   "stats_hoy_mlb": {
-    "total": 0,
-    "acertados": 0,
+    "total": 1,
+    "acertados": 1,
     "fallidos": 0,
-    "win_rate": 0,
+    "win_rate": 100.0,
     "alta_total": 0,
     "alta_acertados": 0,
     "alta_fallidos": 0,
@@ -5883,17 +5907,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 0,
-    "baja_acertados": 0,
+    "baja_total": 1,
+    "baja_acertados": 1,
     "baja_fallidos": 0,
-    "baja_win_rate": 0,
+    "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 0,
-    "llm_acertados": 0,
+    "llm_total": 1,
+    "llm_acertados": 1,
     "llm_fallidos": 0,
-    "llm_win_rate": 0
+    "llm_win_rate": 100.0
   },
   "stats_hoy_lmb": {
     "total": 0,
@@ -5921,10 +5945,10 @@
     "llm_win_rate": 0
   },
   "stats_3dias": {
-    "total": 6,
-    "acertados": 3,
+    "total": 7,
+    "acertados": 4,
     "fallidos": 3,
-    "win_rate": 50.0,
+    "win_rate": 57.1,
     "alta_total": 1,
     "alta_acertados": 0,
     "alta_fallidos": 1,
@@ -5933,23 +5957,23 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 12,
-    "baja_acertados": 7,
+    "baja_total": 13,
+    "baja_acertados": 8,
     "baja_fallidos": 5,
-    "baja_win_rate": 58.3,
+    "baja_win_rate": 61.5,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 13,
-    "llm_acertados": 6,
+    "llm_total": 14,
+    "llm_acertados": 7,
     "llm_fallidos": 7,
-    "llm_win_rate": 46.2
+    "llm_win_rate": 50.0
   },
   "stats_3dias_mlb": {
-    "total": 6,
-    "acertados": 3,
+    "total": 7,
+    "acertados": 4,
     "fallidos": 3,
-    "win_rate": 50.0,
+    "win_rate": 57.1,
     "alta_total": 1,
     "alta_acertados": 0,
     "alta_fallidos": 1,
@@ -5958,17 +5982,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 12,
-    "baja_acertados": 7,
+    "baja_total": 13,
+    "baja_acertados": 8,
     "baja_fallidos": 5,
-    "baja_win_rate": 58.3,
+    "baja_win_rate": 61.5,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 13,
-    "llm_acertados": 6,
+    "llm_total": 14,
+    "llm_acertados": 7,
     "llm_fallidos": 7,
-    "llm_win_rate": 46.2
+    "llm_win_rate": 50.0
   },
   "stats_3dias_lmb": {
     "total": 0,
@@ -5996,10 +6020,10 @@
     "llm_win_rate": 0
   },
   "stats_semanal": {
-    "total": 6,
-    "acertados": 3,
+    "total": 7,
+    "acertados": 4,
     "fallidos": 3,
-    "win_rate": 50.0,
+    "win_rate": 57.1,
     "alta_total": 1,
     "alta_acertados": 0,
     "alta_fallidos": 1,
@@ -6008,23 +6032,23 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 12,
-    "baja_acertados": 7,
+    "baja_total": 13,
+    "baja_acertados": 8,
     "baja_fallidos": 5,
-    "baja_win_rate": 58.3,
+    "baja_win_rate": 61.5,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 13,
-    "llm_acertados": 6,
+    "llm_total": 14,
+    "llm_acertados": 7,
     "llm_fallidos": 7,
-    "llm_win_rate": 46.2
+    "llm_win_rate": 50.0
   },
   "stats_semanal_mlb": {
-    "total": 6,
-    "acertados": 3,
+    "total": 7,
+    "acertados": 4,
     "fallidos": 3,
-    "win_rate": 50.0,
+    "win_rate": 57.1,
     "alta_total": 1,
     "alta_acertados": 0,
     "alta_fallidos": 1,
@@ -6033,17 +6057,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 12,
-    "baja_acertados": 7,
+    "baja_total": 13,
+    "baja_acertados": 8,
     "baja_fallidos": 5,
-    "baja_win_rate": 58.3,
+    "baja_win_rate": 61.5,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 13,
-    "llm_acertados": 6,
+    "llm_total": 14,
+    "llm_acertados": 7,
     "llm_fallidos": 7,
-    "llm_win_rate": 46.2
+    "llm_win_rate": 50.0
   },
   "stats_semanal_lmb": {
     "total": 0,
@@ -6101,10 +6125,10 @@
       "llm_win_rate": 46.2
     },
     "2026-07-22": {
-      "total": 0,
-      "acertados": 0,
+      "total": 1,
+      "acertados": 1,
       "fallidos": 0,
-      "win_rate": 0,
+      "win_rate": 100.0,
       "alta_total": 0,
       "alta_acertados": 0,
       "alta_fallidos": 0,
@@ -6113,17 +6137,17 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 0,
-      "baja_acertados": 0,
+      "baja_total": 1,
+      "baja_acertados": 1,
       "baja_fallidos": 0,
-      "baja_win_rate": 0,
+      "baja_win_rate": 100.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "llm_total": 0,
-      "llm_acertados": 0,
+      "llm_total": 1,
+      "llm_acertados": 1,
       "llm_fallidos": 0,
-      "llm_win_rate": 0
+      "llm_win_rate": 100.0
     }
   },
   "stats_por_fecha_mlb": {
@@ -6153,10 +6177,10 @@
       "llm_win_rate": 46.2
     },
     "2026-07-22": {
-      "total": 0,
-      "acertados": 0,
+      "total": 1,
+      "acertados": 1,
       "fallidos": 0,
-      "win_rate": 0,
+      "win_rate": 100.0,
       "alta_total": 0,
       "alta_acertados": 0,
       "alta_fallidos": 0,
@@ -6165,17 +6189,17 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 0,
-      "baja_acertados": 0,
+      "baja_total": 1,
+      "baja_acertados": 1,
       "baja_fallidos": 0,
-      "baja_win_rate": 0,
+      "baja_win_rate": 100.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "llm_total": 0,
-      "llm_acertados": 0,
+      "llm_total": 1,
+      "llm_acertados": 1,
       "llm_fallidos": 0,
-      "llm_win_rate": 0
+      "llm_win_rate": 100.0
     }
   },
   "stats_por_fecha_lmb": {
@@ -16029,10 +16053,10 @@
   },
   "llm_by_sport": {
     "MLB": {
-      "llm_total": 13,
-      "llm_acertados": 6,
+      "llm_total": 14,
+      "llm_acertados": 7,
       "llm_fallidos": 7,
-      "llm_win_rate": 46.2
+      "llm_win_rate": 50.0
     },
     "LMB": {
       "llm_total": 0,
@@ -16641,8 +16665,8 @@
       "away": "Phoenix Mercury",
       "home_abbr": "LA",
       "away_abbr": "PHX",
-      "home_score": 29,
-      "away_score": 35,
+      "home_score": 41,
+      "away_score": 43,
       "home_linescores": [
         {
           "period": 1,
@@ -16651,8 +16675,8 @@
         },
         {
           "period": 2,
-          "value": 11,
-          "display": "11"
+          "value": 23,
+          "display": "23"
         }
       ],
       "away_linescores": [
@@ -16663,13 +16687,13 @@
         },
         {
           "period": 2,
-          "value": 16,
-          "display": "16"
+          "value": 24,
+          "display": "24"
         }
       ],
-      "clock": "3:30",
+      "clock": "0.0",
       "period": 2,
-      "state": "Q2 3:30",
+      "state": "Q2 0.0",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/LA.png&h=40&w=40",
@@ -17335,34 +17359,34 @@
   "llm_sections": {
     "MLB": {
       "equipo": {
-        "total": 13,
-        "acertados": 6,
+        "total": 14,
+        "acertados": 7,
         "fallidos": 7,
-        "win_rate": 46.2
+        "win_rate": 50.0
       },
       "marcador": {
-        "total": 13,
+        "total": 14,
         "acertados": 7,
-        "fallidos": 6,
-        "win_rate": 53.8
+        "fallidos": 7,
+        "win_rate": 50.0
       },
       "lanzadores": {
-        "total": 13,
-        "acertados": 6,
+        "total": 14,
+        "acertados": 7,
         "fallidos": 7,
-        "win_rate": 46.2
+        "win_rate": 50.0
       },
       "bateadores": {
-        "total": 13,
-        "acertados": 6,
+        "total": 14,
+        "acertados": 7,
         "fallidos": 7,
-        "win_rate": 46.2
+        "win_rate": 50.0
       },
       "relevo": {
-        "total": 13,
-        "acertados": 6,
+        "total": 14,
+        "acertados": 7,
         "fallidos": 7,
-        "win_rate": 46.2
+        "win_rate": 50.0
       }
     }
   }
