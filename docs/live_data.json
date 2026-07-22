@@ -1,5 +1,5 @@
 {
-  "fecha": "22/07/2026 11:32",
+  "fecha": "22/07/2026 11:47",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784815200,
@@ -2858,7 +2858,7 @@
       "opp_team": "Pittsburgh Pirates",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "End 2nd",
+      "state": "Top 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 823519,
@@ -3051,13 +3051,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-22",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Boston Red Sox",
       "opp_team": "Baltimore Orioles",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Bottom 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 824735,
       "fav_abbr": "BOS",
@@ -3080,15 +3080,15 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
-        "home_hits": 0,
+        "away_hits": 1,
+        "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Baltimore Orioles",
@@ -3098,9 +3098,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3786,10 +3786,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3885,10 +3890,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5073,7 +5083,7 @@
     "823519": {
       "is_live": true,
       "is_final": false,
-      "status": "End 2nd",
+      "status": "Top 4th",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Pittsburgh Pirates",
@@ -5147,9 +5157,9 @@
       }
     },
     "824735": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Bottom 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Baltimore Orioles",
@@ -5162,15 +5172,15 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
-        "home_hits": 0,
+        "away_hits": 1,
+        "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Baltimore Orioles",
@@ -5180,9 +5190,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5441,10 +5451,15 @@
       "away_team_name": "St. Louis Cardinals",
       "home_team_name": "Los Angeles Angels",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5479,10 +5494,15 @@
       "away_team_name": "Arizona Diamondbacks",
       "home_team_name": "Athletics",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5585,7 +5605,7 @@
       }
     }
   },
-  "updated_at": "22/07/2026 11:32",
+  "updated_at": "22/07/2026 11:47",
   "stats": {
     "total": 6,
     "acertados": 3,
