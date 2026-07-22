@@ -1,5 +1,5 @@
 {
-  "fecha": "21/07/2026 22:47",
+  "fecha": "21/07/2026 23:02",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784728800,
@@ -2999,13 +2999,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-21",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Arizona Diamondbacks",
       "opp_team": "Athletics",
-      "score_fav": "4",
+      "score_fav": "6",
       "score_opp": "5",
-      "state": "Bottom 10th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 825056,
       "fav_abbr": "ARI",
@@ -3060,19 +3060,19 @@
           },
           {
             "away_runs": 1,
-            "home_runs": 0
+            "home_runs": 2
           }
         ],
         "current_inning": 10,
         "is_top": false,
         "inning_ordinal": "10th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 1,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 5,
-        "home_runs": 4,
+        "home_runs": 6,
         "away_hits": 9,
-        "home_hits": 7,
+        "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Athletics",
@@ -3082,13 +3082,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "5",
-        "opp_score": "4",
+        "opp_score": "6",
         "score_fav": "5",
-        "score_opp": "4"
+        "score_opp": "6"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ARI.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40",
@@ -4097,7 +4097,7 @@
   "autorizados": [
     6099564810
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": true,
   "live_data": {
     "401816171": {
@@ -4861,10 +4861,10 @@
       }
     },
     "825056": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 10th",
-      "away_runs": 4,
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
+      "away_runs": 6,
       "home_runs": 5,
       "away_team_name": "Athletics",
       "home_team_name": "Arizona Diamondbacks",
@@ -4908,19 +4908,19 @@
           },
           {
             "away_runs": 1,
-            "home_runs": 0
+            "home_runs": 2
           }
         ],
         "current_inning": 10,
         "is_top": false,
         "inning_ordinal": "10th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 1,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 5,
-        "home_runs": 4,
+        "home_runs": 6,
         "away_hits": 9,
-        "home_hits": 7,
+        "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Athletics",
@@ -4930,13 +4930,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "5",
-        "opp_score": "4",
+        "opp_score": "6",
         "score_fav": "5",
-        "score_opp": "4"
+        "score_opp": "6"
       }
     },
     "823437": {
@@ -5410,7 +5410,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "21/07/2026 22:47",
+  "updated_at": "21/07/2026 23:02",
   "stats": {
     "total": 5,
     "acertados": 2,
