@@ -1,5 +1,5 @@
 {
-  "fecha": "22/07/2026 20:47",
+  "fecha": "22/07/2026 21:02",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784815200,
@@ -2729,9 +2729,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "5",
         "opp_score": "1",
         "score_fav": "5",
@@ -3058,13 +3058,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-22",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Chicago White Sox",
       "opp_team": "Texas Rangers",
       "score_fav": "4",
       "score_opp": "2",
-      "state": "Bottom 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 822873,
       "fav_abbr": "CHW",
@@ -3121,9 +3121,9 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 1,
+        "outs": 3,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 4,
         "home_runs": 2,
         "away_hits": 7,
@@ -3137,9 +3137,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "4",
         "opp_score": "2",
         "score_fav": "4",
@@ -4633,9 +4633,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "2",
         "opp_score": "5",
         "score_fav": "2",
@@ -4692,7 +4692,7 @@
   "autorizados": [
     6099564810
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": true,
   "live_data": {
     "401816188": {
@@ -5585,9 +5585,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "5",
         "opp_score": "1",
         "score_fav": "5",
@@ -5745,9 +5745,9 @@
       }
     },
     "822873": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 4,
       "home_runs": 2,
       "away_team_name": "Texas Rangers",
@@ -5794,9 +5794,9 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 1,
+        "outs": 3,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 4,
         "home_runs": 2,
         "away_hits": 7,
@@ -5810,9 +5810,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "4",
         "opp_score": "2",
         "score_fav": "4",
@@ -6635,9 +6635,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "2",
         "opp_score": "5",
         "score_fav": "2",
@@ -6645,7 +6645,7 @@
       }
     }
   },
-  "updated_at": "22/07/2026 20:47",
+  "updated_at": "22/07/2026 21:02",
   "stats": {
     "total": 14,
     "acertados": 5,
@@ -18212,8 +18212,8 @@
       "away": "Dallas Wings",
       "home_abbr": "POR",
       "away_abbr": "DAL",
-      "home_score": 20,
-      "away_score": 25,
+      "home_score": 37,
+      "away_score": 40,
       "home_linescores": [
         {
           "period": 1,
@@ -18222,8 +18222,8 @@
         },
         {
           "period": 2,
-          "value": 3,
-          "display": "3"
+          "value": 20,
+          "display": "20"
         }
       ],
       "away_linescores": [
@@ -18234,13 +18234,13 @@
         },
         {
           "period": 2,
-          "value": 7,
-          "display": "7"
+          "value": 22,
+          "display": "22"
         }
       ],
-      "clock": "7:46",
+      "clock": "1:33",
       "period": 2,
-      "state": "Q2 7:46",
+      "state": "Q2 1:33",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/POR.png&h=40&w=40",
