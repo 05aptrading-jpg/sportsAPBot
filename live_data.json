@@ -1,5 +1,5 @@
 {
-  "fecha": "23/07/2026 12:02",
+  "fecha": "23/07/2026 12:17",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784901600,
@@ -3385,7 +3385,7 @@
       "opp_team": "San Diego Padres",
       "score_fav": "5",
       "score_opp": "3",
-      "state": "Bottom 6th",
+      "state": "Bottom 7th",
       "result": "live",
       "label": "🎯",
       "game_pk": 824893,
@@ -3426,13 +3426,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": false,
-        "inning_ordinal": "6th",
-        "outs": 1,
-        "balls": 0,
+        "inning_ordinal": "7th",
+        "outs": 0,
+        "balls": 2,
         "strikes": 0,
         "away_runs": 3,
         "home_runs": 5,
@@ -3625,10 +3629,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3707,7 +3716,7 @@
       "opp_team": "Minnesota Twins",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Bottom 4th",
+      "state": "Top 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 824406,
@@ -3740,17 +3749,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 0,
-        "balls": 2,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 1,
+        "balls": 1,
         "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 1,
+        "away_hits": 2,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -5469,7 +5482,7 @@
     "824893": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 6th",
+      "status": "Bottom 7th",
       "away_runs": 5,
       "home_runs": 3,
       "away_team_name": "San Diego Padres",
@@ -5499,13 +5512,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": false,
-        "inning_ordinal": "6th",
-        "outs": 1,
-        "balls": 0,
+        "inning_ordinal": "7th",
+        "outs": 0,
+        "balls": 2,
         "strikes": 0,
         "away_runs": 3,
         "home_runs": 5,
@@ -5576,10 +5593,15 @@
       "away_team_name": "Arizona Diamondbacks",
       "home_team_name": "St. Louis Cardinals",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5608,7 +5630,7 @@
     "824406": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 4th",
+      "status": "Top 5th",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Minnesota Twins",
@@ -5630,17 +5652,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 0,
-        "balls": 2,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 1,
+        "balls": 1,
         "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 1,
+        "away_hits": 2,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -5704,7 +5730,7 @@
       }
     }
   },
-  "updated_at": "23/07/2026 12:02",
+  "updated_at": "23/07/2026 12:17",
   "stats": {
     "total": 15,
     "acertados": 6,
