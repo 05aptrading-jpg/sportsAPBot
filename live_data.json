@@ -1,5 +1,5 @@
 {
-  "fecha": "23/07/2026 08:03",
+  "fecha": "23/07/2026 08:17",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784901600,
@@ -3402,10 +3402,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3682,7 +3687,7 @@
       "opp_team": "Minnesota Twins",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 824406,
@@ -3721,7 +3726,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5428,10 +5433,15 @@
       "away_team_name": "San Diego Padres",
       "home_team_name": "Atlanta Braves",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5536,7 +5546,7 @@
     "824406": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Minnesota Twins",
@@ -5564,7 +5574,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5610,7 +5620,7 @@
       }
     }
   },
-  "updated_at": "23/07/2026 08:03",
+  "updated_at": "23/07/2026 08:17",
   "stats": {
     "total": 15,
     "acertados": 6,
