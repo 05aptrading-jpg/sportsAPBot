@@ -1,5 +1,5 @@
 {
-  "fecha": "23/07/2026 15:32",
+  "fecha": "23/07/2026 15:47",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784901600,
@@ -2726,7 +2726,7 @@
       "opp_team": "Arizona Diamondbacks",
       "score_fav": "2",
       "score_opp": "0",
-      "state": "Bottom 1st",
+      "state": "Bottom 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 823042,
@@ -2747,14 +2747,18 @@
           {
             "away_runs": 0,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 1,
-        "balls": 2,
-        "strikes": 1,
+        "inning_ordinal": "2nd",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 2,
         "away_hits": 1,
@@ -3052,9 +3056,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "1",
         "opp_score": "3",
         "score_fav": "1",
@@ -4483,7 +4487,7 @@
     "823042": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Bottom 2nd",
       "away_runs": 2,
       "home_runs": 0,
       "away_team_name": "Arizona Diamondbacks",
@@ -4493,14 +4497,18 @@
           {
             "away_runs": 0,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 1,
-        "balls": 2,
-        "strikes": 1,
+        "inning_ordinal": "2nd",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 2,
         "away_hits": 1,
@@ -4676,9 +4684,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "1",
         "opp_score": "3",
         "score_fav": "1",
@@ -4990,7 +4998,7 @@
       }
     }
   },
-  "updated_at": "23/07/2026 15:32",
+  "updated_at": "23/07/2026 15:47",
   "stats": {
     "total": 2,
     "acertados": 1,
