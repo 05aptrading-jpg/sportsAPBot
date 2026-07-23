@@ -1,5 +1,5 @@
 {
-  "fecha": "23/07/2026 14:02",
+  "fecha": "23/07/2026 14:17",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784901600,
@@ -2830,7 +2830,7 @@
       "opp_team": "Minnesota Twins",
       "score_fav": "1",
       "score_opp": "1",
-      "state": "Middle 11th",
+      "state": "Top 12th",
       "result": "live",
       "label": "📋",
       "game_pk": 824406,
@@ -2891,14 +2891,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 11,
+        "current_inning": 12,
         "is_top": true,
-        "inning_ordinal": "11th",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 0,
+        "inning_ordinal": "12th",
+        "outs": 1,
+        "balls": 3,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 1,
         "away_hits": 4,
@@ -2974,7 +2978,7 @@
       "opp_team": "Tampa Bay Rays",
       "score_fav": "2",
       "score_opp": "1",
-      "state": "End 3rd",
+      "state": "Top 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 822785,
@@ -3003,17 +3007,25 @@
           {
             "away_runs": 1,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 3,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 1,
         "balls": 0,
         "strikes": 1,
         "away_runs": 1,
         "home_runs": 2,
-        "away_hits": 2,
+        "away_hits": 3,
         "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
@@ -4498,7 +4510,7 @@
     "824406": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 11th",
+      "status": "Top 12th",
       "away_runs": 1,
       "home_runs": 1,
       "away_team_name": "Minnesota Twins",
@@ -4548,14 +4560,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 11,
+        "current_inning": 12,
         "is_top": true,
-        "inning_ordinal": "11th",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 0,
+        "inning_ordinal": "12th",
+        "outs": 1,
+        "balls": 3,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 1,
         "away_hits": 4,
@@ -4581,7 +4597,7 @@
     "822785": {
       "is_live": true,
       "is_final": false,
-      "status": "End 3rd",
+      "status": "Top 5th",
       "away_runs": 2,
       "home_runs": 1,
       "away_team_name": "Tampa Bay Rays",
@@ -4599,17 +4615,25 @@
           {
             "away_runs": 1,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 3,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 1,
         "balls": 0,
         "strikes": 1,
         "away_runs": 1,
         "home_runs": 2,
-        "away_hits": 2,
+        "away_hits": 3,
         "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
@@ -4934,7 +4958,7 @@
       }
     }
   },
-  "updated_at": "23/07/2026 14:02",
+  "updated_at": "23/07/2026 14:17",
   "stats": {
     "total": 2,
     "acertados": 1,
