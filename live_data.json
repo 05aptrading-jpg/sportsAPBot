@@ -1,5 +1,5 @@
 {
-  "fecha": "23/07/2026 13:47",
+  "fecha": "23/07/2026 14:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784901600,
@@ -2406,7 +2406,7 @@
         "Racha de 7-3 en últimos 10",
         "Historial favorable en enfrentamientos directos"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "acertado",
       "linescore": {
         "innings": [
           {
@@ -2830,7 +2830,7 @@
       "opp_team": "Minnesota Twins",
       "score_fav": "1",
       "score_opp": "1",
-      "state": "Top 10th",
+      "state": "Top 11th",
       "result": "live",
       "label": "📋",
       "game_pk": 824406,
@@ -2887,13 +2887,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 10,
+        "current_inning": 11,
         "is_top": true,
-        "inning_ordinal": "10th",
-        "outs": 2,
-        "balls": 1,
+        "inning_ordinal": "11th",
+        "outs": 1,
+        "balls": 2,
         "strikes": 1,
         "away_runs": 1,
         "home_runs": 1,
@@ -2968,9 +2972,9 @@
       "status_emoji": "🔴",
       "fav_team": "Toronto Blue Jays",
       "opp_team": "Tampa Bay Rays",
-      "score_fav": "1",
-      "score_opp": "0",
-      "state": "Top 3rd",
+      "score_fav": "2",
+      "score_opp": "1",
+      "state": "Bottom 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 822785,
@@ -2997,20 +3001,20 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
-            "home_runs": 0
+            "away_runs": 1,
+            "home_runs": 1
           }
         ],
         "current_inning": 3,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "3rd",
         "outs": 2,
-        "balls": 1,
-        "strikes": 2,
-        "away_runs": 0,
-        "home_runs": 1,
-        "away_hits": 0,
-        "home_hits": 2,
+        "balls": 0,
+        "strikes": 1,
+        "away_runs": 1,
+        "home_runs": 2,
+        "away_hits": 2,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Tampa Bay Rays",
@@ -3023,10 +3027,10 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
-        "opp_score": "1",
-        "score_fav": "0",
-        "score_opp": "1"
+        "fav_score": "1",
+        "opp_score": "2",
+        "score_fav": "1",
+        "score_opp": "2"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TOR.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
@@ -4494,7 +4498,7 @@
     "824406": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 10th",
+      "status": "Top 11th",
       "away_runs": 1,
       "home_runs": 1,
       "away_team_name": "Minnesota Twins",
@@ -4540,13 +4544,17 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 10,
+        "current_inning": 11,
         "is_top": true,
-        "inning_ordinal": "10th",
-        "outs": 2,
-        "balls": 1,
+        "inning_ordinal": "11th",
+        "outs": 1,
+        "balls": 2,
         "strikes": 1,
         "away_runs": 1,
         "home_runs": 1,
@@ -4573,9 +4581,9 @@
     "822785": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 3rd",
-      "away_runs": 1,
-      "home_runs": 0,
+      "status": "Bottom 3rd",
+      "away_runs": 2,
+      "home_runs": 1,
       "away_team_name": "Tampa Bay Rays",
       "home_team_name": "Toronto Blue Jays",
       "linescore": {
@@ -4589,20 +4597,20 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
-            "home_runs": 0
+            "away_runs": 1,
+            "home_runs": 1
           }
         ],
         "current_inning": 3,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "3rd",
         "outs": 2,
-        "balls": 1,
-        "strikes": 2,
-        "away_runs": 0,
-        "home_runs": 1,
-        "away_hits": 0,
-        "home_hits": 2,
+        "balls": 0,
+        "strikes": 1,
+        "away_runs": 1,
+        "home_runs": 2,
+        "away_hits": 2,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Tampa Bay Rays",
@@ -4615,10 +4623,10 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
-        "opp_score": "1",
-        "score_fav": "0",
-        "score_opp": "1"
+        "fav_score": "1",
+        "opp_score": "2",
+        "score_fav": "1",
+        "score_opp": "2"
       }
     },
     "846187": {
@@ -4926,16 +4934,16 @@
       }
     }
   },
-  "updated_at": "23/07/2026 13:47",
+  "updated_at": "23/07/2026 14:00",
   "stats": {
-    "total": 1,
-    "acertados": 0,
+    "total": 2,
+    "acertados": 1,
     "fallidos": 1,
-    "win_rate": 0.0,
-    "alta_total": 0,
-    "alta_acertados": 0,
+    "win_rate": 50.0,
+    "alta_total": 1,
+    "alta_acertados": 1,
     "alta_fallidos": 0,
-    "alta_win_rate": 0,
+    "alta_win_rate": 100.0,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
@@ -4947,20 +4955,20 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 2,
-    "llm_acertados": 1,
+    "llm_total": 3,
+    "llm_acertados": 2,
     "llm_fallidos": 1,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 66.7
   },
   "stats_mlb": {
-    "total": 1,
-    "acertados": 0,
+    "total": 2,
+    "acertados": 1,
     "fallidos": 1,
-    "win_rate": 0.0,
-    "alta_total": 0,
-    "alta_acertados": 0,
+    "win_rate": 50.0,
+    "alta_total": 1,
+    "alta_acertados": 1,
     "alta_fallidos": 0,
-    "alta_win_rate": 0,
+    "alta_win_rate": 100.0,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
@@ -4972,10 +4980,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 2,
-    "llm_acertados": 1,
+    "llm_total": 3,
+    "llm_acertados": 2,
     "llm_fallidos": 1,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 66.7
   },
   "stats_lmb": {
     "total": 0,
@@ -5003,14 +5011,14 @@
     "llm_win_rate": 0
   },
   "stats_hoy": {
-    "total": 0,
-    "acertados": 0,
+    "total": 1,
+    "acertados": 1,
     "fallidos": 0,
-    "win_rate": 0,
-    "alta_total": 0,
-    "alta_acertados": 0,
+    "win_rate": 100.0,
+    "alta_total": 1,
+    "alta_acertados": 1,
     "alta_fallidos": 0,
-    "alta_win_rate": 0,
+    "alta_win_rate": 100.0,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
@@ -5022,20 +5030,20 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 0,
-    "llm_acertados": 0,
+    "llm_total": 1,
+    "llm_acertados": 1,
     "llm_fallidos": 0,
-    "llm_win_rate": 0
+    "llm_win_rate": 100.0
   },
   "stats_hoy_mlb": {
-    "total": 0,
-    "acertados": 0,
+    "total": 1,
+    "acertados": 1,
     "fallidos": 0,
-    "win_rate": 0,
-    "alta_total": 0,
-    "alta_acertados": 0,
+    "win_rate": 100.0,
+    "alta_total": 1,
+    "alta_acertados": 1,
     "alta_fallidos": 0,
-    "alta_win_rate": 0,
+    "alta_win_rate": 100.0,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
@@ -5047,10 +5055,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 0,
-    "llm_acertados": 0,
+    "llm_total": 1,
+    "llm_acertados": 1,
     "llm_fallidos": 0,
-    "llm_win_rate": 0
+    "llm_win_rate": 100.0
   },
   "stats_hoy_lmb": {
     "total": 0,
@@ -5078,14 +5086,14 @@
     "llm_win_rate": 0
   },
   "stats_3dias": {
-    "total": 1,
-    "acertados": 0,
+    "total": 2,
+    "acertados": 1,
     "fallidos": 1,
-    "win_rate": 0.0,
-    "alta_total": 0,
-    "alta_acertados": 0,
+    "win_rate": 50.0,
+    "alta_total": 1,
+    "alta_acertados": 1,
     "alta_fallidos": 0,
-    "alta_win_rate": 0,
+    "alta_win_rate": 100.0,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
@@ -5097,20 +5105,20 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 2,
-    "llm_acertados": 1,
+    "llm_total": 3,
+    "llm_acertados": 2,
     "llm_fallidos": 1,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 66.7
   },
   "stats_3dias_mlb": {
-    "total": 1,
-    "acertados": 0,
+    "total": 2,
+    "acertados": 1,
     "fallidos": 1,
-    "win_rate": 0.0,
-    "alta_total": 0,
-    "alta_acertados": 0,
+    "win_rate": 50.0,
+    "alta_total": 1,
+    "alta_acertados": 1,
     "alta_fallidos": 0,
-    "alta_win_rate": 0,
+    "alta_win_rate": 100.0,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
@@ -5122,10 +5130,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 2,
-    "llm_acertados": 1,
+    "llm_total": 3,
+    "llm_acertados": 2,
     "llm_fallidos": 1,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 66.7
   },
   "stats_3dias_lmb": {
     "total": 0,
@@ -5153,14 +5161,14 @@
     "llm_win_rate": 0
   },
   "stats_semanal": {
-    "total": 1,
-    "acertados": 0,
+    "total": 2,
+    "acertados": 1,
     "fallidos": 1,
-    "win_rate": 0.0,
-    "alta_total": 0,
-    "alta_acertados": 0,
+    "win_rate": 50.0,
+    "alta_total": 1,
+    "alta_acertados": 1,
     "alta_fallidos": 0,
-    "alta_win_rate": 0,
+    "alta_win_rate": 100.0,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
@@ -5172,20 +5180,20 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 2,
-    "llm_acertados": 1,
+    "llm_total": 3,
+    "llm_acertados": 2,
     "llm_fallidos": 1,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 66.7
   },
   "stats_semanal_mlb": {
-    "total": 1,
-    "acertados": 0,
+    "total": 2,
+    "acertados": 1,
     "fallidos": 1,
-    "win_rate": 0.0,
-    "alta_total": 0,
-    "alta_acertados": 0,
+    "win_rate": 50.0,
+    "alta_total": 1,
+    "alta_acertados": 1,
     "alta_fallidos": 0,
-    "alta_win_rate": 0,
+    "alta_win_rate": 100.0,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
@@ -5197,10 +5205,10 @@
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 2,
-    "llm_acertados": 1,
+    "llm_total": 3,
+    "llm_acertados": 2,
     "llm_fallidos": 1,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 66.7
   },
   "stats_semanal_lmb": {
     "total": 0,
@@ -5313,14 +5321,14 @@
       "llm_win_rate": 50.0
     },
     "2026-07-23": {
-      "total": 0,
-      "acertados": 0,
+      "total": 1,
+      "acertados": 1,
       "fallidos": 0,
-      "win_rate": 0,
-      "alta_total": 0,
-      "alta_acertados": 0,
+      "win_rate": 100.0,
+      "alta_total": 1,
+      "alta_acertados": 1,
       "alta_fallidos": 0,
-      "alta_win_rate": 0,
+      "alta_win_rate": 100.0,
       "media_total": 0,
       "media_acertados": 0,
       "media_fallidos": 0,
@@ -5332,10 +5340,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "llm_total": 0,
-      "llm_acertados": 0,
+      "llm_total": 1,
+      "llm_acertados": 1,
       "llm_fallidos": 0,
-      "llm_win_rate": 0
+      "llm_win_rate": 100.0
     },
     "55.90%": {
       "total": 0,
@@ -5490,14 +5498,14 @@
       "llm_win_rate": 50.0
     },
     "2026-07-23": {
-      "total": 0,
-      "acertados": 0,
+      "total": 1,
+      "acertados": 1,
       "fallidos": 0,
-      "win_rate": 0,
-      "alta_total": 0,
-      "alta_acertados": 0,
+      "win_rate": 100.0,
+      "alta_total": 1,
+      "alta_acertados": 1,
       "alta_fallidos": 0,
-      "alta_win_rate": 0,
+      "alta_win_rate": 100.0,
       "media_total": 0,
       "media_acertados": 0,
       "media_fallidos": 0,
@@ -5509,10 +5517,10 @@
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "llm_total": 0,
-      "llm_acertados": 0,
+      "llm_total": 1,
+      "llm_acertados": 1,
       "llm_fallidos": 0,
-      "llm_win_rate": 0
+      "llm_win_rate": 100.0
     },
     "55.90%": {
       "total": 0,
@@ -15514,10 +15522,10 @@
   },
   "llm_by_sport": {
     "MLB": {
-      "llm_total": 2,
-      "llm_acertados": 1,
+      "llm_total": 3,
+      "llm_acertados": 2,
       "llm_fallidos": 1,
-      "llm_win_rate": 50.0
+      "llm_win_rate": 66.7
     },
     "LMB": {
       "llm_total": 0,
@@ -16462,34 +16470,34 @@
   "llm_sections": {
     "MLB": {
       "equipo": {
-        "total": 2,
-        "acertados": 1,
+        "total": 3,
+        "acertados": 2,
         "fallidos": 1,
-        "win_rate": 50.0
+        "win_rate": 66.7
       },
       "marcador": {
-        "total": 2,
+        "total": 3,
         "acertados": 0,
-        "fallidos": 2,
+        "fallidos": 3,
         "win_rate": 0.0
       },
       "lanzadores": {
-        "total": 2,
-        "acertados": 1,
+        "total": 3,
+        "acertados": 2,
         "fallidos": 1,
-        "win_rate": 50.0
+        "win_rate": 66.7
       },
       "bateadores": {
-        "total": 2,
-        "acertados": 1,
+        "total": 3,
+        "acertados": 2,
         "fallidos": 1,
-        "win_rate": 50.0
+        "win_rate": 66.7
       },
       "relevo": {
-        "total": 2,
-        "acertados": 1,
+        "total": 3,
+        "acertados": 2,
         "fallidos": 1,
-        "win_rate": 50.0
+        "win_rate": 66.7
       }
     }
   }
