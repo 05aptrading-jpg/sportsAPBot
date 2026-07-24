@@ -1,5 +1,5 @@
 {
-  "fecha": "23/07/2026 18:02",
+  "fecha": "23/07/2026 18:17",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784901600,
@@ -2621,8 +2621,8 @@
       "fav_team": "Detroit Tigers",
       "opp_team": "Kansas City Royals",
       "score_fav": "0",
-      "score_opp": "0",
-      "state": "Bottom 5th",
+      "score_opp": "2",
+      "state": "Top 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 824247,
@@ -2659,17 +2659,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 2,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
         "outs": 1,
         "balls": 0,
-        "strikes": 2,
-        "away_runs": 0,
+        "strikes": 1,
+        "away_runs": 2,
         "home_runs": 0,
-        "away_hits": 3,
+        "away_hits": 5,
         "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
@@ -2683,9 +2687,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "2",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "2",
         "score_opp": "0"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
@@ -2737,13 +2741,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-23",
-      "status_emoji": "🔴",
+      "status_emoji": "❌",
       "fav_team": "St. Louis Cardinals",
       "opp_team": "Arizona Diamondbacks",
-      "score_fav": "2",
+      "score_fav": "6",
       "score_opp": "10",
-      "state": "Bottom 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "loss",
       "label": "📋",
       "game_pk": 823042,
       "fav_abbr": "STL",
@@ -2794,19 +2798,19 @@
           },
           {
             "away_runs": 1,
-            "home_runs": 0
+            "home_runs": 4
           }
         ],
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 2,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 10,
-        "home_runs": 2,
+        "home_runs": 6,
         "away_hits": 16,
-        "home_hits": 9,
+        "home_hits": 13,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Arizona Diamondbacks",
@@ -2816,13 +2820,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "10",
-        "opp_score": "2",
+        "opp_score": "6",
         "score_fav": "10",
-        "score_opp": "2"
+        "score_opp": "6"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/STL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ARI.png&h=40&w=40",
@@ -3547,7 +3551,7 @@
       "opp_team": "Saraperos de Saltillo",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "home_team": "Sultanes de Monterrey",
       "away_team": "Saraperos de Saltillo",
@@ -3562,10 +3566,15 @@
       "resultado_llm": "pendiente",
       "game_pk": 846291,
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3584,7 +3593,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4498,9 +4507,9 @@
     "824247": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 5th",
+      "status": "Top 6th",
       "away_runs": 0,
-      "home_runs": 0,
+      "home_runs": 2,
       "away_team_name": "Kansas City Royals",
       "home_team_name": "Detroit Tigers",
       "linescore": {
@@ -4524,17 +4533,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 2,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
         "outs": 1,
         "balls": 0,
-        "strikes": 2,
-        "away_runs": 0,
+        "strikes": 1,
+        "away_runs": 2,
         "home_runs": 0,
-        "away_hits": 3,
+        "away_hits": 5,
         "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
@@ -4548,17 +4561,17 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "2",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "2",
         "score_opp": "0"
       }
     },
     "823042": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 9th",
-      "away_runs": 2,
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
+      "away_runs": 6,
       "home_runs": 10,
       "away_team_name": "Arizona Diamondbacks",
       "home_team_name": "St. Louis Cardinals",
@@ -4598,19 +4611,19 @@
           },
           {
             "away_runs": 1,
-            "home_runs": 0
+            "home_runs": 4
           }
         ],
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 2,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 10,
-        "home_runs": 2,
+        "home_runs": 6,
         "away_hits": 16,
-        "home_hits": 9,
+        "home_hits": 13,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Arizona Diamondbacks",
@@ -4620,13 +4633,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "10",
-        "opp_score": "2",
+        "opp_score": "6",
         "score_fav": "10",
-        "score_opp": "2"
+        "score_opp": "6"
       }
     },
     "824406": {
@@ -4951,16 +4964,21 @@
     "846291": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Saraperos de Saltillo",
       "home_team_name": "Sultanes de Monterrey",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4979,7 +4997,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5106,7 +5124,7 @@
       }
     }
   },
-  "updated_at": "23/07/2026 18:02",
+  "updated_at": "23/07/2026 18:17",
   "stats": {
     "total": 3,
     "acertados": 2,
