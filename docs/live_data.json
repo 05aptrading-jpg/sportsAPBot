@@ -1,5 +1,5 @@
 {
-  "fecha": "24/07/2026 05:47",
+  "fecha": "24/07/2026 06:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784901600,
@@ -1489,7 +1489,7 @@
         "Guerreros con lesiones clave",
         "Historial favorable para Tigres"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "fallido",
       "game_pk": 846150,
       "linescore": {
         "innings": [
@@ -2160,13 +2160,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-23",
-      "status_emoji": "⏳",
+      "status_emoji": "❌",
       "fav_team": "Caliente de Durango",
       "opp_team": "Dorados de Chihuahua",
       "score_fav": "1",
       "score_opp": "8",
-      "state": "Completed Early",
-      "result": "pending",
+      "state": "Final",
+      "result": "loss",
       "home_team": "Dorados de Chihuahua",
       "away_team": "Caliente de Durango",
       "label": "📋",
@@ -2177,7 +2177,7 @@
         "Racha positiva de Durango",
         "Historial favorable en enfrentamientos directos"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "fallido",
       "game_pk": 846187,
       "linescore": {
         "innings": [
@@ -2441,7 +2441,7 @@
         "Bravos con problemas de lesiones",
         "Historial favorable para Diablos"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "fallido",
       "game_pk": 846804,
       "linescore": {
         "innings": [
@@ -2573,7 +2573,7 @@
         "Lesiones no reportadas",
         "Historial parejo reciente"
       ],
-      "resultado_llm": "fallido",
+      "resultado_llm": "acertado",
       "game_pk": 846475,
       "linescore": {
         "innings": [
@@ -2705,7 +2705,7 @@
         "Racha reciente",
         "Ventaja de local"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "acertado",
       "game_pk": 846291,
       "linescore": {
         "innings": [
@@ -2837,7 +2837,7 @@
         "Ventaja de local",
         "Historial favorable"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "fallido",
       "game_pk": 846654,
       "linescore": {
         "innings": [
@@ -2969,7 +2969,7 @@
         "Historial de enfrentamientos",
         "Ventaja de local"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "acertado",
       "game_pk": 845920,
       "linescore": {
         "innings": [
@@ -3113,7 +3113,7 @@
         "Historial favorable",
         "Ventaja de local"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "acertado",
       "game_pk": 846331,
       "linescore": {
         "innings": [
@@ -5047,8 +5047,8 @@
     },
     "846187": {
       "is_live": false,
-      "is_final": false,
-      "status": "Completed Early",
+      "is_final": true,
+      "status": "Final",
       "away_runs": 1,
       "home_runs": 8,
       "away_team_name": "Dorados de Chihuahua",
@@ -5808,31 +5808,31 @@
       "linescore": {}
     }
   },
-  "updated_at": "24/07/2026 05:47",
+  "updated_at": "24/07/2026 06:00",
   "stats": {
-    "total": 4,
+    "total": 5,
     "acertados": 2,
-    "fallidos": 2,
-    "win_rate": 50.0,
-    "alta_total": 1,
+    "fallidos": 3,
+    "win_rate": 40.0,
+    "alta_total": 2,
     "alta_acertados": 1,
-    "alta_fallidos": 0,
-    "alta_win_rate": 100.0,
+    "alta_fallidos": 1,
+    "alta_win_rate": 50.0,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 7,
-    "baja_acertados": 4,
-    "baja_fallidos": 3,
-    "baja_win_rate": 57.1,
+    "baja_total": 14,
+    "baja_acertados": 7,
+    "baja_fallidos": 7,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 8,
-    "llm_acertados": 6,
-    "llm_fallidos": 2,
-    "llm_win_rate": 75.0
+    "llm_total": 16,
+    "llm_acertados": 10,
+    "llm_fallidos": 6,
+    "llm_win_rate": 62.5
   },
   "stats_mlb": {
     "total": 4,
@@ -5860,29 +5860,29 @@
     "llm_win_rate": 71.4
   },
   "stats_lmb": {
-    "total": 0,
+    "total": 1,
     "acertados": 0,
-    "fallidos": 0,
-    "win_rate": 0,
-    "alta_total": 0,
+    "fallidos": 1,
+    "win_rate": 0.0,
+    "alta_total": 1,
     "alta_acertados": 0,
-    "alta_fallidos": 0,
-    "alta_win_rate": 0,
+    "alta_fallidos": 1,
+    "alta_win_rate": 0.0,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 1,
-    "baja_acertados": 1,
-    "baja_fallidos": 0,
-    "baja_win_rate": 100.0,
+    "baja_total": 8,
+    "baja_acertados": 4,
+    "baja_fallidos": 4,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 1,
-    "llm_acertados": 1,
-    "llm_fallidos": 0,
-    "llm_win_rate": 100.0
+    "llm_total": 9,
+    "llm_acertados": 5,
+    "llm_fallidos": 4,
+    "llm_win_rate": 55.6
   },
   "stats_hoy": {
     "total": 0,
@@ -5960,29 +5960,29 @@
     "llm_win_rate": 0
   },
   "stats_3dias": {
-    "total": 4,
+    "total": 5,
     "acertados": 2,
-    "fallidos": 2,
-    "win_rate": 50.0,
-    "alta_total": 1,
+    "fallidos": 3,
+    "win_rate": 40.0,
+    "alta_total": 2,
     "alta_acertados": 1,
-    "alta_fallidos": 0,
-    "alta_win_rate": 100.0,
+    "alta_fallidos": 1,
+    "alta_win_rate": 50.0,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 7,
-    "baja_acertados": 4,
-    "baja_fallidos": 3,
-    "baja_win_rate": 57.1,
+    "baja_total": 14,
+    "baja_acertados": 7,
+    "baja_fallidos": 7,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 8,
-    "llm_acertados": 6,
-    "llm_fallidos": 2,
-    "llm_win_rate": 75.0
+    "llm_total": 16,
+    "llm_acertados": 10,
+    "llm_fallidos": 6,
+    "llm_win_rate": 62.5
   },
   "stats_3dias_mlb": {
     "total": 4,
@@ -6010,54 +6010,54 @@
     "llm_win_rate": 71.4
   },
   "stats_3dias_lmb": {
-    "total": 0,
+    "total": 1,
     "acertados": 0,
-    "fallidos": 0,
-    "win_rate": 0,
-    "alta_total": 0,
+    "fallidos": 1,
+    "win_rate": 0.0,
+    "alta_total": 1,
     "alta_acertados": 0,
-    "alta_fallidos": 0,
-    "alta_win_rate": 0,
+    "alta_fallidos": 1,
+    "alta_win_rate": 0.0,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 1,
-    "baja_acertados": 1,
-    "baja_fallidos": 0,
-    "baja_win_rate": 100.0,
+    "baja_total": 8,
+    "baja_acertados": 4,
+    "baja_fallidos": 4,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 1,
-    "llm_acertados": 1,
-    "llm_fallidos": 0,
-    "llm_win_rate": 100.0
+    "llm_total": 9,
+    "llm_acertados": 5,
+    "llm_fallidos": 4,
+    "llm_win_rate": 55.6
   },
   "stats_semanal": {
-    "total": 4,
+    "total": 5,
     "acertados": 2,
-    "fallidos": 2,
-    "win_rate": 50.0,
-    "alta_total": 1,
+    "fallidos": 3,
+    "win_rate": 40.0,
+    "alta_total": 2,
     "alta_acertados": 1,
-    "alta_fallidos": 0,
-    "alta_win_rate": 100.0,
+    "alta_fallidos": 1,
+    "alta_win_rate": 50.0,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 7,
-    "baja_acertados": 4,
-    "baja_fallidos": 3,
-    "baja_win_rate": 57.1,
+    "baja_total": 14,
+    "baja_acertados": 7,
+    "baja_fallidos": 7,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 8,
-    "llm_acertados": 6,
-    "llm_fallidos": 2,
-    "llm_win_rate": 75.0
+    "llm_total": 16,
+    "llm_acertados": 10,
+    "llm_fallidos": 6,
+    "llm_win_rate": 62.5
   },
   "stats_semanal_mlb": {
     "total": 4,
@@ -6085,29 +6085,29 @@
     "llm_win_rate": 71.4
   },
   "stats_semanal_lmb": {
-    "total": 0,
+    "total": 1,
     "acertados": 0,
-    "fallidos": 0,
-    "win_rate": 0,
-    "alta_total": 0,
+    "fallidos": 1,
+    "win_rate": 0.0,
+    "alta_total": 1,
     "alta_acertados": 0,
-    "alta_fallidos": 0,
-    "alta_win_rate": 0,
+    "alta_fallidos": 1,
+    "alta_win_rate": 0.0,
     "media_total": 0,
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 1,
-    "baja_acertados": 1,
-    "baja_fallidos": 0,
-    "baja_win_rate": 100.0,
+    "baja_total": 8,
+    "baja_acertados": 4,
+    "baja_fallidos": 4,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 1,
-    "llm_acertados": 1,
-    "llm_fallidos": 0,
-    "llm_win_rate": 100.0
+    "llm_total": 9,
+    "llm_acertados": 5,
+    "llm_fallidos": 4,
+    "llm_win_rate": 55.6
   },
   "fechas_disponibles": [
     "\"\"remolca\"",
@@ -6195,29 +6195,29 @@
       "llm_win_rate": 50.0
     },
     "2026-07-23": {
-      "total": 3,
+      "total": 4,
       "acertados": 2,
-      "fallidos": 1,
-      "win_rate": 66.7,
-      "alta_total": 1,
+      "fallidos": 2,
+      "win_rate": 50.0,
+      "alta_total": 2,
       "alta_acertados": 1,
-      "alta_fallidos": 0,
-      "alta_win_rate": 100.0,
+      "alta_fallidos": 1,
+      "alta_win_rate": 50.0,
       "media_total": 0,
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 5,
-      "baja_acertados": 3,
-      "baja_fallidos": 2,
-      "baja_win_rate": 60.0,
+      "baja_total": 12,
+      "baja_acertados": 6,
+      "baja_fallidos": 6,
+      "baja_win_rate": 50.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "llm_total": 6,
-      "llm_acertados": 5,
-      "llm_fallidos": 1,
-      "llm_win_rate": 83.3
+      "llm_total": 14,
+      "llm_acertados": 9,
+      "llm_fallidos": 5,
+      "llm_win_rate": 64.3
     },
     "55.90%": {
       "total": 0,
@@ -6549,29 +6549,29 @@
       "llm_win_rate": 0
     },
     "2026-07-23": {
-      "total": 0,
+      "total": 1,
       "acertados": 0,
-      "fallidos": 0,
-      "win_rate": 0,
-      "alta_total": 0,
+      "fallidos": 1,
+      "win_rate": 0.0,
+      "alta_total": 1,
       "alta_acertados": 0,
-      "alta_fallidos": 0,
-      "alta_win_rate": 0,
+      "alta_fallidos": 1,
+      "alta_win_rate": 0.0,
       "media_total": 0,
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 1,
-      "baja_acertados": 1,
-      "baja_fallidos": 0,
-      "baja_win_rate": 100.0,
+      "baja_total": 8,
+      "baja_acertados": 4,
+      "baja_fallidos": 4,
+      "baja_win_rate": 50.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "llm_total": 1,
-      "llm_acertados": 1,
-      "llm_fallidos": 0,
-      "llm_win_rate": 100.0
+      "llm_total": 9,
+      "llm_acertados": 5,
+      "llm_fallidos": 4,
+      "llm_win_rate": 55.6
     },
     "55.90%": {
       "total": 0,
@@ -16402,10 +16402,10 @@
       "llm_win_rate": 71.4
     },
     "LMB": {
-      "llm_total": 1,
-      "llm_acertados": 1,
-      "llm_fallidos": 0,
-      "llm_win_rate": 100.0
+      "llm_total": 9,
+      "llm_acertados": 5,
+      "llm_fallidos": 4,
+      "llm_win_rate": 55.6
     },
     "NBA": {
       "llm_total": 0,
@@ -17376,34 +17376,34 @@
     },
     "LMB": {
       "equipo": {
-        "total": 1,
-        "acertados": 1,
-        "fallidos": 0,
-        "win_rate": 100.0
+        "total": 9,
+        "acertados": 5,
+        "fallidos": 4,
+        "win_rate": 55.6
       },
       "marcador": {
-        "total": 1,
-        "acertados": 0,
-        "fallidos": 1,
-        "win_rate": 0.0
+        "total": 9,
+        "acertados": 4,
+        "fallidos": 5,
+        "win_rate": 44.4
       },
       "lanzadores": {
-        "total": 1,
-        "acertados": 1,
-        "fallidos": 0,
-        "win_rate": 100.0
+        "total": 9,
+        "acertados": 5,
+        "fallidos": 4,
+        "win_rate": 55.6
       },
       "bateadores": {
-        "total": 1,
-        "acertados": 1,
-        "fallidos": 0,
-        "win_rate": 100.0
+        "total": 9,
+        "acertados": 5,
+        "fallidos": 4,
+        "win_rate": 55.6
       },
       "relevo": {
-        "total": 1,
-        "acertados": 1,
-        "fallidos": 0,
-        "win_rate": 100.0
+        "total": 9,
+        "acertados": 5,
+        "fallidos": 4,
+        "win_rate": 55.6
       }
     }
   }
