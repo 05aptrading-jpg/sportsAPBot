@@ -1,5 +1,5 @@
 {
-  "fecha": "23/07/2026 21:47",
+  "fecha": "23/07/2026 22:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784901600,
@@ -2526,7 +2526,7 @@
       "fav_team": "Guerreros de Oaxaca",
       "opp_team": "Tigres de Quintana Roo",
       "score_fav": "4",
-      "score_opp": "6",
+      "score_opp": "7",
       "state": "In Progress",
       "result": "live",
       "home_team": "Guerreros de Oaxaca",
@@ -2574,17 +2574,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 1,
-        "balls": 2,
-        "strikes": 2,
-        "away_runs": 6,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 7,
         "home_runs": 4,
-        "away_hits": 9,
+        "away_hits": 11,
         "home_hits": 8,
         "away_errors": 2,
         "home_errors": 0,
@@ -2598,9 +2602,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "6",
+        "fav_score": "7",
         "opp_score": "4",
-        "score_fav": "6",
+        "score_fav": "7",
         "score_opp": "4"
       },
       "llm_favorito": "Tigres de Quintana Roo",
@@ -3210,7 +3214,7 @@
       "fav_team": "Caliente de Durango",
       "opp_team": "Dorados de Chihuahua",
       "score_fav": "1",
-      "score_opp": "5",
+      "score_opp": "6",
       "state": "In Progress",
       "result": "live",
       "home_team": "Dorados de Chihuahua",
@@ -3241,19 +3245,19 @@
           },
           {
             "away_runs": 1,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 4,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "4th",
         "outs": 2,
-        "balls": 1,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 1,
-        "home_runs": 5,
+        "home_runs": 6,
         "away_hits": 5,
-        "home_hits": 5,
+        "home_hits": 7,
         "away_errors": 1,
         "home_errors": 1,
         "away_team_name": "Caliente de Durango",
@@ -3267,9 +3271,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "1",
-        "opp_score": "5",
+        "opp_score": "6",
         "score_fav": "1",
-        "score_opp": "5"
+        "score_opp": "6"
       },
       "llm_favorito": "Caliente de Durango",
       "llm_carreras": "3-5",
@@ -3318,13 +3322,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-23",
-      "status_emoji": "⏳",
+      "status_emoji": "✅",
       "fav_team": "Piratas de Campeche",
       "opp_team": "El Aguila de Veracruz",
       "score_fav": "5",
       "score_opp": "1",
-      "state": "Game Over",
-      "result": "pending",
+      "state": "Final",
+      "result": "win",
       "home_team": "El Aguila de Veracruz",
       "away_team": "Piratas de Campeche",
       "label": "📋",
@@ -3335,7 +3339,7 @@
         "Historial de enfrentamientos directos favorable",
         "Lesiones mínimas en ambos equipos"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "acertado",
       "game_pk": 846013,
       "linescore": {
         "innings": [
@@ -3395,9 +3399,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "5",
         "opp_score": "1",
         "score_fav": "5",
@@ -3453,7 +3457,7 @@
       "status_emoji": "🔴",
       "fav_team": "Diablos Rojos del Mexico",
       "opp_team": "Bravos de Leon",
-      "score_fav": "5",
+      "score_fav": "6",
       "score_opp": "8",
       "state": "In Progress",
       "result": "live",
@@ -3496,19 +3500,19 @@
             "home_runs": 2
           },
           {
-            "away_runs": 0,
+            "away_runs": 1,
             "home_runs": 0
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
-        "away_runs": 5,
+        "away_runs": 6,
         "home_runs": 8,
-        "away_hits": 7,
+        "away_hits": 9,
         "home_hits": 13,
         "away_errors": 0,
         "home_errors": 2,
@@ -3522,9 +3526,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "5",
+        "fav_score": "6",
         "opp_score": "8",
-        "score_fav": "5",
+        "score_fav": "6",
         "score_opp": "8"
       },
       "llm_favorito": "Diablos Rojos del Mexico",
@@ -3578,7 +3582,7 @@
       "fav_team": "Tecos de los Dos Laredos",
       "opp_team": "Rieleros de Aguascalientes",
       "score_fav": "5",
-      "score_opp": "5",
+      "score_opp": "8",
       "state": "In Progress",
       "result": "live",
       "home_team": "Rieleros de Aguascalientes",
@@ -3621,19 +3625,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 1
+            "home_runs": 4
           }
         ],
         "current_inning": 7,
         "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 1,
+        "outs": 2,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 5,
-        "home_runs": 5,
+        "home_runs": 8,
         "away_hits": 7,
-        "home_hits": 11,
+        "home_hits": 13,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Tecos de los Dos Laredos",
@@ -3647,9 +3651,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "5",
-        "opp_score": "5",
+        "opp_score": "8",
         "score_fav": "5",
-        "score_opp": "5"
+        "score_opp": "8"
       },
       "llm_favorito": "NO",
       "llm_carreras": "4-4",
@@ -3742,14 +3746,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": false,
-        "inning_ordinal": "6th",
+        "inning_ordinal": "7th",
         "outs": 0,
-        "balls": 2,
-        "strikes": 1,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 2,
         "away_hits": 5,
@@ -3873,15 +3881,15 @@
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 2,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 6,
         "home_runs": 0,
-        "away_hits": 12,
-        "home_hits": 7,
+        "away_hits": 13,
+        "home_hits": 8,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Conspiradores de Queretaro",
@@ -3998,18 +4006,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 0,
-        "balls": 2,
-        "strikes": 1,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 1,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 1,
         "home_runs": 1,
         "away_hits": 8,
-        "home_hits": 5,
+        "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Toros de Tijuana",
@@ -4125,11 +4137,11 @@
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 1,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 3,
         "away_hits": 3,
@@ -4733,7 +4745,7 @@
       "is_final": false,
       "status": "In Progress",
       "away_runs": 4,
-      "home_runs": 6,
+      "home_runs": 7,
       "away_team_name": "Tigres de Quintana Roo",
       "home_team_name": "Guerreros de Oaxaca",
       "linescore": {
@@ -4769,17 +4781,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 1,
-        "balls": 2,
-        "strikes": 2,
-        "away_runs": 6,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 7,
         "home_runs": 4,
-        "away_hits": 9,
+        "away_hits": 11,
         "home_hits": 8,
         "away_errors": 2,
         "home_errors": 0,
@@ -4793,9 +4809,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "6",
+        "fav_score": "7",
         "opp_score": "4",
-        "score_fav": "6",
+        "score_fav": "7",
         "score_opp": "4"
       }
     },
@@ -5116,7 +5132,7 @@
       "is_final": false,
       "status": "In Progress",
       "away_runs": 1,
-      "home_runs": 5,
+      "home_runs": 6,
       "away_team_name": "Dorados de Chihuahua",
       "home_team_name": "Caliente de Durango",
       "linescore": {
@@ -5135,19 +5151,19 @@
           },
           {
             "away_runs": 1,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 4,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "4th",
         "outs": 2,
-        "balls": 1,
-        "strikes": 2,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 1,
-        "home_runs": 5,
+        "home_runs": 6,
         "away_hits": 5,
-        "home_hits": 5,
+        "home_hits": 7,
         "away_errors": 1,
         "home_errors": 1,
         "away_team_name": "Caliente de Durango",
@@ -5161,15 +5177,15 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "1",
-        "opp_score": "5",
+        "opp_score": "6",
         "score_fav": "1",
-        "score_opp": "5"
+        "score_opp": "6"
       }
     },
     "846013": {
       "is_live": false,
-      "is_final": false,
-      "status": "Game Over",
+      "is_final": true,
+      "status": "Final",
       "away_runs": 5,
       "home_runs": 1,
       "away_team_name": "El Aguila de Veracruz",
@@ -5232,9 +5248,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "5",
         "opp_score": "1",
         "score_fav": "5",
@@ -5245,7 +5261,7 @@
       "is_live": true,
       "is_final": false,
       "status": "In Progress",
-      "away_runs": 5,
+      "away_runs": 6,
       "home_runs": 8,
       "away_team_name": "Bravos de Leon",
       "home_team_name": "Diablos Rojos del Mexico",
@@ -5276,19 +5292,19 @@
             "home_runs": 2
           },
           {
-            "away_runs": 0,
+            "away_runs": 1,
             "home_runs": 0
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
-        "away_runs": 5,
+        "away_runs": 6,
         "home_runs": 8,
-        "away_hits": 7,
+        "away_hits": 9,
         "home_hits": 13,
         "away_errors": 0,
         "home_errors": 2,
@@ -5302,9 +5318,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "5",
+        "fav_score": "6",
         "opp_score": "8",
-        "score_fav": "5",
+        "score_fav": "6",
         "score_opp": "8"
       }
     },
@@ -5313,7 +5329,7 @@
       "is_final": false,
       "status": "In Progress",
       "away_runs": 5,
-      "home_runs": 5,
+      "home_runs": 8,
       "away_team_name": "Rieleros de Aguascalientes",
       "home_team_name": "Tecos de los Dos Laredos",
       "linescore": {
@@ -5344,19 +5360,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 1
+            "home_runs": 4
           }
         ],
         "current_inning": 7,
         "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 1,
+        "outs": 2,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 5,
-        "home_runs": 5,
+        "home_runs": 8,
         "away_hits": 7,
-        "home_hits": 11,
+        "home_hits": 13,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Tecos de los Dos Laredos",
@@ -5370,9 +5386,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "5",
-        "opp_score": "5",
+        "opp_score": "8",
         "score_fav": "5",
-        "score_opp": "5"
+        "score_opp": "8"
       }
     },
     "846291": {
@@ -5408,14 +5424,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": false,
-        "inning_ordinal": "6th",
+        "inning_ordinal": "7th",
         "outs": 0,
-        "balls": 2,
-        "strikes": 1,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 2,
         "away_hits": 5,
@@ -5482,15 +5502,15 @@
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 2,
+        "balls": 1,
+        "strikes": 1,
         "away_runs": 6,
         "home_runs": 0,
-        "away_hits": 12,
-        "home_hits": 7,
+        "away_hits": 13,
+        "home_hits": 8,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Conspiradores de Queretaro",
@@ -5550,18 +5570,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 0,
-        "balls": 2,
-        "strikes": 1,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 1,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 1,
         "home_runs": 1,
         "away_hits": 8,
-        "home_hits": 5,
+        "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Toros de Tijuana",
@@ -5620,11 +5644,11 @@
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 1,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 3,
         "away_hits": 3,
@@ -5648,7 +5672,7 @@
       }
     }
   },
-  "updated_at": "23/07/2026 21:47",
+  "updated_at": "23/07/2026 22:00",
   "stats": {
     "total": 4,
     "acertados": 2,
@@ -5662,17 +5686,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 6,
-    "baja_acertados": 3,
+    "baja_total": 7,
+    "baja_acertados": 4,
     "baja_fallidos": 3,
-    "baja_win_rate": 50.0,
+    "baja_win_rate": 57.1,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 7,
-    "llm_acertados": 5,
+    "llm_total": 8,
+    "llm_acertados": 6,
     "llm_fallidos": 2,
-    "llm_win_rate": 71.4
+    "llm_win_rate": 75.0
   },
   "stats_mlb": {
     "total": 4,
@@ -5712,17 +5736,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 0,
-    "baja_acertados": 0,
+    "baja_total": 1,
+    "baja_acertados": 1,
     "baja_fallidos": 0,
-    "baja_win_rate": 0,
+    "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 0,
-    "llm_acertados": 0,
+    "llm_total": 1,
+    "llm_acertados": 1,
     "llm_fallidos": 0,
-    "llm_win_rate": 0
+    "llm_win_rate": 100.0
   },
   "stats_hoy": {
     "total": 3,
@@ -5737,17 +5761,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 4,
-    "baja_acertados": 2,
+    "baja_total": 5,
+    "baja_acertados": 3,
     "baja_fallidos": 2,
-    "baja_win_rate": 50.0,
+    "baja_win_rate": 60.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 5,
-    "llm_acertados": 4,
+    "llm_total": 6,
+    "llm_acertados": 5,
     "llm_fallidos": 1,
-    "llm_win_rate": 80.0
+    "llm_win_rate": 83.3
   },
   "stats_hoy_mlb": {
     "total": 3,
@@ -5787,17 +5811,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 0,
-    "baja_acertados": 0,
+    "baja_total": 1,
+    "baja_acertados": 1,
     "baja_fallidos": 0,
-    "baja_win_rate": 0,
+    "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 0,
-    "llm_acertados": 0,
+    "llm_total": 1,
+    "llm_acertados": 1,
     "llm_fallidos": 0,
-    "llm_win_rate": 0
+    "llm_win_rate": 100.0
   },
   "stats_3dias": {
     "total": 4,
@@ -5812,17 +5836,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 6,
-    "baja_acertados": 3,
+    "baja_total": 7,
+    "baja_acertados": 4,
     "baja_fallidos": 3,
-    "baja_win_rate": 50.0,
+    "baja_win_rate": 57.1,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 7,
-    "llm_acertados": 5,
+    "llm_total": 8,
+    "llm_acertados": 6,
     "llm_fallidos": 2,
-    "llm_win_rate": 71.4
+    "llm_win_rate": 75.0
   },
   "stats_3dias_mlb": {
     "total": 4,
@@ -5862,17 +5886,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 0,
-    "baja_acertados": 0,
+    "baja_total": 1,
+    "baja_acertados": 1,
     "baja_fallidos": 0,
-    "baja_win_rate": 0,
+    "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 0,
-    "llm_acertados": 0,
+    "llm_total": 1,
+    "llm_acertados": 1,
     "llm_fallidos": 0,
-    "llm_win_rate": 0
+    "llm_win_rate": 100.0
   },
   "stats_semanal": {
     "total": 4,
@@ -5887,17 +5911,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 6,
-    "baja_acertados": 3,
+    "baja_total": 7,
+    "baja_acertados": 4,
     "baja_fallidos": 3,
-    "baja_win_rate": 50.0,
+    "baja_win_rate": 57.1,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 7,
-    "llm_acertados": 5,
+    "llm_total": 8,
+    "llm_acertados": 6,
     "llm_fallidos": 2,
-    "llm_win_rate": 71.4
+    "llm_win_rate": 75.0
   },
   "stats_semanal_mlb": {
     "total": 4,
@@ -5937,17 +5961,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 0,
-    "baja_acertados": 0,
+    "baja_total": 1,
+    "baja_acertados": 1,
     "baja_fallidos": 0,
-    "baja_win_rate": 0,
+    "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 0,
-    "llm_acertados": 0,
+    "llm_total": 1,
+    "llm_acertados": 1,
     "llm_fallidos": 0,
-    "llm_win_rate": 0
+    "llm_win_rate": 100.0
   },
   "fechas_disponibles": [
     "\"\"remolca\"",
@@ -6047,17 +6071,17 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 4,
-      "baja_acertados": 2,
+      "baja_total": 5,
+      "baja_acertados": 3,
       "baja_fallidos": 2,
-      "baja_win_rate": 50.0,
+      "baja_win_rate": 60.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "llm_total": 5,
-      "llm_acertados": 4,
+      "llm_total": 6,
+      "llm_acertados": 5,
       "llm_fallidos": 1,
-      "llm_win_rate": 80.0
+      "llm_win_rate": 83.3
     },
     "55.90%": {
       "total": 0,
@@ -6401,17 +6425,17 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 0,
-      "baja_acertados": 0,
+      "baja_total": 1,
+      "baja_acertados": 1,
       "baja_fallidos": 0,
-      "baja_win_rate": 0,
+      "baja_win_rate": 100.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "llm_total": 0,
-      "llm_acertados": 0,
+      "llm_total": 1,
+      "llm_acertados": 1,
       "llm_fallidos": 0,
-      "llm_win_rate": 0
+      "llm_win_rate": 100.0
     },
     "55.90%": {
       "total": 0,
@@ -16242,10 +16266,10 @@
       "llm_win_rate": 71.4
     },
     "LMB": {
-      "llm_total": 0,
-      "llm_acertados": 0,
+      "llm_total": 1,
+      "llm_acertados": 1,
       "llm_fallidos": 0,
-      "llm_win_rate": 0
+      "llm_win_rate": 100.0
     },
     "NBA": {
       "llm_total": 0,
@@ -17212,6 +17236,38 @@
         "acertados": 5,
         "fallidos": 2,
         "win_rate": 71.4
+      }
+    },
+    "LMB": {
+      "equipo": {
+        "total": 1,
+        "acertados": 1,
+        "fallidos": 0,
+        "win_rate": 100.0
+      },
+      "marcador": {
+        "total": 1,
+        "acertados": 0,
+        "fallidos": 1,
+        "win_rate": 0.0
+      },
+      "lanzadores": {
+        "total": 1,
+        "acertados": 1,
+        "fallidos": 0,
+        "win_rate": 100.0
+      },
+      "bateadores": {
+        "total": 1,
+        "acertados": 1,
+        "fallidos": 0,
+        "win_rate": 100.0
+      },
+      "relevo": {
+        "total": 1,
+        "acertados": 1,
+        "fallidos": 0,
+        "win_rate": 100.0
       }
     }
   }
