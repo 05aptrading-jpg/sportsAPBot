@@ -1,5 +1,5 @@
 {
-  "fecha": "24/07/2026 14:02",
+  "fecha": "24/07/2026 14:17",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784988000,
@@ -3599,13 +3599,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-24",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Milwaukee Brewers",
       "opp_team": "Colorado Rockies",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "2",
+      "state": "Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 823759,
       "fav_abbr": "MIL",
@@ -3623,19 +3623,19 @@
       "linescore": {
         "innings": [
           {
-            "away_runs": 0,
+            "away_runs": 2,
             "home_runs": 0
           }
         ],
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 0,
+        "outs": 1,
+        "balls": 2,
+        "strikes": 1,
+        "away_runs": 2,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 3,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -3646,12 +3646,12 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
-        "fav_score": "0",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
+        "fav_score": "2",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "2",
         "score_opp": "0"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
@@ -4428,7 +4428,7 @@
   "autorizados": [
     6099564810
   ],
-  "has_live": false,
+  "has_live": true,
   "has_scheduled": true,
   "live_data": {
     "401816228": {
@@ -5400,29 +5400,29 @@
       }
     },
     "823759": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
-      "home_runs": 0,
+      "home_runs": 2,
       "away_team_name": "Colorado Rockies",
       "home_team_name": "Milwaukee Brewers",
       "linescore": {
         "innings": [
           {
-            "away_runs": 0,
+            "away_runs": 2,
             "home_runs": 0
           }
         ],
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 0,
+        "outs": 1,
+        "balls": 2,
+        "strikes": 1,
+        "away_runs": 2,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 3,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -5433,12 +5433,12 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
-        "fav_score": "0",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
+        "fav_score": "2",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "2",
         "score_opp": "0"
       }
     },
@@ -5739,7 +5739,7 @@
       }
     }
   },
-  "updated_at": "24/07/2026 14:02",
+  "updated_at": "24/07/2026 14:17",
   "stats": {
     "total": 5,
     "acertados": 2,
