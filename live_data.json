@@ -1,5 +1,5 @@
 {
-  "fecha": "23/07/2026 21:32",
+  "fecha": "23/07/2026 21:47",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784901600,
@@ -2577,11 +2577,11 @@
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 1,
+        "outs": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 6,
         "home_runs": 4,
         "away_hits": 9,
@@ -3209,7 +3209,7 @@
       "status_emoji": "🔴",
       "fav_team": "Caliente de Durango",
       "opp_team": "Dorados de Chihuahua",
-      "score_fav": "0",
+      "score_fav": "1",
       "score_opp": "5",
       "state": "In Progress",
       "result": "live",
@@ -3238,17 +3238,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": true,
-        "inning_ordinal": "3rd",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 0,
-        "away_runs": 0,
+        "inning_ordinal": "4th",
+        "outs": 2,
+        "balls": 1,
+        "strikes": 2,
+        "away_runs": 1,
         "home_runs": 5,
-        "away_hits": 3,
+        "away_hits": 5,
         "home_hits": 5,
         "away_errors": 1,
         "home_errors": 1,
@@ -3262,9 +3266,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "5",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "5"
       },
       "llm_favorito": "Caliente de Durango",
@@ -3314,13 +3318,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-23",
-      "status_emoji": "🔴",
+      "status_emoji": "⏳",
       "fav_team": "Piratas de Campeche",
       "opp_team": "El Aguila de Veracruz",
       "score_fav": "5",
       "score_opp": "1",
-      "state": "In Progress",
-      "result": "live",
+      "state": "Game Over",
+      "result": "pending",
       "home_team": "El Aguila de Veracruz",
       "away_team": "Piratas de Campeche",
       "label": "📋",
@@ -3366,14 +3370,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 2,
-        "balls": 2,
-        "strikes": 2,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 1,
+        "strikes": 0,
         "away_runs": 5,
         "home_runs": 1,
         "away_hits": 11,
@@ -3387,9 +3395,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "5",
         "opp_score": "1",
         "score_fav": "5",
@@ -3446,7 +3454,7 @@
       "fav_team": "Diablos Rojos del Mexico",
       "opp_team": "Bravos de Leon",
       "score_fav": "5",
-      "score_opp": "6",
+      "score_opp": "8",
       "state": "In Progress",
       "result": "live",
       "home_team": "Bravos de Leon",
@@ -3485,19 +3493,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": true,
-        "inning_ordinal": "6th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 3,
+        "inning_ordinal": "7th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 5,
-        "home_runs": 6,
+        "home_runs": 8,
         "away_hits": 7,
-        "home_hits": 9,
+        "home_hits": 13,
         "away_errors": 0,
         "home_errors": 2,
         "away_team_name": "Diablos Rojos del Mexico",
@@ -3511,9 +3523,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "5",
-        "opp_score": "6",
+        "opp_score": "8",
         "score_fav": "5",
-        "score_opp": "6"
+        "score_opp": "8"
       },
       "llm_favorito": "Diablos Rojos del Mexico",
       "llm_carreras": "3-5",
@@ -3566,7 +3578,7 @@
       "fav_team": "Tecos de los Dos Laredos",
       "opp_team": "Rieleros de Aguascalientes",
       "score_fav": "5",
-      "score_opp": "4",
+      "score_opp": "5",
       "state": "In Progress",
       "result": "live",
       "home_team": "Rieleros de Aguascalientes",
@@ -3609,19 +3621,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 5,
-        "home_runs": 4,
+        "home_runs": 5,
         "away_hits": 7,
-        "home_hits": 8,
+        "home_hits": 11,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Tecos de los Dos Laredos",
@@ -3635,9 +3647,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "5",
-        "opp_score": "4",
+        "opp_score": "5",
         "score_fav": "5",
-        "score_opp": "4"
+        "score_opp": "5"
       },
       "llm_favorito": "NO",
       "llm_carreras": "4-4",
@@ -3726,19 +3738,23 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": false,
-        "inning_ordinal": "5th",
+        "inning_ordinal": "6th",
         "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 2,
         "away_hits": 5,
         "home_hits": 7,
-        "away_errors": 1,
+        "away_errors": 2,
         "home_errors": 1,
         "away_team_name": "Saraperos de Saltillo",
         "home_team_name": "Sultanes de Monterrey",
@@ -3850,18 +3866,22 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 0,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 6,
         "home_runs": 0,
-        "away_hits": 11,
-        "home_hits": 5,
+        "away_hits": 12,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Conspiradores de Queretaro",
@@ -3974,14 +3994,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
+        "inning_ordinal": "8th",
         "outs": 0,
         "balls": 2,
-        "strikes": 2,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 1,
         "away_hits": 8,
@@ -4090,14 +4114,22 @@
           {
             "away_runs": 1,
             "home_runs": 3
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 2,
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 1,
         "home_runs": 3,
         "away_hits": 3,
@@ -4740,11 +4772,11 @@
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 1,
+        "outs": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 6,
         "home_runs": 4,
         "away_hits": 9,
@@ -5083,7 +5115,7 @@
       "is_live": true,
       "is_final": false,
       "status": "In Progress",
-      "away_runs": 0,
+      "away_runs": 1,
       "home_runs": 5,
       "away_team_name": "Dorados de Chihuahua",
       "home_team_name": "Caliente de Durango",
@@ -5100,17 +5132,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": true,
-        "inning_ordinal": "3rd",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 0,
-        "away_runs": 0,
+        "inning_ordinal": "4th",
+        "outs": 2,
+        "balls": 1,
+        "strikes": 2,
+        "away_runs": 1,
         "home_runs": 5,
-        "away_hits": 3,
+        "away_hits": 5,
         "home_hits": 5,
         "away_errors": 1,
         "home_errors": 1,
@@ -5124,16 +5160,16 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "5",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "5"
       }
     },
     "846013": {
-      "is_live": true,
+      "is_live": false,
       "is_final": false,
-      "status": "In Progress",
+      "status": "Game Over",
       "away_runs": 5,
       "home_runs": 1,
       "away_team_name": "El Aguila de Veracruz",
@@ -5171,14 +5207,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
+        "current_inning": 9,
         "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 2,
-        "balls": 2,
-        "strikes": 2,
+        "inning_ordinal": "9th",
+        "outs": 3,
+        "balls": 1,
+        "strikes": 0,
         "away_runs": 5,
         "home_runs": 1,
         "away_hits": 11,
@@ -5192,9 +5232,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "5",
         "opp_score": "1",
         "score_fav": "5",
@@ -5206,7 +5246,7 @@
       "is_final": false,
       "status": "In Progress",
       "away_runs": 5,
-      "home_runs": 6,
+      "home_runs": 8,
       "away_team_name": "Bravos de Leon",
       "home_team_name": "Diablos Rojos del Mexico",
       "linescore": {
@@ -5233,19 +5273,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 2
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": true,
-        "inning_ordinal": "6th",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 3,
+        "inning_ordinal": "7th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 5,
-        "home_runs": 6,
+        "home_runs": 8,
         "away_hits": 7,
-        "home_hits": 9,
+        "home_hits": 13,
         "away_errors": 0,
         "home_errors": 2,
         "away_team_name": "Diablos Rojos del Mexico",
@@ -5259,9 +5303,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "5",
-        "opp_score": "6",
+        "opp_score": "8",
         "score_fav": "5",
-        "score_opp": "6"
+        "score_opp": "8"
       }
     },
     "846475": {
@@ -5269,7 +5313,7 @@
       "is_final": false,
       "status": "In Progress",
       "away_runs": 5,
-      "home_runs": 4,
+      "home_runs": 5,
       "away_team_name": "Rieleros de Aguascalientes",
       "home_team_name": "Tecos de los Dos Laredos",
       "linescore": {
@@ -5300,19 +5344,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 5,
-        "home_runs": 4,
+        "home_runs": 5,
         "away_hits": 7,
-        "home_hits": 8,
+        "home_hits": 11,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Tecos de los Dos Laredos",
@@ -5326,9 +5370,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "5",
-        "opp_score": "4",
+        "opp_score": "5",
         "score_fav": "5",
-        "score_opp": "4"
+        "score_opp": "5"
       }
     },
     "846291": {
@@ -5360,19 +5404,23 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": false,
-        "inning_ordinal": "5th",
+        "inning_ordinal": "6th",
         "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 2,
         "away_hits": 5,
         "home_hits": 7,
-        "away_errors": 1,
+        "away_errors": 2,
         "home_errors": 1,
         "away_team_name": "Saraperos de Saltillo",
         "home_team_name": "Sultanes de Monterrey",
@@ -5427,18 +5475,22 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 0,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 6,
         "home_runs": 0,
-        "away_hits": 11,
-        "home_hits": 5,
+        "away_hits": 12,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Conspiradores de Queretaro",
@@ -5494,14 +5546,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": false,
-        "inning_ordinal": "7th",
+        "inning_ordinal": "8th",
         "outs": 0,
         "balls": 2,
-        "strikes": 2,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 1,
         "away_hits": 8,
@@ -5553,14 +5609,22 @@
           {
             "away_runs": 1,
             "home_runs": 3
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 2,
-        "balls": 1,
-        "strikes": 2,
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 1,
         "home_runs": 3,
         "away_hits": 3,
@@ -5584,7 +5648,7 @@
       }
     }
   },
-  "updated_at": "23/07/2026 21:32",
+  "updated_at": "23/07/2026 21:47",
   "stats": {
     "total": 4,
     "acertados": 2,
