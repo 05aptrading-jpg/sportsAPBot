@@ -1,5 +1,5 @@
 {
-  "fecha": "24/07/2026 14:32",
+  "fecha": "24/07/2026 14:47",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784988000,
@@ -3121,10 +3121,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3220,10 +3225,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3522,10 +3532,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3604,7 +3619,7 @@
       "opp_team": "Colorado Rockies",
       "score_fav": "1",
       "score_opp": "2",
-      "state": "Bottom 1st",
+      "state": "Bottom 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 823759,
@@ -3625,14 +3640,18 @@
           {
             "away_runs": 2,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
+        "inning_ordinal": "2nd",
         "outs": 2,
-        "balls": 1,
-        "strikes": 2,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 2,
         "home_runs": 1,
         "away_hits": 3,
@@ -5213,10 +5232,15 @@
       "away_team_name": "Houston Astros",
       "home_team_name": "Chicago White Sox",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5251,10 +5275,15 @@
       "away_team_name": "Texas Rangers",
       "home_team_name": "Seattle Mariners",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5370,10 +5399,15 @@
       "away_team_name": "Athletics",
       "home_team_name": "Minnesota Twins",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5402,7 +5436,7 @@
     "823759": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Bottom 2nd",
       "away_runs": 1,
       "home_runs": 2,
       "away_team_name": "Colorado Rockies",
@@ -5412,14 +5446,18 @@
           {
             "away_runs": 2,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
+        "inning_ordinal": "2nd",
         "outs": 2,
-        "balls": 1,
-        "strikes": 2,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 2,
         "home_runs": 1,
         "away_hits": 3,
@@ -5739,7 +5777,7 @@
       }
     }
   },
-  "updated_at": "24/07/2026 14:32",
+  "updated_at": "24/07/2026 14:47",
   "stats": {
     "total": 5,
     "acertados": 2,
