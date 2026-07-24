@@ -1,5 +1,5 @@
 {
-  "fecha": "23/07/2026 23:17",
+  "fecha": "23/07/2026 23:32",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784901600,
@@ -4002,13 +4002,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-23",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Toros de Tijuana",
       "opp_team": "Charros de Jalisco",
       "score_fav": "2",
       "score_opp": "1",
-      "state": "In Progress",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "home_team": "Charros de Jalisco",
       "away_team": "Toros de Tijuana",
       "label": "📋",
@@ -4073,15 +4073,15 @@
           }
         ],
         "current_inning": 12,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "12th",
         "outs": 3,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 2,
         "home_runs": 1,
         "away_hits": 12,
-        "home_hits": 8,
+        "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Toros de Tijuana",
@@ -4091,9 +4091,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "2",
         "opp_score": "1",
         "score_fav": "2",
@@ -4280,7 +4280,7 @@
   "autorizados": [
     6099564810
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": true,
   "live_data": {
     "401816202": {
@@ -5646,9 +5646,9 @@
       }
     },
     "845920": {
-      "is_live": true,
-      "is_final": false,
-      "status": "In Progress",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 2,
       "home_runs": 1,
       "away_team_name": "Charros de Jalisco",
@@ -5705,15 +5705,15 @@
           }
         ],
         "current_inning": 12,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "12th",
         "outs": 3,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 2,
         "home_runs": 1,
         "away_hits": 12,
-        "home_hits": 8,
+        "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Toros de Tijuana",
@@ -5723,9 +5723,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "2",
         "opp_score": "1",
         "score_fav": "2",
@@ -5808,7 +5808,7 @@
       }
     }
   },
-  "updated_at": "23/07/2026 23:17",
+  "updated_at": "23/07/2026 23:32",
   "stats": {
     "total": 4,
     "acertados": 2,
