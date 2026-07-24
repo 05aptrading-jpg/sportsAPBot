@@ -1,5 +1,5 @@
 {
-  "fecha": "23/07/2026 17:47",
+  "fecha": "23/07/2026 18:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784901600,
@@ -2622,7 +2622,7 @@
       "opp_team": "Kansas City Royals",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "End 4th",
+      "state": "Bottom 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 824247,
@@ -2655,17 +2655,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 2,
+        "inning_ordinal": "5th",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 2,
+        "away_hits": 3,
         "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
@@ -2737,8 +2741,8 @@
       "fav_team": "St. Louis Cardinals",
       "opp_team": "Arizona Diamondbacks",
       "score_fav": "2",
-      "score_opp": "9",
-      "state": "Top 9th",
+      "score_opp": "10",
+      "state": "Bottom 9th",
       "result": "live",
       "label": "📋",
       "game_pk": 823042,
@@ -2789,20 +2793,20 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
+            "away_runs": 1,
             "home_runs": 0
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
         "outs": 1,
-        "balls": 1,
-        "strikes": 1,
-        "away_runs": 9,
+        "balls": 0,
+        "strikes": 2,
+        "away_runs": 10,
         "home_runs": 2,
-        "away_hits": 14,
-        "home_hits": 8,
+        "away_hits": 16,
+        "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Arizona Diamondbacks",
@@ -2815,9 +2819,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "9",
+        "fav_score": "10",
         "opp_score": "2",
-        "score_fav": "9",
+        "score_fav": "10",
         "score_opp": "2"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/STL.png&h=40&w=40",
@@ -3253,7 +3257,7 @@
       "opp_team": "El Aguila de Veracruz",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "home_team": "El Aguila de Veracruz",
       "away_team": "Piratas de Campeche",
@@ -3268,10 +3272,15 @@
       "resultado_llm": "pendiente",
       "game_pk": 846013,
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3290,7 +3299,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3633,7 +3642,7 @@
       "opp_team": "Conspiradores de Queretaro",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "home_team": "Leones de Yucatan",
       "away_team": "Conspiradores de Queretaro",
@@ -3648,10 +3657,15 @@
       "resultado_llm": "pendiente",
       "game_pk": 846654,
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3670,7 +3684,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4484,7 +4498,7 @@
     "824247": {
       "is_live": true,
       "is_final": false,
-      "status": "End 4th",
+      "status": "Bottom 5th",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Kansas City Royals",
@@ -4506,17 +4520,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 2,
+        "inning_ordinal": "5th",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 2,
+        "away_hits": 3,
         "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
@@ -4539,9 +4557,9 @@
     "823042": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 9th",
+      "status": "Bottom 9th",
       "away_runs": 2,
-      "home_runs": 9,
+      "home_runs": 10,
       "away_team_name": "Arizona Diamondbacks",
       "home_team_name": "St. Louis Cardinals",
       "linescore": {
@@ -4579,20 +4597,20 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
+            "away_runs": 1,
             "home_runs": 0
           }
         ],
         "current_inning": 9,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "9th",
         "outs": 1,
-        "balls": 1,
-        "strikes": 1,
-        "away_runs": 9,
+        "balls": 0,
+        "strikes": 2,
+        "away_runs": 10,
         "home_runs": 2,
-        "away_hits": 14,
-        "home_hits": 8,
+        "away_hits": 16,
+        "home_hits": 9,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Arizona Diamondbacks",
@@ -4605,9 +4623,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "9",
+        "fav_score": "10",
         "opp_score": "2",
-        "score_fav": "9",
+        "score_fav": "10",
         "score_opp": "2"
       }
     },
@@ -4814,16 +4832,21 @@
     "846013": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "El Aguila de Veracruz",
       "home_team_name": "Piratas de Campeche",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4842,7 +4865,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4966,16 +4989,21 @@
     "846654": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Conspiradores de Queretaro",
       "home_team_name": "Leones de Yucatan",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4994,7 +5022,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5078,7 +5106,7 @@
       }
     }
   },
-  "updated_at": "23/07/2026 17:47",
+  "updated_at": "23/07/2026 18:00",
   "stats": {
     "total": 3,
     "acertados": 2,
