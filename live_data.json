@@ -1,5 +1,5 @@
 {
-  "fecha": "23/07/2026 18:32",
+  "fecha": "23/07/2026 18:47",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784901600,
@@ -2627,7 +2627,7 @@
       "opp_team": "Kansas City Royals",
       "score_fav": "0",
       "score_opp": "2",
-      "state": "Top 7th",
+      "state": "Bottom 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 824247,
@@ -2675,15 +2675,15 @@
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 0,
+        "outs": 2,
         "balls": 0,
         "strikes": 0,
         "away_runs": 2,
         "home_runs": 0,
         "away_hits": 6,
-        "home_hits": 4,
+        "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Kansas City Royals",
@@ -3175,7 +3175,7 @@
       "opp_team": "Dorados de Chihuahua",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Scheduled",
+      "state": "Warmup",
       "result": "pending",
       "home_team": "Dorados de Chihuahua",
       "away_team": "Caliente de Durango",
@@ -3190,10 +3190,15 @@
       "resultado_llm": "pendiente",
       "game_pk": 846187,
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3212,7 +3217,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3270,7 +3275,7 @@
       "opp_team": "El Aguila de Veracruz",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "home_team": "El Aguila de Veracruz",
       "away_team": "Piratas de Campeche",
@@ -3312,7 +3317,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3465,7 +3470,7 @@
       "opp_team": "Rieleros de Aguascalientes",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Scheduled",
+      "state": "Warmup",
       "result": "pending",
       "home_team": "Rieleros de Aguascalientes",
       "away_team": "Tecos de los Dos Laredos",
@@ -3480,10 +3485,15 @@
       "resultado_llm": "fallido",
       "game_pk": 846475,
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3502,7 +3512,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3760,7 +3770,7 @@
       "opp_team": "Charros de Jalisco",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "home_team": "Charros de Jalisco",
       "away_team": "Toros de Tijuana",
@@ -3775,10 +3785,15 @@
       "resultado_llm": "pendiente",
       "game_pk": 845920,
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3797,7 +3812,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4521,7 +4536,7 @@
     "824247": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 7th",
+      "status": "Bottom 7th",
       "away_runs": 0,
       "home_runs": 2,
       "away_team_name": "Kansas City Royals",
@@ -4558,15 +4573,15 @@
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 0,
+        "outs": 2,
         "balls": 0,
         "strikes": 0,
         "away_runs": 2,
         "home_runs": 0,
         "away_hits": 6,
-        "home_hits": 4,
+        "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Kansas City Royals",
@@ -4825,16 +4840,21 @@
     "846187": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Dorados de Chihuahua",
       "home_team_name": "Caliente de Durango",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4853,7 +4873,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4863,7 +4883,7 @@
     "846013": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "El Aguila de Veracruz",
@@ -4896,7 +4916,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4944,16 +4964,21 @@
     "846475": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Rieleros de Aguascalientes",
       "home_team_name": "Tecos de los Dos Laredos",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4972,7 +4997,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5068,16 +5093,21 @@
     "845920": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Charros de Jalisco",
       "home_team_name": "Toros de Tijuana",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5096,7 +5126,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5142,7 +5172,7 @@
       }
     }
   },
-  "updated_at": "23/07/2026 18:32",
+  "updated_at": "23/07/2026 18:47",
   "stats": {
     "total": 3,
     "acertados": 2,
