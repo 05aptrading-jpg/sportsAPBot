@@ -1,5 +1,5 @@
 {
-  "fecha": "23/07/2026 19:02",
+  "fecha": "23/07/2026 19:17",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784901600,
@@ -2549,16 +2549,16 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
         "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 0,
-        "away_errors": 0,
+        "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Tigres de Quintana Roo",
         "home_team_name": "Guerreros de Oaxaca",
@@ -2625,9 +2625,9 @@
       "status_emoji": "🔴",
       "fav_team": "Detroit Tigers",
       "opp_team": "Kansas City Royals",
-      "score_fav": "3",
+      "score_fav": "4",
       "score_opp": "3",
-      "state": "Middle 8th",
+      "state": "End 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 824247,
@@ -2675,20 +2675,20 @@
           },
           {
             "away_runs": 1,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
         "outs": 3,
         "balls": 2,
-        "strikes": 3,
+        "strikes": 1,
         "away_runs": 3,
-        "home_runs": 3,
+        "home_runs": 4,
         "away_hits": 8,
-        "home_hits": 8,
-        "away_errors": 0,
+        "home_hits": 10,
+        "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Kansas City Royals",
         "home_team_name": "Detroit Tigers",
@@ -2701,9 +2701,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "3",
+        "opp_score": "4",
         "score_fav": "3",
-        "score_opp": "3"
+        "score_opp": "4"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/DET.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/KC.png&h=40&w=40",
@@ -3298,17 +3298,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": true,
-        "inning_ordinal": "1st",
+        "inning_ordinal": "2nd",
         "outs": 0,
-        "balls": 0,
-        "strikes": 2,
+        "balls": 2,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -3379,7 +3383,7 @@
       "opp_team": "Bravos de Leon",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Scheduled",
+      "state": "Warmup",
       "result": "pending",
       "home_team": "Bravos de Leon",
       "away_team": "Diablos Rojos del Mexico",
@@ -3394,10 +3398,15 @@
       "resultado_llm": "pendiente",
       "game_pk": 846804,
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3416,7 +3425,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3574,7 +3583,7 @@
       "opp_team": "Saraperos de Saltillo",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "home_team": "Sultanes de Monterrey",
       "away_team": "Saraperos de Saltillo",
@@ -3616,7 +3625,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3874,7 +3883,7 @@
       "opp_team": "Algodoneros Union Laguna",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "home_team": "Acereros del Norte",
       "away_team": "Algodoneros Union Laguna",
@@ -3889,10 +3898,15 @@
       "resultado_llm": "pendiente",
       "game_pk": 846331,
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3911,7 +3925,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4510,16 +4524,16 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
         "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 0,
-        "away_errors": 0,
+        "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Tigres de Quintana Roo",
         "home_team_name": "Guerreros de Oaxaca",
@@ -4540,8 +4554,8 @@
     "824247": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 8th",
-      "away_runs": 3,
+      "status": "End 8th",
+      "away_runs": 4,
       "home_runs": 3,
       "away_team_name": "Kansas City Royals",
       "home_team_name": "Detroit Tigers",
@@ -4577,20 +4591,20 @@
           },
           {
             "away_runs": 1,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
         "outs": 3,
         "balls": 2,
-        "strikes": 3,
+        "strikes": 1,
         "away_runs": 3,
-        "home_runs": 3,
+        "home_runs": 4,
         "away_hits": 8,
-        "home_hits": 8,
-        "away_errors": 0,
+        "home_hits": 10,
+        "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "Kansas City Royals",
         "home_team_name": "Detroit Tigers",
@@ -4603,9 +4617,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "3",
-        "opp_score": "3",
+        "opp_score": "4",
         "score_fav": "3",
-        "score_opp": "3"
+        "score_opp": "4"
       }
     },
     "823042": {
@@ -4901,17 +4915,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": true,
-        "inning_ordinal": "1st",
+        "inning_ordinal": "2nd",
         "outs": 0,
-        "balls": 0,
-        "strikes": 2,
+        "balls": 2,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -4934,16 +4952,21 @@
     "846804": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Bravos de Leon",
       "home_team_name": "Diablos Rojos del Mexico",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4962,7 +4985,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5015,7 +5038,7 @@
     "846291": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Saraperos de Saltillo",
@@ -5048,7 +5071,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5144,16 +5167,21 @@
     "846331": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Algodoneros Union Laguna",
       "home_team_name": "Acereros del Norte",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5172,7 +5200,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5180,7 +5208,7 @@
       }
     }
   },
-  "updated_at": "23/07/2026 19:02",
+  "updated_at": "23/07/2026 19:17",
   "stats": {
     "total": 3,
     "acertados": 2,
