@@ -1,5 +1,5 @@
 {
-  "fecha": "23/07/2026 22:47",
+  "fecha": "23/07/2026 23:02",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784901600,
@@ -3210,13 +3210,13 @@
     {
       "liga": "LMB",
       "game_date": "2026-07-23",
-      "status_emoji": "🔴",
+      "status_emoji": "⏳",
       "fav_team": "Caliente de Durango",
       "opp_team": "Dorados de Chihuahua",
       "score_fav": "1",
       "score_opp": "8",
-      "state": "In Progress",
-      "result": "live",
+      "state": "Completed Early",
+      "result": "pending",
       "home_team": "Dorados de Chihuahua",
       "away_team": "Caliente de Durango",
       "label": "📋",
@@ -3254,6 +3254,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
         "current_inning": 6,
@@ -3275,9 +3287,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Completed Early",
         "fav_score": "1",
         "opp_score": "8",
         "score_fav": "1",
@@ -3598,7 +3610,7 @@
       "fav_team": "Tecos de los Dos Laredos",
       "opp_team": "Rieleros de Aguascalientes",
       "score_fav": "10",
-      "score_opp": "11",
+      "score_opp": "14",
       "state": "In Progress",
       "result": "live",
       "home_team": "Rieleros de Aguascalientes",
@@ -3645,19 +3657,23 @@
           },
           {
             "away_runs": 5,
-            "home_runs": 3
+            "home_runs": 6
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 0,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 10,
-        "home_runs": 11,
+        "home_runs": 14,
         "away_hits": 11,
-        "home_hits": 16,
+        "home_hits": 17,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Tecos de los Dos Laredos",
@@ -3671,9 +3687,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "10",
-        "opp_score": "11",
+        "opp_score": "14",
         "score_fav": "10",
-        "score_opp": "11"
+        "score_opp": "14"
       },
       "llm_favorito": "NO",
       "llm_carreras": "4-4",
@@ -4053,14 +4069,14 @@
           }
         ],
         "current_inning": 11,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "11th",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
         "away_runs": 1,
         "home_runs": 1,
-        "away_hits": 9,
+        "away_hits": 10,
         "home_hits": 8,
         "away_errors": 0,
         "home_errors": 0,
@@ -5176,9 +5192,9 @@
       }
     },
     "846187": {
-      "is_live": true,
+      "is_live": false,
       "is_final": false,
-      "status": "In Progress",
+      "status": "Completed Early",
       "away_runs": 1,
       "home_runs": 8,
       "away_team_name": "Dorados de Chihuahua",
@@ -5208,6 +5224,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
         "current_inning": 6,
@@ -5229,9 +5257,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Completed Early",
         "fav_score": "1",
         "opp_score": "8",
         "score_fav": "1",
@@ -5393,7 +5421,7 @@
       "is_final": false,
       "status": "In Progress",
       "away_runs": 10,
-      "home_runs": 11,
+      "home_runs": 14,
       "away_team_name": "Rieleros de Aguascalientes",
       "home_team_name": "Tecos de los Dos Laredos",
       "linescore": {
@@ -5428,19 +5456,23 @@
           },
           {
             "away_runs": 5,
-            "home_runs": 3
+            "home_runs": 6
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 0,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 10,
-        "home_runs": 11,
+        "home_runs": 14,
         "away_hits": 11,
-        "home_hits": 16,
+        "home_hits": 17,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Tecos de los Dos Laredos",
@@ -5454,9 +5486,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "10",
-        "opp_score": "11",
+        "opp_score": "14",
         "score_fav": "10",
-        "score_opp": "11"
+        "score_opp": "14"
       }
     },
     "846291": {
@@ -5665,14 +5697,14 @@
           }
         ],
         "current_inning": 11,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "11th",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
         "away_runs": 1,
         "home_runs": 1,
-        "away_hits": 9,
+        "away_hits": 10,
         "home_hits": 8,
         "away_errors": 0,
         "home_errors": 0,
@@ -5768,7 +5800,7 @@
       }
     }
   },
-  "updated_at": "23/07/2026 22:47",
+  "updated_at": "23/07/2026 23:02",
   "stats": {
     "total": 4,
     "acertados": 2,
