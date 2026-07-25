@@ -1,5 +1,5 @@
 {
-  "fecha": "25/07/2026 10:17",
+  "fecha": "25/07/2026 10:32",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1785074400,
@@ -3632,7 +3632,7 @@
       "opp_team": "Arizona Diamondbacks",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 822704,
@@ -3649,10 +3649,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3671,7 +3676,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3731,7 +3736,7 @@
       "opp_team": "Los Angeles Angels",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 823197,
@@ -3770,7 +3775,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3830,7 +3835,7 @@
       "opp_team": "San Diego Padres",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 823841,
@@ -3869,7 +3874,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4222,24 +4227,24 @@
       "liga": "MLB",
       "game_date": "2026-07-25",
       "status_emoji": "⏳",
-      "fav_team": "Athletics",
-      "opp_team": "Minnesota Twins",
+      "fav_team": "Minnesota Twins",
+      "opp_team": "Athletics",
       "score_fav": "—",
       "score_opp": "",
       "state": "Scheduled",
       "result": "pending",
       "label": "📋",
       "game_pk": 823679,
-      "fav_abbr": "ATH",
-      "opp_abbr": "MIN",
+      "fav_abbr": "MIN",
+      "opp_abbr": "ATH",
       "home_team": "Minnesota Twins",
       "away_team": "Athletics",
       "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y racha reciente.",
+      "llm_porque": "Mejor récord y racha reciente favorable.",
       "llm_factores": [
-        "Posición en división",
+        "Posición en la división",
         "Racha reciente",
-        "Historial de enfrentamientos"
+        "Historial de enfrentamientos directos"
       ],
       "resultado_llm": "pendiente",
       "linescore": {
@@ -4271,8 +4276,8 @@
         "score_fav": "0",
         "score_opp": "0"
       },
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40",
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIN.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATH.png&h=40&w=40",
       "llm_favorito": "Minnesota Twins",
       "llm_carreras": "6-3",
       "llm_carreras_lineas": {
@@ -4282,40 +4287,40 @@
       },
       "llm_ranking_local": "AL Central: 1º (55-40)",
       "llm_ranking_visitante": "AL Oeste: 5º (30-65)",
-      "llm_abridor_local": "Sonny Gray (3.45, 10-4, 120)",
-      "llm_abridor_visitante": "James Kaprielian (5.67, 4-12, 90)",
+      "llm_abridor_local": "Sonny Gray (3.50, 10-5, 120)",
+      "llm_abridor_visitante": "James Kaprielian (5.20, 4-10, 90)",
       "llm_bateadores_clave": [
         {
           "jugador": "Carlos Correa",
-          "equipo": "Twins",
+          "equipo": "Minnesota Twins",
           "hrs_estimados": 1,
           "remolcadas_estimadas": 2,
           "confianza_bateo": 85
         },
         {
           "jugador": "Byron Buxton",
-          "equipo": "Twins",
+          "equipo": "Minnesota Twins",
           "hrs_estimados": 1,
           "remolcadas_estimadas": 1,
           "confianza_bateo": 80
         },
         {
-          "jugador": "Ramon Laureano",
-          "equipo": "Athletics",
+          "jugador": "Matt Olson",
+          "equipo": "Oakland Athletics",
           "hrs_estimados": 0,
           "remolcadas_estimadas": 1,
-          "confianza_bateo": 50
+          "confianza_bateo": 70
         },
         {
-          "jugador": "Seth Brown",
-          "equipo": "Athletics",
+          "jugador": "Tony Kemp",
+          "equipo": "Oakland Athletics",
           "hrs_estimados": 0,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 55
+          "remolcadas_estimadas": 0,
+          "confianza_bateo": 60
         }
       ],
-      "llm_relevo_local": "Bullpen sólido con ERA de 3.50.",
-      "llm_relevo_visitante": "Bullpen débil, ERA de 5.80."
+      "llm_relevo_local": "Bullpen sólido con un ERA de 3.20, confiable en situaciones de presión.",
+      "llm_relevo_visitante": "Bullpen débil con un ERA de 5.50, vulnerable en finales cerrados."
     },
     {
       "liga": "MLB",
@@ -4530,7 +4535,7 @@
       "opp_team": "Boston Red Sox",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 824734,
@@ -4569,7 +4574,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -6006,16 +6011,21 @@
     "822704": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Arizona Diamondbacks",
       "home_team_name": "Washington Nationals",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -6034,7 +6044,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -6044,7 +6054,7 @@
     "823197": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Los Angeles Angels",
@@ -6072,7 +6082,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -6082,7 +6092,7 @@
     "823841": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "San Diego Padres",
@@ -6110,7 +6120,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -6237,8 +6247,8 @@
       "status": "Scheduled",
       "away_runs": 0,
       "home_runs": 0,
-      "away_team_name": "Minnesota Twins",
-      "home_team_name": "Athletics",
+      "away_team_name": "Athletics",
+      "home_team_name": "Minnesota Twins",
       "linescore": {
         "innings": [],
         "current_inning": 1,
@@ -6348,7 +6358,7 @@
     "824734": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Boston Red Sox",
@@ -6376,7 +6386,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -6498,7 +6508,7 @@
       }
     }
   },
-  "updated_at": "25/07/2026 10:17",
+  "updated_at": "25/07/2026 10:32",
   "stats": {
     "total": 15,
     "acertados": 6,
@@ -14517,11 +14527,11 @@
     },
     "2026-07-25___MLB___Minnesota Twins___Athletics": {
       "ir": "SÍ",
-      "pq": "Mejor récord y racha reciente.",
+      "pq": "Mejor récord y racha reciente favorable.",
       "factores": [
-        "Posición en división",
+        "Posición en la división",
         "Racha reciente",
-        "Historial de enfrentamientos"
+        "Historial de enfrentamientos directos"
       ],
       "favorito": "Minnesota Twins",
       "carreras_esperadas": "6-3",
@@ -14532,40 +14542,40 @@
       },
       "ranking_local": "AL Central: 1º (55-40)",
       "ranking_visitante": "AL Oeste: 5º (30-65)",
-      "abridor_local": "Sonny Gray (3.45, 10-4, 120)",
-      "abridor_visitante": "James Kaprielian (5.67, 4-12, 90)",
+      "abridor_local": "Sonny Gray (3.50, 10-5, 120)",
+      "abridor_visitante": "James Kaprielian (5.20, 4-10, 90)",
       "bateadores_clave": [
         {
           "jugador": "Carlos Correa",
-          "equipo": "Twins",
+          "equipo": "Minnesota Twins",
           "hrs_estimados": 1,
           "remolcadas_estimadas": 2,
           "confianza_bateo": 85
         },
         {
           "jugador": "Byron Buxton",
-          "equipo": "Twins",
+          "equipo": "Minnesota Twins",
           "hrs_estimados": 1,
           "remolcadas_estimadas": 1,
           "confianza_bateo": 80
         },
         {
-          "jugador": "Ramon Laureano",
-          "equipo": "Athletics",
+          "jugador": "Matt Olson",
+          "equipo": "Oakland Athletics",
           "hrs_estimados": 0,
           "remolcadas_estimadas": 1,
-          "confianza_bateo": 50
+          "confianza_bateo": 70
         },
         {
-          "jugador": "Seth Brown",
-          "equipo": "Athletics",
+          "jugador": "Tony Kemp",
+          "equipo": "Oakland Athletics",
           "hrs_estimados": 0,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 55
+          "remolcadas_estimadas": 0,
+          "confianza_bateo": 60
         }
       ],
-      "relevo_local": "Bullpen sólido con ERA de 3.50.",
-      "relevo_visitante": "Bullpen débil, ERA de 5.80."
+      "relevo_local": "Bullpen sólido con un ERA de 3.20, confiable en situaciones de presión.",
+      "relevo_visitante": "Bullpen débil con un ERA de 5.50, vulnerable en finales cerrados."
     },
     "2026-07-25___MLB___Pittsburgh Pirates___Chicago Cubs": {
       "ir": "SÍ",
