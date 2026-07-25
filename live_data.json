@@ -1,5 +1,5 @@
 {
-  "fecha": "24/07/2026 23:17",
+  "fecha": "24/07/2026 23:32",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784988000,
@@ -3575,13 +3575,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-07-24",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "San Francisco Giants",
       "opp_team": "Los Angeles Angels",
-      "score_fav": "8",
+      "score_fav": "7",
       "score_opp": "6",
-      "state": "Bottom 10th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 823196,
       "fav_abbr": "SF",
@@ -3636,7 +3636,7 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 2
+            "home_runs": 1
           }
         ],
         "current_inning": 10,
@@ -3646,7 +3646,7 @@
         "balls": 0,
         "strikes": 1,
         "away_runs": 6,
-        "home_runs": 8,
+        "home_runs": 7,
         "away_hits": 9,
         "home_hits": 9,
         "away_errors": 1,
@@ -3658,13 +3658,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "6",
-        "opp_score": "8",
+        "opp_score": "7",
         "score_fav": "6",
-        "score_opp": "8"
+        "score_opp": "7"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SF.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAA.png&h=40&w=40",
@@ -4945,7 +4945,7 @@
   "autorizados": [
     6099564810
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": false,
   "live_data": {
     "401816228": {
@@ -6015,10 +6015,10 @@
       }
     },
     "823196": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 10th",
-      "away_runs": 8,
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
+      "away_runs": 7,
       "home_runs": 6,
       "away_team_name": "Los Angeles Angels",
       "home_team_name": "San Francisco Giants",
@@ -6062,7 +6062,7 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 2
+            "home_runs": 1
           }
         ],
         "current_inning": 10,
@@ -6072,7 +6072,7 @@
         "balls": 0,
         "strikes": 1,
         "away_runs": 6,
-        "home_runs": 8,
+        "home_runs": 7,
         "away_hits": 9,
         "home_hits": 9,
         "away_errors": 1,
@@ -6084,13 +6084,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "6",
-        "opp_score": "8",
+        "opp_score": "7",
         "score_fav": "6",
-        "score_opp": "8"
+        "score_opp": "7"
       }
     },
     "823680": {
@@ -6773,7 +6773,7 @@
       }
     }
   },
-  "updated_at": "24/07/2026 23:17",
+  "updated_at": "24/07/2026 23:32",
   "stats": {
     "total": 14,
     "acertados": 5,
