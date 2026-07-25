@@ -1,5 +1,5 @@
 {
-  "fecha": "24/07/2026 21:47",
+  "fecha": "24/07/2026 22:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1784988000,
@@ -3183,7 +3183,7 @@
         "Calidad del equipo",
         "Historial de enfrentamientos directos"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "fallido",
       "linescore": {
         "innings": [
           {
@@ -3319,7 +3319,7 @@
         "Historial favorable en casa",
         "Lesiones en Seattle"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "fallido",
       "linescore": {
         "innings": [
           {
@@ -3455,7 +3455,7 @@
         "Mejor ofensiva en la liga",
         "Historial reciente favorable"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "acertado",
       "linescore": {
         "innings": [
           {
@@ -3580,7 +3580,7 @@
       "opp_team": "Los Angeles Angels",
       "score_fav": "5",
       "score_opp": "4",
-      "state": "Bottom 5th",
+      "state": "Bottom 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 823196,
@@ -3617,14 +3617,18 @@
           {
             "away_runs": 3,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 0,
+        "inning_ordinal": "6th",
+        "outs": 0,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 4,
         "home_runs": 5,
         "away_hits": 6,
@@ -3715,7 +3719,7 @@
         "Lesiones mínimas en el local",
         "Historial favorable contra Oakland"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "fallido",
       "linescore": {
         "innings": [
           {
@@ -3987,7 +3991,7 @@
         "Lesiones en el bullpen de Miami",
         "Historial favorable de Padres en Miami"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "fallido",
       "linescore": {
         "innings": [
           {
@@ -4259,7 +4263,7 @@
         "Historial favorable en casa",
         "Lesiones mínimas en Boston"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "fallido",
       "linescore": {
         "innings": [
           {
@@ -4531,7 +4535,7 @@
         "Historial reciente",
         "Lesiones"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "acertado",
       "linescore": {
         "innings": [
           {
@@ -5997,7 +6001,7 @@
     "823196": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 5th",
+      "status": "Bottom 6th",
       "away_runs": 5,
       "home_runs": 4,
       "away_team_name": "Los Angeles Angels",
@@ -6023,14 +6027,18 @@
           {
             "away_runs": 3,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": false,
-        "inning_ordinal": "5th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 0,
+        "inning_ordinal": "6th",
+        "outs": 0,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 4,
         "home_runs": 5,
         "away_hits": 6,
@@ -6733,12 +6741,12 @@
       }
     }
   },
-  "updated_at": "24/07/2026 21:47",
+  "updated_at": "24/07/2026 22:00",
   "stats": {
-    "total": 9,
-    "acertados": 3,
-    "fallidos": 6,
-    "win_rate": 33.3,
+    "total": 14,
+    "acertados": 5,
+    "fallidos": 9,
+    "win_rate": 35.7,
     "alta_total": 3,
     "alta_acertados": 2,
     "alta_fallidos": 1,
@@ -6747,23 +6755,23 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 20,
-    "baja_acertados": 10,
-    "baja_fallidos": 10,
-    "baja_win_rate": 50.0,
+    "baja_total": 27,
+    "baja_acertados": 12,
+    "baja_fallidos": 15,
+    "baja_win_rate": 44.4,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 23,
-    "llm_acertados": 14,
-    "llm_fallidos": 9,
-    "llm_win_rate": 60.9
+    "llm_total": 30,
+    "llm_acertados": 16,
+    "llm_fallidos": 14,
+    "llm_win_rate": 53.3
   },
   "stats_mlb": {
-    "total": 8,
-    "acertados": 3,
-    "fallidos": 5,
-    "win_rate": 37.5,
+    "total": 13,
+    "acertados": 5,
+    "fallidos": 8,
+    "win_rate": 38.5,
     "alta_total": 2,
     "alta_acertados": 2,
     "alta_fallidos": 0,
@@ -6772,17 +6780,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 12,
-    "baja_acertados": 6,
-    "baja_fallidos": 6,
-    "baja_win_rate": 50.0,
+    "baja_total": 19,
+    "baja_acertados": 8,
+    "baja_fallidos": 11,
+    "baja_win_rate": 42.1,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 14,
-    "llm_acertados": 9,
-    "llm_fallidos": 5,
-    "llm_win_rate": 64.3
+    "llm_total": 21,
+    "llm_acertados": 11,
+    "llm_fallidos": 10,
+    "llm_win_rate": 52.4
   },
   "stats_lmb": {
     "total": 1,
@@ -6810,10 +6818,10 @@
     "llm_win_rate": 55.6
   },
   "stats_hoy": {
-    "total": 4,
-    "acertados": 1,
-    "fallidos": 3,
-    "win_rate": 25.0,
+    "total": 9,
+    "acertados": 3,
+    "fallidos": 6,
+    "win_rate": 33.3,
     "alta_total": 1,
     "alta_acertados": 1,
     "alta_fallidos": 0,
@@ -6822,23 +6830,23 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 6,
-    "baja_acertados": 3,
-    "baja_fallidos": 3,
-    "baja_win_rate": 50.0,
+    "baja_total": 13,
+    "baja_acertados": 5,
+    "baja_fallidos": 8,
+    "baja_win_rate": 38.5,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 7,
-    "llm_acertados": 4,
-    "llm_fallidos": 3,
-    "llm_win_rate": 57.1
+    "llm_total": 14,
+    "llm_acertados": 6,
+    "llm_fallidos": 8,
+    "llm_win_rate": 42.9
   },
   "stats_hoy_mlb": {
-    "total": 4,
-    "acertados": 1,
-    "fallidos": 3,
-    "win_rate": 25.0,
+    "total": 9,
+    "acertados": 3,
+    "fallidos": 6,
+    "win_rate": 33.3,
     "alta_total": 1,
     "alta_acertados": 1,
     "alta_fallidos": 0,
@@ -6847,17 +6855,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 6,
-    "baja_acertados": 3,
-    "baja_fallidos": 3,
-    "baja_win_rate": 50.0,
+    "baja_total": 13,
+    "baja_acertados": 5,
+    "baja_fallidos": 8,
+    "baja_win_rate": 38.5,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 7,
-    "llm_acertados": 4,
-    "llm_fallidos": 3,
-    "llm_win_rate": 57.1
+    "llm_total": 14,
+    "llm_acertados": 6,
+    "llm_fallidos": 8,
+    "llm_win_rate": 42.9
   },
   "stats_hoy_lmb": {
     "total": 0,
@@ -6885,10 +6893,10 @@
     "llm_win_rate": 0
   },
   "stats_3dias": {
-    "total": 9,
-    "acertados": 3,
-    "fallidos": 6,
-    "win_rate": 33.3,
+    "total": 14,
+    "acertados": 5,
+    "fallidos": 9,
+    "win_rate": 35.7,
     "alta_total": 3,
     "alta_acertados": 2,
     "alta_fallidos": 1,
@@ -6897,23 +6905,23 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 20,
-    "baja_acertados": 10,
-    "baja_fallidos": 10,
-    "baja_win_rate": 50.0,
+    "baja_total": 27,
+    "baja_acertados": 12,
+    "baja_fallidos": 15,
+    "baja_win_rate": 44.4,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 23,
-    "llm_acertados": 14,
-    "llm_fallidos": 9,
-    "llm_win_rate": 60.9
+    "llm_total": 30,
+    "llm_acertados": 16,
+    "llm_fallidos": 14,
+    "llm_win_rate": 53.3
   },
   "stats_3dias_mlb": {
-    "total": 8,
-    "acertados": 3,
-    "fallidos": 5,
-    "win_rate": 37.5,
+    "total": 13,
+    "acertados": 5,
+    "fallidos": 8,
+    "win_rate": 38.5,
     "alta_total": 2,
     "alta_acertados": 2,
     "alta_fallidos": 0,
@@ -6922,17 +6930,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 12,
-    "baja_acertados": 6,
-    "baja_fallidos": 6,
-    "baja_win_rate": 50.0,
+    "baja_total": 19,
+    "baja_acertados": 8,
+    "baja_fallidos": 11,
+    "baja_win_rate": 42.1,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 14,
-    "llm_acertados": 9,
-    "llm_fallidos": 5,
-    "llm_win_rate": 64.3
+    "llm_total": 21,
+    "llm_acertados": 11,
+    "llm_fallidos": 10,
+    "llm_win_rate": 52.4
   },
   "stats_3dias_lmb": {
     "total": 1,
@@ -6960,10 +6968,10 @@
     "llm_win_rate": 55.6
   },
   "stats_semanal": {
-    "total": 9,
-    "acertados": 3,
-    "fallidos": 6,
-    "win_rate": 33.3,
+    "total": 14,
+    "acertados": 5,
+    "fallidos": 9,
+    "win_rate": 35.7,
     "alta_total": 3,
     "alta_acertados": 2,
     "alta_fallidos": 1,
@@ -6972,23 +6980,23 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 20,
-    "baja_acertados": 10,
-    "baja_fallidos": 10,
-    "baja_win_rate": 50.0,
+    "baja_total": 27,
+    "baja_acertados": 12,
+    "baja_fallidos": 15,
+    "baja_win_rate": 44.4,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 23,
-    "llm_acertados": 14,
-    "llm_fallidos": 9,
-    "llm_win_rate": 60.9
+    "llm_total": 30,
+    "llm_acertados": 16,
+    "llm_fallidos": 14,
+    "llm_win_rate": 53.3
   },
   "stats_semanal_mlb": {
-    "total": 8,
-    "acertados": 3,
-    "fallidos": 5,
-    "win_rate": 37.5,
+    "total": 13,
+    "acertados": 5,
+    "fallidos": 8,
+    "win_rate": 38.5,
     "alta_total": 2,
     "alta_acertados": 2,
     "alta_fallidos": 0,
@@ -6997,17 +7005,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 12,
-    "baja_acertados": 6,
-    "baja_fallidos": 6,
-    "baja_win_rate": 50.0,
+    "baja_total": 19,
+    "baja_acertados": 8,
+    "baja_fallidos": 11,
+    "baja_win_rate": 42.1,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 14,
-    "llm_acertados": 9,
-    "llm_fallidos": 5,
-    "llm_win_rate": 64.3
+    "llm_total": 21,
+    "llm_acertados": 11,
+    "llm_fallidos": 10,
+    "llm_win_rate": 52.4
   },
   "stats_semanal_lmb": {
     "total": 1,
@@ -7146,10 +7154,10 @@
       "llm_win_rate": 64.3
     },
     "2026-07-24": {
-      "total": 4,
-      "acertados": 1,
-      "fallidos": 3,
-      "win_rate": 25.0,
+      "total": 9,
+      "acertados": 3,
+      "fallidos": 6,
+      "win_rate": 33.3,
       "alta_total": 1,
       "alta_acertados": 1,
       "alta_fallidos": 0,
@@ -7158,17 +7166,17 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 6,
-      "baja_acertados": 3,
-      "baja_fallidos": 3,
-      "baja_win_rate": 50.0,
+      "baja_total": 13,
+      "baja_acertados": 5,
+      "baja_fallidos": 8,
+      "baja_win_rate": 38.5,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "llm_total": 7,
-      "llm_acertados": 4,
-      "llm_fallidos": 3,
-      "llm_win_rate": 57.1
+      "llm_total": 14,
+      "llm_acertados": 6,
+      "llm_fallidos": 8,
+      "llm_win_rate": 42.9
     },
     "55.90%": {
       "total": 0,
@@ -7348,10 +7356,10 @@
       "llm_win_rate": 80.0
     },
     "2026-07-24": {
-      "total": 4,
-      "acertados": 1,
-      "fallidos": 3,
-      "win_rate": 25.0,
+      "total": 9,
+      "acertados": 3,
+      "fallidos": 6,
+      "win_rate": 33.3,
       "alta_total": 1,
       "alta_acertados": 1,
       "alta_fallidos": 0,
@@ -7360,17 +7368,17 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 6,
-      "baja_acertados": 3,
-      "baja_fallidos": 3,
-      "baja_win_rate": 50.0,
+      "baja_total": 13,
+      "baja_acertados": 5,
+      "baja_fallidos": 8,
+      "baja_win_rate": 38.5,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "llm_total": 7,
-      "llm_acertados": 4,
-      "llm_fallidos": 3,
-      "llm_win_rate": 57.1
+      "llm_total": 14,
+      "llm_acertados": 6,
+      "llm_fallidos": 8,
+      "llm_win_rate": 42.9
     },
     "55.90%": {
       "total": 0,
@@ -17397,10 +17405,10 @@
   },
   "llm_by_sport": {
     "MLB": {
-      "llm_total": 14,
-      "llm_acertados": 9,
-      "llm_fallidos": 5,
-      "llm_win_rate": 64.3
+      "llm_total": 21,
+      "llm_acertados": 11,
+      "llm_fallidos": 10,
+      "llm_win_rate": 52.4
     },
     "LMB": {
       "llm_total": 9,
@@ -18345,34 +18353,34 @@
   "llm_sections": {
     "MLB": {
       "equipo": {
-        "total": 14,
-        "acertados": 9,
-        "fallidos": 5,
-        "win_rate": 64.3
+        "total": 21,
+        "acertados": 11,
+        "fallidos": 10,
+        "win_rate": 52.4
       },
       "marcador": {
-        "total": 14,
-        "acertados": 3,
-        "fallidos": 11,
-        "win_rate": 21.4
+        "total": 21,
+        "acertados": 6,
+        "fallidos": 15,
+        "win_rate": 28.6
       },
       "lanzadores": {
-        "total": 14,
-        "acertados": 9,
-        "fallidos": 5,
-        "win_rate": 64.3
+        "total": 21,
+        "acertados": 11,
+        "fallidos": 10,
+        "win_rate": 52.4
       },
       "bateadores": {
-        "total": 14,
-        "acertados": 9,
-        "fallidos": 5,
-        "win_rate": 64.3
+        "total": 21,
+        "acertados": 11,
+        "fallidos": 10,
+        "win_rate": 52.4
       },
       "relevo": {
-        "total": 14,
-        "acertados": 9,
-        "fallidos": 5,
-        "win_rate": 64.3
+        "total": 21,
+        "acertados": 11,
+        "fallidos": 10,
+        "win_rate": 52.4
       }
     },
     "LMB": {
