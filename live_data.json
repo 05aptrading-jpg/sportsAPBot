@@ -1,5 +1,5 @@
 {
-  "fecha": "25/07/2026 12:48",
+  "fecha": "25/07/2026 13:02",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1785074400,
@@ -1512,7 +1512,7 @@
       "opp_team": "Kansas City Royals",
       "score_fav": "2",
       "score_opp": "2",
-      "state": "Top 7th",
+      "state": "Top 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 824244,
@@ -1549,17 +1549,21 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": true,
-        "inning_ordinal": "7th",
-        "outs": 2,
-        "balls": 0,
+        "inning_ordinal": "8th",
+        "outs": 1,
+        "balls": 1,
         "strikes": 0,
         "away_runs": 2,
         "home_runs": 2,
-        "away_hits": 5,
+        "away_hits": 6,
         "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
@@ -1639,7 +1643,7 @@
       "opp_team": "Houston Astros",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 824571,
@@ -1670,7 +1674,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4130,7 +4134,7 @@
     "824244": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 7th",
+      "status": "Top 8th",
       "away_runs": 2,
       "home_runs": 2,
       "away_team_name": "Kansas City Royals",
@@ -4164,17 +4168,21 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": true,
-        "inning_ordinal": "7th",
-        "outs": 2,
-        "balls": 0,
+        "inning_ordinal": "8th",
+        "outs": 1,
+        "balls": 1,
         "strikes": 0,
         "away_runs": 2,
         "home_runs": 2,
-        "away_hits": 5,
+        "away_hits": 6,
         "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
@@ -4197,7 +4205,7 @@
     "824571": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Houston Astros",
@@ -4225,7 +4233,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5094,7 +5102,7 @@
       }
     }
   },
-  "updated_at": "25/07/2026 12:48",
+  "updated_at": "25/07/2026 13:02",
   "stats": {
     "total": 0,
     "acertados": 0,
