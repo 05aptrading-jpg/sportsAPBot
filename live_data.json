@@ -1,5 +1,5 @@
 {
-  "fecha": "25/07/2026 11:47",
+  "fecha": "25/07/2026 12:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1785074400,
@@ -3429,7 +3429,7 @@
       "opp_team": "Kansas City Royals",
       "score_fav": "1",
       "score_opp": "1",
-      "state": "Top 3rd",
+      "state": "Top 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 824244,
@@ -3458,17 +3458,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": true,
-        "inning_ordinal": "3rd",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 3,
+        "inning_ordinal": "4th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 1,
         "home_runs": 1,
-        "away_hits": 2,
+        "away_hits": 3,
         "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
@@ -4150,7 +4154,7 @@
       "opp_team": "Cleveland Guardians",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 822948,
@@ -4189,7 +4193,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5953,7 +5957,7 @@
     "824244": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 3rd",
+      "status": "Top 4th",
       "away_runs": 1,
       "home_runs": 1,
       "away_team_name": "Kansas City Royals",
@@ -5971,17 +5975,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": true,
-        "inning_ordinal": "3rd",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 3,
+        "inning_ordinal": "4th",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 1,
         "home_runs": 1,
-        "away_hits": 2,
+        "away_hits": 3,
         "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
@@ -6247,7 +6255,7 @@
     "822948": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Cleveland Guardians",
@@ -6275,7 +6283,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -6554,7 +6562,7 @@
       }
     }
   },
-  "updated_at": "25/07/2026 11:47",
+  "updated_at": "25/07/2026 12:00",
   "stats": {
     "total": 15,
     "acertados": 6,
