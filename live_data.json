@@ -1,5 +1,5 @@
 {
-  "fecha": "25/07/2026 14:17",
+  "fecha": "25/07/2026 14:32",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1785074400,
@@ -1745,7 +1745,7 @@
       "opp_team": "Arizona Diamondbacks",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Bottom 1st",
+      "state": "Bottom 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 822704,
@@ -1758,17 +1758,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 1,
+        "inning_ordinal": "2nd",
+        "outs": 0,
         "balls": 2,
         "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -1848,7 +1852,7 @@
       "opp_team": "San Diego Padres",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Middle 1st",
+      "state": "Top 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 823841,
@@ -1861,14 +1865,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 1,
+        "inning_ordinal": "2nd",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -1951,7 +1959,7 @@
       "opp_team": "Los Angeles Angels",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Bottom 1st",
+      "state": "Bottom 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 823197,
@@ -1964,18 +1972,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
+        "inning_ordinal": "2nd",
         "outs": 2,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 1,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Los Angeles Angels",
@@ -2674,7 +2686,7 @@
       "opp_team": "Boston Red Sox",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Bottom 1st",
+      "state": "Middle 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 824734,
@@ -2687,17 +2699,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 0,
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
+        "outs": 3,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 2,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -2992,10 +3008,15 @@
       "home_team": "St. Louis Cardinals",
       "away_team": "Cincinnati Reds",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3092,17 +3113,21 @@
           {
             "away_runs": 1,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
+        "inning_ordinal": "2nd",
         "outs": 1,
-        "balls": 0,
-        "strikes": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 1,
         "home_runs": 1,
-        "away_hits": 1,
+        "away_hits": 3,
         "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
@@ -4286,7 +4311,7 @@
     "822704": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Bottom 2nd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Arizona Diamondbacks",
@@ -4296,17 +4321,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 1,
+        "inning_ordinal": "2nd",
+        "outs": 0,
         "balls": 2,
         "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -4329,7 +4358,7 @@
     "823841": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 1st",
+      "status": "Top 2nd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "San Diego Padres",
@@ -4339,14 +4368,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": true,
-        "inning_ordinal": "1st",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 1,
+        "inning_ordinal": "2nd",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -4372,7 +4405,7 @@
     "823197": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Bottom 2nd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Los Angeles Angels",
@@ -4382,18 +4415,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
+        "inning_ordinal": "2nd",
         "outs": 2,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 1,
-        "home_hits": 0,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Los Angeles Angels",
@@ -4668,7 +4705,7 @@
     "824734": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Middle 2nd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Boston Red Sox",
@@ -4678,17 +4715,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 1,
-        "strikes": 0,
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
+        "outs": 3,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 2,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -4803,10 +4844,15 @@
       "away_team_name": "Cincinnati Reds",
       "home_team_name": "St. Louis Cardinals",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4845,17 +4891,21 @@
           {
             "away_runs": 1,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
+        "inning_ordinal": "2nd",
         "outs": 1,
-        "balls": 0,
-        "strikes": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 1,
         "home_runs": 1,
-        "away_hits": 1,
+        "away_hits": 3,
         "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
@@ -5180,7 +5230,7 @@
       }
     }
   },
-  "updated_at": "25/07/2026 14:17",
+  "updated_at": "25/07/2026 14:32",
   "stats": {
     "total": 0,
     "acertados": 0,
