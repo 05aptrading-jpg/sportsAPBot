@@ -1,5 +1,5 @@
 {
-  "fecha": "03/10/2026 16:11",
+  "fecha": "03/10/2026 16:26",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791122400,
@@ -2317,7 +2317,7 @@
       "opp_team": "Atlanta Braves",
       "score_fav": "5",
       "score_opp": "1",
-      "state": "Top 7th",
+      "state": "Top 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 849828,
@@ -2362,18 +2362,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": true,
-        "inning_ordinal": "7th",
-        "outs": 2,
+        "inning_ordinal": "8th",
+        "outs": 1,
         "balls": 1,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 5,
         "away_hits": 2,
-        "home_hits": 7,
+        "home_hits": 8,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Atlanta Braves",
@@ -2736,7 +2740,7 @@
     "849828": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 7th",
+      "status": "Top 8th",
       "away_runs": 5,
       "home_runs": 1,
       "away_team_name": "Atlanta Braves",
@@ -2770,18 +2774,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
+        "current_inning": 8,
         "is_top": true,
-        "inning_ordinal": "7th",
-        "outs": 2,
+        "inning_ordinal": "8th",
+        "outs": 1,
         "balls": 1,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 5,
         "away_hits": 2,
-        "home_hits": 7,
+        "home_hits": 8,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Atlanta Braves",
@@ -2919,7 +2927,7 @@
       }
     }
   },
-  "updated_at": "03/10/2026 16:11",
+  "updated_at": "03/10/2026 16:26",
   "stats": {
     "total": 14,
     "acertados": 8,
@@ -3463,11 +3471,11 @@
       "Los Angeles Dodgers": [
         {
           "nombre": "Freddie Freeman",
-          "prob": 69.8,
+          "prob": 100.0,
           "player_id": 518692,
           "game_pk": "849828",
           "equipo": "Los Angeles Dodgers",
-          "status": "pendiente"
+          "status": "cumplio"
         },
         {
           "nombre": "Andy Pages",
