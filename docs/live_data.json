@@ -1,5 +1,5 @@
 {
-  "fecha": "03/10/2026 14:41",
+  "fecha": "03/10/2026 14:56",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791122400,
@@ -2322,7 +2322,7 @@
       "opp_team": "Atlanta Braves",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "End 2nd",
+      "state": "Bottom 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 849828,
@@ -2347,18 +2347,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 3,
+        "inning_ordinal": "3rd",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 1,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Atlanta Braves",
@@ -2726,7 +2730,7 @@
     "849828": {
       "is_live": true,
       "is_final": false,
-      "status": "End 2nd",
+      "status": "Bottom 3rd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Atlanta Braves",
@@ -2740,18 +2744,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 3,
-        "balls": 2,
-        "strikes": 3,
+        "inning_ordinal": "3rd",
+        "outs": 2,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 1,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Atlanta Braves",
@@ -2889,7 +2897,7 @@
       }
     }
   },
-  "updated_at": "03/10/2026 14:41",
+  "updated_at": "03/10/2026 14:56",
   "stats": {
     "total": 14,
     "acertados": 8,
