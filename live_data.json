@@ -1,5 +1,5 @@
 {
-  "fecha": "03/10/2026 14:56",
+  "fecha": "03/10/2026 15:11",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791122400,
@@ -2320,9 +2320,9 @@
       "status_emoji": "🔴",
       "fav_team": "Los Angeles Dodgers",
       "opp_team": "Atlanta Braves",
-      "score_fav": "0",
+      "score_fav": "2",
       "score_opp": "0",
-      "state": "Bottom 3rd",
+      "state": "Bottom 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 849828,
@@ -2351,18 +2351,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 2
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 2,
-        "balls": 0,
+        "inning_ordinal": "4th",
+        "outs": 1,
+        "balls": 1,
         "strikes": 0,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 2,
         "away_hits": 1,
-        "home_hits": 2,
+        "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Atlanta Braves",
@@ -2376,9 +2380,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "2",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "2"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATL.png&h=40&w=40",
@@ -2730,8 +2734,8 @@
     "849828": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 3rd",
-      "away_runs": 0,
+      "status": "Bottom 4th",
+      "away_runs": 2,
       "home_runs": 0,
       "away_team_name": "Atlanta Braves",
       "home_team_name": "Los Angeles Dodgers",
@@ -2748,18 +2752,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 2
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 2,
-        "balls": 0,
+        "inning_ordinal": "4th",
+        "outs": 1,
+        "balls": 1,
         "strikes": 0,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 2,
         "away_hits": 1,
-        "home_hits": 2,
+        "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Atlanta Braves",
@@ -2773,9 +2781,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "2",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "2"
       }
     },
     "849835": {
@@ -2897,7 +2905,7 @@
       }
     }
   },
-  "updated_at": "03/10/2026 14:56",
+  "updated_at": "03/10/2026 15:11",
   "stats": {
     "total": 14,
     "acertados": 8,
@@ -3457,11 +3465,11 @@
         },
         {
           "nombre": "Teoscar Hernández",
-          "prob": 67.6,
+          "prob": 100.0,
           "player_id": 606192,
           "game_pk": "849828",
           "equipo": "Los Angeles Dodgers",
-          "status": "pendiente"
+          "status": "cumplio"
         }
       ],
       "New York Yankees": [
