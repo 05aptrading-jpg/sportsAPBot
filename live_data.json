@@ -1,5 +1,5 @@
 {
-  "fecha": "03/10/2026 13:56",
+  "fecha": "03/10/2026 14:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791122400,
@@ -1412,8 +1412,8 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 1,
+        "outs": 3,
+        "balls": 0,
         "strikes": 3,
         "away_runs": 3,
         "home_runs": 0,
@@ -1428,9 +1428,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "3",
         "opp_score": "0",
         "score_fav": "3",
@@ -2520,13 +2520,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-10-03",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Chicago White Sox",
       "opp_team": "Cleveland Guardians",
       "score_fav": "3",
       "score_opp": "0",
-      "state": "Bottom 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 849829,
       "fav_abbr": "CHW",
@@ -2540,7 +2540,7 @@
         "Chicago 3-7 en últimos 10 juegos",
         "Ventaja de local en el Progressive Field"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "acertado",
       "linescore": {
         "innings": [
           {
@@ -2583,8 +2583,8 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 1,
+        "outs": 3,
+        "balls": 0,
         "strikes": 3,
         "away_runs": 3,
         "home_runs": 0,
@@ -2599,9 +2599,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "3",
         "opp_score": "0",
         "score_fav": "3",
@@ -2658,7 +2658,7 @@
   "autorizados": [
     6099564810
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": true,
   "live_data": {
     "401907973": {
@@ -2796,9 +2796,9 @@
       }
     },
     "849829": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 9th",
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
       "away_runs": 3,
       "home_runs": 0,
       "away_team_name": "Cleveland Guardians",
@@ -2845,8 +2845,8 @@
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 2,
-        "balls": 1,
+        "outs": 3,
+        "balls": 0,
         "strikes": 3,
         "away_runs": 3,
         "home_runs": 0,
@@ -2861,9 +2861,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "3",
         "opp_score": "0",
         "score_fav": "3",
@@ -2871,12 +2871,12 @@
       }
     }
   },
-  "updated_at": "03/10/2026 13:56",
+  "updated_at": "03/10/2026 14:00",
   "stats": {
-    "total": 13,
-    "acertados": 7,
+    "total": 14,
+    "acertados": 8,
     "fallidos": 6,
-    "win_rate": 53.8,
+    "win_rate": 57.1,
     "alta_total": 3,
     "alta_acertados": 2,
     "alta_fallidos": 1,
@@ -2885,23 +2885,23 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 17,
-    "baja_acertados": 8,
+    "baja_total": 18,
+    "baja_acertados": 9,
     "baja_fallidos": 9,
-    "baja_win_rate": 47.1,
+    "baja_win_rate": 50.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 20,
-    "llm_acertados": 10,
+    "llm_total": 21,
+    "llm_acertados": 11,
     "llm_fallidos": 10,
-    "llm_win_rate": 50.0
+    "llm_win_rate": 52.4
   },
   "stats_mlb": {
-    "total": 10,
-    "acertados": 5,
+    "total": 11,
+    "acertados": 6,
     "fallidos": 5,
-    "win_rate": 50.0,
+    "win_rate": 54.5,
     "alta_total": 0,
     "alta_acertados": 0,
     "alta_fallidos": 0,
@@ -2910,17 +2910,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 15,
-    "baja_acertados": 6,
+    "baja_total": 16,
+    "baja_acertados": 7,
     "baja_fallidos": 9,
-    "baja_win_rate": 40.0,
+    "baja_win_rate": 43.8,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 15,
-    "llm_acertados": 6,
+    "llm_total": 16,
+    "llm_acertados": 7,
     "llm_fallidos": 9,
-    "llm_win_rate": 40.0
+    "llm_win_rate": 43.8
   },
   "stats_lmb": {
     "total": 3,
@@ -2948,10 +2948,10 @@
     "llm_win_rate": 80.0
   },
   "stats_hoy": {
-    "total": 0,
-    "acertados": 0,
+    "total": 1,
+    "acertados": 1,
     "fallidos": 0,
-    "win_rate": 0,
+    "win_rate": 100.0,
     "alta_total": 0,
     "alta_acertados": 0,
     "alta_fallidos": 0,
@@ -2960,23 +2960,23 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 0,
-    "baja_acertados": 0,
+    "baja_total": 1,
+    "baja_acertados": 1,
     "baja_fallidos": 0,
-    "baja_win_rate": 0,
+    "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 0,
-    "llm_acertados": 0,
+    "llm_total": 1,
+    "llm_acertados": 1,
     "llm_fallidos": 0,
-    "llm_win_rate": 0
+    "llm_win_rate": 100.0
   },
   "stats_hoy_mlb": {
-    "total": 0,
-    "acertados": 0,
+    "total": 1,
+    "acertados": 1,
     "fallidos": 0,
-    "win_rate": 0,
+    "win_rate": 100.0,
     "alta_total": 0,
     "alta_acertados": 0,
     "alta_fallidos": 0,
@@ -2985,17 +2985,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 0,
-    "baja_acertados": 0,
+    "baja_total": 1,
+    "baja_acertados": 1,
     "baja_fallidos": 0,
-    "baja_win_rate": 0,
+    "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 0,
-    "llm_acertados": 0,
+    "llm_total": 1,
+    "llm_acertados": 1,
     "llm_fallidos": 0,
-    "llm_win_rate": 0
+    "llm_win_rate": 100.0
   },
   "stats_hoy_lmb": {
     "total": 0,
@@ -3023,10 +3023,10 @@
     "llm_win_rate": 0
   },
   "stats_3dias": {
-    "total": 0,
-    "acertados": 0,
+    "total": 1,
+    "acertados": 1,
     "fallidos": 0,
-    "win_rate": 0,
+    "win_rate": 100.0,
     "alta_total": 0,
     "alta_acertados": 0,
     "alta_fallidos": 0,
@@ -3035,23 +3035,23 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 0,
-    "baja_acertados": 0,
+    "baja_total": 1,
+    "baja_acertados": 1,
     "baja_fallidos": 0,
-    "baja_win_rate": 0,
+    "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 0,
-    "llm_acertados": 0,
+    "llm_total": 1,
+    "llm_acertados": 1,
     "llm_fallidos": 0,
-    "llm_win_rate": 0
+    "llm_win_rate": 100.0
   },
   "stats_3dias_mlb": {
-    "total": 0,
-    "acertados": 0,
+    "total": 1,
+    "acertados": 1,
     "fallidos": 0,
-    "win_rate": 0,
+    "win_rate": 100.0,
     "alta_total": 0,
     "alta_acertados": 0,
     "alta_fallidos": 0,
@@ -3060,17 +3060,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 0,
-    "baja_acertados": 0,
+    "baja_total": 1,
+    "baja_acertados": 1,
     "baja_fallidos": 0,
-    "baja_win_rate": 0,
+    "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 0,
-    "llm_acertados": 0,
+    "llm_total": 1,
+    "llm_acertados": 1,
     "llm_fallidos": 0,
-    "llm_win_rate": 0
+    "llm_win_rate": 100.0
   },
   "stats_3dias_lmb": {
     "total": 0,
@@ -3098,10 +3098,10 @@
     "llm_win_rate": 0
   },
   "stats_semanal": {
-    "total": 0,
-    "acertados": 0,
+    "total": 1,
+    "acertados": 1,
     "fallidos": 0,
-    "win_rate": 0,
+    "win_rate": 100.0,
     "alta_total": 0,
     "alta_acertados": 0,
     "alta_fallidos": 0,
@@ -3110,23 +3110,23 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 0,
-    "baja_acertados": 0,
+    "baja_total": 1,
+    "baja_acertados": 1,
     "baja_fallidos": 0,
-    "baja_win_rate": 0,
+    "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 0,
-    "llm_acertados": 0,
+    "llm_total": 1,
+    "llm_acertados": 1,
     "llm_fallidos": 0,
-    "llm_win_rate": 0
+    "llm_win_rate": 100.0
   },
   "stats_semanal_mlb": {
-    "total": 0,
-    "acertados": 0,
+    "total": 1,
+    "acertados": 1,
     "fallidos": 0,
-    "win_rate": 0,
+    "win_rate": 100.0,
     "alta_total": 0,
     "alta_acertados": 0,
     "alta_fallidos": 0,
@@ -3135,17 +3135,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 0,
-    "baja_acertados": 0,
+    "baja_total": 1,
+    "baja_acertados": 1,
     "baja_fallidos": 0,
-    "baja_win_rate": 0,
+    "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 0,
-    "llm_acertados": 0,
+    "llm_total": 1,
+    "llm_acertados": 1,
     "llm_fallidos": 0,
-    "llm_win_rate": 0
+    "llm_win_rate": 100.0
   },
   "stats_semanal_lmb": {
     "total": 0,
@@ -3203,10 +3203,10 @@
       "llm_win_rate": 50.0
     },
     "2026-10-03": {
-      "total": 0,
-      "acertados": 0,
+      "total": 1,
+      "acertados": 1,
       "fallidos": 0,
-      "win_rate": 0,
+      "win_rate": 100.0,
       "alta_total": 0,
       "alta_acertados": 0,
       "alta_fallidos": 0,
@@ -3215,17 +3215,17 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 0,
-      "baja_acertados": 0,
+      "baja_total": 1,
+      "baja_acertados": 1,
       "baja_fallidos": 0,
-      "baja_win_rate": 0,
+      "baja_win_rate": 100.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "llm_total": 0,
-      "llm_acertados": 0,
+      "llm_total": 1,
+      "llm_acertados": 1,
       "llm_fallidos": 0,
-      "llm_win_rate": 0
+      "llm_win_rate": 100.0
     }
   },
   "stats_por_fecha_mlb": {
@@ -3255,10 +3255,10 @@
       "llm_win_rate": 40.0
     },
     "2026-10-03": {
-      "total": 0,
-      "acertados": 0,
+      "total": 1,
+      "acertados": 1,
       "fallidos": 0,
-      "win_rate": 0,
+      "win_rate": 100.0,
       "alta_total": 0,
       "alta_acertados": 0,
       "alta_fallidos": 0,
@@ -3267,17 +3267,17 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 0,
-      "baja_acertados": 0,
+      "baja_total": 1,
+      "baja_acertados": 1,
       "baja_fallidos": 0,
-      "baja_win_rate": 0,
+      "baja_win_rate": 100.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "llm_total": 0,
-      "llm_acertados": 0,
+      "llm_total": 1,
+      "llm_acertados": 1,
       "llm_fallidos": 0,
-      "llm_win_rate": 0
+      "llm_win_rate": 100.0
     }
   },
   "stats_por_fecha_lmb": {
@@ -3497,7 +3497,7 @@
           "player_id": 545341,
           "game_pk": "849829",
           "equipo": "Chicago White Sox",
-          "status": "pendiente"
+          "status": "fallido"
         },
         {
           "nombre": "Chase Meidroth",
@@ -3505,7 +3505,7 @@
           "player_id": 805367,
           "game_pk": "849829",
           "equipo": "Chicago White Sox",
-          "status": "pendiente"
+          "status": "fallido"
         },
         {
           "nombre": "Sam Antonacci",
@@ -3513,7 +3513,7 @@
           "player_id": 803011,
           "game_pk": "849829",
           "equipo": "Chicago White Sox",
-          "status": "pendiente"
+          "status": "fallido"
         }
       ],
       "Cleveland Guardians": [
@@ -3523,7 +3523,7 @@
           "player_id": 800050,
           "game_pk": "849829",
           "equipo": "Cleveland Guardians",
-          "status": "pendiente"
+          "status": "fallido"
         },
         {
           "nombre": "Steven Kwan",
@@ -3531,7 +3531,7 @@
           "player_id": 680757,
           "game_pk": "849829",
           "equipo": "Cleveland Guardians",
-          "status": "pendiente"
+          "status": "fallido"
         },
         {
           "nombre": "Angel Martínez",
@@ -3539,7 +3539,7 @@
           "player_id": 682657,
           "game_pk": "849829",
           "equipo": "Cleveland Guardians",
-          "status": "pendiente"
+          "status": "fallido"
         }
       ]
     },
@@ -12747,10 +12747,10 @@
   },
   "llm_by_sport": {
     "MLB": {
-      "llm_total": 15,
-      "llm_acertados": 6,
+      "llm_total": 16,
+      "llm_acertados": 7,
       "llm_fallidos": 9,
-      "llm_win_rate": 40.0
+      "llm_win_rate": 43.8
     },
     "LMB": {
       "llm_total": 5,
@@ -13342,34 +13342,34 @@
   "llm_sections": {
     "MLB": {
       "equipo": {
-        "total": 15,
-        "acertados": 6,
+        "total": 16,
+        "acertados": 7,
         "fallidos": 9,
-        "win_rate": 40.0
+        "win_rate": 43.8
       },
       "marcador": {
-        "total": 15,
-        "acertados": 11,
+        "total": 16,
+        "acertados": 12,
         "fallidos": 4,
-        "win_rate": 73.3
+        "win_rate": 75.0
       },
       "lanzadores": {
-        "total": 15,
-        "acertados": 6,
+        "total": 16,
+        "acertados": 7,
         "fallidos": 9,
-        "win_rate": 40.0
+        "win_rate": 43.8
       },
       "bateadores": {
-        "total": 15,
-        "acertados": 6,
+        "total": 16,
+        "acertados": 7,
         "fallidos": 9,
-        "win_rate": 40.0
+        "win_rate": 43.8
       },
       "relevo": {
-        "total": 15,
-        "acertados": 6,
+        "total": 16,
+        "acertados": 7,
         "fallidos": 9,
-        "win_rate": 40.0
+        "win_rate": 43.8
       }
     },
     "LMB": {
