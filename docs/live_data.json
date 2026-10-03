@@ -1,5 +1,5 @@
 {
-  "fecha": "03/10/2026 12:41",
+  "fecha": "03/10/2026 12:56",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791122400,
@@ -1391,17 +1391,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": true,
-        "inning_ordinal": "5th",
-        "outs": 3,
-        "balls": 1,
+        "inning_ordinal": "6th",
+        "outs": 0,
+        "balls": 0,
         "strikes": 0,
         "away_runs": 2,
         "home_runs": 0,
-        "away_hits": 4,
+        "away_hits": 5,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -2405,7 +2409,7 @@
       "opp_team": "New York Yankees",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Scheduled",
+      "state": "Pre-Game",
       "result": "pending",
       "label": "📋",
       "game_pk": 849835,
@@ -2422,10 +2426,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2444,7 +2453,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -2504,7 +2513,7 @@
       "opp_team": "Cleveland Guardians",
       "score_fav": "2",
       "score_opp": "0",
-      "state": "Middle 5th",
+      "state": "Top 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 849829,
@@ -2541,17 +2550,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": true,
-        "inning_ordinal": "5th",
-        "outs": 3,
-        "balls": 1,
+        "inning_ordinal": "6th",
+        "outs": 0,
+        "balls": 0,
         "strikes": 0,
         "away_runs": 2,
         "home_runs": 0,
-        "away_hits": 4,
+        "away_hits": 5,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -2718,16 +2731,21 @@
     "849835": {
       "is_live": false,
       "is_final": false,
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "New York Yankees",
       "home_team_name": "Tampa Bay Rays",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2746,7 +2764,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -2756,7 +2774,7 @@
     "849829": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 5th",
+      "status": "Top 6th",
       "away_runs": 2,
       "home_runs": 0,
       "away_team_name": "Cleveland Guardians",
@@ -2782,17 +2800,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
+        "current_inning": 6,
         "is_top": true,
-        "inning_ordinal": "5th",
-        "outs": 3,
-        "balls": 1,
+        "inning_ordinal": "6th",
+        "outs": 0,
+        "balls": 0,
         "strikes": 0,
         "away_runs": 2,
         "home_runs": 0,
-        "away_hits": 4,
+        "away_hits": 5,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -2813,7 +2835,7 @@
       }
     }
   },
-  "updated_at": "03/10/2026 12:41",
+  "updated_at": "03/10/2026 12:56",
   "stats": {
     "total": 13,
     "acertados": 7,
