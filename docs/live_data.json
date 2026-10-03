@@ -1,5 +1,5 @@
 {
-  "fecha": "03/10/2026 17:41",
+  "fecha": "03/10/2026 17:56",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791122400,
@@ -2458,7 +2458,7 @@
       "opp_team": "New York Yankees",
       "score_fav": "1",
       "score_opp": "0",
-      "state": "Top 4th",
+      "state": "Top 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 849835,
@@ -2491,18 +2491,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": true,
-        "inning_ordinal": "4th",
+        "inning_ordinal": "5th",
         "outs": 1,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 0,
-        "home_hits": 4,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "New York Yankees",
@@ -2841,7 +2845,7 @@
     "849835": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 4th",
+      "status": "Top 5th",
       "away_runs": 1,
       "home_runs": 0,
       "away_team_name": "New York Yankees",
@@ -2863,18 +2867,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": true,
-        "inning_ordinal": "4th",
+        "inning_ordinal": "5th",
         "outs": 1,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 1,
         "away_hits": 0,
-        "home_hits": 4,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "New York Yankees",
@@ -2969,7 +2977,7 @@
       }
     }
   },
-  "updated_at": "03/10/2026 17:41",
+  "updated_at": "03/10/2026 17:56",
   "stats": {
     "total": 14,
     "acertados": 8,
@@ -12890,25 +12898,35 @@
       "away": "Miami Heat",
       "home_abbr": "TOR",
       "away_abbr": "MIA",
-      "home_score": 23,
-      "away_score": 38,
+      "home_score": 35,
+      "away_score": 52,
       "home_linescores": [
         {
           "period": 1,
           "value": 23,
           "display": "23"
+        },
+        {
+          "period": 2,
+          "value": 12,
+          "display": "12"
         }
       ],
       "away_linescores": [
         {
           "period": 1,
-          "value": 38,
-          "display": "38"
+          "value": 41,
+          "display": "41"
+        },
+        {
+          "period": 2,
+          "value": 11,
+          "display": "11"
         }
       ],
-      "clock": "14.9",
-      "period": 1,
-      "state": "Q1 14.9",
+      "clock": "7:36",
+      "period": 2,
+      "state": "Q2 7:36",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/TOR.png&h=40&w=40",
