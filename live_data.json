@@ -1,5 +1,5 @@
 {
-  "fecha": "03/10/2026 14:26",
+  "fecha": "03/10/2026 14:41",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791122400,
@@ -2235,10 +2235,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2317,7 +2322,7 @@
       "opp_team": "Atlanta Braves",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "End 1st",
+      "state": "End 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 849828,
@@ -2338,14 +2343,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
+        "inning_ordinal": "2nd",
         "outs": 3,
-        "balls": 1,
-        "strikes": 0,
+        "balls": 2,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 1,
@@ -2680,10 +2689,15 @@
       "away_team_name": "San Diego Padres",
       "home_team_name": "Milwaukee Brewers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2712,7 +2726,7 @@
     "849828": {
       "is_live": true,
       "is_final": false,
-      "status": "End 1st",
+      "status": "End 2nd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Atlanta Braves",
@@ -2722,14 +2736,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
+        "inning_ordinal": "2nd",
         "outs": 3,
-        "balls": 1,
-        "strikes": 0,
+        "balls": 2,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 1,
@@ -2871,7 +2889,7 @@
       }
     }
   },
-  "updated_at": "03/10/2026 14:26",
+  "updated_at": "03/10/2026 14:41",
   "stats": {
     "total": 14,
     "acertados": 8,
