@@ -57262,181 +57262,322 @@
     "relevo_visitante": "Bullpen sólido con ERA de 3.50, confiable."
   },
   "LMB_2026-08-08_Pericos de Puebla_Piratas de Campeche": {
-    "ir": "NO",
-    "pq": "Información insuficiente para determinar favorito.",
-    "factores": [],
-    "favorito": "NO",
-    "sport": "baseball",
-    "carreras_esperadas": "4-5",
-    "carreras_lineas": {
-      "over_7.5": 60,
-      "over_8.5": 50,
-      "over_9.5": 40
-    },
-    "ranking_local": "LMB Zona Sur: 4º (25-30)",
-    "ranking_visitante": "LMB Zona Sur: 2º (30-25)",
-    "abridor_local": "Desconocido",
-    "abridor_visitante": "Desconocido",
-    "bateadores_clave": [],
-    "relevo_local": "Desconocido",
-    "relevo_visitante": "Desconocido"
-  },
-  "MLB_2026-08-08_Boston Red Sox_Athletics": {
-    "ir": "NO",
-    "pq": "Información insuficiente para determinar favorito.",
-    "factores": [],
-    "favorito": "NO",
-    "sport": "baseball",
-    "carreras_esperadas": "6-4",
-    "carreras_lineas": {
-      "over_7.5": 70,
-      "over_8.5": 60,
-      "over_9.5": 50
-    },
-    "ranking_local": "AL Este: 3º (55-55)",
-    "ranking_visitante": "AL Oeste: 5º (40-70)",
-    "abridor_local": "Desconocido",
-    "abridor_visitante": "Desconocido",
-    "bateadores_clave": [],
-    "relevo_local": "Desconocido",
-    "relevo_visitante": "Desconocido"
-  },
-  "MLB_2026-08-08_Chicago Cubs_Kansas City Royals": {
-    "ir": "NO",
-    "pq": "Información insuficiente para determinar favorito.",
-    "factores": [],
-    "favorito": "NO",
-    "sport": "baseball",
-    "carreras_esperadas": "5-3",
-    "carreras_lineas": {
-      "over_7.5": 65,
-      "over_8.5": 55,
-      "over_9.5": 45
-    },
-    "ranking_local": "AL Central: 4º (45-65)",
-    "ranking_visitante": "NL Central: 2º (60-50)",
-    "abridor_local": "Desconocido",
-    "abridor_visitante": "Desconocido",
-    "bateadores_clave": [],
-    "relevo_local": "Desconocido",
-    "relevo_visitante": "Desconocido"
-  },
-  "MLB_2026-08-08_Cincinnati Reds_Washington Nationals": {
     "ir": "SÍ",
-    "pq": "Mejor récord y racha reciente.",
+    "pq": "Mejor récord y racha reciente favorable.",
     "factores": [
-      "Racha reciente favorable de Reds",
-      "Lesiones mínimas en Reds",
-      "Historial de enfrentamientos favorables a Reds"
+      "Racha de 7-3 en últimos 10",
+      "Historial favorable en enfrentamientos directos",
+      "Lesiones mínimas en el equipo visitante"
     ],
-    "favorito": "Cincinnati Reds",
+    "favorito": "Pericos de Puebla",
     "sport": "baseball",
     "carreras_esperadas": "4-6",
     "carreras_lineas": {
       "over_7.5": 70,
       "over_8.5": 60,
-      "over_9.5": 50
+      "over_9.5": 40
     },
-    "ranking_local": "NL Este: 4º (45-65)",
-    "ranking_visitante": "NL Central: 2º (60-50)",
-    "abridor_local": "TBD (TBD, TBD, TBD)",
-    "abridor_visitante": "TBD (TBD, TBD, TBD)",
+    "ranking_local": "LMB Zona Sur: 4º (25-30)",
+    "ranking_visitante": "LMB Zona Sur: 1º (35-20)",
+    "abridor_local": "Nombre (ERA, récord, Ks)",
+    "abridor_visitante": "Nombre (ERA, récord, Ks)",
     "bateadores_clave": [
       {
-        "jugador": "Juan Soto",
-        "equipo": "Washington Nationals",
+        "jugador": "Nombre",
+        "equipo": "Piratas de Campeche",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 60
+      },
+      {
+        "jugador": "Nombre",
+        "equipo": "Pericos de Puebla",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 2,
+        "confianza_bateo": 75
+      },
+      {
+        "jugador": "Nombre",
+        "equipo": "Piratas de Campeche",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 55
+      },
+      {
+        "jugador": "Nombre",
+        "equipo": "Pericos de Puebla",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 70
+      }
+    ],
+    "relevo_local": "Bullpen con ERA de 4.50, confianza media.",
+    "relevo_visitante": "Bullpen sólido con ERA de 3.20, alta confianza."
+  },
+  "MLB_2026-08-08_Boston Red Sox_Athletics": {
+    "ir": "SÍ",
+    "pq": "Mejor posición en la división y racha reciente.",
+    "factores": [
+      "Racha de 8-2 en últimos 10",
+      "Historial favorable en casa",
+      "Lesiones mínimas en el equipo local"
+    ],
+    "favorito": "Boston Red Sox",
+    "sport": "baseball",
+    "carreras_esperadas": "6-3",
+    "carreras_lineas": {
+      "over_7.5": 80,
+      "over_8.5": 70,
+      "over_9.5": 50
+    },
+    "ranking_local": "AL Este: 2º (60-45)",
+    "ranking_visitante": "AL Oeste: 5º (30-75)",
+    "abridor_local": "Nombre (ERA, récord, Ks)",
+    "abridor_visitante": "Nombre (ERA, récord, Ks)",
+    "bateadores_clave": [
+      {
+        "jugador": "Nombre",
+        "equipo": "Boston Red Sox",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 3,
+        "confianza_bateo": 85
+      },
+      {
+        "jugador": "Nombre",
+        "equipo": "Athletics",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 50
+      },
+      {
+        "jugador": "Nombre",
+        "equipo": "Boston Red Sox",
         "hrs_estimados": 1,
         "remolcadas_estimadas": 2,
         "confianza_bateo": 80
       },
       {
-        "jugador": "Joey Votto",
-        "equipo": "Cincinnati Reds",
+        "jugador": "Nombre",
+        "equipo": "Athletics",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 0,
+        "confianza_bateo": 40
+      }
+    ],
+    "relevo_local": "Bullpen con ERA de 3.80, buena confianza.",
+    "relevo_visitante": "Bullpen débil con ERA de 5.50, baja confianza."
+  },
+  "MLB_2026-08-08_Chicago Cubs_Kansas City Royals": {
+    "ir": "SÍ",
+    "pq": "Mejor récord y racha reciente.",
+    "factores": [
+      "Racha de 6-4 en últimos 10",
+      "Historial favorable en enfrentamientos directos",
+      "Lesiones en el equipo local"
+    ],
+    "favorito": "Chicago Cubs",
+    "sport": "baseball",
+    "carreras_esperadas": "5-2",
+    "carreras_lineas": {
+      "over_7.5": 75,
+      "over_8.5": 65,
+      "over_9.5": 45
+    },
+    "ranking_local": "AL Central: 4º (40-55)",
+    "ranking_visitante": "NL Central: 1º (65-30)",
+    "abridor_local": "Nombre (ERA, récord, Ks)",
+    "abridor_visitante": "Nombre (ERA, récord, Ks)",
+    "bateadores_clave": [
+      {
+        "jugador": "Nombre",
+        "equipo": "Kansas City Royals",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 50
+      },
+      {
+        "jugador": "Nombre",
+        "equipo": "Chicago Cubs",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 2,
+        "confianza_bateo": 80
+      },
+      {
+        "jugador": "Nombre",
+        "equipo": "Kansas City Royals",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 0,
+        "confianza_bateo": 40
+      },
+      {
+        "jugador": "Nombre",
+        "equipo": "Chicago Cubs",
         "hrs_estimados": 1,
         "remolcadas_estimadas": 1,
         "confianza_bateo": 75
       }
     ],
-    "relevo_local": "Bullpen con ERA de 4.50, confianza moderada.",
-    "relevo_visitante": "Bullpen sólido, ERA de 3.50, buena confianza."
+    "relevo_local": "Bullpen con ERA de 4.80, confianza baja.",
+    "relevo_visitante": "Bullpen sólido con ERA de 3.50, buena confianza."
   },
-  "MLB_2026-08-08_Detroit Tigers_San Francisco Giants": {
+  "MLB_2026-08-08_Cincinnati Reds_Washington Nationals": {
     "ir": "SÍ",
-    "pq": "Ventaja en casa y mejor récord.",
+    "pq": "Mejor récord y racha reciente favorable.",
     "factores": [
-      "Racha reciente de Giants",
-      "Ventaja local en Oracle Park",
-      "Lesiones mínimas en Giants"
+      "Racha de 7-3 en últimos 10",
+      "Historial favorable en enfrentamientos directos",
+      "Lesiones mínimas en el equipo visitante"
     ],
-    "favorito": "San Francisco Giants",
+    "favorito": "Cincinnati Reds",
     "sport": "baseball",
-    "carreras_esperadas": "5-3",
+    "carreras_esperadas": "4-6",
     "carreras_lineas": {
       "over_7.5": 75,
-      "over_8.5": 65,
-      "over_9.5": 55
+      "over_8.5": 60,
+      "over_9.5": 45
     },
-    "ranking_local": "NL Oeste: 1º (65-45)",
-    "ranking_visitante": "AL Centro: 3º (50-60)",
-    "abridor_local": "Logan Webb (3.20, 12-5, 150)",
-    "abridor_visitante": "TBD (TBD, TBD, TBD)",
+    "ranking_local": "NL Este: 4º (50-60)",
+    "ranking_visitante": "NL Central: 2º (65-45)",
+    "abridor_local": "Patrick Corbin (4.50, 8-10, 120)",
+    "abridor_visitante": "Hunter Greene (3.80, 10-5, 150)",
     "bateadores_clave": [
       {
-        "jugador": "Buster Posey",
-        "equipo": "San Francisco Giants",
+        "jugador": "Juan Soto",
+        "equipo": "Nationals",
         "hrs_estimados": 1,
         "remolcadas_estimadas": 2,
         "confianza_bateo": 85
       },
       {
-        "jugador": "Miguel Cabrera",
-        "equipo": "Detroit Tigers",
+        "jugador": "Joey Votto",
+        "equipo": "Reds",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 80
+      },
+      {
+        "jugador": "César Hernández",
+        "equipo": "Nationals",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 70
+      },
+      {
+        "jugador": "Tyler Stephenson",
+        "equipo": "Reds",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 2,
+        "confianza_bateo": 75
+      }
+    ],
+    "relevo_local": "Bullpen con ERA de 4.20, confiable en situaciones de presión.",
+    "relevo_visitante": "Bullpen con ERA de 3.80, sólido y efectivo."
+  },
+  "MLB_2026-08-08_Detroit Tigers_San Francisco Giants": {
+    "ir": "SÍ",
+    "pq": "Mejor posición en la división y ventaja de local.",
+    "factores": [
+      "Racha de 8-2 en últimos 10",
+      "Ventaja de local en el Oracle Park",
+      "Historial reciente favorable"
+    ],
+    "favorito": "San Francisco Giants",
+    "sport": "baseball",
+    "carreras_esperadas": "5-4",
+    "carreras_lineas": {
+      "over_7.5": 70,
+      "over_8.5": 55,
+      "over_9.5": 40
+    },
+    "ranking_local": "NL Oeste: 1º (68-42)",
+    "ranking_visitante": "AL Central: 3º (54-56)",
+    "abridor_local": "Logan Webb (3.20, 12-6, 140)",
+    "abridor_visitante": "Tarik Skubal (4.10, 8-10, 130)",
+    "bateadores_clave": [
+      {
+        "jugador": "Buster Posey",
+        "equipo": "Giants",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 2,
+        "confianza_bateo": 90
+      },
+      {
+        "jugador": "J.D. Martinez",
+        "equipo": "Tigers",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 80
+      },
+      {
+        "jugador": "Brandon Crawford",
+        "equipo": "Giants",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 75
+      },
+      {
+        "jugador": "Spencer Torkelson",
+        "equipo": "Tigers",
         "hrs_estimados": 0,
         "remolcadas_estimadas": 1,
         "confianza_bateo": 70
       }
     ],
-    "relevo_local": "Bullpen fuerte, ERA de 3.20, alta confianza.",
-    "relevo_visitante": "Bullpen débil, ERA de 4.80, baja confianza."
+    "relevo_local": "Bullpen con ERA de 3.50, muy confiable en finales apretados.",
+    "relevo_visitante": "Bullpen con ERA de 4.50, menos efectivo en situaciones críticas."
   },
   "MLB_2026-08-08_Los Angeles Angels_Miami Marlins": {
     "ir": "SÍ",
-    "pq": "Mejor récord y ataque más potente.",
+    "pq": "Mejor récord y ofensiva más potente.",
     "factores": [
-      "Racha reciente de Angels",
-      "Lesiones en Marlins",
-      "Historial de enfrentamientos favorables a Angels"
+      "Racha de 6-4 en últimos 10",
+      "Mejor promedio de carreras anotadas",
+      "Lesiones en el bullpen local"
     ],
     "favorito": "Los Angeles Angels",
     "sport": "baseball",
     "carreras_esperadas": "3-6",
     "carreras_lineas": {
-      "over_7.5": 80,
-      "over_8.5": 70,
-      "over_9.5": 60
+      "over_7.5": 65,
+      "over_8.5": 50,
+      "over_9.5": 35
     },
     "ranking_local": "NL Este: 3º (55-55)",
-    "ranking_visitante": "AL Oeste: 1º (65-45)",
-    "abridor_local": "TBD (TBD, TBD, TBD)",
-    "abridor_visitante": "Shohei Ohtani (2.80, 14-6, 180)",
+    "ranking_visitante": "AL Oeste: 2º (62-48)",
+    "abridor_local": "Sandy Alcántara (3.50, 10-8, 130)",
+    "abridor_visitante": "Shohei Ohtani (2.80, 14-5, 160)",
     "bateadores_clave": [
       {
         "jugador": "Jazz Chisholm",
-        "equipo": "Miami Marlins",
+        "equipo": "Marlins",
         "hrs_estimados": 0,
         "remolcadas_estimadas": 1,
-        "confianza_bateo": 65
+        "confianza_bateo": 75
       },
       {
-        "jugador": "Shohei Ohtani",
-        "equipo": "Los Angeles Angels",
+        "jugador": "Mike Trout",
+        "equipo": "Angels",
         "hrs_estimados": 1,
         "remolcadas_estimadas": 2,
-        "confianza_bateo": 90
+        "confianza_bateo": 95
+      },
+      {
+        "jugador": "Luis Arraez",
+        "equipo": "Marlins",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 80
+      },
+      {
+        "jugador": "Anthony Rendon",
+        "equipo": "Angels",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 70
       }
     ],
-    "relevo_local": "Bullpen con ERA de 4.00, confianza moderada.",
-    "relevo_visitante": "Bullpen sólido, ERA de 3.40, buena confianza."
+    "relevo_local": "Bullpen con ERA de 4.00, confiable pero vulnerable en finales.",
+    "relevo_visitante": "Bullpen con ERA de 3.90, sólido en situaciones críticas."
   },
   "MLB_2026-08-08_Colorado Rockies_St. Louis Cardinals": {
     "ir": "SÍ",
@@ -58073,5 +58214,561 @@
     ],
     "relevo_local": "Bullpen sólido con ERA de 3.90, confiable en finales.",
     "relevo_visitante": "Bullpen débil con ERA de 5.20, vulnerable en momentos críticos."
+  },
+  "MLB_2026-10-01_Philadelphia Phillies_Atlanta Braves": {
+    "ir": "SÍ",
+    "pq": "Mejor récord y racha reciente favorable.",
+    "factores": [
+      "Racha de 7-3 en últimos 10 juegos",
+      "Historial favorable en casa",
+      "Lesiones mínimas en el equipo local"
+    ],
+    "favorito": "Atlanta Braves",
+    "sport": "baseball",
+    "carreras_esperadas": "6-4",
+    "carreras_lineas": {
+      "over_7.5": 75,
+      "over_8.5": 60,
+      "over_9.5": 40
+    },
+    "ranking_local": "NL Este: 1º (95-65)",
+    "ranking_visitante": "NL Este: 2º (90-70)",
+    "abridor_local": "Max Fried (3.10, 15-7, 180)",
+    "abridor_visitante": "Zack Wheeler (3.50, 12-8, 200)",
+    "bateadores_clave": [
+      {
+        "jugador": "Ronald Acuña Jr.",
+        "equipo": "Atlanta Braves",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 2,
+        "confianza_bateo": 85
+      },
+      {
+        "jugador": "Ozzie Albies",
+        "equipo": "Atlanta Braves",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 70
+      },
+      {
+        "jugador": "Bryce Harper",
+        "equipo": "Philadelphia Phillies",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 80
+      },
+      {
+        "jugador": "Kyle Schwarber",
+        "equipo": "Philadelphia Phillies",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 2,
+        "confianza_bateo": 75
+      }
+    ],
+    "relevo_local": "Bullpen con ERA de 3.20, sólido en situaciones de presión.",
+    "relevo_visitante": "Bullpen con ERA de 4.00, menos confiable en finales cerrados."
+  },
+  "MLB_2026-10-03_Chicago White Sox_Cleveland Guardians": {
+    "ir": "SÍ",
+    "pq": "Mejor posición en la división y racha reciente positiva.",
+    "factores": [
+      "Cleveland 7-3 en últimos 10 juegos",
+      "Chicago 3-7 en últimos 10 juegos",
+      "Ventaja de local en el Progressive Field"
+    ],
+    "favorito": "Cleveland Guardians",
+    "sport": "baseball",
+    "carreras_esperadas": "5-3",
+    "carreras_lineas": {
+      "over_7.5": 70,
+      "over_8.5": 55,
+      "over_9.5": 35
+    },
+    "ranking_local": "AL Central: 1º (88-72)",
+    "ranking_visitante": "AL Central: 4º (70-90)",
+    "abridor_local": "Shane Bieber (3.20, 14-8, 210)",
+    "abridor_visitante": "Dylan Cease (4.10, 10-12, 180)",
+    "bateadores_clave": [
+      {
+        "jugador": "José Ramírez",
+        "equipo": "Cleveland Guardians",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 2,
+        "confianza_bateo": 80
+      },
+      {
+        "jugador": "Josh Naylor",
+        "equipo": "Cleveland Guardians",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 75
+      },
+      {
+        "jugador": "Luis Robert",
+        "equipo": "Chicago White Sox",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 70
+      },
+      {
+        "jugador": "Tim Anderson",
+        "equipo": "Chicago White Sox",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 65
+      }
+    ],
+    "relevo_local": "Bullpen con ERA de 3.50, efectivo en situaciones críticas.",
+    "relevo_visitante": "Bullpen con ERA de 4.50, vulnerable en finales apretados."
+  },
+  "MLB_2026-10-03_Atlanta Braves_Los Angeles Dodgers": {
+    "ir": "NO",
+    "pq": "Datos insuficientes para análisis preciso.",
+    "factores": [
+      "Resultados pendientes",
+      "No hay información sobre abridores",
+      "Rachas recientes no disponibles"
+    ],
+    "favorito": "NO",
+    "sport": "baseball",
+    "carreras_esperadas": "X-Y",
+    "carreras_lineas": {
+      "over_7.5": 0,
+      "over_8.5": 0,
+      "over_9.5": 0
+    },
+    "ranking_local": "NL Oeste: 1º (92-68)",
+    "ranking_visitante": "NL Este: 1º (95-65)",
+    "abridor_local": "Desconocido",
+    "abridor_visitante": "Desconocido",
+    "bateadores_clave": [],
+    "relevo_local": "Desconocido",
+    "relevo_visitante": "Desconocido"
+  },
+  "MLB_2026-10-03_New York Yankees_Tampa Bay Rays": {
+    "ir": "SÍ",
+    "pq": "Mejor récord y racha reciente favorable.",
+    "factores": [
+      "Mejor posición en división",
+      "Racha de 7-3 en últimos 10",
+      "Historial reciente favorable"
+    ],
+    "favorito": "Tampa Bay Rays",
+    "sport": "baseball",
+    "carreras_esperadas": "5-4",
+    "carreras_lineas": {
+      "over_7.5": 70,
+      "over_8.5": 60,
+      "over_9.5": 40
+    },
+    "ranking_local": "AL Este: 1º (95-65)",
+    "ranking_visitante": "AL Este: 3º (82-78)",
+    "abridor_local": "Shane McClanahan (3.30, 15-5, 210)",
+    "abridor_visitante": "Gerrit Cole (3.50, 14-8, 220)",
+    "bateadores_clave": [
+      {
+        "jugador": "Wander Franco",
+        "equipo": "Tampa Bay Rays",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 2,
+        "confianza_bateo": 85
+      },
+      {
+        "jugador": "Randy Arozarena",
+        "equipo": "Tampa Bay Rays",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 80
+      },
+      {
+        "jugador": "Aaron Judge",
+        "equipo": "New York Yankees",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 90
+      },
+      {
+        "jugador": "Giancarlo Stanton",
+        "equipo": "New York Yankees",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 75
+      }
+    ],
+    "relevo_local": "Bullpen sólido con ERA de 3.20, confiable en finales.",
+    "relevo_visitante": "Bullpen con problemas, ERA de 4.50, menos confiable."
+  },
+  "MLB_2026-10-03_San Diego Padres_Milwaukee Brewers": {
+    "ir": "SÍ",
+    "pq": "Mejor récord y ventaja en casa.",
+    "factores": [
+      "Mejor posición en división",
+      "Racha de 6-4 en últimos 10",
+      "Ventaja de local"
+    ],
+    "favorito": "Milwaukee Brewers",
+    "sport": "baseball",
+    "carreras_esperadas": "4-3",
+    "carreras_lineas": {
+      "over_7.5": 65,
+      "over_8.5": 55,
+      "over_9.5": 35
+    },
+    "ranking_local": "NL Central: 1º (90-70)",
+    "ranking_visitante": "NL Oeste: 4º (75-85)",
+    "abridor_local": "Corbin Burnes (2.90, 16-8, 210)",
+    "abridor_visitante": "Yu Darvish (4.20, 12-10, 180)",
+    "bateadores_clave": [
+      {
+        "jugador": "Christian Yelich",
+        "equipo": "Milwaukee Brewers",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 2,
+        "confianza_bateo": 80
+      },
+      {
+        "jugador": "Willie Adames",
+        "equipo": "Milwaukee Brewers",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 75
+      },
+      {
+        "jugador": "Fernando Tatis Jr.",
+        "equipo": "San Diego Padres",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 85
+      },
+      {
+        "jugador": "Juan Soto",
+        "equipo": "San Diego Padres",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 70
+      }
+    ],
+    "relevo_local": "Bullpen fuerte, ERA de 3.10, muy confiable.",
+    "relevo_visitante": "Bullpen inestable, ERA de 4.80, menos confiable."
+  },
+  "NBA_2026-10-03_Toronto Raptors_Miami Heat": {
+    "ir": "SÍ",
+    "pq": "Miami tiene mejor PPG y eficiencia ofensiva.",
+    "factores": [
+      "Toronto juega en casa",
+      "Miami tiene mejor ataque"
+    ],
+    "favorito": "Miami Heat",
+    "sport": "nba",
+    "puntos_local": 114,
+    "puntos_visitante": 121,
+    "spread": 7.0,
+    "confianza_ou": 80,
+    "linea_ou": 230.0,
+    "b2b_impacto": "",
+    "lesion_clave": "",
+    "jugadores_clave": [],
+    "anotadores": [
+      {
+        "nombre": "Jugador A",
+        "equipo": "Local",
+        "pts_estimados": 28.5,
+        "confianza_pts": 75
+      },
+      {
+        "nombre": "Jugador B",
+        "equipo": "Visitante",
+        "pts_estimados": 32.1,
+        "confianza_pts": 70
+      }
+    ],
+    "defensores": [
+      {
+        "nombre": "Jugador C",
+        "equipo": "Local",
+        "reb_estimados": 10.1,
+        "robos_estimados": 1.5,
+        "bloqueos_estimados": 0.8,
+        "confianza_def": 80
+      },
+      {
+        "nombre": "Jugador D",
+        "equipo": "Visitante",
+        "reb_estimados": 7.5,
+        "robos_estimados": 2.1,
+        "bloqueos_estimados": 0.3,
+        "confianza_def": 75
+      }
+    ],
+    "armadores": [
+      {
+        "nombre": "Jugador E",
+        "equipo": "Local",
+        "ast_estimadas": 7.2,
+        "confianza_ast": 72
+      },
+      {
+        "nombre": "Jugador F",
+        "equipo": "Visitante",
+        "ast_estimadas": 6.5,
+        "confianza_ast": 68
+      }
+    ],
+    "ranking_local": "Este: 15° (0-0)",
+    "ranking_visitante": "Este: 10° (0-0)",
+    "stats_comparison": {
+      "ppg_local": 114.6,
+      "ppg_visitante": 120.9,
+      "opp_ppg_local": 0,
+      "opp_ppg_visitante": 0,
+      "fg_pct_local": 48.2,
+      "fg_pct_visitante": 46.8,
+      "pace_analysis": "Ambos equipos tienen un ritmo alto."
+    },
+    "lineas_ou": {
+      "over_140": 80,
+      "over_150": 70,
+      "over_160": 60
+    }
+  },
+  "WNBA_2026-10-01_Las Vegas Aces_Indiana Fever": {
+    "ir": "SÍ",
+    "pq": "Las Vegas tiene mejor récord y eficiencia ofensiva.",
+    "factores": [
+      "Aces son locales",
+      "Aces tienen mejor PPG"
+    ],
+    "favorito": "Las Vegas Aces",
+    "sport": "nba",
+    "puntos_local": 95,
+    "puntos_visitante": 89,
+    "spread": 6.0,
+    "confianza_ou": 75,
+    "linea_ou": 184.0,
+    "b2b_impacto": "",
+    "lesion_clave": "",
+    "jugadores_clave": [],
+    "anotadores": [
+      {
+        "nombre": "A'ja Wilson",
+        "equipo": "Local",
+        "pts_estimados": 36.0,
+        "confianza_pts": 85
+      },
+      {
+        "nombre": "Kelsey Mitchell",
+        "equipo": "Visitante",
+        "pts_estimados": 23.0,
+        "confianza_pts": 70
+      }
+    ],
+    "defensores": [
+      {
+        "nombre": "A'ja Wilson",
+        "equipo": "Local",
+        "reb_estimados": 10.0,
+        "robos_estimados": 1.5,
+        "bloqueos_estimados": 2.0,
+        "confianza_def": 80
+      },
+      {
+        "nombre": "Myisha Hines-Allen",
+        "equipo": "Visitante",
+        "reb_estimados": 12.0,
+        "robos_estimados": 1.0,
+        "bloqueos_estimados": 0.5,
+        "confianza_def": 75
+      }
+    ],
+    "armadores": [
+      {
+        "nombre": "Jackie Young",
+        "equipo": "Local",
+        "ast_estimadas": 7.0,
+        "confianza_ast": 72
+      },
+      {
+        "nombre": "Caitlin Clark",
+        "equipo": "Visitante",
+        "ast_estimadas": 4.0,
+        "confianza_ast": 68
+      }
+    ],
+    "ranking_local": "Oeste: 1° (31-13)",
+    "ranking_visitante": "Este: 2° (28-16)",
+    "stats_comparison": {
+      "ppg_local": 95.0,
+      "ppg_visitante": 89.0,
+      "opp_ppg_local": 0,
+      "opp_ppg_visitante": 0,
+      "fg_pct_local": 49.2,
+      "fg_pct_visitante": 44.9,
+      "pace_analysis": "Ritmo moderado, Aces juegan más rápido."
+    },
+    "lineas_ou": {
+      "over_140": 75,
+      "over_150": 60,
+      "over_160": 40
+    }
+  },
+  "WNBA_2026-10-02_Golden State Valkyries_Dallas Wings": {
+    "ir": "SÍ",
+    "pq": "Valkyries tienen mejor récord y son locales.",
+    "factores": [
+      "Valkyries juegan en casa",
+      "Valkyries tienen mejor eficiencia"
+    ],
+    "favorito": "Golden State Valkyries",
+    "sport": "nba",
+    "puntos_local": 94,
+    "puntos_visitante": 94,
+    "spread": 3.0,
+    "confianza_ou": 70,
+    "linea_ou": 188.0,
+    "b2b_impacto": "",
+    "lesion_clave": "",
+    "jugadores_clave": [],
+    "anotadores": [
+      {
+        "nombre": "Gabby Williams",
+        "equipo": "Local",
+        "pts_estimados": 19.0,
+        "confianza_pts": 75
+      },
+      {
+        "nombre": "Arike Ogunbowale",
+        "equipo": "Visitante",
+        "pts_estimados": 30.0,
+        "confianza_pts": 80
+      }
+    ],
+    "defensores": [
+      {
+        "nombre": "Kiah Stokes",
+        "equipo": "Local",
+        "reb_estimados": 13.0,
+        "robos_estimados": 1.0,
+        "bloqueos_estimados": 2.0,
+        "confianza_def": 80
+      },
+      {
+        "nombre": "Jessica Shepard",
+        "equipo": "Visitante",
+        "reb_estimados": 12.0,
+        "robos_estimados": 1.0,
+        "bloqueos_estimados": 0.5,
+        "confianza_def": 75
+      }
+    ],
+    "armadores": [
+      {
+        "nombre": "Veronica Burton",
+        "equipo": "Local",
+        "ast_estimadas": 6.0,
+        "confianza_ast": 72
+      },
+      {
+        "nombre": "Paige Bueckers",
+        "equipo": "Visitante",
+        "ast_estimadas": 6.0,
+        "confianza_ast": 68
+      }
+    ],
+    "ranking_local": "Oeste: 2° (32-12)",
+    "ranking_visitante": "Oeste: 3° (27-17)",
+    "stats_comparison": {
+      "ppg_local": 93.7,
+      "ppg_visitante": 94.0,
+      "opp_ppg_local": 0,
+      "opp_ppg_visitante": 0,
+      "fg_pct_local": 43.3,
+      "fg_pct_visitante": 48.4,
+      "pace_analysis": "Ritmo equilibrado, ambos equipos juegan a un ritmo similar."
+    },
+    "lineas_ou": {
+      "over_140": 70,
+      "over_150": 60,
+      "over_160": 50
+    }
+  },
+  "NBA_2026-10-01_Cleveland Browns_Pittsburgh Steelers": {
+    "ir": "NO",
+    "pq": "Cleveland tiene ventaja de local y mejor récord.",
+    "factores": [
+      "Ventaja de local",
+      "Rendimiento reciente de Cleveland"
+    ],
+    "favorito": "Pittsburgh Steelers",
+    "sport": "nba",
+    "puntos_local": 24,
+    "puntos_visitante": 21,
+    "spread": 2.5,
+    "confianza_ou": 65,
+    "linea_ou": 45.5,
+    "b2b_impacto": "",
+    "lesion_clave": "",
+    "jugadores_clave": [],
+    "anotadores": [
+      {
+        "nombre": "Nick Chubb",
+        "equipo": "Local",
+        "pts_estimados": 22.0,
+        "confianza_pts": 80
+      },
+      {
+        "nombre": "Najee Harris",
+        "equipo": "Visitante",
+        "pts_estimados": 18.5,
+        "confianza_pts": 75
+      }
+    ],
+    "defensores": [
+      {
+        "nombre": "Myles Garrett",
+        "equipo": "Local",
+        "reb_estimados": 5.0,
+        "robos_estimados": 0.5,
+        "bloqueos_estimados": 1.5,
+        "confianza_def": 85
+      },
+      {
+        "nombre": "T.J. Watt",
+        "equipo": "Visitante",
+        "reb_estimados": 4.5,
+        "robos_estimados": 0.3,
+        "bloqueos_estimados": 1.0,
+        "confianza_def": 80
+      }
+    ],
+    "armadores": [
+      {
+        "nombre": "Deshaun Watson",
+        "equipo": "Local",
+        "ast_estimadas": 25.0,
+        "confianza_ast": 78
+      },
+      {
+        "nombre": "Kenny Pickett",
+        "equipo": "Visitante",
+        "ast_estimadas": 22.0,
+        "confianza_ast": 70
+      }
+    ],
+    "ranking_local": "AFC: 2° (3-1)",
+    "ranking_visitante": "AFC: 3° (2-2)",
+    "stats_comparison": {
+      "ppg_local": 24.0,
+      "ppg_visitante": 21.0,
+      "opp_ppg_local": 20.0,
+      "opp_ppg_visitante": 22.5,
+      "fg_pct_local": 48.0,
+      "fg_pct_visitante": 45.0,
+      "pace_analysis": "Ritmo moderado, ambos equipos prefieren controlar el balón"
+    },
+    "lineas_ou": {
+      "over_40": 70,
+      "over_45": 65,
+      "over_50": 50
+    }
   }
 }
