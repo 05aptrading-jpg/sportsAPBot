@@ -1,9 +1,9 @@
 {
-  "fecha": "03/10/2026 12:26",
+  "fecha": "03/10/2026 12:41",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791122400,
-  "proxima_actualizacion_lmb_ts": 1791052200,
+  "proxima_actualizacion_lmb_ts": 1791138600,
   "dias": [
     "2026-10-03",
     "2026-10-01",
@@ -1387,18 +1387,22 @@
           {
             "away_runs": 2,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 2,
-        "balls": 0,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 3,
+        "balls": 1,
         "strikes": 0,
         "away_runs": 2,
         "home_runs": 0,
-        "away_hits": 3,
-        "home_hits": 0,
+        "away_hits": 4,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Chicago White Sox",
@@ -2314,10 +2318,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2495,7 +2504,7 @@
       "opp_team": "Cleveland Guardians",
       "score_fav": "2",
       "score_opp": "0",
-      "state": "Bottom 4th",
+      "state": "Middle 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 849829,
@@ -2528,18 +2537,22 @@
           {
             "away_runs": 2,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 2,
-        "balls": 0,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 3,
+        "balls": 1,
         "strikes": 0,
         "away_runs": 2,
         "home_runs": 0,
-        "away_hits": 3,
-        "home_hits": 0,
+        "away_hits": 4,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Chicago White Sox",
@@ -2668,10 +2681,15 @@
       "away_team_name": "Atlanta Braves",
       "home_team_name": "Los Angeles Dodgers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -2738,7 +2756,7 @@
     "849829": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 4th",
+      "status": "Middle 5th",
       "away_runs": 2,
       "home_runs": 0,
       "away_team_name": "Cleveland Guardians",
@@ -2760,18 +2778,22 @@
           {
             "away_runs": 2,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
-        "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 2,
-        "balls": 0,
+        "current_inning": 5,
+        "is_top": true,
+        "inning_ordinal": "5th",
+        "outs": 3,
+        "balls": 1,
         "strikes": 0,
         "away_runs": 2,
         "home_runs": 0,
-        "away_hits": 3,
-        "home_hits": 0,
+        "away_hits": 4,
+        "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Chicago White Sox",
@@ -2791,7 +2813,7 @@
       }
     }
   },
-  "updated_at": "03/10/2026 12:26",
+  "updated_at": "03/10/2026 12:41",
   "stats": {
     "total": 13,
     "acertados": 7,
