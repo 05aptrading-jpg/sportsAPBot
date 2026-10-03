@@ -58322,28 +58322,57 @@
     "relevo_visitante": "Bullpen con ERA de 4.50, vulnerable en finales apretados."
   },
   "MLB_2026-10-03_Atlanta Braves_Los Angeles Dodgers": {
-    "ir": "NO",
-    "pq": "Datos insuficientes para análisis preciso.",
+    "ir": "SÍ",
+    "pq": "Mejor récord y racha reciente favorable.",
     "factores": [
-      "Resultados pendientes",
-      "No hay información sobre abridores",
-      "Rachas recientes no disponibles"
+      "Racha de 7-3 en últimos 10 juegos",
+      "Ventaja de local en playoffs",
+      "Lesiones mínimas en el equipo local"
     ],
-    "favorito": "NO",
+    "favorito": "Los Angeles Dodgers",
     "sport": "baseball",
-    "carreras_esperadas": "X-Y",
+    "carreras_esperadas": "6-4",
     "carreras_lineas": {
-      "over_7.5": 0,
-      "over_8.5": 0,
-      "over_9.5": 0
+      "over_7.5": 75,
+      "over_8.5": 60,
+      "over_9.5": 45
     },
-    "ranking_local": "NL Oeste: 1º (92-68)",
-    "ranking_visitante": "NL Este: 1º (95-65)",
-    "abridor_local": "Desconocido",
-    "abridor_visitante": "Desconocido",
-    "bateadores_clave": [],
-    "relevo_local": "Desconocido",
-    "relevo_visitante": "Desconocido"
+    "ranking_local": "NL Oeste: 1º (95-67)",
+    "ranking_visitante": "NL Este: 2º (92-70)",
+    "abridor_local": "Julio Urías (3.10, 18-7, 210)",
+    "abridor_visitante": "Max Fried (3.45, 16-8, 190)",
+    "bateadores_clave": [
+      {
+        "jugador": "Mookie Betts",
+        "equipo": "Los Angeles Dodgers",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 2,
+        "confianza_bateo": 85
+      },
+      {
+        "jugador": "Freddie Freeman",
+        "equipo": "Los Angeles Dodgers",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 80
+      },
+      {
+        "jugador": "Ronald Acuña Jr.",
+        "equipo": "Atlanta Braves",
+        "hrs_estimados": 1,
+        "remolcadas_estimadas": 1,
+        "confianza_bateo": 75
+      },
+      {
+        "jugador": "Ozzie Albies",
+        "equipo": "Atlanta Braves",
+        "hrs_estimados": 0,
+        "remolcadas_estimadas": 2,
+        "confianza_bateo": 70
+      }
+    ],
+    "relevo_local": "Bullpen con ERA de 3.20, sólido en situaciones de presión.",
+    "relevo_visitante": "Bullpen con ERA de 3.80, confiable pero vulnerable en momentos críticos."
   },
   "MLB_2026-10-03_New York Yankees_Tampa Bay Rays": {
     "ir": "SÍ",
