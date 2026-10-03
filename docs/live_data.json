@@ -1,5 +1,5 @@
 {
-  "fecha": "03/10/2026 17:11",
+  "fecha": "03/10/2026 17:26",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791122400,
@@ -2458,7 +2458,7 @@
       "opp_team": "New York Yankees",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Bottom 2nd",
+      "state": "Top 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 849835,
@@ -2483,18 +2483,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 0,
+        "current_inning": 3,
+        "is_top": true,
+        "inning_ordinal": "3rd",
+        "outs": 2,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "New York Yankees",
@@ -2833,7 +2837,7 @@
     "849835": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 2nd",
+      "status": "Top 3rd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "New York Yankees",
@@ -2847,18 +2851,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 0,
+        "current_inning": 3,
+        "is_top": true,
+        "inning_ordinal": "3rd",
+        "outs": 2,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
-        "home_hits": 1,
+        "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "New York Yankees",
@@ -2953,7 +2961,7 @@
       }
     }
   },
-  "updated_at": "03/10/2026 17:11",
+  "updated_at": "03/10/2026 17:26",
   "stats": {
     "total": 14,
     "acertados": 8,
@@ -12869,19 +12877,31 @@
     {
       "game_date": "2026-10-03",
       "game_id": "401902644",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Toronto Raptors",
       "away": "Miami Heat",
       "home_abbr": "TOR",
       "away_abbr": "MIA",
-      "home_score": 0,
-      "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "home_score": 12,
+      "away_score": 16,
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 12,
+          "display": "12"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 16,
+          "display": "16"
+        }
+      ],
+      "clock": "6:39",
+      "period": 1,
+      "state": "Q1 6:39",
+      "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/TOR.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/MIA.png&h=40&w=40",
