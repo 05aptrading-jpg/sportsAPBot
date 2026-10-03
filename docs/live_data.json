@@ -1,5 +1,5 @@
 {
-  "fecha": "03/10/2026 16:56",
+  "fecha": "03/10/2026 17:11",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791122400,
@@ -2235,7 +2235,12 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
@@ -2391,9 +2396,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "3",
         "opp_score": "5",
         "score_fav": "3",
@@ -2453,7 +2458,7 @@
       "opp_team": "New York Yankees",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Bottom 1st",
+      "state": "Bottom 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 849835,
@@ -2474,14 +2479,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 3,
+        "inning_ordinal": "2nd",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -2712,7 +2721,12 @@
       "away_team_name": "San Diego Padres",
       "home_team_name": "Milwaukee Brewers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
@@ -2807,9 +2821,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "3",
         "opp_score": "5",
         "score_fav": "3",
@@ -2819,7 +2833,7 @@
     "849835": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Bottom 2nd",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "New York Yankees",
@@ -2829,14 +2843,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 3,
+        "inning_ordinal": "2nd",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -2935,7 +2953,7 @@
       }
     }
   },
-  "updated_at": "03/10/2026 16:56",
+  "updated_at": "03/10/2026 17:11",
   "stats": {
     "total": 14,
     "acertados": 8,
