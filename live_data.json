@@ -1,5 +1,5 @@
 {
-  "fecha": "04/10/2026 17:12",
+  "fecha": "04/10/2026 17:26",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791208800,
@@ -2791,13 +2791,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-10-04",
-      "status_emoji": "🔴",
+      "status_emoji": "✅",
       "fav_team": "Milwaukee Brewers",
       "opp_team": "San Diego Padres",
-      "score_fav": "2",
+      "score_fav": "4",
       "score_opp": "3",
-      "state": "Bottom 9th",
-      "result": "live",
+      "state": "Final",
+      "result": "win",
       "label": "📋",
       "game_pk": 849825,
       "fav_abbr": "MIL",
@@ -2848,19 +2848,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 2
           }
         ],
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 1,
+        "outs": 2,
         "balls": 2,
         "strikes": 2,
         "away_runs": 3,
-        "home_runs": 2,
+        "home_runs": 4,
         "away_hits": 5,
-        "home_hits": 4,
+        "home_hits": 5,
         "away_errors": 2,
         "home_errors": 3,
         "away_team_name": "San Diego Padres",
@@ -2870,13 +2870,13 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "3",
-        "opp_score": "2",
+        "opp_score": "4",
         "score_fav": "3",
-        "score_opp": "2"
+        "score_opp": "4"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SD.png&h=40&w=40",
@@ -2929,7 +2929,7 @@
   "autorizados": [
     6099564810
   ],
-  "has_live": true,
+  "has_live": false,
   "has_scheduled": true,
   "live_data": {
     "401908002": {
@@ -3276,10 +3276,10 @@
       }
     },
     "849825": {
-      "is_live": true,
-      "is_final": false,
-      "status": "Bottom 9th",
-      "away_runs": 2,
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
+      "away_runs": 4,
       "home_runs": 3,
       "away_team_name": "San Diego Padres",
       "home_team_name": "Milwaukee Brewers",
@@ -3319,19 +3319,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 2
           }
         ],
         "current_inning": 9,
         "is_top": false,
         "inning_ordinal": "9th",
-        "outs": 1,
+        "outs": 2,
         "balls": 2,
         "strikes": 2,
         "away_runs": 3,
-        "home_runs": 2,
+        "home_runs": 4,
         "away_hits": 5,
-        "home_hits": 4,
+        "home_hits": 5,
         "away_errors": 2,
         "home_errors": 3,
         "away_team_name": "San Diego Padres",
@@ -3341,17 +3341,17 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "🔴",
-        "result": "live",
-        "state": "In Progress",
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Game Over",
         "fav_score": "3",
-        "opp_score": "2",
+        "opp_score": "4",
         "score_fav": "3",
-        "score_opp": "2"
+        "score_opp": "4"
       }
     }
   },
-  "updated_at": "04/10/2026 17:12",
+  "updated_at": "04/10/2026 17:26",
   "stats": {
     "total": 17,
     "acertados": 11,
@@ -14807,25 +14807,25 @@
       "away": "Utah Jazz",
       "home_abbr": "DEN",
       "away_abbr": "UTAH",
-      "home_score": 0,
-      "away_score": 0,
+      "home_score": 15,
+      "away_score": 18,
       "home_linescores": [
         {
           "period": 1,
-          "value": 0,
-          "display": "0"
+          "value": 15,
+          "display": "15"
         }
       ],
       "away_linescores": [
         {
           "period": 1,
-          "value": 0,
-          "display": "0"
+          "value": 18,
+          "display": "18"
         }
       ],
-      "clock": "11:56",
+      "clock": "5:32",
       "period": 1,
-      "state": "Q1 11:56",
+      "state": "Q1 5:32",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/DEN.png&h=40&w=40",
@@ -14914,25 +14914,25 @@
       "away": "Golden State Warriors",
       "home_abbr": "LAC",
       "away_abbr": "GS",
-      "home_score": 0,
-      "away_score": 0,
+      "home_score": 19,
+      "away_score": 15,
       "home_linescores": [
         {
           "period": 1,
-          "value": 0,
-          "display": "0"
+          "value": 19,
+          "display": "19"
         }
       ],
       "away_linescores": [
         {
           "period": 1,
-          "value": 0,
-          "display": "0"
+          "value": 15,
+          "display": "15"
         }
       ],
-      "clock": "11:41",
+      "clock": "5:45",
       "period": 1,
-      "state": "Q1 11:41",
+      "state": "Q1 5:45",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/LAC.png&h=40&w=40",
@@ -15580,10 +15580,10 @@
       "home_abbr": "LV",
       "away_abbr": "KC",
       "home_score": 19,
-      "away_score": 17,
-      "clock": "3:25",
+      "away_score": 30,
+      "clock": "1:54",
       "period": 4,
-      "state": "Q4 3:25",
+      "state": "Q4 1:54",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
@@ -15680,11 +15680,11 @@
       "away": "Denver Broncos",
       "home_abbr": "SF",
       "away_abbr": "DEN",
-      "home_score": 17,
-      "away_score": 6,
-      "clock": "5:25",
+      "home_score": 24,
+      "away_score": 14,
+      "clock": "2:00",
       "period": 4,
-      "state": "Q4 5:25",
+      "state": "Q4 2:00",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
@@ -15785,10 +15785,10 @@
       "home_abbr": "SEA",
       "away_abbr": "LAC",
       "home_score": 30,
-      "away_score": 13,
-      "clock": "7:54",
+      "away_score": 20,
+      "clock": "3:33",
       "period": 4,
-      "state": "Q4 7:54",
+      "state": "Q4 3:33",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
@@ -16931,8 +16931,8 @@
       "liga": "NFL",
       "spread_details": "DET -4.5",
       "over_under": 51.5,
-      "ml_home": "+164",
-      "ml_away": "-198",
+      "ml_home": "+180",
+      "ml_away": "-218",
       "home_record": "1-2",
       "away_record": "2-1",
       "week_num": 4,
