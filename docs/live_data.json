@@ -1,5 +1,5 @@
 {
-  "fecha": "03/10/2026 21:11",
+  "fecha": "03/10/2026 21:26",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791122400,
@@ -2216,9 +2216,9 @@
       "status_emoji": "🔴",
       "fav_team": "Milwaukee Brewers",
       "opp_team": "San Diego Padres",
-      "score_fav": "2",
+      "score_fav": "3",
       "score_opp": "2",
-      "state": "Top 7th",
+      "state": "Bottom 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 849830,
@@ -2262,19 +2262,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
         "outs": 2,
-        "balls": 0,
-        "strikes": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 2,
-        "home_runs": 2,
+        "home_runs": 3,
         "away_hits": 8,
-        "home_hits": 4,
+        "home_hits": 7,
         "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "San Diego Padres",
@@ -2288,9 +2288,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "2",
-        "opp_score": "2",
+        "opp_score": "3",
         "score_fav": "2",
-        "score_opp": "2"
+        "score_opp": "3"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SD.png&h=40&w=40",
@@ -2767,8 +2767,8 @@
     "849830": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 7th",
-      "away_runs": 2,
+      "status": "Bottom 7th",
+      "away_runs": 3,
       "home_runs": 2,
       "away_team_name": "San Diego Padres",
       "home_team_name": "Milwaukee Brewers",
@@ -2800,19 +2800,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
         "outs": 2,
-        "balls": 0,
-        "strikes": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 2,
-        "home_runs": 2,
+        "home_runs": 3,
         "away_hits": 8,
-        "home_hits": 4,
+        "home_hits": 7,
         "away_errors": 1,
         "home_errors": 0,
         "away_team_name": "San Diego Padres",
@@ -2826,9 +2826,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "2",
-        "opp_score": "2",
+        "opp_score": "3",
         "score_fav": "2",
-        "score_opp": "2"
+        "score_opp": "3"
       }
     },
     "849828": {
@@ -3057,7 +3057,7 @@
       }
     }
   },
-  "updated_at": "03/10/2026 21:11",
+  "updated_at": "03/10/2026 21:26",
   "stats": {
     "total": 16,
     "acertados": 10,
@@ -3557,11 +3557,11 @@
         },
         {
           "nombre": "Andrew Vaughn",
-          "prob": 68.9,
+          "prob": 100.0,
           "player_id": 683734,
           "game_pk": "849830",
           "equipo": "Milwaukee Brewers",
-          "status": "pendiente"
+          "status": "cumplio"
         },
         {
           "nombre": "Joey Ortiz",
