@@ -1,5 +1,5 @@
 {
-  "fecha": "03/10/2026 17:56",
+  "fecha": "03/10/2026 18:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791122400,
@@ -2337,7 +2337,7 @@
         "Racha de 8-2 en últimos 10",
         "Historial reciente favorable"
       ],
-      "resultado_llm": "pendiente",
+      "resultado_llm": "acertado",
       "linescore": {
         "innings": [
           {
@@ -2458,7 +2458,7 @@
       "opp_team": "New York Yankees",
       "score_fav": "1",
       "score_opp": "0",
-      "state": "Top 5th",
+      "state": "Middle 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 849835,
@@ -2500,7 +2500,7 @@
         "current_inning": 5,
         "is_top": true,
         "inning_ordinal": "5th",
-        "outs": 1,
+        "outs": 3,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
@@ -2845,7 +2845,7 @@
     "849835": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 5th",
+      "status": "Middle 5th",
       "away_runs": 1,
       "home_runs": 0,
       "away_team_name": "New York Yankees",
@@ -2876,7 +2876,7 @@
         "current_inning": 5,
         "is_top": true,
         "inning_ordinal": "5th",
-        "outs": 1,
+        "outs": 3,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
@@ -2977,12 +2977,12 @@
       }
     }
   },
-  "updated_at": "03/10/2026 17:56",
+  "updated_at": "03/10/2026 18:00",
   "stats": {
-    "total": 14,
-    "acertados": 8,
+    "total": 15,
+    "acertados": 9,
     "fallidos": 6,
-    "win_rate": 57.1,
+    "win_rate": 60.0,
     "alta_total": 3,
     "alta_acertados": 2,
     "alta_fallidos": 1,
@@ -2991,23 +2991,23 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 18,
-    "baja_acertados": 9,
+    "baja_total": 19,
+    "baja_acertados": 10,
     "baja_fallidos": 9,
-    "baja_win_rate": 50.0,
+    "baja_win_rate": 52.6,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 21,
-    "llm_acertados": 11,
+    "llm_total": 22,
+    "llm_acertados": 12,
     "llm_fallidos": 10,
-    "llm_win_rate": 52.4
+    "llm_win_rate": 54.5
   },
   "stats_mlb": {
-    "total": 11,
-    "acertados": 6,
+    "total": 12,
+    "acertados": 7,
     "fallidos": 5,
-    "win_rate": 54.5,
+    "win_rate": 58.3,
     "alta_total": 0,
     "alta_acertados": 0,
     "alta_fallidos": 0,
@@ -3016,17 +3016,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 16,
-    "baja_acertados": 7,
+    "baja_total": 17,
+    "baja_acertados": 8,
     "baja_fallidos": 9,
-    "baja_win_rate": 43.8,
+    "baja_win_rate": 47.1,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 16,
-    "llm_acertados": 7,
+    "llm_total": 17,
+    "llm_acertados": 8,
     "llm_fallidos": 9,
-    "llm_win_rate": 43.8
+    "llm_win_rate": 47.1
   },
   "stats_lmb": {
     "total": 3,
@@ -3054,8 +3054,8 @@
     "llm_win_rate": 80.0
   },
   "stats_hoy": {
-    "total": 1,
-    "acertados": 1,
+    "total": 2,
+    "acertados": 2,
     "fallidos": 0,
     "win_rate": 100.0,
     "alta_total": 0,
@@ -3066,21 +3066,21 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 1,
-    "baja_acertados": 1,
+    "baja_total": 2,
+    "baja_acertados": 2,
     "baja_fallidos": 0,
     "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 1,
-    "llm_acertados": 1,
+    "llm_total": 2,
+    "llm_acertados": 2,
     "llm_fallidos": 0,
     "llm_win_rate": 100.0
   },
   "stats_hoy_mlb": {
-    "total": 1,
-    "acertados": 1,
+    "total": 2,
+    "acertados": 2,
     "fallidos": 0,
     "win_rate": 100.0,
     "alta_total": 0,
@@ -3091,15 +3091,15 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 1,
-    "baja_acertados": 1,
+    "baja_total": 2,
+    "baja_acertados": 2,
     "baja_fallidos": 0,
     "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 1,
-    "llm_acertados": 1,
+    "llm_total": 2,
+    "llm_acertados": 2,
     "llm_fallidos": 0,
     "llm_win_rate": 100.0
   },
@@ -3129,8 +3129,8 @@
     "llm_win_rate": 0
   },
   "stats_3dias": {
-    "total": 1,
-    "acertados": 1,
+    "total": 2,
+    "acertados": 2,
     "fallidos": 0,
     "win_rate": 100.0,
     "alta_total": 0,
@@ -3141,21 +3141,21 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 1,
-    "baja_acertados": 1,
+    "baja_total": 2,
+    "baja_acertados": 2,
     "baja_fallidos": 0,
     "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 1,
-    "llm_acertados": 1,
+    "llm_total": 2,
+    "llm_acertados": 2,
     "llm_fallidos": 0,
     "llm_win_rate": 100.0
   },
   "stats_3dias_mlb": {
-    "total": 1,
-    "acertados": 1,
+    "total": 2,
+    "acertados": 2,
     "fallidos": 0,
     "win_rate": 100.0,
     "alta_total": 0,
@@ -3166,15 +3166,15 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 1,
-    "baja_acertados": 1,
+    "baja_total": 2,
+    "baja_acertados": 2,
     "baja_fallidos": 0,
     "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 1,
-    "llm_acertados": 1,
+    "llm_total": 2,
+    "llm_acertados": 2,
     "llm_fallidos": 0,
     "llm_win_rate": 100.0
   },
@@ -3204,8 +3204,8 @@
     "llm_win_rate": 0
   },
   "stats_semanal": {
-    "total": 1,
-    "acertados": 1,
+    "total": 2,
+    "acertados": 2,
     "fallidos": 0,
     "win_rate": 100.0,
     "alta_total": 0,
@@ -3216,21 +3216,21 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 1,
-    "baja_acertados": 1,
+    "baja_total": 2,
+    "baja_acertados": 2,
     "baja_fallidos": 0,
     "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 1,
-    "llm_acertados": 1,
+    "llm_total": 2,
+    "llm_acertados": 2,
     "llm_fallidos": 0,
     "llm_win_rate": 100.0
   },
   "stats_semanal_mlb": {
-    "total": 1,
-    "acertados": 1,
+    "total": 2,
+    "acertados": 2,
     "fallidos": 0,
     "win_rate": 100.0,
     "alta_total": 0,
@@ -3241,15 +3241,15 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 1,
-    "baja_acertados": 1,
+    "baja_total": 2,
+    "baja_acertados": 2,
     "baja_fallidos": 0,
     "baja_win_rate": 100.0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 1,
-    "llm_acertados": 1,
+    "llm_total": 2,
+    "llm_acertados": 2,
     "llm_fallidos": 0,
     "llm_win_rate": 100.0
   },
@@ -3309,8 +3309,8 @@
       "llm_win_rate": 50.0
     },
     "2026-10-03": {
-      "total": 1,
-      "acertados": 1,
+      "total": 2,
+      "acertados": 2,
       "fallidos": 0,
       "win_rate": 100.0,
       "alta_total": 0,
@@ -3321,15 +3321,15 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 1,
-      "baja_acertados": 1,
+      "baja_total": 2,
+      "baja_acertados": 2,
       "baja_fallidos": 0,
       "baja_win_rate": 100.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "llm_total": 1,
-      "llm_acertados": 1,
+      "llm_total": 2,
+      "llm_acertados": 2,
       "llm_fallidos": 0,
       "llm_win_rate": 100.0
     }
@@ -3361,8 +3361,8 @@
       "llm_win_rate": 40.0
     },
     "2026-10-03": {
-      "total": 1,
-      "acertados": 1,
+      "total": 2,
+      "acertados": 2,
       "fallidos": 0,
       "win_rate": 100.0,
       "alta_total": 0,
@@ -3373,15 +3373,15 @@
       "media_acertados": 0,
       "media_fallidos": 0,
       "media_win_rate": 0,
-      "baja_total": 1,
-      "baja_acertados": 1,
+      "baja_total": 2,
+      "baja_acertados": 2,
       "baja_fallidos": 0,
       "baja_win_rate": 100.0,
       "valor_ok": 0,
       "valor_total": 0,
       "valor_rate": 0,
-      "llm_total": 1,
-      "llm_acertados": 1,
+      "llm_total": 2,
+      "llm_acertados": 2,
       "llm_fallidos": 0,
       "llm_win_rate": 100.0
     }
@@ -12853,10 +12853,10 @@
   },
   "llm_by_sport": {
     "MLB": {
-      "llm_total": 16,
-      "llm_acertados": 7,
+      "llm_total": 17,
+      "llm_acertados": 8,
       "llm_fallidos": 9,
-      "llm_win_rate": 43.8
+      "llm_win_rate": 47.1
     },
     "LMB": {
       "llm_total": 5,
@@ -12898,8 +12898,8 @@
       "away": "Miami Heat",
       "home_abbr": "TOR",
       "away_abbr": "MIA",
-      "home_score": 35,
-      "away_score": 52,
+      "home_score": 42,
+      "away_score": 55,
       "home_linescores": [
         {
           "period": 1,
@@ -12908,8 +12908,8 @@
         },
         {
           "period": 2,
-          "value": 12,
-          "display": "12"
+          "value": 19,
+          "display": "19"
         }
       ],
       "away_linescores": [
@@ -12920,13 +12920,13 @@
         },
         {
           "period": 2,
-          "value": 11,
-          "display": "11"
+          "value": 14,
+          "display": "14"
         }
       ],
-      "clock": "7:36",
+      "clock": "5:27",
       "period": 2,
-      "state": "Q2 7:36",
+      "state": "Q2 5:27",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/TOR.png&h=40&w=40",
@@ -13470,34 +13470,34 @@
   "llm_sections": {
     "MLB": {
       "equipo": {
-        "total": 16,
-        "acertados": 7,
+        "total": 17,
+        "acertados": 8,
         "fallidos": 9,
-        "win_rate": 43.8
+        "win_rate": 47.1
       },
       "marcador": {
-        "total": 16,
+        "total": 17,
         "acertados": 12,
-        "fallidos": 4,
-        "win_rate": 75.0
+        "fallidos": 5,
+        "win_rate": 70.6
       },
       "lanzadores": {
-        "total": 16,
-        "acertados": 7,
+        "total": 17,
+        "acertados": 8,
         "fallidos": 9,
-        "win_rate": 43.8
+        "win_rate": 47.1
       },
       "bateadores": {
-        "total": 16,
-        "acertados": 7,
+        "total": 17,
+        "acertados": 8,
         "fallidos": 9,
-        "win_rate": 43.8
+        "win_rate": 47.1
       },
       "relevo": {
-        "total": 16,
-        "acertados": 7,
+        "total": 17,
+        "acertados": 8,
         "fallidos": 9,
-        "win_rate": 43.8
+        "win_rate": 47.1
       }
     },
     "LMB": {
