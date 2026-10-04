@@ -1,5 +1,5 @@
 {
-  "fecha": "03/10/2026 19:41",
+  "fecha": "03/10/2026 19:56",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791122400,
@@ -2218,7 +2218,7 @@
       "opp_team": "San Diego Padres",
       "score_fav": "2",
       "score_opp": "2",
-      "state": "Bottom 3rd",
+      "state": "Top 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 849830,
@@ -2247,18 +2247,22 @@
           {
             "away_runs": 0,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 0,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 2,
         "home_runs": 2,
         "away_hits": 4,
-        "home_hits": 3,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "San Diego Padres",
@@ -2751,7 +2755,7 @@
     "849830": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 3rd",
+      "status": "Top 4th",
       "away_runs": 2,
       "home_runs": 2,
       "away_team_name": "San Diego Padres",
@@ -2769,18 +2773,22 @@
           {
             "away_runs": 0,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 0,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 2,
         "home_runs": 2,
         "away_hits": 4,
-        "home_hits": 3,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "San Diego Padres",
@@ -3025,7 +3033,7 @@
       }
     }
   },
-  "updated_at": "03/10/2026 19:41",
+  "updated_at": "03/10/2026 19:56",
   "stats": {
     "total": 15,
     "acertados": 9,
