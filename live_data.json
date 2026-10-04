@@ -1,5 +1,5 @@
 {
-  "fecha": "03/10/2026 20:11",
+  "fecha": "03/10/2026 20:26",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791122400,
@@ -2218,7 +2218,7 @@
       "opp_team": "San Diego Padres",
       "score_fav": "2",
       "score_opp": "2",
-      "state": "End 4th",
+      "state": "Bottom 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 849830,
@@ -2251,17 +2251,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 3,
+        "inning_ordinal": "5th",
+        "outs": 0,
         "balls": 0,
         "strikes": 0,
         "away_runs": 2,
         "home_runs": 2,
-        "away_hits": 4,
+        "away_hits": 6,
         "home_hits": 4,
         "away_errors": 1,
         "home_errors": 0,
@@ -2755,7 +2759,7 @@
     "849830": {
       "is_live": true,
       "is_final": false,
-      "status": "End 4th",
+      "status": "Bottom 5th",
       "away_runs": 2,
       "home_runs": 2,
       "away_team_name": "San Diego Padres",
@@ -2777,17 +2781,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 3,
+        "inning_ordinal": "5th",
+        "outs": 0,
         "balls": 0,
         "strikes": 0,
         "away_runs": 2,
         "home_runs": 2,
-        "away_hits": 4,
+        "away_hits": 6,
         "home_hits": 4,
         "away_errors": 1,
         "home_errors": 0,
@@ -3033,7 +3041,7 @@
       }
     }
   },
-  "updated_at": "03/10/2026 20:11",
+  "updated_at": "03/10/2026 20:26",
   "stats": {
     "total": 16,
     "acertados": 10,
@@ -3507,11 +3515,11 @@
         },
         {
           "nombre": "Ty France",
-          "prob": 64.5,
+          "prob": 100.0,
           "player_id": 664034,
           "game_pk": "849830",
           "equipo": "San Diego Padres",
-          "status": "pendiente"
+          "status": "cumplio"
         },
         {
           "nombre": "Fernando Tatis Jr.",
