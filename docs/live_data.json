@@ -1,5 +1,5 @@
 {
-  "fecha": "04/10/2026 14:41",
+  "fecha": "04/10/2026 14:56",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791208800,
@@ -2791,7 +2791,7 @@
       "opp_team": "San Diego Padres",
       "score_fav": "0",
       "score_opp": "1",
-      "state": "Bottom 2nd",
+      "state": "Bottom 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 849825,
@@ -2816,14 +2816,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": false,
-        "inning_ordinal": "2nd",
+        "inning_ordinal": "3rd",
         "outs": 2,
-        "balls": 2,
-        "strikes": 3,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 1,
@@ -3240,7 +3244,7 @@
     "849825": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 2nd",
+      "status": "Bottom 3rd",
       "away_runs": 0,
       "home_runs": 1,
       "away_team_name": "San Diego Padres",
@@ -3254,14 +3258,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 2,
+        "current_inning": 3,
         "is_top": false,
-        "inning_ordinal": "2nd",
+        "inning_ordinal": "3rd",
         "outs": 2,
-        "balls": 2,
-        "strikes": 3,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 1,
         "home_runs": 0,
         "away_hits": 1,
@@ -3285,7 +3293,7 @@
       }
     }
   },
-  "updated_at": "04/10/2026 14:41",
+  "updated_at": "04/10/2026 14:56",
   "stats": {
     "total": 17,
     "acertados": 11,
@@ -15210,7 +15218,7 @@
       "home_abbr": "GS",
       "away_abbr": "LV",
       "home_score": 34,
-      "away_score": 25,
+      "away_score": 31,
       "home_linescores": [
         {
           "period": 1,
@@ -15231,13 +15239,13 @@
         },
         {
           "period": 2,
-          "value": 7,
-          "display": "7"
+          "value": 13,
+          "display": "13"
         }
       ],
-      "clock": "2:43",
+      "clock": "0.0",
       "period": 2,
-      "state": "Q2 2:43",
+      "state": "Q2 0.0",
       "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/GS.png&h=40&w=40",
@@ -15471,9 +15479,9 @@
       "away_abbr": "MIA",
       "home_score": 3,
       "away_score": 0,
-      "clock": "15:00",
+      "clock": "10:53",
       "period": 2,
-      "state": "Q2 15:00",
+      "state": "Q2 10:53",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
@@ -15571,10 +15579,10 @@
       "home_abbr": "LV",
       "away_abbr": "KC",
       "home_score": 7,
-      "away_score": 0,
-      "clock": "8:10",
+      "away_score": 7,
+      "clock": "0:52",
       "period": 1,
-      "state": "Q1 8:10",
+      "state": "Q1 0:52",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
@@ -15672,10 +15680,10 @@
       "home_abbr": "SF",
       "away_abbr": "DEN",
       "home_score": 0,
-      "away_score": 0,
-      "clock": "7:14",
-      "period": 1,
-      "state": "Q1 7:14",
+      "away_score": 3,
+      "clock": "15:00",
+      "period": 2,
+      "state": "Q2 15:00",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
@@ -15775,11 +15783,11 @@
       "away": "Los Angeles Chargers",
       "home_abbr": "SEA",
       "away_abbr": "LAC",
-      "home_score": 0,
+      "home_score": 7,
       "away_score": 3,
-      "clock": "11:00",
+      "clock": "7:10",
       "period": 1,
-      "state": "Q1 11:00",
+      "state": "Q1 7:10",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
