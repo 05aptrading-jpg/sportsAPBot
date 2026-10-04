@@ -1,5 +1,5 @@
 {
-  "fecha": "04/10/2026 17:41",
+  "fecha": "04/10/2026 17:56",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791208800,
@@ -3351,7 +3351,7 @@
       }
     }
   },
-  "updated_at": "04/10/2026 17:41",
+  "updated_at": "04/10/2026 17:56",
   "stats": {
     "total": 17,
     "acertados": 11,
@@ -14807,8 +14807,8 @@
       "away": "Utah Jazz",
       "home_abbr": "DEN",
       "away_abbr": "UTAH",
-      "home_score": 26,
-      "away_score": 36,
+      "home_score": 39,
+      "away_score": 41,
       "home_linescores": [
         {
           "period": 1,
@@ -14817,8 +14817,8 @@
         },
         {
           "period": 2,
-          "value": 0,
-          "display": "0"
+          "value": 13,
+          "display": "13"
         }
       ],
       "away_linescores": [
@@ -14829,13 +14829,13 @@
         },
         {
           "period": 2,
-          "value": 0,
-          "display": "0"
+          "value": 5,
+          "display": "5"
         }
       ],
-      "clock": "11:38",
+      "clock": "5:54",
       "period": 2,
-      "state": "Q2 11:38",
+      "state": "Q2 5:54",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/DEN.png&h=40&w=40",
@@ -14924,13 +14924,18 @@
       "away": "Golden State Warriors",
       "home_abbr": "LAC",
       "away_abbr": "GS",
-      "home_score": 23,
-      "away_score": 24,
+      "home_score": 41,
+      "away_score": 36,
       "home_linescores": [
         {
           "period": 1,
           "value": 23,
           "display": "23"
+        },
+        {
+          "period": 2,
+          "value": 18,
+          "display": "18"
         }
       ],
       "away_linescores": [
@@ -14938,11 +14943,16 @@
           "period": 1,
           "value": 24,
           "display": "24"
+        },
+        {
+          "period": 2,
+          "value": 12,
+          "display": "12"
         }
       ],
-      "clock": "0.0",
-      "period": 1,
-      "state": "Q1 0.0",
+      "clock": "5:48",
+      "period": 2,
+      "state": "Q2 5:48",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/LAC.png&h=40&w=40",
@@ -15581,211 +15591,6 @@
     }
   ],
   "nfl_games": [
-    {
-      "game_date": "2026-10-04",
-      "game_id": "401872976",
-      "status_emoji": "🔴",
-      "home": "Las Vegas Raiders",
-      "away": "Kansas City Chiefs",
-      "home_abbr": "LV",
-      "away_abbr": "KC",
-      "home_score": 27,
-      "away_score": 30,
-      "clock": "0:31",
-      "period": 4,
-      "state": "Q4 0:31",
-      "result": "live",
-      "liga": "NFL",
-      "spread_details": "",
-      "over_under": "",
-      "ml_home": "",
-      "ml_away": "",
-      "home_record": "3-0",
-      "away_record": "3-0",
-      "week_num": 4,
-      "season_year": 2026,
-      "season_type": 2,
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/LV.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/KC.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y estadísticas ofensivas.",
-      "llm_factores": [],
-      "llm_puntos_local": 0,
-      "llm_puntos_visitante": 0,
-      "llm_spread": 0.0,
-      "llm_confianza_ou": 0,
-      "llm_linea_ou": 0.0,
-      "llm_anotadores": [
-        {
-          "nombre": "Jugador A",
-          "equipo": "Local",
-          "pts_estimados": 0,
-          "confianza_pts": 0
-        },
-        {
-          "nombre": "Jugador B",
-          "equipo": "Visitante",
-          "pts_estimados": 0,
-          "confianza_pts": 0
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Jugador C",
-          "equipo": "Local",
-          "reb_estimados": 0,
-          "robos_estimados": 0,
-          "bloqueos_estimados": 0,
-          "confianza_def": 0
-        },
-        {
-          "nombre": "Jugador D",
-          "equipo": "Visitante",
-          "reb_estimados": 0,
-          "robos_estimados": 0,
-          "bloqueos_estimados": 0,
-          "confianza_def": 0
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Jugador E",
-          "equipo": "Local",
-          "ast_estimadas": 0,
-          "confianza_ast": 0
-        },
-        {
-          "nombre": "Jugador F",
-          "equipo": "Visitante",
-          "ast_estimadas": 0,
-          "confianza_ast": 0
-        }
-      ],
-      "llm_ranking_local": "Conferencia: posición (récord)",
-      "llm_ranking_visitante": "Conferencia: posición (récord)",
-      "llm_stats_comparison": {
-        "ppg_local": 0,
-        "ppg_visitante": 0,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 0,
-        "fg_pct_visitante": 0,
-        "pace_analysis": ""
-      },
-      "llm_lineas_ou": {
-        "over_140": 0,
-        "over_150": 0,
-        "over_160": 0
-      },
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_favorito": "Kansas City Chiefs"
-    },
-    {
-      "game_date": "2026-10-04",
-      "game_id": "401872977",
-      "status_emoji": "🔴",
-      "home": "Seattle Seahawks",
-      "away": "Los Angeles Chargers",
-      "home_abbr": "SEA",
-      "away_abbr": "LAC",
-      "home_score": 30,
-      "away_score": 23,
-      "clock": "1:22",
-      "period": 4,
-      "state": "Q4 1:22",
-      "result": "live",
-      "liga": "NFL",
-      "spread_details": "",
-      "over_under": "",
-      "ml_home": "",
-      "ml_away": "",
-      "home_record": "2-1",
-      "away_record": "0-3",
-      "week_num": 4,
-      "season_year": 2026,
-      "season_type": 2,
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/SEA.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/LAC.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y ventaja de local.",
-      "llm_factores": [
-        "Localía",
-        "Rendimiento reciente"
-      ],
-      "llm_puntos_local": 0,
-      "llm_puntos_visitante": 0,
-      "llm_spread": 0.0,
-      "llm_confianza_ou": 0,
-      "llm_linea_ou": 0.0,
-      "llm_anotadores": [
-        {
-          "nombre": "Jugador A",
-          "equipo": "Local",
-          "pts_estimados": 0.0,
-          "confianza_pts": 0
-        },
-        {
-          "nombre": "Jugador B",
-          "equipo": "Visitante",
-          "pts_estimados": 0.0,
-          "confianza_pts": 0
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Jugador C",
-          "equipo": "Local",
-          "reb_estimados": 0.0,
-          "robos_estimados": 0.0,
-          "bloqueos_estimados": 0.0,
-          "confianza_def": 0
-        },
-        {
-          "nombre": "Jugador D",
-          "equipo": "Visitante",
-          "reb_estimados": 0.0,
-          "robos_estimados": 0.0,
-          "bloqueos_estimados": 0.0,
-          "confianza_def": 0
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Jugador E",
-          "equipo": "Local",
-          "ast_estimadas": 0.0,
-          "confianza_ast": 0
-        },
-        {
-          "nombre": "Jugador F",
-          "equipo": "Visitante",
-          "ast_estimadas": 0.0,
-          "confianza_ast": 0
-        }
-      ],
-      "llm_ranking_local": "NFC: 3° (récord desconocido)",
-      "llm_ranking_visitante": "AFC: 4° (récord desconocido)",
-      "llm_stats_comparison": {
-        "ppg_local": 0,
-        "ppg_visitante": 0,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 0,
-        "fg_pct_visitante": 0,
-        "pace_analysis": "Datos insuficientes para análisis."
-      },
-      "llm_lineas_ou": {
-        "over_140": 0,
-        "over_150": 0,
-        "over_160": 0
-      },
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_favorito": "Seattle Seahawks"
-    },
     {
       "game_date": "2026-10-04",
       "game_id": "401872965",
@@ -16822,6 +16627,107 @@
     },
     {
       "game_date": "2026-10-04",
+      "game_id": "401872976",
+      "status_emoji": "🏁",
+      "home": "Las Vegas Raiders",
+      "away": "Kansas City Chiefs",
+      "home_abbr": "LV",
+      "away_abbr": "KC",
+      "home_score": 27,
+      "away_score": 30,
+      "clock": "0:00",
+      "period": 4,
+      "state": "Final",
+      "result": "completed",
+      "liga": "NFL",
+      "spread_details": "",
+      "over_under": "",
+      "ml_home": "",
+      "ml_away": "",
+      "home_record": "3-1",
+      "away_record": "4-0",
+      "week_num": 4,
+      "season_year": 2026,
+      "season_type": 2,
+      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/LV.png&h=40&w=40",
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/KC.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y estadísticas ofensivas.",
+      "llm_factores": [],
+      "llm_puntos_local": 0,
+      "llm_puntos_visitante": 0,
+      "llm_spread": 0.0,
+      "llm_confianza_ou": 0,
+      "llm_linea_ou": 0.0,
+      "llm_anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Local",
+          "pts_estimados": 0,
+          "confianza_pts": 0
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Visitante",
+          "pts_estimados": 0,
+          "confianza_pts": 0
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Local",
+          "reb_estimados": 0,
+          "robos_estimados": 0,
+          "bloqueos_estimados": 0,
+          "confianza_def": 0
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Visitante",
+          "reb_estimados": 0,
+          "robos_estimados": 0,
+          "bloqueos_estimados": 0,
+          "confianza_def": 0
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Local",
+          "ast_estimadas": 0,
+          "confianza_ast": 0
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Visitante",
+          "ast_estimadas": 0,
+          "confianza_ast": 0
+        }
+      ],
+      "llm_ranking_local": "Conferencia: posición (récord)",
+      "llm_ranking_visitante": "Conferencia: posición (récord)",
+      "llm_stats_comparison": {
+        "ppg_local": 0,
+        "ppg_visitante": 0,
+        "opp_ppg_local": 0,
+        "opp_ppg_visitante": 0,
+        "fg_pct_local": 0,
+        "fg_pct_visitante": 0,
+        "pace_analysis": ""
+      },
+      "llm_lineas_ou": {
+        "over_140": 0,
+        "over_150": 0,
+        "over_160": 0
+      },
+      "llm_b2b_impacto": "",
+      "llm_lesion_clave": "",
+      "llm_jugadores_clave": [],
+      "llm_favorito": "Kansas City Chiefs"
+    },
+    {
+      "game_date": "2026-10-04",
       "game_id": "401872975",
       "status_emoji": "🏁",
       "home": "San Francisco 49ers",
@@ -16926,6 +16832,110 @@
     },
     {
       "game_date": "2026-10-04",
+      "game_id": "401872977",
+      "status_emoji": "🏁",
+      "home": "Seattle Seahawks",
+      "away": "Los Angeles Chargers",
+      "home_abbr": "SEA",
+      "away_abbr": "LAC",
+      "home_score": 30,
+      "away_score": 23,
+      "clock": "0:00",
+      "period": 4,
+      "state": "Final",
+      "result": "completed",
+      "liga": "NFL",
+      "spread_details": "",
+      "over_under": "",
+      "ml_home": "",
+      "ml_away": "",
+      "home_record": "3-1",
+      "away_record": "0-4",
+      "week_num": 4,
+      "season_year": 2026,
+      "season_type": 2,
+      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/SEA.png&h=40&w=40",
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/LAC.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y ventaja de local.",
+      "llm_factores": [
+        "Localía",
+        "Rendimiento reciente"
+      ],
+      "llm_puntos_local": 0,
+      "llm_puntos_visitante": 0,
+      "llm_spread": 0.0,
+      "llm_confianza_ou": 0,
+      "llm_linea_ou": 0.0,
+      "llm_anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Local",
+          "pts_estimados": 0.0,
+          "confianza_pts": 0
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Visitante",
+          "pts_estimados": 0.0,
+          "confianza_pts": 0
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Local",
+          "reb_estimados": 0.0,
+          "robos_estimados": 0.0,
+          "bloqueos_estimados": 0.0,
+          "confianza_def": 0
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Visitante",
+          "reb_estimados": 0.0,
+          "robos_estimados": 0.0,
+          "bloqueos_estimados": 0.0,
+          "confianza_def": 0
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Local",
+          "ast_estimadas": 0.0,
+          "confianza_ast": 0
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Visitante",
+          "ast_estimadas": 0.0,
+          "confianza_ast": 0
+        }
+      ],
+      "llm_ranking_local": "NFC: 3° (récord desconocido)",
+      "llm_ranking_visitante": "AFC: 4° (récord desconocido)",
+      "llm_stats_comparison": {
+        "ppg_local": 0,
+        "ppg_visitante": 0,
+        "opp_ppg_local": 0,
+        "opp_ppg_visitante": 0,
+        "fg_pct_local": 0,
+        "fg_pct_visitante": 0,
+        "pace_analysis": "Datos insuficientes para análisis."
+      },
+      "llm_lineas_ou": {
+        "over_140": 0,
+        "over_150": 0,
+        "over_160": 0
+      },
+      "llm_b2b_impacto": "",
+      "llm_lesion_clave": "",
+      "llm_jugadores_clave": [],
+      "llm_favorito": "Seattle Seahawks"
+    },
+    {
+      "game_date": "2026-10-04",
       "game_id": "401872978",
       "status_emoji": "⏳",
       "home": "Carolina Panthers",
@@ -16940,9 +16950,9 @@
       "result": "pending",
       "liga": "NFL",
       "spread_details": "DET -4.5",
-      "over_under": 51.5,
-      "ml_home": "+180",
-      "ml_away": "-218",
+      "over_under": 52.5,
+      "ml_home": "+185",
+      "ml_away": "-225",
       "home_record": "1-2",
       "away_record": "2-1",
       "week_num": 4,
