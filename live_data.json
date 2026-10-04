@@ -1,5 +1,5 @@
 {
-  "fecha": "04/10/2026 14:00",
+  "fecha": "04/10/2026 14:11",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791208800,
@@ -2786,13 +2786,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-10-04",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Milwaukee Brewers",
       "opp_team": "San Diego Padres",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 849825,
       "fav_abbr": "MIL",
@@ -2817,9 +2817,9 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -2833,9 +2833,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -2892,7 +2892,7 @@
   "autorizados": [
     6099564810
   ],
-  "has_live": false,
+  "has_live": true,
   "has_scheduled": true,
   "live_data": {
     "401908002": {
@@ -3234,9 +3234,9 @@
       }
     },
     "849825": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "San Diego Padres",
@@ -3251,9 +3251,9 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -3267,9 +3267,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3277,7 +3277,7 @@
       }
     }
   },
-  "updated_at": "04/10/2026 14:00",
+  "updated_at": "04/10/2026 14:11",
   "stats": {
     "total": 17,
     "acertados": 11,
@@ -10533,62 +10533,176 @@
       }
     },
     "2026-10-04___NBA___Tampa Bay Buccaneers___Green Bay Packers": {
-      "ir": "NO",
-      "pq": "Falta de datos estadísticos para un análisis preciso.",
-      "factores": [],
+      "ir": "SÍ",
+      "pq": "Localía y mejor ataque.",
+      "factores": [
+        "Ventaja en casa",
+        "Bucs tienen mejor ofensiva"
+      ],
       "favorito": "Tampa Bay Buccaneers",
-      "puntos_local": 0,
-      "puntos_visitante": 0,
-      "spread": 0.0,
-      "confianza_ou": 0,
-      "linea_ou": 0.0,
+      "goles": "",
+      "corners": 0,
+      "tiros_porteria": [],
+      "lineas": {
+        "goles": {},
+        "corners": {}
+      },
+      "puntos_local": 30,
+      "puntos_visitante": 24,
+      "spread": 5.0,
+      "confianza_ou": 70,
+      "linea_ou": 52.5,
       "b2b_impacto": "",
       "lesion_clave": "",
       "jugadores_clave": [],
-      "anotadores": [],
-      "defensores": [],
-      "armadores": [],
-      "ranking_local": "",
-      "ranking_visitante": "",
+      "anotadores": [
+        {
+          "nombre": "Mike Evans",
+          "equipo": "Local",
+          "pts_estimados": 28.0,
+          "confianza_pts": 78
+        },
+        {
+          "nombre": "Aaron Jones",
+          "equipo": "Visitante",
+          "pts_estimados": 22.0,
+          "confianza_pts": 72
+        }
+      ],
+      "defensores": [
+        {
+          "nombre": "Devin White",
+          "equipo": "Local",
+          "reb_estimados": 8.0,
+          "robos_estimados": 0.5,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 80
+        },
+        {
+          "nombre": "Jaire Alexander",
+          "equipo": "Visitante",
+          "reb_estimados": 5.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 0.3,
+          "confianza_def": 75
+        }
+      ],
+      "armadores": [
+        {
+          "nombre": "Tom Brady",
+          "equipo": "Local",
+          "ast_estimadas": 7.5,
+          "confianza_ast": 80
+        },
+        {
+          "nombre": "Aaron Rodgers",
+          "equipo": "Visitante",
+          "ast_estimadas": 6.5,
+          "confianza_ast": 75
+        }
+      ],
+      "ranking_local": "NFC: 2° (3-1)",
+      "ranking_visitante": "NFC: 4° (2-2)",
       "stats_comparison": {
-        "ppg_local": 0,
-        "ppg_visitante": 0,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 0,
-        "fg_pct_visitante": 0,
-        "pace_analysis": ""
+        "ppg_local": 30.0,
+        "ppg_visitante": 24.0,
+        "opp_ppg_local": 22.0,
+        "opp_ppg_visitante": 26.0,
+        "fg_pct_local": 47.0,
+        "fg_pct_visitante": 45.0,
+        "pace_analysis": "Ritmo alto, ambos equipos buscan anotar rápido."
       },
-      "lineas_ou": {}
+      "lineas_ou": {
+        "over_40": 85,
+        "over_50": 70,
+        "over_60": 55
+      }
     },
     "2026-10-04___NBA___Baltimore Ravens___Tennessee Titans": {
-      "ir": "NO",
-      "pq": "Falta de datos estadísticos para un análisis preciso.",
-      "factores": [],
+      "ir": "SÍ",
+      "pq": "Mejor récord y estadísticas ofensivas.",
+      "factores": [
+        "Localía fuerte",
+        "Ravens tienen mejor defensa"
+      ],
       "favorito": "Baltimore Ravens",
-      "puntos_local": 0,
-      "puntos_visitante": 0,
-      "spread": 0.0,
-      "confianza_ou": 0,
-      "linea_ou": 0.0,
+      "goles": "",
+      "corners": 0,
+      "tiros_porteria": [],
+      "lineas": {
+        "goles": {},
+        "corners": {}
+      },
+      "puntos_local": 27,
+      "puntos_visitante": 21,
+      "spread": 6.0,
+      "confianza_ou": 65,
+      "linea_ou": 48.5,
       "b2b_impacto": "",
       "lesion_clave": "",
       "jugadores_clave": [],
-      "anotadores": [],
-      "defensores": [],
-      "armadores": [],
-      "ranking_local": "",
-      "ranking_visitante": "",
+      "anotadores": [
+        {
+          "nombre": "Lamar Jackson",
+          "equipo": "Local",
+          "pts_estimados": 30.0,
+          "confianza_pts": 80
+        },
+        {
+          "nombre": "Derrick Henry",
+          "equipo": "Visitante",
+          "pts_estimados": 25.0,
+          "confianza_pts": 75
+        }
+      ],
+      "defensores": [
+        {
+          "nombre": "Marlon Humphrey",
+          "equipo": "Local",
+          "reb_estimados": 5.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 85
+        },
+        {
+          "nombre": "Kevin Byard",
+          "equipo": "Visitante",
+          "reb_estimados": 6.0,
+          "robos_estimados": 0.5,
+          "bloqueos_estimados": 0.2,
+          "confianza_def": 70
+        }
+      ],
+      "armadores": [
+        {
+          "nombre": "Lamar Jackson",
+          "equipo": "Local",
+          "ast_estimadas": 8.0,
+          "confianza_ast": 75
+        },
+        {
+          "nombre": "Ryan Tannehill",
+          "equipo": "Visitante",
+          "ast_estimadas": 6.0,
+          "confianza_ast": 70
+        }
+      ],
+      "ranking_local": "AFC: 1° (4-0)",
+      "ranking_visitante": "AFC: 3° (3-1)",
       "stats_comparison": {
-        "ppg_local": 0,
-        "ppg_visitante": 0,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 0,
-        "fg_pct_visitante": 0,
-        "pace_analysis": ""
+        "ppg_local": 27.0,
+        "ppg_visitante": 21.0,
+        "opp_ppg_local": 18.0,
+        "opp_ppg_visitante": 22.0,
+        "fg_pct_local": 48.0,
+        "fg_pct_visitante": 43.0,
+        "pace_analysis": "Ritmo moderado, Ravens controlan el tiempo de posesión."
       },
-      "lineas_ou": {}
+      "lineas_ou": {
+        "over_40": 80,
+        "over_50": 65,
+        "over_60": 50
+      }
     },
     "2026-08-08___LMB___Diablos Rojos del Mexico___Guerreros de Oaxaca": {
       "ir": "SÍ",
@@ -14959,13 +15073,13 @@
     {
       "game_date": "2026-10-04",
       "game_id": "401918295",
-      "status_emoji": "🔴",
+      "status_emoji": "🏁",
       "home": "Atlanta Dream",
       "away": "New York Liberty",
       "home_abbr": "ATL",
       "away_abbr": "NY",
-      "home_score": 84,
-      "away_score": 77,
+      "home_score": 92,
+      "away_score": 82,
       "home_linescores": [
         {
           "period": 1,
@@ -14984,8 +15098,8 @@
         },
         {
           "period": 4,
-          "value": 15,
-          "display": "15"
+          "value": 23,
+          "display": "23"
         }
       ],
       "away_linescores": [
@@ -15006,14 +15120,14 @@
         },
         {
           "period": 4,
-          "value": 22,
-          "display": "22"
+          "value": 27,
+          "display": "27"
         }
       ],
-      "clock": "1:58",
+      "clock": "0.0",
       "period": 4,
-      "state": "Q4 1:58",
-      "result": "live",
+      "state": "Final",
+      "result": "completed",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/ATL.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/NY.png&h=40&w=40",
@@ -15096,19 +15210,31 @@
     {
       "game_date": "2026-10-04",
       "game_id": "401918296",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Golden State Valkyries",
       "away": "Las Vegas Aces",
       "home_abbr": "GS",
       "away_abbr": "LV",
-      "home_score": 0,
-      "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "home_score": 8,
+      "away_score": 11,
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 8,
+          "display": "8"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 11,
+          "display": "11"
+        }
+      ],
+      "clock": "5:15",
+      "period": 1,
+      "state": "Q1 5:15",
+      "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/GS.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/LV.png&h=40&w=40",
@@ -15340,10 +15466,10 @@
       "home_abbr": "BUF",
       "away_abbr": "NE",
       "home_score": 26,
-      "away_score": 21,
-      "clock": "2:00",
+      "away_score": 29,
+      "clock": "0:39",
       "period": 4,
-      "state": "Q4 2:00",
+      "state": "Q4 0:39",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
@@ -15437,110 +15563,6 @@
     },
     {
       "game_date": "2026-10-04",
-      "game_id": "401872972",
-      "status_emoji": "🏁",
-      "home": "Chicago Bears",
-      "away": "New York Jets",
-      "home_abbr": "CHI",
-      "away_abbr": "NYJ",
-      "home_score": 23,
-      "away_score": 12,
-      "clock": "0:00",
-      "period": 4,
-      "state": "Final",
-      "result": "completed",
-      "liga": "NFL",
-      "spread_details": "",
-      "over_under": "",
-      "ml_home": "",
-      "ml_away": "",
-      "home_record": "3-1",
-      "away_record": "1-3",
-      "week_num": 4,
-      "season_year": 2026,
-      "season_type": 2,
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/CHI.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/NYJ.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Ventaja de local y mejor récord esperado.",
-      "llm_factores": [
-        "Localía",
-        "Rendimiento reciente"
-      ],
-      "llm_puntos_local": 24,
-      "llm_puntos_visitante": 20,
-      "llm_spread": 4.0,
-      "llm_confianza_ou": 55,
-      "llm_linea_ou": 44.5,
-      "llm_anotadores": [
-        {
-          "nombre": "Justin Fields",
-          "equipo": "Local",
-          "pts_estimados": 22.0,
-          "confianza_pts": 80
-        },
-        {
-          "nombre": "Breece Hall",
-          "equipo": "Visitante",
-          "pts_estimados": 18.5,
-          "confianza_pts": 75
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Roquan Smith",
-          "equipo": "Local",
-          "reb_estimados": 9.0,
-          "robos_estimados": 1.0,
-          "bloqueos_estimados": 0.5,
-          "confianza_def": 85
-        },
-        {
-          "nombre": "Quinnen Williams",
-          "equipo": "Visitante",
-          "reb_estimados": 6.5,
-          "robos_estimados": 0.5,
-          "bloqueos_estimados": 1.0,
-          "confianza_def": 80
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Fields",
-          "equipo": "Local",
-          "ast_estimadas": 3.5,
-          "confianza_ast": 70
-        },
-        {
-          "nombre": "Zach Wilson",
-          "equipo": "Visitante",
-          "ast_estimadas": 4.0,
-          "confianza_ast": 65
-        }
-      ],
-      "llm_ranking_local": "NFC: 3° (2-1)",
-      "llm_ranking_visitante": "AFC: 4° (1-2)",
-      "llm_stats_comparison": {
-        "ppg_local": 24,
-        "ppg_visitante": 20,
-        "opp_ppg_local": 22,
-        "opp_ppg_visitante": 23,
-        "fg_pct_local": 45.0,
-        "fg_pct_visitante": 42.0,
-        "pace_analysis": "Ritmo moderado, ambos equipos juegan de forma conservadora"
-      },
-      "llm_lineas_ou": {
-        "over_40": 70,
-        "over_50": 50,
-        "over_60": 30
-      },
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_favorito": "Chicago Bears"
-    },
-    {
-      "game_date": "2026-10-04",
       "game_id": "401872969",
       "status_emoji": "🔴",
       "home": "Cincinnati Bengals",
@@ -15549,9 +15571,9 @@
       "away_abbr": "JAX",
       "home_score": 17,
       "away_score": 22,
-      "clock": "2:23",
+      "clock": "1:08",
       "period": 4,
-      "state": "Q4 2:23",
+      "state": "Q4 1:08",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
@@ -15653,9 +15675,9 @@
       "away_abbr": "ARI",
       "home_score": 30,
       "away_score": 24,
-      "clock": "2:06",
+      "clock": "0:11",
       "period": 4,
-      "state": "Q4 2:06",
+      "state": "Q4 0:11",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
@@ -15756,10 +15778,10 @@
       "home_abbr": "PHI",
       "away_abbr": "LAR",
       "home_score": 20,
-      "away_score": 17,
-      "clock": "2:55",
+      "away_score": 24,
+      "clock": "1:10",
       "period": 4,
-      "state": "Q4 2:55",
+      "state": "Q4 1:10",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
@@ -15853,14 +15875,14 @@
     },
     {
       "game_date": "2026-10-04",
-      "game_id": "401872968",
+      "game_id": "401872973",
       "status_emoji": "🏁",
-      "home": "Tampa Bay Buccaneers",
-      "away": "Green Bay Packers",
-      "home_abbr": "TB",
-      "away_abbr": "GB",
-      "home_score": 14,
-      "away_score": 17,
+      "home": "Baltimore Ravens",
+      "away": "Tennessee Titans",
+      "home_abbr": "BAL",
+      "away_abbr": "TEN",
+      "home_score": 24,
+      "away_score": 18,
       "clock": "0:00",
       "period": 4,
       "state": "Final",
@@ -15870,94 +15892,97 @@
       "over_under": "",
       "ml_home": "",
       "ml_away": "",
-      "home_record": "0-4",
-      "away_record": "2-2",
-      "week_num": 4,
-      "season_year": 2026,
-      "season_type": 2,
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/TB.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/GB.png&h=40&w=40",
-      "llm_ir_favorito": "NO",
-      "llm_porque": "Falta de datos estadísticos para un análisis preciso.",
-      "llm_factores": [],
-      "llm_puntos_local": 0,
-      "llm_puntos_visitante": 0,
-      "llm_spread": 0.0,
-      "llm_confianza_ou": 0,
-      "llm_linea_ou": 0.0,
-      "llm_stats_comparison": {
-        "ppg_local": 0,
-        "ppg_visitante": 0,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 0,
-        "fg_pct_visitante": 0,
-        "pace_analysis": ""
-      },
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_anotadores": [],
-      "llm_defensores": [],
-      "llm_armadores": [],
-      "llm_ranking_local": "",
-      "llm_ranking_visitante": "",
-      "llm_lineas_ou": {},
-      "llm_favorito": "Tampa Bay Buccaneers"
-    },
-    {
-      "game_date": "2026-10-04",
-      "game_id": "401872973",
-      "status_emoji": "🔴",
-      "home": "Baltimore Ravens",
-      "away": "Tennessee Titans",
-      "home_abbr": "BAL",
-      "away_abbr": "TEN",
-      "home_score": 24,
-      "away_score": 10,
-      "clock": "2:00",
-      "period": 4,
-      "state": "Q4 2:00",
-      "result": "live",
-      "liga": "NFL",
-      "spread_details": "",
-      "over_under": "",
-      "ml_home": "",
-      "ml_away": "",
-      "home_record": "2-1",
-      "away_record": "0-3",
+      "home_record": "3-1",
+      "away_record": "0-4",
       "week_num": 4,
       "season_year": 2026,
       "season_type": 2,
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/BAL.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/TEN.png&h=40&w=40",
-      "llm_ir_favorito": "NO",
-      "llm_porque": "Falta de datos estadísticos para un análisis preciso.",
-      "llm_factores": [],
-      "llm_puntos_local": 0,
-      "llm_puntos_visitante": 0,
-      "llm_spread": 0.0,
-      "llm_confianza_ou": 0,
-      "llm_linea_ou": 0.0,
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y estadísticas ofensivas.",
+      "llm_factores": [
+        "Localía fuerte",
+        "Ravens tienen mejor defensa"
+      ],
+      "llm_puntos_local": 27,
+      "llm_puntos_visitante": 21,
+      "llm_spread": 6.0,
+      "llm_confianza_ou": 65,
+      "llm_linea_ou": 48.5,
       "llm_stats_comparison": {
-        "ppg_local": 0,
-        "ppg_visitante": 0,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 0,
-        "fg_pct_visitante": 0,
-        "pace_analysis": ""
+        "ppg_local": 27.0,
+        "ppg_visitante": 21.0,
+        "opp_ppg_local": 18.0,
+        "opp_ppg_visitante": 22.0,
+        "fg_pct_local": 48.0,
+        "fg_pct_visitante": 43.0,
+        "pace_analysis": "Ritmo moderado, Ravens controlan el tiempo de posesión."
       },
       "llm_b2b_impacto": "",
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
-      "llm_anotadores": [],
-      "llm_defensores": [],
-      "llm_armadores": [],
-      "llm_ranking_local": "",
-      "llm_ranking_visitante": "",
-      "llm_lineas_ou": {},
-      "llm_favorito": "Baltimore Ravens"
+      "llm_anotadores": [
+        {
+          "nombre": "Lamar Jackson",
+          "equipo": "Local",
+          "pts_estimados": 30.0,
+          "confianza_pts": 80
+        },
+        {
+          "nombre": "Derrick Henry",
+          "equipo": "Visitante",
+          "pts_estimados": 25.0,
+          "confianza_pts": 75
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Marlon Humphrey",
+          "equipo": "Local",
+          "reb_estimados": 5.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 85
+        },
+        {
+          "nombre": "Kevin Byard",
+          "equipo": "Visitante",
+          "reb_estimados": 6.0,
+          "robos_estimados": 0.5,
+          "bloqueos_estimados": 0.2,
+          "confianza_def": 70
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Lamar Jackson",
+          "equipo": "Local",
+          "ast_estimadas": 8.0,
+          "confianza_ast": 75
+        },
+        {
+          "nombre": "Ryan Tannehill",
+          "equipo": "Visitante",
+          "ast_estimadas": 6.0,
+          "confianza_ast": 70
+        }
+      ],
+      "llm_ranking_local": "AFC: 1° (4-0)",
+      "llm_ranking_visitante": "AFC: 3° (3-1)",
+      "llm_lineas_ou": {
+        "over_40": 80,
+        "over_50": 65,
+        "over_60": 50
+      },
+      "llm_favorito": "Baltimore Ravens",
+      "llm_goles": "",
+      "llm_corners_est": 0,
+      "llm_tiros_porteria": [],
+      "llm_lineas": {
+        "goles": {},
+        "corners": {}
+      }
     },
     {
       "game_date": "2026-10-04",
@@ -15968,10 +15993,10 @@
       "home_abbr": "HOU",
       "away_abbr": "DAL",
       "home_score": 30,
-      "away_score": 27,
-      "clock": "1:34",
+      "away_score": 34,
+      "clock": "0:16",
       "period": 4,
-      "state": "Q4 1:34",
+      "state": "Q4 0:16",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
@@ -16059,6 +16084,107 @@
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
       "llm_favorito": "Dallas Cowboys"
+    },
+    {
+      "game_date": "2026-10-04",
+      "game_id": "401872974",
+      "status_emoji": "🔴",
+      "home": "Minnesota Vikings",
+      "away": "Miami Dolphins",
+      "home_abbr": "MIN",
+      "away_abbr": "MIA",
+      "home_score": 0,
+      "away_score": 0,
+      "clock": "12:50",
+      "period": 1,
+      "state": "Q1 12:50",
+      "result": "live",
+      "liga": "NFL",
+      "spread_details": "",
+      "over_under": "",
+      "ml_home": "",
+      "ml_away": "",
+      "home_record": "3-0",
+      "away_record": "0-3",
+      "week_num": 4,
+      "season_year": 2026,
+      "season_type": 2,
+      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/MIN.png&h=40&w=40",
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/MIA.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Ventaja de local y mejor récord.",
+      "llm_factores": [],
+      "llm_puntos_local": 0,
+      "llm_puntos_visitante": 0,
+      "llm_spread": 0.0,
+      "llm_confianza_ou": 0,
+      "llm_linea_ou": 0.0,
+      "llm_anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Local",
+          "pts_estimados": 0,
+          "confianza_pts": 0
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Visitante",
+          "pts_estimados": 0,
+          "confianza_pts": 0
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Local",
+          "reb_estimados": 0,
+          "robos_estimados": 0,
+          "bloqueos_estimados": 0,
+          "confianza_def": 0
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Visitante",
+          "reb_estimados": 0,
+          "robos_estimados": 0,
+          "bloqueos_estimados": 0,
+          "confianza_def": 0
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Local",
+          "ast_estimadas": 0,
+          "confianza_ast": 0
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Visitante",
+          "ast_estimadas": 0,
+          "confianza_ast": 0
+        }
+      ],
+      "llm_ranking_local": "Conferencia: posición (récord)",
+      "llm_ranking_visitante": "Conferencia: posición (récord)",
+      "llm_stats_comparison": {
+        "ppg_local": 0,
+        "ppg_visitante": 0,
+        "opp_ppg_local": 0,
+        "opp_ppg_visitante": 0,
+        "fg_pct_local": 0,
+        "fg_pct_visitante": 0,
+        "pace_analysis": ""
+      },
+      "llm_lineas_ou": {
+        "over_140": 0,
+        "over_150": 0,
+        "over_160": 0
+      },
+      "llm_b2b_impacto": "",
+      "llm_lesion_clave": "",
+      "llm_jugadores_clave": [],
+      "llm_favorito": "Minnesota Vikings"
     },
     {
       "game_date": "2026-10-04",
@@ -16166,104 +16292,218 @@
     },
     {
       "game_date": "2026-10-04",
-      "game_id": "401872974",
-      "status_emoji": "⏳",
-      "home": "Minnesota Vikings",
-      "away": "Miami Dolphins",
-      "home_abbr": "MIN",
-      "away_abbr": "MIA",
-      "home_score": 0,
-      "away_score": 0,
+      "game_id": "401872972",
+      "status_emoji": "🏁",
+      "home": "Chicago Bears",
+      "away": "New York Jets",
+      "home_abbr": "CHI",
+      "away_abbr": "NYJ",
+      "home_score": 23,
+      "away_score": 12,
       "clock": "0:00",
-      "period": 0,
-      "state": "Sun, October 4th at 4:05 PM EDT",
-      "result": "pending",
+      "period": 4,
+      "state": "Final",
+      "result": "completed",
       "liga": "NFL",
-      "spread_details": "MIN -10",
-      "over_under": 38.5,
-      "ml_home": "-535",
-      "ml_away": "+400",
-      "home_record": "3-0",
-      "away_record": "0-3",
+      "spread_details": "",
+      "over_under": "",
+      "ml_home": "",
+      "ml_away": "",
+      "home_record": "3-1",
+      "away_record": "1-3",
       "week_num": 4,
       "season_year": 2026,
       "season_type": 2,
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/MIN.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/MIA.png&h=40&w=40",
+      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/CHI.png&h=40&w=40",
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/NYJ.png&h=40&w=40",
       "llm_ir_favorito": "SÍ",
-      "llm_porque": "Ventaja de local y mejor récord.",
-      "llm_factores": [],
-      "llm_puntos_local": 0,
-      "llm_puntos_visitante": 0,
-      "llm_spread": 0.0,
-      "llm_confianza_ou": 0,
-      "llm_linea_ou": 0.0,
+      "llm_porque": "Ventaja de local y mejor récord esperado.",
+      "llm_factores": [
+        "Localía",
+        "Rendimiento reciente"
+      ],
+      "llm_puntos_local": 24,
+      "llm_puntos_visitante": 20,
+      "llm_spread": 4.0,
+      "llm_confianza_ou": 55,
+      "llm_linea_ou": 44.5,
       "llm_anotadores": [
         {
-          "nombre": "Jugador A",
+          "nombre": "Justin Fields",
           "equipo": "Local",
-          "pts_estimados": 0,
-          "confianza_pts": 0
+          "pts_estimados": 22.0,
+          "confianza_pts": 80
         },
         {
-          "nombre": "Jugador B",
+          "nombre": "Breece Hall",
           "equipo": "Visitante",
-          "pts_estimados": 0,
-          "confianza_pts": 0
+          "pts_estimados": 18.5,
+          "confianza_pts": 75
         }
       ],
       "llm_defensores": [
         {
-          "nombre": "Jugador C",
+          "nombre": "Roquan Smith",
           "equipo": "Local",
-          "reb_estimados": 0,
-          "robos_estimados": 0,
-          "bloqueos_estimados": 0,
-          "confianza_def": 0
+          "reb_estimados": 9.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 85
         },
         {
-          "nombre": "Jugador D",
+          "nombre": "Quinnen Williams",
           "equipo": "Visitante",
-          "reb_estimados": 0,
-          "robos_estimados": 0,
-          "bloqueos_estimados": 0,
-          "confianza_def": 0
+          "reb_estimados": 6.5,
+          "robos_estimados": 0.5,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 80
         }
       ],
       "llm_armadores": [
         {
-          "nombre": "Jugador E",
+          "nombre": "Fields",
           "equipo": "Local",
-          "ast_estimadas": 0,
-          "confianza_ast": 0
+          "ast_estimadas": 3.5,
+          "confianza_ast": 70
         },
         {
-          "nombre": "Jugador F",
+          "nombre": "Zach Wilson",
           "equipo": "Visitante",
-          "ast_estimadas": 0,
-          "confianza_ast": 0
+          "ast_estimadas": 4.0,
+          "confianza_ast": 65
         }
       ],
-      "llm_ranking_local": "Conferencia: posición (récord)",
-      "llm_ranking_visitante": "Conferencia: posición (récord)",
+      "llm_ranking_local": "NFC: 3° (2-1)",
+      "llm_ranking_visitante": "AFC: 4° (1-2)",
       "llm_stats_comparison": {
-        "ppg_local": 0,
-        "ppg_visitante": 0,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 0,
-        "fg_pct_visitante": 0,
-        "pace_analysis": ""
+        "ppg_local": 24,
+        "ppg_visitante": 20,
+        "opp_ppg_local": 22,
+        "opp_ppg_visitante": 23,
+        "fg_pct_local": 45.0,
+        "fg_pct_visitante": 42.0,
+        "pace_analysis": "Ritmo moderado, ambos equipos juegan de forma conservadora"
       },
       "llm_lineas_ou": {
-        "over_140": 0,
-        "over_150": 0,
-        "over_160": 0
+        "over_40": 70,
+        "over_50": 50,
+        "over_60": 30
       },
       "llm_b2b_impacto": "",
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
-      "llm_favorito": "Minnesota Vikings"
+      "llm_favorito": "Chicago Bears"
+    },
+    {
+      "game_date": "2026-10-04",
+      "game_id": "401872968",
+      "status_emoji": "🏁",
+      "home": "Tampa Bay Buccaneers",
+      "away": "Green Bay Packers",
+      "home_abbr": "TB",
+      "away_abbr": "GB",
+      "home_score": 14,
+      "away_score": 17,
+      "clock": "0:00",
+      "period": 4,
+      "state": "Final",
+      "result": "completed",
+      "liga": "NFL",
+      "spread_details": "",
+      "over_under": "",
+      "ml_home": "",
+      "ml_away": "",
+      "home_record": "0-4",
+      "away_record": "2-2",
+      "week_num": 4,
+      "season_year": 2026,
+      "season_type": 2,
+      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/TB.png&h=40&w=40",
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/GB.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Localía y mejor ataque.",
+      "llm_factores": [
+        "Ventaja en casa",
+        "Bucs tienen mejor ofensiva"
+      ],
+      "llm_puntos_local": 30,
+      "llm_puntos_visitante": 24,
+      "llm_spread": 5.0,
+      "llm_confianza_ou": 70,
+      "llm_linea_ou": 52.5,
+      "llm_stats_comparison": {
+        "ppg_local": 30.0,
+        "ppg_visitante": 24.0,
+        "opp_ppg_local": 22.0,
+        "opp_ppg_visitante": 26.0,
+        "fg_pct_local": 47.0,
+        "fg_pct_visitante": 45.0,
+        "pace_analysis": "Ritmo alto, ambos equipos buscan anotar rápido."
+      },
+      "llm_b2b_impacto": "",
+      "llm_lesion_clave": "",
+      "llm_jugadores_clave": [],
+      "llm_anotadores": [
+        {
+          "nombre": "Mike Evans",
+          "equipo": "Local",
+          "pts_estimados": 28.0,
+          "confianza_pts": 78
+        },
+        {
+          "nombre": "Aaron Jones",
+          "equipo": "Visitante",
+          "pts_estimados": 22.0,
+          "confianza_pts": 72
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Devin White",
+          "equipo": "Local",
+          "reb_estimados": 8.0,
+          "robos_estimados": 0.5,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 80
+        },
+        {
+          "nombre": "Jaire Alexander",
+          "equipo": "Visitante",
+          "reb_estimados": 5.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 0.3,
+          "confianza_def": 75
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Tom Brady",
+          "equipo": "Local",
+          "ast_estimadas": 7.5,
+          "confianza_ast": 80
+        },
+        {
+          "nombre": "Aaron Rodgers",
+          "equipo": "Visitante",
+          "ast_estimadas": 6.5,
+          "confianza_ast": 75
+        }
+      ],
+      "llm_ranking_local": "NFC: 2° (3-1)",
+      "llm_ranking_visitante": "NFC: 4° (2-2)",
+      "llm_lineas_ou": {
+        "over_40": 85,
+        "over_50": 70,
+        "over_60": 55
+      },
+      "llm_favorito": "Tampa Bay Buccaneers",
+      "llm_goles": "",
+      "llm_corners_est": 0,
+      "llm_tiros_porteria": [],
+      "llm_lineas": {
+        "goles": {},
+        "corners": {}
+      }
     },
     {
       "game_date": "2026-10-04",
@@ -16280,7 +16520,7 @@
       "state": "Sun, October 4th at 4:25 PM EDT",
       "result": "pending",
       "liga": "NFL",
-      "spread_details": "KC -4.5",
+      "spread_details": "KC -5.5",
       "over_under": 47.5,
       "ml_home": "+185",
       "ml_away": "-225",
