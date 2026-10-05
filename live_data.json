@@ -1,5 +1,5 @@
 {
-  "fecha": "05/10/2026 14:26",
+  "fecha": "05/10/2026 14:42",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791295200,
@@ -2982,10 +2982,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3064,7 +3069,7 @@
       "opp_team": "Chicago White Sox",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "📋",
       "game_pk": 849834,
@@ -3108,7 +3113,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3627,10 +3632,15 @@
       "away_team_name": "Tampa Bay Rays",
       "home_team_name": "New York Yankees",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3659,7 +3669,7 @@
     "849834": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Chicago White Sox",
@@ -3692,7 +3702,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3700,7 +3710,7 @@
       }
     }
   },
-  "updated_at": "05/10/2026 14:26",
+  "updated_at": "05/10/2026 14:42",
   "stats": {
     "total": 19,
     "acertados": 12,
@@ -18443,7 +18453,7 @@
       "result": "pending",
       "liga": "NFL",
       "spread_details": "NO -1.5",
-      "over_under": 47.5,
+      "over_under": 48.5,
       "ml_home": "-122",
       "ml_away": "+102",
       "home_record": "1-2",
