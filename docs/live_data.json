@@ -1,5 +1,5 @@
 {
-  "fecha": "04/10/2026 20:41",
+  "fecha": "04/10/2026 20:56",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791208800,
@@ -2692,7 +2692,7 @@
       "opp_team": "Atlanta Braves",
       "score_fav": "1",
       "score_opp": "3",
-      "state": "Bottom 7th",
+      "state": "Middle 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 849823,
@@ -2737,13 +2737,17 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 2,
-        "balls": 2,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 3,
+        "balls": 1,
         "strikes": 1,
         "away_runs": 3,
         "home_runs": 1,
@@ -3259,7 +3263,7 @@
     "849823": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 7th",
+      "status": "Middle 8th",
       "away_runs": 1,
       "home_runs": 3,
       "away_team_name": "Atlanta Braves",
@@ -3293,13 +3297,17 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 2,
-        "balls": 2,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 3,
+        "balls": 1,
         "strikes": 1,
         "away_runs": 3,
         "home_runs": 1,
@@ -3399,7 +3407,7 @@
       }
     }
   },
-  "updated_at": "04/10/2026 20:41",
+  "updated_at": "04/10/2026 20:56",
   "stats": {
     "total": 18,
     "acertados": 12,
@@ -15689,9 +15697,9 @@
       "away_abbr": "DET",
       "home_score": 29,
       "away_score": 19,
-      "clock": "0:00",
-      "period": 3,
-      "state": "Q3 0:00",
+      "clock": "9:18",
+      "period": 4,
+      "state": "Q4 9:18",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
