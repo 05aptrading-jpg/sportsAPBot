@@ -1,5 +1,5 @@
 {
-  "fecha": "04/10/2026 18:00",
+  "fecha": "04/10/2026 18:11",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791208800,
@@ -2687,13 +2687,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-10-04",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Los Angeles Dodgers",
       "opp_team": "Atlanta Braves",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 849823,
       "fav_abbr": "LAD",
@@ -2718,12 +2718,12 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 1,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -2734,9 +2734,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -2929,8 +2929,8 @@
   "autorizados": [
     6099564810
   ],
-  "has_live": false,
-  "has_scheduled": true,
+  "has_live": true,
+  "has_scheduled": false,
   "live_data": {
     "401908002": {
       "is_live": false,
@@ -3233,9 +3233,9 @@
       }
     },
     "849823": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Atlanta Braves",
@@ -3250,12 +3250,12 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 1,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -3266,9 +3266,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3351,7 +3351,7 @@
       }
     }
   },
-  "updated_at": "04/10/2026 18:00",
+  "updated_at": "04/10/2026 18:11",
   "stats": {
     "total": 18,
     "acertados": 12,
@@ -14807,8 +14807,8 @@
       "away": "Utah Jazz",
       "home_abbr": "DEN",
       "away_abbr": "UTAH",
-      "home_score": 41,
-      "away_score": 46,
+      "home_score": 49,
+      "away_score": 56,
       "home_linescores": [
         {
           "period": 1,
@@ -14817,8 +14817,8 @@
         },
         {
           "period": 2,
-          "value": 15,
-          "display": "15"
+          "value": 23,
+          "display": "23"
         }
       ],
       "away_linescores": [
@@ -14829,13 +14829,13 @@
         },
         {
           "period": 2,
-          "value": 10,
-          "display": "10"
+          "value": 20,
+          "display": "20"
         }
       ],
-      "clock": "4:13",
+      "clock": "1:01",
       "period": 2,
-      "state": "Q2 4:13",
+      "state": "Q2 1:01",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/DEN.png&h=40&w=40",
@@ -14924,8 +14924,8 @@
       "away": "Golden State Warriors",
       "home_abbr": "LAC",
       "away_abbr": "GS",
-      "home_score": 50,
-      "away_score": 40,
+      "home_score": 55,
+      "away_score": 43,
       "home_linescores": [
         {
           "period": 1,
@@ -14934,8 +14934,8 @@
         },
         {
           "period": 2,
-          "value": 27,
-          "display": "27"
+          "value": 32,
+          "display": "32"
         }
       ],
       "away_linescores": [
@@ -14946,13 +14946,13 @@
         },
         {
           "period": 2,
-          "value": 16,
-          "display": "16"
+          "value": 19,
+          "display": "19"
         }
       ],
-      "clock": "3:10",
+      "clock": "0.0",
       "period": 2,
-      "state": "Q2 3:10",
+      "state": "Q2 0.0",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/LAC.png&h=40&w=40",
