@@ -1,5 +1,5 @@
 {
-  "fecha": "05/10/2026 15:27",
+  "fecha": "05/10/2026 15:41",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791295200,
@@ -3064,7 +3064,7 @@
       "opp_team": "Chicago White Sox",
       "score_fav": "2",
       "score_opp": "0",
-      "state": "Bottom 1st",
+      "state": "Bottom 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 849834,
@@ -3085,14 +3085,18 @@
           {
             "away_runs": 0,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 3,
+        "inning_ordinal": "2nd",
+        "outs": 0,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 2,
         "away_hits": 0,
@@ -3659,7 +3663,7 @@
     "849834": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Bottom 2nd",
       "away_runs": 2,
       "home_runs": 0,
       "away_team_name": "Chicago White Sox",
@@ -3669,14 +3673,18 @@
           {
             "away_runs": 0,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 2,
-        "balls": 0,
-        "strikes": 3,
+        "inning_ordinal": "2nd",
+        "outs": 0,
+        "balls": 3,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 2,
         "away_hits": 0,
@@ -3700,7 +3708,7 @@
       }
     }
   },
-  "updated_at": "05/10/2026 15:27",
+  "updated_at": "05/10/2026 15:41",
   "stats": {
     "total": 19,
     "acertados": 12,
@@ -18444,8 +18452,8 @@
       "liga": "NFL",
       "spread_details": "NO -1.5",
       "over_under": 47.5,
-      "ml_home": "-122",
-      "ml_away": "+102",
+      "ml_home": "-120",
+      "ml_away": "+100",
       "home_record": "1-2",
       "away_record": "1-2",
       "week_num": 4,
