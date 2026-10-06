@@ -1,8 +1,8 @@
 {
-  "fecha": "06/10/2026 07:56",
+  "fecha": "06/10/2026 08:02",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
-  "proxima_actualizacion_ts": 1791295200,
+  "proxima_actualizacion_ts": 1791381600,
   "proxima_actualizacion_lmb_ts": 1791311400,
   "dias": [
     "2026-10-06",
@@ -2953,7 +2953,7 @@
       "state": "Final",
       "result": "loss",
       "label": "📋",
-      "game_pk": 849839,
+      "game_pk": 401907986,
       "fav_abbr": "NYY",
       "opp_abbr": "TB",
       "home_team": "Tampa Bay Rays",
@@ -2966,72 +2966,7 @@
         "Historial reciente favorable"
       ],
       "resultado_llm": "fallido",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 4
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 2,
-        "home_runs": 5,
-        "away_hits": 4,
-        "home_hits": 8,
-        "away_errors": 4,
-        "home_errors": 0,
-        "away_team_name": "New York Yankees",
-        "home_team_name": "Tampa Bay Rays",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "2",
-        "opp_score": "5",
-        "score_fav": "2",
-        "score_opp": "5"
-      },
+      "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/NYY.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
       "llm_favorito": "Tampa Bay Rays",
@@ -3089,7 +3024,7 @@
       "state": "Final",
       "result": "loss",
       "label": "📋",
-      "game_pk": 849834,
+      "game_pk": 401907991,
       "fav_abbr": "CLE",
       "opp_abbr": "CHW",
       "home_team": "Cleveland Guardians",
@@ -3217,272 +3152,200 @@
     {
       "liga": "MLB",
       "game_date": "2026-10-06",
-      "status_emoji": "🏁",
-      "fav_team": "Los Angeles Dodgers",
-      "opp_team": "Atlanta Braves",
+      "status_emoji": "⏳",
+      "fav_team": "San Diego Padres",
+      "opp_team": "Milwaukee Brewers",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Final",
-      "result": "completed",
+      "state": "Scheduled",
+      "result": "pending",
       "label": "📋",
-      "game_pk": 401908015,
-      "fav_abbr": "LAD",
-      "opp_abbr": "ATL",
-      "home_team": "Atlanta Braves",
-      "away_team": "Los Angeles Dodgers",
+      "game_pk": 849826,
+      "fav_abbr": "SD",
+      "opp_abbr": "MIL",
+      "home_team": "San Diego Padres",
+      "away_team": "Milwaukee Brewers",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y localía a favor.",
+      "llm_factores": [
+        "Racha reciente positiva de Padres",
+        "Lesiones mínimas en Padres",
+        "Historial favorable en casa"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 3
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
+        "innings": [],
+        "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
+        "inning_ordinal": "",
+        "outs": 0,
         "balls": 0,
-        "strikes": 2,
-        "away_runs": 3,
-        "home_runs": 5,
-        "away_hits": 4,
-        "home_hits": 8,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
-        "away_team_name": "Atlanta Braves",
-        "home_team_name": "Los Angeles Dodgers",
+        "away_team_name": "Milwaukee Brewers",
+        "home_team_name": "San Diego Padres",
         "bases": {
           "first": false,
           "second": false,
           "third": false
         },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "3",
-        "opp_score": "5",
-        "score_fav": "3",
-        "score_opp": "5"
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
       },
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATL.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y racha reciente favorable.",
-      "llm_factores": [
-        "Racha de 8-2 en últimos 10 juegos",
-        "Historial reciente favorable contra Braves",
-        "Lesiones mínimas en el roster"
-      ],
-      "llm_favorito": "Los Angeles Dodgers",
-      "llm_carreras": "4-6",
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SD.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
+      "llm_favorito": "San Diego Padres",
+      "llm_carreras": "5-4",
       "llm_carreras_lineas": {
         "over_7.5": 75,
         "over_8.5": 60,
-        "over_9.5": 45
+        "over_9.5": 40
       },
-      "llm_ranking_local": "NL Este: 2º (90-70)",
-      "llm_ranking_visitante": "NL Oeste: 1º (95-65)",
-      "llm_abridor_local": "Max Fried (3.50, 16-8, 180)",
-      "llm_abridor_visitante": "Julio Urías (2.90, 18-7, 200)",
+      "llm_ranking_local": "NL Oeste: 2º (85-75)",
+      "llm_ranking_visitante": "NL Central: 3º (80-80)",
+      "llm_abridor_local": "Joe Musgrove (3.50, 14-8, 180)",
+      "llm_abridor_visitante": "Brandon Woodruff (3.75, 12-10, 190)",
       "llm_bateadores_clave": [
         {
-          "jugador": "Ronald Acuña Jr.",
-          "equipo": "Braves",
+          "jugador": "Fernando Tatis Jr.",
+          "equipo": "San Diego Padres",
           "hrs_estimados": 1,
           "remolcadas_estimadas": 2,
           "confianza_bateo": 85
         },
         {
-          "jugador": "Ozzie Albies",
-          "equipo": "Braves",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 70
-        },
-        {
-          "jugador": "Freddie Freeman",
-          "equipo": "Dodgers",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2,
-          "confianza_bateo": 80
-        },
-        {
-          "jugador": "Mookie Betts",
-          "equipo": "Dodgers",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 75
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 3.80, confiable en situaciones de presión.",
-      "llm_relevo_visitante": "Bullpen con ERA de 3.20, sólido y efectivo."
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-10-06",
-      "status_emoji": "🏁",
-      "fav_team": "Milwaukee Brewers",
-      "opp_team": "San Diego Padres",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Final",
-      "result": "completed",
-      "label": "📋",
-      "game_pk": 401908004,
-      "fav_abbr": "MIL",
-      "opp_abbr": "SD",
-      "home_team": "San Diego Padres",
-      "away_team": "Milwaukee Brewers",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 1,
-        "away_runs": 2,
-        "home_runs": 3,
-        "away_hits": 9,
-        "home_hits": 7,
-        "away_errors": 1,
-        "home_errors": 0,
-        "away_team_name": "San Diego Padres",
-        "home_team_name": "Milwaukee Brewers",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "2",
-        "opp_score": "3",
-        "score_fav": "2",
-        "score_opp": "3"
-      },
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/SD.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y ventaja de local.",
-      "llm_factores": [
-        "Racha de 7-3 en últimos 10 juegos",
-        "Historial reciente favorable contra Brewers",
-        "Lesiones mínimas en el roster"
-      ],
-      "llm_favorito": "San Diego Padres",
-      "llm_carreras": "5-4",
-      "llm_carreras_lineas": {
-        "over_7.5": 70,
-        "over_8.5": 55,
-        "over_9.5": 40
-      },
-      "llm_ranking_local": "NL Oeste: 3º (88-72)",
-      "llm_ranking_visitante": "NL Central: 2º (85-75)",
-      "llm_abridor_local": "Blake Snell (3.20, 15-8, 210)",
-      "llm_abridor_visitante": "Corbin Burnes (3.50, 14-9, 190)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "Fernando Tatis Jr.",
-          "equipo": "Padres",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2,
-          "confianza_bateo": 90
-        },
-        {
           "jugador": "Juan Soto",
-          "equipo": "Padres",
+          "equipo": "San Diego Padres",
           "hrs_estimados": 0,
           "remolcadas_estimadas": 1,
           "confianza_bateo": 75
         },
         {
           "jugador": "Christian Yelich",
-          "equipo": "Brewers",
+          "equipo": "Milwaukee Brewers",
           "hrs_estimados": 0,
           "remolcadas_estimadas": 1,
           "confianza_bateo": 70
         },
         {
           "jugador": "Willie Adames",
-          "equipo": "Brewers",
+          "equipo": "Milwaukee Brewers",
           "hrs_estimados": 0,
           "remolcadas_estimadas": 1,
           "confianza_bateo": 65
         }
       ],
-      "llm_relevo_local": "Bullpen con ERA de 3.50, efectivo en situaciones críticas.",
-      "llm_relevo_visitante": "Bullpen con ERA de 3.80, algo menos confiable."
+      "llm_relevo_local": "Bullpen sólido con ERA de 3.20, confiable en finales.",
+      "llm_relevo_visitante": "Bullpen con ERA de 4.10, menos efectivo en situaciones críticas."
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-10-06",
+      "status_emoji": "⏳",
+      "fav_team": "Atlanta Braves",
+      "opp_team": "Los Angeles Dodgers",
+      "score_fav": "—",
+      "score_opp": "",
+      "state": "Scheduled",
+      "result": "pending",
+      "label": "📋",
+      "game_pk": 849819,
+      "fav_abbr": "ATL",
+      "opp_abbr": "LAD",
+      "home_team": "Atlanta Braves",
+      "away_team": "Los Angeles Dodgers",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y ventaja en casa.",
+      "llm_factores": [
+        "Racha reciente de Braves",
+        "Historial positivo en casa",
+        "Lesiones en Dodgers"
+      ],
+      "resultado_llm": "pendiente",
+      "linescore": {
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Los Angeles Dodgers",
+        "home_team_name": "Atlanta Braves",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATL.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
+      "llm_favorito": "Atlanta Braves",
+      "llm_carreras": "6-4",
+      "llm_carreras_lineas": {
+        "over_7.5": 80,
+        "over_8.5": 65,
+        "over_9.5": 50
+      },
+      "llm_ranking_local": "NL Este: 1º (95-65)",
+      "llm_ranking_visitante": "NL Oeste: 1º (90-70)",
+      "llm_abridor_local": "Max Fried (3.00, 16-6, 200)",
+      "llm_abridor_visitante": "Clayton Kershaw (3.50, 15-8, 180)",
+      "llm_bateadores_clave": [
+        {
+          "jugador": "Ronald Acuña Jr.",
+          "equipo": "Atlanta Braves",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2,
+          "confianza_bateo": 90
+        },
+        {
+          "jugador": "Ozzie Albies",
+          "equipo": "Atlanta Braves",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 75
+        },
+        {
+          "jugador": "Mookie Betts",
+          "equipo": "Los Angeles Dodgers",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 70
+        },
+        {
+          "jugador": "Freddie Freeman",
+          "equipo": "Los Angeles Dodgers",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 65
+        }
+      ],
+      "llm_relevo_local": "Bullpen fuerte con ERA de 2.90, excelente en finales.",
+      "llm_relevo_visitante": "Bullpen con ERA de 3.80, confiable pero vulnerable."
     }
   ],
   "bot_username": "MLBAnalyticsRailwayBot",
@@ -3490,7 +3353,7 @@
     6099564810
   ],
   "has_live": false,
-  "has_scheduled": false,
+  "has_scheduled": true,
   "live_data": {
     "401908014": {
       "is_live": false,
@@ -3642,7 +3505,7 @@
         "score_opp": "4"
       }
     },
-    "849839": {
+    "401907986": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -3650,74 +3513,9 @@
       "home_runs": 5,
       "away_team_name": "Tampa Bay Rays",
       "home_team_name": "New York Yankees",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 4
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 2,
-        "home_runs": 5,
-        "away_hits": 4,
-        "home_hits": 8,
-        "away_errors": 4,
-        "home_errors": 0,
-        "away_team_name": "New York Yankees",
-        "home_team_name": "Tampa Bay Rays",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "2",
-        "opp_score": "5",
-        "score_fav": "2",
-        "score_opp": "5"
-      }
+      "linescore": {}
     },
-    "849834": {
+    "401907991": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -3792,158 +3590,84 @@
         "score_opp": "3"
       }
     },
-    "401908015": {
+    "849826": {
       "is_live": false,
-      "is_final": true,
-      "status": "Final",
+      "is_final": false,
+      "status": "Scheduled",
       "away_runs": 0,
       "home_runs": 0,
-      "away_team_name": "Atlanta Braves",
-      "home_team_name": "Los Angeles Dodgers",
+      "away_team_name": "Milwaukee Brewers",
+      "home_team_name": "San Diego Padres",
       "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 3
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
+        "innings": [],
+        "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
+        "inning_ordinal": "",
+        "outs": 0,
         "balls": 0,
-        "strikes": 2,
-        "away_runs": 3,
-        "home_runs": 5,
-        "away_hits": 4,
-        "home_hits": 8,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
-        "away_team_name": "Atlanta Braves",
-        "home_team_name": "Los Angeles Dodgers",
+        "away_team_name": "Milwaukee Brewers",
+        "home_team_name": "San Diego Padres",
         "bases": {
           "first": false,
           "second": false,
           "third": false
         },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "3",
-        "opp_score": "5",
-        "score_fav": "3",
-        "score_opp": "5"
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
       }
     },
-    "401908004": {
+    "849819": {
       "is_live": false,
-      "is_final": true,
-      "status": "Final",
+      "is_final": false,
+      "status": "Scheduled",
       "away_runs": 0,
       "home_runs": 0,
-      "away_team_name": "San Diego Padres",
-      "home_team_name": "Milwaukee Brewers",
+      "away_team_name": "Los Angeles Dodgers",
+      "home_team_name": "Atlanta Braves",
       "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
+        "innings": [],
+        "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
+        "inning_ordinal": "",
+        "outs": 0,
         "balls": 0,
-        "strikes": 1,
-        "away_runs": 2,
-        "home_runs": 3,
-        "away_hits": 9,
-        "home_hits": 7,
-        "away_errors": 1,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
         "home_errors": 0,
-        "away_team_name": "San Diego Padres",
-        "home_team_name": "Milwaukee Brewers",
+        "away_team_name": "Los Angeles Dodgers",
+        "home_team_name": "Atlanta Braves",
         "bases": {
           "first": false,
           "second": false,
           "third": false
         },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "2",
-        "opp_score": "3",
-        "score_fav": "2",
-        "score_opp": "3"
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
       }
     }
   },
-  "updated_at": "06/10/2026 07:56",
+  "updated_at": "06/10/2026 08:02",
   "stats": {
     "total": 19,
     "acertados": 12,
@@ -4248,7 +3972,8 @@
     "2026-08-08",
     "2026-10-03",
     "2026-10-04",
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-06"
   ],
   "stats_por_fecha": {
     "2026-08-08": {
@@ -4350,6 +4075,31 @@
       "llm_acertados": 0,
       "llm_fallidos": 2,
       "llm_win_rate": 0.0
+    },
+    "2026-10-06": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
     }
   },
   "stats_por_fecha_mlb": {
@@ -4452,6 +4202,31 @@
       "llm_acertados": 0,
       "llm_fallidos": 2,
       "llm_win_rate": 0.0
+    },
+    "2026-10-06": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
     }
   },
   "stats_por_fecha_lmb": {
@@ -4531,6 +4306,31 @@
       "llm_win_rate": 0
     },
     "2026-10-05": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
+    },
+    "2026-10-06": {
       "total": 0,
       "acertados": 0,
       "fallidos": 0,
@@ -13730,109 +13530,109 @@
       "relevo_local": "Bullpen efectivo, ERA de 3.40 en la temporada.",
       "relevo_visitante": "Bullpen débil, ERA de 4.80 en la temporada."
     },
-    "2026-10-06___MLB___Atlanta Braves___Los Angeles Dodgers": {
+    "2026-10-06___MLB___San Diego Padres___Milwaukee Brewers": {
       "ir": "SÍ",
-      "pq": "Mejor récord y racha reciente favorable.",
+      "pq": "Mejor récord y localía a favor.",
       "factores": [
-        "Racha de 8-2 en últimos 10 juegos",
-        "Historial reciente favorable contra Braves",
-        "Lesiones mínimas en el roster"
+        "Racha reciente positiva de Padres",
+        "Lesiones mínimas en Padres",
+        "Historial favorable en casa"
       ],
-      "favorito": "Los Angeles Dodgers",
-      "carreras_esperadas": "4-6",
+      "favorito": "San Diego Padres",
+      "carreras_esperadas": "5-4",
       "carreras_lineas": {
         "over_7.5": 75,
         "over_8.5": 60,
-        "over_9.5": 45
+        "over_9.5": 40
       },
-      "ranking_local": "NL Este: 2º (90-70)",
-      "ranking_visitante": "NL Oeste: 1º (95-65)",
-      "abridor_local": "Max Fried (3.50, 16-8, 180)",
-      "abridor_visitante": "Julio Urías (2.90, 18-7, 200)",
+      "ranking_local": "NL Oeste: 2º (85-75)",
+      "ranking_visitante": "NL Central: 3º (80-80)",
+      "abridor_local": "Joe Musgrove (3.50, 14-8, 180)",
+      "abridor_visitante": "Brandon Woodruff (3.75, 12-10, 190)",
       "bateadores_clave": [
         {
-          "jugador": "Ronald Acuña Jr.",
-          "equipo": "Braves",
+          "jugador": "Fernando Tatis Jr.",
+          "equipo": "San Diego Padres",
           "hrs_estimados": 1,
           "remolcadas_estimadas": 2,
           "confianza_bateo": 85
         },
         {
-          "jugador": "Ozzie Albies",
-          "equipo": "Braves",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 70
-        },
-        {
-          "jugador": "Freddie Freeman",
-          "equipo": "Dodgers",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2,
-          "confianza_bateo": 80
-        },
-        {
-          "jugador": "Mookie Betts",
-          "equipo": "Dodgers",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 75
-        }
-      ],
-      "relevo_local": "Bullpen con ERA de 3.80, confiable en situaciones de presión.",
-      "relevo_visitante": "Bullpen con ERA de 3.20, sólido y efectivo."
-    },
-    "2026-10-06___MLB___San Diego Padres___Milwaukee Brewers": {
-      "ir": "SÍ",
-      "pq": "Mejor récord y ventaja de local.",
-      "factores": [
-        "Racha de 7-3 en últimos 10 juegos",
-        "Historial reciente favorable contra Brewers",
-        "Lesiones mínimas en el roster"
-      ],
-      "favorito": "San Diego Padres",
-      "carreras_esperadas": "5-4",
-      "carreras_lineas": {
-        "over_7.5": 70,
-        "over_8.5": 55,
-        "over_9.5": 40
-      },
-      "ranking_local": "NL Oeste: 3º (88-72)",
-      "ranking_visitante": "NL Central: 2º (85-75)",
-      "abridor_local": "Blake Snell (3.20, 15-8, 210)",
-      "abridor_visitante": "Corbin Burnes (3.50, 14-9, 190)",
-      "bateadores_clave": [
-        {
-          "jugador": "Fernando Tatis Jr.",
-          "equipo": "Padres",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2,
-          "confianza_bateo": 90
-        },
-        {
           "jugador": "Juan Soto",
-          "equipo": "Padres",
+          "equipo": "San Diego Padres",
           "hrs_estimados": 0,
           "remolcadas_estimadas": 1,
           "confianza_bateo": 75
         },
         {
           "jugador": "Christian Yelich",
-          "equipo": "Brewers",
+          "equipo": "Milwaukee Brewers",
           "hrs_estimados": 0,
           "remolcadas_estimadas": 1,
           "confianza_bateo": 70
         },
         {
           "jugador": "Willie Adames",
-          "equipo": "Brewers",
+          "equipo": "Milwaukee Brewers",
           "hrs_estimados": 0,
           "remolcadas_estimadas": 1,
           "confianza_bateo": 65
         }
       ],
-      "relevo_local": "Bullpen con ERA de 3.50, efectivo en situaciones críticas.",
-      "relevo_visitante": "Bullpen con ERA de 3.80, algo menos confiable."
+      "relevo_local": "Bullpen sólido con ERA de 3.20, confiable en finales.",
+      "relevo_visitante": "Bullpen con ERA de 4.10, menos efectivo en situaciones críticas."
+    },
+    "2026-10-06___MLB___Atlanta Braves___Los Angeles Dodgers": {
+      "ir": "SÍ",
+      "pq": "Mejor récord y ventaja en casa.",
+      "factores": [
+        "Racha reciente de Braves",
+        "Historial positivo en casa",
+        "Lesiones en Dodgers"
+      ],
+      "favorito": "Atlanta Braves",
+      "carreras_esperadas": "6-4",
+      "carreras_lineas": {
+        "over_7.5": 80,
+        "over_8.5": 65,
+        "over_9.5": 50
+      },
+      "ranking_local": "NL Este: 1º (95-65)",
+      "ranking_visitante": "NL Oeste: 1º (90-70)",
+      "abridor_local": "Max Fried (3.00, 16-6, 200)",
+      "abridor_visitante": "Clayton Kershaw (3.50, 15-8, 180)",
+      "bateadores_clave": [
+        {
+          "jugador": "Ronald Acuña Jr.",
+          "equipo": "Atlanta Braves",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2,
+          "confianza_bateo": 90
+        },
+        {
+          "jugador": "Ozzie Albies",
+          "equipo": "Atlanta Braves",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 75
+        },
+        {
+          "jugador": "Mookie Betts",
+          "equipo": "Los Angeles Dodgers",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 70
+        },
+        {
+          "jugador": "Freddie Freeman",
+          "equipo": "Los Angeles Dodgers",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 65
+        }
+      ],
+      "relevo_local": "Bullpen fuerte con ERA de 2.90, excelente en finales.",
+      "relevo_visitante": "Bullpen con ERA de 3.80, confiable pero vulnerable."
     },
     "2026-06-28___Sudáfrica___Canadá": {
       "ir": "SÍ",
