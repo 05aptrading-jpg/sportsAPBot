@@ -1,5 +1,5 @@
 {
-  "fecha": "06/10/2026 17:11",
+  "fecha": "06/10/2026 17:26",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791381600,
@@ -3260,8 +3260,8 @@
       "fav_team": "Atlanta Braves",
       "opp_team": "Los Angeles Dodgers",
       "score_fav": "0",
-      "score_opp": "0",
-      "state": "Bottom 3rd",
+      "score_opp": "3",
+      "state": "Bottom 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 849819,
@@ -3290,17 +3290,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 3,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 2,
-        "balls": 3,
-        "strikes": 3,
-        "away_runs": 0,
+        "inning_ordinal": "4th",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 3,
         "home_runs": 0,
-        "away_hits": 4,
+        "away_hits": 7,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 2,
@@ -3314,9 +3318,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "3",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "3",
         "score_opp": "0"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/ATL.png&h=40&w=40",
@@ -3654,9 +3658,9 @@
     "849819": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 3rd",
+      "status": "Bottom 4th",
       "away_runs": 0,
-      "home_runs": 0,
+      "home_runs": 3,
       "away_team_name": "Los Angeles Dodgers",
       "home_team_name": "Atlanta Braves",
       "linescore": {
@@ -3672,17 +3676,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 3,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 2,
-        "balls": 3,
-        "strikes": 3,
-        "away_runs": 0,
+        "inning_ordinal": "4th",
+        "outs": 1,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 3,
         "home_runs": 0,
-        "away_hits": 4,
+        "away_hits": 7,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 2,
@@ -3696,14 +3704,14 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "3",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "3",
         "score_opp": "0"
       }
     }
   },
-  "updated_at": "06/10/2026 17:11",
+  "updated_at": "06/10/2026 17:26",
   "stats": {
     "total": 19,
     "acertados": 12,
@@ -17278,25 +17286,25 @@
       "away": "Brooklyn Nets",
       "home_abbr": "CHA",
       "away_abbr": "BKN",
-      "home_score": 2,
-      "away_score": 0,
+      "home_score": 14,
+      "away_score": 21,
       "home_linescores": [
         {
           "period": 1,
-          "value": 2,
-          "display": "2"
+          "value": 14,
+          "display": "14"
         }
       ],
       "away_linescores": [
         {
           "period": 1,
-          "value": 0,
-          "display": "0"
+          "value": 21,
+          "display": "21"
         }
       ],
-      "clock": "11:18",
+      "clock": "5:26",
       "period": 1,
-      "state": "Q1 11:18",
+      "state": "Q1 5:26",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/CHA.png&h=40&w=40",
