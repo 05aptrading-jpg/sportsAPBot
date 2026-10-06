@@ -1,5 +1,5 @@
 {
-  "fecha": "06/10/2026 16:11",
+  "fecha": "06/10/2026 16:27",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791381600,
@@ -3261,7 +3261,7 @@
       "opp_team": "Los Angeles Dodgers",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Top 1st",
+      "state": "Bottom 1st",
       "result": "live",
       "label": "📋",
       "game_pk": 849819,
@@ -3285,17 +3285,17 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 0,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "Los Angeles Dodgers",
         "home_team_name": "Atlanta Braves",
         "bases": {
@@ -3646,7 +3646,7 @@
     "849819": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 1st",
+      "status": "Bottom 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Los Angeles Dodgers",
@@ -3659,17 +3659,17 @@
           }
         ],
         "current_inning": 1,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 0,
         "away_errors": 0,
-        "home_errors": 0,
+        "home_errors": 1,
         "away_team_name": "Los Angeles Dodgers",
         "home_team_name": "Atlanta Braves",
         "bases": {
@@ -3687,7 +3687,7 @@
       }
     }
   },
-  "updated_at": "06/10/2026 16:11",
+  "updated_at": "06/10/2026 16:27",
   "stats": {
     "total": 19,
     "acertados": 12,
