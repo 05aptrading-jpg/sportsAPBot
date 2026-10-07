@@ -1,5 +1,5 @@
 {
-  "fecha": "07/10/2026 12:41",
+  "fecha": "07/10/2026 12:56",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791468000,
@@ -3672,7 +3672,12 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
@@ -4201,7 +4206,12 @@
       "away_team_name": "Cleveland Guardians",
       "home_team_name": "Chicago White Sox",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
@@ -4269,7 +4279,7 @@
       }
     }
   },
-  "updated_at": "07/10/2026 12:41",
+  "updated_at": "07/10/2026 12:56",
   "stats": {
     "total": 19,
     "acertados": 12,
