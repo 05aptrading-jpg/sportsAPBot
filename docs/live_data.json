@@ -1,5 +1,5 @@
 {
-  "fecha": "06/10/2026 22:26",
+  "fecha": "06/10/2026 22:42",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791381600,
@@ -3157,7 +3157,7 @@
       "opp_team": "Milwaukee Brewers",
       "score_fav": "4",
       "score_opp": "3",
-      "state": "Bottom 7th",
+      "state": "Top 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 849826,
@@ -3202,17 +3202,21 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 1,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 2,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 3,
         "home_runs": 4,
-        "away_hits": 10,
+        "away_hits": 11,
         "home_hits": 6,
         "away_errors": 1,
         "home_errors": 0,
@@ -3659,7 +3663,7 @@
     "849826": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 7th",
+      "status": "Top 8th",
       "away_runs": 4,
       "home_runs": 3,
       "away_team_name": "Milwaukee Brewers",
@@ -3693,17 +3697,21 @@
           {
             "away_runs": 1,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 7,
-        "is_top": false,
-        "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 0,
-        "strikes": 1,
+        "current_inning": 8,
+        "is_top": true,
+        "inning_ordinal": "8th",
+        "outs": 2,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 3,
         "home_runs": 4,
-        "away_hits": 10,
+        "away_hits": 11,
         "home_hits": 6,
         "away_errors": 1,
         "home_errors": 0,
@@ -3799,7 +3807,7 @@
       }
     }
   },
-  "updated_at": "06/10/2026 22:26",
+  "updated_at": "06/10/2026 22:42",
   "stats": {
     "total": 19,
     "acertados": 12,
@@ -17786,13 +17794,13 @@
     {
       "game_date": "2026-10-06",
       "game_id": "401898390",
-      "status_emoji": "🔴",
+      "status_emoji": "🏁",
       "home": "Golden State Warriors",
       "away": "Los Angeles Lakers",
       "home_abbr": "GS",
       "away_abbr": "LAL",
-      "home_score": 122,
-      "away_score": 88,
+      "home_score": 124,
+      "away_score": 98,
       "home_linescores": [
         {
           "period": 1,
@@ -17811,8 +17819,8 @@
         },
         {
           "period": 4,
-          "value": 26,
-          "display": "26"
+          "value": 28,
+          "display": "28"
         }
       ],
       "away_linescores": [
@@ -17833,14 +17841,14 @@
         },
         {
           "period": 4,
-          "value": 13,
-          "display": "13"
+          "value": 23,
+          "display": "23"
         }
       ],
-      "clock": "2:05",
+      "clock": "0.0",
       "period": 4,
-      "state": "Q4 2:05",
-      "result": "live",
+      "state": "Final",
+      "result": "completed",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/GS.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/LAL.png&h=40&w=40",
