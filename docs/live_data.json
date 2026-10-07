@@ -1,5 +1,5 @@
 {
-  "fecha": "06/10/2026 21:26",
+  "fecha": "06/10/2026 21:41",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791381600,
@@ -3157,7 +3157,7 @@
       "opp_team": "Milwaukee Brewers",
       "score_fav": "3",
       "score_opp": "2",
-      "state": "Bottom 5th",
+      "state": "Top 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 849826,
@@ -3194,13 +3194,17 @@
           {
             "away_runs": 1,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
         "outs": 1,
-        "balls": 3,
+        "balls": 0,
         "strikes": 2,
         "away_runs": 2,
         "home_runs": 3,
@@ -3651,7 +3655,7 @@
     "849826": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 5th",
+      "status": "Top 6th",
       "away_runs": 3,
       "home_runs": 2,
       "away_team_name": "Milwaukee Brewers",
@@ -3677,13 +3681,17 @@
           {
             "away_runs": 1,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 5,
-        "is_top": false,
-        "inning_ordinal": "5th",
+        "current_inning": 6,
+        "is_top": true,
+        "inning_ordinal": "6th",
         "outs": 1,
-        "balls": 3,
+        "balls": 0,
         "strikes": 2,
         "away_runs": 2,
         "home_runs": 3,
@@ -3783,7 +3791,7 @@
       }
     }
   },
-  "updated_at": "06/10/2026 21:26",
+  "updated_at": "06/10/2026 21:41",
   "stats": {
     "total": 19,
     "acertados": 12,
@@ -17631,13 +17639,13 @@
     {
       "game_date": "2026-10-06",
       "game_id": "401914128",
-      "status_emoji": "🔴",
+      "status_emoji": "🏁",
       "home": "Utah Jazz",
       "away": "Denver Nuggets",
       "home_abbr": "UTAH",
       "away_abbr": "DEN",
-      "home_score": 97,
-      "away_score": 107,
+      "home_score": 106,
+      "away_score": 117,
       "home_linescores": [
         {
           "period": 1,
@@ -17656,8 +17664,8 @@
         },
         {
           "period": 4,
-          "value": 16,
-          "display": "16"
+          "value": 25,
+          "display": "25"
         }
       ],
       "away_linescores": [
@@ -17678,14 +17686,14 @@
         },
         {
           "period": 4,
-          "value": 12,
-          "display": "12"
+          "value": 22,
+          "display": "22"
         }
       ],
-      "clock": "3:43",
+      "clock": "0.0",
       "period": 4,
-      "state": "Q4 3:43",
-      "result": "live",
+      "state": "Final",
+      "result": "completed",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/UTAH.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/DEN.png&h=40&w=40",
@@ -17775,8 +17783,8 @@
       "away": "Los Angeles Lakers",
       "home_abbr": "GS",
       "away_abbr": "LAL",
-      "home_score": 81,
-      "away_score": 53,
+      "home_score": 84,
+      "away_score": 57,
       "home_linescores": [
         {
           "period": 1,
@@ -17787,6 +17795,11 @@
           "period": 2,
           "value": 36,
           "display": "36"
+        },
+        {
+          "period": 3,
+          "value": 3,
+          "display": "3"
         }
       ],
       "away_linescores": [
@@ -17799,11 +17812,16 @@
           "period": 2,
           "value": 22,
           "display": "22"
+        },
+        {
+          "period": 3,
+          "value": 4,
+          "display": "4"
         }
       ],
-      "clock": "0.0",
-      "period": 2,
-      "state": "Q2 0.0",
+      "clock": "8:39",
+      "period": 3,
+      "state": "Q3 8:39",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/GS.png&h=40&w=40",
