@@ -1,5 +1,5 @@
 {
-  "fecha": "06/10/2026 19:11",
+  "fecha": "06/10/2026 19:27",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791381600,
@@ -3157,7 +3157,7 @@
       "opp_team": "Milwaukee Brewers",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "📋",
       "game_pk": 849826,
@@ -3201,7 +3201,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3335,9 +3335,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "3",
         "opp_score": "1",
         "score_fav": "3",
@@ -3635,7 +3635,7 @@
     "849826": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Milwaukee Brewers",
@@ -3668,7 +3668,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3741,9 +3741,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Game Over",
+        "status_emoji": "🏁",
+        "result": "completed",
+        "state": "Final",
         "fav_score": "3",
         "opp_score": "1",
         "score_fav": "3",
@@ -3751,7 +3751,7 @@
       }
     }
   },
-  "updated_at": "06/10/2026 19:11",
+  "updated_at": "06/10/2026 19:27",
   "stats": {
     "total": 19,
     "acertados": 12,
@@ -17326,8 +17326,8 @@
       "away": "Brooklyn Nets",
       "home_abbr": "CHA",
       "away_abbr": "BKN",
-      "home_score": 77,
-      "away_score": 106,
+      "home_score": 89,
+      "away_score": 121,
       "home_linescores": [
         {
           "period": 1,
@@ -17346,8 +17346,8 @@
         },
         {
           "period": 4,
-          "value": 4,
-          "display": "4"
+          "value": 16,
+          "display": "16"
         }
       ],
       "away_linescores": [
@@ -17368,13 +17368,13 @@
         },
         {
           "period": 4,
-          "value": 14,
-          "display": "14"
+          "value": 29,
+          "display": "29"
         }
       ],
-      "clock": "7:29",
+      "clock": "1:22",
       "period": 4,
-      "state": "Q4 7:29",
+      "state": "Q4 1:22",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/CHA.png&h=40&w=40",
@@ -17465,8 +17465,8 @@
       "away": "New Orleans Pelicans",
       "home_abbr": "OKC",
       "away_abbr": "NO",
-      "home_score": 62,
-      "away_score": 46,
+      "home_score": 67,
+      "away_score": 52,
       "home_linescores": [
         {
           "period": 1,
@@ -17475,8 +17475,8 @@
         },
         {
           "period": 2,
-          "value": 28,
-          "display": "28"
+          "value": 33,
+          "display": "33"
         }
       ],
       "away_linescores": [
@@ -17487,13 +17487,13 @@
         },
         {
           "period": 2,
-          "value": 18,
-          "display": "18"
+          "value": 24,
+          "display": "24"
         }
       ],
-      "clock": "1:26",
+      "clock": "0.0",
       "period": 2,
-      "state": "Q2 1:26",
+      "state": "Q2 0.0",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/OKC.png&h=40&w=40",
@@ -17584,25 +17584,25 @@
       "away": "Denver Nuggets",
       "home_abbr": "UTAH",
       "away_abbr": "DEN",
-      "home_score": 0,
-      "away_score": 0,
+      "home_score": 18,
+      "away_score": 13,
       "home_linescores": [
         {
           "period": 1,
-          "value": 0,
-          "display": "0"
+          "value": 18,
+          "display": "18"
         }
       ],
       "away_linescores": [
         {
           "period": 1,
-          "value": 0,
-          "display": "0"
+          "value": 13,
+          "display": "13"
         }
       ],
-      "clock": "11:54",
+      "clock": "11:22",
       "period": 1,
-      "state": "Q1 11:54",
+      "state": "Q1 11:22",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/UTAH.png&h=40&w=40",
