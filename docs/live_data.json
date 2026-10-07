@@ -1,5 +1,5 @@
 {
-  "fecha": "07/10/2026 14:26",
+  "fecha": "07/10/2026 14:41",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791468000,
@@ -3665,7 +3665,7 @@
       "opp_team": "Cleveland Guardians",
       "score_fav": "1",
       "score_opp": "0",
-      "state": "End 1st",
+      "state": "End 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 849833,
@@ -3686,17 +3686,21 @@
           {
             "away_runs": 0,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 2,
-        "balls": 2,
-        "strikes": 2,
+        "inning_ordinal": "2nd",
+        "outs": 3,
+        "balls": 1,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 1,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
@@ -4225,7 +4229,7 @@
     "849833": {
       "is_live": true,
       "is_final": false,
-      "status": "End 1st",
+      "status": "End 2nd",
       "away_runs": 1,
       "home_runs": 0,
       "away_team_name": "Cleveland Guardians",
@@ -4235,17 +4239,21 @@
           {
             "away_runs": 0,
             "home_runs": 1
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
+        "current_inning": 2,
         "is_top": false,
-        "inning_ordinal": "1st",
-        "outs": 2,
-        "balls": 2,
-        "strikes": 2,
+        "inning_ordinal": "2nd",
+        "outs": 3,
+        "balls": 1,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 1,
-        "away_hits": 0,
+        "away_hits": 1,
         "home_hits": 2,
         "away_errors": 0,
         "home_errors": 0,
@@ -4309,7 +4317,7 @@
       }
     }
   },
-  "updated_at": "07/10/2026 14:26",
+  "updated_at": "07/10/2026 14:41",
   "stats": {
     "total": 19,
     "acertados": 12,
