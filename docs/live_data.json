@@ -1,5 +1,5 @@
 {
-  "fecha": "07/10/2026 15:41",
+  "fecha": "07/10/2026 15:56",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791468000,
@@ -3664,8 +3664,8 @@
       "fav_team": "Chicago White Sox",
       "opp_team": "Cleveland Guardians",
       "score_fav": "2",
-      "score_opp": "4",
-      "state": "End 4th",
+      "score_opp": "5",
+      "state": "Bottom 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 849833,
@@ -3698,17 +3698,21 @@
           {
             "away_runs": 0,
             "home_runs": 1
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 3,
+        "inning_ordinal": "5th",
+        "outs": 0,
         "balls": 0,
-        "strikes": 3,
-        "away_runs": 4,
+        "strikes": 2,
+        "away_runs": 5,
         "home_runs": 2,
-        "away_hits": 4,
+        "away_hits": 5,
         "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
@@ -3722,9 +3726,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "4",
+        "fav_score": "5",
         "opp_score": "2",
-        "score_fav": "4",
+        "score_fav": "5",
         "score_opp": "2"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHW.png&h=40&w=40",
@@ -3781,7 +3785,7 @@
       "opp_team": "Atlanta Braves",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "📋",
       "game_pk": 849822,
@@ -3825,7 +3829,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4237,9 +4241,9 @@
     "849833": {
       "is_live": true,
       "is_final": false,
-      "status": "End 4th",
+      "status": "Bottom 5th",
       "away_runs": 2,
-      "home_runs": 4,
+      "home_runs": 5,
       "away_team_name": "Cleveland Guardians",
       "home_team_name": "Chicago White Sox",
       "linescore": {
@@ -4259,17 +4263,21 @@
           {
             "away_runs": 0,
             "home_runs": 1
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 4,
+        "current_inning": 5,
         "is_top": false,
-        "inning_ordinal": "4th",
-        "outs": 3,
+        "inning_ordinal": "5th",
+        "outs": 0,
         "balls": 0,
-        "strikes": 3,
-        "away_runs": 4,
+        "strikes": 2,
+        "away_runs": 5,
         "home_runs": 2,
-        "away_hits": 4,
+        "away_hits": 5,
         "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
@@ -4283,16 +4291,16 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "4",
+        "fav_score": "5",
         "opp_score": "2",
-        "score_fav": "4",
+        "score_fav": "5",
         "score_opp": "2"
       }
     },
     "849822": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Atlanta Braves",
@@ -4325,7 +4333,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4333,7 +4341,7 @@
       }
     }
   },
-  "updated_at": "07/10/2026 15:41",
+  "updated_at": "07/10/2026 15:56",
   "stats": {
     "total": 19,
     "acertados": 12,
