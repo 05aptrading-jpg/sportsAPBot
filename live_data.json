@@ -1,5 +1,5 @@
 {
-  "fecha": "07/10/2026 14:00",
+  "fecha": "07/10/2026 14:11",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791468000,
@@ -2960,10 +2960,15 @@
       ],
       "resultado_llm": "fallido",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3467,10 +3472,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -3650,13 +3660,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-10-07",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Chicago White Sox",
       "opp_team": "Cleveland Guardians",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Middle 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 849833,
       "fav_abbr": "CHW",
@@ -3681,9 +3691,9 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -3697,9 +3707,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -3860,7 +3870,7 @@
   "autorizados": [
     6099564810
   ],
-  "has_live": false,
+  "has_live": true,
   "has_scheduled": true,
   "live_data": {
     "401907986": {
@@ -3872,10 +3882,15 @@
       "away_team_name": "Tampa Bay Rays",
       "home_team_name": "New York Yankees",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4135,10 +4150,15 @@
       "away_team_name": "Tampa Bay Rays",
       "home_team_name": "New York Yankees",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4203,9 +4223,9 @@
       }
     },
     "849833": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Middle 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Cleveland Guardians",
@@ -4220,9 +4240,9 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 3,
+        "balls": 2,
+        "strikes": 1,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -4236,9 +4256,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4289,7 +4309,7 @@
       }
     }
   },
-  "updated_at": "07/10/2026 14:00",
+  "updated_at": "07/10/2026 14:11",
   "stats": {
     "total": 19,
     "acertados": 12,
