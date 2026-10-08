@@ -1,5 +1,5 @@
 {
-  "fecha": "08/10/2026 16:56",
+  "fecha": "08/10/2026 17:12",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791554400,
@@ -4629,7 +4629,7 @@
       }
     }
   },
-  "updated_at": "08/10/2026 16:56",
+  "updated_at": "08/10/2026 17:12",
   "stats": {
     "total": 21,
     "acertados": 14,
@@ -20006,19 +20006,31 @@
     {
       "game_date": "2026-10-08",
       "game_id": "401898392",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Cleveland Cavaliers",
       "away": "Boston Celtics",
       "home_abbr": "CLE",
       "away_abbr": "BOS",
       "home_score": 0,
       "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 0,
+          "display": "0"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 0,
+          "display": "0"
+        }
+      ],
+      "clock": "11:44",
+      "period": 1,
+      "state": "Q1 11:44",
+      "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/CLE.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/BOS.png&h=40&w=40",
@@ -20894,8 +20906,8 @@
       "liga": "NFL",
       "spread_details": "DAL -8.5",
       "over_under": 48.5,
-      "ml_home": "-520",
-      "ml_away": "+390",
+      "ml_home": "-500",
+      "ml_away": "+380",
       "home_record": "2-2",
       "away_record": "0-4",
       "week_num": 5,
