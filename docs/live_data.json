@@ -1,5 +1,5 @@
 {
-  "fecha": "07/10/2026 22:41",
+  "fecha": "07/10/2026 22:56",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791468000,
@@ -3623,7 +3623,7 @@
       "opp_team": "San Diego Padres",
       "score_fav": "3",
       "score_opp": "1",
-      "state": "Bottom 8th",
+      "state": "Top 9th",
       "result": "live",
       "label": "📋",
       "game_pk": 849827,
@@ -3672,14 +3672,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 0,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 2,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 3,
         "home_runs": 1,
         "away_hits": 10,
@@ -4412,7 +4416,7 @@
     "849827": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 8th",
+      "status": "Top 9th",
       "away_runs": 3,
       "home_runs": 1,
       "away_team_name": "San Diego Padres",
@@ -4450,14 +4454,18 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 0,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 2,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 1,
         "away_runs": 3,
         "home_runs": 1,
         "away_hits": 10,
@@ -4631,7 +4639,7 @@
       }
     }
   },
-  "updated_at": "07/10/2026 22:41",
+  "updated_at": "07/10/2026 22:56",
   "stats": {
     "total": 20,
     "acertados": 13,
@@ -19934,7 +19942,7 @@
           "display": "32"
         }
       ],
-      "clock": "0.0",
+      "clock": "12:00",
       "period": 4,
       "state": "Final",
       "result": "completed",
