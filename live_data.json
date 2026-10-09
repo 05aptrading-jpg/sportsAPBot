@@ -1,5 +1,5 @@
 {
-  "fecha": "08/10/2026 18:11",
+  "fecha": "08/10/2026 18:26",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791554400,
@@ -4031,7 +4031,7 @@
       "opp_team": "Cleveland Guardians",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Top 1st",
+      "state": "Middle 1st",
       "result": "live",
       "label": "📋",
       "game_pk": 849832,
@@ -4057,9 +4057,9 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 1,
+        "outs": 3,
         "balls": 1,
-        "strikes": 0,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -4588,7 +4588,7 @@
     "849832": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 1st",
+      "status": "Middle 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Cleveland Guardians",
@@ -4603,9 +4603,9 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 1,
+        "outs": 3,
         "balls": 1,
-        "strikes": 0,
+        "strikes": 3,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -4629,7 +4629,7 @@
       }
     }
   },
-  "updated_at": "08/10/2026 18:11",
+  "updated_at": "08/10/2026 18:26",
   "stats": {
     "total": 21,
     "acertados": 14,
@@ -20012,7 +20012,7 @@
       "home_abbr": "CLE",
       "away_abbr": "BOS",
       "home_score": 62,
-      "away_score": 70,
+      "away_score": 71,
       "home_linescores": [
         {
           "period": 1,
@@ -20033,13 +20033,13 @@
         },
         {
           "period": 2,
-          "value": 38,
-          "display": "38"
+          "value": 39,
+          "display": "39"
         }
       ],
-      "clock": "20.8",
+      "clock": "0.0",
       "period": 2,
-      "state": "Q2 20.8",
+      "state": "Q2 0.0",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/CLE.png&h=40&w=40",
@@ -20130,13 +20130,18 @@
       "away": "New Orleans Pelicans",
       "home_abbr": "MIA",
       "away_abbr": "NO",
-      "home_score": 33,
-      "away_score": 36,
+      "home_score": 45,
+      "away_score": 46,
       "home_linescores": [
         {
           "period": 1,
           "value": 33,
           "display": "33"
+        },
+        {
+          "period": 2,
+          "value": 12,
+          "display": "12"
         }
       ],
       "away_linescores": [
@@ -20144,11 +20149,16 @@
           "period": 1,
           "value": 36,
           "display": "36"
+        },
+        {
+          "period": 2,
+          "value": 10,
+          "display": "10"
         }
       ],
-      "clock": "0.0",
-      "period": 1,
-      "state": "Q1 0.0",
+      "clock": "7:28",
+      "period": 2,
+      "state": "Q2 7:28",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/MIA.png&h=40&w=40",
@@ -20239,13 +20249,18 @@
       "away": "Philadelphia 76ers",
       "home_abbr": "BKN",
       "away_abbr": "PHI",
-      "home_score": 32,
-      "away_score": 33,
+      "home_score": 39,
+      "away_score": 37,
       "home_linescores": [
         {
           "period": 1,
-          "value": 32,
-          "display": "32"
+          "value": 33,
+          "display": "33"
+        },
+        {
+          "period": 2,
+          "value": 6,
+          "display": "6"
         }
       ],
       "away_linescores": [
@@ -20253,11 +20268,16 @@
           "period": 1,
           "value": 33,
           "display": "33"
+        },
+        {
+          "period": 2,
+          "value": 4,
+          "display": "4"
         }
       ],
-      "clock": "0.0",
-      "period": 1,
-      "state": "Q1 0.0",
+      "clock": "8:20",
+      "period": 2,
+      "state": "Q2 8:20",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/BKN.png&h=40&w=40",
@@ -20348,13 +20368,18 @@
       "away": "Washington Wizards",
       "home_abbr": "NY",
       "away_abbr": "WSH",
-      "home_score": 29,
-      "away_score": 30,
+      "home_score": 38,
+      "away_score": 39,
       "home_linescores": [
         {
           "period": 1,
           "value": 29,
           "display": "29"
+        },
+        {
+          "period": 2,
+          "value": 9,
+          "display": "9"
         }
       ],
       "away_linescores": [
@@ -20362,11 +20387,16 @@
           "period": 1,
           "value": 30,
           "display": "30"
+        },
+        {
+          "period": 2,
+          "value": 9,
+          "display": "9"
         }
       ],
-      "clock": "0.0",
-      "period": 1,
-      "state": "Q1 0.0",
+      "clock": "7:09",
+      "period": 2,
+      "state": "Q2 7:09",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/NY.png&h=40&w=40",
@@ -20457,25 +20487,25 @@
       "away": "Atlanta Hawks",
       "home_abbr": "SA",
       "away_abbr": "ATL",
-      "home_score": 0,
-      "away_score": 0,
+      "home_score": 17,
+      "away_score": 12,
       "home_linescores": [
         {
           "period": 1,
-          "value": 0,
-          "display": "0"
+          "value": 17,
+          "display": "17"
         }
       ],
       "away_linescores": [
         {
           "period": 1,
-          "value": 0,
-          "display": "0"
+          "value": 12,
+          "display": "12"
         }
       ],
-      "clock": "11:25",
+      "clock": "5:41",
       "period": 1,
-      "state": "Q1 11:25",
+      "state": "Q1 5:41",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/SA.png&h=40&w=40",
@@ -20950,22 +20980,22 @@
     {
       "game_date": "2026-10-08",
       "game_id": "401872980",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Dallas Cowboys",
       "away": "Tampa Bay Buccaneers",
       "home_abbr": "DAL",
       "away_abbr": "TB",
-      "home_score": 0,
+      "home_score": 7,
       "away_score": 0,
-      "clock": "0:00",
-      "period": 0,
-      "state": "Thu, October 8th at 8:15 PM EDT",
-      "result": "pending",
+      "clock": "10:51",
+      "period": 1,
+      "state": "Q1 10:51",
+      "result": "live",
       "liga": "NFL",
-      "spread_details": "DAL -9.5",
-      "over_under": 49.5,
-      "ml_home": "-535",
-      "ml_away": "+400",
+      "spread_details": "",
+      "over_under": "",
+      "ml_home": "",
+      "ml_away": "",
       "home_record": "2-2",
       "away_record": "0-4",
       "week_num": 5,
