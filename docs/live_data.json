@@ -1,5 +1,5 @@
 {
-  "fecha": "08/10/2026 21:12",
+  "fecha": "08/10/2026 21:26",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791554400,
@@ -4031,7 +4031,7 @@
       "opp_team": "Cleveland Guardians",
       "score_fav": "4",
       "score_opp": "9",
-      "state": "Bottom 8th",
+      "state": "Top 9th",
       "result": "live",
       "label": "📋",
       "game_pk": 849832,
@@ -4080,18 +4080,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 1,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 9,
         "home_runs": 4,
         "away_hits": 9,
-        "home_hits": 5,
+        "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Cleveland Guardians",
@@ -4616,7 +4620,7 @@
     "849832": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 8th",
+      "status": "Top 9th",
       "away_runs": 4,
       "home_runs": 9,
       "away_team_name": "Cleveland Guardians",
@@ -4654,18 +4658,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 8,
-        "is_top": false,
-        "inning_ordinal": "8th",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 9,
+        "is_top": true,
+        "inning_ordinal": "9th",
+        "outs": 1,
+        "balls": 1,
+        "strikes": 2,
         "away_runs": 9,
         "home_runs": 4,
         "away_hits": 9,
-        "home_hits": 5,
+        "home_hits": 6,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Cleveland Guardians",
@@ -4685,7 +4693,7 @@
       }
     }
   },
-  "updated_at": "08/10/2026 21:12",
+  "updated_at": "08/10/2026 21:26",
   "stats": {
     "total": 21,
     "acertados": 14,
@@ -20762,25 +20770,35 @@
       "away": "Sacramento Kings",
       "home_abbr": "LAL",
       "away_abbr": "SAC",
-      "home_score": 19,
-      "away_score": 17,
+      "home_score": 35,
+      "away_score": 25,
       "home_linescores": [
         {
           "period": 1,
           "value": 21,
           "display": "21"
+        },
+        {
+          "period": 2,
+          "value": 14,
+          "display": "14"
         }
       ],
       "away_linescores": [
         {
           "period": 1,
-          "value": 17,
-          "display": "17"
+          "value": 20,
+          "display": "20"
+        },
+        {
+          "period": 2,
+          "value": 5,
+          "display": "5"
         }
       ],
-      "clock": "1:48",
-      "period": 1,
-      "state": "Q1 1:48",
+      "clock": "7:44",
+      "period": 2,
+      "state": "Q2 7:44",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/LAL.png&h=40&w=40",
@@ -21158,24 +21176,24 @@
     {
       "game_date": "2026-10-08",
       "game_id": "401872980",
-      "status_emoji": "🔴",
+      "status_emoji": "🏁",
       "home": "Dallas Cowboys",
       "away": "Tampa Bay Buccaneers",
       "home_abbr": "DAL",
       "away_abbr": "TB",
       "home_score": 16,
       "away_score": 24,
-      "clock": "2:44",
+      "clock": "0:00",
       "period": 4,
-      "state": "Q4 2:44",
-      "result": "live",
+      "state": "Final",
+      "result": "completed",
       "liga": "NFL",
       "spread_details": "",
       "over_under": "",
       "ml_home": "",
       "ml_away": "",
-      "home_record": "2-2",
-      "away_record": "0-4",
+      "home_record": "2-3",
+      "away_record": "1-4",
       "week_num": 5,
       "season_year": 2026,
       "season_type": 2,
