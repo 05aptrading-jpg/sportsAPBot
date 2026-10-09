@@ -1,5 +1,5 @@
 {
-  "fecha": "09/10/2026 06:11",
+  "fecha": "09/10/2026 06:27",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791554400,
@@ -4535,7 +4535,7 @@
       }
     }
   },
-  "updated_at": "09/10/2026 06:11",
+  "updated_at": "09/10/2026 06:27",
   "stats": {
     "total": 22,
     "acertados": 14,
@@ -19672,19 +19672,31 @@
     {
       "game_date": "2026-10-09",
       "game_id": "401898395",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Dallas Mavericks",
       "away": "Houston Rockets",
       "home_abbr": "DAL",
       "away_abbr": "HOU",
-      "home_score": 0,
-      "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "home_score": 10,
+      "away_score": 19,
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 10,
+          "display": "10"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 19,
+          "display": "19"
+        }
+      ],
+      "clock": "4:43",
+      "period": 1,
+      "state": "Q1 4:43",
+      "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/DAL.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/HOU.png&h=40&w=40",
