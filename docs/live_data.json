@@ -1,5 +1,5 @@
 {
-  "fecha": "08/10/2026 20:41",
+  "fecha": "08/10/2026 20:56",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791554400,
@@ -4031,7 +4031,7 @@
       "opp_team": "Cleveland Guardians",
       "score_fav": "4",
       "score_opp": "9",
-      "state": "Bottom 6th",
+      "state": "Middle 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 849832,
@@ -4072,18 +4072,22 @@
           {
             "away_runs": 6,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
-        "outs": 2,
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
+        "outs": 3,
         "balls": 3,
-        "strikes": 0,
+        "strikes": 2,
         "away_runs": 9,
         "home_runs": 4,
         "away_hits": 9,
-        "home_hits": 3,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Cleveland Guardians",
@@ -4608,7 +4612,7 @@
     "849832": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 6th",
+      "status": "Middle 7th",
       "away_runs": 4,
       "home_runs": 9,
       "away_team_name": "Cleveland Guardians",
@@ -4638,18 +4642,22 @@
           {
             "away_runs": 6,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
-        "outs": 2,
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
+        "outs": 3,
         "balls": 3,
-        "strikes": 0,
+        "strikes": 2,
         "away_runs": 9,
         "home_runs": 4,
         "away_hits": 9,
-        "home_hits": 3,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Cleveland Guardians",
@@ -4669,7 +4677,7 @@
       }
     }
   },
-  "updated_at": "08/10/2026 20:41",
+  "updated_at": "08/10/2026 20:56",
   "stats": {
     "total": 21,
     "acertados": 14,
@@ -20375,7 +20383,7 @@
           "display": "27"
         }
       ],
-      "clock": "0.0",
+      "clock": "12:00",
       "period": 4,
       "state": "Final",
       "result": "completed",
@@ -20741,19 +20749,31 @@
     {
       "game_date": "2026-10-08",
       "game_id": "401898717",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Los Angeles Lakers",
       "away": "Sacramento Kings",
       "home_abbr": "LAL",
       "away_abbr": "SAC",
-      "home_score": 0,
-      "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "home_score": 7,
+      "away_score": 10,
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 7,
+          "display": "7"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 10,
+          "display": "10"
+        }
+      ],
+      "clock": "6:51",
+      "period": 1,
+      "state": "Q1 6:51",
+      "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/LAL.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/SAC.png&h=40&w=40",
@@ -21137,9 +21157,9 @@
       "away_abbr": "TB",
       "home_score": 10,
       "away_score": 24,
-      "clock": "14:56",
+      "clock": "6:14",
       "period": 4,
-      "state": "Q4 14:56",
+      "state": "Q4 6:14",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
