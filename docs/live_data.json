@@ -1,5 +1,5 @@
 {
-  "fecha": "09/10/2026 17:26",
+  "fecha": "09/10/2026 17:41",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791640800,
@@ -4535,7 +4535,7 @@
       }
     }
   },
-  "updated_at": "09/10/2026 17:26",
+  "updated_at": "09/10/2026 17:41",
   "stats": {
     "total": 22,
     "acertados": 14,
@@ -21032,19 +21032,31 @@
     {
       "game_date": "2026-10-09",
       "game_id": "401918299",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "New York Liberty",
       "away": "Atlanta Dream",
       "home_abbr": "NY",
       "away_abbr": "ATL",
-      "home_score": 0,
-      "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "home_score": 9,
+      "away_score": 10,
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 9,
+          "display": "9"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 10,
+          "display": "10"
+        }
+      ],
+      "clock": "5:11",
+      "period": 1,
+      "state": "Q1 5:11",
+      "result": "live",
       "liga": "WNBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/NY.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/wnba/500/ATL.png&h=40&w=40",
