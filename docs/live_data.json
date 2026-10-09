@@ -1,5 +1,5 @@
 {
-  "fecha": "08/10/2026 20:26",
+  "fecha": "08/10/2026 20:41",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791554400,
@@ -4030,8 +4030,8 @@
       "fav_team": "Chicago White Sox",
       "opp_team": "Cleveland Guardians",
       "score_fav": "4",
-      "score_opp": "5",
-      "state": "Top 6th",
+      "score_opp": "9",
+      "state": "Bottom 6th",
       "result": "live",
       "label": "📋",
       "game_pk": 849832,
@@ -4070,19 +4070,19 @@
             "home_runs": 2
           },
           {
-            "away_runs": 2,
+            "away_runs": 6,
             "home_runs": 0
           }
         ],
         "current_inning": 6,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "6th",
-        "outs": 1,
-        "balls": 0,
+        "outs": 2,
+        "balls": 3,
         "strikes": 0,
-        "away_runs": 5,
+        "away_runs": 9,
         "home_runs": 4,
-        "away_hits": 6,
+        "away_hits": 9,
         "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
@@ -4096,9 +4096,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "5",
+        "fav_score": "9",
         "opp_score": "4",
-        "score_fav": "5",
+        "score_fav": "9",
         "score_opp": "4"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHW.png&h=40&w=40",
@@ -4608,9 +4608,9 @@
     "849832": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 6th",
+      "status": "Bottom 6th",
       "away_runs": 4,
-      "home_runs": 5,
+      "home_runs": 9,
       "away_team_name": "Cleveland Guardians",
       "home_team_name": "Chicago White Sox",
       "linescore": {
@@ -4636,19 +4636,19 @@
             "home_runs": 2
           },
           {
-            "away_runs": 2,
+            "away_runs": 6,
             "home_runs": 0
           }
         ],
         "current_inning": 6,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "6th",
-        "outs": 1,
-        "balls": 0,
+        "outs": 2,
+        "balls": 3,
         "strikes": 0,
-        "away_runs": 5,
+        "away_runs": 9,
         "home_runs": 4,
-        "away_hits": 6,
+        "away_hits": 9,
         "home_hits": 3,
         "away_errors": 0,
         "home_errors": 0,
@@ -4662,14 +4662,14 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "5",
+        "fav_score": "9",
         "opp_score": "4",
-        "score_fav": "5",
+        "score_fav": "9",
         "score_opp": "4"
       }
     }
   },
-  "updated_at": "08/10/2026 20:26",
+  "updated_at": "08/10/2026 20:41",
   "stats": {
     "total": 21,
     "acertados": 14,
@@ -20236,7 +20236,7 @@
           "display": "22"
         }
       ],
-      "clock": "0.0",
+      "clock": "12:00",
       "period": 4,
       "state": "Final",
       "result": "completed",
@@ -20514,7 +20514,7 @@
           "display": "30"
         }
       ],
-      "clock": "0.0",
+      "clock": "12:00",
       "period": 4,
       "state": "Final",
       "result": "completed",
@@ -21137,9 +21137,9 @@
       "away_abbr": "TB",
       "home_score": 10,
       "away_score": 24,
-      "clock": "2:58",
-      "period": 3,
-      "state": "Q3 2:58",
+      "clock": "14:56",
+      "period": 4,
+      "state": "Q4 14:56",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
