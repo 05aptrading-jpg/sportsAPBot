@@ -1,5 +1,5 @@
 {
-  "fecha": "11/10/2026 14:27",
+  "fecha": "11/10/2026 14:42",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791813600,
@@ -4500,7 +4500,7 @@
       }
     }
   },
-  "updated_at": "11/10/2026 14:27",
+  "updated_at": "11/10/2026 14:42",
   "stats": {
     "total": 22,
     "acertados": 14,
@@ -23056,9 +23056,9 @@
       "away_abbr": "NYG",
       "home_score": 27,
       "away_score": 27,
-      "clock": "7:57",
+      "clock": "1:55",
       "period": 5,
-      "state": "OT 7:57",
+      "state": "OT 1:55",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
@@ -23160,9 +23160,9 @@
       "away_abbr": "DEN",
       "home_score": 0,
       "away_score": 7,
-      "clock": "6:47",
+      "clock": "0:00",
       "period": 1,
-      "state": "Q1 6:47",
+      "state": "Q1 0:00",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
@@ -23253,6 +23253,210 @@
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
       "llm_favorito": "Los Angeles Chargers"
+    },
+    {
+      "game_date": "2026-10-11",
+      "game_id": "401872991",
+      "status_emoji": "🔴",
+      "home": "Arizona Cardinals",
+      "away": "Detroit Lions",
+      "home_abbr": "ARI",
+      "away_abbr": "DET",
+      "home_score": 7,
+      "away_score": 0,
+      "clock": "5:06",
+      "period": 1,
+      "state": "Q1 5:06",
+      "result": "live",
+      "liga": "NFL",
+      "spread_details": "",
+      "over_under": "",
+      "ml_home": "",
+      "ml_away": "",
+      "home_record": "1-3",
+      "away_record": "2-2",
+      "week_num": 5,
+      "season_year": 2026,
+      "season_type": 2,
+      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/ARI.png&h=40&w=40",
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/DET.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y ofensiva más equilibrada.",
+      "llm_factores": [
+        "Rendimiento ofensivo",
+        "Ventaja de local"
+      ],
+      "llm_puntos_local": 21,
+      "llm_puntos_visitante": 28,
+      "llm_spread": 7.0,
+      "llm_confianza_ou": 68,
+      "llm_linea_ou": 49.5,
+      "llm_anotadores": [
+        {
+          "nombre": "James Conner",
+          "equipo": "Local",
+          "pts_estimados": 70.0,
+          "confianza_pts": 70
+        },
+        {
+          "nombre": "Amon-Ra St. Brown",
+          "equipo": "Visitante",
+          "pts_estimados": 85.0,
+          "confianza_pts": 75
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Isaiah Simmons",
+          "equipo": "Local",
+          "reb_estimados": 6.0,
+          "robos_estimados": 0.5,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 75
+        },
+        {
+          "nombre": "Aidan Hutchinson",
+          "equipo": "Visitante",
+          "reb_estimados": 5.5,
+          "robos_estimados": 0.4,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 80
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Kyler Murray",
+          "equipo": "Local",
+          "ast_estimadas": 4.5,
+          "confianza_ast": 70
+        },
+        {
+          "nombre": "Jared Goff",
+          "equipo": "Visitante",
+          "ast_estimadas": 5.0,
+          "confianza_ast": 75
+        }
+      ],
+      "llm_ranking_local": "NFC: 3° (3-2)",
+      "llm_ranking_visitante": "NFC: 1° (5-0)",
+      "llm_stats_comparison": {
+        "ppg_local": 22.0,
+        "ppg_visitante": 29.0,
+        "opp_ppg_local": 25.0,
+        "opp_ppg_visitante": 20.0,
+        "fg_pct_local": 44.0,
+        "fg_pct_visitante": 46.0,
+        "pace_analysis": "Ritmo moderado, Lions tienen un ataque balanceado."
+      },
+      "llm_lineas_ou": {
+        "over_40": 75,
+        "over_45": 60,
+        "over_50": 50
+      },
+      "llm_b2b_impacto": "",
+      "llm_lesion_clave": "",
+      "llm_jugadores_clave": [],
+      "llm_favorito": "Detroit Lions"
+    },
+    {
+      "game_date": "2026-10-11",
+      "game_id": "401872992",
+      "status_emoji": "🔴",
+      "home": "Seattle Seahawks",
+      "away": "San Francisco 49ers",
+      "home_abbr": "SEA",
+      "away_abbr": "SF",
+      "home_score": 0,
+      "away_score": 7,
+      "clock": "7:18",
+      "period": 1,
+      "state": "Q1 7:18",
+      "result": "live",
+      "liga": "NFL",
+      "spread_details": "",
+      "over_under": "",
+      "ml_home": "",
+      "ml_away": "",
+      "home_record": "3-1",
+      "away_record": "4-0",
+      "week_num": 5,
+      "season_year": 2026,
+      "season_type": 2,
+      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/SEA.png&h=40&w=40",
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/SF.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "49ers son favoritos por su defensa y récord superior.",
+      "llm_factores": [
+        "Localía de Seahawks",
+        "Rendimiento defensivo de 49ers"
+      ],
+      "llm_puntos_local": 0,
+      "llm_puntos_visitante": 0,
+      "llm_spread": 5.5,
+      "llm_confianza_ou": 60,
+      "llm_linea_ou": 50.0,
+      "llm_anotadores": [
+        {
+          "nombre": "DK Metcalf",
+          "equipo": "Local",
+          "pts_estimados": 24.0,
+          "confianza_pts": 75
+        },
+        {
+          "nombre": "Deebo Samuel",
+          "equipo": "Visitante",
+          "pts_estimados": 26.0,
+          "confianza_pts": 70
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Bobby Wagner",
+          "equipo": "Local",
+          "reb_estimados": 9.0,
+          "robos_estimados": 0.7,
+          "bloqueos_estimados": 0.4,
+          "confianza_def": 80
+        },
+        {
+          "nombre": "Nick Bosa",
+          "equipo": "Visitante",
+          "reb_estimados": 6.0,
+          "robos_estimados": 0.5,
+          "bloqueos_estimados": 1.5,
+          "confianza_def": 85
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Geno Smith",
+          "equipo": "Local",
+          "ast_estimadas": 6.0,
+          "confianza_ast": 70
+        },
+        {
+          "nombre": "Jimmy Garoppolo",
+          "equipo": "Visitante",
+          "ast_estimadas": 5.5,
+          "confianza_ast": 65
+        }
+      ],
+      "llm_ranking_local": "NFC: 5° (3-3)",
+      "llm_ranking_visitante": "NFC: 2° (4-1)",
+      "llm_stats_comparison": {
+        "ppg_local": 27.0,
+        "ppg_visitante": 29.0,
+        "opp_ppg_local": 25.0,
+        "opp_ppg_visitante": 21.0,
+        "fg_pct_local": 44.0,
+        "fg_pct_visitante": 48.0,
+        "pace_analysis": "Ritmo moderado, ambos equipos se enfocan en el ataque terrestre."
+      },
+      "llm_b2b_impacto": "",
+      "llm_lesion_clave": "",
+      "llm_jugadores_clave": [],
+      "llm_lineas_ou": {},
+      "llm_favorito": "San Francisco 49ers"
     },
     {
       "game_date": "2026-10-11",
@@ -24077,210 +24281,6 @@
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
       "llm_favorito": "Pittsburgh Steelers"
-    },
-    {
-      "game_date": "2026-10-11",
-      "game_id": "401872991",
-      "status_emoji": "🔴",
-      "home": "Arizona Cardinals",
-      "away": "Detroit Lions",
-      "home_abbr": "ARI",
-      "away_abbr": "DET",
-      "home_score": 0,
-      "away_score": 0,
-      "clock": "15:00",
-      "period": 1,
-      "state": "Q1 15:00",
-      "result": "live",
-      "liga": "NFL",
-      "spread_details": "",
-      "over_under": "",
-      "ml_home": "",
-      "ml_away": "",
-      "home_record": "1-3",
-      "away_record": "2-2",
-      "week_num": 5,
-      "season_year": 2026,
-      "season_type": 2,
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/ARI.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/DET.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y ofensiva más equilibrada.",
-      "llm_factores": [
-        "Rendimiento ofensivo",
-        "Ventaja de local"
-      ],
-      "llm_puntos_local": 21,
-      "llm_puntos_visitante": 28,
-      "llm_spread": 7.0,
-      "llm_confianza_ou": 68,
-      "llm_linea_ou": 49.5,
-      "llm_anotadores": [
-        {
-          "nombre": "James Conner",
-          "equipo": "Local",
-          "pts_estimados": 70.0,
-          "confianza_pts": 70
-        },
-        {
-          "nombre": "Amon-Ra St. Brown",
-          "equipo": "Visitante",
-          "pts_estimados": 85.0,
-          "confianza_pts": 75
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Isaiah Simmons",
-          "equipo": "Local",
-          "reb_estimados": 6.0,
-          "robos_estimados": 0.5,
-          "bloqueos_estimados": 0.5,
-          "confianza_def": 75
-        },
-        {
-          "nombre": "Aidan Hutchinson",
-          "equipo": "Visitante",
-          "reb_estimados": 5.5,
-          "robos_estimados": 0.4,
-          "bloqueos_estimados": 1.0,
-          "confianza_def": 80
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Kyler Murray",
-          "equipo": "Local",
-          "ast_estimadas": 4.5,
-          "confianza_ast": 70
-        },
-        {
-          "nombre": "Jared Goff",
-          "equipo": "Visitante",
-          "ast_estimadas": 5.0,
-          "confianza_ast": 75
-        }
-      ],
-      "llm_ranking_local": "NFC: 3° (3-2)",
-      "llm_ranking_visitante": "NFC: 1° (5-0)",
-      "llm_stats_comparison": {
-        "ppg_local": 22.0,
-        "ppg_visitante": 29.0,
-        "opp_ppg_local": 25.0,
-        "opp_ppg_visitante": 20.0,
-        "fg_pct_local": 44.0,
-        "fg_pct_visitante": 46.0,
-        "pace_analysis": "Ritmo moderado, Lions tienen un ataque balanceado."
-      },
-      "llm_lineas_ou": {
-        "over_40": 75,
-        "over_45": 60,
-        "over_50": 50
-      },
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_favorito": "Detroit Lions"
-    },
-    {
-      "game_date": "2026-10-11",
-      "game_id": "401872992",
-      "status_emoji": "🔴",
-      "home": "Seattle Seahawks",
-      "away": "San Francisco 49ers",
-      "home_abbr": "SEA",
-      "away_abbr": "SF",
-      "home_score": 0,
-      "away_score": 0,
-      "clock": "14:13",
-      "period": 1,
-      "state": "Q1 14:13",
-      "result": "live",
-      "liga": "NFL",
-      "spread_details": "",
-      "over_under": "",
-      "ml_home": "",
-      "ml_away": "",
-      "home_record": "3-1",
-      "away_record": "4-0",
-      "week_num": 5,
-      "season_year": 2026,
-      "season_type": 2,
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/SEA.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/SF.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "49ers son favoritos por su defensa y récord superior.",
-      "llm_factores": [
-        "Localía de Seahawks",
-        "Rendimiento defensivo de 49ers"
-      ],
-      "llm_puntos_local": 0,
-      "llm_puntos_visitante": 0,
-      "llm_spread": 5.5,
-      "llm_confianza_ou": 60,
-      "llm_linea_ou": 50.0,
-      "llm_anotadores": [
-        {
-          "nombre": "DK Metcalf",
-          "equipo": "Local",
-          "pts_estimados": 24.0,
-          "confianza_pts": 75
-        },
-        {
-          "nombre": "Deebo Samuel",
-          "equipo": "Visitante",
-          "pts_estimados": 26.0,
-          "confianza_pts": 70
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Bobby Wagner",
-          "equipo": "Local",
-          "reb_estimados": 9.0,
-          "robos_estimados": 0.7,
-          "bloqueos_estimados": 0.4,
-          "confianza_def": 80
-        },
-        {
-          "nombre": "Nick Bosa",
-          "equipo": "Visitante",
-          "reb_estimados": 6.0,
-          "robos_estimados": 0.5,
-          "bloqueos_estimados": 1.5,
-          "confianza_def": 85
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Geno Smith",
-          "equipo": "Local",
-          "ast_estimadas": 6.0,
-          "confianza_ast": 70
-        },
-        {
-          "nombre": "Jimmy Garoppolo",
-          "equipo": "Visitante",
-          "ast_estimadas": 5.5,
-          "confianza_ast": 65
-        }
-      ],
-      "llm_ranking_local": "NFC: 5° (3-3)",
-      "llm_ranking_visitante": "NFC: 2° (4-1)",
-      "llm_stats_comparison": {
-        "ppg_local": 27.0,
-        "ppg_visitante": 29.0,
-        "opp_ppg_local": 25.0,
-        "opp_ppg_visitante": 21.0,
-        "fg_pct_local": 44.0,
-        "fg_pct_visitante": 48.0,
-        "pace_analysis": "Ritmo moderado, ambos equipos se enfocan en el ataque terrestre."
-      },
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_lineas_ou": {},
-      "llm_favorito": "San Francisco 49ers"
     },
     {
       "game_date": "2026-10-11",
