@@ -1,5 +1,5 @@
 {
-  "fecha": "11/10/2026 00:42",
+  "fecha": "11/10/2026 00:57",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791727200,
@@ -4433,7 +4433,7 @@
       "linescore": {}
     }
   },
-  "updated_at": "11/10/2026 00:42",
+  "updated_at": "11/10/2026 00:57",
   "stats": {
     "total": 22,
     "acertados": 14,
@@ -16011,62 +16011,158 @@
       }
     },
     "2026-10-11___NBA___Seattle Seahawks___San Francisco 49ers": {
-      "ir": "NO",
-      "pq": "No hay datos suficientes para un análisis adecuado.",
-      "factores": [],
+      "ir": "SÍ",
+      "pq": "49ers son favoritos por su defensa y récord superior.",
+      "factores": [
+        "Localía de Seahawks",
+        "Rendimiento defensivo de 49ers"
+      ],
       "favorito": "San Francisco 49ers",
       "puntos_local": 0,
       "puntos_visitante": 0,
-      "spread": 0.0,
-      "confianza_ou": 0,
-      "linea_ou": 0.0,
+      "spread": 5.5,
+      "confianza_ou": 60,
+      "linea_ou": 50.0,
       "b2b_impacto": "",
       "lesion_clave": "",
       "jugadores_clave": [],
-      "anotadores": [],
-      "defensores": [],
-      "armadores": [],
-      "ranking_local": "",
-      "ranking_visitante": "",
+      "anotadores": [
+        {
+          "nombre": "DK Metcalf",
+          "equipo": "Local",
+          "pts_estimados": 24.0,
+          "confianza_pts": 75
+        },
+        {
+          "nombre": "Deebo Samuel",
+          "equipo": "Visitante",
+          "pts_estimados": 26.0,
+          "confianza_pts": 70
+        }
+      ],
+      "defensores": [
+        {
+          "nombre": "Bobby Wagner",
+          "equipo": "Local",
+          "reb_estimados": 9.0,
+          "robos_estimados": 0.7,
+          "bloqueos_estimados": 0.4,
+          "confianza_def": 80
+        },
+        {
+          "nombre": "Nick Bosa",
+          "equipo": "Visitante",
+          "reb_estimados": 6.0,
+          "robos_estimados": 0.5,
+          "bloqueos_estimados": 1.5,
+          "confianza_def": 85
+        }
+      ],
+      "armadores": [
+        {
+          "nombre": "Geno Smith",
+          "equipo": "Local",
+          "ast_estimadas": 6.0,
+          "confianza_ast": 70
+        },
+        {
+          "nombre": "Jimmy Garoppolo",
+          "equipo": "Visitante",
+          "ast_estimadas": 5.5,
+          "confianza_ast": 65
+        }
+      ],
+      "ranking_local": "NFC: 5° (3-3)",
+      "ranking_visitante": "NFC: 2° (4-1)",
       "stats_comparison": {
-        "ppg_local": 0,
-        "ppg_visitante": 0,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 0,
-        "fg_pct_visitante": 0,
-        "pace_analysis": ""
+        "ppg_local": 27.0,
+        "ppg_visitante": 29.0,
+        "opp_ppg_local": 25.0,
+        "opp_ppg_visitante": 21.0,
+        "fg_pct_local": 44.0,
+        "fg_pct_visitante": 48.0,
+        "pace_analysis": "Ritmo moderado, ambos equipos se enfocan en el ataque terrestre."
       },
       "lineas_ou": {}
     },
     "2026-10-11___NBA___Atlanta Falcons___Baltimore Ravens": {
-      "ir": "NO",
-      "pq": "No hay datos suficientes para un análisis adecuado.",
-      "factores": [],
+      "ir": "SÍ",
+      "pq": "Ravens tienen mejor récord y estadísticas ofensivas.",
+      "factores": [
+        "Localía de Falcons",
+        "Ravens con mejor eficiencia ofensiva"
+      ],
       "favorito": "Baltimore Ravens",
-      "puntos_local": 0,
-      "puntos_visitante": 0,
-      "spread": 0.0,
-      "confianza_ou": 0,
-      "linea_ou": 0.0,
+      "puntos_local": 24,
+      "puntos_visitante": 28,
+      "spread": 4.0,
+      "confianza_ou": 65,
+      "linea_ou": 48.5,
       "b2b_impacto": "",
       "lesion_clave": "",
       "jugadores_clave": [],
-      "anotadores": [],
-      "defensores": [],
-      "armadores": [],
-      "ranking_local": "",
-      "ranking_visitante": "",
+      "anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Atlanta Falcons",
+          "pts_estimados": 22.0,
+          "confianza_pts": 70
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Baltimore Ravens",
+          "pts_estimados": 30.0,
+          "confianza_pts": 75
+        }
+      ],
+      "defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Atlanta Falcons",
+          "reb_estimados": 8.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 70
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Baltimore Ravens",
+          "reb_estimados": 7.0,
+          "robos_estimados": 1.5,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 75
+        }
+      ],
+      "armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Atlanta Falcons",
+          "ast_estimadas": 6.0,
+          "confianza_ast": 65
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Baltimore Ravens",
+          "ast_estimadas": 7.0,
+          "confianza_ast": 70
+        }
+      ],
+      "ranking_local": "NFC: 2° (4-2)",
+      "ranking_visitante": "AFC: 1° (5-1)",
       "stats_comparison": {
-        "ppg_local": 0,
-        "ppg_visitante": 0,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 0,
-        "fg_pct_visitante": 0,
-        "pace_analysis": ""
+        "ppg_local": 24.0,
+        "ppg_visitante": 28.0,
+        "opp_ppg_local": 22.0,
+        "opp_ppg_visitante": 20.0,
+        "fg_pct_local": 45.0,
+        "fg_pct_visitante": 48.0,
+        "pace_analysis": "Ritmo moderado, Ravens juegan más rápido."
       },
-      "lineas_ou": {}
+      "lineas_ou": {
+        "over_140": 80,
+        "over_150": 65,
+        "over_160": 50
+      }
     },
     "2026-08-08___LMB___Diablos Rojos del Mexico___Guerreros de Oaxaca": {
       "ir": "SÍ",
@@ -20641,6 +20737,156 @@
       },
       "ranking_local": "",
       "ranking_visitante": ""
+    },
+    "2026-10-11___NBA___Jacksonville Jaguars___Philadelphia Eagles": {
+      "ir": "SÍ",
+      "pq": "Eagles tienen mejor récord y estadísticas ofensivas.",
+      "factores": [
+        "Localía de Jaguars",
+        "Rendimiento reciente de Eagles"
+      ],
+      "favorito": "Philadelphia Eagles",
+      "puntos_local": 0,
+      "puntos_visitante": 0,
+      "spread": 3.5,
+      "confianza_ou": 50,
+      "linea_ou": 45.5,
+      "b2b_impacto": "",
+      "lesion_clave": "",
+      "jugadores_clave": [],
+      "anotadores": [
+        {
+          "nombre": "Trevor Lawrence",
+          "equipo": "Local",
+          "pts_estimados": 25.0,
+          "confianza_pts": 70
+        },
+        {
+          "nombre": "Jalen Hurts",
+          "equipo": "Visitante",
+          "pts_estimados": 28.0,
+          "confianza_pts": 75
+        }
+      ],
+      "defensores": [
+        {
+          "nombre": "Josh Allen",
+          "equipo": "Local",
+          "reb_estimados": 8.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 75
+        },
+        {
+          "nombre": "Darius Slay",
+          "equipo": "Visitante",
+          "reb_estimados": 5.0,
+          "robos_estimados": 1.5,
+          "bloqueos_estimados": 0.2,
+          "confianza_def": 80
+        }
+      ],
+      "armadores": [
+        {
+          "nombre": "Travis Etienne",
+          "equipo": "Local",
+          "ast_estimadas": 4.5,
+          "confianza_ast": 65
+        },
+        {
+          "nombre": "Miles Sanders",
+          "equipo": "Visitante",
+          "ast_estimadas": 3.5,
+          "confianza_ast": 60
+        }
+      ],
+      "ranking_local": "AFC: 2° (3-1)",
+      "ranking_visitante": "NFC: 1° (4-0)",
+      "stats_comparison": {
+        "ppg_local": 24.5,
+        "ppg_visitante": 28.0,
+        "opp_ppg_local": 21.0,
+        "opp_ppg_visitante": 19.5,
+        "fg_pct_local": 45.0,
+        "fg_pct_visitante": 47.5,
+        "pace_analysis": "Ritmo moderado, ambos equipos juegan controlado."
+      },
+      "lineas_ou": {}
+    },
+    "2026-10-11___NBA___Green Bay Packers___Chicago Bears": {
+      "ir": "SÍ",
+      "pq": "Packers tienen ventaja en casa y mejor récord.",
+      "factores": [
+        "Rivalidad histórica",
+        "Localía de Packers"
+      ],
+      "favorito": "Green Bay Packers",
+      "puntos_local": 0,
+      "puntos_visitante": 0,
+      "spread": 4.0,
+      "confianza_ou": 55,
+      "linea_ou": 48.5,
+      "b2b_impacto": "",
+      "lesion_clave": "",
+      "jugadores_clave": [],
+      "anotadores": [
+        {
+          "nombre": "Aaron Rodgers",
+          "equipo": "Local",
+          "pts_estimados": 30.0,
+          "confianza_pts": 80
+        },
+        {
+          "nombre": "Justin Fields",
+          "equipo": "Visitante",
+          "pts_estimados": 22.0,
+          "confianza_pts": 65
+        }
+      ],
+      "defensores": [
+        {
+          "nombre": "Kenny Clark",
+          "equipo": "Local",
+          "reb_estimados": 7.0,
+          "robos_estimados": 0.5,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 75
+        },
+        {
+          "nombre": "Roquan Smith",
+          "equipo": "Visitante",
+          "reb_estimados": 10.0,
+          "robos_estimados": 0.8,
+          "bloqueos_estimados": 0.3,
+          "confianza_def": 80
+        }
+      ],
+      "armadores": [
+        {
+          "nombre": "Aaron Jones",
+          "equipo": "Local",
+          "ast_estimadas": 5.0,
+          "confianza_ast": 70
+        },
+        {
+          "nombre": "David Montgomery",
+          "equipo": "Visitante",
+          "ast_estimadas": 4.0,
+          "confianza_ast": 65
+        }
+      ],
+      "ranking_local": "NFC: 3° (3-2)",
+      "ranking_visitante": "NFC: 4° (2-3)",
+      "stats_comparison": {
+        "ppg_local": 26.0,
+        "ppg_visitante": 22.5,
+        "opp_ppg_local": 20.0,
+        "opp_ppg_visitante": 24.0,
+        "fg_pct_local": 46.5,
+        "fg_pct_visitante": 43.0,
+        "pace_analysis": "Ritmo lento, ambos equipos prefieren controlar el balón."
+      },
+      "lineas_ou": {}
     }
   },
   "llm_by_sport": {
@@ -22640,7 +22886,80 @@
       "season_year": 2026,
       "season_type": 2,
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/JAX.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/PHI.png&h=40&w=40"
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/PHI.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Eagles tienen mejor récord y estadísticas ofensivas.",
+      "llm_factores": [
+        "Localía de Jaguars",
+        "Rendimiento reciente de Eagles"
+      ],
+      "llm_puntos_local": 0,
+      "llm_puntos_visitante": 0,
+      "llm_spread": 3.5,
+      "llm_confianza_ou": 50,
+      "llm_linea_ou": 45.5,
+      "llm_anotadores": [
+        {
+          "nombre": "Trevor Lawrence",
+          "equipo": "Local",
+          "pts_estimados": 25.0,
+          "confianza_pts": 70
+        },
+        {
+          "nombre": "Jalen Hurts",
+          "equipo": "Visitante",
+          "pts_estimados": 28.0,
+          "confianza_pts": 75
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Josh Allen",
+          "equipo": "Local",
+          "reb_estimados": 8.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 75
+        },
+        {
+          "nombre": "Darius Slay",
+          "equipo": "Visitante",
+          "reb_estimados": 5.0,
+          "robos_estimados": 1.5,
+          "bloqueos_estimados": 0.2,
+          "confianza_def": 80
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Travis Etienne",
+          "equipo": "Local",
+          "ast_estimadas": 4.5,
+          "confianza_ast": 65
+        },
+        {
+          "nombre": "Miles Sanders",
+          "equipo": "Visitante",
+          "ast_estimadas": 3.5,
+          "confianza_ast": 60
+        }
+      ],
+      "llm_ranking_local": "AFC: 2° (3-1)",
+      "llm_ranking_visitante": "NFC: 1° (4-0)",
+      "llm_stats_comparison": {
+        "ppg_local": 24.5,
+        "ppg_visitante": 28.0,
+        "opp_ppg_local": 21.0,
+        "opp_ppg_visitante": 19.5,
+        "fg_pct_local": 45.0,
+        "fg_pct_visitante": 47.5,
+        "pace_analysis": "Ritmo moderado, ambos equipos juegan controlado."
+      },
+      "llm_b2b_impacto": "",
+      "llm_lesion_clave": "",
+      "llm_jugadores_clave": [],
+      "llm_lineas_ou": {},
+      "llm_favorito": "Philadelphia Eagles"
     },
     {
       "game_date": "2026-10-11",
@@ -22659,15 +22978,88 @@
       "liga": "NFL",
       "spread_details": "CHI -1.5",
       "over_under": 46.5,
-      "ml_home": "+102",
-      "ml_away": "-122",
+      "ml_home": "+105",
+      "ml_away": "-125",
       "home_record": "2-2",
       "away_record": "3-1",
       "week_num": 5,
       "season_year": 2026,
       "season_type": 2,
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/GB.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/CHI.png&h=40&w=40"
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/CHI.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Packers tienen ventaja en casa y mejor récord.",
+      "llm_factores": [
+        "Rivalidad histórica",
+        "Localía de Packers"
+      ],
+      "llm_puntos_local": 0,
+      "llm_puntos_visitante": 0,
+      "llm_spread": 4.0,
+      "llm_confianza_ou": 55,
+      "llm_linea_ou": 48.5,
+      "llm_anotadores": [
+        {
+          "nombre": "Aaron Rodgers",
+          "equipo": "Local",
+          "pts_estimados": 30.0,
+          "confianza_pts": 80
+        },
+        {
+          "nombre": "Justin Fields",
+          "equipo": "Visitante",
+          "pts_estimados": 22.0,
+          "confianza_pts": 65
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Kenny Clark",
+          "equipo": "Local",
+          "reb_estimados": 7.0,
+          "robos_estimados": 0.5,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 75
+        },
+        {
+          "nombre": "Roquan Smith",
+          "equipo": "Visitante",
+          "reb_estimados": 10.0,
+          "robos_estimados": 0.8,
+          "bloqueos_estimados": 0.3,
+          "confianza_def": 80
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Aaron Jones",
+          "equipo": "Local",
+          "ast_estimadas": 5.0,
+          "confianza_ast": 70
+        },
+        {
+          "nombre": "David Montgomery",
+          "equipo": "Visitante",
+          "ast_estimadas": 4.0,
+          "confianza_ast": 65
+        }
+      ],
+      "llm_ranking_local": "NFC: 3° (3-2)",
+      "llm_ranking_visitante": "NFC: 4° (2-3)",
+      "llm_stats_comparison": {
+        "ppg_local": 26.0,
+        "ppg_visitante": 22.5,
+        "opp_ppg_local": 20.0,
+        "opp_ppg_visitante": 24.0,
+        "fg_pct_local": 46.5,
+        "fg_pct_visitante": 43.0,
+        "pace_analysis": "Ritmo lento, ambos equipos prefieren controlar el balón."
+      },
+      "llm_b2b_impacto": "",
+      "llm_lesion_clave": "",
+      "llm_jugadores_clave": [],
+      "llm_lineas_ou": {},
+      "llm_favorito": "Green Bay Packers"
     },
     {
       "game_date": "2026-10-11",
@@ -23631,31 +24023,77 @@
       "season_type": 2,
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/SEA.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/SF.png&h=40&w=40",
-      "llm_ir_favorito": "NO",
-      "llm_porque": "No hay datos suficientes para un análisis adecuado.",
-      "llm_factores": [],
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "49ers son favoritos por su defensa y récord superior.",
+      "llm_factores": [
+        "Localía de Seahawks",
+        "Rendimiento defensivo de 49ers"
+      ],
       "llm_puntos_local": 0,
       "llm_puntos_visitante": 0,
-      "llm_spread": 0.0,
-      "llm_confianza_ou": 0,
-      "llm_linea_ou": 0.0,
+      "llm_spread": 5.5,
+      "llm_confianza_ou": 60,
+      "llm_linea_ou": 50.0,
+      "llm_anotadores": [
+        {
+          "nombre": "DK Metcalf",
+          "equipo": "Local",
+          "pts_estimados": 24.0,
+          "confianza_pts": 75
+        },
+        {
+          "nombre": "Deebo Samuel",
+          "equipo": "Visitante",
+          "pts_estimados": 26.0,
+          "confianza_pts": 70
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Bobby Wagner",
+          "equipo": "Local",
+          "reb_estimados": 9.0,
+          "robos_estimados": 0.7,
+          "bloqueos_estimados": 0.4,
+          "confianza_def": 80
+        },
+        {
+          "nombre": "Nick Bosa",
+          "equipo": "Visitante",
+          "reb_estimados": 6.0,
+          "robos_estimados": 0.5,
+          "bloqueos_estimados": 1.5,
+          "confianza_def": 85
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Geno Smith",
+          "equipo": "Local",
+          "ast_estimadas": 6.0,
+          "confianza_ast": 70
+        },
+        {
+          "nombre": "Jimmy Garoppolo",
+          "equipo": "Visitante",
+          "ast_estimadas": 5.5,
+          "confianza_ast": 65
+        }
+      ],
+      "llm_ranking_local": "NFC: 5° (3-3)",
+      "llm_ranking_visitante": "NFC: 2° (4-1)",
       "llm_stats_comparison": {
-        "ppg_local": 0,
-        "ppg_visitante": 0,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 0,
-        "fg_pct_visitante": 0,
-        "pace_analysis": ""
+        "ppg_local": 27.0,
+        "ppg_visitante": 29.0,
+        "opp_ppg_local": 25.0,
+        "opp_ppg_visitante": 21.0,
+        "fg_pct_local": 44.0,
+        "fg_pct_visitante": 48.0,
+        "pace_analysis": "Ritmo moderado, ambos equipos se enfocan en el ataque terrestre."
       },
       "llm_b2b_impacto": "",
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
-      "llm_anotadores": [],
-      "llm_defensores": [],
-      "llm_armadores": [],
-      "llm_ranking_local": "",
-      "llm_ranking_visitante": "",
       "llm_lineas_ou": {},
       "llm_favorito": "San Francisco 49ers"
     },
@@ -23685,32 +24123,82 @@
       "season_type": 2,
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/ATL.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/BAL.png&h=40&w=40",
-      "llm_ir_favorito": "NO",
-      "llm_porque": "No hay datos suficientes para un análisis adecuado.",
-      "llm_factores": [],
-      "llm_puntos_local": 0,
-      "llm_puntos_visitante": 0,
-      "llm_spread": 0.0,
-      "llm_confianza_ou": 0,
-      "llm_linea_ou": 0.0,
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Ravens tienen mejor récord y estadísticas ofensivas.",
+      "llm_factores": [
+        "Localía de Falcons",
+        "Ravens con mejor eficiencia ofensiva"
+      ],
+      "llm_puntos_local": 24,
+      "llm_puntos_visitante": 28,
+      "llm_spread": 4.0,
+      "llm_confianza_ou": 65,
+      "llm_linea_ou": 48.5,
+      "llm_anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Atlanta Falcons",
+          "pts_estimados": 22.0,
+          "confianza_pts": 70
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Baltimore Ravens",
+          "pts_estimados": 30.0,
+          "confianza_pts": 75
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Atlanta Falcons",
+          "reb_estimados": 8.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 70
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Baltimore Ravens",
+          "reb_estimados": 7.0,
+          "robos_estimados": 1.5,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 75
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Atlanta Falcons",
+          "ast_estimadas": 6.0,
+          "confianza_ast": 65
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Baltimore Ravens",
+          "ast_estimadas": 7.0,
+          "confianza_ast": 70
+        }
+      ],
+      "llm_ranking_local": "NFC: 2° (4-2)",
+      "llm_ranking_visitante": "AFC: 1° (5-1)",
       "llm_stats_comparison": {
-        "ppg_local": 0,
-        "ppg_visitante": 0,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 0,
-        "fg_pct_visitante": 0,
-        "pace_analysis": ""
+        "ppg_local": 24.0,
+        "ppg_visitante": 28.0,
+        "opp_ppg_local": 22.0,
+        "opp_ppg_visitante": 20.0,
+        "fg_pct_local": 45.0,
+        "fg_pct_visitante": 48.0,
+        "pace_analysis": "Ritmo moderado, Ravens juegan más rápido."
+      },
+      "llm_lineas_ou": {
+        "over_140": 80,
+        "over_150": 65,
+        "over_160": 50
       },
       "llm_b2b_impacto": "",
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
-      "llm_anotadores": [],
-      "llm_defensores": [],
-      "llm_armadores": [],
-      "llm_ranking_local": "",
-      "llm_ranking_visitante": "",
-      "llm_lineas_ou": {},
       "llm_favorito": "Baltimore Ravens"
     }
   ],
