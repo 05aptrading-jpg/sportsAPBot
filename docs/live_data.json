@@ -1,5 +1,5 @@
 {
-  "fecha": "10/10/2026 21:12",
+  "fecha": "10/10/2026 21:26",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791727200,
@@ -4431,7 +4431,7 @@
       }
     }
   },
-  "updated_at": "10/10/2026 21:12",
+  "updated_at": "10/10/2026 21:26",
   "stats": {
     "total": 22,
     "acertados": 14,
@@ -21136,7 +21136,7 @@
           "display": "34"
         }
       ],
-      "clock": "12:00",
+      "clock": "0.0",
       "period": 4,
       "state": "Final",
       "result": "completed",
@@ -21410,7 +21410,7 @@
           "display": "25"
         }
       ],
-      "clock": "0.0",
+      "clock": "12:00",
       "period": 4,
       "state": "Final",
       "result": "completed",
@@ -21499,13 +21499,18 @@
       "away": "San Antonio Spurs",
       "home_abbr": "PHX",
       "away_abbr": "SA",
-      "home_score": 35,
-      "away_score": 25,
+      "home_score": 49,
+      "away_score": 41,
       "home_linescores": [
         {
           "period": 1,
           "value": 35,
           "display": "35"
+        },
+        {
+          "period": 2,
+          "value": 14,
+          "display": "14"
         }
       ],
       "away_linescores": [
@@ -21513,11 +21518,16 @@
           "period": 1,
           "value": 25,
           "display": "25"
+        },
+        {
+          "period": 2,
+          "value": 16,
+          "display": "16"
         }
       ],
-      "clock": "0.0",
-      "period": 1,
-      "state": "Q1 0.0",
+      "clock": "5:39",
+      "period": 2,
+      "state": "Q2 5:39",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/PHX.png&h=40&w=40",
