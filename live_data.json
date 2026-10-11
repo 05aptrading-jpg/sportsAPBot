@@ -1,5 +1,5 @@
 {
-  "fecha": "10/10/2026 19:41",
+  "fecha": "10/10/2026 20:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791727200,
@@ -4144,7 +4144,7 @@
       "opp_team": "Cleveland Guardians",
       "score_fav": "0",
       "score_opp": "2",
-      "state": "Top 6th",
+      "state": "Top 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 849831,
@@ -4185,18 +4185,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": true,
-        "inning_ordinal": "6th",
-        "outs": 2,
+        "inning_ordinal": "7th",
+        "outs": 1,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 2,
         "away_hits": 1,
-        "home_hits": 4,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Chicago White Sox",
@@ -4346,7 +4350,7 @@
     "849831": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 6th",
+      "status": "Top 7th",
       "away_runs": 0,
       "home_runs": 2,
       "away_team_name": "Cleveland Guardians",
@@ -4376,18 +4380,22 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
+        "current_inning": 7,
         "is_top": true,
-        "inning_ordinal": "6th",
-        "outs": 2,
+        "inning_ordinal": "7th",
+        "outs": 1,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 2,
         "away_hits": 1,
-        "home_hits": 4,
+        "home_hits": 5,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Chicago White Sox",
@@ -4407,7 +4415,7 @@
       }
     }
   },
-  "updated_at": "10/10/2026 19:41",
+  "updated_at": "10/10/2026 20:00",
   "stats": {
     "total": 22,
     "acertados": 14,
@@ -20824,7 +20832,7 @@
           "display": "23"
         }
       ],
-      "clock": "0.0",
+      "clock": "12:00",
       "period": 4,
       "state": "Final",
       "result": "completed",
@@ -20917,8 +20925,8 @@
       "away": "Detroit Pistons",
       "home_abbr": "WSH",
       "away_abbr": "DET",
-      "home_score": 95,
-      "away_score": 94,
+      "home_score": 106,
+      "away_score": 106,
       "home_linescores": [
         {
           "period": 1,
@@ -20937,8 +20945,13 @@
         },
         {
           "period": 4,
-          "value": 15,
-          "display": "15"
+          "value": 18,
+          "display": "18"
+        },
+        {
+          "period": 5,
+          "value": 8,
+          "display": "8"
         }
       ],
       "away_linescores": [
@@ -20959,13 +20972,18 @@
         },
         {
           "period": 4,
-          "value": 16,
-          "display": "16"
+          "value": 20,
+          "display": "20"
+        },
+        {
+          "period": 5,
+          "value": 8,
+          "display": "8"
         }
       ],
-      "clock": "2:28",
-      "period": 4,
-      "state": "Q4 2:28",
+      "clock": "1:42",
+      "period": 5,
+      "state": "Q5 1:42",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/WSH.png&h=40&w=40",
@@ -21056,8 +21074,8 @@
       "away": "Minnesota Timberwolves",
       "home_abbr": "MIA",
       "away_abbr": "MIN",
-      "home_score": 73,
-      "away_score": 83,
+      "home_score": 89,
+      "away_score": 91,
       "home_linescores": [
         {
           "period": 1,
@@ -21071,8 +21089,13 @@
         },
         {
           "period": 3,
-          "value": 17,
-          "display": "17"
+          "value": 27,
+          "display": "27"
+        },
+        {
+          "period": 4,
+          "value": 6,
+          "display": "6"
         }
       ],
       "away_linescores": [
@@ -21088,13 +21111,18 @@
         },
         {
           "period": 3,
-          "value": 23,
-          "display": "23"
+          "value": 31,
+          "display": "31"
+        },
+        {
+          "period": 4,
+          "value": 0,
+          "display": "0"
         }
       ],
-      "clock": "5:11",
-      "period": 3,
-      "state": "Q3 5:11",
+      "clock": "10:28",
+      "period": 4,
+      "state": "Q4 10:28",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/MIA.png&h=40&w=40",
@@ -21185,8 +21213,8 @@
       "away": "Philadelphia 76ers",
       "home_abbr": "BOS",
       "away_abbr": "PHI",
-      "home_score": 80,
-      "away_score": 60,
+      "home_score": 106,
+      "away_score": 72,
       "home_linescores": [
         {
           "period": 1,
@@ -21200,8 +21228,13 @@
         },
         {
           "period": 3,
-          "value": 17,
-          "display": "17"
+          "value": 41,
+          "display": "41"
+        },
+        {
+          "period": 4,
+          "value": 2,
+          "display": "2"
         }
       ],
       "away_linescores": [
@@ -21217,13 +21250,18 @@
         },
         {
           "period": 3,
-          "value": 18,
-          "display": "18"
+          "value": 27,
+          "display": "27"
+        },
+        {
+          "period": 4,
+          "value": 3,
+          "display": "3"
         }
       ],
-      "clock": "6:25",
-      "period": 3,
-      "state": "Q3 6:25",
+      "clock": "11:11",
+      "period": 4,
+      "state": "Q4 11:11",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/BOS.png&h=40&w=40",
@@ -21310,8 +21348,8 @@
       "away": "Sacramento Kings",
       "home_abbr": "GS",
       "away_abbr": "SAC",
-      "home_score": 52,
-      "away_score": 54,
+      "home_score": 61,
+      "away_score": 56,
       "home_linescores": [
         {
           "period": 1,
@@ -21320,8 +21358,8 @@
         },
         {
           "period": 2,
-          "value": 28,
-          "display": "28"
+          "value": 37,
+          "display": "37"
         }
       ],
       "away_linescores": [
@@ -21332,13 +21370,13 @@
         },
         {
           "period": 2,
-          "value": 29,
-          "display": "29"
+          "value": 31,
+          "display": "31"
         }
       ],
-      "clock": "2:32",
+      "clock": "0.0",
       "period": 2,
-      "state": "Q2 2:32",
+      "state": "Q2 0.0",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/GS.png&h=40&w=40",
