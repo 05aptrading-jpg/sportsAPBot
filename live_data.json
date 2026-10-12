@@ -1,5 +1,5 @@
 {
-  "fecha": "12/10/2026 14:27",
+  "fecha": "12/10/2026 14:42",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791900000,
@@ -4518,7 +4518,7 @@
       "opp_team": "Los Angeles Dodgers",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Pre-Game",
+      "state": "Warmup",
       "result": "pending",
       "label": "📋",
       "game_pk": 849812,
@@ -4562,7 +4562,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4818,7 +4818,7 @@
     "849812": {
       "is_live": false,
       "is_final": false,
-      "status": "Pre-Game",
+      "status": "Warmup",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Los Angeles Dodgers",
@@ -4851,7 +4851,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Pre-Game",
+        "state": "Warmup",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4859,7 +4859,7 @@
       }
     }
   },
-  "updated_at": "12/10/2026 14:27",
+  "updated_at": "12/10/2026 14:42",
   "stats": {
     "total": 22,
     "acertados": 14,
@@ -23067,25 +23067,35 @@
       "away": "London Lions",
       "home_abbr": "POR",
       "away_abbr": "LON",
-      "home_score": 18,
-      "away_score": 11,
+      "home_score": 39,
+      "away_score": 21,
       "home_linescores": [
         {
           "period": 1,
-          "value": 18,
-          "display": "18"
+          "value": 34,
+          "display": "34"
+        },
+        {
+          "period": 2,
+          "value": 5,
+          "display": "5"
         }
       ],
       "away_linescores": [
         {
           "period": 1,
-          "value": 11,
-          "display": "11"
+          "value": 21,
+          "display": "21"
+        },
+        {
+          "period": 2,
+          "value": 0,
+          "display": "0"
         }
       ],
-      "clock": "4:58",
-      "period": 1,
-      "state": "Q1 4:58",
+      "clock": "10:33",
+      "period": 2,
+      "state": "Q2 10:33",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/POR.png&h=40&w=40",
