@@ -1,5 +1,5 @@
 {
-  "fecha": "12/10/2026 16:57",
+  "fecha": "12/10/2026 17:12",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791900000,
@@ -4516,9 +4516,9 @@
       "status_emoji": "🔴",
       "fav_team": "Milwaukee Brewers",
       "opp_team": "Los Angeles Dodgers",
-      "score_fav": "3",
+      "score_fav": "4",
       "score_opp": "4",
-      "state": "Middle 5th",
+      "state": "Bottom 5th",
       "result": "live",
       "label": "📋",
       "game_pk": 849812,
@@ -4554,19 +4554,19 @@
           },
           {
             "away_runs": 2,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 5,
         "is_top": false,
         "inning_ordinal": "5th",
-        "outs": 0,
+        "outs": 3,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 3,
         "away_runs": 4,
-        "home_runs": 3,
+        "home_runs": 4,
         "away_hits": 3,
-        "home_hits": 4,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 2,
         "away_team_name": "Los Angeles Dodgers",
@@ -4580,9 +4580,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "4",
-        "opp_score": "3",
+        "opp_score": "4",
         "score_fav": "4",
-        "score_opp": "3"
+        "score_opp": "4"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
@@ -4834,8 +4834,8 @@
     "849812": {
       "is_live": true,
       "is_final": false,
-      "status": "Middle 5th",
-      "away_runs": 3,
+      "status": "Bottom 5th",
+      "away_runs": 4,
       "home_runs": 4,
       "away_team_name": "Los Angeles Dodgers",
       "home_team_name": "Milwaukee Brewers",
@@ -4859,19 +4859,19 @@
           },
           {
             "away_runs": 2,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 5,
         "is_top": false,
         "inning_ordinal": "5th",
-        "outs": 0,
+        "outs": 3,
         "balls": 0,
-        "strikes": 0,
+        "strikes": 3,
         "away_runs": 4,
-        "home_runs": 3,
+        "home_runs": 4,
         "away_hits": 3,
-        "home_hits": 4,
+        "home_hits": 7,
         "away_errors": 0,
         "home_errors": 2,
         "away_team_name": "Los Angeles Dodgers",
@@ -4885,13 +4885,13 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "4",
-        "opp_score": "3",
+        "opp_score": "4",
         "score_fav": "4",
-        "score_opp": "3"
+        "score_opp": "4"
       }
     }
   },
-  "updated_at": "12/10/2026 16:57",
+  "updated_at": "12/10/2026 17:12",
   "stats": {
     "total": 22,
     "acertados": 14,
@@ -23233,19 +23233,31 @@
     {
       "game_date": "2026-10-12",
       "game_id": "401898402",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Atlanta Hawks",
       "away": "Oklahoma City Thunder",
       "home_abbr": "ATL",
       "away_abbr": "OKC",
-      "home_score": 0,
-      "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "home_score": 5,
+      "away_score": 2,
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 5,
+          "display": "5"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 2,
+          "display": "2"
+        }
+      ],
+      "clock": "10:33",
+      "period": 1,
+      "state": "Q1 10:33",
+      "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/ATL.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/OKC.png&h=40&w=40",
@@ -23330,19 +23342,31 @@
     {
       "game_date": "2026-10-12",
       "game_id": "401901824",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Washington Wizards",
       "away": "Brooklyn Nets",
       "home_abbr": "WSH",
       "away_abbr": "BKN",
-      "home_score": 0,
-      "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "home_score": 2,
+      "away_score": 3,
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 2,
+          "display": "2"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 3,
+          "display": "3"
+        }
+      ],
+      "clock": "11:03",
+      "period": 1,
+      "state": "Q1 11:03",
+      "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/WSH.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/BKN.png&h=40&w=40",
@@ -24194,8 +24218,8 @@
       "liga": "NFL",
       "spread_details": "LAR -3.5",
       "over_under": 55.5,
-      "ml_home": "-185",
-      "ml_away": "+154",
+      "ml_home": "-180",
+      "ml_away": "+150",
       "home_record": "2-2",
       "away_record": "3-1",
       "week_num": 5,
