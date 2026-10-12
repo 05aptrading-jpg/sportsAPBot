@@ -1,5 +1,5 @@
 {
-  "fecha": "12/10/2026 14:57",
+  "fecha": "12/10/2026 15:12",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791900000,
@@ -4513,13 +4513,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-10-12",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Milwaukee Brewers",
       "opp_team": "Los Angeles Dodgers",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "1",
+      "state": "Middle 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 849812,
       "fav_abbr": "MIL",
@@ -4537,17 +4537,17 @@
       "linescore": {
         "innings": [
           {
-            "away_runs": 0,
+            "away_runs": 1,
             "home_runs": 0
           }
         ],
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 3,
         "balls": 0,
-        "strikes": 0,
-        "away_runs": 0,
+        "strikes": 3,
+        "away_runs": 1,
         "home_runs": 0,
         "away_hits": 0,
         "home_hits": 0,
@@ -4560,12 +4560,12 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
-        "fav_score": "0",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
+        "fav_score": "1",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "0"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
@@ -4619,7 +4619,7 @@
   "autorizados": [
     6099564810
   ],
-  "has_live": false,
+  "has_live": true,
   "has_scheduled": true,
   "live_data": {
     "401907994": {
@@ -4816,27 +4816,27 @@
       }
     },
     "849812": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Middle 1st",
       "away_runs": 0,
-      "home_runs": 0,
+      "home_runs": 1,
       "away_team_name": "Los Angeles Dodgers",
       "home_team_name": "Milwaukee Brewers",
       "linescore": {
         "innings": [
           {
-            "away_runs": 0,
+            "away_runs": 1,
             "home_runs": 0
           }
         ],
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 3,
         "balls": 0,
-        "strikes": 0,
-        "away_runs": 0,
+        "strikes": 3,
+        "away_runs": 1,
         "home_runs": 0,
         "away_hits": 0,
         "home_hits": 0,
@@ -4849,17 +4849,17 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
-        "fav_score": "0",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
+        "fav_score": "1",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "0"
       }
     }
   },
-  "updated_at": "12/10/2026 14:57",
+  "updated_at": "12/10/2026 15:12",
   "stats": {
     "total": 22,
     "acertados": 14,
@@ -23067,8 +23067,8 @@
       "away": "London Lions",
       "home_abbr": "POR",
       "away_abbr": "LON",
-      "home_score": 57,
-      "away_score": 31,
+      "home_score": 72,
+      "away_score": 33,
       "home_linescores": [
         {
           "period": 1,
@@ -23077,8 +23077,8 @@
         },
         {
           "period": 2,
-          "value": 23,
-          "display": "23"
+          "value": 38,
+          "display": "38"
         }
       ],
       "away_linescores": [
@@ -23089,13 +23089,13 @@
         },
         {
           "period": 2,
-          "value": 10,
-          "display": "10"
+          "value": 12,
+          "display": "12"
         }
       ],
-      "clock": "4:47",
+      "clock": "0.0",
       "period": 2,
-      "state": "Q2 4:47",
+      "state": "Q2 0.0",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/POR.png&h=40&w=40",
