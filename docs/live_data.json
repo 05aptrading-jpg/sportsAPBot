@@ -1,5 +1,5 @@
 {
-  "fecha": "12/10/2026 16:12",
+  "fecha": "12/10/2026 16:27",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791900000,
@@ -4516,9 +4516,9 @@
       "status_emoji": "🔴",
       "fav_team": "Milwaukee Brewers",
       "opp_team": "Los Angeles Dodgers",
-      "score_fav": "1",
+      "score_fav": "3",
       "score_opp": "2",
-      "state": "Bottom 3rd",
+      "state": "End 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 849812,
@@ -4546,19 +4546,19 @@
           },
           {
             "away_runs": 1,
-            "home_runs": 0
+            "home_runs": 2
           }
         ],
         "current_inning": 3,
         "is_top": false,
         "inning_ordinal": "3rd",
-        "outs": 2,
-        "balls": 2,
-        "strikes": 2,
+        "outs": 3,
+        "balls": 1,
+        "strikes": 3,
         "away_runs": 2,
-        "home_runs": 1,
+        "home_runs": 3,
         "away_hits": 2,
-        "home_hits": 3,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Los Angeles Dodgers",
@@ -4572,9 +4572,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "2",
-        "opp_score": "1",
+        "opp_score": "3",
         "score_fav": "2",
-        "score_opp": "1"
+        "score_opp": "3"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
@@ -4826,8 +4826,8 @@
     "849812": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 3rd",
-      "away_runs": 1,
+      "status": "End 3rd",
+      "away_runs": 3,
       "home_runs": 2,
       "away_team_name": "Los Angeles Dodgers",
       "home_team_name": "Milwaukee Brewers",
@@ -4843,19 +4843,19 @@
           },
           {
             "away_runs": 1,
-            "home_runs": 0
+            "home_runs": 2
           }
         ],
         "current_inning": 3,
         "is_top": false,
         "inning_ordinal": "3rd",
-        "outs": 2,
-        "balls": 2,
-        "strikes": 2,
+        "outs": 3,
+        "balls": 1,
+        "strikes": 3,
         "away_runs": 2,
-        "home_runs": 1,
+        "home_runs": 3,
         "away_hits": 2,
-        "home_hits": 3,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 1,
         "away_team_name": "Los Angeles Dodgers",
@@ -4869,13 +4869,13 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "2",
-        "opp_score": "1",
+        "opp_score": "3",
         "score_fav": "2",
-        "score_opp": "1"
+        "score_opp": "3"
       }
     }
   },
-  "updated_at": "12/10/2026 16:12",
+  "updated_at": "12/10/2026 16:27",
   "stats": {
     "total": 22,
     "acertados": 14,
@@ -23078,13 +23078,13 @@
     {
       "game_date": "2026-10-12",
       "game_id": "401914130",
-      "status_emoji": "🔴",
+      "status_emoji": "🏁",
       "home": "Portland Trail Blazers",
       "away": "London Lions",
       "home_abbr": "POR",
       "away_abbr": "LON",
-      "home_score": 118,
-      "away_score": 64,
+      "home_score": 119,
+      "away_score": 66,
       "home_linescores": [
         {
           "period": 1,
@@ -23103,8 +23103,8 @@
         },
         {
           "period": 4,
-          "value": 18,
-          "display": "18"
+          "value": 19,
+          "display": "19"
         }
       ],
       "away_linescores": [
@@ -23125,14 +23125,14 @@
         },
         {
           "period": 4,
-          "value": 15,
-          "display": "15"
+          "value": 17,
+          "display": "17"
         }
       ],
-      "clock": "1:00",
+      "clock": "0.0",
       "period": 4,
-      "state": "Q4 1:00",
-      "result": "live",
+      "state": "Final",
+      "result": "completed",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/POR.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/LON.png&h=40&w=40",
@@ -24177,7 +24177,7 @@
       "result": "pending",
       "liga": "NFL",
       "spread_details": "LAR -3.5",
-      "over_under": 54.5,
+      "over_under": 55.5,
       "ml_home": "-185",
       "ml_away": "+154",
       "home_record": "2-2",
