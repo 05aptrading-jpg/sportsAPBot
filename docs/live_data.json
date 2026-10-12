@@ -1,5 +1,5 @@
 {
-  "fecha": "11/10/2026 18:27",
+  "fecha": "11/10/2026 18:42",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791813600,
@@ -4276,8 +4276,8 @@
       "fav_team": "Milwaukee Brewers",
       "opp_team": "Los Angeles Dodgers",
       "score_fav": "0",
-      "score_opp": "0",
-      "state": "Bottom 1st",
+      "score_opp": "1",
+      "state": "Top 2nd",
       "result": "live",
       "label": "📋",
       "game_pk": 849809,
@@ -4298,17 +4298,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
         "outs": 1,
-        "balls": 2,
+        "balls": 1,
         "strikes": 2,
-        "away_runs": 0,
+        "away_runs": 1,
         "home_runs": 0,
-        "away_hits": 1,
+        "away_hits": 3,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -4322,9 +4326,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "0"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
@@ -4459,9 +4463,9 @@
     "849809": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 1st",
+      "status": "Top 2nd",
       "away_runs": 0,
-      "home_runs": 0,
+      "home_runs": 1,
       "away_team_name": "Los Angeles Dodgers",
       "home_team_name": "Milwaukee Brewers",
       "linescore": {
@@ -4469,17 +4473,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 1,
+            "home_runs": 0
           }
         ],
-        "current_inning": 1,
-        "is_top": false,
-        "inning_ordinal": "1st",
+        "current_inning": 2,
+        "is_top": true,
+        "inning_ordinal": "2nd",
         "outs": 1,
-        "balls": 2,
+        "balls": 1,
         "strikes": 2,
-        "away_runs": 0,
+        "away_runs": 1,
         "home_runs": 0,
-        "away_hits": 1,
+        "away_hits": 3,
         "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
@@ -4493,14 +4501,14 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "0",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "0"
       }
     }
   },
-  "updated_at": "11/10/2026 18:27",
+  "updated_at": "11/10/2026 18:42",
   "stats": {
     "total": 22,
     "acertados": 14,
@@ -22471,8 +22479,8 @@
       "away": "Orlando Magic",
       "home_abbr": "CLE",
       "away_abbr": "ORL",
-      "home_score": 80,
-      "away_score": 70,
+      "home_score": 93,
+      "away_score": 81,
       "home_linescores": [
         {
           "period": 1,
@@ -22486,8 +22494,13 @@
         },
         {
           "period": 3,
-          "value": 19,
-          "display": "19"
+          "value": 29,
+          "display": "29"
+        },
+        {
+          "period": 4,
+          "value": 3,
+          "display": "3"
         }
       ],
       "away_linescores": [
@@ -22503,13 +22516,18 @@
         },
         {
           "period": 3,
-          "value": 20,
-          "display": "20"
+          "value": 25,
+          "display": "25"
+        },
+        {
+          "period": 4,
+          "value": 6,
+          "display": "6"
         }
       ],
-      "clock": "1:42",
-      "period": 3,
-      "state": "Q3 1:42",
+      "clock": "0.0",
+      "period": 4,
+      "state": "Q4 0.0",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/CLE.png&h=40&w=40",
@@ -22600,8 +22618,8 @@
       "away": "Milwaukee Bucks",
       "home_abbr": "CHA",
       "away_abbr": "MIL",
-      "home_score": 70,
-      "away_score": 54,
+      "home_score": 82,
+      "away_score": 64,
       "home_linescores": [
         {
           "period": 1,
@@ -22615,8 +22633,8 @@
         },
         {
           "period": 3,
-          "value": 10,
-          "display": "10"
+          "value": 22,
+          "display": "22"
         }
       ],
       "away_linescores": [
@@ -22632,13 +22650,13 @@
         },
         {
           "period": 3,
-          "value": 9,
-          "display": "9"
+          "value": 19,
+          "display": "19"
         }
       ],
-      "clock": "7:12",
+      "clock": "2:03",
       "period": 3,
-      "state": "Q3 7:12",
+      "state": "Q3 2:03",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/CHA.png&h=40&w=40",
@@ -23110,6 +23128,110 @@
     }
   ],
   "nfl_games": [
+    {
+      "game_date": "2026-10-11",
+      "game_id": "401872993",
+      "status_emoji": "🔴",
+      "home": "Atlanta Falcons",
+      "away": "Baltimore Ravens",
+      "home_abbr": "ATL",
+      "away_abbr": "BAL",
+      "home_score": 0,
+      "away_score": 3,
+      "clock": "8:59",
+      "period": 1,
+      "state": "Q1 8:59",
+      "result": "live",
+      "liga": "NFL",
+      "spread_details": "",
+      "over_under": "",
+      "ml_home": "",
+      "ml_away": "",
+      "home_record": "2-2",
+      "away_record": "3-1",
+      "week_num": 5,
+      "season_year": 2026,
+      "season_type": 2,
+      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/ATL.png&h=40&w=40",
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/BAL.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Ravens tienen mejor récord y estadísticas ofensivas.",
+      "llm_factores": [
+        "Localía de Falcons",
+        "Ravens con mejor eficiencia ofensiva"
+      ],
+      "llm_puntos_local": 24,
+      "llm_puntos_visitante": 28,
+      "llm_spread": 4.0,
+      "llm_confianza_ou": 65,
+      "llm_linea_ou": 48.5,
+      "llm_anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Atlanta Falcons",
+          "pts_estimados": 22.0,
+          "confianza_pts": 70
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Baltimore Ravens",
+          "pts_estimados": 30.0,
+          "confianza_pts": 75
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Atlanta Falcons",
+          "reb_estimados": 8.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 70
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Baltimore Ravens",
+          "reb_estimados": 7.0,
+          "robos_estimados": 1.5,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 75
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Atlanta Falcons",
+          "ast_estimadas": 6.0,
+          "confianza_ast": 65
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Baltimore Ravens",
+          "ast_estimadas": 7.0,
+          "confianza_ast": 70
+        }
+      ],
+      "llm_ranking_local": "NFC: 2° (4-2)",
+      "llm_ranking_visitante": "AFC: 1° (5-1)",
+      "llm_stats_comparison": {
+        "ppg_local": 24.0,
+        "ppg_visitante": 28.0,
+        "opp_ppg_local": 22.0,
+        "opp_ppg_visitante": 20.0,
+        "fg_pct_local": 45.0,
+        "fg_pct_visitante": 48.0,
+        "pace_analysis": "Ritmo moderado, Ravens juegan más rápido."
+      },
+      "llm_lineas_ou": {
+        "over_140": 80,
+        "over_150": 65,
+        "over_160": 50
+      },
+      "llm_b2b_impacto": "",
+      "llm_lesion_clave": "",
+      "llm_jugadores_clave": [],
+      "llm_favorito": "Baltimore Ravens"
+    },
     {
       "game_date": "2026-10-11",
       "game_id": "401872981",
@@ -24345,110 +24467,6 @@
       "llm_jugadores_clave": [],
       "llm_lineas_ou": {},
       "llm_favorito": "San Francisco 49ers"
-    },
-    {
-      "game_date": "2026-10-11",
-      "game_id": "401872993",
-      "status_emoji": "🔴",
-      "home": "Atlanta Falcons",
-      "away": "Baltimore Ravens",
-      "home_abbr": "ATL",
-      "away_abbr": "BAL",
-      "home_score": 0,
-      "away_score": 0,
-      "clock": "13:02",
-      "period": 1,
-      "state": "Q1 13:02",
-      "result": "live",
-      "liga": "NFL",
-      "spread_details": "",
-      "over_under": "",
-      "ml_home": "",
-      "ml_away": "",
-      "home_record": "2-2",
-      "away_record": "3-1",
-      "week_num": 5,
-      "season_year": 2026,
-      "season_type": 2,
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/ATL.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/BAL.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Ravens tienen mejor récord y estadísticas ofensivas.",
-      "llm_factores": [
-        "Localía de Falcons",
-        "Ravens con mejor eficiencia ofensiva"
-      ],
-      "llm_puntos_local": 24,
-      "llm_puntos_visitante": 28,
-      "llm_spread": 4.0,
-      "llm_confianza_ou": 65,
-      "llm_linea_ou": 48.5,
-      "llm_anotadores": [
-        {
-          "nombre": "Jugador A",
-          "equipo": "Atlanta Falcons",
-          "pts_estimados": 22.0,
-          "confianza_pts": 70
-        },
-        {
-          "nombre": "Jugador B",
-          "equipo": "Baltimore Ravens",
-          "pts_estimados": 30.0,
-          "confianza_pts": 75
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Jugador C",
-          "equipo": "Atlanta Falcons",
-          "reb_estimados": 8.0,
-          "robos_estimados": 1.0,
-          "bloqueos_estimados": 1.0,
-          "confianza_def": 70
-        },
-        {
-          "nombre": "Jugador D",
-          "equipo": "Baltimore Ravens",
-          "reb_estimados": 7.0,
-          "robos_estimados": 1.5,
-          "bloqueos_estimados": 0.5,
-          "confianza_def": 75
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Jugador E",
-          "equipo": "Atlanta Falcons",
-          "ast_estimadas": 6.0,
-          "confianza_ast": 65
-        },
-        {
-          "nombre": "Jugador F",
-          "equipo": "Baltimore Ravens",
-          "ast_estimadas": 7.0,
-          "confianza_ast": 70
-        }
-      ],
-      "llm_ranking_local": "NFC: 2° (4-2)",
-      "llm_ranking_visitante": "AFC: 1° (5-1)",
-      "llm_stats_comparison": {
-        "ppg_local": 24.0,
-        "ppg_visitante": 28.0,
-        "opp_ppg_local": 22.0,
-        "opp_ppg_visitante": 20.0,
-        "fg_pct_local": 45.0,
-        "fg_pct_visitante": 48.0,
-        "pace_analysis": "Ritmo moderado, Ravens juegan más rápido."
-      },
-      "llm_lineas_ou": {
-        "over_140": 80,
-        "over_150": 65,
-        "over_160": 50
-      },
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_favorito": "Baltimore Ravens"
     }
   ],
   "hits_llm": {
