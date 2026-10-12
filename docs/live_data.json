@@ -1,5 +1,5 @@
 {
-  "fecha": "11/10/2026 19:12",
+  "fecha": "11/10/2026 19:27",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791813600,
@@ -4277,7 +4277,7 @@
       "opp_team": "Los Angeles Dodgers",
       "score_fav": "0",
       "score_opp": "1",
-      "state": "Bottom 3rd",
+      "state": "Top 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 849809,
@@ -4306,17 +4306,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 0,
-        "balls": 1,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 2,
+        "balls": 3,
         "strikes": 2,
         "away_runs": 1,
         "home_runs": 0,
-        "away_hits": 4,
+        "away_hits": 5,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -4467,7 +4471,7 @@
     "849809": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 3rd",
+      "status": "Top 4th",
       "away_runs": 0,
       "home_runs": 1,
       "away_team_name": "Los Angeles Dodgers",
@@ -4485,17 +4489,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
-        "is_top": false,
-        "inning_ordinal": "3rd",
-        "outs": 0,
-        "balls": 1,
+        "current_inning": 4,
+        "is_top": true,
+        "inning_ordinal": "4th",
+        "outs": 2,
+        "balls": 3,
         "strikes": 2,
         "away_runs": 1,
         "home_runs": 0,
-        "away_hits": 4,
+        "away_hits": 5,
         "home_hits": 1,
         "away_errors": 0,
         "home_errors": 0,
@@ -4516,7 +4524,7 @@
       }
     }
   },
-  "updated_at": "11/10/2026 19:12",
+  "updated_at": "11/10/2026 19:27",
   "stats": {
     "total": 22,
     "acertados": 14,
@@ -22621,13 +22629,13 @@
     {
       "game_date": "2026-10-11",
       "game_id": "401901821",
-      "status_emoji": "🔴",
+      "status_emoji": "🏁",
       "home": "Charlotte Hornets",
       "away": "Milwaukee Bucks",
       "home_abbr": "CHA",
       "away_abbr": "MIL",
-      "home_score": 104,
-      "away_score": 84,
+      "home_score": 105,
+      "away_score": 90,
       "home_linescores": [
         {
           "period": 1,
@@ -22646,8 +22654,8 @@
         },
         {
           "period": 4,
-          "value": 17,
-          "display": "17"
+          "value": 18,
+          "display": "18"
         }
       ],
       "away_linescores": [
@@ -22668,14 +22676,14 @@
         },
         {
           "period": 4,
-          "value": 17,
-          "display": "17"
+          "value": 23,
+          "display": "23"
         }
       ],
-      "clock": "2:17",
+      "clock": "0.0",
       "period": 4,
-      "state": "Q4 2:17",
-      "result": "live",
+      "state": "Final",
+      "result": "completed",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/CHA.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/MIL.png&h=40&w=40",
@@ -22760,19 +22768,31 @@
     {
       "game_date": "2026-10-11",
       "game_id": "401908941",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "home": "Denver Nuggets",
       "away": "Chicago Bulls",
       "home_abbr": "DEN",
       "away_abbr": "CHI",
-      "home_score": 0,
-      "away_score": 0,
-      "home_linescores": [],
-      "away_linescores": [],
-      "clock": "0.0",
-      "period": 0,
-      "state": "Pend.",
-      "result": "pending",
+      "home_score": 14,
+      "away_score": 12,
+      "home_linescores": [
+        {
+          "period": 1,
+          "value": 13,
+          "display": "13"
+        }
+      ],
+      "away_linescores": [
+        {
+          "period": 1,
+          "value": 12,
+          "display": "12"
+        }
+      ],
+      "clock": "7:04",
+      "period": 1,
+      "state": "Q1 7:04",
+      "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/DEN.png&h=40&w=40",
       "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/CHI.png&h=40&w=40",
@@ -23155,10 +23175,10 @@
       "home_abbr": "ATL",
       "away_abbr": "BAL",
       "home_score": 7,
-      "away_score": 3,
-      "clock": "12:17",
+      "away_score": 6,
+      "clock": "4:34",
       "period": 2,
-      "state": "Q2 12:17",
+      "state": "Q2 4:34",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
