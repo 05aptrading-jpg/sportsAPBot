@@ -1,5 +1,5 @@
 {
-  "fecha": "12/10/2026 18:01",
+  "fecha": "12/10/2026 18:12",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791900000,
@@ -4409,13 +4409,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-10-12",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Tampa Bay Rays",
       "opp_team": "Cleveland Guardians",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 849820,
       "fav_abbr": "TB",
@@ -4440,9 +4440,9 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -4456,9 +4456,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4516,9 +4516,9 @@
       "status_emoji": "🔴",
       "fav_team": "Milwaukee Brewers",
       "opp_team": "Los Angeles Dodgers",
-      "score_fav": "5",
+      "score_fav": "6",
       "score_opp": "4",
-      "state": "Top 8th",
+      "state": "Bottom 8th",
       "result": "live",
       "label": "📋",
       "game_pk": 849812,
@@ -4566,19 +4566,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
-        "outs": 2,
+        "outs": 1,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 4,
-        "home_runs": 5,
+        "home_runs": 6,
         "away_hits": 3,
-        "home_hits": 9,
+        "home_hits": 11,
         "away_errors": 1,
         "home_errors": 2,
         "away_team_name": "Los Angeles Dodgers",
@@ -4592,9 +4592,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "4",
-        "opp_score": "5",
+        "opp_score": "6",
         "score_fav": "4",
-        "score_opp": "5"
+        "score_opp": "6"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
@@ -4648,7 +4648,7 @@
     6099564810
   ],
   "has_live": true,
-  "has_scheduled": true,
+  "has_scheduled": false,
   "live_data": {
     "401907994": {
       "is_live": false,
@@ -4801,9 +4801,9 @@
       }
     },
     "849820": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Cleveland Guardians",
@@ -4818,9 +4818,9 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "outs": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 0,
         "home_runs": 0,
         "away_hits": 0,
@@ -4834,9 +4834,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4846,8 +4846,8 @@
     "849812": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 8th",
-      "away_runs": 5,
+      "status": "Bottom 8th",
+      "away_runs": 6,
       "home_runs": 4,
       "away_team_name": "Los Angeles Dodgers",
       "home_team_name": "Milwaukee Brewers",
@@ -4883,19 +4883,19 @@
           },
           {
             "away_runs": 0,
-            "home_runs": 0
+            "home_runs": 1
           }
         ],
         "current_inning": 8,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "8th",
-        "outs": 2,
+        "outs": 1,
         "balls": 0,
-        "strikes": 1,
+        "strikes": 0,
         "away_runs": 4,
-        "home_runs": 5,
+        "home_runs": 6,
         "away_hits": 3,
-        "home_hits": 9,
+        "home_hits": 11,
         "away_errors": 1,
         "home_errors": 2,
         "away_team_name": "Los Angeles Dodgers",
@@ -4909,13 +4909,13 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "4",
-        "opp_score": "5",
+        "opp_score": "6",
         "score_fav": "4",
-        "score_opp": "5"
+        "score_opp": "6"
       }
     }
   },
-  "updated_at": "12/10/2026 18:01",
+  "updated_at": "12/10/2026 18:12",
   "stats": {
     "total": 22,
     "acertados": 14,
@@ -23262,8 +23262,8 @@
       "away": "Oklahoma City Thunder",
       "home_abbr": "ATL",
       "away_abbr": "OKC",
-      "home_score": 48,
-      "away_score": 41,
+      "home_score": 56,
+      "away_score": 49,
       "home_linescores": [
         {
           "period": 1,
@@ -23272,8 +23272,8 @@
         },
         {
           "period": 2,
-          "value": 19,
-          "display": "19"
+          "value": 27,
+          "display": "27"
         }
       ],
       "away_linescores": [
@@ -23284,13 +23284,13 @@
         },
         {
           "period": 2,
-          "value": 13,
-          "display": "13"
+          "value": 21,
+          "display": "21"
         }
       ],
-      "clock": "2:31",
+      "clock": "0.0",
       "period": 2,
-      "state": "Q2 2:31",
+      "state": "Q2 0.0",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/ATL.png&h=40&w=40",
@@ -23381,8 +23381,8 @@
       "away": "Brooklyn Nets",
       "home_abbr": "WSH",
       "away_abbr": "BKN",
-      "home_score": 54,
-      "away_score": 59,
+      "home_score": 72,
+      "away_score": 73,
       "home_linescores": [
         {
           "period": 1,
@@ -23391,8 +23391,8 @@
         },
         {
           "period": 2,
-          "value": 22,
-          "display": "22"
+          "value": 40,
+          "display": "40"
         }
       ],
       "away_linescores": [
@@ -23403,13 +23403,13 @@
         },
         {
           "period": 2,
-          "value": 23,
-          "display": "23"
+          "value": 37,
+          "display": "37"
         }
       ],
-      "clock": "3:19",
+      "clock": "0.0",
       "period": 2,
-      "state": "Q2 3:19",
+      "state": "Q2 0.0",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/WSH.png&h=40&w=40",
@@ -23500,25 +23500,35 @@
       "away": "Minnesota Timberwolves",
       "home_abbr": "NY",
       "away_abbr": "MIN",
-      "home_score": 20,
-      "away_score": 26,
+      "home_score": 25,
+      "away_score": 30,
       "home_linescores": [
         {
           "period": 1,
-          "value": 20,
-          "display": "20"
+          "value": 25,
+          "display": "25"
+        },
+        {
+          "period": 2,
+          "value": 0,
+          "display": "0"
         }
       ],
       "away_linescores": [
         {
           "period": 1,
-          "value": 26,
-          "display": "26"
+          "value": 30,
+          "display": "30"
+        },
+        {
+          "period": 2,
+          "value": 0,
+          "display": "0"
         }
       ],
-      "clock": "2:55",
-      "period": 1,
-      "state": "Q1 2:55",
+      "clock": "0.0",
+      "period": 2,
+      "state": "Q2 0.0",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/NY.png&h=40&w=40",
