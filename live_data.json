@@ -1,10 +1,11 @@
 {
-  "fecha": "12/10/2026 23:57",
+  "fecha": "13/10/2026 00:13",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791900000,
   "proxima_actualizacion_lmb_ts": 1791916200,
   "dias": [
+    "2026-10-13",
     "2026-10-12",
     "2026-10-11",
     "2026-10-10",
@@ -4144,12 +4145,9 @@
       "score_opp": "2",
       "state": "Final",
       "result": "loss",
-      "label": "📋",
-      "game_pk": 401907994,
-      "fav_abbr": "CHW",
-      "opp_abbr": "CLE",
       "home_team": "Cleveland Guardians",
       "away_team": "Chicago White Sox",
+      "label": "📋",
       "llm_ir_favorito": "SÍ",
       "llm_porque": "Mejor récord y racha reciente favorable.",
       "llm_factores": [
@@ -4158,6 +4156,7 @@
         "Historial favorable en enfrentamientos directos"
       ],
       "resultado_llm": "fallido",
+      "game_pk": 0,
       "linescore": {
         "innings": [
           {
@@ -4224,8 +4223,6 @@
         "score_fav": "3",
         "score_opp": "6"
       },
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CHW.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
       "llm_favorito": "Cleveland Guardians",
       "llm_carreras": "5-3",
       "llm_carreras_lineas": {
@@ -4677,6 +4674,76 @@
       ],
       "llm_relevo_local": "Bullpen con ERA de 4.00, puede ser vulnerable en momentos críticos.",
       "llm_relevo_visitante": "Bullpen de Dodgers con ERA de 3.50, sólido en situaciones de presión."
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-10-13",
+      "status_emoji": "⏳",
+      "fav_team": "Cleveland Guardians",
+      "opp_team": "Tampa Bay Rays",
+      "score_fav": "—",
+      "score_opp": "",
+      "state": "Pend.",
+      "result": "pending",
+      "label": "📋",
+      "game_pk": 401908024,
+      "fav_abbr": "CLE",
+      "opp_abbr": "TB",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Cleveland Guardians",
+      "linescore": {},
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y racha reciente favorable.",
+      "llm_factores": [
+        "Racha reciente de 8-2 para Rays",
+        "Historial favorable en enfrentamientos directos",
+        "Lesiones mínimas en Rays"
+      ],
+      "llm_favorito": "Tampa Bay Rays",
+      "llm_carreras": "6-4",
+      "llm_carreras_lineas": {
+        "over_7.5": 75,
+        "over_8.5": 60,
+        "over_9.5": 45
+      },
+      "llm_ranking_local": "AL Este: 1º (95-67)",
+      "llm_ranking_visitante": "AL Central: 3º (75-87)",
+      "llm_abridor_local": "Shane McClanahan (3.15, 15-5, 220)",
+      "llm_abridor_visitante": "Triston McKenzie (4.50, 10-12, 180)",
+      "llm_bateadores_clave": [
+        {
+          "jugador": "Wander Franco",
+          "equipo": "Tampa Bay Rays",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2,
+          "confianza_bateo": 85
+        },
+        {
+          "jugador": "Randy Arozarena",
+          "equipo": "Tampa Bay Rays",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 75
+        },
+        {
+          "jugador": "José Ramírez",
+          "equipo": "Cleveland Guardians",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 70
+        },
+        {
+          "jugador": "Josh Naylor",
+          "equipo": "Cleveland Guardians",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 65
+        }
+      ],
+      "llm_relevo_local": "Bullpen sólido con ERA de 3.20, confiable en situaciones críticas.",
+      "llm_relevo_visitante": "Bullpen con ERA de 4.50, menos confiable en momentos de presión."
     }
   ],
   "bot_username": "MLBAnalyticsRailwayBot",
@@ -4684,83 +4751,8 @@
     6099564810
   ],
   "has_live": false,
-  "has_scheduled": false,
+  "has_scheduled": true,
   "live_data": {
-    "401907994": {
-      "is_live": false,
-      "is_final": true,
-      "status": "Final",
-      "away_runs": 0,
-      "home_runs": 2,
-      "away_team_name": "Cleveland Guardians",
-      "home_team_name": "Chicago White Sox",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 5
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 0,
-        "away_runs": 3,
-        "home_runs": 6,
-        "away_hits": 11,
-        "home_hits": 7,
-        "away_errors": 1,
-        "home_errors": 0,
-        "away_team_name": "Cleveland Guardians",
-        "home_team_name": "Chicago White Sox",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "3",
-        "opp_score": "6",
-        "score_fav": "3",
-        "score_opp": "6"
-      }
-    },
     "401908030": {
       "is_live": false,
       "is_final": true,
@@ -4985,9 +4977,19 @@
         "score_fav": "4",
         "score_opp": "7"
       }
+    },
+    "401908024": {
+      "is_live": false,
+      "is_final": false,
+      "status": "Pend.",
+      "away_runs": 0,
+      "home_runs": 0,
+      "away_team_name": "Tampa Bay Rays",
+      "home_team_name": "Cleveland Guardians",
+      "linescore": {}
     }
   },
-  "updated_at": "12/10/2026 23:57",
+  "updated_at": "13/10/2026 00:13",
   "stats": {
     "total": 23,
     "acertados": 14,
@@ -5064,10 +5066,10 @@
     "llm_win_rate": 80.0
   },
   "stats_hoy": {
-    "total": 1,
+    "total": 0,
     "acertados": 0,
-    "fallidos": 1,
-    "win_rate": 0.0,
+    "fallidos": 0,
+    "win_rate": 0,
     "alta_total": 0,
     "alta_acertados": 0,
     "alta_fallidos": 0,
@@ -5076,23 +5078,23 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 2,
-    "baja_acertados": 1,
-    "baja_fallidos": 1,
-    "baja_win_rate": 50.0,
+    "baja_total": 0,
+    "baja_acertados": 0,
+    "baja_fallidos": 0,
+    "baja_win_rate": 0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 2,
-    "llm_acertados": 1,
-    "llm_fallidos": 1,
-    "llm_win_rate": 50.0
+    "llm_total": 0,
+    "llm_acertados": 0,
+    "llm_fallidos": 0,
+    "llm_win_rate": 0
   },
   "stats_hoy_mlb": {
-    "total": 1,
+    "total": 0,
     "acertados": 0,
-    "fallidos": 1,
-    "win_rate": 0.0,
+    "fallidos": 0,
+    "win_rate": 0,
     "alta_total": 0,
     "alta_acertados": 0,
     "alta_fallidos": 0,
@@ -5101,17 +5103,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 2,
-    "baja_acertados": 1,
-    "baja_fallidos": 1,
-    "baja_win_rate": 50.0,
+    "baja_total": 0,
+    "baja_acertados": 0,
+    "baja_fallidos": 0,
+    "baja_win_rate": 0,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 2,
-    "llm_acertados": 1,
-    "llm_fallidos": 1,
-    "llm_win_rate": 50.0
+    "llm_total": 0,
+    "llm_acertados": 0,
+    "llm_fallidos": 0,
+    "llm_win_rate": 0
   },
   "stats_hoy_lmb": {
     "total": 0,
@@ -5151,17 +5153,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 4,
+    "baja_total": 3,
     "baja_acertados": 2,
-    "baja_fallidos": 2,
-    "baja_win_rate": 50.0,
+    "baja_fallidos": 1,
+    "baja_win_rate": 66.7,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 4,
+    "llm_total": 3,
     "llm_acertados": 2,
-    "llm_fallidos": 2,
-    "llm_win_rate": 50.0
+    "llm_fallidos": 1,
+    "llm_win_rate": 66.7
   },
   "stats_3dias_mlb": {
     "total": 1,
@@ -5176,17 +5178,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 4,
+    "baja_total": 3,
     "baja_acertados": 2,
-    "baja_fallidos": 2,
-    "baja_win_rate": 50.0,
+    "baja_fallidos": 1,
+    "baja_win_rate": 66.7,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 4,
+    "llm_total": 3,
     "llm_acertados": 2,
-    "llm_fallidos": 2,
-    "llm_win_rate": 50.0
+    "llm_fallidos": 1,
+    "llm_win_rate": 66.7
   },
   "stats_3dias_lmb": {
     "total": 0,
@@ -5226,17 +5228,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 11,
-    "baja_acertados": 5,
-    "baja_fallidos": 6,
-    "baja_win_rate": 45.5,
+    "baja_total": 9,
+    "baja_acertados": 4,
+    "baja_fallidos": 5,
+    "baja_win_rate": 44.4,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 11,
-    "llm_acertados": 6,
-    "llm_fallidos": 5,
-    "llm_win_rate": 54.5
+    "llm_total": 9,
+    "llm_acertados": 5,
+    "llm_fallidos": 4,
+    "llm_win_rate": 55.6
   },
   "stats_semanal_mlb": {
     "total": 4,
@@ -5251,17 +5253,17 @@
     "media_acertados": 0,
     "media_fallidos": 0,
     "media_win_rate": 0,
-    "baja_total": 11,
-    "baja_acertados": 5,
-    "baja_fallidos": 6,
-    "baja_win_rate": 45.5,
+    "baja_total": 9,
+    "baja_acertados": 4,
+    "baja_fallidos": 5,
+    "baja_win_rate": 44.4,
     "valor_ok": 0,
     "valor_total": 0,
     "valor_rate": 0,
-    "llm_total": 11,
-    "llm_acertados": 6,
-    "llm_fallidos": 5,
-    "llm_win_rate": 54.5
+    "llm_total": 9,
+    "llm_acertados": 5,
+    "llm_fallidos": 4,
+    "llm_win_rate": 55.6
   },
   "stats_semanal_lmb": {
     "total": 0,
@@ -19581,6 +19583,58 @@
       "relevo_local": "Bullpen con ERA de 4.00, puede ser vulnerable en momentos críticos.",
       "relevo_visitante": "Bullpen de Dodgers con ERA de 3.50, sólido en situaciones de presión."
     },
+    "2026-10-13___MLB___Tampa Bay Rays___Cleveland Guardians": {
+      "ir": "SÍ",
+      "pq": "Mejor récord y racha reciente favorable.",
+      "factores": [
+        "Racha reciente de 8-2 para Rays",
+        "Historial favorable en enfrentamientos directos",
+        "Lesiones mínimas en Rays"
+      ],
+      "favorito": "Tampa Bay Rays",
+      "carreras_esperadas": "6-4",
+      "carreras_lineas": {
+        "over_7.5": 75,
+        "over_8.5": 60,
+        "over_9.5": 45
+      },
+      "ranking_local": "AL Este: 1º (95-67)",
+      "ranking_visitante": "AL Central: 3º (75-87)",
+      "abridor_local": "Shane McClanahan (3.15, 15-5, 220)",
+      "abridor_visitante": "Triston McKenzie (4.50, 10-12, 180)",
+      "bateadores_clave": [
+        {
+          "jugador": "Wander Franco",
+          "equipo": "Tampa Bay Rays",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2,
+          "confianza_bateo": 85
+        },
+        {
+          "jugador": "Randy Arozarena",
+          "equipo": "Tampa Bay Rays",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 75
+        },
+        {
+          "jugador": "José Ramírez",
+          "equipo": "Cleveland Guardians",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 70
+        },
+        {
+          "jugador": "Josh Naylor",
+          "equipo": "Cleveland Guardians",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 65
+        }
+      ],
+      "relevo_local": "Bullpen sólido con ERA de 3.20, confiable en situaciones críticas.",
+      "relevo_visitante": "Bullpen con ERA de 4.50, menos confiable en momentos de presión."
+    },
     "2026-06-28___Sudáfrica___Canadá": {
       "ir": "SÍ",
       "pq": "Canadá tiene mejor ranking FIFA y racha reciente.",
@@ -22171,6 +22225,401 @@
       },
       "ranking_local": "",
       "ranking_visitante": ""
+    },
+    "2026-10-13___NBA___Orlando Magic___Cleveland Cavaliers": {
+      "ir": "SÍ",
+      "pq": "Cleveland tiene mejor PPG y eficiencia ofensiva.",
+      "factores": [
+        "Cleveland tiene mejor récord",
+        "Orlando no ha jugado en casa aún"
+      ],
+      "favorito": "Cleveland Cavaliers",
+      "puntos_local": 116,
+      "puntos_visitante": 120,
+      "spread": 4.0,
+      "confianza_ou": 70,
+      "linea_ou": 235.0,
+      "b2b_impacto": "",
+      "lesion_clave": "",
+      "jugadores_clave": [],
+      "anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Local",
+          "pts_estimados": 30.0,
+          "confianza_pts": 75
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Visitante",
+          "pts_estimados": 32.5,
+          "confianza_pts": 80
+        }
+      ],
+      "defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Local",
+          "reb_estimados": 9.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 70
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Visitante",
+          "reb_estimados": 8.0,
+          "robos_estimados": 1.5,
+          "bloqueos_estimados": 1.5,
+          "confianza_def": 75
+        }
+      ],
+      "armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Local",
+          "ast_estimadas": 8.0,
+          "confianza_ast": 75
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Visitante",
+          "ast_estimadas": 7.5,
+          "confianza_ast": 70
+        }
+      ],
+      "ranking_local": "Este: 10° (1-1)",
+      "ranking_visitante": "Este: 8° (1-1)",
+      "stats_comparison": {
+        "ppg_local": 115.7,
+        "ppg_visitante": 119.5,
+        "opp_ppg_local": 0,
+        "opp_ppg_visitante": 0,
+        "fg_pct_local": 46.4,
+        "fg_pct_visitante": 48.2,
+        "pace_analysis": "Ambos equipos tienen un ritmo alto, lo que favorece un juego rápido."
+      },
+      "lineas_ou": {
+        "over_140": 80,
+        "over_150": 70,
+        "over_160": 60
+      }
+    },
+    "2026-10-13___NBA___Toronto Raptors___New York Knicks": {
+      "ir": "SÍ",
+      "pq": "Toronto tiene mejor récord y juega en casa.",
+      "factores": [
+        "Toronto ha ganado en casa",
+        "New York tiene un mal inicio de temporada"
+      ],
+      "favorito": "Toronto Raptors",
+      "puntos_local": 115,
+      "puntos_visitante": 112,
+      "spread": 3.0,
+      "confianza_ou": 65,
+      "linea_ou": 227.0,
+      "b2b_impacto": "",
+      "lesion_clave": "",
+      "jugadores_clave": [],
+      "anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Local",
+          "pts_estimados": 28.0,
+          "confianza_pts": 80
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Visitante",
+          "pts_estimados": 26.0,
+          "confianza_pts": 75
+        }
+      ],
+      "defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Local",
+          "reb_estimados": 10.0,
+          "robos_estimados": 1.2,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 75
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Visitante",
+          "reb_estimados": 7.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 70
+        }
+      ],
+      "armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Local",
+          "ast_estimadas": 7.5,
+          "confianza_ast": 75
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Visitante",
+          "ast_estimadas": 6.0,
+          "confianza_ast": 68
+        }
+      ],
+      "ranking_local": "Este: 7° (1-1)",
+      "ranking_visitante": "Este: 15° (0-3)",
+      "stats_comparison": {
+        "ppg_local": 114.6,
+        "ppg_visitante": 116.5,
+        "opp_ppg_local": 0,
+        "opp_ppg_visitante": 0,
+        "fg_pct_local": 48.2,
+        "fg_pct_visitante": 47.8,
+        "pace_analysis": "Ritmo moderado, ambos equipos juegan a un ritmo similar."
+      },
+      "lineas_ou": {
+        "over_140": 75,
+        "over_150": 60,
+        "over_160": 40
+      }
+    },
+    "2026-10-13___NBA___Oklahoma City Thunder___Indiana Pacers": {
+      "ir": "NO",
+      "pq": "Oklahoma ha mostrado mejor ofensiva a pesar del récord.",
+      "factores": [
+        "Oklahoma tiene ventaja de local",
+        "Indiana tiene un récord mejor"
+      ],
+      "favorito": "Indiana Pacers",
+      "puntos_local": 120,
+      "puntos_visitante": 115,
+      "spread": 5.0,
+      "confianza_ou": 68,
+      "linea_ou": 235.0,
+      "b2b_impacto": "",
+      "lesion_clave": "",
+      "jugadores_clave": [],
+      "anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Local",
+          "pts_estimados": 31.0,
+          "confianza_pts": 80
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Visitante",
+          "pts_estimados": 29.0,
+          "confianza_pts": 75
+        }
+      ],
+      "defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Local",
+          "reb_estimados": 9.5,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 75
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Visitante",
+          "reb_estimados": 8.0,
+          "robos_estimados": 1.5,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 70
+        }
+      ],
+      "armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Local",
+          "ast_estimadas": 8.0,
+          "confianza_ast": 75
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Visitante",
+          "ast_estimadas": 7.0,
+          "confianza_ast": 70
+        }
+      ],
+      "ranking_local": "Oeste: 15° (0-3)",
+      "ranking_visitante": "Este: 9° (1-1)",
+      "stats_comparison": {
+        "ppg_local": 119.0,
+        "ppg_visitante": 112.4,
+        "opp_ppg_local": 0,
+        "opp_ppg_visitante": 0,
+        "fg_pct_local": 48.4,
+        "fg_pct_visitante": 45.8,
+        "pace_analysis": "Ritmo alto, Oklahoma juega rápido, lo que puede resultar en un alto puntaje."
+      },
+      "lineas_ou": {
+        "over_140": 80,
+        "over_150": 70,
+        "over_160": 60
+      }
+    },
+    "2026-10-13___NBA___Los Angeles Lakers___Golden State Warriors": {
+      "ir": "SÍ",
+      "pq": "Mejor récord y rendimiento ofensivo en casa.",
+      "factores": [
+        "Localía fuerte",
+        "Eficiencia ofensiva superior"
+      ],
+      "favorito": "Los Angeles Lakers",
+      "puntos_local": 116,
+      "puntos_visitante": 114,
+      "spread": 1.0,
+      "confianza_ou": 65,
+      "linea_ou": 230,
+      "b2b_impacto": "",
+      "lesion_clave": "",
+      "jugadores_clave": [],
+      "anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Local",
+          "pts_estimados": 30.0,
+          "confianza_pts": 80
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Visitante",
+          "pts_estimados": 28.5,
+          "confianza_pts": 75
+        }
+      ],
+      "defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Local",
+          "reb_estimados": 9.5,
+          "robos_estimados": 1.2,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 85
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Visitante",
+          "reb_estimados": 8.0,
+          "robos_estimados": 1.5,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 70
+        }
+      ],
+      "armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Local",
+          "ast_estimadas": 8.0,
+          "confianza_ast": 78
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Visitante",
+          "ast_estimadas": 7.0,
+          "confianza_ast": 72
+        }
+      ],
+      "ranking_local": "Oeste: 3° (2-1)",
+      "ranking_visitante": "Oeste: 5° (2-2)",
+      "stats_comparison": {
+        "ppg_local": 116.3,
+        "ppg_visitante": 114.6,
+        "opp_ppg_local": null,
+        "opp_ppg_visitante": null,
+        "fg_pct_local": 50.2,
+        "fg_pct_visitante": 46.1,
+        "pace_analysis": "Ritmo alto, ambos equipos juegan rápido."
+      },
+      "lineas_ou": {
+        "over_140": 80,
+        "over_150": 65,
+        "over_160": 50
+      }
+    },
+    "2026-10-13___NBA___Sacramento Kings___Portland Trail Blazers": {
+      "ir": "SÍ",
+      "pq": "Mejor récord y rendimiento ofensivo.",
+      "factores": [
+        "Rendimiento superior",
+        "Localía débil"
+      ],
+      "favorito": "Portland Trail Blazers",
+      "puntos_local": 111,
+      "puntos_visitante": 115,
+      "spread": 4.0,
+      "confianza_ou": 70,
+      "linea_ou": 226,
+      "b2b_impacto": "",
+      "lesion_clave": "",
+      "jugadores_clave": [],
+      "anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Local",
+          "pts_estimados": 25.0,
+          "confianza_pts": 70
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Visitante",
+          "pts_estimados": 29.0,
+          "confianza_pts": 75
+        }
+      ],
+      "defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Local",
+          "reb_estimados": 10.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 0.7,
+          "confianza_def": 75
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Visitante",
+          "reb_estimados": 9.0,
+          "robos_estimados": 1.8,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 80
+        }
+      ],
+      "armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Local",
+          "ast_estimadas": 6.5,
+          "confianza_ast": 70
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Visitante",
+          "ast_estimadas": 7.5,
+          "confianza_ast": 75
+        }
+      ],
+      "ranking_local": "Oeste: 14° (0-3)",
+      "ranking_visitante": "Oeste: 1° (2-0)",
+      "stats_comparison": {
+        "ppg_local": 111.0,
+        "ppg_visitante": 115.5,
+        "opp_ppg_local": null,
+        "opp_ppg_visitante": null,
+        "fg_pct_local": 46.7,
+        "fg_pct_visitante": 45.3,
+        "pace_analysis": "Ritmo moderado, ambos equipos tienen transiciones rápidas."
+      },
+      "lineas_ou": {
+        "over_140": 75,
+        "over_150": 60,
+        "over_160": 45
+      }
     }
   },
   "llm_by_sport": {
@@ -22212,981 +22661,6 @@
     }
   },
   "nba_games": [
-    {
-      "game_date": "2026-10-10",
-      "game_id": "401902645",
-      "status_emoji": "🏁",
-      "home": "Toronto Raptors",
-      "away": "LA Clippers",
-      "home_abbr": "TOR",
-      "away_abbr": "LAC",
-      "home_score": 114,
-      "away_score": 106,
-      "home_linescores": [
-        {
-          "period": 1,
-          "value": 24,
-          "display": "24"
-        },
-        {
-          "period": 2,
-          "value": 33,
-          "display": "33"
-        },
-        {
-          "period": 3,
-          "value": 32,
-          "display": "32"
-        },
-        {
-          "period": 4,
-          "value": 25,
-          "display": "25"
-        }
-      ],
-      "away_linescores": [
-        {
-          "period": 1,
-          "value": 18,
-          "display": "18"
-        },
-        {
-          "period": 2,
-          "value": 27,
-          "display": "27"
-        },
-        {
-          "period": 3,
-          "value": 27,
-          "display": "27"
-        },
-        {
-          "period": 4,
-          "value": 34,
-          "display": "34"
-        }
-      ],
-      "clock": "0.0",
-      "period": 4,
-      "state": "Final",
-      "result": "completed",
-      "liga": "NBA",
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/TOR.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/LAC.png&h=40&w=40",
-      "llm_puntos_local": 114,
-      "llm_puntos_visitante": 114,
-      "llm_spread": -1.0,
-      "llm_confianza_ou": 65,
-      "llm_linea_ou": 228,
-      "llm_anotadores": [
-        {
-          "nombre": "Jugador A",
-          "equipo": "Local",
-          "pts_estimados": 30.0,
-          "confianza_pts": 80
-        },
-        {
-          "nombre": "Jugador B",
-          "equipo": "Visitante",
-          "pts_estimados": 29.5,
-          "confianza_pts": 75
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Jugador C",
-          "equipo": "Local",
-          "reb_estimados": 9.0,
-          "robos_estimados": 1.2,
-          "bloqueos_estimados": 1.0,
-          "confianza_def": 75
-        },
-        {
-          "nombre": "Jugador D",
-          "equipo": "Visitante",
-          "reb_estimados": 8.0,
-          "robos_estimados": 1.5,
-          "bloqueos_estimados": 0.5,
-          "confianza_def": 70
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Jugador E",
-          "equipo": "Local",
-          "ast_estimadas": 7.0,
-          "confianza_ast": 70
-        },
-        {
-          "nombre": "Jugador F",
-          "equipo": "Visitante",
-          "ast_estimadas": 6.8,
-          "confianza_ast": 68
-        }
-      ],
-      "llm_ranking_local": "Este: 14° (0-1)",
-      "llm_ranking_visitante": "Oeste: 4° (1-0)",
-      "llm_stats_comparison": {
-        "ppg_local": 114.6,
-        "ppg_visitante": 113.8,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 48.2,
-        "fg_pct_visitante": 48.4,
-        "pace_analysis": "Ritmo equilibrado, ambos equipos juegan rápido."
-      },
-      "llm_lineas_ou": {
-        "over_140": 80,
-        "over_150": 65,
-        "over_160": 50
-      },
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Clippers tienen mejor récord y eficiencia ofensiva.",
-      "llm_factores": [
-        "Clippers 1-0, Raptors 0-1",
-        "Raptors en casa pero con menor eficiencia"
-      ],
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_favorito": "LA Clippers"
-    },
-    {
-      "game_date": "2026-10-10",
-      "game_id": "401898396",
-      "status_emoji": "🏁",
-      "home": "Indiana Pacers",
-      "away": "Atlanta Hawks",
-      "home_abbr": "IND",
-      "away_abbr": "ATL",
-      "home_score": 117,
-      "away_score": 119,
-      "home_linescores": [
-        {
-          "period": 1,
-          "value": 32,
-          "display": "32"
-        },
-        {
-          "period": 2,
-          "value": 28,
-          "display": "28"
-        },
-        {
-          "period": 3,
-          "value": 26,
-          "display": "26"
-        },
-        {
-          "period": 4,
-          "value": 31,
-          "display": "31"
-        }
-      ],
-      "away_linescores": [
-        {
-          "period": 1,
-          "value": 31,
-          "display": "31"
-        },
-        {
-          "period": 2,
-          "value": 31,
-          "display": "31"
-        },
-        {
-          "period": 3,
-          "value": 34,
-          "display": "34"
-        },
-        {
-          "period": 4,
-          "value": 23,
-          "display": "23"
-        }
-      ],
-      "clock": "12:00",
-      "period": 4,
-      "state": "Final",
-      "result": "completed",
-      "liga": "NBA",
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/IND.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/ATL.png&h=40&w=40",
-      "llm_puntos_local": 112,
-      "llm_puntos_visitante": 118,
-      "llm_spread": -6.0,
-      "llm_confianza_ou": 70,
-      "llm_linea_ou": 230,
-      "llm_anotadores": [
-        {
-          "nombre": "Jugador A",
-          "equipo": "Local",
-          "pts_estimados": 28.0,
-          "confianza_pts": 75
-        },
-        {
-          "nombre": "Jugador B",
-          "equipo": "Visitante",
-          "pts_estimados": 33.0,
-          "confianza_pts": 80
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Jugador C",
-          "equipo": "Local",
-          "reb_estimados": 8.5,
-          "robos_estimados": 1.0,
-          "bloqueos_estimados": 0.7,
-          "confianza_def": 70
-        },
-        {
-          "nombre": "Jugador D",
-          "equipo": "Visitante",
-          "reb_estimados": 9.0,
-          "robos_estimados": 1.8,
-          "bloqueos_estimados": 0.4,
-          "confianza_def": 75
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Jugador E",
-          "equipo": "Local",
-          "ast_estimadas": 6.0,
-          "confianza_ast": 68
-        },
-        {
-          "nombre": "Jugador F",
-          "equipo": "Visitante",
-          "ast_estimadas": 7.5,
-          "confianza_ast": 72
-        }
-      ],
-      "llm_ranking_local": "Este: 10° (1-0)",
-      "llm_ranking_visitante": "Este: 8° (1-1)",
-      "llm_stats_comparison": {
-        "ppg_local": 112.4,
-        "ppg_visitante": 118.5,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 45.8,
-        "fg_pct_visitante": 47.4,
-        "pace_analysis": "Ritmo alto, Hawks juegan rápido y anotan mucho."
-      },
-      "llm_lineas_ou": {
-        "over_140": 85,
-        "over_150": 75,
-        "over_160": 60
-      },
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Hawks tienen mejor PPG y eficiencia ofensiva.",
-      "llm_factores": [
-        "Ambos equipos en forma, Hawks 1-1, Pacers 1-0",
-        "Hawks anotan más puntos por partido"
-      ],
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_favorito": "Atlanta Hawks"
-    },
-    {
-      "game_date": "2026-10-10",
-      "game_id": "401906510",
-      "status_emoji": "🏁",
-      "home": "Washington Wizards",
-      "away": "Detroit Pistons",
-      "home_abbr": "WSH",
-      "away_abbr": "DET",
-      "home_score": 114,
-      "away_score": 108,
-      "home_linescores": [
-        {
-          "period": 1,
-          "value": 40,
-          "display": "40"
-        },
-        {
-          "period": 2,
-          "value": 16,
-          "display": "16"
-        },
-        {
-          "period": 3,
-          "value": 24,
-          "display": "24"
-        },
-        {
-          "period": 4,
-          "value": 18,
-          "display": "18"
-        },
-        {
-          "period": 5,
-          "value": 16,
-          "display": "16"
-        }
-      ],
-      "away_linescores": [
-        {
-          "period": 1,
-          "value": 20,
-          "display": "20"
-        },
-        {
-          "period": 2,
-          "value": 30,
-          "display": "30"
-        },
-        {
-          "period": 3,
-          "value": 28,
-          "display": "28"
-        },
-        {
-          "period": 4,
-          "value": 20,
-          "display": "20"
-        },
-        {
-          "period": 5,
-          "value": 10,
-          "display": "10"
-        }
-      ],
-      "clock": "5:00",
-      "period": 5,
-      "state": "Final",
-      "result": "completed",
-      "liga": "NBA",
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/WSH.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/DET.png&h=40&w=40",
-      "llm_puntos_local": 112,
-      "llm_puntos_visitante": 118,
-      "llm_spread": -6.0,
-      "llm_confianza_ou": 68,
-      "llm_linea_ou": 230,
-      "llm_anotadores": [
-        {
-          "nombre": "Jugador A",
-          "equipo": "Local",
-          "pts_estimados": 27.0,
-          "confianza_pts": 70
-        },
-        {
-          "nombre": "Jugador B",
-          "equipo": "Visitante",
-          "pts_estimados": 30.0,
-          "confianza_pts": 75
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Jugador C",
-          "equipo": "Local",
-          "reb_estimados": 8.0,
-          "robos_estimados": 1.0,
-          "bloqueos_estimados": 0.5,
-          "confianza_def": 70
-        },
-        {
-          "nombre": "Jugador D",
-          "equipo": "Visitante",
-          "reb_estimados": 10.0,
-          "robos_estimados": 1.5,
-          "bloqueos_estimados": 1.0,
-          "confianza_def": 80
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Jugador E",
-          "equipo": "Local",
-          "ast_estimadas": 5.5,
-          "confianza_ast": 65
-        },
-        {
-          "nombre": "Jugador F",
-          "equipo": "Visitante",
-          "ast_estimadas": 7.0,
-          "confianza_ast": 70
-        }
-      ],
-      "llm_ranking_local": "Este: 12° (1-0)",
-      "llm_ranking_visitante": "Este: 6° (1-0)",
-      "llm_stats_comparison": {
-        "ppg_local": 112.9,
-        "ppg_visitante": 117.8,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 46.3,
-        "fg_pct_visitante": 48.5,
-        "pace_analysis": "Ritmo moderado, ambos equipos buscan anotar."
-      },
-      "llm_lineas_ou": {
-        "over_140": 80,
-        "over_150": 65,
-        "over_160": 50
-      },
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Pistons tienen mejor récord y ofensiva.",
-      "llm_factores": [
-        "Pistons 1-0, Wizards 1-0",
-        "Pistons anotan más y tienen mejor eficiencia"
-      ],
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_favorito": "Detroit Pistons"
-    },
-    {
-      "game_date": "2026-10-10",
-      "game_id": "401898397",
-      "status_emoji": "🏁",
-      "home": "Miami Heat",
-      "away": "Minnesota Timberwolves",
-      "home_abbr": "MIA",
-      "away_abbr": "MIN",
-      "home_score": 124,
-      "away_score": 125,
-      "home_linescores": [
-        {
-          "period": 1,
-          "value": 23,
-          "display": "23"
-        },
-        {
-          "period": 2,
-          "value": 33,
-          "display": "33"
-        },
-        {
-          "period": 3,
-          "value": 28,
-          "display": "28"
-        },
-        {
-          "period": 4,
-          "value": 40,
-          "display": "40"
-        }
-      ],
-      "away_linescores": [
-        {
-          "period": 1,
-          "value": 24,
-          "display": "24"
-        },
-        {
-          "period": 2,
-          "value": 36,
-          "display": "36"
-        },
-        {
-          "period": 3,
-          "value": 31,
-          "display": "31"
-        },
-        {
-          "period": 4,
-          "value": 34,
-          "display": "34"
-        }
-      ],
-      "clock": "0.0",
-      "period": 4,
-      "state": "Final",
-      "result": "completed",
-      "liga": "NBA",
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/MIA.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/MIN.png&h=40&w=40",
-      "llm_puntos_local": 121,
-      "llm_puntos_visitante": 118,
-      "llm_spread": 3.0,
-      "llm_confianza_ou": 80,
-      "llm_linea_ou": 238.0,
-      "llm_anotadores": [
-        {
-          "nombre": "Jugador A",
-          "equipo": "Local",
-          "pts_estimados": 30.0,
-          "confianza_pts": 80
-        },
-        {
-          "nombre": "Jugador B",
-          "equipo": "Visitante",
-          "pts_estimados": 29.5,
-          "confianza_pts": 75
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Jugador C",
-          "equipo": "Local",
-          "reb_estimados": 10.0,
-          "robos_estimados": 2.0,
-          "bloqueos_estimados": 1.0,
-          "confianza_def": 85
-        },
-        {
-          "nombre": "Jugador D",
-          "equipo": "Visitante",
-          "reb_estimados": 8.0,
-          "robos_estimados": 1.5,
-          "bloqueos_estimados": 0.5,
-          "confianza_def": 70
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Jugador E",
-          "equipo": "Local",
-          "ast_estimadas": 8.0,
-          "confianza_ast": 75
-        },
-        {
-          "nombre": "Jugador F",
-          "equipo": "Visitante",
-          "ast_estimadas": 7.0,
-          "confianza_ast": 70
-        }
-      ],
-      "llm_ranking_local": "Este: 1° (2-0)",
-      "llm_ranking_visitante": "Oeste: 7° (1-1)",
-      "llm_stats_comparison": {
-        "ppg_local": 120.9,
-        "ppg_visitante": 118.0,
-        "opp_ppg_local": 95.2,
-        "opp_ppg_visitante": 99.8,
-        "fg_pct_local": 46.8,
-        "fg_pct_visitante": 48.1,
-        "pace_analysis": "Ritmo alto, ambos equipos transicionan rápido"
-      },
-      "llm_lineas_ou": {
-        "over_140": 85,
-        "over_150": 70,
-        "over_160": 55
-      },
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y rendimiento ofensivo en casa.",
-      "llm_factores": [
-        "Localía fuerte",
-        "Mejor eficiencia ofensiva"
-      ],
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_favorito": "Miami Heat"
-    },
-    {
-      "game_date": "2026-10-10",
-      "game_id": "401898398",
-      "status_emoji": "🏁",
-      "home": "Boston Celtics",
-      "away": "Philadelphia 76ers",
-      "home_abbr": "BOS",
-      "away_abbr": "PHI",
-      "home_score": 144,
-      "away_score": 106,
-      "home_linescores": [
-        {
-          "period": 1,
-          "value": 24,
-          "display": "24"
-        },
-        {
-          "period": 2,
-          "value": 39,
-          "display": "39"
-        },
-        {
-          "period": 3,
-          "value": 41,
-          "display": "41"
-        },
-        {
-          "period": 4,
-          "value": 40,
-          "display": "40"
-        }
-      ],
-      "away_linescores": [
-        {
-          "period": 1,
-          "value": 20,
-          "display": "20"
-        },
-        {
-          "period": 2,
-          "value": 22,
-          "display": "22"
-        },
-        {
-          "period": 3,
-          "value": 27,
-          "display": "27"
-        },
-        {
-          "period": 4,
-          "value": 37,
-          "display": "37"
-        }
-      ],
-      "clock": "12:00",
-      "period": 4,
-      "state": "Final",
-      "result": "completed",
-      "liga": "NBA",
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/BOS.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/PHI.png&h=40&w=40",
-      "llm_puntos_local": 115,
-      "llm_puntos_visitante": 116,
-      "llm_spread": -1.0,
-      "llm_confianza_ou": 65,
-      "llm_linea_ou": 231.0,
-      "llm_anotadores": [
-        {
-          "nombre": "Jugador A",
-          "equipo": "Local",
-          "pts_estimados": 28.0,
-          "confianza_pts": 75
-        },
-        {
-          "nombre": "Jugador B",
-          "equipo": "Visitante",
-          "pts_estimados": 30.0,
-          "confianza_pts": 80
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Jugador C",
-          "equipo": "Local",
-          "reb_estimados": 9.0,
-          "robos_estimados": 1.8,
-          "bloqueos_estimados": 1.0,
-          "confianza_def": 80
-        },
-        {
-          "nombre": "Jugador D",
-          "equipo": "Visitante",
-          "reb_estimados": 7.0,
-          "robos_estimados": 2.0,
-          "bloqueos_estimados": 0.5,
-          "confianza_def": 75
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Jugador E",
-          "equipo": "Local",
-          "ast_estimadas": 7.5,
-          "confianza_ast": 70
-        },
-        {
-          "nombre": "Jugador F",
-          "equipo": "Visitante",
-          "ast_estimadas": 6.8,
-          "confianza_ast": 68
-        }
-      ],
-      "llm_ranking_local": "Este: 2° (1-0)",
-      "llm_ranking_visitante": "Este: 5° (1-1)",
-      "llm_stats_comparison": {
-        "ppg_local": 114.9,
-        "ppg_visitante": 115.9,
-        "opp_ppg_local": 95.2,
-        "opp_ppg_visitante": 99.8,
-        "fg_pct_local": 46.7,
-        "fg_pct_visitante": 46.2,
-        "pace_analysis": "Ritmo moderado, ambos equipos juegan con control."
-      },
-      "llm_ir_favorito": "NO",
-      "llm_porque": "Boston tiene ventaja local y mejor defensa.",
-      "llm_factores": [
-        "Localía fuerte",
-        "Eficiencia defensiva"
-      ],
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_lineas_ou": {},
-      "llm_favorito": "Philadelphia 76ers"
-    },
-    {
-      "game_date": "2026-10-10",
-      "game_id": "401898399",
-      "status_emoji": "🏁",
-      "home": "Golden State Warriors",
-      "away": "Sacramento Kings",
-      "home_abbr": "GS",
-      "away_abbr": "SAC",
-      "home_score": 111,
-      "away_score": 106,
-      "home_linescores": [
-        {
-          "period": 1,
-          "value": 24,
-          "display": "24"
-        },
-        {
-          "period": 2,
-          "value": 37,
-          "display": "37"
-        },
-        {
-          "period": 3,
-          "value": 28,
-          "display": "28"
-        },
-        {
-          "period": 4,
-          "value": 22,
-          "display": "22"
-        }
-      ],
-      "away_linescores": [
-        {
-          "period": 1,
-          "value": 25,
-          "display": "25"
-        },
-        {
-          "period": 2,
-          "value": 31,
-          "display": "31"
-        },
-        {
-          "period": 3,
-          "value": 25,
-          "display": "25"
-        },
-        {
-          "period": 4,
-          "value": 25,
-          "display": "25"
-        }
-      ],
-      "clock": "12:00",
-      "period": 4,
-      "state": "Final",
-      "result": "completed",
-      "liga": "NBA",
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/GS.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/SAC.png&h=40&w=40",
-      "llm_puntos_local": 116,
-      "llm_puntos_visitante": 111,
-      "llm_spread": 5.0,
-      "llm_confianza_ou": 70,
-      "llm_linea_ou": 227.0,
-      "llm_anotadores": [
-        {
-          "nombre": "Jugador A",
-          "equipo": "Local",
-          "pts_estimados": 27.0,
-          "confianza_pts": 75
-        },
-        {
-          "nombre": "Jugador B",
-          "equipo": "Visitante",
-          "pts_estimados": 24.0,
-          "confianza_pts": 70
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Jugador C",
-          "equipo": "Local",
-          "reb_estimados": 9.0,
-          "robos_estimados": 1.5,
-          "bloqueos_estimados": 1.0,
-          "confianza_def": 80
-        },
-        {
-          "nombre": "Jugador D",
-          "equipo": "Visitante",
-          "reb_estimados": 6.5,
-          "robos_estimados": 1.0,
-          "bloqueos_estimados": 0.5,
-          "confianza_def": 70
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Jugador E",
-          "equipo": "Local",
-          "ast_estimadas": 8.0,
-          "confianza_ast": 75
-        },
-        {
-          "nombre": "Jugador F",
-          "equipo": "Visitante",
-          "ast_estimadas": 5.5,
-          "confianza_ast": 65
-        }
-      ],
-      "llm_ranking_local": "Oeste: 4° (1-2)",
-      "llm_ranking_visitante": "Oeste: 15° (0-2)",
-      "llm_stats_comparison": {
-        "ppg_local": 114.6,
-        "ppg_visitante": 111.0,
-        "opp_ppg_local": 95.2,
-        "opp_ppg_visitante": 99.8,
-        "fg_pct_local": 46.1,
-        "fg_pct_visitante": 46.7,
-        "pace_analysis": "Ritmo alto, ambos equipos transicionan rápido"
-      },
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord en casa y rendimiento ofensivo.",
-      "llm_factores": [
-        "Localía fuerte",
-        "Mejor eficiencia ofensiva"
-      ],
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_lineas_ou": {},
-      "llm_favorito": "Golden State Warriors"
-    },
-    {
-      "game_date": "2026-10-10",
-      "game_id": "401898720",
-      "status_emoji": "🏁",
-      "home": "Phoenix Suns",
-      "away": "San Antonio Spurs",
-      "home_abbr": "PHX",
-      "away_abbr": "SA",
-      "home_score": 102,
-      "away_score": 98,
-      "home_linescores": [
-        {
-          "period": 1,
-          "value": 35,
-          "display": "35"
-        },
-        {
-          "period": 2,
-          "value": 23,
-          "display": "23"
-        },
-        {
-          "period": 3,
-          "value": 27,
-          "display": "27"
-        },
-        {
-          "period": 4,
-          "value": 17,
-          "display": "17"
-        }
-      ],
-      "away_linescores": [
-        {
-          "period": 1,
-          "value": 25,
-          "display": "25"
-        },
-        {
-          "period": 2,
-          "value": 26,
-          "display": "26"
-        },
-        {
-          "period": 3,
-          "value": 22,
-          "display": "22"
-        },
-        {
-          "period": 4,
-          "value": 25,
-          "display": "25"
-        }
-      ],
-      "clock": "0.0",
-      "period": 4,
-      "state": "Final",
-      "result": "completed",
-      "liga": "NBA",
-      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/PHX.png&h=40&w=40",
-      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/SA.png&h=40&w=40",
-      "llm_puntos_local": 112,
-      "llm_puntos_visitante": 120,
-      "llm_spread": 8.0,
-      "llm_confianza_ou": 65,
-      "llm_linea_ou": 230,
-      "llm_anotadores": [
-        {
-          "nombre": "Jugador A",
-          "equipo": "Local",
-          "pts_estimados": 28.5,
-          "confianza_pts": 75
-        },
-        {
-          "nombre": "Jugador B",
-          "equipo": "Visitante",
-          "pts_estimados": 30.2,
-          "confianza_pts": 70
-        }
-      ],
-      "llm_defensores": [
-        {
-          "nombre": "Jugador C",
-          "equipo": "Local",
-          "reb_estimados": 9.0,
-          "robos_estimados": 1.0,
-          "bloqueos_estimados": 1.0,
-          "confianza_def": 80
-        },
-        {
-          "nombre": "Jugador D",
-          "equipo": "Visitante",
-          "reb_estimados": 8.0,
-          "robos_estimados": 1.5,
-          "bloqueos_estimados": 1.0,
-          "confianza_def": 75
-        }
-      ],
-      "llm_armadores": [
-        {
-          "nombre": "Jugador E",
-          "equipo": "Local",
-          "ast_estimadas": 7.0,
-          "confianza_ast": 72
-        },
-        {
-          "nombre": "Jugador F",
-          "equipo": "Visitante",
-          "ast_estimadas": 6.8,
-          "confianza_ast": 68
-        }
-      ],
-      "llm_ranking_local": "Oeste: 14° (0-2)",
-      "llm_ranking_visitante": "Oeste: 13° (0-1)",
-      "llm_stats_comparison": {
-        "ppg_local": 112.6,
-        "ppg_visitante": 119.8,
-        "opp_ppg_local": 0,
-        "opp_ppg_visitante": 0,
-        "fg_pct_local": 45.5,
-        "fg_pct_visitante": 48.3,
-        "pace_analysis": "Ambos equipos muestran un ritmo alto, lo que sugiere un juego rápido."
-      },
-      "llm_lineas_ou": {
-        "over_140": 80,
-        "over_150": 70,
-        "over_160": 60
-      },
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y estadísticas ofensivas.",
-      "llm_factores": [
-        "Rendimiento ofensivo superior de Spurs",
-        "Suns sin victorias en casa"
-      ],
-      "llm_b2b_impacto": "",
-      "llm_lesion_clave": "",
-      "llm_jugadores_clave": [],
-      "llm_favorito": "San Antonio Spurs"
-    },
     {
       "game_date": "2026-10-12",
       "game_id": "401914130",
@@ -23881,6 +23355,491 @@
       "llm_lesion_clave": "",
       "llm_jugadores_clave": [],
       "llm_favorito": "Utah Jazz"
+    },
+    {
+      "game_date": "2026-10-13",
+      "game_id": "401898403",
+      "status_emoji": "⏳",
+      "home": "Orlando Magic",
+      "away": "Cleveland Cavaliers",
+      "home_abbr": "ORL",
+      "away_abbr": "CLE",
+      "home_score": 0,
+      "away_score": 0,
+      "home_linescores": [],
+      "away_linescores": [],
+      "clock": "0.0",
+      "period": 0,
+      "state": "Pend.",
+      "result": "pending",
+      "liga": "NBA",
+      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/ORL.png&h=40&w=40",
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/CLE.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Cleveland tiene mejor PPG y eficiencia ofensiva.",
+      "llm_factores": [
+        "Cleveland tiene mejor récord",
+        "Orlando no ha jugado en casa aún"
+      ],
+      "llm_puntos_local": 116,
+      "llm_puntos_visitante": 120,
+      "llm_spread": 4.0,
+      "llm_confianza_ou": 70,
+      "llm_linea_ou": 235.0,
+      "llm_anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Local",
+          "pts_estimados": 30.0,
+          "confianza_pts": 75
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Visitante",
+          "pts_estimados": 32.5,
+          "confianza_pts": 80
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Local",
+          "reb_estimados": 9.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 70
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Visitante",
+          "reb_estimados": 8.0,
+          "robos_estimados": 1.5,
+          "bloqueos_estimados": 1.5,
+          "confianza_def": 75
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Local",
+          "ast_estimadas": 8.0,
+          "confianza_ast": 75
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Visitante",
+          "ast_estimadas": 7.5,
+          "confianza_ast": 70
+        }
+      ],
+      "llm_ranking_local": "Este: 10° (1-1)",
+      "llm_ranking_visitante": "Este: 8° (1-1)",
+      "llm_stats_comparison": {
+        "ppg_local": 115.7,
+        "ppg_visitante": 119.5,
+        "opp_ppg_local": 0,
+        "opp_ppg_visitante": 0,
+        "fg_pct_local": 46.4,
+        "fg_pct_visitante": 48.2,
+        "pace_analysis": "Ambos equipos tienen un ritmo alto, lo que favorece un juego rápido."
+      },
+      "llm_lineas_ou": {
+        "over_140": 80,
+        "over_150": 70,
+        "over_160": 60
+      },
+      "llm_b2b_impacto": "",
+      "llm_lesion_clave": "",
+      "llm_jugadores_clave": [],
+      "llm_favorito": "Cleveland Cavaliers"
+    },
+    {
+      "game_date": "2026-10-13",
+      "game_id": "401908944",
+      "status_emoji": "⏳",
+      "home": "Toronto Raptors",
+      "away": "New York Knicks",
+      "home_abbr": "TOR",
+      "away_abbr": "NY",
+      "home_score": 0,
+      "away_score": 0,
+      "home_linescores": [],
+      "away_linescores": [],
+      "clock": "0.0",
+      "period": 0,
+      "state": "Pend.",
+      "result": "pending",
+      "liga": "NBA",
+      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/TOR.png&h=40&w=40",
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/NY.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Toronto tiene mejor récord y juega en casa.",
+      "llm_factores": [
+        "Toronto ha ganado en casa",
+        "New York tiene un mal inicio de temporada"
+      ],
+      "llm_puntos_local": 115,
+      "llm_puntos_visitante": 112,
+      "llm_spread": 3.0,
+      "llm_confianza_ou": 65,
+      "llm_linea_ou": 227.0,
+      "llm_anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Local",
+          "pts_estimados": 28.0,
+          "confianza_pts": 80
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Visitante",
+          "pts_estimados": 26.0,
+          "confianza_pts": 75
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Local",
+          "reb_estimados": 10.0,
+          "robos_estimados": 1.2,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 75
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Visitante",
+          "reb_estimados": 7.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 70
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Local",
+          "ast_estimadas": 7.5,
+          "confianza_ast": 75
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Visitante",
+          "ast_estimadas": 6.0,
+          "confianza_ast": 68
+        }
+      ],
+      "llm_ranking_local": "Este: 7° (1-1)",
+      "llm_ranking_visitante": "Este: 15° (0-3)",
+      "llm_stats_comparison": {
+        "ppg_local": 114.6,
+        "ppg_visitante": 116.5,
+        "opp_ppg_local": 0,
+        "opp_ppg_visitante": 0,
+        "fg_pct_local": 48.2,
+        "fg_pct_visitante": 47.8,
+        "pace_analysis": "Ritmo moderado, ambos equipos juegan a un ritmo similar."
+      },
+      "llm_lineas_ou": {
+        "over_140": 75,
+        "over_150": 60,
+        "over_160": 40
+      },
+      "llm_b2b_impacto": "",
+      "llm_lesion_clave": "",
+      "llm_jugadores_clave": [],
+      "llm_favorito": "Toronto Raptors"
+    },
+    {
+      "game_date": "2026-10-13",
+      "game_id": "401908621",
+      "status_emoji": "⏳",
+      "home": "Oklahoma City Thunder",
+      "away": "Indiana Pacers",
+      "home_abbr": "OKC",
+      "away_abbr": "IND",
+      "home_score": 0,
+      "away_score": 0,
+      "home_linescores": [],
+      "away_linescores": [],
+      "clock": "0.0",
+      "period": 0,
+      "state": "Pend.",
+      "result": "pending",
+      "liga": "NBA",
+      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/OKC.png&h=40&w=40",
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/IND.png&h=40&w=40",
+      "llm_ir_favorito": "NO",
+      "llm_porque": "Oklahoma ha mostrado mejor ofensiva a pesar del récord.",
+      "llm_factores": [
+        "Oklahoma tiene ventaja de local",
+        "Indiana tiene un récord mejor"
+      ],
+      "llm_puntos_local": 120,
+      "llm_puntos_visitante": 115,
+      "llm_spread": 5.0,
+      "llm_confianza_ou": 68,
+      "llm_linea_ou": 235.0,
+      "llm_anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Local",
+          "pts_estimados": 31.0,
+          "confianza_pts": 80
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Visitante",
+          "pts_estimados": 29.0,
+          "confianza_pts": 75
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Local",
+          "reb_estimados": 9.5,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 75
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Visitante",
+          "reb_estimados": 8.0,
+          "robos_estimados": 1.5,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 70
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Local",
+          "ast_estimadas": 8.0,
+          "confianza_ast": 75
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Visitante",
+          "ast_estimadas": 7.0,
+          "confianza_ast": 70
+        }
+      ],
+      "llm_ranking_local": "Oeste: 15° (0-3)",
+      "llm_ranking_visitante": "Este: 9° (1-1)",
+      "llm_stats_comparison": {
+        "ppg_local": 119.0,
+        "ppg_visitante": 112.4,
+        "opp_ppg_local": 0,
+        "opp_ppg_visitante": 0,
+        "fg_pct_local": 48.4,
+        "fg_pct_visitante": 45.8,
+        "pace_analysis": "Ritmo alto, Oklahoma juega rápido, lo que puede resultar en un alto puntaje."
+      },
+      "llm_lineas_ou": {
+        "over_140": 80,
+        "over_150": 70,
+        "over_160": 60
+      },
+      "llm_b2b_impacto": "",
+      "llm_lesion_clave": "",
+      "llm_jugadores_clave": [],
+      "llm_favorito": "Indiana Pacers"
+    },
+    {
+      "game_date": "2026-10-13",
+      "game_id": "401898718",
+      "status_emoji": "⏳",
+      "home": "Los Angeles Lakers",
+      "away": "Golden State Warriors",
+      "home_abbr": "LAL",
+      "away_abbr": "GS",
+      "home_score": 0,
+      "away_score": 0,
+      "home_linescores": [],
+      "away_linescores": [],
+      "clock": "0.0",
+      "period": 0,
+      "state": "Pend.",
+      "result": "pending",
+      "liga": "NBA",
+      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/LAL.png&h=40&w=40",
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/GS.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y rendimiento ofensivo en casa.",
+      "llm_factores": [
+        "Localía fuerte",
+        "Eficiencia ofensiva superior"
+      ],
+      "llm_puntos_local": 116,
+      "llm_puntos_visitante": 114,
+      "llm_spread": 1.0,
+      "llm_confianza_ou": 65,
+      "llm_linea_ou": 230,
+      "llm_anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Local",
+          "pts_estimados": 30.0,
+          "confianza_pts": 80
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Visitante",
+          "pts_estimados": 28.5,
+          "confianza_pts": 75
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Local",
+          "reb_estimados": 9.5,
+          "robos_estimados": 1.2,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 85
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Visitante",
+          "reb_estimados": 8.0,
+          "robos_estimados": 1.5,
+          "bloqueos_estimados": 0.5,
+          "confianza_def": 70
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Local",
+          "ast_estimadas": 8.0,
+          "confianza_ast": 78
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Visitante",
+          "ast_estimadas": 7.0,
+          "confianza_ast": 72
+        }
+      ],
+      "llm_ranking_local": "Oeste: 3° (2-1)",
+      "llm_ranking_visitante": "Oeste: 5° (2-2)",
+      "llm_stats_comparison": {
+        "ppg_local": 116.3,
+        "ppg_visitante": 114.6,
+        "opp_ppg_local": null,
+        "opp_ppg_visitante": null,
+        "fg_pct_local": 50.2,
+        "fg_pct_visitante": 46.1,
+        "pace_analysis": "Ritmo alto, ambos equipos juegan rápido."
+      },
+      "llm_lineas_ou": {
+        "over_140": 80,
+        "over_150": 65,
+        "over_160": 50
+      },
+      "llm_b2b_impacto": "",
+      "llm_lesion_clave": "",
+      "llm_jugadores_clave": [],
+      "llm_favorito": "Los Angeles Lakers"
+    },
+    {
+      "game_date": "2026-10-13",
+      "game_id": "401901826",
+      "status_emoji": "⏳",
+      "home": "Sacramento Kings",
+      "away": "Portland Trail Blazers",
+      "home_abbr": "SAC",
+      "away_abbr": "POR",
+      "home_score": 0,
+      "away_score": 0,
+      "home_linescores": [],
+      "away_linescores": [],
+      "clock": "0.0",
+      "period": 0,
+      "state": "Pend.",
+      "result": "pending",
+      "liga": "NBA",
+      "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/SAC.png&h=40&w=40",
+      "away_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/POR.png&h=40&w=40",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y rendimiento ofensivo.",
+      "llm_factores": [
+        "Rendimiento superior",
+        "Localía débil"
+      ],
+      "llm_puntos_local": 111,
+      "llm_puntos_visitante": 115,
+      "llm_spread": 4.0,
+      "llm_confianza_ou": 70,
+      "llm_linea_ou": 226,
+      "llm_anotadores": [
+        {
+          "nombre": "Jugador A",
+          "equipo": "Local",
+          "pts_estimados": 25.0,
+          "confianza_pts": 70
+        },
+        {
+          "nombre": "Jugador B",
+          "equipo": "Visitante",
+          "pts_estimados": 29.0,
+          "confianza_pts": 75
+        }
+      ],
+      "llm_defensores": [
+        {
+          "nombre": "Jugador C",
+          "equipo": "Local",
+          "reb_estimados": 10.0,
+          "robos_estimados": 1.0,
+          "bloqueos_estimados": 0.7,
+          "confianza_def": 75
+        },
+        {
+          "nombre": "Jugador D",
+          "equipo": "Visitante",
+          "reb_estimados": 9.0,
+          "robos_estimados": 1.8,
+          "bloqueos_estimados": 1.0,
+          "confianza_def": 80
+        }
+      ],
+      "llm_armadores": [
+        {
+          "nombre": "Jugador E",
+          "equipo": "Local",
+          "ast_estimadas": 6.5,
+          "confianza_ast": 70
+        },
+        {
+          "nombre": "Jugador F",
+          "equipo": "Visitante",
+          "ast_estimadas": 7.5,
+          "confianza_ast": 75
+        }
+      ],
+      "llm_ranking_local": "Oeste: 14° (0-3)",
+      "llm_ranking_visitante": "Oeste: 1° (2-0)",
+      "llm_stats_comparison": {
+        "ppg_local": 111.0,
+        "ppg_visitante": 115.5,
+        "opp_ppg_local": null,
+        "opp_ppg_visitante": null,
+        "fg_pct_local": 46.7,
+        "fg_pct_visitante": 45.3,
+        "pace_analysis": "Ritmo moderado, ambos equipos tienen transiciones rápidas."
+      },
+      "llm_lineas_ou": {
+        "over_140": 75,
+        "over_150": 60,
+        "over_160": 45
+      },
+      "llm_b2b_impacto": "",
+      "llm_lesion_clave": "",
+      "llm_jugadores_clave": [],
+      "llm_favorito": "Portland Trail Blazers"
     },
     {
       "game_date": "2026-10-11",
