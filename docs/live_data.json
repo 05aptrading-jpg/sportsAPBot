@@ -1,5 +1,5 @@
 {
-  "fecha": "13/10/2026 18:57",
+  "fecha": "13/10/2026 19:12",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791986400,
@@ -4683,7 +4683,7 @@
       "opp_team": "Tampa Bay Rays",
       "score_fav": "0",
       "score_opp": "0",
-      "state": "Bottom 3rd",
+      "state": "Bottom 4th",
       "result": "live",
       "label": "📋",
       "game_pk": 849813,
@@ -4712,17 +4712,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": false,
-        "inning_ordinal": "3rd",
+        "inning_ordinal": "4th",
         "outs": 0,
-        "balls": 1,
-        "strikes": 1,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 2,
+        "away_hits": 3,
         "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
@@ -5023,7 +5027,7 @@
     "849813": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 3rd",
+      "status": "Bottom 4th",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Tampa Bay Rays",
@@ -5041,17 +5045,21 @@
           {
             "away_runs": 0,
             "home_runs": 0
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 3,
+        "current_inning": 4,
         "is_top": false,
-        "inning_ordinal": "3rd",
+        "inning_ordinal": "4th",
         "outs": 0,
-        "balls": 1,
-        "strikes": 1,
+        "balls": 0,
+        "strikes": 0,
         "away_runs": 0,
         "home_runs": 0,
-        "away_hits": 2,
+        "away_hits": 3,
         "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
@@ -5072,7 +5080,7 @@
       }
     }
   },
-  "updated_at": "13/10/2026 18:57",
+  "updated_at": "13/10/2026 19:12",
   "stats": {
     "total": 23,
     "acertados": 14,
@@ -23523,8 +23531,8 @@
       "away": "Cleveland Cavaliers",
       "home_abbr": "ORL",
       "away_abbr": "CLE",
-      "home_score": 105,
-      "away_score": 81,
+      "home_score": 115,
+      "away_score": 95,
       "home_linescores": [
         {
           "period": 1,
@@ -23538,8 +23546,13 @@
         },
         {
           "period": 3,
-          "value": 33,
-          "display": "33"
+          "value": 36,
+          "display": "36"
+        },
+        {
+          "period": 4,
+          "value": 7,
+          "display": "7"
         }
       ],
       "away_linescores": [
@@ -23555,13 +23568,18 @@
         },
         {
           "period": 3,
-          "value": 29,
-          "display": "29"
+          "value": 31,
+          "display": "31"
+        },
+        {
+          "period": 4,
+          "value": 12,
+          "display": "12"
         }
       ],
-      "clock": "33.2",
-      "period": 3,
-      "state": "Q3 33.2",
+      "clock": "7:12",
+      "period": 4,
+      "state": "Q4 7:12",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/ORL.png&h=40&w=40",
@@ -23652,8 +23670,8 @@
       "away": "New York Knicks",
       "home_abbr": "TOR",
       "away_abbr": "NY",
-      "home_score": 109,
-      "away_score": 76,
+      "home_score": 123,
+      "away_score": 78,
       "home_linescores": [
         {
           "period": 1,
@@ -23667,8 +23685,13 @@
         },
         {
           "period": 3,
-          "value": 23,
-          "display": "23"
+          "value": 30,
+          "display": "30"
+        },
+        {
+          "period": 4,
+          "value": 7,
+          "display": "7"
         }
       ],
       "away_linescores": [
@@ -23684,13 +23707,18 @@
         },
         {
           "period": 3,
-          "value": 29,
-          "display": "29"
+          "value": 31,
+          "display": "31"
+        },
+        {
+          "period": 4,
+          "value": 0,
+          "display": "0"
         }
       ],
-      "clock": "2:52",
-      "period": 3,
-      "state": "Q3 2:52",
+      "clock": "9:34",
+      "period": 4,
+      "state": "Q4 9:34",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/TOR.png&h=40&w=40",
@@ -23781,8 +23809,8 @@
       "away": "Indiana Pacers",
       "home_abbr": "OKC",
       "away_abbr": "IND",
-      "home_score": 34,
-      "away_score": 52,
+      "home_score": 59,
+      "away_score": 61,
       "home_linescores": [
         {
           "period": 1,
@@ -23791,8 +23819,8 @@
         },
         {
           "period": 2,
-          "value": 9,
-          "display": "9"
+          "value": 34,
+          "display": "34"
         }
       ],
       "away_linescores": [
@@ -23803,13 +23831,13 @@
         },
         {
           "period": 2,
-          "value": 19,
-          "display": "19"
+          "value": 28,
+          "display": "28"
         }
       ],
-      "clock": "6:25",
+      "clock": "0.0",
       "period": 2,
-      "state": "Q2 6:25",
+      "state": "Q2 0.0",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/OKC.png&h=40&w=40",
