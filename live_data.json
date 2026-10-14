@@ -1,5 +1,5 @@
 {
-  "fecha": "13/10/2026 20:12",
+  "fecha": "13/10/2026 20:27",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1791986400,
@@ -4681,9 +4681,9 @@
       "status_emoji": "🔴",
       "fav_team": "Cleveland Guardians",
       "opp_team": "Tampa Bay Rays",
-      "score_fav": "0",
+      "score_fav": "1",
       "score_opp": "3",
-      "state": "Top 7th",
+      "state": "Bottom 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 849813,
@@ -4726,19 +4726,19 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
+            "away_runs": 1,
             "home_runs": 0
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 0,
-        "away_runs": 0,
+        "outs": 2,
+        "balls": 0,
+        "strikes": 1,
+        "away_runs": 1,
         "home_runs": 3,
-        "away_hits": 5,
+        "away_hits": 6,
         "home_hits": 7,
         "away_errors": 1,
         "home_errors": 0,
@@ -4752,9 +4752,9 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "3",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "3"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
@@ -5039,8 +5039,8 @@
     "849813": {
       "is_live": true,
       "is_final": false,
-      "status": "Top 7th",
-      "away_runs": 0,
+      "status": "Bottom 7th",
+      "away_runs": 1,
       "home_runs": 3,
       "away_team_name": "Tampa Bay Rays",
       "home_team_name": "Cleveland Guardians",
@@ -5071,19 +5071,19 @@
             "home_runs": 0
           },
           {
-            "away_runs": 0,
+            "away_runs": 1,
             "home_runs": 0
           }
         ],
         "current_inning": 7,
-        "is_top": true,
+        "is_top": false,
         "inning_ordinal": "7th",
-        "outs": 1,
-        "balls": 1,
-        "strikes": 0,
-        "away_runs": 0,
+        "outs": 2,
+        "balls": 0,
+        "strikes": 1,
+        "away_runs": 1,
         "home_runs": 3,
-        "away_hits": 5,
+        "away_hits": 6,
         "home_hits": 7,
         "away_errors": 1,
         "home_errors": 0,
@@ -5097,14 +5097,14 @@
         "status_emoji": "🔴",
         "result": "live",
         "state": "In Progress",
-        "fav_score": "0",
+        "fav_score": "1",
         "opp_score": "3",
-        "score_fav": "0",
+        "score_fav": "1",
         "score_opp": "3"
       }
     }
   },
-  "updated_at": "13/10/2026 20:12",
+  "updated_at": "13/10/2026 20:27",
   "stats": {
     "total": 23,
     "acertados": 14,
@@ -23833,8 +23833,8 @@
       "away": "Indiana Pacers",
       "home_abbr": "OKC",
       "away_abbr": "IND",
-      "home_score": 94,
-      "away_score": 90,
+      "home_score": 100,
+      "away_score": 100,
       "home_linescores": [
         {
           "period": 1,
@@ -23853,8 +23853,8 @@
         },
         {
           "period": 4,
-          "value": 9,
-          "display": "9"
+          "value": 15,
+          "display": "15"
         }
       ],
       "away_linescores": [
@@ -23875,13 +23875,13 @@
         },
         {
           "period": 4,
-          "value": 6,
-          "display": "6"
+          "value": 16,
+          "display": "16"
         }
       ],
-      "clock": "5:16",
+      "clock": "0.0",
       "period": 4,
-      "state": "Q4 5:16",
+      "state": "Q4 0.0",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/OKC.png&h=40&w=40",
@@ -23972,25 +23972,25 @@
       "away": "Golden State Warriors",
       "home_abbr": "LAL",
       "away_abbr": "GS",
-      "home_score": 0,
-      "away_score": 0,
+      "home_score": 21,
+      "away_score": 18,
       "home_linescores": [
         {
           "period": 1,
-          "value": 0,
-          "display": "0"
+          "value": 21,
+          "display": "21"
         }
       ],
       "away_linescores": [
         {
           "period": 1,
-          "value": 0,
-          "display": "0"
+          "value": 18,
+          "display": "18"
         }
       ],
-      "clock": "11:41",
+      "clock": "4:21",
       "period": 1,
-      "state": "Q1 11:41",
+      "state": "Q1 4:21",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/LAL.png&h=40&w=40",
@@ -24081,25 +24081,25 @@
       "away": "Portland Trail Blazers",
       "home_abbr": "SAC",
       "away_abbr": "POR",
-      "home_score": 2,
-      "away_score": 4,
+      "home_score": 16,
+      "away_score": 21,
       "home_linescores": [
         {
           "period": 1,
-          "value": 2,
-          "display": "2"
+          "value": 16,
+          "display": "16"
         }
       ],
       "away_linescores": [
         {
           "period": 1,
-          "value": 4,
-          "display": "4"
+          "value": 21,
+          "display": "21"
         }
       ],
-      "clock": "10:34",
+      "clock": "5:15",
       "period": 1,
-      "state": "Q1 10:34",
+      "state": "Q1 5:15",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/SAC.png&h=40&w=40",
