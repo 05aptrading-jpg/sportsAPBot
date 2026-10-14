@@ -1,8 +1,8 @@
 {
-  "fecha": "14/10/2026 07:57",
+  "fecha": "14/10/2026 08:01",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
-  "proxima_actualizacion_ts": 1791986400,
+  "proxima_actualizacion_ts": 1792072800,
   "proxima_actualizacion_lmb_ts": 1792002600,
   "dias": [
     "2026-10-14",
@@ -4683,7 +4683,7 @@
       "state": "Final",
       "result": "loss",
       "label": "📋",
-      "game_pk": 849813,
+      "game_pk": 401908024,
       "fav_abbr": "CLE",
       "opp_abbr": "TB",
       "home_team": "Tampa Bay Rays",
@@ -4696,72 +4696,7 @@
         "Lesiones mínimas en Rays"
       ],
       "resultado_llm": "fallido",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 3
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 1,
-        "away_runs": 1,
-        "home_runs": 3,
-        "away_hits": 6,
-        "home_hits": 7,
-        "away_errors": 1,
-        "home_errors": 0,
-        "away_team_name": "Cleveland Guardians",
-        "home_team_name": "Tampa Bay Rays",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "1",
-        "opp_score": "3",
-        "score_fav": "1",
-        "score_opp": "3"
-      },
+      "linescore": {},
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
       "llm_favorito": "Tampa Bay Rays",
@@ -4811,94 +4746,58 @@
     {
       "liga": "MLB",
       "game_date": "2026-10-14",
-      "status_emoji": "🏁",
-      "fav_team": "Milwaukee Brewers",
-      "opp_team": "Los Angeles Dodgers",
+      "status_emoji": "⏳",
+      "fav_team": "Los Angeles Dodgers",
+      "opp_team": "Milwaukee Brewers",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Final",
-      "result": "completed",
+      "state": "Scheduled",
+      "result": "pending",
       "label": "📋",
-      "game_pk": 401908032,
-      "fav_abbr": "MIL",
-      "opp_abbr": "LAD",
+      "game_pk": 849811,
+      "fav_abbr": "LAD",
+      "opp_abbr": "MIL",
       "home_team": "Los Angeles Dodgers",
       "away_team": "Milwaukee Brewers",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y racha reciente favorable.",
+      "llm_factores": [
+        "Racha de 7-3 en últimos 10 juegos",
+        "Historial favorable en casa",
+        "Lesiones mínimas en el equipo local"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
+        "innings": [],
+        "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 1,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
         "strikes": 0,
-        "away_runs": 1,
-        "home_runs": 2,
-        "away_hits": 7,
-        "home_hits": 6,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
-        "away_team_name": "Los Angeles Dodgers",
-        "home_team_name": "Milwaukee Brewers",
+        "away_team_name": "Milwaukee Brewers",
+        "home_team_name": "Los Angeles Dodgers",
         "bases": {
           "first": false,
           "second": false,
           "third": false
         },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "1",
-        "opp_score": "2",
-        "score_fav": "1",
-        "score_opp": "2"
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
       },
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord, racha reciente y ventaja en casa.",
-      "llm_factores": [
-        "Mejor posición en división",
-        "Racha de 8-2 en últimos 10",
-        "Historial favorable en enfrentamientos directos"
-      ],
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
       "llm_favorito": "Los Angeles Dodgers",
       "llm_carreras": "6-4",
       "llm_carreras_lineas": {
@@ -4907,9 +4806,9 @@
         "over_9.5": 45
       },
       "llm_ranking_local": "NL Oeste: 1º (95-67)",
-      "llm_ranking_visitante": "NL Central: 3º (83-79)",
-      "llm_abridor_local": "Julio Urías (3.25, 16-7, 180)",
-      "llm_abridor_visitante": "Brandon Woodruff (3.75, 15-10, 210)",
+      "llm_ranking_visitante": "NL Central: 3º (85-77)",
+      "llm_abridor_local": "Clayton Kershaw (2.85, 15-5, 180)",
+      "llm_abridor_visitante": "Corbin Burnes (3.10, 14-8, 210)",
       "llm_bateadores_clave": [
         {
           "jugador": "Mookie Betts",
@@ -4926,9 +4825,9 @@
           "confianza_bateo": 80
         },
         {
-          "jugador": "Cody Bellinger",
+          "jugador": "Will Smith",
           "equipo": "Los Angeles Dodgers",
-          "hrs_estimados": 1,
+          "hrs_estimados": 0,
           "remolcadas_estimadas": 1,
           "confianza_bateo": 75
         },
@@ -4940,15 +4839,15 @@
           "confianza_bateo": 70
         },
         {
-          "jugador": "Willie Adames",
+          "jugador": "Rowdy Tellez",
           "equipo": "Milwaukee Brewers",
-          "hrs_estimados": 0,
+          "hrs_estimados": 1,
           "remolcadas_estimadas": 1,
           "confianza_bateo": 65
         }
       ],
-      "llm_relevo_local": "Bullpen sólido con ERA de 3.20, confiable en situaciones de presión.",
-      "llm_relevo_visitante": "Bullpen con ERA de 4.10, menos efectivo en momentos críticos."
+      "llm_relevo_local": "Bullpen con ERA de 3.45, confiable en situaciones críticas.",
+      "llm_relevo_visitante": "Bullpen con ERA de 4.20, menos efectivo en finales de juegos."
     }
   ],
   "bot_username": "MLBAnalyticsRailwayBot",
@@ -4956,7 +4855,7 @@
     6099564810
   ],
   "has_live": false,
-  "has_scheduled": false,
+  "has_scheduled": true,
   "live_data": {
     "401908023": {
       "is_live": false,
@@ -5108,7 +5007,7 @@
         "score_opp": "7"
       }
     },
-    "849813": {
+    "401908024": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -5116,150 +5015,48 @@
       "home_runs": 3,
       "away_team_name": "Tampa Bay Rays",
       "home_team_name": "Cleveland Guardians",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 3
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 0,
-        "strikes": 1,
-        "away_runs": 1,
-        "home_runs": 3,
-        "away_hits": 6,
-        "home_hits": 7,
-        "away_errors": 1,
-        "home_errors": 0,
-        "away_team_name": "Cleveland Guardians",
-        "home_team_name": "Tampa Bay Rays",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "1",
-        "opp_score": "3",
-        "score_fav": "1",
-        "score_opp": "3"
-      }
+      "linescore": {}
     },
-    "401908032": {
+    "849811": {
       "is_live": false,
-      "is_final": true,
-      "status": "Final",
+      "is_final": false,
+      "status": "Scheduled",
       "away_runs": 0,
       "home_runs": 0,
-      "away_team_name": "Los Angeles Dodgers",
-      "home_team_name": "Milwaukee Brewers",
+      "away_team_name": "Milwaukee Brewers",
+      "home_team_name": "Los Angeles Dodgers",
       "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
+        "innings": [],
+        "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 1,
+        "inning_ordinal": "",
+        "outs": 0,
+        "balls": 0,
         "strikes": 0,
-        "away_runs": 1,
-        "home_runs": 2,
-        "away_hits": 7,
-        "home_hits": 6,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
-        "away_team_name": "Los Angeles Dodgers",
-        "home_team_name": "Milwaukee Brewers",
+        "away_team_name": "Milwaukee Brewers",
+        "home_team_name": "Los Angeles Dodgers",
         "bases": {
           "first": false,
           "second": false,
           "third": false
         },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "1",
-        "opp_score": "2",
-        "score_fav": "1",
-        "score_opp": "2"
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
       }
     }
   },
-  "updated_at": "14/10/2026 07:57",
+  "updated_at": "14/10/2026 08:01",
   "stats": {
     "total": 23,
     "acertados": 14,
@@ -5571,7 +5368,8 @@
     "2026-10-10",
     "2026-10-11",
     "2026-10-12",
-    "2026-10-13"
+    "2026-10-13",
+    "2026-10-14"
   ],
   "stats_por_fecha": {
     "2026-08-08": {
@@ -5848,6 +5646,31 @@
       "llm_acertados": 0,
       "llm_fallidos": 1,
       "llm_win_rate": 0.0
+    },
+    "2026-10-14": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
     }
   },
   "stats_por_fecha_mlb": {
@@ -6125,6 +5948,31 @@
       "llm_acertados": 0,
       "llm_fallidos": 1,
       "llm_win_rate": 0.0
+    },
+    "2026-10-14": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
     }
   },
   "stats_por_fecha_lmb": {
@@ -6379,6 +6227,31 @@
       "llm_win_rate": 0
     },
     "2026-10-13": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
+    },
+    "2026-10-14": {
       "total": 0,
       "acertados": 0,
       "fallidos": 0,
@@ -20923,11 +20796,11 @@
     },
     "2026-10-14___MLB___Los Angeles Dodgers___Milwaukee Brewers": {
       "ir": "SÍ",
-      "pq": "Mejor récord, racha reciente y ventaja en casa.",
+      "pq": "Mejor récord y racha reciente favorable.",
       "factores": [
-        "Mejor posición en división",
-        "Racha de 8-2 en últimos 10",
-        "Historial favorable en enfrentamientos directos"
+        "Racha de 7-3 en últimos 10 juegos",
+        "Historial favorable en casa",
+        "Lesiones mínimas en el equipo local"
       ],
       "favorito": "Los Angeles Dodgers",
       "carreras_esperadas": "6-4",
@@ -20937,9 +20810,9 @@
         "over_9.5": 45
       },
       "ranking_local": "NL Oeste: 1º (95-67)",
-      "ranking_visitante": "NL Central: 3º (83-79)",
-      "abridor_local": "Julio Urías (3.25, 16-7, 180)",
-      "abridor_visitante": "Brandon Woodruff (3.75, 15-10, 210)",
+      "ranking_visitante": "NL Central: 3º (85-77)",
+      "abridor_local": "Clayton Kershaw (2.85, 15-5, 180)",
+      "abridor_visitante": "Corbin Burnes (3.10, 14-8, 210)",
       "bateadores_clave": [
         {
           "jugador": "Mookie Betts",
@@ -20956,9 +20829,9 @@
           "confianza_bateo": 80
         },
         {
-          "jugador": "Cody Bellinger",
+          "jugador": "Will Smith",
           "equipo": "Los Angeles Dodgers",
-          "hrs_estimados": 1,
+          "hrs_estimados": 0,
           "remolcadas_estimadas": 1,
           "confianza_bateo": 75
         },
@@ -20970,15 +20843,15 @@
           "confianza_bateo": 70
         },
         {
-          "jugador": "Willie Adames",
+          "jugador": "Rowdy Tellez",
           "equipo": "Milwaukee Brewers",
-          "hrs_estimados": 0,
+          "hrs_estimados": 1,
           "remolcadas_estimadas": 1,
           "confianza_bateo": 65
         }
       ],
-      "relevo_local": "Bullpen sólido con ERA de 3.20, confiable en situaciones de presión.",
-      "relevo_visitante": "Bullpen con ERA de 4.10, menos efectivo en momentos críticos."
+      "relevo_local": "Bullpen con ERA de 3.45, confiable en situaciones críticas.",
+      "relevo_visitante": "Bullpen con ERA de 4.20, menos efectivo en finales de juegos."
     },
     "2026-06-28___Sudáfrica___Canadá": {
       "ir": "SÍ",
