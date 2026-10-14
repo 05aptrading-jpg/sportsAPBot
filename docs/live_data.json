@@ -1,5 +1,5 @@
 {
-  "fecha": "14/10/2026 15:12",
+  "fecha": "14/10/2026 15:27",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1792072800,
@@ -4768,10 +4768,15 @@
       ],
       "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5026,10 +5031,15 @@
       "away_team_name": "Milwaukee Brewers",
       "home_team_name": "Los Angeles Dodgers",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5056,7 +5066,7 @@
       }
     }
   },
-  "updated_at": "14/10/2026 15:12",
+  "updated_at": "14/10/2026 15:27",
   "stats": {
     "total": 23,
     "acertados": 14,
