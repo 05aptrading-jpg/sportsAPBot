@@ -1,5 +1,5 @@
 {
-  "fecha": "15/10/2026 10:56",
+  "fecha": "15/10/2026 11:11",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1792159200,
@@ -4699,7 +4699,7 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
@@ -4715,9 +4715,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5014,13 +5014,13 @@
     {
       "liga": "MLB",
       "game_date": "2026-10-15",
-      "status_emoji": "⏳",
+      "status_emoji": "🔴",
       "fav_team": "Cleveland Guardians",
       "opp_team": "Tampa Bay Rays",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Warmup",
-      "result": "pending",
+      "score_fav": "0",
+      "score_opp": "0",
+      "state": "Top 1st",
+      "result": "live",
       "label": "📋",
       "game_pk": 849818,
       "fav_abbr": "CLE",
@@ -5045,7 +5045,7 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
@@ -5061,9 +5061,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5120,7 +5120,7 @@
   "autorizados": [
     6099564810
   ],
-  "has_live": false,
+  "has_live": true,
   "has_scheduled": true,
   "live_data": {
     "401908024": {
@@ -5141,7 +5141,7 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
@@ -5157,9 +5157,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5280,9 +5280,9 @@
       }
     },
     "849818": {
-      "is_live": false,
+      "is_live": true,
       "is_final": false,
-      "status": "Warmup",
+      "status": "Top 1st",
       "away_runs": 0,
       "home_runs": 0,
       "away_team_name": "Tampa Bay Rays",
@@ -5297,7 +5297,7 @@
         "current_inning": 1,
         "is_top": true,
         "inning_ordinal": "1st",
-        "outs": 0,
+        "outs": 1,
         "balls": 0,
         "strikes": 0,
         "away_runs": 0,
@@ -5313,9 +5313,9 @@
           "second": false,
           "third": false
         },
-        "status_emoji": "⏳",
-        "result": "pending",
-        "state": "Warmup",
+        "status_emoji": "🔴",
+        "result": "live",
+        "state": "In Progress",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -5323,7 +5323,7 @@
       }
     }
   },
-  "updated_at": "15/10/2026 10:56",
+  "updated_at": "15/10/2026 11:11",
   "stats": {
     "total": 24,
     "acertados": 14,
