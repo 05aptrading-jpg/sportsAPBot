@@ -1,8 +1,8 @@
 {
-  "fecha": "15/10/2026 07:57",
+  "fecha": "15/10/2026 08:02",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
-  "proxima_actualizacion_ts": 1792072800,
+  "proxima_actualizacion_ts": 1792159200,
   "proxima_actualizacion_lmb_ts": 1792089000,
   "dias": [
     "2026-10-15",
@@ -4690,10 +4690,15 @@
       ],
       "resultado_llm": "fallido",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -4712,7 +4717,7 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
@@ -4775,7 +4780,7 @@
       "state": "Final",
       "result": "loss",
       "label": "📋",
-      "game_pk": 849811,
+      "game_pk": 401908032,
       "fav_abbr": "LAD",
       "opp_abbr": "MIL",
       "home_team": "Los Angeles Dodgers",
@@ -4910,294 +4915,136 @@
     {
       "liga": "MLB",
       "game_date": "2026-10-15",
-      "status_emoji": "🏁",
-      "fav_team": "Tampa Bay Rays",
-      "opp_team": "Cleveland Guardians",
+      "status_emoji": "⏳",
+      "fav_team": "Los Angeles Dodgers",
+      "opp_team": "Milwaukee Brewers",
       "score_fav": "—",
       "score_opp": "",
-      "state": "Final",
-      "result": "completed",
+      "state": "Scheduled",
+      "result": "pending",
       "label": "📋",
-      "game_pk": 401908025,
-      "fav_abbr": "TB",
-      "opp_abbr": "CLE",
-      "home_team": "Cleveland Guardians",
-      "away_team": "Tampa Bay Rays",
+      "game_pk": 849810,
+      "fav_abbr": "LAD",
+      "opp_abbr": "MIL",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "Milwaukee Brewers",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y racha reciente.",
+      "llm_factores": [
+        "Racha de 8-2 en últimos 10 juegos",
+        "Ventaja de local",
+        "Historial favorable en enfrentamientos directos"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 3,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 3,
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
         "balls": 0,
-        "strikes": 1,
-        "away_runs": 7,
-        "home_runs": 3,
-        "away_hits": 14,
-        "home_hits": 7,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
-        "away_team_name": "Cleveland Guardians",
-        "home_team_name": "Tampa Bay Rays",
+        "away_team_name": "Milwaukee Brewers",
+        "home_team_name": "Los Angeles Dodgers",
         "bases": {
           "first": false,
           "second": false,
           "third": false
         },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "7",
-        "opp_score": "3",
-        "score_fav": "7",
-        "score_opp": "3"
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
       },
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Mejor récord y racha reciente favorable.",
-      "llm_factores": [
-        "Racha de 8-2 para Rays",
-        "Lesiones mínimas en Rays",
-        "Historial reciente favorable para Rays"
-      ],
-      "llm_favorito": "Tampa Bay Rays",
-      "llm_carreras": "4-6",
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
+      "llm_favorito": "Los Angeles Dodgers",
+      "llm_carreras": "6-4",
       "llm_carreras_lineas": {
-        "over_7.5": 70,
+        "over_7.5": 75,
         "over_8.5": 60,
         "over_9.5": 40
       },
-      "llm_ranking_local": "AL Central: 2º (85-75)",
-      "llm_ranking_visitante": "AL Este: 1º (95-65)",
-      "llm_abridor_local": "Shane Bieber (3.20, 15-9, 210)",
-      "llm_abridor_visitante": "Tyler Glasnow (2.85, 12-6, 220)",
-      "llm_bateadores_clave": [
-        {
-          "jugador": "José Ramírez",
-          "equipo": "Cleveland Guardians",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2,
-          "confianza_bateo": 75
-        },
-        {
-          "jugador": "Josh Naylor",
-          "equipo": "Cleveland Guardians",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 65
-        },
-        {
-          "jugador": "Wander Franco",
-          "equipo": "Tampa Bay Rays",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 3,
-          "confianza_bateo": 80
-        },
-        {
-          "jugador": "Randy Arozarena",
-          "equipo": "Tampa Bay Rays",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2,
-          "confianza_bateo": 70
-        }
-      ],
-      "llm_relevo_local": "Bullpen con ERA de 4.20, confiable en situaciones de presión.",
-      "llm_relevo_visitante": "Bullpen sólido con ERA de 3.50, excelente en finales."
-    },
-    {
-      "liga": "MLB",
-      "game_date": "2026-10-15",
-      "status_emoji": "🏁",
-      "fav_team": "Milwaukee Brewers",
-      "opp_team": "Los Angeles Dodgers",
-      "score_fav": "—",
-      "score_opp": "",
-      "state": "Final",
-      "result": "completed",
-      "label": "📋",
-      "game_pk": 401908033,
-      "fav_abbr": "MIL",
-      "opp_abbr": "LAD",
-      "home_team": "Los Angeles Dodgers",
-      "away_team": "Milwaukee Brewers",
-      "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 1,
-        "strikes": 0,
-        "away_runs": 1,
-        "home_runs": 2,
-        "away_hits": 7,
-        "home_hits": 6,
-        "away_errors": 0,
-        "home_errors": 0,
-        "away_team_name": "Los Angeles Dodgers",
-        "home_team_name": "Milwaukee Brewers",
-        "bases": {
-          "first": false,
-          "second": false,
-          "third": false
-        },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "1",
-        "opp_score": "2",
-        "score_fav": "1",
-        "score_opp": "2"
-      },
-      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
-      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
-      "llm_ir_favorito": "SÍ",
-      "llm_porque": "Dominan la división y tienen mejor alineación.",
-      "llm_factores": [
-        "Racha de 7-3 para Dodgers",
-        "Mejor récord en casa",
-        "Historial reciente favorable para Dodgers"
-      ],
-      "llm_favorito": "Los Angeles Dodgers",
-      "llm_carreras": "5-4",
-      "llm_carreras_lineas": {
-        "over_7.5": 75,
-        "over_8.5": 65,
-        "over_9.5": 50
-      },
-      "llm_ranking_local": "NL Oeste: 1º (95-65)",
-      "llm_ranking_visitante": "NL Central: 2º (87-73)",
-      "llm_abridor_local": "Clayton Kershaw (2.60, 16-7, 200)",
-      "llm_abridor_visitante": "Corbin Burnes (3.10, 14-8, 210)",
+      "llm_ranking_local": "NL Oeste: 1º (95-67)",
+      "llm_ranking_visitante": "NL Central: 2º (87-75)",
+      "llm_abridor_local": "Clayton Kershaw (3.21, 15-5, 180)",
+      "llm_abridor_visitante": "Corbin Burnes (3.45, 14-6, 200)",
       "llm_bateadores_clave": [
         {
           "jugador": "Mookie Betts",
           "equipo": "Los Angeles Dodgers",
           "hrs_estimados": 1,
           "remolcadas_estimadas": 2,
-          "confianza_bateo": 80
+          "confianza_bateo": 85
         },
         {
           "jugador": "Freddie Freeman",
           "equipo": "Los Angeles Dodgers",
           "hrs_estimados": 0,
           "remolcadas_estimadas": 1,
-          "confianza_bateo": 75
+          "confianza_bateo": 80
         },
         {
           "jugador": "Christian Yelich",
           "equipo": "Milwaukee Brewers",
           "hrs_estimados": 0,
           "remolcadas_estimadas": 1,
-          "confianza_bateo": 70
+          "confianza_bateo": 75
         },
         {
           "jugador": "Willie Adames",
           "equipo": "Milwaukee Brewers",
           "hrs_estimados": 1,
           "remolcadas_estimadas": 1,
-          "confianza_bateo": 65
+          "confianza_bateo": 70
         }
       ],
-      "llm_relevo_local": "Bullpen fuerte con ERA de 3.40, confiable en finales.",
-      "llm_relevo_visitante": "Bullpen con ERA de 4.00, puede ser vulnerable."
-    }
-  ],
-  "bot_username": "MLBAnalyticsRailwayBot",
-  "autorizados": [
-    6099564810
-  ],
-  "has_live": false,
-  "has_scheduled": false,
-  "live_data": {
-    "401908024": {
-      "is_live": false,
-      "is_final": true,
-      "status": "Final",
-      "away_runs": 1,
-      "home_runs": 3,
-      "away_team_name": "Tampa Bay Rays",
-      "home_team_name": "Cleveland Guardians",
+      "llm_relevo_local": "Bullpen con ERA de 3.20, confiable en situaciones críticas.",
+      "llm_relevo_visitante": "Bullpen con ERA de 3.80, menos efectivo en finales cerrados."
+    },
+    {
+      "liga": "MLB",
+      "game_date": "2026-10-15",
+      "status_emoji": "⏳",
+      "fav_team": "Cleveland Guardians",
+      "opp_team": "Tampa Bay Rays",
+      "score_fav": "—",
+      "score_opp": "",
+      "state": "Pre-Game",
+      "result": "pending",
+      "label": "📋",
+      "game_pk": 849818,
+      "fav_abbr": "CLE",
+      "opp_abbr": "TB",
+      "home_team": "Cleveland Guardians",
+      "away_team": "Tampa Bay Rays",
+      "llm_ir_favorito": "SÍ",
+      "llm_porque": "Mejor récord y rendimiento reciente.",
+      "llm_factores": [
+        "Racha de 7-3 en últimos 10 juegos",
+        "Mejor posición en la división",
+        "Historial reciente favorable"
+      ],
+      "resultado_llm": "pendiente",
       "linescore": {
-        "innings": [],
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
         "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "",
+        "inning_ordinal": "1st",
         "outs": 0,
         "balls": 0,
         "strikes": 0,
@@ -5216,14 +5063,110 @@
         },
         "status_emoji": "⏳",
         "result": "pending",
-        "state": "Scheduled",
+        "state": "Pre-Game",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
+      },
+      "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/CLE.png&h=40&w=40",
+      "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/TB.png&h=40&w=40",
+      "llm_favorito": "Tampa Bay Rays",
+      "llm_carreras": "5-3",
+      "llm_carreras_lineas": {
+        "over_7.5": 70,
+        "over_8.5": 55,
+        "over_9.5": 35
+      },
+      "llm_ranking_local": "AL Central: 2º (83-79)",
+      "llm_ranking_visitante": "AL Este: 1º (97-65)",
+      "llm_abridor_local": "Shane Bieber (3.10, 14-8, 210)",
+      "llm_abridor_visitante": "Shane McClanahan (2.85, 16-5, 220)",
+      "llm_bateadores_clave": [
+        {
+          "jugador": "José Ramírez",
+          "equipo": "Cleveland Guardians",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 80
+        },
+        {
+          "jugador": "Josh Naylor",
+          "equipo": "Cleveland Guardians",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2,
+          "confianza_bateo": 75
+        },
+        {
+          "jugador": "Wander Franco",
+          "equipo": "Tampa Bay Rays",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 85
+        },
+        {
+          "jugador": "Randy Arozarena",
+          "equipo": "Tampa Bay Rays",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 80
+        }
+      ],
+      "llm_relevo_local": "Bullpen con ERA de 3.60, sólido pero con altibajos.",
+      "llm_relevo_visitante": "Bullpen con ERA de 3.10, muy efectivo en finales."
+    }
+  ],
+  "bot_username": "MLBAnalyticsRailwayBot",
+  "autorizados": [
+    6099564810
+  ],
+  "has_live": false,
+  "has_scheduled": true,
+  "live_data": {
+    "401908024": {
+      "is_live": false,
+      "is_final": true,
+      "status": "Final",
+      "away_runs": 1,
+      "home_runs": 3,
+      "away_team_name": "Tampa Bay Rays",
+      "home_team_name": "Cleveland Guardians",
+      "linescore": {
+        "innings": [
+          {
+            "away_runs": 0,
+            "home_runs": 0
+          }
+        ],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "1st",
+        "outs": 0,
+        "balls": 0,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
+        "away_errors": 0,
+        "home_errors": 0,
+        "away_team_name": "Tampa Bay Rays",
+        "home_team_name": "Cleveland Guardians",
+        "bases": {
+          "first": false,
+          "second": false,
+          "third": false
+        },
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Pre-Game",
         "fav_score": "0",
         "opp_score": "0",
         "score_fav": "0",
         "score_opp": "0"
       }
     },
-    "849811": {
+    "401908032": {
       "is_live": false,
       "is_final": true,
       "status": "Final",
@@ -5298,158 +5241,89 @@
         "score_opp": "2"
       }
     },
-    "401908025": {
+    "849810": {
       "is_live": false,
-      "is_final": true,
-      "status": "Final",
+      "is_final": false,
+      "status": "Scheduled",
       "away_runs": 0,
       "home_runs": 0,
-      "away_team_name": "Cleveland Guardians",
-      "home_team_name": "Tampa Bay Rays",
+      "away_team_name": "Milwaukee Brewers",
+      "home_team_name": "Los Angeles Dodgers",
       "linescore": {
-        "innings": [
-          {
-            "away_runs": 0,
-            "home_runs": 2
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 2,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 3,
-            "home_runs": 0
-          }
-        ],
-        "current_inning": 9,
-        "is_top": false,
-        "inning_ordinal": "9th",
-        "outs": 3,
+        "innings": [],
+        "current_inning": 1,
+        "is_top": true,
+        "inning_ordinal": "",
+        "outs": 0,
         "balls": 0,
-        "strikes": 1,
-        "away_runs": 7,
-        "home_runs": 3,
-        "away_hits": 14,
-        "home_hits": 7,
+        "strikes": 0,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
-        "away_team_name": "Cleveland Guardians",
-        "home_team_name": "Tampa Bay Rays",
+        "away_team_name": "Milwaukee Brewers",
+        "home_team_name": "Los Angeles Dodgers",
         "bases": {
           "first": false,
           "second": false,
           "third": false
         },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "7",
-        "opp_score": "3",
-        "score_fav": "7",
-        "score_opp": "3"
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Scheduled",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
       }
     },
-    "401908033": {
+    "849818": {
       "is_live": false,
-      "is_final": true,
-      "status": "Final",
+      "is_final": false,
+      "status": "Pre-Game",
       "away_runs": 0,
       "home_runs": 0,
-      "away_team_name": "Los Angeles Dodgers",
-      "home_team_name": "Milwaukee Brewers",
+      "away_team_name": "Tampa Bay Rays",
+      "home_team_name": "Cleveland Guardians",
       "linescore": {
         "innings": [
           {
             "away_runs": 0,
             "home_runs": 0
-          },
-          {
-            "away_runs": 1,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 1
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
-          },
-          {
-            "away_runs": 0,
-            "home_runs": 0
           }
         ],
-        "current_inning": 9,
+        "current_inning": 1,
         "is_top": true,
-        "inning_ordinal": "9th",
-        "outs": 3,
-        "balls": 1,
+        "inning_ordinal": "1st",
+        "outs": 0,
+        "balls": 0,
         "strikes": 0,
-        "away_runs": 1,
-        "home_runs": 2,
-        "away_hits": 7,
-        "home_hits": 6,
+        "away_runs": 0,
+        "home_runs": 0,
+        "away_hits": 0,
+        "home_hits": 0,
         "away_errors": 0,
         "home_errors": 0,
-        "away_team_name": "Los Angeles Dodgers",
-        "home_team_name": "Milwaukee Brewers",
+        "away_team_name": "Tampa Bay Rays",
+        "home_team_name": "Cleveland Guardians",
         "bases": {
           "first": false,
           "second": false,
           "third": false
         },
-        "status_emoji": "🏁",
-        "result": "completed",
-        "state": "Final",
-        "fav_score": "1",
-        "opp_score": "2",
-        "score_fav": "1",
-        "score_opp": "2"
+        "status_emoji": "⏳",
+        "result": "pending",
+        "state": "Pre-Game",
+        "fav_score": "0",
+        "opp_score": "0",
+        "score_fav": "0",
+        "score_opp": "0"
       }
     }
   },
-  "updated_at": "15/10/2026 07:57",
+  "updated_at": "15/10/2026 08:02",
   "stats": {
     "total": 24,
     "acertados": 14,
@@ -5762,7 +5636,8 @@
     "2026-10-11",
     "2026-10-12",
     "2026-10-13",
-    "2026-10-14"
+    "2026-10-14",
+    "2026-10-15"
   ],
   "stats_por_fecha": {
     "2026-08-08": {
@@ -6064,6 +5939,31 @@
       "llm_acertados": 0,
       "llm_fallidos": 1,
       "llm_win_rate": 0.0
+    },
+    "2026-10-15": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
     }
   },
   "stats_por_fecha_mlb": {
@@ -6366,6 +6266,31 @@
       "llm_acertados": 0,
       "llm_fallidos": 1,
       "llm_win_rate": 0.0
+    },
+    "2026-10-15": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
     }
   },
   "stats_por_fecha_lmb": {
@@ -6645,6 +6570,31 @@
       "llm_win_rate": 0
     },
     "2026-10-14": {
+      "total": 0,
+      "acertados": 0,
+      "fallidos": 0,
+      "win_rate": 0,
+      "alta_total": 0,
+      "alta_acertados": 0,
+      "alta_fallidos": 0,
+      "alta_win_rate": 0,
+      "media_total": 0,
+      "media_acertados": 0,
+      "media_fallidos": 0,
+      "media_win_rate": 0,
+      "baja_total": 0,
+      "baja_acertados": 0,
+      "baja_fallidos": 0,
+      "baja_win_rate": 0,
+      "valor_ok": 0,
+      "valor_total": 0,
+      "valor_rate": 0,
+      "llm_total": 0,
+      "llm_acertados": 0,
+      "llm_fallidos": 0,
+      "llm_win_rate": 0
+    },
+    "2026-10-15": {
       "total": 0,
       "acertados": 0,
       "fallidos": 0,
@@ -21483,109 +21433,109 @@
       "relevo_local": "Bullpen con ERA de 3.45, confiable en situaciones críticas.",
       "relevo_visitante": "Bullpen con ERA de 4.20, menos efectivo en finales de juegos."
     },
-    "2026-10-15___MLB___Cleveland Guardians___Tampa Bay Rays": {
+    "2026-10-15___MLB___Los Angeles Dodgers___Milwaukee Brewers": {
       "ir": "SÍ",
-      "pq": "Mejor récord y racha reciente favorable.",
+      "pq": "Mejor récord y racha reciente.",
       "factores": [
-        "Racha de 8-2 para Rays",
-        "Lesiones mínimas en Rays",
-        "Historial reciente favorable para Rays"
+        "Racha de 8-2 en últimos 10 juegos",
+        "Ventaja de local",
+        "Historial favorable en enfrentamientos directos"
       ],
-      "favorito": "Tampa Bay Rays",
-      "carreras_esperadas": "4-6",
+      "favorito": "Los Angeles Dodgers",
+      "carreras_esperadas": "6-4",
       "carreras_lineas": {
-        "over_7.5": 70,
+        "over_7.5": 75,
         "over_8.5": 60,
         "over_9.5": 40
       },
-      "ranking_local": "AL Central: 2º (85-75)",
-      "ranking_visitante": "AL Este: 1º (95-65)",
-      "abridor_local": "Shane Bieber (3.20, 15-9, 210)",
-      "abridor_visitante": "Tyler Glasnow (2.85, 12-6, 220)",
-      "bateadores_clave": [
-        {
-          "jugador": "José Ramírez",
-          "equipo": "Cleveland Guardians",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2,
-          "confianza_bateo": 75
-        },
-        {
-          "jugador": "Josh Naylor",
-          "equipo": "Cleveland Guardians",
-          "hrs_estimados": 0,
-          "remolcadas_estimadas": 1,
-          "confianza_bateo": 65
-        },
-        {
-          "jugador": "Wander Franco",
-          "equipo": "Tampa Bay Rays",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 3,
-          "confianza_bateo": 80
-        },
-        {
-          "jugador": "Randy Arozarena",
-          "equipo": "Tampa Bay Rays",
-          "hrs_estimados": 1,
-          "remolcadas_estimadas": 2,
-          "confianza_bateo": 70
-        }
-      ],
-      "relevo_local": "Bullpen con ERA de 4.20, confiable en situaciones de presión.",
-      "relevo_visitante": "Bullpen sólido con ERA de 3.50, excelente en finales."
-    },
-    "2026-10-15___MLB___Los Angeles Dodgers___Milwaukee Brewers": {
-      "ir": "SÍ",
-      "pq": "Dominan la división y tienen mejor alineación.",
-      "factores": [
-        "Racha de 7-3 para Dodgers",
-        "Mejor récord en casa",
-        "Historial reciente favorable para Dodgers"
-      ],
-      "favorito": "Los Angeles Dodgers",
-      "carreras_esperadas": "5-4",
-      "carreras_lineas": {
-        "over_7.5": 75,
-        "over_8.5": 65,
-        "over_9.5": 50
-      },
-      "ranking_local": "NL Oeste: 1º (95-65)",
-      "ranking_visitante": "NL Central: 2º (87-73)",
-      "abridor_local": "Clayton Kershaw (2.60, 16-7, 200)",
-      "abridor_visitante": "Corbin Burnes (3.10, 14-8, 210)",
+      "ranking_local": "NL Oeste: 1º (95-67)",
+      "ranking_visitante": "NL Central: 2º (87-75)",
+      "abridor_local": "Clayton Kershaw (3.21, 15-5, 180)",
+      "abridor_visitante": "Corbin Burnes (3.45, 14-6, 200)",
       "bateadores_clave": [
         {
           "jugador": "Mookie Betts",
           "equipo": "Los Angeles Dodgers",
           "hrs_estimados": 1,
           "remolcadas_estimadas": 2,
-          "confianza_bateo": 80
+          "confianza_bateo": 85
         },
         {
           "jugador": "Freddie Freeman",
           "equipo": "Los Angeles Dodgers",
           "hrs_estimados": 0,
           "remolcadas_estimadas": 1,
-          "confianza_bateo": 75
+          "confianza_bateo": 80
         },
         {
           "jugador": "Christian Yelich",
           "equipo": "Milwaukee Brewers",
           "hrs_estimados": 0,
           "remolcadas_estimadas": 1,
-          "confianza_bateo": 70
+          "confianza_bateo": 75
         },
         {
           "jugador": "Willie Adames",
           "equipo": "Milwaukee Brewers",
           "hrs_estimados": 1,
           "remolcadas_estimadas": 1,
-          "confianza_bateo": 65
+          "confianza_bateo": 70
         }
       ],
-      "relevo_local": "Bullpen fuerte con ERA de 3.40, confiable en finales.",
-      "relevo_visitante": "Bullpen con ERA de 4.00, puede ser vulnerable."
+      "relevo_local": "Bullpen con ERA de 3.20, confiable en situaciones críticas.",
+      "relevo_visitante": "Bullpen con ERA de 3.80, menos efectivo en finales cerrados."
+    },
+    "2026-10-15___MLB___Cleveland Guardians___Tampa Bay Rays": {
+      "ir": "SÍ",
+      "pq": "Mejor récord y rendimiento reciente.",
+      "factores": [
+        "Racha de 7-3 en últimos 10 juegos",
+        "Mejor posición en la división",
+        "Historial reciente favorable"
+      ],
+      "favorito": "Tampa Bay Rays",
+      "carreras_esperadas": "5-3",
+      "carreras_lineas": {
+        "over_7.5": 70,
+        "over_8.5": 55,
+        "over_9.5": 35
+      },
+      "ranking_local": "AL Central: 2º (83-79)",
+      "ranking_visitante": "AL Este: 1º (97-65)",
+      "abridor_local": "Shane Bieber (3.10, 14-8, 210)",
+      "abridor_visitante": "Shane McClanahan (2.85, 16-5, 220)",
+      "bateadores_clave": [
+        {
+          "jugador": "José Ramírez",
+          "equipo": "Cleveland Guardians",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 80
+        },
+        {
+          "jugador": "Josh Naylor",
+          "equipo": "Cleveland Guardians",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 2,
+          "confianza_bateo": 75
+        },
+        {
+          "jugador": "Wander Franco",
+          "equipo": "Tampa Bay Rays",
+          "hrs_estimados": 0,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 85
+        },
+        {
+          "jugador": "Randy Arozarena",
+          "equipo": "Tampa Bay Rays",
+          "hrs_estimados": 1,
+          "remolcadas_estimadas": 1,
+          "confianza_bateo": 80
+        }
+      ],
+      "relevo_local": "Bullpen con ERA de 3.60, sólido pero con altibajos.",
+      "relevo_visitante": "Bullpen con ERA de 3.10, muy efectivo en finales."
     },
     "2026-06-28___Sudáfrica___Canadá": {
       "ir": "SÍ",
