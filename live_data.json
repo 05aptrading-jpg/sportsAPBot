@@ -1,5 +1,5 @@
 {
-  "fecha": "14/10/2026 19:57",
+  "fecha": "14/10/2026 20:00",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1792072800,
@@ -4751,7 +4751,7 @@
       "opp_team": "Milwaukee Brewers",
       "score_fav": "2",
       "score_opp": "1",
-      "state": "Bottom 6th",
+      "state": "Top 7th",
       "result": "live",
       "label": "📋",
       "game_pk": 849811,
@@ -4792,14 +4792,18 @@
           {
             "away_runs": 0,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
-        "outs": 3,
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
+        "outs": 0,
         "balls": 1,
-        "strikes": 3,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 2,
         "away_hits": 2,
@@ -5045,7 +5049,7 @@
     "849811": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 6th",
+      "status": "Top 7th",
       "away_runs": 2,
       "home_runs": 1,
       "away_team_name": "Milwaukee Brewers",
@@ -5075,14 +5079,18 @@
           {
             "away_runs": 0,
             "home_runs": 2
+          },
+          {
+            "away_runs": 0,
+            "home_runs": 0
           }
         ],
-        "current_inning": 6,
-        "is_top": false,
-        "inning_ordinal": "6th",
-        "outs": 3,
+        "current_inning": 7,
+        "is_top": true,
+        "inning_ordinal": "7th",
+        "outs": 0,
         "balls": 1,
-        "strikes": 3,
+        "strikes": 1,
         "away_runs": 1,
         "home_runs": 2,
         "away_hits": 2,
@@ -5106,7 +5114,7 @@
       }
     }
   },
-  "updated_at": "14/10/2026 19:57",
+  "updated_at": "14/10/2026 20:00",
   "stats": {
     "total": 23,
     "acertados": 14,
@@ -24237,8 +24245,8 @@
       "away": "Brooklyn Nets",
       "home_abbr": "MIA",
       "away_abbr": "BKN",
-      "home_score": 138,
-      "away_score": 123,
+      "home_score": 140,
+      "away_score": 128,
       "home_linescores": [
         {
           "period": 1,
@@ -24257,8 +24265,8 @@
         },
         {
           "period": 4,
-          "value": 26,
-          "display": "26"
+          "value": 28,
+          "display": "28"
         }
       ],
       "away_linescores": [
@@ -24279,13 +24287,13 @@
         },
         {
           "period": 4,
-          "value": 19,
-          "display": "19"
+          "value": 25,
+          "display": "25"
         }
       ],
-      "clock": "2:48",
+      "clock": "1:56",
       "period": 4,
-      "state": "Q4 2:48",
+      "state": "Q4 1:56",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/MIA.png&h=40&w=40",
@@ -24515,7 +24523,7 @@
       "away": "Phoenix Suns",
       "home_abbr": "SA",
       "away_abbr": "PHX",
-      "home_score": 91,
+      "home_score": 92,
       "away_score": 75,
       "home_linescores": [
         {
@@ -24530,8 +24538,8 @@
         },
         {
           "period": 3,
-          "value": 31,
-          "display": "31"
+          "value": 32,
+          "display": "32"
         }
       ],
       "away_linescores": [
@@ -24551,9 +24559,9 @@
           "display": "26"
         }
       ],
-      "clock": "45.6",
+      "clock": "0.0",
       "period": 3,
-      "state": "Q3 45.6",
+      "state": "Q3 0.0",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/SA.png&h=40&w=40",
@@ -24645,7 +24653,7 @@
       "home_abbr": "DAL",
       "away_abbr": "NO",
       "home_score": 63,
-      "away_score": 73,
+      "away_score": 75,
       "home_linescores": [
         {
           "period": 1,
@@ -24661,6 +24669,11 @@
           "period": 3,
           "value": 18,
           "display": "18"
+        },
+        {
+          "period": 4,
+          "value": 0,
+          "display": "0"
         }
       ],
       "away_linescores": [
@@ -24676,13 +24689,18 @@
         },
         {
           "period": 3,
-          "value": 17,
-          "display": "17"
+          "value": 19,
+          "display": "19"
+        },
+        {
+          "period": 4,
+          "value": 0,
+          "display": "0"
         }
       ],
-      "clock": "28.6",
-      "period": 3,
-      "state": "Q3 28.6",
+      "clock": "11:58",
+      "period": 4,
+      "state": "Q4 11:58",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/DAL.png&h=40&w=40",
@@ -24773,8 +24791,8 @@
       "away": "Chicago Bulls",
       "home_abbr": "MIL",
       "away_abbr": "CHI",
-      "home_score": 54,
-      "away_score": 87,
+      "home_score": 60,
+      "away_score": 92,
       "home_linescores": [
         {
           "period": 1,
@@ -24788,8 +24806,8 @@
         },
         {
           "period": 3,
-          "value": 15,
-          "display": "15"
+          "value": 21,
+          "display": "21"
         }
       ],
       "away_linescores": [
@@ -24805,13 +24823,13 @@
         },
         {
           "period": 3,
-          "value": 25,
-          "display": "25"
+          "value": 30,
+          "display": "30"
         }
       ],
-      "clock": "5:27",
+      "clock": "3:52",
       "period": 3,
-      "state": "Q3 5:27",
+      "state": "Q3 3:52",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/MIL.png&h=40&w=40",
@@ -24898,8 +24916,8 @@
       "away": "Detroit Pistons",
       "home_abbr": "MIN",
       "away_abbr": "DET",
-      "home_score": 76,
-      "away_score": 88,
+      "home_score": 78,
+      "away_score": 91,
       "home_linescores": [
         {
           "period": 1,
@@ -24913,8 +24931,8 @@
         },
         {
           "period": 3,
-          "value": 18,
-          "display": "18"
+          "value": 20,
+          "display": "20"
         }
       ],
       "away_linescores": [
@@ -24930,13 +24948,13 @@
         },
         {
           "period": 3,
-          "value": 23,
-          "display": "23"
+          "value": 26,
+          "display": "26"
         }
       ],
-      "clock": "2:59",
+      "clock": "1:44",
       "period": 3,
-      "state": "Q3 2:59",
+      "state": "Q3 1:44",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/MIN.png&h=40&w=40",
