@@ -1,5 +1,5 @@
 {
-  "fecha": "15/10/2026 18:42",
+  "fecha": "15/10/2026 18:56",
   "proxima_actualizacion": "08:00",
   "proxima_actualizacion_lmb": "12:30",
   "proxima_actualizacion_ts": 1792159200,
@@ -4950,9 +4950,9 @@
       "status_emoji": "🔴",
       "fav_team": "Los Angeles Dodgers",
       "opp_team": "Milwaukee Brewers",
-      "score_fav": "0",
+      "score_fav": "4",
       "score_opp": "0",
-      "state": "Bottom 2nd",
+      "state": "Top 3rd",
       "result": "live",
       "label": "📋",
       "game_pk": 849810,
@@ -4976,19 +4976,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 4
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 3,
+        "is_top": true,
+        "inning_ordinal": "3rd",
+        "outs": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 4,
         "away_hits": 0,
-        "home_hits": 2,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Milwaukee Brewers",
@@ -5002,9 +5006,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "4",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "4"
       },
       "fav_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/LAD.png&h=40&w=40",
       "opp_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/mlb/500/MIL.png&h=40&w=40",
@@ -5349,8 +5353,8 @@
     "849810": {
       "is_live": true,
       "is_final": false,
-      "status": "Bottom 2nd",
-      "away_runs": 0,
+      "status": "Top 3rd",
+      "away_runs": 4,
       "home_runs": 0,
       "away_team_name": "Milwaukee Brewers",
       "home_team_name": "Los Angeles Dodgers",
@@ -5362,19 +5366,23 @@
           },
           {
             "away_runs": 0,
+            "home_runs": 4
+          },
+          {
+            "away_runs": 0,
             "home_runs": 0
           }
         ],
-        "current_inning": 2,
-        "is_top": false,
-        "inning_ordinal": "2nd",
-        "outs": 0,
-        "balls": 0,
-        "strikes": 0,
+        "current_inning": 3,
+        "is_top": true,
+        "inning_ordinal": "3rd",
+        "outs": 1,
+        "balls": 2,
+        "strikes": 2,
         "away_runs": 0,
-        "home_runs": 0,
+        "home_runs": 4,
         "away_hits": 0,
-        "home_hits": 2,
+        "home_hits": 4,
         "away_errors": 0,
         "home_errors": 0,
         "away_team_name": "Milwaukee Brewers",
@@ -5388,9 +5396,9 @@
         "result": "live",
         "state": "In Progress",
         "fav_score": "0",
-        "opp_score": "0",
+        "opp_score": "4",
         "score_fav": "0",
-        "score_opp": "0"
+        "score_opp": "4"
       }
     },
     "849818": {
@@ -5469,7 +5477,7 @@
       }
     }
   },
-  "updated_at": "15/10/2026 18:42",
+  "updated_at": "15/10/2026 18:56",
   "stats": {
     "total": 24,
     "acertados": 14,
@@ -25313,9 +25321,9 @@
           "display": "26"
         }
       ],
-      "clock": "7.2",
+      "clock": "0.0",
       "period": 2,
-      "state": "Q2 7.2",
+      "state": "Q2 0.0",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/NY.png&h=40&w=40",
@@ -25406,25 +25414,25 @@
       "away": "Oklahoma City Thunder",
       "home_abbr": "HOU",
       "away_abbr": "OKC",
-      "home_score": 0,
-      "away_score": 0,
+      "home_score": 22,
+      "away_score": 8,
       "home_linescores": [
         {
           "period": 1,
-          "value": 0,
-          "display": "0"
+          "value": 22,
+          "display": "22"
         }
       ],
       "away_linescores": [
         {
           "period": 1,
-          "value": 0,
-          "display": "0"
+          "value": 8,
+          "display": "8"
         }
       ],
-      "clock": "11:17",
+      "clock": "4:00",
       "period": 1,
-      "state": "Q1 11:17",
+      "state": "Q1 4:00",
       "result": "live",
       "liga": "NBA",
       "home_logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/HOU.png&h=40&w=40",
@@ -26223,11 +26231,11 @@
       "away": "Seattle Seahawks",
       "home_abbr": "DEN",
       "away_abbr": "SEA",
-      "home_score": 0,
+      "home_score": 7,
       "away_score": 3,
-      "clock": "4:32",
-      "period": 1,
-      "state": "Q1 4:32",
+      "clock": "12:52",
+      "period": 2,
+      "state": "Q2 12:52",
       "result": "live",
       "liga": "NFL",
       "spread_details": "",
